@@ -53,6 +53,8 @@ OmniDocBench
 - [引用](#引用)
 
 ## 更新
+[2025/08/20]更新PaddleOCR_PPv3、MonkeyOCR-pro-1.2模型评测结果，新增了Mistral-OCR、Pix2text、phocr、Nanonets-OCR-s infer脚本。
+
 [2025/07/31] 新增了MinerU2.0-2505-0.9B、Marker-1.7.1、PaddleOCR_PPv3、MonkeyOCR-pro-1.2、Dolphin、Nanonets-OCR-s、OCRFlux-3B、Qwen2.5-VL-7B、InternVL3-76B模型的评测；更新了MinerU版本。
 
 [2025/03/27] 新增了Pix2Text、Unstructured、OpenParse、Gemini2.0-flash、Gemini2.5-pro、Mistral OCR、OLMOCR、Qwen2.5-VL-72B模型的评测；
@@ -459,8 +461,8 @@ result/
       <td>0.088</td>
       <td>0.295</td>
       <td>0.535</td>
-      <td>-</td>
-      <td>-</td>
+      <td>81.812</td>
+      <td>52.13</td>
       <td>77.2</td>
       <td>83.9</td>
       <td>0.159</td>
@@ -476,7 +478,7 @@ result/
       <td>0.381</td>
       <td>0.306</td>
       <td>0.454</td>
-      <td><ins>82.7</ins></td>
+      <td><strong><ins>82.7</ins></strong></td>
       <td><ins>64.6</ins></td>
       <td>77.0</td>
       <td>67.1</td>
@@ -560,7 +562,7 @@ result/
       <td>0.238</td>
       <td><strong>0.045</strong></td>
       <td><ins>0.115</ins></td>
-      <td><strong>0.273</strong></td>
+      <td>0.273</td>
       <td>0.506</td>
       <td>79.0</td>
       <td>50.8</td>
@@ -573,20 +575,20 @@ result/
     </tr>
     <tr>
       <td>MonkeyOCR-pro-1.2B</sup></td>
-      <td>0.154</td>
-      <td>0.263</td>
-      <td>0.062</td>
+      <td>0.146</td>
+      <td>0.221</td>
+      <td>0.068</td>
+      <td>0.118</td>
+      <td><strong>0.272<strong></td>
+      <td>0.452</td>
+      <td>76.663</td>
+      <td>63.282</td>
+      <td>81.342</td>
+      <td>85.504</td>
+      <td>0.149</td>
+      <td>0.134</td>
+      <td>0.093</td>
       <td>0.179</td>
-      <td>0.295</td>
-      <td>0.464</td>
-      <td><strong>83.8</strong></td>
-      <td>58.6</td>
-      <td>77.7</td>
-      <td>79.9</td>
-      <td>0.164</td>
-      <td><ins>0.168</ins></td>
-      <td>0.094</td>
-      <td>0.243</td>
     </tr>
     <tr>
       <td>Dolphin</sup></td>
