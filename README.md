@@ -470,8 +470,8 @@ End-to-end evaluation assesses the model's accuracy in parsing PDF page content.
       <td>0.088</td>
       <td>0.295</td>
       <td>0.535</td>
-      <td>-</td>
-      <td>-</td>
+      <td>81.812</td>
+      <td>52.13</td>
       <td>77.2</td>
       <td>83.9</td>
       <td>0.159</td>
