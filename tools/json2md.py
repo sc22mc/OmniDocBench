@@ -42,7 +42,7 @@ def remove_unencodable_characters(s, encoding):
 for sample in samples:
     annos = []
     for x in sample['layout_dets']:
-        if x.get('order'):
+        if x.get('order') is not None:
             annos.append(x)
 
     # deal with truncated
