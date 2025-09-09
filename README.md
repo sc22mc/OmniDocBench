@@ -61,6 +61,8 @@ Currently supported metrics include:
 - [Citation](#citation)
 
 ## Updates
+[2025/09/09]Updated Dolphin model evaluation with the latest inference script and model weights; Add Dolphin infer script;
+
 [2025/08/20]Updated PaddleOCR_PPv3, MonkeyOCR-pro-1.2 model evaluation; Added Mistral-OCR, Pix2text, phocr, Nanonets-OCR-s infer scripts;
 
 [2025/07/31] Added MinerU2.0-2505-0.9B, Marker-1.7.1, PaddleOCR_PPv3, MonkeyOCR-pro-1.2, Dolphin, Nanonets-OCR-s, OCRFlux-3B, Qwen2.5-VL-7B and InternVL3-76B model evaluation; Updated versions of MinerU.
@@ -601,20 +603,20 @@ End-to-end evaluation assesses the model's accuracy in parsing PDF page content.
     </tr>
     <tr>
       <td>Dolphin</sup></td>
-      <td>0.356</td>
-      <td>0.44</td>
-      <td>0.352</td>
-      <td>0.44</td>
-      <td>0.465</td>
-      <td>0.604</td>
-      <td>61.6</td>
-      <td>40.4</td>
-      <td>70.2</td>
-      <td>56.8</td>
-      <td>0.258</td>
-      <td>0.367</td>
-      <td>0.35</td>
-      <td>0.351</td>
+      <td>0.205</td>
+      <td>0.313</td>
+      <td>0.092</td>
+      <td>0.204</td>
+      <td>0.447</td>
+      <td>0.606</td>
+      <td>63.581</td>
+      <td>35.723</td>
+      <td>76.092</td>
+      <td>66.859</td>
+      <td>0.193</td>
+      <td>0.282</td>
+      <td>0.088</td>
+      <td>0.16</td>
     </tr>
     <tr>
       <td>Nanonets-OCR-s</sup></td>
