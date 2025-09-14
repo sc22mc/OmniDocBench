@@ -23,11 +23,15 @@ class End2EndEval():
                 img_path = os.path.basename(page['page_info']['image_path'])
                 page_info[img_path] = page['page_info']['page_attribute']
 
-        for element in metrics_list.keys():
+        for element in metrics_list.keys(): # {'text_block': {'metric': ['Edit_dist']}, 'display_formula': {'metric': ['Edit_dist', 'CDM']}, 'table': {'metric': ['Edit_dist']}, 'reading_order': {'metric': ['Edit_dist']}}
+            if element=='table':
+                pass
             result = {}
             group_info = metrics_list[element].get('group', [])
-            samples = dataset.samples[element]
+            samples = dataset.samples[element] # 这里应该以及基于正则抽取好了
             for metric in metrics_list[element]['metric']:
+                if metric == 'CDM':
+                    pass
                 metric_val = METRIC_REGISTRY.get(metric)
                 samples, result_s = metric_val(samples).evaluate(group_info, f"{save_name}_{element}")
                 if result_s:

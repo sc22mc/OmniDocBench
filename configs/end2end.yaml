@@ -11,7 +11,7 @@ end2end_eval:
         - CDM
     table:
       metric:
-        - TEDS
+        # - TEDS
         - Edit_dist
     reading_order:
       metric:
@@ -19,9 +19,9 @@ end2end_eval:
   dataset:
     dataset_name: end2end_dataset
     ground_truth:
-      data_path: ./demo_data/omnidocbench_demo/OmniDocBench_demo.json
+      data_path: /Users/handsomexu/Desktop/OmniDocBench/OtherDataset/OtherDataset.json
     prediction:
-      data_path: ./demo_data/end2end
+      data_path: //Users/handsomexu/Desktop/OmniDocBench/MinerU_output_OtherDataset
     match_method: quick_match
     # filter: 
     #   language: english

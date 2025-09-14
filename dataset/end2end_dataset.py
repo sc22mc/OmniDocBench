@@ -232,8 +232,12 @@ class End2EndDataset():
         gt_page_elements = self.get_page_elements(sample)
         
         # All text-related elements, excluding categories: figure, table, table_mask, equation_isolated, equation_caption, equation_ignore, equation_inline, footnote_mark, page_number, abandon, list, text_mask, need_mask
-        text_all = self.get_page_elements_list(gt_page_elements, ['text_block', 'title', 'code_txt', 'code_txt_caption', 'reference', 'equation_caption',
-                                                'figure_caption', 'figure_footnote', 'table_caption', 'table_footnote', 'code_algorithm', 'code_algorithm_caption',
+        # text_all = self.get_page_elements_list(gt_page_elements, ['text_block', 'title', 'code_txt', 'code_txt_caption', 'reference', 'equation_caption',
+        #                                         'figure_caption', 'figure_footnote', 'table_caption', 'table_footnote', 'code_algorithm', 'code_algorithm_caption',
+        #                                         'header', 'footer', 'page_footnote', 'page_number'])
+        
+        text_all = self.get_page_elements_list(gt_page_elements, ['text_block','plain_text', 'title', 'code_txt', 'code_txt_caption', 'reference', 'equation_caption','formula_caption','arxiv'
+                                                'figure_caption', 'figure_footnote', 'table_caption', 'table_footnote', 'code_algorithm', 'code_algorithm_caption', 'section'
                                                 'header', 'footer', 'page_footnote', 'page_number'])
 
         # print('-------------!!text_all: ', text_all)
@@ -265,7 +269,8 @@ class End2EndDataset():
                 print(f'No text match of {img_name}. The plain text match will be empty.')
             else:
                 # Categories that need to be ignored for text
-                plain_text_match_clean = self.filtered_out_ignore(plain_text_match_s, ['figure_caption', 'figure_footnote', 'table_caption', 'table_footnote', 'code_algorithm', 'code_algorithm_caption', 'header', 'footer', 'page_footnote', 'page_number', 'equation_caption'])
+                # plain_text_match_clean = self.filtered_out_ignore(plain_text_match_s, ['figure_caption', 'figure_footnote', 'table_caption', 'table_footnote', 'code_algorithm', 'code_algorithm_caption', 'header', 'footer', 'page_footnote', 'page_number', 'equation_caption'])
+                plain_text_match_clean = self.filtered_out_ignore(plain_text_match_s, ['figure_footnote', 'table_footnote', 'code_algorithm', 'code_algorithm_caption', 'page_footnote', 'page_number', 'equation_caption'])
             
         # if gt_page_elements.get('title'):
         #     gt_title_list = self.get_sorted_text_list(gt_page_elements['title'])
