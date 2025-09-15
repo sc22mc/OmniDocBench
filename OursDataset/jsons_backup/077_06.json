@@ -1,0 +1,1120 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        422.5,
+        189.99999999999997,
+        2065,
+        189.99999999999997,
+        2065,
+        229.99999999999997,
+        422.5,
+        229.99999999999997
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": " Timewarp: Transferable Acceleration of Molecular Dynamics by Learning Time-Coarsened Dynamics",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            422.5,
+            189.99999999999997,
+            2065,
+            189.99999999999997,
+            2065,
+            229.99999999999997,
+            422.5,
+            229.99999999999997
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        542.5,
+        310,
+        902.5,
+        310,
+        902.5,
+        345,
+        542.5,
+        345
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": " | Table 1. Dataset details",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            542.5,
+            310,
+            902.5,
+            310,
+            902.5,
+            345,
+            542.5,
+            345
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        230,
+        347.5,
+        1197.5,
+        347.5,
+        1197.5,
+        677.5,
+        230,
+        677.5
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            230,
+            347.5,
+            1197.5,
+            347.5,
+            1197.5,
+            677.5,
+            230,
+            677.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "|-----------------------------------|-------------|-------------|-------------|\n| Dataset name                      | AD          | 2AA         | 4AA         |\n| Training set simulation time      | 100 ns      | 50 ns       | 50 ns       |\n| Test set simulation time          | 100 ns      | 1 μs        | 1 μs        |\n| MD integration step $\\Delta t$    | 0.5 fs      | 0.5 fs      | 0.5 fs      |\n| Timewarp prediction time $\\tau$   | 0.5 × 106fs | 0.5 × 106fs | 0.5 × 105fs |\n| No. of training peptides          | 1           | 200         | 1400        |\n| No. of training pairs per peptide | 2 × 105     | 1 × 104     | 1 × 104     |\n| No. of test peptides              | 1           | 100         | 30          |",
+      "latex": ""
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        225,
+        757.5000000000001,
+        1210,
+        757.5000000000001,
+        1210,
+        947.5000000000001,
+        225,
+        947.5000000000001
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " permutation equivariant coupling layer. If the flow only took  $z^p$  as input without  $z^v$ , then to maintain permutation equivariance, each coupling layer would have to unnaturally split the Cartesian components of  $z_i^p$  into two disjoint sets.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            225,
+            757.5000000000001,
+            1210,
+            757.5000000000001,
+            1210,
+            947.5000000000001,
+            225,
+            947.5000000000001
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        222.5,
+        992.5,
+        1215,
+        992.5,
+        1215,
+        1092.5,
+        222.5,
+        1092.5
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " Translation and rotation equivariance Consider a transformation  $T = (R, a)$  that acts on  $x^p$  as follows:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            222.5,
+            992.5,
+            1215,
+            992.5,
+            1215,
+            1092.5,
+            222.5,
+            1092.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        442.5,
+        1122.5,
+        995,
+        1122.5,
+        995,
+        1175,
+        442.5,
+        1175
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": " $$ Tx_i^p = Rx_i^p + a, \\quad 1 \\le i \\le N, $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            442.5,
+            1122.5,
+            995,
+            1122.5,
+            995,
+            1175,
+            442.5,
+            1175
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1135,
+        1130,
+        1202.5,
+        1130,
+        1202.5,
+        1175,
+        1135,
+        1175
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": "(14)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1135,
+            1130,
+            1202.5,
+            1130,
+            1202.5,
+            1175,
+            1135,
+            1175
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        220,
+        1212.5,
+        1210,
+        1212.5,
+        1210,
+        1642.5,
+        220,
+        1642.5
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": " where R is a  $3 \\times 3$  rotation matrix, and  $a \\in \\mathbb{R}^3$  is a translation vector. We would like the model to satisfy  $p_{\\theta}(Tx(t+\\tau)|Tx(t)) = p_{\\theta}(x(t+\\tau)|x(t)).$  We achieve translation equivariance by subtracting the average position of the atoms in the initial molecular state (Appendix  $A.2$ ). Rotation equivariance is not encoded in the architecture but is handled by data augmentation: each training pair  $(x(t), x(t+\\tau))$  from  $\\mathcal{D}$  is acted upon by a random rotation matrix R to form  $(Rx(t), Rx(t+\\tau))$  in each iteration.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            220,
+            1212.5,
+            1210,
+            1212.5,
+            1210,
+            1642.5,
+            220,
+            1642.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        229.99999999999994,
+        1717.5000000000002,
+        665,
+        1717.5000000000002,
+        665,
+        1765.0000000000002,
+        229.99999999999994,
+        1765.0000000000002
+      ],
+      "ignore": false,
+      "order": 9,
+      "anno_id": 1,
+      "text": " # 5. Training objective",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            229.99999999999994,
+            1717.5000000000002,
+            665,
+            1717.5000000000002,
+            665,
+            1765.0000000000002,
+            229.99999999999994,
+            1765.0000000000002
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        225,
+        1805.0000000000002,
+        1217.5,
+        1805.0000000000002,
+        1217.5,
+        2142.5,
+        225,
+        2142.5
+      ],
+      "ignore": false,
+      "order": 10,
+      "anno_id": 1,
+      "text": " The model is trained in two stages. During likelihood training, the model is trained via maximum likelihood on pairs of states from the trajectories in the dataset. During acceptance training, the model is fine-tuned to maximise the probability of MH acceptance. Let  $k$  index training pairs, such that  $\\{(x^{(k)}(t),x^{(k)}(t+\\tau))\\}_{k=1}^K$  represents all pairs of states at times  $\\tau$  apart in  $\\mathcal{D}$ . During likelihood training, we optimise:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            225,
+            1805.0000000000002,
+            1217.5,
+            1805.0000000000002,
+            1217.5,
+            2142.5,
+            225,
+            2142.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        277.50000000000006,
+        2165,
+        1092.5,
+        2165,
+        1092.5,
+        2230,
+        277.50000000000006,
+        2230
+      ],
+      "ignore": false,
+      "order": 11,
+      "anno_id": 1,
+      "text": " $$ \\mathcal{L}_{\\text{lik}}(\\theta) := \\frac{1}{K} \\sum_{k=1}^{K} \\log p_{\\theta}(x^{(k)}(t+\\tau)|x^{(k)}(t)). $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            277.50000000000006,
+            2165,
+            1092.5,
+            2165,
+            1092.5,
+            2230,
+            277.50000000000006,
+            2230
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1140,
+        2172.5,
+        1200,
+        2172.5,
+        1200,
+        2217.5,
+        1140,
+        2217.5
+      ],
+      "ignore": false,
+      "order": 12,
+      "anno_id": 1,
+      "text": "(15)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1140,
+            2172.5,
+            1200,
+            2172.5,
+            1200,
+            2217.5,
+            1140,
+            2217.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        227.5,
+        2285,
+        1212.5,
+        2285,
+        1212.5,
+        2672.5,
+        227.5,
+        2672.5
+      ],
+      "ignore": false,
+      "order": 13,
+      "anno_id": 1,
+      "text": " Once likelihood training is complete, we add a fine-tuning stage to optimise the MH acceptance probability. Let  $x^{(k)}(t)$  be sampled uniformly from  $\\mathcal{D}$ . Then, we use the model to sample  $\\tilde{x}_{\\theta}^{(k)}(t+\\tau) \\sim p_{\\theta}(\\cdot | x^{(k)}(t))$  using Equation (3). Note that the sample value depends on  $\\theta$  through  $f_{\\theta}$ . We use this to optimise the acceptance probability in Equation (7) with respect to  $\\theta$ . Let  $r_{\\theta}(X, \\tilde{X})$  denote the model-dependent term in the acceptance ratio in Equation (7):",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.5,
+            2285,
+            1212.5,
+            2285,
+            1212.5,
+            2672.5,
+            227.5,
+            2672.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        412.5,
+        2705,
+        1020,
+        2705,
+        1020,
+        2827.5,
+        412.5,
+        2827.5
+      ],
+      "ignore": false,
+      "order": 14,
+      "anno_id": 1,
+      "text": " $$ r_{\\theta}(X,\\tilde{X}) := \\frac{\\mu_{\\text{aug}}(\\tilde{X})p_{\\theta}(X \\mid \\tilde{X}^p)}{\\mu_{\\text{aug}}(X)p_{\\theta}(\\tilde{X} \\mid X^p)}. $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            412.5,
+            2705,
+            1020,
+            2705,
+            1020,
+            2827.5,
+            412.5,
+            2827.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1137.5,
+        2740,
+        1207.5,
+        2740,
+        1207.5,
+        2782.5,
+        1137.5,
+        2782.5
+      ],
+      "ignore": false,
+      "order": 15,
+      "anno_id": 1,
+      "text": "(16)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1137.5,
+            2740,
+            1207.5,
+            2740,
+            1207.5,
+            2782.5,
+            1137.5,
+            2782.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1142.5,
+        2932.5,
+        1195,
+        2932.5,
+        1195,
+        2970,
+        1142.5,
+        2970
+      ],
+      "ignore": false,
+      "order": "18",
+      "anno_id": 1,
+      "text": "(17)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1142.5,
+            2932.5,
+            1195,
+            2932.5,
+            1195,
+            2970,
+            1142.5,
+            2970
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        220,
+        2842.5,
+        855,
+        2842.5,
+        855,
+        2892.5,
+        220,
+        2892.5
+      ],
+      "ignore": false,
+      "order": "16",
+      "anno_id": 1,
+      "text": " The acceptance objective is given by:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            220,
+            2842.5,
+            855,
+            2842.5,
+            855,
+            2892.5,
+            220,
+            2892.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        265,
+        2915,
+        1102.5,
+        2915,
+        1102.5,
+        2980,
+        265,
+        2980
+      ],
+      "ignore": false,
+      "order": "17",
+      "anno_id": 1,
+      "text": " $$ \\mathcal{L}_{\\text{acc}}(\\theta) := \\frac{1}{K} \\sum_{k=1}^{K} \\log r_{\\theta}(x^{(k)}(t), \\tilde{x}_{\\theta}^{(k)}(t+\\tau)). $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            265,
+            2915,
+            1102.5,
+            2915,
+            1102.5,
+            2980,
+            265,
+            2980
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2185,
+        2627.5,
+        2265,
+        2627.5,
+        2265,
+        2675,
+        2185,
+        2675
+      ],
+      "ignore": false,
+      "order": "28",
+      "anno_id": 1,
+      "text": "(19)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2185,
+            2627.5,
+            2265,
+            2627.5,
+            2265,
+            2675,
+            2185,
+            2675
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1342.5,
+        2597.5,
+        2122.5,
+        2597.5,
+        2122.5,
+        2712.5,
+        1342.5,
+        2712.5
+      ],
+      "ignore": false,
+      "order": "27",
+      "anno_id": 1,
+      "text": " $$ \\text{ESS/s} = \\frac{M_{\\text{eff}}}{t_{\\text{sampling}}} = \\frac{M}{t_{\\text{sampling}} \\left(1 + 2\\sum_{\\tau=1}^{\\infty} \\rho_{\\tau}\\right)}, $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1342.5,
+            2597.5,
+            2122.5,
+            2597.5,
+            2122.5,
+            2712.5,
+            1342.5,
+            2712.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1275,
+        2745,
+        2267.5,
+        2745,
+        2267.5,
+        2990,
+        1275,
+        2990
+      ],
+      "ignore": false,
+      "order": "29",
+      "anno_id": 1,
+      "text": "  where  $M$  is the chain length,  $M_{eff}$  is the effective number of samples,  $t_{sampling}$  is the sampling wall-clock time, and  $\\rho_{\\tau}$  is the autocorrelation for the lag time  $\\tau$  (Neal, 1993). The speed-up factor is defined as the ESS/s achieved by Timewarp divided by the ESS/s achieved by MD. Additional![](_page_6_Figure_1.jpeg)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1275,
+            2745,
+            2267.5,
+            2745,
+            2267.5,
+            2990,
+            1275,
+            2990
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1282.5,
+        1934.9999999999998,
+        1610,
+        1934.9999999999998,
+        1610,
+        1982.4999999999998,
+        1282.5,
+        1982.4999999999998
+      ],
+      "ignore": false,
+      "order": "25",
+      "anno_id": 1,
+      "text": " # **6. Experiments**",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1282.5,
+            1934.9999999999998,
+            1610,
+            1934.9999999999998,
+            1610,
+            1982.4999999999998,
+            1282.5,
+            1982.4999999999998
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1280,
+        2017.5,
+        2260,
+        2017.5,
+        2260,
+        2555,
+        1280,
+        2555
+      ],
+      "ignore": false,
+      "order": "26",
+      "anno_id": 1,
+      "text": " We evaluate Timewarp on small peptide systems. To compare with MD, we focus on the slowest transitions between metastable states, as these are the most difficult to traverse. To find these, we use *time-lagged independent component* analysis (TICA) (Pérez-Hernández et al., 2013), a linear dimensionality reduction technique that maximises the autocorrelation of the transformed coordinates. The slowest components, TIC 0 and TIC 1, are of particular interest. To measure the speed-up achieved by Timewarp, we compute the *effective sample size* per second of wall-clock time (ESS/s) for the TICA components. The ESS/s is given by:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1280,
+            2017.5,
+            2260,
+            2017.5,
+            2260,
+            2555,
+            1280,
+            2555
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1280,
+        1820,
+        2232.5,
+        1820,
+        2232.5,
+        1865,
+        1280,
+        1865
+      ],
+      "ignore": false,
+      "order": 24,
+      "anno_id": 1,
+      "text": " The weighting factors for each term are hyperparameters.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1280,
+            1820,
+            2232.5,
+            1820,
+            2232.5,
+            1865,
+            1280,
+            1865
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1302.5,
+        1717.5,
+        2162.5,
+        1717.5,
+        2162.5,
+        1777.5,
+        1302.5,
+        1777.5
+      ],
+      "ignore": false,
+      "order": "22",
+      "anno_id": 1,
+      "text": " $$ \\mathcal{L}_{\\text{ent}}(\\theta) := -\\frac{1}{K} \\sum_{k=1}^{K} \\log p_{\\theta}(\\tilde{x}_{\\theta}^{(k)}(t+\\tau)|x^{(k)}(t)). $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1302.5,
+            1717.5,
+            2162.5,
+            1717.5,
+            2162.5,
+            1777.5,
+            1302.5,
+            1777.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2177.5,
+        1725,
+        2250,
+        1725,
+        2250,
+        1767.5,
+        2177.5,
+        1767.5
+      ],
+      "ignore": false,
+      "order": "23",
+      "anno_id": 1,
+      "text": "(18)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2177.5,
+            1725,
+            2250,
+            1725,
+            2250,
+            1767.5,
+            2177.5,
+            1767.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1280,
+        1370,
+        2257.5,
+        1370,
+        2257.5,
+        1677.5,
+        1280,
+        1677.5
+      ],
+      "ignore": false,
+      "order": "21",
+      "anno_id": 1,
+      "text": " Training to maximise the acceptance probability can lead to the model proposing changes that are too small: if  $\\tilde{x}_{\\theta}^{(k)}(t+\\tau) = x^{(k)}(t)$ , then all proposals will be accepted.  To mitigate this, during acceptance training, we use an objective which is a weighted average of  $\\mathcal{L}_{acc}(\\theta)$ ,  $\\mathcal{L}_{lik}(\\theta)$  and a Monte Carlo estimate of the average differential entropy,",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1280,
+            1370,
+            2257.5,
+            1370,
+            2257.5,
+            1677.5,
+            1280,
+            1677.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        1277.5,
+        967.5,
+        2262.5,
+        967.5,
+        2262.5,
+        1282.5,
+        1277.5,
+        1282.5
+      ],
+      "ignore": false,
+      "order": "20",
+      "anno_id": 1,
+      "text": " Figure 3. Alanine dipeptide experiments. (a) Ramachandran plots for MD and Timewarp samples generated according to Algorithm 1. (b) Free energy comparison for the two dihedral angles  $\\varphi$  and  $\\psi$ . (c) Ramachandran plots for the conditional distribution of MD compared with the Timewarp model. Red cross denotes initial state. (d) Time dependence of the  $\\varphi$  dihedral angle of MD and the Markov chain generated with the Timewarp model.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1277.5,
+            967.5,
+            2262.5,
+            967.5,
+            2262.5,
+            1282.5,
+            1277.5,
+            1282.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        1270,
+        275,
+        2257.5,
+        275,
+        2257.5,
+        862.5,
+        1270,
+        862.5
+      ],
+      "ignore": false,
+      "order": "19",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1270,
+            275,
+            2257.5,
+            275,
+            2257.5,
+            862.5,
+            1270,
+            862.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 782,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "77_6_png.jpg"
+  }
+}

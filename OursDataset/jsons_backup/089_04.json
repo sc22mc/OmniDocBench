@@ -1,0 +1,1116 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        147.4999999999999,
+        132.5,
+        1745,
+        132.5,
+        1745,
+        170,
+        147.4999999999999,
+        170
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "BARBISAN et al.: MACHINE LEARNING APPROACH FOR QUEEN BEE DETECTION THROUGH REMOTE AUDIO SENSING",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            147.4999999999999,
+            132.5,
+            1745,
+            132.5,
+            1745,
+            170,
+            147.4999999999999,
+            170
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "header",
+      "poly": [
+        2237.5,
+        130,
+        2310,
+        130,
+        2310,
+        170,
+        2237.5,
+        170
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "239",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2237.5,
+            130,
+            2310,
+            130,
+            2310,
+            170,
+            2237.5,
+            170
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        150,
+        267.5,
+        1202.5,
+        267.5,
+        1202.5,
+        362.5,
+        150,
+        362.5
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "amount of coefficients but reducing the necessary steps and computational complexity with respect to the MFCC as follows.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            150,
+            267.5,
+            1202.5,
+            267.5,
+            1202.5,
+            362.5,
+            150,
+            362.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        182.5,
+        355,
+        1210,
+        355,
+        1210,
+        912.5,
+        182.5,
+        912.5
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " - 1) Division of the audio into windows ranging from 256 to 4096 audio samples without overlapping. - 2) Application of the Hann windowing function for signal smoothing at the window edges. - 3) Application of DFT to each window for signal frequency domain conversion. - 4) Computation of the magnitude of the spectrogram. - 5) Calculation of the mean value for each frequency bin across all chunk duration. This step results in a number of input values for the classifier that depends on the window size  $n_{\\text{bins}} = \\frac{m}{2} + 1$ , where m represents the window size.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            182.5,
+            355,
+            1210,
+            355,
+            1210,
+            912.5,
+            182.5,
+            912.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        150,
+        1040,
+        1205,
+        1040,
+        1205,
+        1477.5,
+        150,
+        1477.5
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": " In this study, we conducted a comparison between two distinct classifiers for the binary classification task: one is a NN implemented through the Keras library  $[35]$ , and the other is a SVM implemented using the scikit-learn (sklearn) library [36]. We focused on these two algorithms without considering convolutional networks that are used in other works [21], [29] because our intention is to keep the complexity of these algorithms low, with the aim of deploying them in microcontroller systems with low hardware resources.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            150,
+            1040,
+            1205,
+            1040,
+            1205,
+            1477.5,
+            150,
+            1477.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        147.5,
+        1482.5,
+        1215,
+        1482.5,
+        1215,
+        2182.5,
+        147.5,
+        2182.5
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": " 1) NN Classifier: Represents a powerful and adaptable machine learning model with the capability to identify intricate patterns in data. The presented approach involved constructing a multilayer perceptron architecture with fully connected layers. There are two hidden layers, the first with eight neurons and the second with four neurons. This architecture is used in all the experiments except for the one in which different NN sizes are compared (Section III-B). Each node is implemented with rectified linear unit (ReLU) activation function, while the output layers employ a sigmoid function. The final step involved converting the output to a binary value using a threshold of  $0.5$ . During the training process, we implemented early stopping with a patience of  $5$  to prevent overfitting and identify the optimal number of epochs necessary for the training.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            147.5,
+            1482.5,
+            1215,
+            1482.5,
+            1215,
+            2182.5,
+            147.5,
+            2182.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        145,
+        2182.5,
+        1212.5,
+        2182.5,
+        1212.5,
+        2625,
+        145,
+        2625
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": " 2) SVM Classifier: It is a widely adopted and powerful supervised learning algorithm designed for classification tasks. Its functionality involves identifying an optimal hyperplane that maximizes the separation between data points associated with distinct classes. In our implementation of SVM, we employed the sklearn library [36], which offers a robust set of tools for machine learning in Python. During our experimentation, we specifically worked with the radial basis function kernel function and fine-tuned the  $C$  parameter for optimal performance.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            145,
+            2182.5,
+            1212.5,
+            2182.5,
+            1212.5,
+            2625,
+            145,
+            2625
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        152.5,
+        2640,
+        1212.5,
+        2640,
+        1212.5,
+        2820,
+        152.5,
+        2820
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": " These classifier parameters are chosen in order to replicate the architecture used in  $[29]$ , but reducing the complexity of the models removing the convolution layers and scaling down the architecture size and obtaining a lighter model.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            152.5,
+            2640,
+            1212.5,
+            2640,
+            1212.5,
+            2820,
+            152.5,
+            2820
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        142.5,
+        2957.5,
+        1212.5,
+        2957.5,
+        1212.5,
+        3110,
+        142.5,
+        3110
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": " At the end of each experiment, obtaining a set of parameters is crucial to compare different characteristics and provide a good estimation of which model performs better in detecting ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            142.5,
+            2957.5,
+            1212.5,
+            2957.5,
+            1212.5,
+            3110,
+            142.5,
+            3110
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1237.5,
+        2960,
+        2305,
+        2960,
+        2305,
+        3107.5,
+        1237.5,
+        3107.5
+      ],
+      "ignore": false,
+      "order": "29",
+      "anno_id": 1,
+      "text": "In this work, we enriched our Python framework introduced in  $[25]$ . Specifically, we integrated the possibility of managing additional datasets, and in particular the dataset presented",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1237.5,
+            2960,
+            2305,
+            2960,
+            2305,
+            3107.5,
+            1237.5,
+            3107.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1252.5,
+        2530,
+        2307.5,
+        2530,
+        2307.5,
+        2827.5,
+        1252.5,
+        2827.5
+      ],
+      "ignore": false,
+      "order": "27",
+      "anno_id": 1,
+      "text": "y evaluating these metrics, it becomes possible to comprehensively assess the classification performance of different models, considering various aspects. The use of cross-validation ensures a robust evaluation, and reporting both mean values and standard deviations adds a measure of the stability of the model's performance across different folds.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1252.5,
+            2530,
+            2307.5,
+            2530,
+            2307.5,
+            2827.5,
+            1252.5,
+            2827.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1285,
+        2382.5,
+        2310,
+        2382.5,
+        2310,
+        2527.5,
+        1285,
+        2527.5
+      ],
+      "ignore": false,
+      "order": "26",
+      "anno_id": 1,
+      "text": "- 6) *Confusion matrix:* Provides a detailed breakdown of TP, TN, FP, and FN predictions. It is especially useful for understanding the model's performance on the final test.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1285,
+            2382.5,
+            2310,
+            2382.5,
+            2310,
+            2527.5,
+            1285,
+            2527.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1292.5,
+        2125,
+        2302.5,
+        2125,
+        2302.5,
+        2372.5,
+        1292.5,
+        2372.5
+      ],
+      "ignore": false,
+      "order": "25",
+      "anno_id": 1,
+      "text": "- 5) Receiver operating characteristic area under the curve (ROC AUC): ROC AUC represents the area under the ROC curve, which is a plot of the TRP against the FP rate. It evaluates the model's ability to distinguish between classes.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1292.5,
+            2125,
+            2302.5,
+            2125,
+            2302.5,
+            2372.5,
+            1292.5,
+            2372.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1292.5,
+        1834.9999999999998,
+        2302.5,
+        1834.9999999999998,
+        2302.5,
+        1982.4999999999998,
+        1292.5,
+        1982.4999999999998
+      ],
+      "ignore": false,
+      "order": "22",
+      "anno_id": 1,
+      "text": "4) *F1 score:* The F1 score is the harmonic mean of precision and recall. It provides a balance between precision and recall, considering both FP and FN",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1292.5,
+            1834.9999999999998,
+            2302.5,
+            1834.9999999999998,
+            2302.5,
+            1982.4999999999998,
+            1292.5,
+            1982.4999999999998
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1287.5,
+        1547.5,
+        2310,
+        1547.5,
+        2310,
+        1692.5,
+        1287.5,
+        1692.5
+      ],
+      "ignore": false,
+      "order": "19",
+      "anno_id": 1,
+      "text": "3) Accuracy: Measures the overall correctness of the classification model. It is the ratio of correctly predicted instances to the total instances",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1287.5,
+            1547.5,
+            2310,
+            1547.5,
+            2310,
+            1692.5,
+            1287.5,
+            1692.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1280,
+        1212.5,
+        2305,
+        1212.5,
+        2305,
+        1405,
+        1280,
+        1405
+      ],
+      "ignore": false,
+      "order": 16,
+      "anno_id": 1,
+      "text": "2) *Recall [true positive rate (TPR)]:* It is the ratio of correctly predicted positive observations to the total actual positives. It assesses the ability of the model to capture all the relevant instances",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1280,
+            1212.5,
+            2305,
+            1212.5,
+            2305,
+            1405,
+            1280,
+            1405
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1290,
+        860,
+        2310,
+        860,
+        2310,
+        1057.5,
+        1290,
+        1057.5
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": "1) *Precision [positive predicted value (PPV)]:* It is the ratio of correctly predicted positive observations to the total predicted positives. It provides insights into the accuracy of positive predictions",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1290,
+            860,
+            2310,
+            860,
+            2310,
+            1057.5,
+            1290,
+            1057.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1245,
+        267.5,
+        2310,
+        267.5,
+        2310,
+        852.5,
+        1245,
+        852.5
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": " the presence of the queen bee. In particular, this work adopts the technique of crossvalidation by dividing the training set into tenfolds. The metrics extracted include both the mean value and the standard deviation, which are extracted across ten models. These models are trained with nine folds and tested with the remaining fold, with a variation in the selected folders for each iteration. The metrics presented are the most common and widely used for binary classifiers considering true positive (TP) and true negative (TN) the correctly predicted values that can be positive (queen presence) or negative (queen absence), and the  $\\text{false positive (FP)}$  and  $\\text{false negative (FN)}$  the wrong predicted samples as follows.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1245,
+            267.5,
+            2310,
+            267.5,
+            2310,
+            852.5,
+            1245,
+            852.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        155,
+        965,
+        395,
+        965,
+        395,
+        1012.5,
+        155,
+        1012.5
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": " ## D. Classifiers",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            155,
+            965,
+            395,
+            965,
+            395,
+            1012.5,
+            155,
+            1012.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        152.5,
+        2885,
+        537.5,
+        2885,
+        537.5,
+        2935,
+        152.5,
+        2935
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": " ## E. Evaluation Metrics",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            152.5,
+            2885,
+            537.5,
+            2885,
+            537.5,
+            2935,
+            152.5,
+            2935
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1255,
+        2880,
+        1740,
+        2880,
+        1740,
+        2935,
+        1255,
+        2935
+      ],
+      "ignore": false,
+      "order": "28",
+      "anno_id": 1,
+      "text": "## F. Framework Improvements",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1255,
+            2880,
+            1740,
+            2880,
+            1740,
+            2935,
+            1255,
+            2935
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1670,
+        1095,
+        1980,
+        1095,
+        1980,
+        1195,
+        1670,
+        1195
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": " $$ PPV = \\frac{TP}{TP + FP}. $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1670,
+            1095,
+            1980,
+            1095,
+            1980,
+            1195,
+            1670,
+            1195
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1672.5,
+        1420,
+        1985,
+        1420,
+        1985,
+        1525,
+        1672.5,
+        1525
+      ],
+      "ignore": false,
+      "order": "17",
+      "anno_id": 1,
+      "text": "$$ TPR = \\frac{TP}{TP + FN} $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1672.5,
+            1420,
+            1985,
+            1420,
+            1985,
+            1525,
+            1672.5,
+            1525
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1562.5,
+        1707.5,
+        2097.5,
+        1707.5,
+        2097.5,
+        1812.5,
+        1562.5,
+        1812.5
+      ],
+      "ignore": false,
+      "order": "20",
+      "anno_id": 1,
+      "text": "$$ \\text{ACC} = \\frac{\\text{TP} + \\text{TN}}{\\text{TP} + \\text{FN} + \\text{FP} + \\text{TN}}. $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1562.5,
+            1707.5,
+            2097.5,
+            1707.5,
+            2097.5,
+            1812.5,
+            1562.5,
+            1812.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1567.5,
+        2007.5,
+        2087.5,
+        2007.5,
+        2087.5,
+        2107.5,
+        1567.5,
+        2107.5
+      ],
+      "ignore": false,
+      "order": "23",
+      "anno_id": 1,
+      "text": " $$ F_1 \\text{score} = \\frac{2 \\cdot \\text{TP}}{2 \\cdot \\text{TP} + \\text{FP} + \\text{FN}}. $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1567.5,
+            2007.5,
+            2087.5,
+            2007.5,
+            2087.5,
+            2107.5,
+            1567.5,
+            2107.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2250,
+        1117.5,
+        2302.5,
+        1117.5,
+        2302.5,
+        1152.5,
+        2250,
+        1152.5
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": "(1)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2250,
+            1117.5,
+            2302.5,
+            1117.5,
+            2302.5,
+            1152.5,
+            2250,
+            1152.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2245,
+        1455,
+        2295,
+        1455,
+        2295,
+        1495,
+        2245,
+        1495
+      ],
+      "ignore": false,
+      "order": "18",
+      "anno_id": 1,
+      "text": " (2)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2245,
+            1455,
+            2295,
+            1455,
+            2295,
+            1495,
+            2245,
+            1495
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2252.5,
+        1742.5,
+        2300,
+        1742.5,
+        2300,
+        1782.5,
+        2252.5,
+        1782.5
+      ],
+      "ignore": false,
+      "order": "21",
+      "anno_id": 1,
+      "text": " (3)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2252.5,
+            1742.5,
+            2300,
+            1742.5,
+            2300,
+            1782.5,
+            2252.5,
+            1782.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2257.5,
+        2035,
+        2310,
+        2035,
+        2310,
+        2075,
+        2257.5,
+        2075
+      ],
+      "ignore": false,
+      "order": "24",
+      "anno_id": 1,
+      "text": " (4)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2257.5,
+            2035,
+            2310,
+            2035,
+            2310,
+            2075,
+            2257.5,
+            2075
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 923,
+    "height": 3300,
+    "width": 2475,
+    "image_path": "89_4_png.jpg"
+  }
+}

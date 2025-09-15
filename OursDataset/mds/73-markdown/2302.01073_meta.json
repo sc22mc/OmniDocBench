@@ -1,0 +1,1422 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Learning in Multi-Memory Games Triggers Complex Dynamics\nDiverging from Nash Equilibrium",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          85.5,
+          111.0
+        ],
+        [
+          525.33984375,
+          108.75
+        ],
+        [
+          525.33984375,
+          147.919921875
+        ],
+        [
+          85.5,
+          147.919921875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          285.0,
+          321.0
+        ],
+        [
+          326.25,
+          321.0
+        ],
+        [
+          326.25,
+          330.2578125
+        ],
+        [
+          285.0,
+          330.2578125
+        ]
+      ]
+    },
+    {
+      "title": "1\nIntroduction",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          70.5,
+          496.5
+        ],
+        [
+          185.2734375,
+          496.5
+        ],
+        [
+          185.2734375,
+          510.46875
+        ],
+        [
+          70.5,
+          510.46875
+        ]
+      ]
+    },
+    {
+      "title": "Preliminary\n2",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          70.5,
+          71.0595703125
+        ],
+        [
+          180.4921875,
+          71.0595703125
+        ],
+        [
+          180.4921875,
+          83.724609375
+        ],
+        [
+          70.5,
+          83.724609375
+        ]
+      ]
+    },
+    {
+      "title": "Two-Player Normal-Form Game\n2.1",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          70.5,
+          96.75
+        ],
+        [
+          294.0,
+          96.75
+        ],
+        [
+          294.0,
+          107.701171875
+        ],
+        [
+          70.5,
+          107.701171875
+        ]
+      ]
+    },
+    {
+      "title": "2.2\nTwo-Player Multi-Memory Repeated Game",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          70.5,
+          166.5
+        ],
+        [
+          360.75,
+          166.5
+        ],
+        [
+          360.75,
+          177.2138671875
+        ],
+        [
+          70.5,
+          177.2138671875
+        ]
+      ]
+    },
+    {
+      "title": "2.3\nFormulation as Markov Games",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          70.5,
+          283.5
+        ],
+        [
+          285.0,
+          283.5
+        ],
+        [
+          285.0,
+          294.486328125
+        ],
+        [
+          70.5,
+          294.486328125
+        ]
+      ]
+    },
+    {
+      "title": "Nash Equilibrium\n2.4",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          70.5,
+          561.0
+        ],
+        [
+          207.0,
+          561.0
+        ],
+        [
+          207.0,
+          571.95703125
+        ],
+        [
+          70.5,
+          571.95703125
+        ]
+      ]
+    },
+    {
+      "title": "Algorithm\n3",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          70.5,
+          70.5
+        ],
+        [
+          169.5,
+          70.5
+        ],
+        [
+          169.5,
+          84.111328125
+        ],
+        [
+          70.5,
+          84.111328125
+        ]
+      ]
+    },
+    {
+      "title": "Algorithm 1 Discretized MMRD\nInput: \\eta\n1: for t = 0, 1, 2, \\cdots do\nX chooses a with probability x^{a|s_i}\n2:\n(Y chooses b with probability y^{b|s_i})\n3:\ns_{i'} \\leftarrow abs_{i}^{-}\n4:\nx^{a|s_i} \\leftarrow x^{a|s_i} + \\eta \\pi(\\boldsymbol{e}_{i'}, \\mathbf{x}, \\mathbf{y})\n5:\n\\mathbf{x} \\leftarrow \\text{Norm}(\\mathbf{x})\n6:\n7:\ns_i \\leftarrow s_{i'}\n8: end for",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          70.5,
+          351.0
+        ],
+        [
+          258.1875,
+          351.0
+        ],
+        [
+          258.1875,
+          471.75
+        ],
+        [
+          70.5,
+          471.75
+        ]
+      ]
+    },
+    {
+      "title": "Algorithm 2 Discretized MMGA",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          70.822265625,
+          549.75
+        ],
+        [
+          222.7763671875,
+          549.75
+        ],
+        [
+          222.7763671875,
+          561.12890625
+        ],
+        [
+          70.822265625,
+          561.12890625
+        ]
+      ]
+    },
+    {
+      "title": "4\nTheoretical Analysis",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.5,
+          152.0771484375
+        ],
+        [
+          240.75,
+          152.0771484375
+        ],
+        [
+          240.75,
+          165.0322265625
+        ],
+        [
+          70.5,
+          165.0322265625
+        ]
+      ]
+    },
+    {
+      "title": "4.1\nContinuous-Time Equivalence of Algorithms",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.5,
+          177.75
+        ],
+        [
+          363.75,
+          177.75
+        ],
+        [
+          363.75,
+          188.912109375
+        ],
+        [
+          70.5,
+          188.912109375
+        ]
+      ]
+    },
+    {
+      "title": "4.2\nLearning Dynamics Near Nash Equilibrium",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.5,
+          661.5
+        ],
+        [
+          359.25,
+          661.5
+        ],
+        [
+          359.25,
+          672.50390625
+        ],
+        [
+          70.5,
+          672.50390625
+        ]
+      ]
+    },
+    {
+      "title": "5\nExperimental Findings",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          70.5,
+          295.453125
+        ],
+        [
+          256.5,
+          295.453125
+        ],
+        [
+          256.5,
+          308.98828125
+        ],
+        [
+          70.5,
+          308.98828125
+        ]
+      ]
+    },
+    {
+      "title": "Simulation and Low-Order Approximation\n5.1",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          70.5,
+          320.783203125
+        ],
+        [
+          352.5,
+          320.783203125
+        ],
+        [
+          352.5,
+          331.998046875
+        ],
+        [
+          70.5,
+          331.998046875
+        ]
+      ]
+    },
+    {
+      "title": "5.2\nChaos-Like and Heteroclinic Dynamics",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          70.5,
+          138.75
+        ],
+        [
+          331.5,
+          138.75
+        ],
+        [
+          331.5,
+          149.7568359375
+        ],
+        [
+          70.5,
+          149.7568359375
+        ]
+      ]
+    },
+    {
+      "title": "5.3\nDivergence in General Memories and Actions",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          70.5,
+          365.25
+        ],
+        [
+          371.25,
+          365.25
+        ],
+        [
+          371.25,
+          376.27734375
+        ],
+        [
+          70.5,
+          376.27734375
+        ]
+      ]
+    },
+    {
+      "title": "6\nConclusion",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          70.5,
+          556.5
+        ],
+        [
+          173.3203125,
+          556.5
+        ],
+        [
+          173.3203125,
+          569.25
+        ],
+        [
+          70.5,
+          569.25
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          70.5,
+          164.25
+        ],
+        [
+          147.1728515625,
+          164.25
+        ],
+        [
+          147.1728515625,
+          177.697265625
+        ],
+        [
+          70.5,
+          177.697265625
+        ]
+      ]
+    },
+    {
+      "title": "\\mathbf{Proofs}\n\\mathbf{A}",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          70.5,
+          69.75
+        ],
+        [
+          146.94873046875,
+          69.75
+        ],
+        [
+          146.94873046875,
+          83.8212890625
+        ],
+        [
+          70.5,
+          83.8212890625
+        ]
+      ]
+    },
+    {
+      "title": "Proof of Theorem 1\n\\mathbf{A.1}",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          70.5,
+          96.0
+        ],
+        [
+          222.75,
+          96.0
+        ],
+        [
+          222.75,
+          108.087890625
+        ],
+        [
+          70.5,
+          108.087890625
+        ]
+      ]
+    },
+    {
+      "title": "Proof of Theorem 2\n\\mathrm{A.2}",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          70.5,
+          414.75
+        ],
+        [
+          222.75,
+          414.75
+        ],
+        [
+          222.75,
+          426.55078125
+        ],
+        [
+          70.5,
+          426.55078125
+        ]
+      ]
+    },
+    {
+      "title": "Proof of Theorem 3\n\\text{A.3}",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          70.5,
+          567.0
+        ],
+        [
+          222.75,
+          567.0
+        ],
+        [
+          222.75,
+          578.53125
+        ],
+        [
+          70.5,
+          578.53125
+        ]
+      ]
+    },
+    {
+      "title": "Proof of Theorem 4\n\\mathbf{A.4}",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          70.5,
+          495.75
+        ],
+        [
+          222.75,
+          495.75
+        ],
+        [
+          222.75,
+          507.76171875
+        ],
+        [
+          70.5,
+          507.76171875
+        ]
+      ]
+    },
+    {
+      "title": "Analysis of Learning Dynamics\n\\mathbf{B}",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          70.5,
+          371.830078125
+        ],
+        [
+          320.044921875,
+          371.830078125
+        ],
+        [
+          320.044921875,
+          384.978515625
+        ],
+        [
+          70.5,
+          384.978515625
+        ]
+      ]
+    },
+    {
+      "title": "\\text{Simpler MMGA} for Two-action Games\n\\text{B.1}",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          70.5,
+          397.5
+        ],
+        [
+          336.779296875,
+          397.5
+        ],
+        [
+          336.779296875,
+          408.375
+        ],
+        [
+          70.5,
+          408.375
+        ]
+      ]
+    },
+    {
+      "title": "Approximation of learning dynamics\nB.2",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          70.5,
+          351.0
+        ],
+        [
+          321.5390625,
+          351.0
+        ],
+        [
+          321.5390625,
+          363.322265625
+        ],
+        [
+          70.5,
+          363.322265625
+        ]
+      ]
+    },
+    {
+      "title": "B.3\nMethod to Calculate the Stationary State",
+      "heading_level": null,
+      "page_id": 17,
+      "polygon": [
+        [
+          69.75,
+          369.75
+        ],
+        [
+          353.25,
+          369.75
+        ],
+        [
+          353.25,
+          381.111328125
+        ],
+        [
+          69.75,
+          381.111328125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          52
+        ],
+        [
+          "Line",
+          49
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 5690,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          67
+        ],
+        [
+          "Line",
+          54
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          123
+        ],
+        [
+          "Line",
+          41
+        ],
+        [
+          "TextInlineMath",
+          6
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 23,
+        "llm_error_count": 4,
+        "llm_tokens_used": 92308,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          94
+        ],
+        [
+          "Line",
+          56
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "TextInlineMath",
+          2
+        ],
+        [
+          "Code",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 4,
+        "llm_error_count": 0,
+        "llm_tokens_used": 16058,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          104
+        ],
+        [
+          "Line",
+          39
+        ],
+        [
+          "TextInlineMath",
+          7
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 26,
+        "llm_error_count": 2,
+        "llm_tokens_used": 104902,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          85
+        ],
+        [
+          "Line",
+          65
+        ],
+        [
+          "TextInlineMath",
+          4
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 11,
+        "llm_error_count": 1,
+        "llm_tokens_used": 45592,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          147
+        ],
+        [
+          "Span",
+          48
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "TextInlineMath",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 3970,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          105
+        ],
+        [
+          "Line",
+          44
+        ],
+        [
+          "TextInlineMath",
+          4
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 15,
+        "llm_error_count": 2,
+        "llm_tokens_used": 62267,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          79
+        ],
+        [
+          "Line",
+          41
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "TextInlineMath",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 6,
+        "llm_error_count": 0,
+        "llm_tokens_used": 20331,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          76
+        ],
+        [
+          "Line",
+          42
+        ],
+        [
+          "ListItem",
+          18
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          91
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "ListItem",
+          20
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          12
+        ],
+        [
+          "Line",
+          6
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          62
+        ],
+        [
+          "Line",
+          28
+        ],
+        [
+          "Equation",
+          9
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "TextInlineMath",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 14,
+        "llm_error_count": 2,
+        "llm_tokens_used": 53051,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          42
+        ],
+        [
+          "Equation",
+          17
+        ],
+        [
+          "Line",
+          12
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "TextInlineMath",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 27,
+        "llm_error_count": 2,
+        "llm_tokens_used": 107238,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 14,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          101
+        ],
+        [
+          "Line",
+          43
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "TextInlineMath",
+          3
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Code",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 15,
+        "llm_error_count": 3,
+        "llm_tokens_used": 61755,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 15,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          41
+        ],
+        [
+          "Line",
+          23
+        ],
+        [
+          "Equation",
+          14
+        ],
+        [
+          "TextInlineMath",
+          3
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 24,
+        "llm_error_count": 0,
+        "llm_tokens_used": 95181,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 16,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          24
+        ],
+        [
+          "Equation",
+          14
+        ],
+        [
+          "Span",
+          11
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "TextInlineMath",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 15,
+        "llm_error_count": 1,
+        "llm_tokens_used": 60920,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 17,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          30
+        ],
+        [
+          "Line",
+          15
+        ],
+        [
+          "Equation",
+          14
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "TextInlineMath",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 16,
+        "llm_error_count": 0,
+        "llm_tokens_used": 65508,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/2302.01073"
+}

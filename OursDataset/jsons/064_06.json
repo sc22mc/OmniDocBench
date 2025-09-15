@@ -1,0 +1,436 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                512.5000000000001,
+                192.5,
+                1982.5,
+                192.5,
+                1982.5,
+                232.5,
+                512.5000000000001,
+                232.5
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "QR-CLIP: Introducing Explicit Open-World Knowledge for Location and Time Reasoning",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        512.5000000000001,
+                        192.5,
+                        1982.5,
+                        192.5,
+                        1982.5,
+                        232.5,
+                        512.5000000000001,
+                        232.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                232.50000000000003,
+                282.5,
+                680,
+                282.5,
+                680,
+                320,
+                232.50000000000003,
+                320
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": " ## 4.2. Comparative Results",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        232.50000000000003,
+                        282.5,
+                        680,
+                        282.5,
+                        680,
+                        320,
+                        232.50000000000003,
+                        320
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                222.5,
+                364.99999999999994,
+                1205,
+                364.99999999999994,
+                1205,
+                650,
+                222.5,
+                650
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " Location Reasoning. We compare the results of our QR-CLIP with other methods for location reasoning in Tab. 1. QR-CLIP, achieves accuracy of 19.31% Accuracy (R@1). Meanwhile, its Example-F1 score for the hierarchical labels is  $50.96\\%$ . All the results clearly show that our method outperforms other methods.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        222.5,
+                        364.99999999999994,
+                        1205,
+                        364.99999999999994,
+                        1205,
+                        650,
+                        222.5,
+                        650
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                222.5,
+                685,
+                1207.5,
+                685,
+                1207.5,
+                1375,
+                222.5,
+                1375
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " (1) Compared with ResNet-50 (He et al., 2016) and Swin-T (Liu et al., 2021), vanilla CLIP achieves 7.93% and 4.41% absolute improvement in location prediction accuracy ( $ID$ :  $1,2,3$ ). It indicates that compared with the vision model only trained on ImageNet (Deng et al., 2009), CLIP already possesses some knowledge for reasoning. Meanwhile, our QR-CLIP achieves a more significant advantage with 16.13% and 12.61% absolute improvements in terms of accuracy (ID:  $1,2,6$ ). These results show that traditional image classification methods cannot accomplish inference of the abstract information behind the images. While the CLIP model trained on large-scale internet data have the ability to identify locations based on image data, and QR-CLIP significantly enhances this capability.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        222.5,
+                        685,
+                        1207.5,
+                        685,
+                        1207.5,
+                        1375,
+                        222.5,
+                        1375
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                222.5,
+                1412.5,
+                1215,
+                1412.5,
+                1215,
+                2255,
+                222.5,
+                2255
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": " (2) Besides, compared to CLIP<sup>†</sup> and the state-of-the-art method CLIP+Seg, QR-CLIP improves the accuracy by 3.59% and 2.85% absolute improvement, the F1-Score has increased by  $3.88\\%$  and  $3.07\\%$ , respectively (ID: 4,5,6). Other evaluation metrics also improved. The results show that QR-CLIP can effectively utilize open-world knowledge to establish a closer connection between image and location information through fine-tuning CLIP. However, we also find that the improvement in Example-F1 is not as obvious. We argue that this is because the mechanism of Example-F1: take the image of Fig. 1 as an example—the picture show many Arabia elements (turban and Arabic). It is not difficult for many models to recognize that this image was captured in the Middle East and to predict its hierarchical label as  $\\{`Asia'\\}$ . However, they failed when asked to predict the entire label {'Riyadh, Saudi Arabia, Asia\"}. Therefore, the discrepancy in other metrics may be more noticeable.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        222.5,
+                        1412.5,
+                        1215,
+                        1412.5,
+                        1215,
+                        2255,
+                        222.5,
+                        2255
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                222.5,
+                2275,
+                1212.5,
+                2275,
+                1212.5,
+                2977.5,
+                222.5,
+                2977.5
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " **Time Reasoning.** Tab. 1 also presents the performance of our method and existing techniques for time reasoning. The Accuracy (R@1) of QR-CLIP is 3.53%, and Example-F1 is 47.89%; compared to the CLIP model, the two metrics have been absolutely improved by 3.07% and 7.99%, respectively (ID:  $9.12$ ). Compared with CLIP<sup> $\\dagger$ </sup> and CLIP+Seg, which are also based on CLIP fine-tuning, our method obtains 2.53% and 2.61% improvement in the accuracy of prediction time, respectively. Compared with traditional image classification methods, QR-CLIP has achieved absolute advantages in all metrics (ID:  $7,8,12$ ). In addition, due to the lack of timerelated information in the image, the prediction accuracy of fine-tuning CLIP methods for image time can only reach about 1%, which is significantly lower than the accuracy of",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        222.5,
+                        2275,
+                        1212.5,
+                        2275,
+                        1212.5,
+                        2977.5,
+                        222.5,
+                        2977.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1287.5,
+                1890.0000000000002,
+                1620,
+                1890.0000000000002,
+                1620,
+                1932.5000000000002,
+                1287.5,
+                1932.5000000000002
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": " ## 4.3. Ablation Study",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1287.5,
+                        1890.0000000000002,
+                        1620,
+                        1890.0000000000002,
+                        1620,
+                        1932.5000000000002,
+                        1287.5,
+                        1932.5000000000002
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1270,
+                1980,
+                2260,
+                1980,
+                2260,
+                2982.5,
+                1270,
+                2982.5
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": " Analysis on Additional [CLS]. Following the network design process, all experiments of this part were conducted on the setting with only the step  $1$  in Quantity module (Sec 3.2).  As shown in Tab. 2, both of different [CLS] aggregation methods and different numbers of [CLS] can affect network performance. Comparing  $[CLS_i^*]$  and  $[CLS_i^\\prime]$  with the same number (*i.e.*,  $n = 2$ ) of [CLS], the latter has 7.15% and 0.86% higher location and time prediction accuracy (ID: 13,16,20,23). Besides, the performance of  $[CLS_i^*]$  is not significantly affected by the number of [CLS] (ID: 13-15,20-22). We argue that using MLP to aggregate the embeddings may destroy CLIP's original representation. It is better to separately calculate the similarities across each  $[CLS_i^\\prime]$  with the location and time labels and then select the one with the most significant value as the prediction. Then we analyze how different numbers of [CLS] affect the model performance. When  $n$  was increased to 8, no significant performance difference was observed, so we finally chose  $n = 6$  in the following experiments (ID: 17-19, 24-26). The results indicate that the additional [CLS] effectively",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1270,
+                        1980,
+                        2260,
+                        1980,
+                        2260,
+                        2982.5,
+                        1270,
+                        2982.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1275,
+                1440,
+                2262.5,
+                1440,
+                2262.5,
+                1832.5,
+                1275,
+                1832.5
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " location prediction (ID:  $10,11$ ). This is not surprising, also take the image on Fig. 1 as sample: even for humans, it is difficult to determine that {'03-01-2023'} is the time when this photograph was taken, if they are unfamiliar with Cristiano Ronaldo or some specific knowledge. Nevertheless, the method proposed in this paper is still effective (that our model achieves  $+253.00\\%$  relative lift) for predicting time and significantly closes the gap with location prediction.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1275,
+                        1440,
+                        2262.5,
+                        1440,
+                        2262.5,
+                        1832.5,
+                        1275,
+                        1832.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                1280,
+                1027.5,
+                2267.5,
+                1027.5,
+                2267.5,
+                1340,
+                1280,
+                1340
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "Table 2. Performance of additional [CLS] in QR-CLIP with different number and prediction methods. Whereas  $[CLS^*]_i^v$  refers to fusing all additional [CLS] by MLPs and then calculating the similarity with location and time labels,  $[CLS]_{i}^{v}$  refers to calculating the similarity between each additional  $[CLS]$  with labels separately, and then using the ( $[CLS]_{i}^{\\nu}$ -label) pair with the greatest similarity as the prediction.  $n$  represents the number of [CLS].",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1280,
+                        1027.5,
+                        2267.5,
+                        1027.5,
+                        2267.5,
+                        1340,
+                        1280,
+                        1340
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                1292.5,
+                275,
+                2255,
+                275,
+                2255,
+                1022.5,
+                1292.5,
+                1022.5
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1292.5,
+                        275,
+                        2255,
+                        275,
+                        2255,
+                        1022.5,
+                        1292.5,
+                        1022.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>ID</th>\n<th>Method</th>\n<th>Accuracy (~ Rank@1)</th>\n<th>Rank@5</th>\n<th>Example-F1</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Location Reasoning</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>13</td>\n<td>CLIP+[CLS*] $_{i}^{\\nu}$ (n=2)</td>\n<td>9.69%</td>\n<td>27.17%</td>\n<td>44.37%</td>\n</tr>\n<tr>\n<td>14</td>\n<td>CLIP+[CLS*] $_{i}^{\\nu}$ (n=4)</td>\n<td>9.53%</td>\n<td>26.25%</td>\n<td>43.23%</td>\n</tr>\n<tr>\n<td>15</td>\n<td>CLIP+[CLS*] $_{i}^{\\nu}$ (n=6)</td>\n<td>9.21%</td>\n<td>27.05%</td>\n<td>43.69%</td>\n</tr>\n<tr>\n<td>16</td>\n<td>CLIP+[CLS] $_{i}^{\\nu}$ (n=2)</td>\n<td>16.84%</td>\n<td>37.47%</td>\n<td>49.22%</td>\n</tr>\n<tr>\n<td>17</td>\n<td>CLIP+[CLS] $_{i}^{\\nu}$ (n=4)</td>\n<td>17.11%</td>\n<td>37.60%</td>\n<td>49.51%</td>\n</tr>\n<tr>\n<td>18</td>\n<td>CLIP+[CLS] $_{i}^{\\nu}$ (n=6)</td>\n<td>17.25%</td>\n<td>37.80%</td>\n<td>49.98%</td>\n</tr>\n<tr>\n<td>19</td>\n<td>CLIP+[CLS] $_{i}^{\\nu}$ (n=8)</td>\n<td>17.03%</td>\n<td>37.62%</td>\n<td>48.93%</td>\n</tr>\n<tr>\n<td>Time Reasoning</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>20</td>\n<td>CLIP+[CLS*] $_{i}^{\\nu}$ (n=2)</td>\n<td>0.98%</td>\n<td>3.03%</td>\n<td>42.18%</td>\n</tr>\n<tr>\n<td>21</td>\n<td>CLIP+[CLS*] $_{i}^{\\nu}$ (n=4)</td>\n<td>1.03%</td>\n<td>2.99%</td>\n<td>43.98%</td>\n</tr>\n<tr>\n<td>22</td>\n<td>CLIP+[CLS*] $_{i}^{\\nu}$ (n=6)</td>\n<td>1.08%</td>\n<td>3.15%</td>\n<td>43.62%</td>\n</tr>\n<tr>\n<td>23</td>\n<td>CLIP+[CLS] $_{i}^{\\nu}$ (n=2)</td>\n<td>1.84%</td>\n<td>5.14%</td>\n<td>45.57%</td>\n</tr>\n<tr>\n<td>24</td>\n<td>CLIP+[CLS] $_{i}^{\\nu}$ (n=4)</td>\n<td>1.92%</td>\n<td>5.21%</td>\n<td>45.63%</td>\n</tr>\n<tr>\n<td>25</td>\n<td>CLIP+[CLS] $_{i}^{\\nu}$ (n=6)</td>\n<td>2.00%</td>\n<td>5.37%</td>\n<td>45.60%</td>\n</tr>\n<tr>\n<td>26</td>\n<td>CLIP+[CLS] $_{i}^{\\nu}$ (n=8)</td>\n<td>1.53%</td>\n<td>5.06%</td>\n<td>45.15%</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 661,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "64_6_png.jpg"
+    }
+}

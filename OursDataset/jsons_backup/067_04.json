@@ -1,0 +1,318 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "plain_text",
+      "poly": [
+        382.5,
+        355,
+        1925,
+        355,
+        1925,
+        415,
+        382.5,
+        415
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": " We obtain the following final decomposition of the EUR PnL into four parts:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            382.5,
+            355,
+            1925,
+            355,
+            1925,
+            415,
+            382.5,
+            415
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        400,
+        440,
+        2080,
+        440,
+        2080,
+        895,
+        400,
+        895
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": " $$ \\begin{aligned} P_{(t,T)}^{(A)} &= \\frac{A_t + A_T}{2} \\big( \\chi_T - \\chi_t \\big) \\text{(= $P_{(t,T)}^{(A)}(\\chi)$)} \\\\ &\\quad + \\frac{\\chi_t + \\chi_T}{2} \\Bigg( \\frac{A_T(r_T,x_T) - A_T(r_t,x_T) + A_t(r_T,x_T) - A_t(r_t,x_T)}{2} \\Bigg) \\text{(=: $P_{(t,T)}^{(A)}(r)$)} \\\\ &\\quad + \\frac{\\chi_t + \\chi_T}{2} \\Bigg( \\frac{A_T(r_T,x_T) - A_T(r_T,x_t) + A_t(r_T,x_T) - A_t(r_T,x_t)}{2} \\Bigg) \\text{(=: $P_{(t,T)}^{(A)}(x)$)} \\\\ &\\quad + \\frac{\\chi_t + \\chi_T}{2} \\Bigg( \\frac{A_T(r_T,x_t) - A_T(r_t,x_T) + A_t(r_T,x_t) - A_t(r_t,x_T)}{2} \\Bigg). \\text{(=: $P_{(t,T)}^{(A)}(\\text{carry})$)} \\end{aligned} $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            400,
+            440,
+            2080,
+            440,
+            2080,
+            895,
+            400,
+            895
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        380,
+        922.5,
+        2112.5,
+        922.5,
+        2112.5,
+        1660,
+        380,
+        1660
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": " The interpretation of  $P_{(t,T]}^{(A)}(r)$  is the following: at an arbitrary time point  $u$  the difference  $A_u(r_T,x_u) - A_u(r_t,x_u)$  measures the PnL of the market price at that time that would be induced by a discounting curve change from  $r_t$  to  $r_T$ . The PnL  $P_{(t,T]}^{(A)}(r)$  is defined as the arithmetic mean of this difference for the two time points  $u = t$  and  $u = T$ . The precisely same logic applies to the interpretation of  $P_{(t,T]}^{(A)}(x)$ , only with  $r$  replaced by  $x$ . Finally, the PnL  $P_{(t,T]}^{(A)}$  (carry) intuitively should measure the change between the asset values  $A_t$  and  $A_T$  that is only due to time passing, without the effects of  $r$  and  $x$ . Since the variables  $r$  and  $x$  change their values within the period  $(t,T]$ , one reasonable approach is to use an “average” of the variables  $r, x$  on the period  $(t, T]$ . Since we only have  $r, x$  available at the two time points  $t$  and  $T$ , a pragmatic idea to accomplish such average is to mix the possible pairs  $(r_u, x_s)$  for  $u, s \\in \\{t, T\\}$  in a way that is as “neutral” as possible. This is precisely what's done in the definition of  $P_{(t,T]}^{(A)}$  (carry).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            380,
+            922.5,
+            2112.5,
+            922.5,
+            2112.5,
+            1660,
+            380,
+            1660
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        375,
+        1702.5,
+        1765,
+        1702.5,
+        1765,
+        1767.5,
+        375,
+        1767.5
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " ## Remark $2.1$ (On the approximative nature of our definitions)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            375,
+            1702.5,
+            1765,
+            1702.5,
+            1765,
+            1767.5,
+            375,
+            1767.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        372.4999999999999,
+        1760.0000000000002,
+        2112.5,
+        1760.0000000000002,
+        2112.5,
+        2145,
+        372.4999999999999,
+        2145
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " Similar as in Remark 1.1, we point out that our definition of  $P^{(A)}_{(t,T]}(r)$  and  $P^{(A)}_{(t,T]}(x)$  in terms of an arithmetic average of start and end time point values is only a proxy to reality. Clearly, an average that would take into account all time points  $u \\in (t, T]$  would be more desirable from a theoretical perspective. For instance, based on the multivariate Itô formula, under the assumption that  $\\{r_u\\}_{u\\in(t,T]}$  and  $\\{x_u\\}_{u\\in(t,T]}$  are realizations of semi-martingales, take values in  $\\mathbb{R}$  (i.e. are not function-valued), and under the assumption that  $r$  and  $x$  are independent, we obtain the decomposition",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            372.4999999999999,
+            1760.0000000000002,
+            2112.5,
+            1760.0000000000002,
+            2112.5,
+            2145,
+            372.4999999999999,
+            2145
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        525,
+        2187.5,
+        1952.5,
+        2187.5,
+        1952.5,
+        2582.5,
+        525,
+        2582.5
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": " $$ \\begin{split} A_T - A_t &= \\Big(\\int_{(t,T]} \\frac{\\partial}{\\partial t} A_u(r_u, x_u) \\,\\mathrm{d}u\\Big) \\\\ &+ \\Big(\\int_{(t,T]} \\frac{\\partial}{\\partial r} A_s(r_u, x_u) \\,\\mathrm{d}r_u + \\frac{1}{2} \\int_{(t,T]} \\frac{\\partial^2}{\\partial r^2} A_s(r_u, x_u) \\,\\mathrm{d}[r, r]_u\\Big) \\\\ &+ \\Big(\\int_{(t,T]} \\frac{\\partial}{\\partial x} A_s(r_u, x_u) \\,\\mathrm{d}x_u + \\frac{1}{2} \\int_{(t,T]} \\frac{\\partial^2}{\\partial x^2} A_s(r_u, x_u) \\,\\mathrm{d}[x, x]_u\\Big), \\end{split} $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            525,
+            2187.5,
+            1952.5,
+            2187.5,
+            1952.5,
+            2582.5,
+            525,
+            2582.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        362.5000000000001,
+        2615,
+        2115,
+        2615,
+        2115,
+        2835,
+        362.5000000000001,
+        2835
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": " and the three terms in (.)-brackets could be interpreted as performance due to carry, changes in  $r$ , and changes in  $x$ , respectively. While already this formula is difficult to implement in practice, we point out that typically  $r_u$  is a function (an interest rate term structure), so that a generalization in this regard requires significantly more advanced",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            362.5000000000001,
+            2615,
+            2115,
+            2615,
+            2115,
+            2835,
+            362.5000000000001,
+            2835
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1222.4999999999998,
+        2960,
+        1264.9999999999998,
+        2960,
+        1264.9999999999998,
+        3015,
+        1222.4999999999998,
+        3015
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": "4",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1222.4999999999998,
+            2960,
+            1264.9999999999998,
+            2960,
+            1264.9999999999998,
+            3015,
+            1222.4999999999998,
+            3015
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 685,
+    "height": 3508,
+    "width": 2481,
+    "image_path": "67_4_png.jpg"
+  }
+}

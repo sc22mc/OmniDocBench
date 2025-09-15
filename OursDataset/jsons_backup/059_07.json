@@ -1,0 +1,630 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "table",
+      "poly": [
+        307.5,
+        290,
+        2182.5,
+        290,
+        2182.5,
+        625,
+        307.5,
+        625
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            307.5,
+            290,
+            2182.5,
+            290,
+            2182.5,
+            625,
+            307.5,
+            625
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| Model         | Session 2 |      |       | Session 3 |      |       | Session 4 |      |       | Session 5 |      |       |\n|---------------|-----------|------|-------|-----------|------|-------|-----------|------|-------|-----------|------|-------|\n|               | B-2       | B-3  | R-L   | B-2       | B-3  | R-L   | B-2       | B-3  | R-L   | B-2       | B-3  | R-L   |\n| BlenderBot    | 4.71      | 1.47 | 18.20 | 3.85      | 0.93 | 17.10 | 3.69      | 0.83 | 16.78 | 4.00      | 1.19 | 17.19 |\n| BlenderBotmsc | 6.39      | 2.56 | 19.30 | 5.82      | 1.93 | 18.67 | 5.30      | 1.76 | 17.9  | 6.10      | 2.30 | 18.65 |\n| FID-RAG       | 6.41      | 2.51 | 19.82 | 5.83      | 1.95 | 18.38 | 5.81      | 1.85 | 18.44 | 6.02      | 2.27 | 18.52 |\n| HAHT (ours)   | 6.69      | 2.73 | 20.02 | 6.03      | 2.20 | 18.70 | 5.48      | 1.95 | 18.00 | 6.38      | 2.51 | 19.18 |",
+      "latex": ""
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        292.5,
+        657.5,
+        2187.5,
+        657.5,
+        2187.5,
+        797.5,
+        292.5,
+        797.5
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "Table 4: Automatic evaluation results of different models on session-opening data. Session  $i$  indicates there are  $i-1$ history conversation sessions. B-2, B-3, and R-L denote BLEU-2, BLEU-3, and Rouge-L respectively. The best results are in **boldface**.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            292.5,
+            657.5,
+            2187.5,
+            657.5,
+            2187.5,
+            797.5,
+            292.5,
+            797.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        297.5,
+        860,
+        2172.5,
+        860,
+        2172.5,
+        1182.5,
+        297.5,
+        1182.5
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            297.5,
+            860,
+            2172.5,
+            860,
+            2172.5,
+            1182.5,
+            297.5,
+            1182.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| Model        | Session 2   |             |              | Session 3   |             |              | Session 4   |             |              | Session 5   |             |              |\n|--------------|-------------|-------------|--------------|-------------|-------------|--------------|-------------|-------------|--------------|-------------|-------------|--------------|\n|              | B-2         | B-3         | R-L          | B-2         | B-3         | R-L          | B-2         | B-3         | R-L          | B-2         | B-3         | R-L          |\n| HAHT         | <b>5.07</b> | <b>1.57</b> | <b>16.90</b> | <b>5.27</b> | <b>1.67</b> | <b>16.72</b> | <b>5.00</b> | <b>1.55</b> | <b>15.97</b> | <b>5.16</b> | <b>1.60</b> | <b>16.42</b> |\n| HAHTw/o HIER | 5.00        | 1.57        | 16.72        | 5.19        | 1.63        | 16.61        | 4.86        | 1.49        | 15.90        | 5.10        | 1.57        | 16.21        |\n| HAHTw/o HIST | 4.98        | 1.50        | 16.81        | 5.09        | 1.58        | 16.51        | 4.75        | 1.45        | 15.51        | 5.10        | 1.49        | 16.24        |\n| HAHTw/o SW   | 5.01        | 1.56        | 16.86        | 5.19        | 1.61        | 16.46        | 4.87        | 1.55        | 15.88        | 5.07        | 1.55        | 16.17        |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        292.5,
+        1230,
+        2192.5,
+        1230,
+        2192.5,
+        1372.5,
+        292.5,
+        1372.5
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "Table 5: The performance achieved by HAHT and different HAHT variants. Session  $i$  indicates there are  $i$ -1 history conversation sessions. B-2, B-3, and R-L denote BLEU-2, BLEU-3, and Rouge-L respectively. The best results are in **boldface**.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            292.5,
+            1230,
+            2192.5,
+            1230,
+            2192.5,
+            1372.5,
+            292.5,
+            1372.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        295,
+        1465,
+        775,
+        1465,
+        775,
+        1515,
+        295,
+        1515
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "## 5.2 Human Evaluation",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            295,
+            1465,
+            775,
+            1465,
+            775,
+            1515,
+            295,
+            1515
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        290,
+        1540.0000000000002,
+        1205,
+        1540.0000000000002,
+        1205,
+        2385,
+        290,
+        2385
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": "Table 3 summarizes the human evaluation results on the Facebook MSC dataset. Generally, HAHT outperforms all the baseline methods in terms of all perspectives. This observation is consistent with the automatic evaluation results shown in Table 2. In particular, we find that HAHT performs much better than other baselines in terms of history relevancy. This demonstrates that HAHT can better leverage the history conversation sessions and engage the user more in the on-going session with the history memory. HAHT also performs better than other baselines in terms of readability and context relevancy. This indicates that HAHT can better understand the current conversation context with the help of the history memory.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            290,
+            1540.0000000000002,
+            1205,
+            1540.0000000000002,
+            1205,
+            2385,
+            290,
+            2385
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        297.5,
+        2422.5,
+        1020,
+        2422.5,
+        1020,
+        2470,
+        297.5,
+        2470
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": "## 5.3 Evaluation on Session Openings",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            297.5,
+            2422.5,
+            1020,
+            2422.5,
+            1020,
+            2470,
+            297.5,
+            2470
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        292.5,
+        2500,
+        1210,
+        2500,
+        1210,
+        3162.5,
+        292.5,
+        3162.5
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": "In the MSC task, the session opening is the first conversation turn of the current conversation. According to our observation and the similar observation in (Xu et al.,  $2022$ ), the opening conversation turn is categorically different from other conversation turns. It typically involves a statement or question that aims to reengage the other speaker based on the known information that has been exchanged in history conversations. Therefore, the performance on the session opening data can further demonstrate the model's capability in understanding and leveraging history conversations.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            292.5,
+            2500,
+            1210,
+            2500,
+            1210,
+            3162.5,
+            292.5,
+            3162.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        337.5,
+        3175,
+        1212.5,
+        3175,
+        1212.5,
+        3222.5,
+        337.5,
+        3222.5
+      ],
+      "ignore": false,
+      "order": 9,
+      "anno_id": 1,
+      "text": "We compare all models on these opening re-",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            337.5,
+            3175,
+            1212.5,
+            3175,
+            1212.5,
+            3222.5,
+            337.5,
+            3222.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1280,
+        2020,
+        1667.5,
+        2020,
+        1667.5,
+        2057.5,
+        1280,
+        2057.5
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "## 5.4 Ablation study",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1280,
+            2020,
+            1667.5,
+            2020,
+            1667.5,
+            2057.5,
+            1280,
+            2057.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1270,
+        2092.5,
+        2195,
+        2092.5,
+        2195,
+        2310,
+        1270,
+        2310
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "To better understand the effectiveness of each main component of HAHT, we conduct ablation study for HAHT. Specifically, we consider the following variants of HAHT.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1270,
+            2092.5,
+            2195,
+            2092.5,
+            2195,
+            2310,
+            1270,
+            2310
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1287.5,
+        2362.5,
+        2207.5,
+        2362.5,
+        2207.5,
+        2637.5,
+        1287.5,
+        2637.5
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": "- $HAHT_{w/o \\ HIER}$ : In this variant, we do not encode the history conversations hierarchically. Instead, we concatenate all the utterances of history conversations into a long sentence and directly encode it using the transformer encoder.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1287.5,
+            2362.5,
+            2207.5,
+            2362.5,
+            2207.5,
+            2637.5,
+            1287.5,
+            2637.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1287.5,
+        2660,
+        2212.5,
+        2660,
+        2212.5,
+        2767.5,
+        1287.5,
+        2767.5
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": "- $HAHT_{w/o\\text{ HIST}}$ : In this variant, we remove the history encoder from HAHT.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1287.5,
+            2660,
+            2212.5,
+            2660,
+            2212.5,
+            2767.5,
+            1287.5,
+            2767.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1290,
+        2780,
+        2217.5,
+        2780,
+        2217.5,
+        2950,
+        1290,
+        2950
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": "- $HAHT_{w/o\\ SW}$ : In this variant, we remove the switching mechanism from the response generator of HAHT.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1290,
+            2780,
+            2217.5,
+            2780,
+            2217.5,
+            2950,
+            1290,
+            2950
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1275,
+        2992.5,
+        2200,
+        2992.5,
+        2200,
+        3227.5,
+        1275,
+        3227.5
+      ],
+      "ignore": false,
+      "order": "16",
+      "anno_id": 1,
+      "text": "Table 5 summarizes the results achieved by different HAHT variants, in terms of BLEU-2, BLEU-3, and Rouge-L. We note that HAHT outperforms HAHT<sub>w/o HIER</sub>, which indicates that hierarchically",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1275,
+            2992.5,
+            2200,
+            2992.5,
+            2200,
+            3227.5,
+            1275,
+            3227.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1267.5,
+        1470,
+        2195,
+        1470,
+        2195,
+        1962.5,
+        1267.5,
+        1962.5
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "sponses and show the results in Table 4. We observe that the proposed HAHT model achieves the best performance in terms of most metrics. Especially, when there are 4 history conversations, HAHT outperforms FID-RAG and BlenderBot<sub>msc</sub> by  $10.6\\%$  and  $9.1\\%$  in terms of BLUE-3. This indicates that the proposed HAHT can better leverage conversation history to reengage the user into a new conversation session.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1267.5,
+            1470,
+            2195,
+            1470,
+            2195,
+            1962.5,
+            1267.5,
+            1962.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 592,
+    "height": 3508,
+    "width": 2481,
+    "image_path": "59_7_png.jpg"
+  }
+}

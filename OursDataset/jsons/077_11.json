@@ -1,0 +1,1686 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                424.9999999999999,
+                190,
+                2062.5,
+                190,
+                2062.5,
+                232.5,
+                424.9999999999999,
+                232.5
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": " Timewarp: Transferable Acceleration of Molecular Dynamics by Learning Time-Coarsened Dynamics",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        424.9999999999999,
+                        190,
+                        2062.5,
+                        190,
+                        2062.5,
+                        232.5,
+                        424.9999999999999,
+                        232.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                232.5,
+                275,
+                945,
+                275,
+                945,
+                330,
+                232.5,
+                330
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": " # A. Symmetries of the architecture",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        232.5,
+                        275,
+                        945,
+                        275,
+                        945,
+                        330,
+                        232.5,
+                        330
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                230,
+                362.5,
+                735,
+                362.5,
+                735,
+                402.5,
+                230,
+                402.5
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " ## A.1. Proof of Proposition 4.1",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        230,
+                        362.5,
+                        735,
+                        362.5,
+                        735,
+                        402.5,
+                        230,
+                        402.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                227.5,
+                442.5,
+                2247.5,
+                442.5,
+                2247.5,
+                535,
+                227.5,
+                535
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " In this appendix we provide more details on the equivariance of the Timewarp architecture. We first prove Proposition  $4.1$ from the main body:",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        227.5,
+                        442.5,
+                        2247.5,
+                        442.5,
+                        2247.5,
+                        535,
+                        227.5,
+                        535
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                232.5000000000001,
+                595,
+                2257.5,
+                595,
+                2257.5,
+                780,
+                232.5000000000001,
+                780
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": " *Proof.* Let  $X(t+\\tau)_{x(t)}$  denote the random variable obtained by sampling  $Z \\sim p(z)$  and computing  $X(t+\\tau) := f(Z; x(t))$ . Here we subscript  $X(t+\\tau)_{x(t)}$  by  $x(t)$  to emphasize that this is the random variable obtained when conditioning the flow on  $x(t)$ . We first note that the equivariance condition on the densities  $p(\\sigma x(t+\\tau)|\\sigma x(t)) = p(x(t+\\tau)|x(t))$  is equivalent to the following constraint on the random variables:",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        232.5000000000001,
+                        595,
+                        2257.5,
+                        595,
+                        2257.5,
+                        780,
+                        232.5000000000001,
+                        780
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                229.9999999999999,
+                897.4999999999999,
+                2265,
+                897.4999999999999,
+                2265,
+                999.9999999999999,
+                229.9999999999999,
+                999.9999999999999
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " where  $\\stackrel{d}{=}$  denotes equality in distribution. To see this, let  $p_X$  denote the density of the random variable X. Then, in terms of densities, Equation (20) is equivalent to stating that, for all  $x$ ,",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        229.9999999999999,
+                        897.4999999999999,
+                        2265,
+                        897.4999999999999,
+                        2265,
+                        999.9999999999999,
+                        229.9999999999999,
+                        999.9999999999999
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                224.9999999999999,
+                1182.5,
+                2257.5,
+                1182.5,
+                2257.5,
+                1267.5,
+                224.9999999999999,
+                1267.5
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": " where in Equation (22) we used the change-of-variables formula, along with the fact that the group actions we consider (rotations, translations, permutations) have unit absolute Jacobian determinant. Redefining  $x \\leftarrow \\sigma x$ , we get that for all x,",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        224.9999999999999,
+                        1182.5,
+                        2257.5,
+                        1182.5,
+                        2257.5,
+                        1267.5,
+                        224.9999999999999,
+                        1267.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                230.0000000000001,
+                1365,
+                2260,
+                1365,
+                2260,
+                1452.5,
+                230.0000000000001,
+                1452.5
+            ],
+            "ignore": false,
+            "order": 16,
+            "anno_id": 1,
+            "text": " Recalling the notation that  $X(t+\\tau)_{x(t)}$  is interpreted as the random variable obtained by conditioning the flow on  $x(t)$ , this can be written as",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        230.0000000000001,
+                        1365,
+                        2260,
+                        1365,
+                        2260,
+                        1452.5,
+                        230.0000000000001,
+                        1452.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                230,
+                1565,
+                2252.5,
+                1565,
+                2252.5,
+                1650,
+                230,
+                1650
+            ],
+            "ignore": false,
+            "order": 19,
+            "anno_id": 1,
+            "text": " which is exactly the equivariance condition stated in terms of densities above. Having rephrased the equivariance condition in terms of random variables in Equation  $(20)$ , the proof of Proposition 4.1 is straightforward.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        230,
+                        1565,
+                        2252.5,
+                        1565,
+                        2252.5,
+                        1650,
+                        230,
+                        1650
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                224.9999999999999,
+                1960,
+                1647.5,
+                1960,
+                1647.5,
+                1997.5,
+                224.9999999999999,
+                1997.5
+            ],
+            "ignore": false,
+            "order": 28,
+            "anno_id": 1,
+            "text": " where in Equation (26) we used the fact that the base distribution  $p(z)$  is  $\\sigma$ -invariant.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        224.9999999999999,
+                        1960,
+                        1647.5,
+                        1960,
+                        1647.5,
+                        1997.5,
+                        224.9999999999999,
+                        1997.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                227.5,
+                2142.5,
+                2267.5,
+                2142.5,
+                2267.5,
+                2277.5,
+                227.5,
+                2277.5
+            ],
+            "ignore": false,
+            "order": 30,
+            "anno_id": 1,
+            "text": " We now describe the canonicalisation technique used to make our models translation equivariant. Let  $q(x^p(t+\\tau), x^v(t+\\tau)|x^p(t))$  be an arbitrary conditional density model, which is not necessarily translation equivariant. We can make it translation equivariant in the following way. Let  $\\overline{x}^p$  denote the average position of the atoms,",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        227.5,
+                        2142.5,
+                        2267.5,
+                        2142.5,
+                        2267.5,
+                        2277.5,
+                        227.5,
+                        2277.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                230,
+                2447.5,
+                487.5,
+                2447.5,
+                487.5,
+                2500,
+                230,
+                2500
+            ],
+            "ignore": false,
+            "order": 33,
+            "anno_id": 1,
+            "text": " Then we define",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        230,
+                        2447.5,
+                        487.5,
+                        2447.5,
+                        487.5,
+                        2500,
+                        230,
+                        2500
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                224.9999999999999,
+                2607.5,
+                2260,
+                2607.5,
+                2260,
+                2690,
+                224.9999999999999,
+                2690
+            ],
+            "ignore": false,
+            "order": 36,
+            "anno_id": 1,
+            "text": " where the subtraction of  $\\overline{x^p(t)}$  is broadcasted over all atoms. We now consider the effect of translating both  $x^p(t)$  and  $x^p(t+\\tau)$  by the same amount. Let a be a translation vector in  $\\mathbb{R}^3$ . Then",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        224.9999999999999,
+                        2607.5,
+                        2260,
+                        2607.5,
+                        2260,
+                        2690,
+                        224.9999999999999,
+                        2690
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                227.5,
+                2062.5,
+                1115,
+                2062.5,
+                1115,
+                2102.5,
+                227.5,
+                2102.5
+            ],
+            "ignore": false,
+            "order": 29,
+            "anno_id": 1,
+            "text": " ## A.2. Translation equivariance via canonicalisation",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        227.5,
+                        2062.5,
+                        1115,
+                        2062.5,
+                        1115,
+                        2102.5,
+                        227.5,
+                        2102.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                285,
+                2720,
+                2125,
+                2720,
+                2125,
+                2772.5,
+                285,
+                2772.5
+            ],
+            "ignore": false,
+            "order": 37,
+            "anno_id": 1,
+            "text": " $$ p(x^{p}(t+\\tau) + a, x^{v}(t+\\tau)|x^{p}(t) + a) = q(x^{p}(t+\\tau) + a - \\overline{(x^{p}(t) + a)}, x^{v}(t+\\tau)|x^{p}(t) + a - \\overline{(x^{p}(t) + a)}) $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        285,
+                        2720,
+                        2125,
+                        2720,
+                        2125,
+                        2772.5,
+                        285,
+                        2772.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                942.5,
+                2792.5,
+                2062.5,
+                2792.5,
+                2062.5,
+                2840,
+                942.5,
+                2840
+            ],
+            "ignore": false,
+            "order": 39,
+            "anno_id": 1,
+            "text": " $$ = q(x^{p}(t+\\tau) + a - x^{p}(t) - a, x^{v}(t+\\tau)|x^{p}(t) + a - x^{p}(t) - a)  $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        942.5,
+                        2792.5,
+                        2062.5,
+                        2792.5,
+                        2062.5,
+                        2840,
+                        942.5,
+                        2840
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                942.5,
+                2862.5,
+                1780,
+                2862.5,
+                1780,
+                2915,
+                942.5,
+                2915
+            ],
+            "ignore": false,
+            "order": 41,
+            "anno_id": 1,
+            "text": " $$ = q(x^{p}(t+\\tau) - \\overline{x^{p}(t)}, x^{v}(t+\\tau)|x^{p}(t) - \\overline{x^{p}(t)})  $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        942.5,
+                        2862.5,
+                        1780,
+                        2862.5,
+                        1780,
+                        2915,
+                        942.5,
+                        2915
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                942.5,
+                2930,
+                1507.5,
+                2930,
+                1507.5,
+                2975,
+                942.5,
+                2975
+            ],
+            "ignore": false,
+            "order": 43,
+            "anno_id": 1,
+            "text": " $$ = p(x^{p}(t + \\tau), x^{p}(t + \\tau) | x^{p}(t)). $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        942.5,
+                        2930,
+                        1507.5,
+                        2930,
+                        1507.5,
+                        2975,
+                        942.5,
+                        2975
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                565,
+                2515,
+                1922.5,
+                2515,
+                1922.5,
+                2575,
+                565,
+                2575
+            ],
+            "ignore": false,
+            "order": 34,
+            "anno_id": 1,
+            "text": " $$ p(x^{p}(t+\\tau), x^{v}(t+\\tau)|x^{p}(t)) := q(x^{p}(t+\\tau) - \\overline{x^{p}(t)}, x^{v}(t+\\tau)|x^{p}(t) - \\overline{x^{p}(t)}) $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        565,
+                        2515,
+                        1922.5,
+                        2515,
+                        1922.5,
+                        2575,
+                        565,
+                        2575
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1102.5,
+                2302.5,
+                1392.5,
+                2302.5,
+                1392.5,
+                2437.5,
+                1102.5,
+                2437.5
+            ],
+            "ignore": false,
+            "order": 31,
+            "anno_id": 1,
+            "text": " $$ \\overline{x^p} := \\frac{1}{N} \\sum_{i=1}^N x_i^p.  $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1102.5,
+                        2302.5,
+                        1392.5,
+                        2302.5,
+                        1392.5,
+                        2437.5,
+                        1102.5,
+                        2437.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1210,
+                1890.0000000000002,
+                1530,
+                1890.0000000000002,
+                1530,
+                1932.5000000000002,
+                1210,
+                1932.5000000000002
+            ],
+            "ignore": false,
+            "order": 26,
+            "anno_id": 1,
+            "text": " $$ := \\sigma X(t+\\tau)_{x(t)}, $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1210,
+                        1890.0000000000002,
+                        1530,
+                        1890.0000000000002,
+                        1530,
+                        1932.5000000000002,
+                        1210,
+                        1932.5000000000002
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1205,
+                1822.5,
+                1460,
+                1822.5,
+                1460,
+                1867.5,
+                1205,
+                1867.5
+            ],
+            "ignore": false,
+            "order": 24,
+            "anno_id": 1,
+            "text": " $$ = \\sigma f(Z, x(t))  $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1205,
+                        1822.5,
+                        1460,
+                        1822.5,
+                        1460,
+                        1867.5,
+                        1205,
+                        1867.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1207.5,
+                1747.5,
+                1487.5,
+                1747.5,
+                1487.5,
+                1815,
+                1207.5,
+                1815
+            ],
+            "ignore": false,
+            "order": 22,
+            "anno_id": 1,
+            "text": " $$ \\stackrel{d}{=} f(\\sigma Z, \\sigma x(t)) $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1207.5,
+                        1747.5,
+                        1487.5,
+                        1747.5,
+                        1487.5,
+                        1815,
+                        1207.5,
+                        1815
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                970,
+                1674.9999999999998,
+                1475,
+                1674.9999999999998,
+                1475,
+                1732.4999999999998,
+                970,
+                1732.4999999999998
+            ],
+            "ignore": false,
+            "order": 20,
+            "anno_id": 1,
+            "text": " $$ X(t + \\tau)_{\\sigma x(t)} := f(Z, \\sigma x(t)) $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        970,
+                        1674.9999999999998,
+                        1475,
+                        1674.9999999999998,
+                        1475,
+                        1732.4999999999998,
+                        970,
+                        1732.4999999999998
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1022.5,
+                1487.5,
+                1455,
+                1487.5,
+                1455,
+                1537.5,
+                1022.5,
+                1537.5
+            ],
+            "ignore": false,
+            "order": 17,
+            "anno_id": 1,
+            "text": " $$ p(\\sigma x|\\sigma x(t)) = p(x|x(t))  $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1022.5,
+                        1487.5,
+                        1455,
+                        1487.5,
+                        1455,
+                        1537.5,
+                        1022.5,
+                        1537.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                937.5,
+                1295,
+                1540,
+                1295,
+                1540,
+                1355,
+                937.5,
+                1355
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": " where in Equation (22) we used the change-of-variables formula, along with the fact that the group actions we consider (rotations, translations, permutations) have unit absolute Jacobian determinant. Redefining  $x \\leftarrow \\sigma x$ , we get that for all x,",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        937.5,
+                        1295,
+                        1540,
+                        1295,
+                        1540,
+                        1355,
+                        937.5,
+                        1355
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1192.5,
+                1105,
+                1572.5,
+                1105,
+                1572.5,
+                1162.5,
+                1192.5,
+                1162.5
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": " $$ = p_{X(t+\\tau)_{x(t)}}(\\sigma^{-1}x),  $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1192.5,
+                        1105,
+                        1572.5,
+                        1105,
+                        1572.5,
+                        1162.5,
+                        1192.5,
+                        1162.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                920,
+                1042.5,
+                1497.5,
+                1042.5,
+                1497.5,
+                1095,
+                920,
+                1095
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " $$ p_{X(t+\\tau)_{\\sigma x(t)}}(x) = p_{\\sigma X(t+\\tau)_{x(t)}}(x) $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        920,
+                        1042.5,
+                        1497.5,
+                        1042.5,
+                        1497.5,
+                        1095,
+                        920,
+                        1095
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                970,
+                824.9999999999999,
+                1530,
+                824.9999999999999,
+                1530,
+                877.4999999999999,
+                970,
+                877.4999999999999
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " $$ X(t+\\tau)_{\\sigma x(t)} \\stackrel{d}{=} \\sigma X(t+\\tau)_{x(t)},  $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        970,
+                        824.9999999999999,
+                        1530,
+                        824.9999999999999,
+                        1530,
+                        877.4999999999999,
+                        970,
+                        877.4999999999999
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2180,
+                822.5000000000001,
+                2260,
+                822.5000000000001,
+                2260,
+                870.0000000000001,
+                2180,
+                870.0000000000001
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "(20)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2180,
+                        822.5000000000001,
+                        2260,
+                        822.5000000000001,
+                        2260,
+                        870.0000000000001,
+                        2180,
+                        870.0000000000001
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2190,
+                1027.5,
+                2252.5,
+                1027.5,
+                2252.5,
+                1072.5,
+                2190,
+                1072.5
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "(21)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2190,
+                        1027.5,
+                        2252.5,
+                        1027.5,
+                        2252.5,
+                        1072.5,
+                        2190,
+                        1072.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2182.5,
+                1107.5,
+                2250,
+                1107.5,
+                2250,
+                1145,
+                2182.5,
+                1145
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": "(22)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2182.5,
+                        1107.5,
+                        2250,
+                        1107.5,
+                        2250,
+                        1145,
+                        2182.5,
+                        1145
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2182.5,
+                1290,
+                2260,
+                1290,
+                2260,
+                1335,
+                2182.5,
+                1335
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": "(23)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2182.5,
+                        1290,
+                        2260,
+                        1290,
+                        2260,
+                        1335,
+                        2182.5,
+                        1335
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2185,
+                1482.5,
+                2255,
+                1482.5,
+                2255,
+                1530,
+                2185,
+                1530
+            ],
+            "ignore": false,
+            "order": 18,
+            "anno_id": 1,
+            "text": "(24)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2185,
+                        1482.5,
+                        2255,
+                        1482.5,
+                        2255,
+                        1530,
+                        2185,
+                        1530
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2190,
+                1685.0000000000002,
+                2260,
+                1685.0000000000002,
+                2260,
+                1725.0000000000002,
+                2190,
+                1725.0000000000002
+            ],
+            "ignore": false,
+            "order": 21,
+            "anno_id": 1,
+            "text": "(25)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2190,
+                        1685.0000000000002,
+                        2260,
+                        1685.0000000000002,
+                        2260,
+                        1725.0000000000002,
+                        2190,
+                        1725.0000000000002
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2187.5,
+                1762.5,
+                2257.5,
+                1762.5,
+                2257.5,
+                1797.5,
+                2187.5,
+                1797.5
+            ],
+            "ignore": false,
+            "order": 23,
+            "anno_id": 1,
+            "text": "(26)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2187.5,
+                        1762.5,
+                        2257.5,
+                        1762.5,
+                        2257.5,
+                        1797.5,
+                        2187.5,
+                        1797.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2185,
+                1812.5000000000002,
+                2252.5,
+                1812.5000000000002,
+                2252.5,
+                1865.0000000000002,
+                2185,
+                1865.0000000000002
+            ],
+            "ignore": false,
+            "order": 25,
+            "anno_id": 1,
+            "text": "(27)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2185,
+                        1812.5000000000002,
+                        2252.5,
+                        1812.5000000000002,
+                        2252.5,
+                        1865.0000000000002,
+                        2185,
+                        1865.0000000000002
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2192.5,
+                1880,
+                2260,
+                1880,
+                2260,
+                1927.5,
+                2192.5,
+                1927.5
+            ],
+            "ignore": false,
+            "order": 27,
+            "anno_id": 1,
+            "text": "(28)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2192.5,
+                        1880,
+                        2260,
+                        1880,
+                        2260,
+                        1927.5,
+                        2192.5,
+                        1927.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2187.5,
+                2345,
+                2250,
+                2345,
+                2250,
+                2392.5,
+                2187.5,
+                2392.5
+            ],
+            "ignore": false,
+            "order": 32,
+            "anno_id": 1,
+            "text": "(29)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2187.5,
+                        2345,
+                        2250,
+                        2345,
+                        2250,
+                        2392.5,
+                        2187.5,
+                        2392.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2192.5,
+                2530,
+                2260,
+                2530,
+                2260,
+                2572.5,
+                2192.5,
+                2572.5
+            ],
+            "ignore": false,
+            "order": 35,
+            "anno_id": 1,
+            "text": "(30)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2192.5,
+                        2530,
+                        2260,
+                        2530,
+                        2260,
+                        2572.5,
+                        2192.5,
+                        2572.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2185,
+                2712.5,
+                2260,
+                2712.5,
+                2260,
+                2777.5,
+                2185,
+                2777.5
+            ],
+            "ignore": false,
+            "order": 38,
+            "anno_id": 1,
+            "text": "(31)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2185,
+                        2712.5,
+                        2260,
+                        2712.5,
+                        2260,
+                        2777.5,
+                        2185,
+                        2777.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2182.5,
+                2782.5,
+                2257.5,
+                2782.5,
+                2257.5,
+                2837.5,
+                2182.5,
+                2837.5
+            ],
+            "ignore": false,
+            "order": 40,
+            "anno_id": 1,
+            "text": "(32)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2182.5,
+                        2782.5,
+                        2257.5,
+                        2782.5,
+                        2257.5,
+                        2837.5,
+                        2182.5,
+                        2837.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2180,
+                2857.5,
+                2252.5,
+                2857.5,
+                2252.5,
+                2917.5,
+                2180,
+                2917.5
+            ],
+            "ignore": false,
+            "order": 42,
+            "anno_id": 1,
+            "text": "(33)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2180,
+                        2857.5,
+                        2252.5,
+                        2857.5,
+                        2252.5,
+                        2917.5,
+                        2180,
+                        2917.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2190,
+                2925,
+                2250,
+                2925,
+                2250,
+                2967.5,
+                2190,
+                2967.5
+            ],
+            "ignore": false,
+            "order": 44,
+            "anno_id": 1,
+            "text": "(34)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2190,
+                        2925,
+                        2250,
+                        2925,
+                        2250,
+                        2967.5,
+                        2190,
+                        2967.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 769,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "77_11_png.jpg"
+    }
+}

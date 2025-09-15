@@ -1,0 +1,660 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "figure",
+            "poly": [
+                405,
+                195,
+                2132.5,
+                195,
+                2132.5,
+                652.5,
+                405,
+                652.5
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        405,
+                        195,
+                        2132.5,
+                        195,
+                        2132.5,
+                        652.5,
+                        405,
+                        652.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                1020,
+                662.5,
+                1400,
+                662.5,
+                1400,
+                697.5,
+                1020,
+                697.5
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "Seconds from start",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1020,
+                        662.5,
+                        1400,
+                        662.5,
+                        1400,
+                        697.5,
+                        1020,
+                        697.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                200,
+                722.5,
+                2352.5,
+                722.5,
+                2352.5,
+                850,
+                200,
+                850
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " Figure 3: The rolling averaged CWND size is plotted against the time from the beginning of the episode, while segment color represents the RTT observed between two actions. This plot was obtained from the best run of the second MARLIN model, i.e. 5b, which completed the transfer in 24.84s.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        200,
+                        722.5,
+                        2352.5,
+                        722.5,
+                        2352.5,
+                        850,
+                        200,
+                        850
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                200,
+                940,
+                1250,
+                940,
+                1250,
+                1535,
+                200,
+                1535
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " that drove the design of the QUIC protocol [25] (for additional details on Mockets, the reader can refer to [26]). Mockets implements a very aggressive CC algorithm whose purpose is to fully utilize the available bandwidth in presence of variable communication latency and elevated packet loss. While it presents several advantages over TCP and other transport protocols in degraded environments [27], Mockets' existing CC fails to share link capacity with other communication flows going through the same links and cannot adapt quickly to changes in the available bandwidth. Therefore, Mockets could benefit significantly from MARLIN, which could make it a viable choice also for traditional network scenarios.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        200,
+                        940,
+                        1250,
+                        940,
+                        1250,
+                        1535,
+                        200,
+                        1535
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                195,
+                1542.5000000000002,
+                1257.5,
+                1542.5000000000002,
+                1257.5,
+                2137.5,
+                195,
+                2137.5
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": " To have an accurate representation of the state of the environment within MARLIN, we improved the RTT estimation in Mockets. To do so, the sender keeps track of the transmission time of each packet. When an ACK arrives, the sender computes the RTT by calculating the difference between the current time and the transmission time of the last packet received by the receiver before generating the ACK message and then subtracting the ACK processing time from it. To make this calculation possible, the receiver appends the identifier of the last received packet (a strictly increasing unsigned integer) and the processing time (in microseconds) to all ACK messages.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        195,
+                        1542.5000000000002,
+                        1257.5,
+                        1542.5000000000002,
+                        1257.5,
+                        2137.5,
+                        195,
+                        2137.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                195,
+                2305,
+                1255,
+                2305,
+                1255,
+                2995,
+                195,
+                2995
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " The testbed described in Figure 2 is implemented using Commercial Off-The-Shelf (COS) devices. The agent is trained on a workstation equipped with an Intel i7-8700 CPU, 32GB DDR4 RAM, an NVIDIA GeForce RTX 2060 GPU, and an Intel Wireless-AC 9560 Network Interface Card (NIC). The \"Receiver Application\" resides on a 4GB Raspberry Pi 4 Model B (RPi4B). The two AP used are a TP-Link EAP245 and a Netgear WAC505, connected to two Netgear GS108E switches. A 2015 Apple MacBook Pro with macOS Catalina v10.15.6 generates background traffic, which is sent to the receiving application running on a Dell Latitude 7000 laptop (E7470). Both the desktop machine and E7470 run the Ubuntu 20.04.5 LTS OS. All NIC-related optimizations, e.g., TCP Segmentation Offload (TSO) or Large Receive Offload",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        195,
+                        2305,
+                        1255,
+                        2305,
+                        1255,
+                        2995,
+                        195,
+                        2995
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1300,
+                2747.5,
+                2355,
+                2747.5,
+                2355,
+                2990,
+                1300,
+                2990
+            ],
+            "ignore": false,
+            "order": 17,
+            "anno_id": 1,
+            "text": " Following training, we tested all the three MARLIN models by transferring a 3MB file on the same network with the background traffic pattern [100 UDP, 200 TCP, 100 UDP, 50 UDP]. It is important to note that file transfer is a significantly different problem from the one that the agent faces during",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1300,
+                        2747.5,
+                        2355,
+                        2747.5,
+                        2355,
+                        2990,
+                        1300,
+                        2990
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1297.5,
+                2402.5,
+                2347.5,
+                2402.5,
+                2347.5,
+                2632.5,
+                1297.5,
+                2632.5
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": " The mean training reward shows a promisingly increasing trend in each of the three setting, as shown in Figure 4. It is straightforward to interpret the performance showed during training by taking as a reference our ideal target, which, in this case, would result in -100 mean training reward.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1297.5,
+                        2402.5,
+                        2347.5,
+                        2402.5,
+                        2347.5,
+                        2632.5,
+                        1297.5,
+                        2632.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1295,
+                2045,
+                2355,
+                2045,
+                2355,
+                2392.5,
+                1295,
+                2392.5
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": " We trained three different models for MARLIN. For the first one, we used Eq  $1$  (5a). For the second model, we used the reward function in Eq.  $2$  (5b). In both cases, the background traffic pattern was fixed, with elephant flows following this order: [100 UDP, 200 TCP, 100 UDP, 50 UDP]. For the last model (5c), we changed the background traffic to use all permutations presented in Section II-B.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1295,
+                        2045,
+                        2355,
+                        2045,
+                        2355,
+                        2392.5,
+                        1295,
+                        2392.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1297.5,
+                1854.9999999999998,
+                2345,
+                1854.9999999999998,
+                2345,
+                2034.9999999999998,
+                1297.5,
+                2034.9999999999998
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": " At the beginning of training, in order to increase exploration, actions coming from a uniform random distribution are taken for 10K steps. Subsequently, SAC starts its normal explorationexploitation strategy, led by its entropy coefficient.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1297.5,
+                        1854.9999999999998,
+                        2345,
+                        1854.9999999999998,
+                        2345,
+                        2034.9999999999998,
+                        1297.5,
+                        2034.9999999999998
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1295,
+                1447.5,
+                2350,
+                1447.5,
+                2350,
+                1845,
+                1295,
+                1845
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": " Due to time constraints, the optimization steps involved (for actor, critic, target networks, and learned entropy coefficient) happen at the end of every partial episode. Taking training steps between two actions on a real network is a luxury we cannot afford, as we observed it would introduce delays in the order of 800-1000ms. Training at the end of an episode allows us to avoid such effect, limiting the overhead to the sole pipeline, which we report being around 25 to 30 ms.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1295,
+                        1447.5,
+                        2350,
+                        1447.5,
+                        2350,
+                        1845,
+                        1295,
+                        1845
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1292.5,
+                1197.5,
+                2352.5,
+                1197.5,
+                2352.5,
+                1440,
+                1292.5,
+                1440
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": "  The agent is trained for 1M steps on an infinite-horizon task with partial episodes lasting 200 steps. When the last step of a partial episode is encountered, a *truncated* signal is emitted and PEB is performed, recalling the agent that additional steps and rewards would actually be available thereafter [12].",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1292.5,
+                        1197.5,
+                        2352.5,
+                        1197.5,
+                        2352.5,
+                        1440,
+                        1292.5,
+                        1440
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1292.5,
+                935,
+                2347.5,
+                935,
+                2347.5,
+                1080,
+                1292.5,
+                1080
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " (LRO), are enabled, as per default, on all systems. A Ubiquiti Networks EdgeRouter X with EdgeOS routes packets between the two subnetworks.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1292.5,
+                        935,
+                        2347.5,
+                        935,
+                        2347.5,
+                        1080,
+                        1292.5,
+                        1080
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1297.5000000000002,
+                1130,
+                1500.0000000000002,
+                1130,
+                1500.0000000000002,
+                1167.5,
+                1297.5000000000002,
+                1167.5
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": " ## B. Training",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1297.5000000000002,
+                        1130,
+                        1500.0000000000002,
+                        1130,
+                        1500.0000000000002,
+                        1167.5,
+                        1297.5000000000002,
+                        1167.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                452.5,
+                2170,
+                987.5,
+                2170,
+                987.5,
+                2212.5,
+                452.5,
+                2212.5
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " # IV. EXPERIMENTAL RESULTS",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        452.5,
+                        2170,
+                        987.5,
+                        2170,
+                        987.5,
+                        2212.5,
+                        452.5,
+                        2212.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                197.50000000000003,
+                2235,
+                585,
+                2235,
+                585,
+                2280,
+                197.50000000000003,
+                2280
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": " ## A. Hardware Involved",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        197.50000000000003,
+                        2235,
+                        585,
+                        2235,
+                        585,
+                        2280,
+                        197.50000000000003,
+                        2280
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1292.4999999999998,
+                2677.5,
+                1482.4999999999998,
+                2677.5,
+                1482.4999999999998,
+                2722.5,
+                1292.4999999999998,
+                2722.5
+            ],
+            "ignore": false,
+            "order": 16,
+            "anno_id": 1,
+            "text": " ## C. Results",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1292.4999999999998,
+                        2677.5,
+                        1482.4999999999998,
+                        2677.5,
+                        1482.4999999999998,
+                        2722.5,
+                        1292.4999999999998,
+                        2722.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 856,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "84_6_png.jpg"
+    }
+}

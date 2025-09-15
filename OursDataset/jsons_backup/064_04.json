@@ -1,0 +1,1230 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        517.5,
+        192.50000000000003,
+        1965,
+        192.50000000000003,
+        1965,
+        240.00000000000003,
+        517.5,
+        240.00000000000003
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "QR-CLIP: Introducing Explicit Open-World Knowledge for Location and Time Reasoning",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            517.5,
+            192.50000000000003,
+            1965,
+            192.50000000000003,
+            1965,
+            240.00000000000003,
+            517.5,
+            240.00000000000003
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        230,
+        295,
+        1215,
+        295,
+        1215,
+        372.5,
+        230,
+        372.5
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": " former models (Kenton & Toutanova, 2019; Dosovitskiy et al., 2020).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            230,
+            295,
+            1215,
+            295,
+            1215,
+            372.5,
+            230,
+            372.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        227.5,
+        405,
+        1212.5,
+        405,
+        1212.5,
+        505,
+        227.5,
+        505
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "To simplify the illustration and better represent our model in the following sections:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.5,
+            405,
+            1212.5,
+            405,
+            1212.5,
+            505,
+            227.5,
+            505
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        249.9999999999999,
+        520,
+        1137.5,
+        520,
+        1137.5,
+        590,
+        249.9999999999999,
+        590
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " $$ [\\mathtt{CLS}]_i^{\\nu} \\leftarrow \\mathtt{Enc}_{\\nu}([\\widehat{\\mathtt{CLS}}]_i^{\\nu}) \\text{ and } [\\mathtt{CLS}]^t \\leftarrow \\mathtt{Enc}_{t}([\\widehat{\\mathtt{CLS}}]^t),  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            249.9999999999999,
+            520,
+            1137.5,
+            520,
+            1137.5,
+            590,
+            249.9999999999999,
+            590
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1160,
+        527.5,
+        1207.5,
+        527.5,
+        1207.5,
+        570,
+        1160,
+        570
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "(2)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1160,
+            527.5,
+            1207.5,
+            527.5,
+            1207.5,
+            570,
+            1160,
+            570
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        230,
+        602.5,
+        1220,
+        602.5,
+        1220,
+        742.5,
+        230,
+        742.5
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": " by default, when talking about  $[CLS]$  ( $[CLS]$ <sub>*i*</sub><sup>*v*</sup> and  $[CLS]$ <sup>*t*</sup><sub>*i*</sub>), they are the CLIP's output embeddings rather than the input token ( $[CLS]$ ), the same as shown in Fig. 2.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            230,
+            602.5,
+            1220,
+            602.5,
+            1220,
+            742.5,
+            230,
+            742.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        232.50000000000006,
+        775,
+        1207.5,
+        775,
+        1207.5,
+        1680,
+        232.50000000000006,
+        1680
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": " However, the output embedding [CLS] cannot adequately represent an image as the single embedding provides limited cues to the location and time reasoning. Therefore, we consider enlarging the representations for an image. It is evident that in real life, we would get different ideas about what an image means from different individuals. Following in this vein, we propose a simple yet effective methods: in our technical implementation, we are inspired by MVR (Zhang et al., 2022) and introduce additional [CLS]<sup>*y*</sup><sub>*i*</sub>  $(i = 1,...,n)$  to replace the original single [CLS] representation. Through the observation of ablations, we finally use 6 different [CLS]<sup>*y*</sup> at the beginning of the image patch token embeddings ( $\\hat{I} = \\hat{I}^{patch}_1, ..., \\hat{I}^{patch}_7$ ), like ([CLS]<sup>*y*</sup><sub>1</sub>...[CLS]<sup>*y*</sup><sub>6</sub>  $\\hat{I}$ ), and after going through the encoder Enc<sub>*v*</sub>, we get a list of embeddings ([CLS]<sup>*y*</sup><sub>1</sub>...[CLS]<sup>*y*</sup><sub>6</sub>  $I$ ). Using this design, the pre-trained model can investigate an image from multiple perspectives and dimensions. It follows the Q-principle and increases the quantity of information from multiple perspectives.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            232.50000000000006,
+            775,
+            1207.5,
+            775,
+            1207.5,
+            1680,
+            232.50000000000006,
+            1680
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        227.49999999999994,
+        1710,
+        1207.5,
+        1710,
+        1207.5,
+        1997.5,
+        227.49999999999994,
+        1997.5
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": " Since the text contains explicit semantic information and most language inputs carry clear messages, we only use the original  $[CLS]'$  at the beginning of the text token embedding (T), like ( $[CLS]' T$ ). Hence, we search for corresponding information through the image from the CLIP model by conducting:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.49999999999994,
+            1710,
+            1207.5,
+            1710,
+            1207.5,
+            1997.5,
+            227.49999999999994,
+            1997.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        555,
+        1994.9999999999998,
+        877.5,
+        1994.9999999999998,
+        877.5,
+        2067.5,
+        555,
+        2067.5
+      ],
+      "ignore": false,
+      "order": 9,
+      "anno_id": 1,
+      "text": " $$ ([\\text{\\texttt{CLS}}]^t) \\cdot ([\\text{\\texttt{CLS}}]_i^v).  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            555,
+            1994.9999999999998,
+            877.5,
+            1994.9999999999998,
+            877.5,
+            2067.5,
+            555,
+            2067.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1157.5,
+        2010.0000000000002,
+        1205,
+        2010.0000000000002,
+        1205,
+        2055,
+        1157.5,
+        2055
+      ],
+      "ignore": false,
+      "order": 10,
+      "anno_id": 1,
+      "text": "(3)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1157.5,
+            2010.0000000000002,
+            1205,
+            2010.0000000000002,
+            1205,
+            2055,
+            1157.5,
+            2055
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        222.5,
+        2145,
+        1205,
+        2145,
+        1205,
+        2292.5,
+        222.5,
+        2292.5
+      ],
+      "ignore": false,
+      "order": 11,
+      "anno_id": 1,
+      "text": " In the following fine-tuning or searching for open-world knowledge, each  $[CLS]_{i}^{v}$  of the Enc<sub>v</sub> calculates the similarity with  $[CLS]^{v}$  of the candidate information by inner-product.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            222.5,
+            2145,
+            1205,
+            2145,
+            1205,
+            2292.5,
+            222.5,
+            2292.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        225,
+        2322.5,
+        1207.5,
+        2322.5,
+        1207.5,
+        2605,
+        225,
+        2605
+      ],
+      "ignore": false,
+      "order": 12,
+      "anno_id": 1,
+      "text": " Location/Time Fine-tune. We first initialize and positionencode each  $[CLS]_{i}^{v}$  individually, aiming to extend the distance between each  $[CLS]_{i}^{v}$ . Then, we fine-tune CLIP with local and global losses (He et al., 2020; Zhang et al., 2022) to ensure each  $[CLS]_{i}^{v}$  is aligned with the location and time linguistic features  $[CLS]^{t}$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            225,
+            2322.5,
+            1207.5,
+            2322.5,
+            1207.5,
+            2605,
+            225,
+            2605
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        230.00000000000006,
+        2650,
+        1202.5,
+        2650,
+        1202.5,
+        2727.5,
+        230.00000000000006,
+        2727.5
+      ],
+      "ignore": false,
+      "order": 13,
+      "anno_id": 1,
+      "text": " For the local loss, the correspondence between each  $[CLS]_{i}^{v}$  and  $[CLS]_{i}^{t}$  is achieved by a contrastive learning loss:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            230.00000000000006,
+            2650,
+            1202.5,
+            2650,
+            1202.5,
+            2727.5,
+            230.00000000000006,
+            2727.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        292.5,
+        2765,
+        1085,
+        2765,
+        1085,
+        2880,
+        292.5,
+        2880
+      ],
+      "ignore": false,
+      "order": 14,
+      "anno_id": 1,
+      "text": " $$ L_{local} = -\\frac{1}{i+1} \\sum_{0}^{i} \\log \\frac{e^{J_{i}(q_{v}, k_{t+})}}{\\sum_{1}^{n} [e^{f_{i}(q_{v}, k_{t+})} + e^{f_{i}(q_{v}, k_{t-})}]},  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            292.5,
+            2765,
+            1085,
+            2765,
+            1085,
+            2880,
+            292.5,
+            2880
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1152.5,
+        2792.5,
+        1205,
+        2792.5,
+        1205,
+        2837.5,
+        1152.5,
+        2837.5
+      ],
+      "ignore": false,
+      "order": 15,
+      "anno_id": 1,
+      "text": "(4)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1152.5,
+            2792.5,
+            1205,
+            2792.5,
+            1205,
+            2837.5,
+            1152.5,
+            2837.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        227.5,
+        2900,
+        1212.5,
+        2900,
+        1212.5,
+        2992.5,
+        227.5,
+        2992.5
+      ],
+      "ignore": false,
+      "order": 16,
+      "anno_id": 1,
+      "text": " here,  $q_v$  denote the query image embedding ( $[CLS]_i^v$ );  $k_{t+}$  and  $k_{t-}$  are the positive and negative key text embeddings (a",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.5,
+            2900,
+            1212.5,
+            2900,
+            1212.5,
+            2992.5,
+            227.5,
+            2992.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1335,
+        2885,
+        2215,
+        2885,
+        2215,
+        2942.5,
+        1335,
+        2942.5
+      ],
+      "ignore": false,
+      "order": "31",
+      "anno_id": 1,
+      "text": " $$ f_i(q, k_+) = (W_i^{owk} \\times [\\mathtt{CLS}]_i^{owk} + W_i^{\\nu} \\times [\\mathtt{CLS}]_i^{\\nu}), \\cdot F^{gt},  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1335,
+            2885,
+            2215,
+            2885,
+            2215,
+            2942.5,
+            1335,
+            2942.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2217.5,
+        2947.5,
+        2252.5,
+        2947.5,
+        2252.5,
+        2982.5,
+        2217.5,
+        2982.5
+      ],
+      "ignore": false,
+      "order": "32",
+      "anno_id": 1,
+      "text": "(7)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2217.5,
+            2947.5,
+            2252.5,
+            2947.5,
+            2252.5,
+            2982.5,
+            2217.5,
+            2982.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1277.5,
+        2757.5,
+        2260,
+        2757.5,
+        2260,
+        2847.5,
+        1277.5,
+        2847.5
+      ],
+      "ignore": false,
+      "order": "30",
+      "anno_id": 1,
+      "text": " In the local loss, the information of two features is integrated to optimize the scoring mechanism jointly:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1277.5,
+            2757.5,
+            2260,
+            2757.5,
+            2260,
+            2847.5,
+            1277.5,
+            2847.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1270,
+        2382.5,
+        2267.5,
+        2382.5,
+        2267.5,
+        2720,
+        1270,
+        2720
+      ],
+      "ignore": false,
+      "order": "29",
+      "anno_id": 1,
+      "text": " Here,  $[CLS]_{i}^{x}$  is the input embedding, and  $W^{x}$  is the calculated weight. We use contrastive learning to optimize the model. To facilitate implementation, we directly adopt the loss functions from the first step of the Quantity module (sec 3.2). In this case, we keep the CLIP-T and CLIP-V frozen and only update the parameters of the relevance scoring component.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1270,
+            2382.5,
+            2267.5,
+            2382.5,
+            2267.5,
+            2720,
+            1270,
+            2720
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2207.5,
+        2292.5,
+        2262.5,
+        2292.5,
+        2262.5,
+        2342.5,
+        2207.5,
+        2342.5
+      ],
+      "ignore": false,
+      "order": "28",
+      "anno_id": 1,
+      "text": "(6)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2207.5,
+            2292.5,
+            2262.5,
+            2292.5,
+            2262.5,
+            2342.5,
+            2207.5,
+            2342.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1537.5,
+        2282.5,
+        1995,
+        2282.5,
+        1995,
+        2352.5,
+        1537.5,
+        2352.5
+      ],
+      "ignore": false,
+      "order": "27",
+      "anno_id": 1,
+      "text": " $$ W^{x} = \\text{MLP}_{2-layer}([\\texttt{CLS}]_{i}^{x}),  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1537.5,
+            2282.5,
+            1995,
+            2282.5,
+            1995,
+            2352.5,
+            1537.5,
+            2352.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1280,
+        2150,
+        2255,
+        2150,
+        2255,
+        2252.5,
+        1280,
+        2252.5
+      ],
+      "ignore": false,
+      "order": "26",
+      "anno_id": 1,
+      "text": " We adopt two layers of MLP ( $\\text{MLP}_{2-layer}$ ) as our relevance scoring component and find it helpful:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1280,
+            2150,
+            2255,
+            2150,
+            2255,
+            2252.5,
+            1280,
+            2252.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1277.5,
+        1825,
+        2265,
+        1825,
+        2265,
+        2127.5,
+        1277.5,
+        2127.5
+      ],
+      "ignore": false,
+      "order": "25",
+      "anno_id": 1,
+      "text": " Scoring Mechanism. The amount of useful information varies for each  $[CLS]_{i}^{v}$  of an image and the corresponding embeddings of open-world knowledge. As a result, it is critical to weigh the importance of different features dynamically. Based on the above motivation, we propose a scoring mechanism to further highlight the relevant features.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1277.5,
+            1825,
+            2265,
+            1825,
+            2265,
+            2127.5,
+            1277.5,
+            2127.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1272.5000000000002,
+        1747.5,
+        1690.0000000000002,
+        1747.5,
+        1690.0000000000002,
+        1795,
+        1272.5000000000002,
+        1795
+      ],
+      "ignore": false,
+      "order": "24",
+      "anno_id": 1,
+      "text": " # 3.3. Relevance Module",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1272.5000000000002,
+            1747.5,
+            1690.0000000000002,
+            1747.5,
+            1690.0000000000002,
+            1795,
+            1272.5000000000002,
+            1795
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1282.5,
+        1250,
+        2265,
+        1250,
+        2265,
+        1692.5,
+        1282.5,
+        1692.5
+      ],
+      "ignore": false,
+      "order": "23",
+      "anno_id": 1,
+      "text": " Given an image  $I$  and the corresponding Open-World Knowledge ( $O = T_1^{owk}, T_2^{owk}, ..., T_k^{owk}, k = 122,408$ ), the process of searching follows Eq. 3: each [CLS]<sup>*v*</sup><sub>*i*</sub> calculates the similarity with 122,408 candidate Wikipedia corpus (OWK). Here, we select the candidate Wikipedia with the top-1 similarity for each [CLS]<sup>*v*</sup><sub>*i*</sub>, yielding a total of 6 OWKs. After that, the Quantity module (sec 3.2) finished its job by collecting a list of highly-related OWKs items that the next Relevance module (sec 3.3) would use as input for CLIP-T.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1282.5,
+            1250,
+            2265,
+            1250,
+            2265,
+            1692.5,
+            1282.5,
+            1692.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1280,
+        927.5,
+        2257.5,
+        927.5,
+        2257.5,
+        1215,
+        1280,
+        1215
+      ],
+      "ignore": false,
+      "order": "22",
+      "anno_id": 1,
+      "text": " Open-World Knowledge Search. After fine-tuning, each  $[CLS]_{i}^{v}$  output by CLIP-V can represent image location/time information from various perspectives. We use these different representations to retrieve more valuable open-world knowledge from the OWK dataset (Sec 4.1) to increase the quantity of knowledge.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1280,
+            927.5,
+            2257.5,
+            927.5,
+            2257.5,
+            1215,
+            1280,
+            1215
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1282.5,
+        745,
+        2270,
+        745,
+        2270,
+        905,
+        1282.5,
+        905
+      ],
+      "ignore": false,
+      "order": "21",
+      "anno_id": 1,
+      "text": " where  $f_{max}(q_v, k_t) = \\max_{i} \\{f_i(q_v, k_t)\\}\\$ ,  $\\max_{i} \\{\\}\\$  represents the maximum value. The entire training loss is defined as a linear combination of two losses as  $L_{total} = L_{local} + L_{global}$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1282.5,
+            745,
+            2270,
+            745,
+            2270,
+            905,
+            1282.5,
+            905
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1350,
+        580,
+        2127.5,
+        580,
+        2127.5,
+        710,
+        1350,
+        710
+      ],
+      "ignore": false,
+      "order": "19",
+      "anno_id": 1,
+      "text": " $$ L_{global} = -\\log \\frac{e^{f_{max}(q_v, k_{t+})}}{\\sum_{1}^{n} [e^{f_{max}(q_v, k_{t+})} + e^{f_{max}(q_v, k_{t-})}]},  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1350,
+            580,
+            2127.5,
+            580,
+            2127.5,
+            710,
+            1350,
+            710
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2202.5,
+        617.5,
+        2252.5,
+        617.5,
+        2252.5,
+        665,
+        2202.5,
+        665
+      ],
+      "ignore": false,
+      "order": "20",
+      "anno_id": 1,
+      "text": "(5)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2202.5,
+            617.5,
+            2252.5,
+            617.5,
+            2252.5,
+            665,
+            2202.5,
+            665
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1282.5,
+        407.5,
+        2260,
+        407.5,
+        2260,
+        562.5,
+        1282.5,
+        562.5
+      ],
+      "ignore": false,
+      "order": "18",
+      "anno_id": 1,
+      "text": " Then, the global loss further constrains the correspondence between image features and location/time features, and the calculation method is as follows:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1282.5,
+            407.5,
+            2260,
+            407.5,
+            2260,
+            562.5,
+            1282.5,
+            562.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1277.5,
+        290,
+        2262.5,
+        290,
+        2262.5,
+        377.5,
+        1277.5,
+        377.5
+      ],
+      "ignore": false,
+      "order": "17",
+      "anno_id": 1,
+      "text": " batch of  $[CLS]^t$ ). We calculate the correlation score between them by inner product  $f_i(x, y)$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1277.5,
+            290,
+            2262.5,
+            290,
+            2262.5,
+            377.5,
+            1277.5,
+            377.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 659,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "64_4_png.jpg"
+  }
+}

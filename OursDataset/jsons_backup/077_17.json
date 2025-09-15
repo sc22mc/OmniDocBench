@@ -1,0 +1,596 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        420,
+        192.5,
+        2080,
+        192.5,
+        2080,
+        232.5,
+        420,
+        232.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": " Timewarp: Transferable Acceleration of Molecular Dynamics by Learning Time-Coarsened Dynamics",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            420,
+            192.5,
+            2080,
+            192.5,
+            2080,
+            232.5,
+            420,
+            232.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        225,
+        292.5,
+        2272.5,
+        292.5,
+        2272.5,
+        427.5,
+        225,
+        427.5
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "  we can generate  $B$  chains in parallel, all starting from the same initial state. This batched sampling procedure leads to even further speedups. For all exploration experiments we use a batch size of 100, and run  $M = 10000$  exploration steps. The maximum allowed energy change cutoff is set at  $\\Delta U_{\\rm max} = 300 \\rm{kJ/mol}.$ ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            225,
+            292.5,
+            2272.5,
+            292.5,
+            2272.5,
+            427.5,
+            225,
+            427.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        219.9999999999999,
+        582.5,
+        2257.5,
+        582.5,
+        2257.5,
+        725,
+        219.9999999999999,
+        725
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": " We evaluate our model on three different datasets, AD, 2AA, and 4AA, as introduced in Section 6. All datasets are simulated in implicit solvent using the openMM library (Eastman et al., 2017). For all MD simulations we use the parameters shown in Table 2.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            219.9999999999999,
+            582.5,
+            2257.5,
+            582.5,
+            2257.5,
+            725,
+            219.9999999999999,
+            725
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        229.9999999999999,
+        1402.5,
+        2267.5,
+        1402.5,
+        2267.5,
+        1492.5,
+        229.9999999999999,
+        1492.5
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": " Depending on the dataset, different Timewarp model sizes were used, as shown in Table 3. For all datasets the Multihead kernel self-attention layer consists of 6 heads with lengthscales  $l_i = \\{0.1, 0.2, 0.5, 0.7, 1.0, 1.2\\}$ , given in nanometers.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            229.9999999999999,
+            1402.5,
+            2267.5,
+            1402.5,
+            2267.5,
+            1492.5,
+            229.9999999999999,
+            1492.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        225,
+        1990,
+        2270,
+        1990,
+        2270,
+        2135,
+        225,
+        2135
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": " The  $\\phi_{\\text{in}}$  and  $\\phi_{\\text{out}}$  MLPs use SiLUs as activation functions, while the Transformer MLPs use ReLUs. Note the transformer MLP refers to the atom-wise MLP shown in Figure 2, Middle inside the transformer block. The shapes of these MLPs vary for the different datasets as shown in Table 4.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            225,
+            1990,
+            2270,
+            1990,
+            2270,
+            2135,
+            225,
+            2135
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        227.5000000000001,
+        2617.5,
+        2257.5,
+        2617.5,
+        2257.5,
+        2705,
+        227.5000000000001,
+        2705
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": " The first linear layers in the kernel self-attention module always has the shape [128, 768] (in Section 4 denoted as  $V$ ), and the second (after concatenating the output of head head) has the shape  $[768, 128]$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.5000000000001,
+            2617.5,
+            2257.5,
+            2617.5,
+            2257.5,
+            2705,
+            227.5000000000001,
+            2705
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        225,
+        2747.5,
+        2267.5,
+        2747.5,
+        2267.5,
+        2987.5,
+        225,
+        2987.5
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": "  After likelihood training, we fine-tune the model for the AD and 2AA dataset with a combination of all three losses discussed in Section 5. We did not perform fine tuning for the model trained on the 4AA dataset. We use a weighted sum of the losses with weights detailed in Table 5. We use the *FusedLamb* optimizer and the *DeepSpeed* library (Rasley et al., 2020) for all experiments. The batch size as well as the training times are reported in Table 6. All simulations are started with a learning rate of  $5 \\times 10^{-4}$ , the learning rate is then consecutively decreased by a factor of 2 upon hitting training loss plateaus.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            225,
+            2747.5,
+            2267.5,
+            2747.5,
+            2267.5,
+            2987.5,
+            225,
+            2987.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        975,
+        2230,
+        1512.5,
+        2230,
+        1512.5,
+        2272.5,
+        975,
+        2272.5
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": " *Table 4.* Timewarp MLP layer sizes ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            975,
+            2230,
+            1512.5,
+            2230,
+            1512.5,
+            2272.5,
+            975,
+            2272.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        920,
+        1607.5,
+        1572.5,
+        1607.5,
+        1572.5,
+        1650,
+        920,
+        1650
+      ],
+      "ignore": false,
+      "order": 9,
+      "anno_id": 1,
+      "text": " *Table 3.* Timewarp model hyperparameters",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            920,
+            1607.5,
+            1572.5,
+            1607.5,
+            1572.5,
+            1650,
+            920,
+            1650
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        900,
+        829.9999999999999,
+        1587.5,
+        829.9999999999999,
+        1587.5,
+        872.4999999999999,
+        900,
+        872.4999999999999
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": "Table 2. OpenMM MD simulation parameters",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            900,
+            829.9999999999999,
+            1587.5,
+            829.9999999999999,
+            1587.5,
+            872.4999999999999,
+            900,
+            872.4999999999999
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        812.5,
+        875.0000000000001,
+        1667.5,
+        875.0000000000001,
+        1667.5,
+        1157.5,
+        812.5,
+        1157.5
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            812.5,
+            875.0000000000001,
+            1667.5,
+            875.0000000000001,
+            1667.5,
+            1157.5,
+            812.5,
+            1157.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "|----------------------|------------------------------------------|\n| Force Field          | amber-14                                 |\n| Time step            | 0.5fs                                    |\n| Friction coefficient | $0.3\\frac{1}{\\text{ps}}$                 |\n| Temperature          | $310\\text{K}$                            |\n| Integrator           | LangevinMiddleIntegrator                 |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        227.50000000000023,
+        1655.0000000000002,
+        2402.5,
+        1655.0000000000002,
+        2402.5,
+        1900.0000000000002,
+        227.50000000000023,
+        1900.0000000000002
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.50000000000023,
+            1655.0000000000002,
+            2402.5,
+            1655.0000000000002,
+            2402.5,
+            1900.0000000000002,
+            227.50000000000023,
+            1900.0000000000002
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| Dataset | RealNVP layers | Transformer layers | Parameters | Atom-embedding dim H | Transformer feature dimension D |\n|---------|----------------|--------------------|------------|----------------------|---------------------------------|\n| AD      | 12             | 6                  | 1 x 108    | 64                   | 128                             |\n| 2AA     | 12             | 6                  | 1 x 108    | 64                   | 128                             |\n| 4AA     | 16             | 16                 | 4 x 108    | 128                  | 128                             |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        687.5,
+        2282.5,
+        1790,
+        2282.5,
+        1790,
+        2525,
+        687.5,
+        2525
+      ],
+      "ignore": false,
+      "order": 13,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            687.5,
+            2282.5,
+            1790,
+            2282.5,
+            1790,
+            2525,
+            687.5,
+            2525
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| Dataset                                  | $\\phi_{\\text{in}}$ MLP | $\\phi_{\\text{out}}$ MLP | Transformer MLP  |\n|------------------------------------------|------------------------|-------------------------|------------------|\n| AD                                       | [70, 256, 128]         | [128, 256, 3]           | [128, 256, 128]  |\n| 2AA                                      | [70, 256, 128]         | [128, 256, 3]           | [128, 256, 128]  |\n| 4AA                                      | [134, 2048, 128]       | [128, 2048, 3]          | [128, 2048, 128] |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        230,
+        1320,
+        675,
+        1320,
+        675,
+        1367.5,
+        230,
+        1367.5
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": " # **E. Hyperparameters**",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            230,
+            1320,
+            675,
+            1320,
+            675,
+            1367.5,
+            230,
+            1367.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        230,
+        500,
+        607.5,
+        500,
+        607.5,
+        547.5,
+        230,
+        547.5
+      ],
+      "ignore": false,
+      "order": "3",
+      "anno_id": 1,
+      "text": " # **D. Dataset details**",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            230,
+            500,
+            607.5,
+            500,
+            607.5,
+            547.5,
+            230,
+            547.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 775,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "77_17_png.jpg"
+  }
+}

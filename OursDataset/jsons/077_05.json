@@ -1,0 +1,736 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                429.9999999999999,
+                184.99999999999997,
+                2065,
+                184.99999999999997,
+                2065,
+                234.99999999999997,
+                429.9999999999999,
+                234.99999999999997
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": " Timewarp: Transferable Acceleration of Molecular Dynamics by Learning Time-Coarsened Dynamics",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        429.9999999999999,
+                        184.99999999999997,
+                        2065,
+                        184.99999999999997,
+                        2065,
+                        234.99999999999997,
+                        429.9999999999999,
+                        234.99999999999997
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                247.4999999999999,
+                339.99999999999994,
+                2202.5,
+                339.99999999999994,
+                2202.5,
+                1290,
+                247.4999999999999,
+                1290
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        247.4999999999999,
+                        339.99999999999994,
+                        2202.5,
+                        339.99999999999994,
+                        2202.5,
+                        1290,
+                        247.4999999999999,
+                        1290
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                224.9999999999999,
+                1397.5,
+                2260,
+                1397.5,
+                2260,
+                1480,
+                224.9999999999999,
+                1480
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " Figure 2. Schematic illustration of the Timewarp conditional flow architecture, described in Section 4. *Left*: A single conditional RealNVP coupling layer. *Middle*: A single atom transformer module. *Right*: the multihead kernel self-attention module.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        224.9999999999999,
+                        1397.5,
+                        2260,
+                        1397.5,
+                        2260,
+                        1480,
+                        224.9999999999999,
+                        1480
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                227.5,
+                1575,
+                1220,
+                1575,
+                1220,
+                1715,
+                227.5,
+                1715
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " not use a positional encoding. Second, instead of dot product attention, we use a simple *kernel self-attention* module, which we describe next.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        227.5,
+                        1575,
+                        1220,
+                        1575,
+                        1220,
+                        1715,
+                        227.5,
+                        1715
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                232.49999999999994,
+                1772.5,
+                1212.5,
+                1772.5,
+                1212.5,
+                2162.5,
+                232.49999999999994,
+                2162.5
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": " **Kernel self-attention** We motivate the kernel selfattention module with the observation that physical forces acting on the atoms in a molecule are *local*: *i.e.*, they act more strongly on nearby atoms. Intuitively, for values of  $\\tau$  that are not too large, the positions at time  $t + \\tau$  will be more influenced by atoms that are nearby at time  $t$ , compared to atoms that are far away. Thus, we define the attention weight  $w_{ij}$  for atom *i* attending to atom *j* as follows:",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        232.49999999999994,
+                        1772.5,
+                        1212.5,
+                        1772.5,
+                        1212.5,
+                        2162.5,
+                        232.49999999999994,
+                        2162.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                392.49999999999994,
+                2187.5,
+                1050,
+                2187.5,
+                1050,
+                2320,
+                392.49999999999994,
+                2320
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " $$ w_{ij} = \\frac{\\exp(-\\|x_i^p - x_j^p\\|_2^2/\\ell^2)}{\\sum_{j'=1}^N \\exp(-\\|x_i^p - x_{j'}^p\\|_2^2/\\ell^2)}, $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        392.49999999999994,
+                        2187.5,
+                        1050,
+                        2187.5,
+                        1050,
+                        2320,
+                        392.49999999999994,
+                        2320
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                1137.5,
+                2225,
+                1202.5,
+                2225,
+                1202.5,
+                2270,
+                1137.5,
+                2270
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "(11)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1137.5,
+                        2225,
+                        1202.5,
+                        2225,
+                        1202.5,
+                        2270,
+                        1137.5,
+                        2270
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                225,
+                2342.5,
+                1207.5,
+                2342.5,
+                1207.5,
+                2427.5,
+                225,
+                2427.5
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " where  $l$  is a lengthscale hyperparameter. The output vectors  $\\{r_{\\text{out},i}\\}_{i=1}^N$ , given the input vectors  $\\{r_{\\text{in},i}\\}_{i=1}^N$ , are then:",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        225,
+                        2342.5,
+                        1207.5,
+                        2342.5,
+                        1207.5,
+                        2427.5,
+                        225,
+                        2427.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                482.5,
+                2457.5,
+                952.5,
+                2457.5,
+                952.5,
+                2522.5,
+                482.5,
+                2522.5
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " $$ r_{\\text{out},i} = \\sum_{j=1}^{N} w_{ij} V \\cdot r_{\\text{in},j}, $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        482.5,
+                        2457.5,
+                        952.5,
+                        2457.5,
+                        952.5,
+                        2522.5,
+                        482.5,
+                        2522.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                1142.5,
+                2457.5,
+                1197.5,
+                2457.5,
+                1197.5,
+                2512.5,
+                1142.5,
+                2512.5
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "(12)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1142.5,
+                        2457.5,
+                        1197.5,
+                        2457.5,
+                        1197.5,
+                        2512.5,
+                        1142.5,
+                        2512.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                225,
+                2540,
+                1210,
+                2540,
+                1210,
+                2985,
+                225,
+                2985
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": " where  $V \\in \\mathbb{R}^{d_{\\text{out}} \\times d_{\\text{in}}}$  is a learnable matrix. This kernel self-attention is an instance of the RBF kernel attention investigated in Tsai et al. (2019). Similarly to Vaswani et al. (2017), we introduce a *multihead* version of kernel self-attention, where each head has a different lengthscale. This is illustrated in Figure 2, Right. We found that kernel self-attention was significantly faster to compute than dot product attention, and produced similar or improved performance.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        225,
+                        2540,
+                        1210,
+                        2540,
+                        1210,
+                        2985,
+                        225,
+                        2985
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1280,
+                1570,
+                1562.5,
+                1570,
+                1562.5,
+                1615,
+                1280,
+                1615
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": " ## 4.1. Symmetries",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1280,
+                        1570,
+                        1562.5,
+                        1570,
+                        1562.5,
+                        1615,
+                        1280,
+                        1615
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1277.5,
+                1655,
+                2262.5,
+                1655,
+                2262.5,
+                1797.5,
+                1277.5,
+                1797.5
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": " The MD dynamics respects certain physical *symmetries* that would be advantageous to incorporate. We now describe how each of these symmetries is incorporated in Timewarp.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1277.5,
+                        1655,
+                        2262.5,
+                        1655,
+                        2262.5,
+                        1797.5,
+                        1277.5,
+                        1797.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1275,
+                1852.5000000000002,
+                2262.5,
+                1852.5000000000002,
+                2262.5,
+                2045.0000000000002,
+                1275,
+                2045.0000000000002
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": " **Permutation equivariance** Let  $\\sigma$  be a permutation of the  $N$  atoms. Since the atoms have no intrinsic ordering, the only effect of a permutation of  $x(t)$  on the future state  $x(t + \\tau)$  is to permute the atoms similarly, *i.e.*,",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1275,
+                        1852.5000000000002,
+                        2262.5,
+                        1852.5000000000002,
+                        2262.5,
+                        2045.0000000000002,
+                        1275,
+                        2045.0000000000002
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1425,
+                2095,
+                2117.5,
+                2095,
+                2117.5,
+                2150,
+                1425,
+                2150
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": " $$ \\mu(\\sigma x(t+\\tau)|\\sigma x(t)) = \\mu(x(t+\\tau)|x(t)). $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1425,
+                        2095,
+                        2117.5,
+                        2095,
+                        2117.5,
+                        2150,
+                        1425,
+                        2150
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2187.5,
+                2092.5,
+                2250,
+                2092.5,
+                2250,
+                2137.5,
+                2187.5,
+                2137.5
+            ],
+            "ignore": false,
+            "order": 16,
+            "anno_id": 1,
+            "text": "(13)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2187.5,
+                        2092.5,
+                        2250,
+                        2092.5,
+                        2250,
+                        2137.5,
+                        2187.5,
+                        2137.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1282.5,
+                2190,
+                2265,
+                2190,
+                2265,
+                2380,
+                1282.5,
+                2380
+            ],
+            "ignore": false,
+            "order": 17,
+            "anno_id": 1,
+            "text": " Our conditional flow satisfies permutation equivariance exactly. To show this, we use the following proposition proved in Appendix A.1, which is an extension of Köhler et al. (2020); Rezende et al. (2019) for conditional flows:",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1282.5,
+                        2190,
+                        2265,
+                        2190,
+                        2265,
+                        2380,
+                        1282.5,
+                        2380
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1277.5,
+                2402.5,
+                2265,
+                2402.5,
+                2265,
+                2697.5,
+                1277.5,
+                2697.5
+            ],
+            "ignore": false,
+            "order": 18,
+            "anno_id": 1,
+            "text": " **Proposition 4.1.** Let  $\\sigma$  be a symmetry action, and let  $f(\\cdot;\\cdot)$  *be an equivariant map such that*  $f(\\sigma z; \\sigma x) = \\sigma f(z; x)$  *for* all  $\\sigma, z, x$ . Further, let the base distribution  $p(z)$  satisfy  $p(\\sigma z) = p(z)$  for all  $\\sigma, z$ . Then the conditional flow defined by  $z \\sim p(z)$ ,  $x(t + \\tau) := f(z; x(t))$  satisfies  $p(\\sigma x(t + \\tau)| \\sigma x(t)) = p(x(t+\\tau)|x(t))$ .",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1277.5,
+                        2402.5,
+                        2265,
+                        2402.5,
+                        2265,
+                        2697.5,
+                        1277.5,
+                        2697.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1282.5,
+                2742.5,
+                2265,
+                2742.5,
+                2265,
+                2980,
+                1282.5,
+                2980
+            ],
+            "ignore": false,
+            "order": 19,
+            "anno_id": 1,
+            "text": " Our flow satisfies  $f_{\\theta}(\\sigma z; \\sigma x(t)) = \\sigma f_{\\theta}(z; x(t))$ , since the transformer is permutation equivariant, and permuting  $z$  and  $x(t)$  together permutes the inputs. Furthermore, the base distribution  $p(z) = \\mathcal{N}(0, I)$  is permutation invariant. Note that the auxiliary variables allow us to easily construct a",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1282.5,
+                        2742.5,
+                        2265,
+                        2742.5,
+                        2265,
+                        2980,
+                        1282.5,
+                        2980
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 781,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "77_5_png.jpg"
+    }
+}

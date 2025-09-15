@@ -1,0 +1,318 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "plain_text",
+            "poly": [
+                555,
+                522.5,
+                1997.5,
+                522.5,
+                1997.5,
+                830,
+                555,
+                830
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": " *Proof.* It is immediate from construction, since we have not removed any transitions from  $\\Sigma$  within any  $Q_i$ , that for any  $Q_i \\in P$  holds  $Q_i.w = q_l^i$ , since  $w$  carefully synchronizes  $\\mathcal{A}$  and each  $Q_i$  on  $\\Sigma$  induces an isomorphic copy of  $\\mathcal{A}$ . So we have, that  $\\{q_l^1, q_l^2, ..., q_l^{|u|+1}\\}\\subseteq P.w$ . To prove that  $P.w \\subseteq \\{q_l^1, q_l^2, ..., q_l^{|u|+1}\\}\\subseteq$   $P.w$  it suffices to notice, that, from fact 2 automaton  $\\mathcal{B}$  is deterministic and for any prefix  $w'$  of  $w$  if  $Q_i.w' = \\{q_{k_1}^i, ..., q_{k_s}^i\\}$ , then  $Q_i.w' = \\{q_{k_1}^i, ..., q_{k_s}^i\\}$ .  $\\Box$ ",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        555,
+                        522.5,
+                        1997.5,
+                        522.5,
+                        1997.5,
+                        830,
+                        555,
+                        830
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                547.5,
+                857.4999999999999,
+                2032.5,
+                857.4999999999999,
+                2032.5,
+                967.4999999999999,
+                547.5,
+                967.4999999999999
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": " **Lemma 2.** There exist an algorithm with  $O(|P||w|)$  time complexity and  $O(|P||w|)$  space complexity which computes a partition of P on sets  $Q_1, Q_2, ..., Q_{|w|+1}$ .",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        547.5,
+                        857.4999999999999,
+                        2032.5,
+                        857.4999999999999,
+                        2032.5,
+                        967.4999999999999,
+                        547.5,
+                        967.4999999999999
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                547.5,
+                990,
+                1990,
+                990,
+                1990,
+                1407.5,
+                547.5,
+                1407.5
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " ***Proof.*** We describe a desired algorithm. Suppose we have an array with  $|P|$  columns and  $|w| + 1$  rows. Put every element of  $P$  in a different column of a first row. Then we fill the *i*-th row by taking a state from the  $(i-1)$ -th row of the corresponding column and applying to it the *i*-th letter of a word  $w$  until the end of the row. After this procedure, from lemma 1, the last row contains only the states from the set  $\\{q_i^1, q_i^2, ..., q_i^{|u|+1}\\}$ . We can now compute each  $Q_i$  by taking those states from the first row that lie in the same columns as the state  $q_i^i$ . □",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        547.5,
+                        990,
+                        1990,
+                        990,
+                        1990,
+                        1407.5,
+                        547.5,
+                        1407.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                550,
+                1422.5,
+                1992.5,
+                1422.5,
+                1992.5,
+                1832.5,
+                550,
+                1832.5
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " With these two lemmas we are ready to present a decryption method:  - 1. using Lemma 1 compute the set  $\\{q_l^1, q_l^2, \\dots, q_l^{|u|+1}\\},$ - 2. using Lemma 2 compute the partition of P on sets  $Q_1, Q_2, ..., Q_{|u|+1}$ , - 3. for every transition  $x \\in \\{0,1\\}$  in  $\\mathcal{B}$  if x joins a states from different sets, say  $Q_i$  and  $Q_j$ , then join  $q_l^i$  and  $q_l^j$  with transition x, otherwise remove the transition.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        550,
+                        1422.5,
+                        1992.5,
+                        1422.5,
+                        1992.5,
+                        1832.5,
+                        550,
+                        1832.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                552.5,
+                1865,
+                1992.5,
+                1865,
+                1992.5,
+                2117.5,
+                552.5,
+                2117.5
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": " Observe, that after applying that procedure to the ciphertext  $\\mathcal{B}$  we end up with a graph that was our plaintext, what can be concluded directly from the encryption procedure. In general one can decipher the message only by knowing any carefully synchronizing word for  $\\mathcal{A}$  or computing every possible induced subautomaton isomorphic to  $\\mathcal{A}$ .",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        552.5,
+                        1865,
+                        1992.5,
+                        1865,
+                        1992.5,
+                        2117.5,
+                        552.5,
+                        2117.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                550,
+                2300,
+                1990,
+                2300,
+                1990,
+                2792.5,
+                550,
+                2792.5
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": " As the ciphertext which is a result of our encryption method consists of  $n$  copies of isomorphic automaton with added transitions between those copies one can think of more “sophisticated” method of creating a ciphertext. As mentioned in the previous section a potential attacker can decipher the message computing every possible induced subautomaton isomorphic to a public key. However, the problem of determining for two given graphs say  $G$  and  $H$ , whether  $G$  has a copy of  $H$  as an induced subgraph is  $NP$ -complete [\\[6\\]](#page-9-1). In this section we present two lemmas that can be used to obfuscate the ciphertext even more. The first one involves adding the state to the public key and the second one adding arbitrary number of  $a$ -clusters to ",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        550,
+                        2300,
+                        1990,
+                        2300,
+                        1990,
+                        2792.5,
+                        550,
+                        2792.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1245,
+                2885,
+                1295,
+                2885,
+                1295,
+                2932.5,
+                1245,
+                2932.5
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "As the ciphertext which is a result of our encryption method consists of n copies of isomorphic automaton with added transitions between those copies one can think of more ”sophisticated” method of creating a ciphertext. As mentioned in the previous section a potential attacker can decipher the message computing every possible induced subautomaton isomorphic to a public key. However, the problem of determining for two given graphs say G and H, whether G has a copy of H as an induced subgraph is NP-complete [6]. In this section we present two lemmas that can be used to obfuscate the ciphertext even more. The first one involves adding the state to the public key and the second one adding arbitrary number of a-clusters to the ciphertext.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1245,
+                        2885,
+                        1295,
+                        2885,
+                        1295,
+                        2932.5,
+                        1245,
+                        2932.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                550,
+                2195,
+                982.5,
+                2195,
+                982.5,
+                2250,
+                550,
+                2250
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " # 5 Extensions",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        550,
+                        2195,
+                        982.5,
+                        2195,
+                        982.5,
+                        2250,
+                        550,
+                        2250
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 814,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "80_10_png.jpg"
+    }
+}

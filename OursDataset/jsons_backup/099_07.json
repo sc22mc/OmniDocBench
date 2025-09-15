@@ -1,0 +1,622 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        460,
+        120,
+        1218,
+        120,
+        1218,
+        150,
+        460,
+        150
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            460,
+            120,
+            1218,
+            120,
+            1218,
+            150,
+            460,
+            150
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        445.9999999999999,
+        354,
+        2100,
+        354,
+        2100,
+        614,
+        445.9999999999999,
+        614
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "response-level correlations between model-generated ratings and GPT-4 ratings. To save cost, we only collect the GPT-4 ratings on the previous \"best-of- $N$ \" responses. The test set for this task is built on the basis of Eval-C by sampling 2 out of 4 queries for each scenario. We ask two different base LLMs (LLaMA-2-chat-7B and Vicuna-7B-v1.5) to generate 32 responses for each query through uniform sampling (temperature set as 1.0). We refer to this test set as Eval-R, with  $58 \\times 2 = 116$  queries and  $116 \\times 32 = 3,712$  query-response pairs for each base LLM.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            445.9999999999999,
+            354,
+            2100,
+            354,
+            2100,
+            614,
+            445.9999999999999,
+            614
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        450,
+        774,
+        2106,
+        774,
+        2106,
+        1172,
+        450,
+        1172
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": "**General-purpose models:** We use LLaMA-2-Chat-13B (Touvron et al., 2023b), Vicuna-13B-v1.5 (Chiang et al., 2023), WizardLM-13B-v1.2 (Xu et al., 2023), and ChatGPT (GPT-3.5-turbo-0613). We also use GPT-4 (GPT-4-0613) in the pairwise comparison and critique generation, and Claude-2 and LLaMA-2-Chat-70B in pairwise comparison. These models are used with corresponding prompt for each task: pairwise comparison prompt in Tab. 14, critique generation prompt in Tab. 18 (the same input format for AUTO-J's single-response evaluation), and rating prompt in Tab. 15. **Evaluationspecific models**: We use SelFee (Ye et al., 2023) in critique generation, SteamSHP (Ethayarajh et al., 2022) in pairwise comparison and overall rating, Open-Assistant's reward model (Köpf et al., 2023) in overall rating, and PandaLM (Wang et al., 2023c) in pairwise comparison.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            450,
+            774,
+            2106,
+            774,
+            2106,
+            1172,
+            450,
+            1172
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        448,
+        1457.9999999999998,
+        1404,
+        1457.9999999999998,
+        1404,
+        1851.9999999999998,
+        448,
+        1851.9999999999998
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "A common problem in pairwise response comparison is positional bias (Wang et al., 2023a), where an LLM may tend to favor specific positions, causing inconsistency in comparison results when response orders are swapped. To pursue stable and reliable results, we conduct two comparisons for each sample by swapping the order of the two responses in the prompt. We consider a model's judgment to agree with human only when the two comparison results are consistent and align with the human judgment.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            1457.9999999999998,
+            1404,
+            1457.9999999999998,
+            1404,
+            1851.9999999999998,
+            448,
+            1851.9999999999998
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        448.0000000000001,
+        1884,
+        1998,
+        1884,
+        1998,
+        2200,
+        448.0000000000001,
+        2200
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "The agreement rates for AUTO-J and the baselines on Eval-P are in Tab. 1. AUTO-J achieves a significantly higher agreement rate than all baselines except GPT-4 on every scenario group. We also plot the prediction consistency for each model in Fig. 4. AUTO-J has a similar consistency rate to GPT-4 and is far more consistent than all other baselines, which makes it a more reliable and robust judge for pairwise comparison.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448.0000000000001,
+            1884,
+            1998,
+            1884,
+            1998,
+            2200,
+            448.0000000000001,
+            2200
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        444,
+        2356,
+        2100,
+        2356,
+        2100,
+        2720,
+        444,
+        2720
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": "The comparison results on Eval-C given by GPT-4 and human are in Fig. 3, and the complete comparison results for different scenario groups are in Tab. 23. In both evaluation settings, AUTO-J performs significantly than all baselines, including GPT-4, reflecting the strong ability to criticize other LLMs' outputs. We also observe that GPT-4 tends to provide judgments with very few ties, whereas humans often give tie judgments in comparisons, sometimes even exceeding  $30\\%$ . One possible explanation is that the critique from AUTO-J exhibit a clearer structure and readability, which leads GPT-4 to pay less attention to the content when making comparisons, while humans are able to read more attentively and discern subtle differences between two critiques.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            444,
+            2356,
+            2100,
+            2356,
+            2100,
+            2720,
+            444,
+            2720
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        444,
+        2864,
+        2106,
+        2864,
+        2106,
+        3048,
+        444,
+        3048
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": "We conduct experiments on Eval-R with the  $N$  in Best-of- $N$  selection set as 8, 16, and 32. In practice, if two responses share a common model rating, we choose the one with a higher output probability. Results in Tab. 2 show that responses selected by AUTO-J generally get higher GPT-4 ratings than those selected by baselines on different  $N$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            444,
+            2864,
+            2106,
+            2864,
+            2106,
+            3048,
+            444,
+            3048
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        452.00000000000006,
+        2776,
+        1300,
+        2776,
+        1300,
+        2824,
+        452.00000000000006,
+        2824
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": "## 6.3 OVERALL RATING FOR SINGLE-RESPONSE",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            452.00000000000006,
+            2776,
+            1300,
+            2776,
+            1300,
+            2824,
+            452.00000000000006,
+            2824
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        448,
+        2270,
+        1406,
+        2270,
+        1406,
+        2302,
+        448,
+        2302
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "## 6.2 CRITIQUE GENERATION FOR SINGLE-RESPONSE",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            2270,
+            1406,
+            2270,
+            1406,
+            2302,
+            448,
+            2302
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        448,
+        1260,
+        832,
+        1260,
+        832,
+        1298,
+        448,
+        1298
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": " # 6 EXPERIMENTS",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            1260,
+            832,
+            1260,
+            832,
+            1298,
+            448,
+            1298
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        448,
+        1356,
+        1170,
+        1356,
+        1170,
+        1402,
+        448,
+        1402
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": " ## 6.1 PAIRWISE RESPONSE COMPARISON",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            1356,
+            1170,
+            1356,
+            1170,
+            1402,
+            448,
+            1402
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        1444,
+        1503.9999999999998,
+        2122,
+        1503.9999999999998,
+        2122,
+        1925.9999999999998,
+        1444,
+        1925.9999999999998
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1444,
+            1503.9999999999998,
+            2122,
+            1503.9999999999998,
+            2122,
+            1925.9999999999998,
+            1444,
+            1925.9999999999998
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        1726,
+        1946,
+        1990,
+        1946,
+        1990,
+        1976,
+        1726,
+        1976
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "Consistency Rate(%)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1726,
+            1946,
+            1990,
+            1946,
+            1990,
+            1976,
+            1726,
+            1976
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        1436.0000000000002,
+        2032,
+        2098,
+        2032,
+        2098,
+        2114,
+        1436.0000000000002,
+        2114
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "The agreement rates for AUTO-J and the baselines on Eval-P are in Tab. 1. AUTO-J achieves a significantly higher agreement rate than all baselines except GPT-4 on every scenario group. We also plot the prediction consistency for each model in Fig. 4. AUTO-J has a similar consistency rate to GPT-4 and is far more consistent than",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1436.0000000000002,
+            2032,
+            2098,
+            2032,
+            2098,
+            2114,
+            1436.0000000000002,
+            2114
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1258,
+        3122,
+        1284,
+        3122,
+        1284,
+        3168,
+        1258,
+        3168
+      ],
+      "ignore": false,
+      "order": "16",
+      "anno_id": 1,
+      "text": "7",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1258,
+            3122,
+            1284,
+            3122,
+            1284,
+            3168,
+            1258,
+            3168
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        446,
+        680,
+        752,
+        680,
+        752,
+        722,
+        446,
+        722
+      ],
+      "ignore": false,
+      "order": "3",
+      "anno_id": 1,
+      "text": "## 5.2 BASELINES",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            446,
+            680,
+            752,
+            680,
+            752,
+            722,
+            446,
+            722
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 1055,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "99_7_png.jpg"
+  }
+}

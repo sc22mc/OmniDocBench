@@ -1,0 +1,204 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "plain_text",
+      "poly": [
+        372.5,
+        357.5,
+        2120,
+        357.5,
+        2120,
+        1080,
+        372.5,
+        1080
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": " $(2)$  can be viewed as a rough proxy for the remaining two integrals, when the integrand in both terms is replaced by the arithmetic average of start and end value. In contrast, the integral expressions in formula  $(3)$  take into account the whole path trajectories of  $A$  and  $\\chi$  on the interval  $(t,T]$ , and may thus be considered closer to reality. If one is not willing to assume that  $A$  and  $\\chi$  are independent, which is obviously an assumption that strongly depends on the considered asset  $A$  in concern, an FX decomposition becomes more difficult. For instance, if we assume that there is a positive probability that  $A$  and  $\\chi$  have common jumps and we observe such jump at  $u \\in (t,T]$ , the expression  $[A,\\chi]_t$ contains  $\\Delta A_u \\, \\Delta \\chi_u$ . Which percentage of this expression should be attributed to the PnL induced by FX rate changes, and which to a change in the asset value? While this consideration based on the stochastic integral formula  $(3)$  might appear quite academic and difficult to implement in practice, it makes very clear in what sense our definition  $(2)$  can only be an approximation to reality.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            372.5,
+            357.5,
+            2120,
+            357.5,
+            2120,
+            1080,
+            372.5,
+            1080
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        377.5,
+        1185,
+        1347.5,
+        1185,
+        1347.5,
+        1235,
+        377.5,
+        1235
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": " # 2 Single assets subject to reinvestment",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            377.5,
+            1185,
+            1347.5,
+            1185,
+            1347.5,
+            1235,
+            377.5,
+            1235
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        372.5,
+        1322.5,
+        2120,
+        1322.5,
+        2120,
+        2047.5,
+        372.5,
+        2047.5
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": " We assume that the price  $A_t$  is a function of three variables: (i) time  $t$ , (ii) a discounting curve  $r_t$ , (iii) additional market risk factors  $x_t$ . This means we have  $A_t = A_t(r_t, x_t)$ . The additional market risk factors  $x_t$  depend on the specific asset and applied pricing model. For instance, in case of a bond or credit default swap  $x_t$  might be a tuple consisting of a credit spread curve, a recovery rate assumption, and a liquidity spread (e.g. such as the negative basis as introduced in [Mai (2019)]). The sub-index  $t$  at the interest rate object  $r = r_t$  and the market factor  $x = x_t$  indicates that the states of these input variables depend on the time point. If we write  $A_s(r_t,x_v)$  we price the asset at time *s* with the discounting curve from time  $t$  and the market factor variables at time  $v$ , noticing that this is a theoretical number that has not been observed at some time point (it is in general different from  $A_s = A_s(r_s, x_s)$ ). Given this, we decompose the PnL due to a change in asset values as follows, taking into account the three different driving factors interest rate  $(r)$ , market risk  $(x)$ , as well as carry (due to time  $t$  passing):",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            372.5,
+            1322.5,
+            2120,
+            1322.5,
+            2120,
+            2047.5,
+            372.5,
+            2047.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        455,
+        2090,
+        2035,
+        2090,
+        2035,
+        2497.5,
+        455,
+        2497.5
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " $$ A_T - A_t = A_T(r_T, x_T) - A_t(r_t, x_t) $$  $$ = \\frac{A_T(r_T, x_T) - A_T(r_t, x_t)}{2} + \\frac{A_t(r_T, x_t) - A_t(r_t, x_t)}{2}  $$   (interest rate change)  $$ + \\frac{A_T(r_T, x_T) - A_T(r_T, x_t)}{2} + \\frac{A_t(r_T, x_T) - A_t(r_t, x_t)}{2}  $$   (market risk change)  $$ + \\frac{A_T(r_T, x_T) - A_t(r_t, x_t)}{2} + \\frac{A_T(r_t, x_T) - A_t(r_T, x_t)}{2}. $$   (carry)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            455,
+            2090,
+            2035,
+            2090,
+            2035,
+            2497.5,
+            455,
+            2497.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1215,
+        2962.5,
+        1262.5,
+        2962.5,
+        1262.5,
+        3007.5,
+        1215,
+        3007.5
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "3",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1215,
+            2962.5,
+            1262.5,
+            2962.5,
+            1262.5,
+            3007.5,
+            1215,
+            3007.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 684,
+    "height": 3508,
+    "width": 2481,
+    "image_path": "67_3_png.jpg"
+  }
+}

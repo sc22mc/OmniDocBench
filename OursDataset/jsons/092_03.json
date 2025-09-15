@@ -1,0 +1,584 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                160,
+                132,
+                224,
+                132,
+                224,
+                166,
+                160,
+                166
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "462 ",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        160,
+                        132,
+                        224,
+                        132,
+                        224,
+                        166,
+                        160,
+                        166
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "header",
+            "poly": [
+                1036,
+                134,
+                2318,
+                134,
+                2318,
+                168,
+                1036,
+                168
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": " IEEE TRANSACTIONS ON AGRIFOOD ELECTRONICS, VOL. 2, NO. 2, SEPTEMBER/OCTOBER 2024",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1036,
+                        134,
+                        2318,
+                        134,
+                        2318,
+                        168,
+                        1036,
+                        168
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                169.9999999999999,
+                273.995,
+                1220,
+                273.995,
+                1220,
+                2106.005,
+                169.9999999999999,
+                2106.005
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " respond quickly to change, MFCs have *slow dynamics* because of the redox reactions and the evolution of the biofilm. When PMFC operating conditions vary, transients must be settled before we can draw conclusions on steady-state characteristics, such as maximum power point (MPP). For example, many commonly used dc–dc converters integrate FOCV MPPT algorithms by periodically detaching the load for some milliseconds to measure the OCV, and then modulating the cell voltage to a preset fraction of that OCV value [26]. While this trivial OCV measurement works very well for fast energy sources, such as photovoltaic cells, PMFCs require tens of minutes to reach OCV after unloading. If this is not accounted for when coupling PM-FCs to commercial dc-dcs, it leads to incorrect OCV sampling, which sets the working point far from the actual MPP. To adapt common dc-dcs to the slow dynamics characterizing PMFCs, Alaraj et al. [27] developed an MFC-specific MPPT algorithm, which includes waiting a correct amount of time where the cell is unloaded to capture steady-state OCV. Similarly, in this article, we capture the steady-state OCV after a sufficient unloading time of the PMFC—which we term *cell rest*—and externally apply a fraction of the measured OCV as MPP reference to the dc-dc. This operation is executed through a simple sample-and-hold circuit, which is briefly powered after cell unloading periods to obtain a new MPP reference (see Section III-C2). The benefits of this method can be appreciated in Fig. 4. We do not rely on the OCV fraction found from the polarization curve (MPP at  $30\\%$ ) but choose the OCV percentage that experimentally resulted in the fastest capacitor charging through the BQ25505, which we found to be  $50\\%$  (see Fig. 5). The downside of unloading a cell for some time to measure OCV correctly is that we cannot extract power from that cell during its rest period. If this can initially be seen as a limitation of our method, allowing cells to rest actually benefits the longevity of PMFCs, as continuous current drainage was proven to reduce PMFC performance in the long run [13], [14], [20], [28]. Besides, if multiple PMFCs are available, one can switch between cells to ensure continuous power extraction and cell rest, as shown in Reyes et al.'s [28] work.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        169.9999999999999,
+                        273.995,
+                        1220,
+                        273.995,
+                        1220,
+                        2106.005,
+                        169.9999999999999,
+                        2106.005
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                165.9999999999999,
+                2112,
+                1222,
+                2112,
+                1222,
+                2752,
+                165.9999999999999,
+                2752
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "Finally, while high internal impedance is one of the major limiting factors in PMFC power output, it can be a key element in understanding electrobiochemical phenomena ruling the functioning of PMFCs. The development of cell impedance models can come in handy for MPPT, optimizing cell lifetime, and using the cell as a plant health biosensor. Cells are highly complex systems: although a favorite in literature has been the Randles cell, there is a lack of agreed-upon cell mathematical models. PMFC models can be obtained and used in different ways. For instance, Ma et al. [29] used a data-driven approach for modeling the relationship between temperature, pH, and OCV during startup. As mentioned, literature has often relied on EIS measurements to develop physical-based cell models [11].",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        165.9999999999999,
+                        2112,
+                        1222,
+                        2112,
+                        1222,
+                        2752,
+                        165.9999999999999,
+                        2752
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                165.9999999999999,
+                2760,
+                1224,
+                2760,
+                1224,
+                3100,
+                165.9999999999999,
+                3100
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "In this study, our main interest in EIS measurements lies in enabling online estimation of cell state from electrochemical properties so that appropriate actions can be taken to reach or maintain the cell's desired power production rate for as long as possible. We are also interested in enabling further studies of the link between EIS measurements and plant state. Unfortunately, Carmalin et al. [30] stress the lack of studies on the subject but",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        165.9999999999999,
+                        2760,
+                        1224,
+                        2760,
+                        1224,
+                        3100,
+                        165.9999999999999,
+                        3100
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1268,
+                3006,
+                2320,
+                3006,
+                2320,
+                3102,
+                1268,
+                3102
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": "Newly built reactors require a startup time. Naturally present bacteria in the soil need to establish a thriving colony, which",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1268,
+                        3006,
+                        2320,
+                        3006,
+                        2320,
+                        3102,
+                        1268,
+                        3102
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1270,
+                2410,
+                2318,
+                2410,
+                2318,
+                2998,
+                1270,
+                2998
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": "To compensate for the absence of a PEM, oxygen diffusion was limited by placing the two electrodes at a 10 cm depth difference. The anode was placed at the bottom of the vase, with no openings to maintain the anoxic environment required for the anodic reaction. The cathode was buried 2 cm below ground to ensure oxygen could reach its surface for the oxygen reduction reaction. The reactor volume was 1044 cm<sup>3</sup>. The cathode was slightly oversized than the anode (cathode diameter:  $11 \\text{ cm}$ , anode diameter:  $8 \\text{ cm}$ ) to compensate for slower cathodic reaction kinetics [34]. The plant in our MFC cells is common *Mentha Piperita:* it is a fast-growing, hardy, and easy-to-source plant, supposed to tolerate well a damp environment.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1270,
+                        2410,
+                        2318,
+                        2410,
+                        2318,
+                        2998,
+                        1270,
+                        2998
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1266,
+                2114,
+                2322,
+                2114,
+                2322,
+                2394,
+                1266,
+                2394
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": "We built our test reactors using carbon brush electrodes and soil from the campus ground. Fig. 1 showcases the construction details. We designed a single-chamber fuel cell without a polymer electrolyte membrane (PEM) separating anodic and cathodic regions, to keep deployment costs as low as possible, albeit the Coulomb efficiency slightly lower [33].",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1266,
+                        2114,
+                        2322,
+                        2114,
+                        2322,
+                        2394,
+                        1266,
+                        2394
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1268,
+                1737.9999999999998,
+                2318,
+                1737.9999999999998,
+                2318,
+                1977.9999999999998,
+                1268,
+                1977.9999999999998
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": "This section outlines the sensor node's key building blocks and the application scenario. It begins with a review of the construction of our test PMFCs in Section III-A, followed by an analysis of the proposed application scenario in Section III-B and the sensor node's block diagram in Section III-C.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1268,
+                        1737.9999999999998,
+                        2318,
+                        1737.9999999999998,
+                        2318,
+                        1977.9999999999998,
+                        1268,
+                        1977.9999999999998
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1264,
+                1460,
+                2314,
+                1460,
+                2314,
+                1606,
+                1264,
+                1606
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "If the link between EIS and plant state is found, our monitoring system can be used as an inexpensive and portable plant biosensor, assisting researchers in large data collection campaigns.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1264,
+                        1460,
+                        2314,
+                        1460,
+                        2314,
+                        1606,
+                        1264,
+                        1606
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1266,
+                1162,
+                2322,
+                1162,
+                2322,
+                1452,
+                1266,
+                1452
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "hint that EIS fit parameters such as solution resistance could be influenced by plant factors, such as root exudate type, rate, and present bacterial community. Other projects such as [31] and [32] executed EIS on PMFCs, but most interpret results without considering plant interaction with the cell's electrobiochemical characteristics.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1266,
+                        1162,
+                        2322,
+                        1162,
+                        2322,
+                        1452,
+                        1266,
+                        1452
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                1262,
+                976,
+                2318,
+                976,
+                2318,
+                1088,
+                1262,
+                1088
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "Fig. 1. On the left, the construction details of the reactor are shown. Figure A and B, respectively, show the dimensions of the anode and cathode carbon brush electrodes, the titanium wire inserted into the electrodes.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1262,
+                        976,
+                        2318,
+                        976,
+                        2318,
+                        1088,
+                        1262,
+                        1088
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                1322,
+                282,
+                2276,
+                282,
+                2276,
+                934,
+                1322,
+                934
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1322,
+                        282,
+                        2276,
+                        282,
+                        2276,
+                        934,
+                        1322,
+                        934
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1530,
+                1657.9999999999998,
+                2054,
+                1657.9999999999998,
+                2054,
+                1705.9999999999998,
+                1530,
+                1705.9999999999998
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "# III. SYSTEM IMPLEMENTATION",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1530,
+                        1657.9999999999998,
+                        2054,
+                        1657.9999999999998,
+                        2054,
+                        1705.9999999999998,
+                        1530,
+                        1705.9999999999998
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1268,
+                2044,
+                1924,
+                2044,
+                1924,
+                2084,
+                1268,
+                2084
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": "## A. PMFC Construction and Operation",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1268,
+                        2044,
+                        1924,
+                        2044,
+                        1924,
+                        2084,
+                        1268,
+                        2084
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 949,
+        "height": 3300,
+        "width": 2475,
+        "image_path": "92_3_png.jpg"
+    }
+}

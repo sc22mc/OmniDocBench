@@ -1,0 +1,592 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "table",
+            "poly": [
+                300,
+                294,
+                2252,
+                294,
+                2252,
+                642,
+                300,
+                642
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        300,
+                        294,
+                        2252,
+                        294,
+                        2252,
+                        642,
+                        300,
+                        642
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>Model</th>\n<th>Backbone</th>\n<th>Params</th>\n<th>Book</th>\n<th>Slides</th>\n<th>Research<br>Report</th>\n<th>Textbook</th>\n<th>Exam<br>Paper</th>\n<th>Magazine</th>\n<th>Academic<br>Literature</th>\n<th>Notes</th>\n<th>Newspaper</th>\n<th>Average</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>DiT-L [24]</td>\n<td>ViT-L</td>\n<td>361.6M</td>\n<td>43.44</td>\n<td>13.72</td>\n<td>45.85</td>\n<td>15.45</td>\n<td>3.40</td>\n<td>29.23</td>\n<td>66.13</td>\n<td>0.21</td>\n<td>23.65</td>\n<td>26.90</td>\n</tr>\n<tr>\n<td>LayoutLMv3 [17]</td>\n<td>RoBERTa-B</td>\n<td>138.4M</td>\n<td>42.12</td>\n<td>13.63</td>\n<td>43.22</td>\n<td>21.00</td>\n<td>5.48</td>\n<td>31.81</td>\n<td>64.66</td>\n<td>0.80</td>\n<td>30.84</td>\n<td>28.84</td>\n</tr>\n<tr>\n<td>DocLayout-YOLO [53]</td>\n<td>v10m</td>\n<td>19.6M</td>\n<td>43.71</td>\n<td>48.71</td>\n<td>72.83</td>\n<td>42.67</td>\n<td>35.40</td>\n<td>51.44</td>\n<td>64.64</td>\n<td>9.54</td>\n<td>57.54</td>\n<td>47.38</td>\n</tr>\n<tr>\n<td>SwinDocSegmenter [4]</td>\n<td>Swin-L</td>\n<td>223M</td>\n<td>42.91</td>\n<td>28.20</td>\n<td>47.29</td>\n<td>32.44</td>\n<td>20.81</td>\n<td>52.35</td>\n<td>48.54</td>\n<td>12.38</td>\n<td>38.06</td>\n<td>35.89</td>\n</tr>\n<tr>\n<td>GraphKD [5]</td>\n<td>R101</td>\n<td>44.5M</td>\n<td>39.03</td>\n<td>16.18</td>\n<td>39.92</td>\n<td>22.82</td>\n<td>14.31</td>\n<td>37.61</td>\n<td>44.43</td>\n<td>5.71</td>\n<td>23.86</td>\n<td>27.10</td>\n</tr>\n<tr>\n<td>DOCX-Chain [50]</td>\n<td>-</td>\n<td>-</td>\n<td>30.86</td>\n<td>11.71</td>\n<td>39.62</td>\n<td>19.23</td>\n<td>10.67</td>\n<td>23.00</td>\n<td>41.60</td>\n<td>1.80</td>\n<td>16.96</td>\n<td>21.27</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                301.99999999999966,
+                774,
+                2262,
+                774,
+                2262,
+                1144,
+                301.99999999999966,
+                1144
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        301.99999999999966,
+                        774,
+                        2262,
+                        774,
+                        2262,
+                        1144,
+                        301.99999999999966,
+                        1144
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>Model Type</th>\n<th>Model</th>\n<th>Language</th>\n<th></th>\n<th></th>\n<th>Table Frame Type</th>\n<th></th>\n<th></th>\n<th></th>\n<th>Special Situation</th>\n<th></th>\n<th></th>\n<th></th>\n<th>Overall</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td></td>\n<td>EN</td>\n<td>ZH</td>\n<td>Mixed</td>\n<td>Full</td>\n<td>Omission</td>\n<td>Three</td>\n<td>Zero</td>\n<td>Merge Cell(+/-)</td>\n<td>Formula(+/-)</td>\n<td>Colorful(+/-)</td>\n<td>Rotate(+/-)</td>\n<td></td>\n</tr>\n<tr>\n<td>OCR-based Models</td>\n<td>PaddleOCR[23]</td>\n<td>76.8</td>\n<td>71.8</td>\n<td>80.1</td>\n<td>67.9</td>\n<td>74.3</td>\n<td>81.1</td>\n<td>74.5</td>\n<td>70.6/75.2</td>\n<td>71.3/74.1</td>\n<td>72.7/74.0</td>\n<td>23.3/74.6</td>\n<td>73.6</td>\n</tr>\n<tr>\n<td></td>\n<td>RapidTable[37]</td>\n<td>80.0</td>\n<td>83.2</td>\n<td>91.2</td>\n<td>83.0</td>\n<td>79.7</td>\n<td>83.4</td>\n<td>78.4</td>\n<td>77.1/85.4</td>\n<td>76.7/83.9</td>\n<td>77.6/84.9</td>\n<td>25.2/83.7</td>\n<td>82.5</td>\n</tr>\n<tr>\n<td>Expert VLMs</td>\n<td>StructEqTable[55]</td>\n<td>72.8</td>\n<td>75.9</td>\n<td>83.4</td>\n<td>72.9</td>\n<td>76.2</td>\n<td>76.9</td>\n<td>88.0</td>\n<td>64.5/81.0</td>\n<td>69.2/76.6</td>\n<td>72.8/76.4</td>\n<td>30.5/76.2</td>\n<td>75.8</td>\n</tr>\n<tr>\n<td></td>\n<td>GOT-OCR [45]</td>\n<td>72.2</td>\n<td>75.5</td>\n<td>85.4</td>\n<td>73.1</td>\n<td>72.7</td>\n<td>78.2</td>\n<td>75.7</td>\n<td>65.0/80.2</td>\n<td>64.3/77.3</td>\n<td>70.8/76.9</td>\n<td>8.5/76.3</td>\n<td>74.9</td>\n</tr>\n<tr>\n<td>General VLMs</td>\n<td>Qwen2-VL-7B [44]</td>\n<td>70.2</td>\n<td>70.7</td>\n<td>82.4</td>\n<td>70.2</td>\n<td>62.8</td>\n<td>74.5</td>\n<td>80.3</td>\n<td>60.8/76.5</td>\n<td>63.8/72.6</td>\n<td>71.4/70.8</td>\n<td>20.0/72.1</td>\n<td>71.0</td>\n</tr>\n<tr>\n<td></td>\n<td>InternVL2-8B [8]</td>\n<td>70.9</td>\n<td>71.5</td>\n<td>77.4</td>\n<td>69.5</td>\n<td>69.2</td>\n<td>74.8</td>\n<td>75.8</td>\n<td>58.7/78.4</td>\n<td>62.4/73.6</td>\n<td>68.2/73.1</td>\n<td>20.4/72.6</td>\n<td>71.5</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                282.0000000000001,
+                1180,
+                2260,
+                1180,
+                2260,
+                1222,
+                282.0000000000001,
+                1222
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "Table 7. Component-level Table Recognition evaluation on OmniDocBench table subset. (+/-) means with/without special situation.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        282.0000000000001,
+                        1180,
+                        2260,
+                        1180,
+                        2260,
+                        1222,
+                        282.0000000000001,
+                        1222
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                379.9999999999998,
+                686,
+                2174,
+                686,
+                2174,
+                720,
+                379.9999999999998,
+                720
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "Table 6. Component-level layout detection evaluation on OmniDocBench layout subset: mAP results by PDF page type.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        379.9999999999998,
+                        686,
+                        2174,
+                        686,
+                        2174,
+                        720,
+                        379.9999999999998,
+                        720
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                242,
+                1328,
+                1232,
+                1328,
+                1232,
+                1404,
+                242,
+                1404
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "ponents, with tables, images, and ignored components excluded from the final reading order calculation.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        242,
+                        1328,
+                        1232,
+                        1328,
+                        1232,
+                        1404,
+                        242,
+                        1404
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                241.99999999999994,
+                1564,
+                1236,
+                1564,
+                1236,
+                1696,
+                241.99999999999994,
+                1696
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "Based on the distinct characteristics of these algorithms, we categorize document content extraction methods into three main classes:",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        241.99999999999994,
+                        1564,
+                        1236,
+                        1564,
+                        1236,
+                        1696,
+                        241.99999999999994,
+                        1696
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                240,
+                1712,
+                1236,
+                1712,
+                1236,
+                2412,
+                240,
+                2412
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "- **Pipeline Tools:** These methods integrate layout detection and various content recognition tasks (such as OCR, table recognition, and formula recognition) into a document parsing pipeline for content extraction. Prominent examples include MinerU [42] ( $v0.9.3$ ), Marker [34] ( $v1.2.3$ ), and Mathpi $x^4$ . - Expert VLMs: These are large multimodal models specifically trained for document parsing tasks. Representative models include GOT-OCR2.0 [45] and Nougat [7]. - General VLMs: These are general-purpose large multimodal models inherently capable of document parsing. Leading models in this category include GPT-40 [2], Qwen2-VL-72B [44], and InternVL2-76B [8].",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        240,
+                        1712,
+                        1236,
+                        1712,
+                        1236,
+                        2412,
+                        240,
+                        2412
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                240,
+                2530,
+                1228,
+                2530,
+                1228,
+                2972,
+                240,
+                2972
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "Overall Evaluation Results. As illustrated in Table 2, pipeline tools such as MinerU and Mathpix, demonstrate superior performance across sub-tasks like text recognition, formula recognition, and table recognition. Moreover, the general Vision Language Models (VLMs), Qwen2-VL, and GPT40, also exhibit competitive performance. Almost all algorithms score higher on English than on Chinese pages. **Performance Across Diverse Page Types.** To gain deeper insights into model performance on diverse document types,",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        240,
+                        2530,
+                        1228,
+                        2530,
+                        1228,
+                        2972,
+                        240,
+                        2972
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1316,
+                2580,
+                2310,
+                2580,
+                2310,
+                2964,
+                1316,
+                2964
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": " Discussion on End-to-End Results. 1) While general VLMs often lag behind specialized pipelines and expert models on standard documents (e.g., academic papers), they generalize better to unconventional formats (e.g., notes) and perform more robustly under degraded conditions (e.g., fuzzy scans). This is largely due to their broader training data, enabling better handling of long-tail scenarios compared to models trained on narrow domains. 2) VLMs, how-",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1316,
+                        2580,
+                        2310,
+                        2580,
+                        2310,
+                        2964,
+                        1316,
+                        2964
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1318,
+                2124,
+                2306,
+                2124,
+                2306,
+                2558,
+                1318,
+                2558
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": " **Performance on Different Layout Types.** Page layout is a critical factor in document understanding, especially for tasks involving reading order. OmniDocBench annotates layout attributes such as single-column, multi-column, and complex custom formats. Across all models, we observe a clear drop in accuracy on multi-column and complex layouts. MinerU shows the most consistent reading order prediction, though its performance dips on handwritten singlecolumn pages due to recognition noise.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1318,
+                        2124,
+                        2306,
+                        2124,
+                        2306,
+                        2558,
+                        1318,
+                        2558
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1320,
+                1726,
+                2304,
+                1726,
+                2304,
+                2110,
+                1320,
+                2110
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": " Performance on Pages with Visual Degradations. In Table 4, we further analyze performance on pages containing common document-specific challenges, including fuzzy scans, watermarks, and colorful backgrounds. VLMs like InternVL2 and Qwen2-VL exhibit higher robustness in these scenarios despite visual noise. Among pipeline tools, MinerU remains competitive due to its strong layout segmentation and preprocessing capabilities.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1320,
+                        1726,
+                        2304,
+                        1726,
+                        2304,
+                        2110,
+                        1320,
+                        2110
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1320,
+                1328,
+                2310,
+                1328,
+                2310,
+                1712,
+                1320,
+                1712
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": " we evaluated text recognition tasks across different page types. Intriguingly, as shown in Table 3, pipeline tools perform well for commonly used data, such as academic papers and financial reports. Meanwhile, for more specialized data, such as slides and handwritten notes, general VLMs demonstrate stronger generalization. Notably, most VLMs fail to recognize when dealing with the Newspapers, while pipeline tools achieve significantly better performance.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1320,
+                        1328,
+                        2310,
+                        1328,
+                        2310,
+                        1712,
+                        1320,
+                        1712
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                246,
+                1472,
+                556,
+                1472,
+                556,
+                1512,
+                246,
+                1512
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "# 5. Benchmarks",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        246,
+                        1472,
+                        556,
+                        1472,
+                        556,
+                        1512,
+                        246,
+                        1512
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                234,
+                2444,
+                926,
+                2444,
+                926,
+                2488,
+                234,
+                2488
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "## 5.1. End-to-End Evaluation Results",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        234,
+                        2444,
+                        926,
+                        2444,
+                        926,
+                        2488,
+                        234,
+                        2488
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1219.9999999999998,
+                3118,
+                1333.9999999999998,
+                3118,
+                1333.9999999999998,
+                3162,
+                1219.9999999999998,
+                3162
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": "24844",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1219.9999999999998,
+                        3118,
+                        1333.9999999999998,
+                        3118,
+                        1333.9999999999998,
+                        3162,
+                        1219.9999999999998,
+                        3162
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 988,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "95_7_png.jpg"
+    }
+}

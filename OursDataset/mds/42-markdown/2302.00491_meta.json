@@ -1,0 +1,1106 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Learning Prototype Classifiers for Long-Tailed Recognition",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          122.9677734375,
+          89.25
+        ],
+        [
+          488.25,
+          89.25
+        ],
+        [
+          488.25,
+          102.48046875
+        ],
+        [
+          122.9677734375,
+          102.48046875
+        ]
+      ]
+    },
+    {
+      "title": "Abstract",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          152.103515625,
+          216.75
+        ],
+        [
+          198.75,
+          216.75
+        ],
+        [
+          198.75,
+          227.197265625
+        ],
+        [
+          152.103515625,
+          227.197265625
+        ]
+      ]
+    },
+    {
+      "title": "Introduction\n1",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          52.5,
+          568.5
+        ],
+        [
+          136.564453125,
+          568.5
+        ],
+        [
+          136.564453125,
+          579.3046875
+        ],
+        [
+          52.5,
+          579.3046875
+        ]
+      ]
+    },
+    {
+      "title": "Related work\n2",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          313.5,
+          283.5
+        ],
+        [
+          402.0,
+          283.5
+        ],
+        [
+          402.0,
+          294.873046875
+        ],
+        [
+          313.5,
+          294.873046875
+        ]
+      ]
+    },
+    {
+      "title": "3\nOur approach",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          52.5,
+          432.75
+        ],
+        [
+          146.25,
+          432.75
+        ],
+        [
+          146.25,
+          443.25
+        ],
+        [
+          52.5,
+          443.25
+        ]
+      ]
+    },
+    {
+      "title": "Prototype Classifier\n3.1",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          52.5,
+          450.75
+        ],
+        [
+          171.228515625,
+          450.75
+        ],
+        [
+          171.228515625,
+          461.35546875
+        ],
+        [
+          52.5,
+          461.35546875
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Gradient updates on prototypes",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          313.5,
+          354.75
+        ],
+        [
+          488.25,
+          354.75
+        ],
+        [
+          488.25,
+          365.0625
+        ],
+        [
+          313.5,
+          365.0625
+        ]
+      ]
+    },
+    {
+      "title": "3.3\nSimilarity to softmax classifier",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          52.5,
+          230.25
+        ],
+        [
+          220.5,
+          230.25
+        ],
+        [
+          220.5,
+          239.765625
+        ],
+        [
+          52.5,
+          239.765625
+        ]
+      ]
+    },
+    {
+      "title": "3.4 Channel-dependent temperatures",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          52.5,
+          452.25
+        ],
+        [
+          235.5,
+          452.25
+        ],
+        [
+          235.5,
+          462.12890625
+        ],
+        [
+          52.5,
+          462.12890625
+        ]
+      ]
+    },
+    {
+      "title": "3.5 Logit adjustment",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.171875,
+          55.5
+        ],
+        [
+          420.75,
+          55.5
+        ],
+        [
+          420.75,
+          65.79052734375
+        ],
+        [
+          313.171875,
+          65.79052734375
+        ]
+      ]
+    },
+    {
+      "title": "3.6 Differences from prototypical networks",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.5,
+          242.25
+        ],
+        [
+          523.546875,
+          242.25
+        ],
+        [
+          523.546875,
+          252.52734375
+        ],
+        [
+          313.5,
+          252.52734375
+        ]
+      ]
+    },
+    {
+      "title": "Experiments\n4",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.5,
+          477.0
+        ],
+        [
+          398.25,
+          477.0
+        ],
+        [
+          398.25,
+          487.5
+        ],
+        [
+          313.5,
+          487.5
+        ]
+      ]
+    },
+    {
+      "title": "Datasets\n4.1",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          313.5,
+          493.453125
+        ],
+        [
+          379.5,
+          493.453125
+        ],
+        [
+          379.5,
+          503.5078125
+        ],
+        [
+          313.5,
+          503.5078125
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Evaluation Protocol",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          52.5,
+          140.2822265625
+        ],
+        [
+          172.5,
+          140.2822265625
+        ],
+        [
+          172.5,
+          151.8837890625
+        ],
+        [
+          52.5,
+          151.8837890625
+        ]
+      ]
+    },
+    {
+      "title": "4.3 Implementation details",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          52.5,
+          227.970703125
+        ],
+        [
+          186.75,
+          227.970703125
+        ],
+        [
+          186.75,
+          239.185546875
+        ],
+        [
+          52.5,
+          239.185546875
+        ]
+      ]
+    },
+    {
+      "title": "4.4 Ablation study",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          52.5,
+          600.9609375
+        ],
+        [
+          147.7705078125,
+          600.9609375
+        ],
+        [
+          147.7705078125,
+          612.5625
+        ],
+        [
+          52.5,
+          612.5625
+        ]
+      ]
+    },
+    {
+      "title": "4.5 Prototype norms",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          313.5,
+          622.5
+        ],
+        [
+          418.5,
+          622.5
+        ],
+        [
+          418.5,
+          633.05859375
+        ],
+        [
+          313.5,
+          633.05859375
+        ]
+      ]
+    },
+    {
+      "title": "4.6 How do prototypes evolve during training?",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          52.5,
+          117.0
+        ],
+        [
+          279.0,
+          117.0
+        ],
+        [
+          279.0,
+          127.810546875
+        ],
+        [
+          52.5,
+          127.810546875
+        ]
+      ]
+    },
+    {
+      "title": "5 Comparison to state-of-the-art",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          52.5,
+          328.5
+        ],
+        [
+          229.5,
+          328.5
+        ],
+        [
+          229.5,
+          339.345703125
+        ],
+        [
+          52.5,
+          339.345703125
+        ]
+      ]
+    },
+    {
+      "title": "Conclusion\n6",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          52.5,
+          54.0
+        ],
+        [
+          130.5,
+          54.0
+        ],
+        [
+          130.5,
+          66.4189453125
+        ],
+        [
+          52.5,
+          66.4189453125
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          52.5,
+          247.88671875
+        ],
+        [
+          110.25,
+          247.88671875
+        ],
+        [
+          110.25,
+          259.48828125
+        ],
+        [
+          52.5,
+          259.48828125
+        ]
+      ]
+    },
+    {
+      "title": "Supplementary Material",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          62.25,
+          54.0
+        ],
+        [
+          190.5,
+          54.0
+        ],
+        [
+          190.5,
+          66.515625
+        ],
+        [
+          62.25,
+          66.515625
+        ]
+      ]
+    },
+    {
+      "title": "\u0391\nDataset statistics",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          52.5,
+          79.6640625
+        ],
+        [
+          160.5,
+          79.6640625
+        ],
+        [
+          160.5,
+          92.0390625
+        ],
+        [
+          52.5,
+          92.0390625
+        ]
+      ]
+    },
+    {
+      "title": "More training details\n\u0412",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          52.5,
+          357.908203125
+        ],
+        [
+          183.0,
+          357.908203125
+        ],
+        [
+          183.0,
+          371.056640625
+        ],
+        [
+          52.5,
+          371.056640625
+        ]
+      ]
+    },
+    {
+      "title": "Temperature schemes\n\u0421",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          52.5,
+          513.5625
+        ],
+        [
+          186.169921875,
+          513.5625
+        ],
+        [
+          186.169921875,
+          525.9375
+        ],
+        [
+          52.5,
+          525.9375
+        ]
+      ]
+    },
+    {
+      "title": "D Effect of logit adjustment weight",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          313.5,
+          385.171875
+        ],
+        [
+          504.0,
+          385.171875
+        ],
+        [
+          504.0,
+          398.3203125
+        ],
+        [
+          313.5,
+          398.3203125
+        ]
+      ]
+    },
+    {
+      "title": "Results on CIFAR10-LT\nE",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          313.470703125,
+          591.6796875
+        ],
+        [
+          459.0,
+          591.6796875
+        ],
+        [
+          459.0,
+          604.0546875
+        ],
+        [
+          313.470703125,
+          604.0546875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          141
+        ],
+        [
+          "Line",
+          93
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "TextInlineMath",
+          1
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 3151,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          110
+        ],
+        [
+          "Line",
+          92
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "TextInlineMath",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 2961,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          120
+        ],
+        [
+          "Line",
+          82
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "TextInlineMath",
+          6
+        ],
+        [
+          "Equation",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 29,
+        "llm_error_count": 1,
+        "llm_tokens_used": 88956,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          161
+        ],
+        [
+          "Line",
+          100
+        ],
+        [
+          "TextInlineMath",
+          6
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Equation",
+          3
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 27,
+        "llm_error_count": 1,
+        "llm_tokens_used": 79303,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          140
+        ],
+        [
+          "Line",
+          103
+        ],
+        [
+          "TableCell",
+          70
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "TextInlineMath",
+          3
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 4,
+        "llm_error_count": 0,
+        "llm_tokens_used": 10311,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          91
+        ],
+        [
+          "TableCell",
+          74
+        ],
+        [
+          "Span",
+          25
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 3,
+        "llm_error_count": 0,
+        "llm_tokens_used": 6115,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "TableCell",
+          353
+        ],
+        [
+          "Span",
+          77
+        ],
+        [
+          "Line",
+          65
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 3,
+        "llm_error_count": 0,
+        "llm_tokens_used": 8892,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          147
+        ],
+        [
+          "Line",
+          111
+        ],
+        [
+          "ListItem",
+          23
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          130
+        ],
+        [
+          "Line",
+          98
+        ],
+        [
+          "ListItem",
+          23
+        ],
+        [
+          "ListGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "TableCell",
+          212
+        ],
+        [
+          "Span",
+          81
+        ],
+        [
+          "Line",
+          67
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "TableGroup",
+          2
+        ],
+        [
+          "TextInlineMath",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 8,
+        "llm_error_count": 0,
+        "llm_tokens_used": 24325,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          39
+        ],
+        [
+          "TableCell",
+          36
+        ],
+        [
+          "Span",
+          4
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 1282,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/2302.00491"
+}

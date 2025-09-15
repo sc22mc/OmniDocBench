@@ -1,0 +1,546 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "title",
+      "poly": [
+        275.9999999999999,
+        432,
+        2198,
+        432,
+        2198,
+        572,
+        275.9999999999999,
+        572
+      ],
+      "ignore": false,
+      "order": "2",
+      "anno_id": 1,
+      "text": "# **Deep Single Image Camera Calibration by Heatmap Regression to Recover Fisheye Images Under Manhattan World Assumption**",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            275.9999999999999,
+            432,
+            2198,
+            432,
+            2198,
+            572,
+            275.9999999999999,
+            572
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        390,
+        664,
+        2090,
+        664,
+        2090,
+        782,
+        390,
+        782
+      ],
+      "ignore": false,
+      "order": "3",
+      "anno_id": 1,
+      "text": "Nobuhiko Wakai<sup>1</sup> Satoshi Sato $^1$ Yasunori Ishii<sup>1</sup> Takayoshi Yamashita<sup>2</sup> <sup>1</sup> Panasonic Holdings Corporation <sup>2</sup> Chubu University",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            390,
+            664,
+            2090,
+            664,
+            2090,
+            782,
+            390,
+            782
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        238,
+        804,
+        2228,
+        804,
+        2228,
+        848,
+        238,
+        848
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": "{wakai.nobuhiko,sato.satoshi,ishii.yasunori}@jp.panasonic.com takayoshi@isc.chubu.ac.jp",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            238,
+            804,
+            2228,
+            804,
+            2228,
+            848,
+            238,
+            848
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        204,
+        1080,
+        1192,
+        1080,
+        1192,
+        2018,
+        204,
+        2018
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": " A Manhattan world lying along cuboid buildings is useful for camera angle estimation. However, accurate and robust angle estimation from fisheye images in the Manhattan world has remained an open challenge because general scene images tend to lack constraints such as lines, arcs, and vanishing points. To achieve higher accuracy and robustness, we propose a learning-based calibration method that uses heatmap regression, which is similar to pose estimation using keypoints, to detect the directions of labeled image coordinates. Simultaneously, our two estimators recover the rotation and remove fisheye distortion by remapping from a general scene image. Without considering vanishing-point constraints, we find that additional points for learning-based methods can be defined. To compensate for the lack of vanishing points in images, we introduce auxiliary diagonal points that have the optimal 3D arrangement of spatial uniformity. Extensive experiments demonstrated that our method outperforms conventional methods on large-scale datasets and with off-the-shelf cameras.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            204,
+            1080,
+            1192,
+            1080,
+            1192,
+            2018,
+            204,
+            2018
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        202.0000000000001,
+        2228,
+        1198,
+        2228,
+        1198,
+        2974,
+        202.0000000000001,
+        2974
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": " In city scenes, image-based recognition methods are widely used for cars, drones, and robots. It is desirable to recognize the directions in which roads exist for navigation, selfdriving, and driver assistance. To avoid colliding with cars and pedestrians, it is more important to detect these objects in front of a vehicle rather than at the sides in Figure 1. We can obtain the travel direction from odometry, gyroscopes, or accelerator sensors using these specific devices. However, for cars, drones, and robots, image-based angle estimation of the travel direction without these devices is better for miniaturized and lightweight design. To determine the origin of angles, a Manhattan world  $[12]$  defines orthogonal world coordinates along cuboid buildings and a grid of streets. Although this image-based angle estimation is a long-studied topic in areas of geometric tasks [1, 4, 51],",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202.0000000000001,
+            2228,
+            1198,
+            2228,
+            1198,
+            2974,
+            202.0000000000001,
+            2974
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1288,
+        2780,
+        2276,
+        2780,
+        2276,
+        2970,
+        1288,
+        2970
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": "Geometry-based calibration methods can estimate the camera rotation and distortion from a distorted image  $[3, 32,$ 41, 57]. However, it is difficult for geometry-based methods to calibrate cameras from images that contain few artificial",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1288,
+            2780,
+            2276,
+            2780,
+            2276,
+            2970,
+            1288,
+            2970
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1280,
+        2278,
+        2276,
+        2278,
+        2276,
+        2762,
+        1280,
+        2762
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "To control cars, drones, and robots, images for recognition are needed that have a large field of view (FOV). Fish-eye cameras have a larger FOV than other cameras, but fish-eye images are highly distorted. After fisheye distortion has been removed, we can use various learning-based recognition methods, such as object detection [\\[25, 27\\]](#page-9-1), semantic segmentation [\\[10, 26\\]](#page-9-1), lane detection [\\[15, 61\\]](#page-9-1), action recognition [\\[50, 59\\]](#page-9-1), and action prediction [\\[6, 20\\]](#page-9-1). To recover fisheye images, performing camera calibration before the recognition tasks mentioned above is desirable.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1280,
+            2278,
+            2276,
+            2278,
+            2276,
+            2762,
+            1280,
+            2762
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1282,
+        2134,
+        2274,
+        2134,
+        2274,
+        2274,
+        1282,
+        2274
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "accurate and robust angle estimation has remained an open challenge because general scene images tend to lack constraints such as lines, arcs, and vanishing points (VPs).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1282,
+            2134,
+            2274,
+            2134,
+            2274,
+            2274,
+            1282,
+            2274
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        1290,
+        1712.0000000000002,
+        2276,
+        1712.0000000000002,
+        2276,
+        2026.0000000000002,
+        1290,
+        2026.0000000000002
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "Figure 1. Our network estimates extrinsics and intrinsics in a Manhattan world from a single image. Our estimated camera parameters are used to fully recover images by remapping them while distinguishing the front and side directions on the basis of the Manhattan world. Cyan, magenta, and yellow lines indicate the three orthogonal planes of the Manhattan frame in each of the images. The input image is generated from [38].",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1290,
+            1712.0000000000002,
+            2276,
+            1712.0000000000002,
+            2276,
+            2026.0000000000002,
+            1290,
+            2026.0000000000002
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        1289.9999999999998,
+        962,
+        2252,
+        962,
+        2252,
+        1666,
+        1289.9999999999998,
+        1666
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1289.9999999999998,
+            962,
+            2252,
+            962,
+            2252,
+            1666,
+            1289.9999999999998,
+            1666
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        606,
+        968,
+        802,
+        968,
+        802,
+        1012,
+        606,
+        1012
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": "Abstract",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            606,
+            968,
+            802,
+            968,
+            802,
+            1012,
+            606,
+            1012
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        208,
+        2142,
+        526,
+        2142,
+        526,
+        2184,
+        208,
+        2184
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "# 1. Introduction",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            208,
+            2142,
+            526,
+            2142,
+            526,
+            2184,
+            208,
+            2184
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1216,
+        3118,
+        1330,
+        3118,
+        1330,
+        3158,
+        1216,
+        3158
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": "11884",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1216,
+            3118,
+            1330,
+            3118,
+            1330,
+            3158,
+            1216,
+            3158
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "header",
+      "poly": [
+        614,
+        8,
+        2060,
+        8,
+        2060,
+        146,
+        614,
+        146
+      ],
+      "ignore": false,
+      "order": "1",
+      "anno_id": 1,
+      "text": "This CVPR paper is the Open Access version, provided by the Computer Vision Foundation. Except for this watermark, it is identical to the accepted version; the final published version of the proceedings is available on IEEE Xplore.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            614,
+            8,
+            2060,
+            8,
+            2060,
+            146,
+            614,
+            146
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 993,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "96_1_png.jpg"
+  }
+}

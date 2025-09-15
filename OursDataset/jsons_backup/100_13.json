@@ -1,0 +1,470 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        447.5,
+        110,
+        1235,
+        110,
+        1235,
+        152.5,
+        447.5,
+        152.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.5,
+            110,
+            1235,
+            110,
+            1235,
+            152.5,
+            447.5,
+            152.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        445,
+        342.5,
+        1557.5,
+        342.5,
+        1557.5,
+        395,
+        445,
+        395
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "where the chain\\_prompt is the aggregated thought chain  $\\overline{z}_{1...n}$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            445,
+            342.5,
+            1557.5,
+            342.5,
+            1557.5,
+            395,
+            445,
+            395
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        440,
+        422.5,
+        2100,
+        422.5,
+        2100,
+        510,
+        440,
+        510
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "**chain feedback format**: Can this reasoning chain complete the task and reach the target correctly by executing its reasoning steps? why? Write a analysis report with conclusion under 'Anlysis Report.'.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            440,
+            422.5,
+            2100,
+            422.5,
+            2100,
+            510,
+            440,
+            510
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        445,
+        537.5,
+        2102.5,
+        537.5,
+        2102.5,
+        810,
+        445,
+        810
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "**step feedback format**: For each reasoning step, please provide a detailed analysis of whether the current step is a logical inference of the previous step and whether the reasoning step is beneficial to the correct solution. For each reasoning step with errors, please provide an error report and the corresponding advice on revision. For each reasoning step, please provide recommendation or rejection descriptions. Comments should be brief and follow the format: Reasoning step  $\\langle idx \\rangle$ . Analysis report: . Advice: . Recommendation or Reject description: .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            445,
+            537.5,
+            2102.5,
+            537.5,
+            2102.5,
+            810,
+            445,
+            810
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        442.5,
+        837.5000000000001,
+        2095,
+        837.5000000000001,
+        2095,
+        965.0000000000001,
+        442.5,
+        965.0000000000001
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "**confidence feedback format**: What is your confidence score on these your evaluations and comments? Please select one value from  $[0.1, 0.3, 0.5, 0.7, 0.9, 1.0]$ . The score should be placed after 'Confidence score:' for users to read.\"",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            442.5,
+            837.5000000000001,
+            2095,
+            837.5000000000001,
+            2095,
+            965.0000000000001,
+            442.5,
+            965.0000000000001
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        447.5,
+        992.5,
+        2102.5,
+        992.5,
+        2102.5,
+        1085,
+        447.5,
+        1085
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": "With the feedback prompt, LLMs generate reasoning experience  $\\mathbf{F}^t$  containing conclusion and analysis on the reasoning chain and each reasoning step.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.5,
+            992.5,
+            2102.5,
+            992.5,
+            2102.5,
+            1085,
+            447.5,
+            1085
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        447.5,
+        1230,
+        2102.5,
+        1230,
+        2102.5,
+        1360,
+        447.5,
+        1360
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "To facilitate the understanding of the proposed Boosting of Thoughts, we summarize the reasoning pipeline in Algorithm Table 1. The source code for this pipeline can be found in the file examples/BoostingOfThought/BoT\\_core.py.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.5,
+            1230,
+            2102.5,
+            1230,
+            2102.5,
+            1360,
+            447.5,
+            1360
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        412.5,
+        1420.0000000000002,
+        2105,
+        1420.0000000000002,
+        2105,
+        2257.5,
+        412.5,
+        2257.5
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "  Algorithm 1: Main reasoning pipeline of BoT  **Input:** Number of iterations  $T$ , Number of tree structures  $M$ , Question  $Q$ . **Output:** Aggregated chain  $\\overline{z}_{1...n}^T$ .  1 Initialize a simple prompt  $\\Pi^0(S, X, Q, F^0, \\{G_i\\})$  where  $F^0$  will be an empty string.  2 for each iteration  $t = 1, 2, ..., T$  do  - Use LLMs with the prompt  $\\mathbb{I}^{t-1}\\left(S, X, Q, \\mathbf{F}^{t-1}, \\{G_i\\}\\right)$  to create  $M$  heterogeneous tree 3 thought structures through Thought Structure Generation. - Extract thought chains  $\\left\\{z_{i=1}^{n^m}\\right\\}_{m=1}^M$  from the  $M$  thought structures where each  $z_{i=1}^{n^m}$  is the 4 best thought chain of  $m$ -th tree structure. - Aggregate  $\\{z_{i=1}^{n^m}\\}_{m=1}^M$  into a single thought chain  $\\overline{z}_{1...n}^t$  by using either Best-First Aggregation or Greedy aggregation. 5 - Perform Thought Chain Analysis on  $\\overline{z}_{1...n}^{t}$  with LLMs to obtain the feedback, which is 6 combined with  $\\overline{z}_{1...n}^t$  to obtain *experience*  $\\mathbf{F}^t$ . - Update the prompt by accumulating  $\\mathbf{F}^t$ , leading to  $\\mathbb{I}^t(S, X, Q, \\mathbf{F}^{t-1, t}, \\{G_i\\})$ . 7   $\\mathbf{s}$  end  ``` 9 Obtain the solution \\overline{z}_{1...n}^T. ```",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            412.5,
+            1420.0000000000002,
+            2105,
+            1420.0000000000002,
+            2105,
+            2257.5,
+            412.5,
+            2257.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        445,
+        2460,
+        2102.5,
+        2460,
+        2102.5,
+        3052.5,
+        445,
+        3052.5
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "Boosting of Thoughts derives from our insights that the reasoning ability of large language models (LLMs) for addressing mathematical problems comes directly from experience, which contains the accumulation of the analysis and advice on previous mistakes. Once the prompt embraces valid historical reasoning experience to be recalled by LLMs before performing reasoning, the produced reasoning steps are generally more logical and reasonable, as shown in the comparison between Table 5 and 6. Such insights also made us consider that LLMs do not need to rely heavily on a well-prepared prompt with human annotations (a few chains of thought demonstrations as exemplars in prompts) for each task. Yet, as LLMs are able to learn from experience, we can start from a simple prompt without examples or manually designed content to gradually collect experience during the reasoning process. Eventually, by accumulating experiences in the prompt, LLMs achieve strong reasoning toward addressing complex problems. With these insights, the Boosting of Thoughts is designed as an automated prompting framework, which iteratively collects an ensemble of trial-anderror reasoning experiences for problem-solving with LLMs. We argue that the proposed BoT is not",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            445,
+            2460,
+            2102.5,
+            2460,
+            2102.5,
+            3052.5,
+            445,
+            3052.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1240,
+        3130,
+        1292.5,
+        3130,
+        1292.5,
+        3170,
+        1240,
+        3170
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "13",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1240,
+            3130,
+            1292.5,
+            3130,
+            1292.5,
+            3170,
+            1240,
+            3170
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        452.5,
+        2360,
+        1397.5,
+        2360,
+        1397.5,
+        2397.5,
+        452.5,
+        2397.5
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "# B INSIGHTS FOR BOOSTING OF THOUGHTS",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            452.5,
+            2360,
+            1397.5,
+            2360,
+            1397.5,
+            2397.5,
+            452.5,
+            2397.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        447.5000000000001,
+        1147.5,
+        952.5000000000001,
+        1147.5,
+        952.5000000000001,
+        1180,
+        447.5000000000001,
+        1180
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": " ## A.3 REASONING PIPELINE",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.5000000000001,
+            1147.5,
+            952.5000000000001,
+            1147.5,
+            952.5000000000001,
+            1180,
+            447.5000000000001,
+            1180
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 4,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "100_13_png.jpg"
+  }
+}

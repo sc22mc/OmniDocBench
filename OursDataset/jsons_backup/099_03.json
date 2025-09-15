@@ -1,0 +1,546 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        454,
+        112,
+        1224,
+        112,
+        1224,
+        152,
+        454,
+        152
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            454,
+            112,
+            1224,
+            112,
+            1224,
+            152,
+            454,
+            152
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        450,
+        342,
+        2096,
+        342,
+        2096,
+        768,
+        450,
+        768
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            450,
+            342,
+            2096,
+            342,
+            2096,
+            768,
+            450,
+            768
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        514,
+        800,
+        1016,
+        800,
+        1016,
+        836,
+        514,
+        836
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "Step1: Define Scenario and Criteria",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            514,
+            800,
+            1016,
+            800,
+            1016,
+            836,
+            514,
+            836
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        1112,
+        806,
+        1644,
+        806,
+        1644,
+        838,
+        1112,
+        838
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " Step2: Collect Data for Each Scenario",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1112,
+            806,
+            1644,
+            806,
+            1644,
+            838,
+            1112,
+            838
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        1680.0000000000002,
+        804,
+        2080,
+        804,
+        2080,
+        838,
+        1680.0000000000002,
+        838
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "Step3: Generate Judgements",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1680.0000000000002,
+            804,
+            2080,
+            804,
+            2080,
+            838,
+            1680.0000000000002,
+            838
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        682,
+        884,
+        1858,
+        884,
+        1858,
+        926,
+        682,
+        926
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": "Figure 1: An overview for our data construction pipeline in three steps.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            682,
+            884,
+            1858,
+            884,
+            1858,
+            926,
+            682,
+            926
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        444.0000000000001,
+        1034,
+        2102,
+        1034,
+        2102,
+        1664,
+        444.0000000000001,
+        1664
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": "Using strong LLMs (usually closed-source ones, e.g., GPT-4, Claude, ChatGPT) as an automated proxy for assessing LLMs has become a natural choice (Zhou et al., 2023). With appropriate prompt design, the quality of evaluation and agreement to human judgment can be promising (Dubois et al., 2023; Zheng et al., 2023; Zhang et al., 2023; Wang et al., 2023a). However, the cost concern still exists when calling the APIs of these proprietary models, especially when there is a frequent need for model validation on large-scale data. Moreover, closed-source evaluation leads to low reproducibility due to potential changes in models behind the API. Some recent works have started to make attempts for open-source alternatives. SelFee (Ye et al., 2023) collects generations, feedback, and revised generations from ChatGPT and fine-tunes LLaMA models to build a critique model. Shepherd (Wang et al., 2023b) trains a model that can output critiques for single-response with the data of feedback from online communities and human annotation. PandaLM (Wang et al., 2023c) trains a model to conduct pairwise comparison for LLM Instruction Tuning Optimization, and Zheng et al. (2023) also fine-tune Vicuna (Chiang et al., 2023) on a 20K pairwise comparison dataset to explore the potential of open-source models as a more cost-friendly proxy.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            444.0000000000001,
+            1034,
+            2102,
+            1034,
+            2102,
+            1664,
+            444.0000000000001,
+            1664
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        448,
+        1834,
+        2096,
+        1834,
+        2096,
+        2374,
+        448,
+        2374
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "Besides the evaluators themselves, there is also a practical need to construct a comprehensive testbed to meta-evaluate them (i.e., assessing the quality of their evaluation). In Zheng et al. (2023), MTBench and Chatbot Arena Conversations are proposed. The former has only 80 human-crafted queries, each with several LLMs' responses and expert-level human annotation on pairwise comparison; the latter is a large collection of crowdsourced data, with more than 30K queries from real-world users and their vote on pairs of responses from different LLMs. FairEval (Wang et al., 2023a) is based on the 80 queries from VicunaBench (Chiang et al., 2023) with human annotated labels between ChatGPT and Vicuna responses. PandaLM (Wang et al., 2023c) constructs a test set comprising 999 pairwise samples, with queries from 252 user-oriented instructions in Wang et al. (2022). LLMEval<sup>2</sup> (Zhang et al., 2023) is much larger than the previous two, with 2,553 samples compiled from multiple data sources with human-annotated preferences. Shepherd (Wang et al., 2023b) collects 352 samples from multiple sources for its critique model as a test set to evaluate the quality of the critiques.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            1834,
+            2096,
+            1834,
+            2096,
+            2374,
+            448,
+            2374
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        440.0000000000001,
+        2572,
+        2098,
+        2572,
+        2098,
+        2800,
+        440.0000000000001,
+        2800
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "We construct data from massive real-world scenarios with high-quality evaluation judgments for both training and testing. The data construction pipeline involves three main steps: (1) defining evaluation scenario and criteria, (2) collecting real-world queries and responses from different models for these scenarios and (3) generating desired evaluation judgments for different evaluation protocols. An overview of our data construction pipeline is shown in Fig. 1.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            440.0000000000001,
+            2572,
+            2098,
+            2572,
+            2098,
+            2800,
+            440.0000000000001,
+            2800
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        457.9999999999999,
+        2966,
+        2098,
+        2966,
+        2098,
+        3050,
+        457.9999999999999,
+        3050
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": "**Scenario** We define 58 scenarios (including one \"others\" scenario), categorized into eight major groups: Summarization, Exam Questions, Code, Creative Writing, Functional Writing, Rewriting,",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            457.9999999999999,
+            2966,
+            2098,
+            2966,
+            2098,
+            3050,
+            457.9999999999999,
+            3050
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        450.00000000000017,
+        2866,
+        1232,
+        2866,
+        1232,
+        2910,
+        450.00000000000017,
+        2910
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "## 3.1 SCENARIO AND CRITERIA DEFINITION",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            450.00000000000017,
+            2866,
+            1232,
+            2866,
+            1232,
+            2910,
+            450.00000000000017,
+            2910
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        452,
+        2464,
+        998,
+        2464,
+        998,
+        2504,
+        452,
+        2504
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "# 3 DATA CONSTRUCTION",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            452,
+            2464,
+            998,
+            2464,
+            998,
+            2504,
+            452,
+            2504
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        448,
+        1742,
+        1506,
+        1742,
+        1506,
+        1778,
+        448,
+        1778
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "## 2.2 META-EVALUATION TESTBED FOR LLM EVALUATORS",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            1742,
+            1506,
+            1742,
+            1506,
+            1778,
+            448,
+            1778
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1258,
+        3126,
+        1286,
+        3126,
+        1286,
+        3170,
+        1258,
+        3170
+      ],
+      "ignore": false,
+      "order": 14,
+      "anno_id": 1,
+      "text": "3",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1258,
+            3126,
+            1286,
+            3126,
+            1286,
+            3170,
+            1258,
+            3170
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 1051,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "99_3_png.jpg"
+  }
+}

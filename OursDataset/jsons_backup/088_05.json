@@ -1,0 +1,436 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        152.5,
+        127.5,
+        1040,
+        127.5,
+        1040,
+        162.5,
+        152.5,
+        162.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "RAJA: SOFTWARE ARCHITECTURE FOR AGRICULTURAL ROBOTS",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            152.5,
+            127.5,
+            1040,
+            127.5,
+            1040,
+            162.5,
+            152.5,
+            162.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "header",
+      "poly": [
+        2250,
+        130,
+        2302.5,
+        130,
+        2302.5,
+        170,
+        2250,
+        170
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "129",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2250,
+            130,
+            2302.5,
+            130,
+            2302.5,
+            170,
+            2250,
+            170
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        587.5,
+        265,
+        1875,
+        265,
+        1875,
+        342.5,
+        587.5,
+        342.5
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "TABLE III CATEGORIZATION OF ROBOT SOFTWARE ARCHITECTURE BASED ON COMMUNICATION PROTOCO",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            587.5,
+            265,
+            1875,
+            265,
+            1875,
+            342.5,
+            587.5,
+            342.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        207.5,
+        387.5000000000001,
+        2250,
+        387.5000000000001,
+        2250,
+        2200,
+        207.5,
+        2200
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            207.5,
+            387.5000000000001,
+            2250,
+            387.5000000000001,
+            2250,
+            2200,
+            207.5,
+            2200
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "| Communication                                | Description                                                                                                                                                                        | Examples                                                                                                                   | Features                                                                                                            | Application examples                                                                             |\n|----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|\n| paradigm<br>Client-server                    | In this paradigm, one component<br>(the client) requests services or<br>data from another component (the<br>server). It is a one-to-one commu-<br>nication model.                  | Robot operating systems<br>(ROS), remote desktop<br>protocol, file transfer<br>protocol, simple mail<br>transfer protocol. | Centralized control and<br>data sharing, suitable for<br>applications with a single<br>point of control.            | Remote robotic control<br>over a network, teleoper-<br>ation systems.                            |\n| Publisher-<br>subscriber<br>(Pub-Sub) ([13]) | This paradigm uses a publish-<br>subscribe model where one or more<br>publishers send messages or data to<br>one or more subscribers. It is a one-<br>to-many communication model. | ROS, MQTT, advanced<br>message queuing protocol,<br>Apache Kafka.                                                          | Decoupled<br>communica-<br>tion, scalable and efficient<br>for broadcasting<br>data,<br>supports real-time updates. | Robot sensor data<br>distribution, event-driven<br>robotics systems.                             |\n| Peer-to-peer<br>(P2P) ([14])                 | In a peer-to-peer network, all com-<br>ponents are equal and can com-<br>municate directly with each other.<br>There is no centralized server.                                     | BitTorrent, Skype, Bit-<br>coin.                                                                                           | Distributed control and<br>decision-making, robust<br>and fault-tolerant, suitable<br>for decentralized systems.    | Multirobot coordination<br>and collaboration, swarm<br>robotics.                                 |\n| Master-slave<br>([15])                       | This paradigm involves a single<br>master or coordinator component<br>(the master) that controls and com-<br>municates with multiple subordi-<br>nate components (the slaves).     | SETI                                                                                                                       | Hierarchical control,<br>efficient resource<br>allocation, well-suited for<br>coordinated tasks.                    | Multi-robot assembly<br>lines, collaborative robots<br>(cobots).                                 |\n| Broadcast ([16])                             | In a broadcast communication<br>model, a message or data is trans-<br>mitted to all components in the<br>network. It is a one-to-all commu-<br>nication model.                     | UML-RT, address resolution<br>protocol.                                                                                    | Simplicity and efficiency<br>in data distribution, use-<br>ful for broadcasting com-<br>mands or status updates.    | Broadcasting control<br>commands to multiple<br>robots, notification<br>systems in robot fleets. |\n| Event-driven<br>([17])                       | This paradigm focuses on reacting<br>to events or triggers. Components<br>subscribe to specific events and re-<br>spond when those events occur.                                   | Apache Kafka, AWS<br>Lambda, Apache Storm.                                                                                 | Responsive and event-<br>triggered behavior,<br>supports asynchronous<br>communication.                             | Robot behaviors triggered<br>by environmental events,<br>reactive control systems.               |\n| Multicast ([18])                             | Multicast communication allows a<br>message or data to be sent to a<br>selected group of components, of-<br>ten specified by an IP multicast<br>address.                           | multiparty audio/video<br>conferencing.                                                                                    | Efficient data distribution<br>to specific groups, reduces<br>network load compared to<br>broadcasting.             | Coordinated behavior in<br>subgroups of a robot team,<br>networked robot simula-<br>tions.       |\n| Point-to-point<br>([19])                     | Data is exchanged directly between<br>two specific components or robots.                                                                                                           | LAN cable, stovepipes.                                                                                                     | Direct communication,<br>simplicity.                                                                                | Information exchange be-<br>tween farm vehicles and<br>sensors.                                  |\n| Request-<br>response $([20])$                | One component sends a request,<br>and another component responds<br>with the requested information or<br>action.                                                                   | Sending a spreadsheet to<br>the printer.                                                                                   | Simple request handling,<br>suitable for remote control.                                                            | Remote monitoring and<br>control of irrigation sys-<br>tems.                                     |\n| Message queues<br>([21])                     | Messages are sent to a queue,<br>and other components can retrieve<br>them, providing asynchronous and<br>decoupled communication.                                                 | Apache Kafka,<br>RabbitMQ, and LavinMQ.                                                                                    | Task scheduling, event<br>handling.                                                                                 | Task management and<br>coordination in precision<br>agriculture.                                 |",
+      "latex": ""
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        157.5,
+        2255,
+        1207.5,
+        2255,
+        1207.5,
+        2345,
+        157.5,
+        2345
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " layers, allowing the robot to perform complex behaviors in a modular fashion.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            157.5,
+            2255,
+            1207.5,
+            2255,
+            1207.5,
+            2345,
+            157.5,
+            2345
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        150,
+        2355,
+        1217.5,
+        2355,
+        1217.5,
+        3045,
+        150,
+        3045
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": " 5) Centralized Architecture Versus Distributed Architecture: Centralized architecture organizes the robotic system around a central processing unit, while distributed architecture allows multiple processing units to work together to achieve a common goal. Example, client-server architecture (centralized architecture) is a centralized architecture where a single server provides resources or services to multiple clients. Clients request resources or services from the server, which then responds with the requested information. This architecture is often used in web applications or database systems; peer-to-peer architecture (distributed architecture) is a distributed architecture  $[12]$  where multiple nodes communicate directly with each other without the need for a central server. Each node can act as both a client and a server, making it more fault-tolerant and scalable than ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            150,
+            2355,
+            1217.5,
+            2355,
+            1217.5,
+            3045,
+            150,
+            3045
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1247.5,
+        2252.5,
+        2305,
+        2252.5,
+        2305,
+        2357.5,
+        1247.5,
+        2357.5
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": " a centralized architecture. This architecture is often used in file-sharing or messaging systems.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1247.5,
+            2252.5,
+            2305,
+            2252.5,
+            2305,
+            2357.5,
+            1247.5,
+            2357.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1237.5,
+        2507.5,
+        2300,
+        2507.5,
+        2300,
+        2800,
+        1237.5,
+        2800
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": " Robotic software architectural paradigms can be categorized based on communication protocols that facilitate interactions between different components of a robotic system. Table III, categorizes some common robotic software paradigms based on communication protocols, accompanied by their descriptions, features, and examples of applications.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1237.5,
+            2507.5,
+            2300,
+            2507.5,
+            2300,
+            2800,
+            1237.5,
+            2800
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1247.5,
+        2810,
+        2305,
+        2810,
+        2305,
+        3052.5,
+        1247.5,
+        3052.5
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": " These communication paradigms play a crucial role in enhancing agricultural processes, from precision farming and crop monitoring to pest control and automation of various tasks. The choice of communication paradigm depends on the specific needs and challenges of agricultural robotics applications.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1247.5,
+            2810,
+            2305,
+            2810,
+            2305,
+            3052.5,
+            1247.5,
+            3052.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1255,
+        2437.5,
+        2185,
+        2437.5,
+        2185,
+        2482.5,
+        1255,
+        2482.5
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": " ## B. Categorization Based on Communication Strategies",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1255,
+            2437.5,
+            2185,
+            2437.5,
+            2185,
+            2482.5,
+            1255,
+            2482.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        277.5000000000001,
+        3180,
+        2177.5,
+        3180,
+        2177.5,
+        3215,
+        277.5000000000001,
+        3215
+      ],
+      "ignore": false,
+      "order": 11,
+      "anno_id": 1,
+      "text": "Authorized licensed use limited to: FUDAN UNIVERSITY. Downloaded on August 28,2025 at 01:50:40 UTC from IEEE Xplore. Restrictions apply.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            277.5000000000001,
+            3180,
+            2177.5,
+            3180,
+            2177.5,
+            3215,
+            277.5000000000001,
+            3215
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 915,
+    "height": 3300,
+    "width": 2475,
+    "image_path": "88_5_png.jpg"
+  }
+}

@@ -1,0 +1,584 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "figure",
+            "poly": [
+                292.4999999999999,
+                282.5,
+                1192.5,
+                282.5,
+                1192.5,
+                990,
+                292.4999999999999,
+                990
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        292.4999999999999,
+                        282.5,
+                        1192.5,
+                        282.5,
+                        1192.5,
+                        990,
+                        292.4999999999999,
+                        990
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                280.00000000000006,
+                1012.5,
+                1215,
+                1012.5,
+                1215,
+                1265,
+                280.00000000000006,
+                1265
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "Figure 2: The overall structure of the proposed HAHT model, which contains 1) hierarchical history conversation encoder, 2) history-aware context encoder, and 3) history-aware response generator. The details of each component are shown in Figure  $3, 4, 5$ , respectively.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        280.00000000000006,
+                        1012.5,
+                        1215,
+                        1012.5,
+                        1215,
+                        1265,
+                        280.00000000000006,
+                        1265
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                1267.5,
+                987.5,
+                2205,
+                987.5,
+                2205,
+                1090,
+                1267.5,
+                1090
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "Figure 3: The structure of the hierarchical history conversation encoder in HAHT.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1267.5,
+                        987.5,
+                        2205,
+                        987.5,
+                        2205,
+                        1090,
+                        1267.5,
+                        1090
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                1270,
+                280,
+                2192.5,
+                280,
+                2192.5,
+                937.5,
+                1270,
+                937.5
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1270,
+                        280,
+                        2192.5,
+                        280,
+                        2192.5,
+                        937.5,
+                        1270,
+                        937.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                282.50000000000006,
+                1355,
+                1217.5,
+                1355,
+                1217.5,
+                1912.5,
+                282.50000000000006,
+                1912.5
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "their methods need to retrieve a very large portion of history conversations to achieve better results than the standard Transformer. In addition, these models still need to concatenate the retrieved raw history conversation text with the current conversation context, yielding concatenations that are still much longer than the 128 token truncation lengths. Therefore, the incorporation of historical contexts in these methods is still limited by the short token truncation lengths of pre-trained models.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        282.50000000000006,
+                        1355,
+                        1217.5,
+                        1355,
+                        1217.5,
+                        1912.5,
+                        282.50000000000006,
+                        1912.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                285,
+                1945,
+                850,
+                1945,
+                850,
+                2010,
+                285,
+                2010
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "# **3 The Proposed Method**",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        285,
+                        1945,
+                        850,
+                        1945,
+                        850,
+                        2010,
+                        285,
+                        2010
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1275,
+                1625,
+                2050,
+                1625,
+                2050,
+                1730,
+                1275,
+                1730
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "## 3.1 **Hierarchical History Conversation Encoder**",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1275,
+                        1625,
+                        2050,
+                        1625,
+                        2050,
+                        1730,
+                        1275,
+                        1730
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1270,
+                1190,
+                2195,
+                1190,
+                2195,
+                1575,
+                1270,
+                1575
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "In this work, we propose a novel model, namely HAHT. for the MSC task. Figure 2 shows the overall structure of HAHT, which consists of three main components: 1) hierarchical history conversation encoder, 2) history-aware context encoder, and 3) history-aware response generator. We present the details of each component of HAHT as follows.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1270,
+                        1190,
+                        2195,
+                        1190,
+                        2195,
+                        1575,
+                        1270,
+                        1575
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                290,
+                2047.5,
+                1217.5,
+                2047.5,
+                1217.5,
+                2542.5,
+                290,
+                2542.5
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "In general, a Multi-Session Conversation (MSC) consists of a current conversation session and several history conversation sessions that happen before the current one, all between the same two interlocutors. A multi-session open-domain dialogue system aims to generate natural, well-informed, and context-relevant responses to the user's utterances based on all history conversation sessions and the current conversation context.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        290,
+                        2047.5,
+                        1217.5,
+                        2047.5,
+                        1217.5,
+                        2542.5,
+                        290,
+                        2542.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                290,
+                2555,
+                1217.5,
+                2555,
+                1217.5,
+                3222.5,
+                290,
+                3222.5
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "Formally, we denote the MSC dataset  $D$  by a list of N conversations in the format of  $(H, X, y)$ . Here,  $X = \\{x_1, x_2, \\cdots, x_{n_x}\\}$  denotes  $n_x$  context utterances of the current conversation session.  $H = \\{H^1, H^2, \\cdots, H^M\\}$  denotes M history conversation sessions, where  $H^i = \\{h^i_1, h^i_2, \\cdots, h^i_{n_i}\\}$  denotes  $n_i$  chronologically ordered utterances of the *i*-th history conversation session.  $y$  is the ground truth response to  $X$  under the background of  $H$ . The MSC task can be formulated as learning a function  $f(H, X)$  to predict the next utterance  $x_{n_x+1}$  based on  $H$  and  $X$ .",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        290,
+                        2555,
+                        1217.5,
+                        2555,
+                        1217.5,
+                        3222.5,
+                        290,
+                        3222.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1290,
+                2877.5,
+                2162.5,
+                2877.5,
+                2162.5,
+                2955,
+                1290,
+                2955
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": "$$ \\mathbf{u}_{j}^{i} = \\text{Max-pooling} (\\text{Transformer}_{n_{enc}}(E_{m}(h_{j}^{i}))), $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1290,
+                        2877.5,
+                        2162.5,
+                        2877.5,
+                        2162.5,
+                        2955,
+                        1290,
+                        2955
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2142.5,
+                2945,
+                2185,
+                2945,
+                2185,
+                2997.5,
+                2142.5,
+                2997.5
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": "(1)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2142.5,
+                        2945,
+                        2185,
+                        2945,
+                        2185,
+                        2997.5,
+                        2142.5,
+                        2997.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1270,
+                3007.5,
+                2202.5,
+                3007.5,
+                2202.5,
+                3235,
+                1270,
+                3235
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": "where  $\\mathbf{u}_j^i \\in \\mathbb{R}^d$ . Moreover, we denote all the utterance representations in the history conversation  $H^i$  by  $\\mathbf{U}^i = {\\mathbf{u}_1^i, \\mathbf{u}_2^i, \\cdots, \\mathbf{u}_{n_i}^i} \\in \\mathbb{R}^{n_i \\times d}$ , where  $n_i$  is the turn number of  $H^i$ . Next, we apply a",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1270,
+                        3007.5,
+                        2202.5,
+                        3007.5,
+                        2202.5,
+                        3235,
+                        1270,
+                        3235
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1267.5,
+                2327.5,
+                2192.5,
+                2327.5,
+                2192.5,
+                2820,
+                1267.5,
+                2820
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": "Specifically, for a history conversation session  $H^i = \\{h_1^i, h_2^i, \\cdots, h_{n_i}^i\\}$ , we first prepend a special token \"User:\" or \"Assistant:\" to each utterance  $h_j^i$  in  $H^i$  depending on the role of the utterance speaker, and then pad all utterances to the same length  $l_{utter}$ . For each utterance  $h_j^i$ , we apply an embedding layer  $E_m$ ,  $n_{enc}$  Transformer encoder layers, and a Max-pooling layer to obtain its dense representation as follows,",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1267.5,
+                        2327.5,
+                        2192.5,
+                        2327.5,
+                        2192.5,
+                        2820,
+                        1267.5,
+                        2820
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1265,
+                1762.5,
+                2190,
+                1762.5,
+                2190,
+                2317.5,
+                1265,
+                2317.5
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": "The main challenge in encoding history conversation sessions is the limited maximum input length imposed by pre-trained dialogue systems. If all history conversations are simply concatenated and fed into the pre-trained dialogue system, the length of the concatenation will exceed the maximum input length. Thus, most parts of the input will be truncated. To preserve more information in the history conversation, we encode each history conversation session separately in a hierarchical fashion.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1265,
+                        1762.5,
+                        2190,
+                        1762.5,
+                        2190,
+                        2317.5,
+                        1265,
+                        2317.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 588,
+        "height": 3508,
+        "width": 2481,
+        "image_path": "59_3_png.jpg"
+    }
+}

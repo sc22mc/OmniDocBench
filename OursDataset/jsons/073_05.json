@@ -1,0 +1,888 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "plain_text",
+            "poly": [
+                295,
+                300,
+                2260,
+                300,
+                2260,
+                550,
+                295,
+                550
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": " Algorithm 2 (Discretized MMGA) takes not only its learning rate  $\\eta$  but a small value  $\\gamma$  in measuring an approximate gradient as inputs. In each time step, each player measures the gradients of its payoff for each variable of its strategy (lines 2-6). Then, the player updates its strategy by the gradients (lines 7-10). Here, note that the strategy update is weighted by the probability  $x^{a|s}$  (line 8) in order to correspond to Algorithm 1. Here, each of lines 3-5 and line 8 can be updated in parallel with respect to  $a$  and  $s$ .",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        295,
+                        300,
+                        2260,
+                        300,
+                        2260,
+                        550,
+                        295,
+                        550
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                285,
+                627.5,
+                1012.5,
+                627.5,
+                1012.5,
+                690,
+                285,
+                690
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": " # 4 Theoretical Analysis",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        285,
+                        627.5,
+                        1012.5,
+                        627.5,
+                        1012.5,
+                        690,
+                        285,
+                        690
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                287.5,
+                730,
+                1515,
+                730,
+                1515,
+                795,
+                287.5,
+                795
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " ## 4.1 Continuous-Time Equivalence of Algorithms",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        287.5,
+                        730,
+                        1515,
+                        730,
+                        1515,
+                        795,
+                        287.5,
+                        795
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                292.4999999999999,
+                817.5000000000001,
+                2250,
+                817.5000000000001,
+                2250,
+                960.0000000000001,
+                292.4999999999999,
+                960.0000000000001
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " The following theorems provide a unified understanding of different algorithms. Theorem 1 and 2 are concerned with continualization of the two discrete algorithms. Surprisingly, Theorem 3 proves the correspondence between these different continualized algorithms by Theorem 1 and 2.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        292.4999999999999,
+                        817.5000000000001,
+                        2250,
+                        817.5000000000001,
+                        2250,
+                        960.0000000000001,
+                        292.4999999999999,
+                        960.0000000000001
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                294.9999999999999,
+                997.5000000000001,
+                2255,
+                997.5000000000001,
+                2255,
+                1047.5,
+                294.9999999999999,
+                1047.5
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": " **Theorem 1** (Continuous MMRD). Let  $p^{a|s}$  be the expected distribution when X chooses a under state s;",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        294.9999999999999,
+                        997.5000000000001,
+                        2255,
+                        997.5000000000001,
+                        2255,
+                        1047.5,
+                        294.9999999999999,
+                        1047.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                992.5,
+                1087.5,
+                1562.5,
+                1087.5,
+                1562.5,
+                1200,
+                992.5,
+                1200
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " $$ p_{i'}^{a|s} := \\begin{cases} y^{b|s} & (s_{i'} = ab\\bar{s})\\\\ 0 & (\\text{otherwise}) \\end{cases} $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        992.5,
+                        1087.5,
+                        1562.5,
+                        1087.5,
+                        1562.5,
+                        1200,
+                        992.5,
+                        1200
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2195,
+                1112.5,
+                2250,
+                1112.5,
+                2250,
+                1165,
+                2195,
+                1165
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "(7)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2195,
+                        1112.5,
+                        2250,
+                        1112.5,
+                        2250,
+                        1165,
+                        2195,
+                        1165
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                292.5,
+                1230,
+                1457.5,
+                1230,
+                1457.5,
+                1275,
+                292.5,
+                1275
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " In the limit of  $\\eta \\to 0$ , Algorithm 1 is continuousized as dynamics",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        292.5,
+                        1230,
+                        1457.5,
+                        1230,
+                        1457.5,
+                        1275,
+                        292.5,
+                        1275
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                822.5,
+                1325,
+                1722.5,
+                1325,
+                1722.5,
+                1405,
+                822.5,
+                1405
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " $$ \\dot{x}^{a|s_i}(\\mathbf{x}, \\mathbf{y}) = p_i^{\\text{st}} x^{a|s_i} \\left( \\pi(\\boldsymbol{p}^{a|s_i}, \\mathbf{x}, \\mathbf{y}) - \\bar{\\pi}^{s_i}(\\mathbf{x}, \\mathbf{y}) \\right), $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        822.5,
+                        1325,
+                        1722.5,
+                        1325,
+                        1722.5,
+                        1405,
+                        822.5,
+                        1405
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                825,
+                1417.5,
+                1465,
+                1417.5,
+                1465,
+                1510,
+                825,
+                1510
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": " $$ \\bar{\\pi}^{s_i}(\\mathbf{x}, \\mathbf{y}) = \\sum_{a} x^{a|s_i} \\pi(\\boldsymbol{p}^{a|s_i}, \\mathbf{x}, \\mathbf{y}), $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        825,
+                        1417.5,
+                        1465,
+                        1417.5,
+                        1465,
+                        1510,
+                        825,
+                        1510
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2197.5,
+                1327.5,
+                2245,
+                1327.5,
+                2245,
+                1382.5,
+                2197.5,
+                1382.5
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "(8)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2197.5,
+                        1327.5,
+                        2245,
+                        1327.5,
+                        2245,
+                        1382.5,
+                        2197.5,
+                        1382.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2195,
+                1417.5,
+                2247.5,
+                1417.5,
+                2247.5,
+                1472.5,
+                2195,
+                1472.5
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": "(9)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2195,
+                        1417.5,
+                        2247.5,
+                        1417.5,
+                        2247.5,
+                        1472.5,
+                        2195,
+                        1472.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                292.4999999999999,
+                1547.5,
+                1607.5,
+                1547.5,
+                1607.5,
+                1600,
+                292.4999999999999,
+                1600
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": " for all  $a \\in A$  and  $s \\in S$ . Here,  $\\bar{\\pi}^{s_i}$  is the expected payoff under state  $s_i$ .",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        292.4999999999999,
+                        1547.5,
+                        1607.5,
+                        1547.5,
+                        1607.5,
+                        1600,
+                        292.4999999999999,
+                        1600
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                297.4999999999999,
+                1625,
+                2255,
+                1625,
+                2255,
+                1725,
+                297.4999999999999,
+                1725
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": " **Theorem 2** (Continualized MMGA). In the limit of  $\\gamma \\to 0$  and  $\\eta \\to 0$ , Algorithm 2 is continualized as dynamics.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        297.4999999999999,
+                        1625,
+                        2255,
+                        1625,
+                        2255,
+                        1725,
+                        297.4999999999999,
+                        1725
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                920,
+                1762.5000000000002,
+                1627.5,
+                1762.5000000000002,
+                1627.5,
+                1867.5000000000002,
+                920,
+                1867.5000000000002
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": " $$ \\dot{x}^{a|s}(\\mathbf{x}, \\mathbf{y}) = x^{a|s} \\frac{\\partial}{\\partial x^{a|s}} u^{\\text{st}}(\\text{Norm}(\\mathbf{x}), \\mathbf{y}), $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        920,
+                        1762.5000000000002,
+                        1627.5,
+                        1762.5000000000002,
+                        1627.5,
+                        1867.5000000000002,
+                        920,
+                        1867.5000000000002
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2180,
+                1787.5,
+                2247.5,
+                1787.5,
+                2247.5,
+                1832.5,
+                2180,
+                1832.5
+            ],
+            "ignore": false,
+            "order": 16,
+            "anno_id": 1,
+            "text": "(10)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2180,
+                        1787.5,
+                        2247.5,
+                        1787.5,
+                        2247.5,
+                        1832.5,
+                        2180,
+                        1832.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                292.5,
+                1880.0000000000002,
+                737.5,
+                1880.0000000000002,
+                737.5,
+                1945.0000000000002,
+                292.5,
+                1945.0000000000002
+            ],
+            "ignore": false,
+            "order": 17,
+            "anno_id": 1,
+            "text": "  for all  $a \\in \\mathcal{A}$  and  $s \\in \\mathcal{S}$ .",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        292.5,
+                        1880.0000000000002,
+                        737.5,
+                        1880.0000000000002,
+                        737.5,
+                        1945.0000000000002,
+                        292.5,
+                        1945.0000000000002
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                355,
+                1972.5,
+                1485,
+                1972.5,
+                1485,
+                2025,
+                355,
+                2025
+            ],
+            "ignore": false,
+            "order": 18,
+            "anno_id": 1,
+            "text": " See Appendix A.1 and A.2 for the proof of Theorems 1 and 2.  $\\frac{1}{2}$ ",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        355,
+                        1972.5,
+                        1485,
+                        1972.5,
+                        1485,
+                        2025,
+                        355,
+                        2025
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                300,
+                2057.5,
+                2127.5,
+                2057.5,
+                2127.5,
+                2107.5,
+                300,
+                2107.5
+            ],
+            "ignore": false,
+            "order": 19,
+            "anno_id": 1,
+            "text": " **Theorem 3** (Equivalence between the algorithms). The dynamics Eqs.  $(8)$  and  $(10)$  are equivalent.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        300,
+                        2057.5,
+                        2127.5,
+                        2057.5,
+                        2127.5,
+                        2107.5,
+                        300,
+                        2107.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                302.4999999999999,
+                2142.5,
+                2255,
+                2142.5,
+                2255,
+                2682.5,
+                302.4999999999999,
+                2682.5
+            ],
+            "ignore": false,
+            "order": 20,
+            "anno_id": 1,
+            "text": " *Proof Sketch.* Let  $\\mathbf{x}'$  be the strategy given by  $x^{a|s} \\leftarrow x^{a|s} + \\gamma$  in  $\\mathbf{x}$  for  $a \\in \\mathcal{A}$  and  $s \\in \\mathcal{S}$ . Then, we consider the changes of the Markov transition matrix  $\\mathrm{d}\\boldsymbol{M} := \\boldsymbol{M}(\\mathrm{Norm}(\\mathbf{x}'), \\mathbf{y}) - \\boldsymbol{M}(\\mathbf{x}, \\mathbf{y})$  and the stationary distribution  $\\mathrm{d}\\boldsymbol{p}^{\\mathrm{st}} := \\boldsymbol{p}^{\\mathrm{st}}(\\mathrm{Norm}(\\mathbf{x}'), \\mathbf{y}) - \\boldsymbol{p}^{\\mathrm{st}}(\\mathbf{x}, \\mathbf{y})$ . By considering this changes in the stationary condition  $\\boldsymbol{p}^{\\mathrm{st}} = \\boldsymbol{M}\\boldsymbol{p}^{\\mathrm{st}}$ , we get  $\\mathrm{d}\\boldsymbol{p}^{\\mathrm{st}} = (\\boldsymbol{E} - \\boldsymbol{M})^{-1} \\mathrm{d}\\boldsymbol{M} \\boldsymbol{p}^{\\mathrm{st}}$  in  $O(\\gamma)$ . The right-hand (resp. left-hand) side of this equation corresponds to the continualized MMRD (resp. MMGA). See Appendix A.3 for the full proof.  $\\square$  For games with a general number of actions, the study [\\[7\\]](#page-7-1) has proposed a gradient ascent algorithm in relation to replicator dynamics. In light of this study, Theorem 3 extends the relation to the multi-memory games. This extension is neither simple nor trivial. The relation between replicator dynamics and gradient ascent has been proved by directly calculating  $u^{st} = p^{st} \\cdot u$  [\\[17\\]](#page-7-1). In multi-memory games, however,  $u^{st} = p^{st} \\cdot u$  is too hard to calculate. Thus, as seen in the proof sketch, we proved the relation by considering a slight change in the stationary condition  $p^{st} = Mp^{st}$ , technically avoiding such a hard direct calculation.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        302.4999999999999,
+                        2142.5,
+                        2255,
+                        2142.5,
+                        2255,
+                        2682.5,
+                        302.4999999999999,
+                        2682.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                289.9999999999999,
+                2750,
+                1500,
+                2750,
+                1500,
+                2802.5,
+                289.9999999999999,
+                2802.5
+            ],
+            "ignore": false,
+            "order": 21,
+            "anno_id": 1,
+            "text": " ## 4.2 Learning Dynamics Near Nash Equilibrium",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        289.9999999999999,
+                        2750,
+                        1500,
+                        2750,
+                        1500,
+                        2802.5,
+                        289.9999999999999,
+                        2802.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                289.9999999999999,
+                2832.5,
+                2250,
+                2832.5,
+                2250,
+                2972.5,
+                289.9999999999999,
+                2972.5
+            ],
+            "ignore": false,
+            "order": 22,
+            "anno_id": 1,
+            "text": " Below, let us discuss the learning dynamics in multi-memory games, especially divergence from Nash equilibrium in zero-sum payoff matrices. In order to obtain a phenomenological insight into the learning dynamics simply, we assume one-memory two-action zero-sum games in Assumption 1.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        289.9999999999999,
+                        2832.5,
+                        2250,
+                        2832.5,
+                        2250,
+                        2972.5,
+                        289.9999999999999,
+                        2972.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1255,
+                3082.5,
+                1297.5,
+                3082.5,
+                1297.5,
+                3132.5,
+                1255,
+                3132.5
+            ],
+            "ignore": false,
+            "order": 23,
+            "anno_id": 1,
+            "text": "5",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1255,
+                        3082.5,
+                        1297.5,
+                        3082.5,
+                        1297.5,
+                        3132.5,
+                        1255,
+                        3132.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 743,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "73_5_png.jpg"
+    }
+}

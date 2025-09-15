@@ -1,0 +1,432 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                445.99999999999994,
+                110,
+                1226,
+                110,
+                1226,
+                152,
+                445.99999999999994,
+                152
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "Published as a conference paper at ICLR 2024",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        445.99999999999994,
+                        110,
+                        1226,
+                        110,
+                        1226,
+                        152,
+                        445.99999999999994,
+                        152
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "title",
+            "poly": [
+                448,
+                332,
+                1908,
+                332,
+                1908,
+                474,
+                448,
+                474
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "# IN-CONTEXT AUTOENCODER FOR CONTEXT COMPRESSION IN A LARGE LANGUAGE MODEL",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        448,
+                        332,
+                        1908,
+                        332,
+                        1908,
+                        474,
+                        448,
+                        474
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                470,
+                562,
+                1972,
+                562,
+                1972,
+                704,
+                470,
+                704
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "Tao $Ge^*$ Jing $Hu^{\\dagger}$ Lei Wang<sup> $\\dagger$ </sup> Xun Wang Si-Qing Chen Furu Wei Microsoft Corporation  {tage, v-hjing, v-leiwang7, xunwang, sqchen, fuwei}@microsoft.com",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        470,
+                        562,
+                        1972,
+                        562,
+                        1972,
+                        704,
+                        470,
+                        704
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                594,
+                936,
+                1958,
+                936,
+                1958,
+                1656,
+                594,
+                1656
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "We propose the In-context Autoencoder (ICAE), leveraging the power of a large language model (LLM) to compress a long context into short compact memory slots that can be directly conditioned on by the LLM for various purposes. ICAE is first pretrained using both autoencoding and language modeling objectives on massive text data, enabling it to generate memory slots that accurately and comprehensively represent the original context. Then, it is fine-tuned on instruction data for producing desirable responses to various prompts. Experiments demonstrate that our lightweight ICAE, introducing about 1% additional parameters, effectively achieves  $4 \\times$  context compression based on Llama, offering advantages in both improved latency and GPU memory cost during inference, and showing an interesting insight in memorization as well as potential for scalability. These promising results imply a novel perspective on the connection between working memory in cognitive science and representation learning in LLMs, revealing ICAE's significant implications in addressing the long context problem and suggesting further research in LLM context management. Our data, code and models are available at https://github.com/getao/icae.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        594,
+                        936,
+                        1958,
+                        936,
+                        1958,
+                        1656,
+                        594,
+                        1656
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                446,
+                2650,
+                2106,
+                2650,
+                2106,
+                2920,
+                446,
+                2920
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "Long context modeling is a fundamental challenge for Transformer-based (Vaswani et al., 2017) LLMs due to their inherent self-attention mechanism. Much previous research (Child et al., 2019; Beltagy et al., 2020; Rae et al., 2019; Choromanski et al., 2020; Bulatov et al., 2022; Zheng et al., 2022; Wu et al., 2022; Bulatov et al., 2023; Ding et al., 2023) attempts to tackle the long context issue through architectural innovations of an LLM. While they approach long context with a significant reduction in computation and memory complexity, they often struggle to overcome the notable decline",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        446,
+                        2650,
+                        2106,
+                        2650,
+                        2106,
+                        2920,
+                        446,
+                        2920
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                683.9999999999998,
+                1702,
+                1869.9999999999998,
+                1702,
+                1869.9999999999998,
+                2340,
+                683.9999999999998,
+                2340
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        683.9999999999998,
+                        1702,
+                        1869.9999999999998,
+                        1702,
+                        1869.9999999999998,
+                        2340,
+                        683.9999999999998,
+                        2340
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                448,
+                2384,
+                2100,
+                2384,
+                2100,
+                2474,
+                448,
+                2474
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "Figure 1: Compressing a long context into a short span of memory slots. The memory slots can be conditioned on by the target LLM on behalf of the original context to respond to various prompts.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        448,
+                        2384,
+                        2100,
+                        2384,
+                        2100,
+                        2474,
+                        448,
+                        2474
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                456,
+                2554,
+                862,
+                2554,
+                862,
+                2598,
+                456,
+                2598
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "# 1 INTRODUCTION ",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        456,
+                        2554,
+                        862,
+                        2554,
+                        862,
+                        2598,
+                        456,
+                        2598
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1156,
+                828,
+                1388,
+                828,
+                1388,
+                868,
+                1156,
+                868
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "ABSTRACT",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1156,
+                        828,
+                        1388,
+                        828,
+                        1388,
+                        868,
+                        1156,
+                        868
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1254,
+                3126,
+                1292,
+                3126,
+                1292,
+                3168,
+                1254,
+                3168
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": "1",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1254,
+                        3126,
+                        1292,
+                        3126,
+                        1292,
+                        3168,
+                        1254,
+                        3168
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                490,
+                2962,
+                1262,
+                2962,
+                1262,
+                3038,
+                490,
+                3038
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "Correspondence to Tao Ge (sggetao@gmail.com)  <sup>†</sup>Internship at Microsoft Research",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        490,
+                        2962,
+                        1262,
+                        2962,
+                        1262,
+                        3038,
+                        490,
+                        3038
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 1021,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "98_1_png.jpg"
+    }
+}

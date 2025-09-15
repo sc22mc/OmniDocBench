@@ -1,0 +1,356 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        430.0000000000001,
+        192.5,
+        2060,
+        192.5,
+        2060,
+        232.5,
+        430.0000000000001,
+        232.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": " Timewarp: Transferable Acceleration of Molecular Dynamics by Learning Time-Coarsened Dynamics",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            430.0000000000001,
+            192.5,
+            2060,
+            192.5,
+            2060,
+            232.5,
+            430.0000000000001,
+            232.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        232.5000000000001,
+        267.5,
+        2260,
+        267.5,
+        2260,
+        765,
+        232.5000000000001,
+        765
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            232.5000000000001,
+            267.5,
+            2260,
+            267.5,
+            2260,
+            765,
+            232.5000000000001,
+            765
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        230.0000000000001,
+        870,
+        2260,
+        870,
+        2260,
+        1187.5,
+        230.0000000000001,
+        1187.5
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": " Figure 13. Validation of new metastable states found with Timewarp exploration. The red crosses indicate the different conditioning states. (a) TICA plots for (not conditional) samples generated via a long MD trajectory, Timewarp exploration (Algorithm 2), and Timewarp MCMC (Algorithm 1). Timewarp exploration discovers some metastable states unseen in the long MD trajectories (bottom of LYVI plot, bottom left of CTSA plot). (b) Conditional distributions generated with MD or with the Timewarp model, starting from states visited by the long MD trajectory shown in (a). Some short MD trajectories now discover the new metastable states, verifying that they are indeed valid states. Only the final state of each short MD trajectory is recorded. (c) Conditional distributions generated with MD or with the Timewarp model, starting from the new metastable states discovered by one of the *short* MD trajectories shown in (b).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            230.0000000000001,
+            870,
+            2260,
+            870,
+            2260,
+            1187.5,
+            230.0000000000001,
+            1187.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        232.5,
+        1267.5,
+        962.5,
+        1267.5,
+        962.5,
+        1307.5,
+        232.5,
+        1307.5
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " ## **B.5. Exploration of new metastable states**",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            232.5,
+            1267.5,
+            962.5,
+            1267.5,
+            962.5,
+            1307.5,
+            232.5,
+            1307.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        229.9999999999999,
+        1347.5,
+        2265,
+        1347.5,
+        2265,
+        1792.5,
+        229.9999999999999,
+        1792.5
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " For some tetrapetides in the test set even long MD trajectories  $(1\\mu s)$  miss some metastable states, e.g. for LYVI and CSTA shown in Figure 13a. However, we can easily explore these with the Timewarp exploration algorithm (Algorithm 2). To confirm that these additional metastable states are in fact stable, we run several shorter MD trajectories  $(0.5 \\times 10^6 \\text{fs})$ , in the same way as in Appendix B.3, starting in a nearby metastable state already discovered with the long MD trajectory (Figure 13b). Once one of them hits the new, previously undiscovered state, we start new short MD trajectories  $(0.5 \\times 10^6 \\text{fs})$ from there as well (Figure 13c). These new short MD trajectories either sample within this previously undiscovered state, or transition to the other metastable states. This shows that this metastable state discovered by Timewarp exploration is indeed valid, and was simply undiscovered during the long MD trajectory. In addition, we compare in Figure 13 the conditional MD distributions with that of Timewarp, again showing close agreement.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            229.9999999999999,
+            1347.5,
+            2265,
+            1347.5,
+            2265,
+            1792.5,
+            229.9999999999999,
+            1792.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        227.5000000000001,
+        1850,
+        1857.5,
+        1850,
+        1857.5,
+        1907.5,
+        227.5000000000001,
+        1907.5
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": " # C. Exploration of metastable states using Timewarp without MH corrections",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.5000000000001,
+            1850,
+            1857.5,
+            1850,
+            1857.5,
+            1907.5,
+            227.5000000000001,
+            1907.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        230.0000000000001,
+        1945,
+        2260,
+        1945,
+        2260,
+        2087.5,
+        230.0000000000001,
+        2087.5
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": " We describe the exploration algorithm for Timewarp, which accepts all proposed states unless the energy is above a certain cutoff value. As there is no MH correction, the generated samples will not asymptotically follow the Boltzmann distribution, but the exploration of the state space is much faster than with MD or Algorithm 1. The pseudocode is shown in Algorithm 2:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            230.0000000000001,
+            1945,
+            2260,
+            1945,
+            2260,
+            2087.5,
+            230.0000000000001,
+            2087.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        232.4999999999999,
+        2845,
+        2265,
+        2845,
+        2265,
+        2987.5,
+        232.4999999999999,
+        2987.5
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": " Note that unlike Algorithm 1, there is no need for the auxiliary variables, since the conditional flow only depends on the positions, and no MH acceptance ratio is computed here. The potential energy U includes here also a large penalty if the ordering of a chirality center changes as described in Appendix A.3. As sampling proposals from Timewarp ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            232.4999999999999,
+            2845,
+            2265,
+            2845,
+            2265,
+            2987.5,
+            232.4999999999999,
+            2987.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        232.5,
+        2172.5,
+        2245,
+        2172.5,
+        2245,
+        2755,
+        232.5,
+        2755
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": " | <b>Algorithm 2</b> Fast exploration of the state space with Timewarp                                               | |--------------------------------------------------------------------------------------------------------------------| | <b>Require:</b> Initial state $X_0^p$ , number of steps M, maximum allowed energy increase $\\Delta U_{\\text{max}}$ | | for $m = 0, \\ldots, M$ do                                                                                          | | Sample $X_m^p \\sim p_\\theta(\\cdot \\mid X_m^p)$ {Sample from conditional flow}                                      | | if $U(X_m^p) - U(X_m^p) < \\Delta U_{\\text{max}}$ then                                                              | | $X_{m+1}^p \\leftarrow \\tilde{X}_m^p$                                                                               | | else                                                                                                               | | $X_{m+1}^p \\leftarrow X_m^p$ {Reject if energy change is too high}                                                 | | end if                                                                                                             | | end for                                                                                                            | | output $X_0^p, \\ldots X_M^p$                                                                                       | |                                               ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            232.5,
+            2172.5,
+            2245,
+            2172.5,
+            2245,
+            2755,
+            232.5,
+            2755
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 774,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "77_16_png.jpg"
+  }
+}

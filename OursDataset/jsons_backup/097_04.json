@@ -1,0 +1,1040 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "plain_text",
+      "poly": [
+        204,
+        312,
+        1192,
+        312,
+        1192,
+        392,
+        204,
+        392
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": " between an event stack (Eq.  $(4)$ ) and the two consecutive coded-aperture images (Eq.  $(1)$ ) as",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            204,
+            312,
+            1192,
+            312,
+            1192,
+            392,
+            204,
+            392
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        201.99999999999994,
+        602,
+        1196,
+        602,
+        1196,
+        678,
+        201.99999999999994,
+        678
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": "Assuming that equality holds for Eq.  $(6)$  and combining it with Eq. (3), we can obtain  $I^{(1)}, \\ldots, I^{(N)}$  as",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            201.99999999999994,
+            602,
+            1196,
+            602,
+            1196,
+            678,
+            201.99999999999994,
+            678
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        198,
+        990,
+        1194,
+        990,
+        1194,
+        1276,
+        198,
+        1276
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "This means that under the equality assumption for Eq. (6),  $N$  coded-aperture images ( $I^{(1)}, \\ldots, I^{(N)}$ ) can be derived analytically from the data observed with our imaging method ( $\\bar{I}$  and  $E^{(1,2)}, \\ldots, E^{(N-1,N)}$ ). Therefore, we can state that our imaging method is *quasi-equivalent* to the baseline coded-aperture imaging method.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            198,
+            990,
+            1194,
+            990,
+            1194,
+            1276,
+            198,
+            1276
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        200,
+        1286,
+        1192,
+        1286,
+        1192,
+        1430,
+        200,
+        1430
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "Interestingly, this type of quasi-equivalence does not hold for joint aperture-exposure coding. By using Eq. (1), the imaging process of Eq. (2) is rewritten as",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            200,
+            1286,
+            1192,
+            1286,
+            1192,
+            1430,
+            200,
+            1430
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        206.0000000000001,
+        1605.9999999999998,
+        1194,
+        1605.9999999999998,
+        1194,
+        1997.9999999999998,
+        206.0000000000001,
+        1997.9999999999998
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": "Obviously, it is impossible to analytically obtain  $N$  coded- aperture images ( $I^{(1)}, ..., I^{(N)}$ ) from a single observed image  $I$  alone. Therefore, our imaging method has a theoretical advantage over joint aperture-exposure coding. However, this theory alone is insufficient to ensure the practicality of our method. The actual event data are very noisy and harshly quantized (by the contrast threshold  $\\tau$ ), which breaks the equality assumption for Eq. (6).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            206.0000000000001,
+            1605.9999999999998,
+            1194,
+            1605.9999999999998,
+            1194,
+            1997.9999999999998,
+            206.0000000000001,
+            1997.9999999999998
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        202,
+        2106,
+        1192,
+        2106,
+        1192,
+        2588,
+        202,
+        2588
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": "We developed an end-to-end trainable algorithm on the basis of deep-optics [13, 14, 21, 28, 33, 48, 52, 54], in which the camera-side optical-coding patterns and the light-field reconstruction algorithm were jointly optimized in a deeplearning-based framework. We carefully designed each part of our algorithm to ensure the compatibility with real camera hardware. Although we specifically mention the hardware setup that is available to us, the ideas behind our design would be useful for other possible hardware setups. We set  $N = 4$  unless otherwise mentioned.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202,
+            2106,
+            1192,
+            2106,
+            1192,
+            2588,
+            202,
+            2588
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        202,
+        2608,
+        1190,
+        2608,
+        1190,
+        2748,
+        202,
+        2748
+      ],
+      "ignore": false,
+      "order": "16",
+      "anno_id": 1,
+      "text": "Our algorithm consists of two parts: AcqNet and Rec-Net. AcqNet describes the data-acquisition process using a coded aperture and an event camera as",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202,
+            2608,
+            1190,
+            2608,
+            1190,
+            2748,
+            202,
+            2748
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        210,
+        2878,
+        1198,
+        2878,
+        1198,
+        2964,
+        210,
+        2964
+      ],
+      "ignore": false,
+      "order": "19",
+      "anno_id": 1,
+      "text": "The trainable parameters of AcqNet are related to the aperture's coding patterns. RecNet receives the observed data as",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            210,
+            2878,
+            1198,
+            2878,
+            1198,
+            2964,
+            210,
+            2964
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1284,
+        2484,
+        2274,
+        2484,
+        2274,
+        2972,
+        1284,
+        2972
+      ],
+      "ignore": false,
+      "order": "26",
+      "anno_id": 1,
+      "text": "AcqNet. A pseudo-code of AcqNet is presented in Algorithm 1. In lines 4 and 5, we make the coding patterns compatible with the binary and complementary constraints. More specifically, we prepare two sets of trainable tensors, each with  $8 \\times 8$  elements, denoted as  $\\alpha$  and  $\\beta$ . They are multiplied by the scale parameter  $s$  then fed to the sigmoid function to produce the coding patterns  $a^{(1)}$  and  $a^{(3)}$ . As the training proceeds,  $s$  gradually increases, which forces  $a^{(1)}$  and  $a^{(3)}$  to gradually converge to binary patterns. Moreover,  $a^{(2)}$  and  $a^{(4)}$  are made to be complementary to  $a^{(1)}$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1284,
+            2484,
+            2274,
+            2484,
+            2274,
+            2972,
+            1284,
+            2972
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1282,
+        1640,
+        2274,
+        1640,
+        2274,
+        2472,
+        1282,
+        2472
+      ],
+      "ignore": false,
+      "order": "25",
+      "anno_id": 1,
+      "text": "Hardware-driven constraints for coded aperture. Similar to some previous studies  $[14, 26, 30]$ , we used a liquid-crystal-on-silicon (LCoS) display (Forth Dimension Displays, SXGA-3DM) to implement a coded aperture. This display can output a sequence of semi-transparent coding patterns repeatedly. We need to consider the following two constraints. **Binary constraint**. Although our LCoS display can support both binary and grayscale patterns, a grayscale pattern is actually represented as a temporal series of multiple binary patterns; a grayscale transmittance is represented as the ratio of  $0/1$  periods. To avoid unintended 0/1 flips, we choose to use only binary patterns for aperture coding. Complementary constraint. Our LCoS display requires a \"DC balance\"; a certain pattern  $a$  and its complement  $a^* = 1 - a$  should be included in the sequence. Since the events are recorded continuously over time, we use both  $a$  and  $a^*$  as the coding patterns.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1282,
+            1640,
+            2274,
+            1640,
+            2274,
+            2472,
+            1282,
+            2472
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1286,
+        1284,
+        2272,
+        1284,
+        2272,
+        1624,
+        1286,
+        1624
+      ],
+      "ignore": false,
+      "order": "24",
+      "anno_id": 1,
+      "text": "AcqNet and RecNet are jointly trained to minimize the reconstruction (MSE) loss between  $L$  and  $\\hat{L}$ . Once the training is finished, AcqNet is replaced with the physical imaging process of the camera hardware, in which the coding patterns are adjusted to the learned parameters of AcqNet. The data acquired from the camera are fed to RecNet to reconstruct the light field of a real 3-D scene.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1286,
+            1284,
+            2272,
+            1284,
+            2272,
+            1624,
+            1286,
+            1624
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1284,
+        1110,
+        2134,
+        1110,
+        2134,
+        1152,
+        1284,
+        1152
+      ],
+      "ignore": false,
+      "order": "21",
+      "anno_id": 1,
+      "text": "the input and reconstructs the original light field as",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1284,
+            1110,
+            2134,
+            1110,
+            2134,
+            1152,
+            1284,
+            1152
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        360,
+        438,
+        1050,
+        438,
+        1050,
+        566,
+        360,
+        566
+      ],
+      "ignore": false,
+      "order": "2",
+      "anno_id": 1,
+      "text": " $$ E_{x,y}^{(n,n+1)} \\approx \\frac{\\log\\left(I_{x,y}^{(n+1)}\\right) - \\log\\left(I_{x,y}^{(n)}\\right)}{\\tau}. $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            360,
+            438,
+            1050,
+            438,
+            1050,
+            566,
+            360,
+            566
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        252,
+        722,
+        1040,
+        722,
+        1040,
+        812,
+        252,
+        812
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": " $$ I_{x,y}^{(n)} = I_{x,y}^{(1)} \\exp\\left(\\tau \\sum_{2 \\le k \\le n} E_{x,y}^{(k-1,k)}\\right) (n \\ge 2)  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            252,
+            722,
+            1040,
+            722,
+            1040,
+            812,
+            252,
+            812
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        256,
+        816,
+        1102,
+        816,
+        1102,
+        958,
+        256,
+        958
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "$$ I_{x,y}^{(1)} = \\frac{\\overline{I}_{x,y}}{1 + \\sum_{2 \\le n \\le N} \\exp\\left(\\tau \\sum_{2 \\le k \\le n} E_{x,y}^{(k-1,k)}\\right)}. $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            256,
+            816,
+            1102,
+            816,
+            1102,
+            958,
+            256,
+            958
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        514.0000000000001,
+        1468,
+        886.0000000000001,
+        1468,
+        886.0000000000001,
+        1564,
+        514.0000000000001,
+        1564
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "$$ I_{x,y} = \\sum_{n} p_{x,y}^{(n)} I_{x,y}^{(n)}. $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            514.0000000000001,
+            1468,
+            886.0000000000001,
+            1468,
+            886.0000000000001,
+            1564,
+            514.0000000000001,
+            1564
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        379.9999999999999,
+        2776,
+        1023.9999999999999,
+        2776,
+        1023.9999999999999,
+        2842,
+        379.9999999999999,
+        2842
+      ],
+      "ignore": false,
+      "order": 17,
+      "anno_id": 1,
+      "text": "$$ \\bar{I}, E^{(1,2)}, E^{(2,3)}, E^{(3,4)} = \\text{AcqNet}(L). $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            379.9999999999999,
+            2776,
+            1023.9999999999999,
+            2776,
+            1023.9999999999999,
+            2842,
+            379.9999999999999,
+            2842
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1122,
+        2788,
+        1180,
+        2788,
+        1180,
+        2828,
+        1122,
+        2828
+      ],
+      "ignore": false,
+      "order": 18,
+      "anno_id": 1,
+      "text": "(10)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1122,
+            2788,
+            1180,
+            2788,
+            1180,
+            2828,
+            1122,
+            2828
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1146,
+        1480,
+        1184,
+        1480,
+        1184,
+        1522,
+        1146,
+        1522
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "(9)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1146,
+            1480,
+            1184,
+            1480,
+            1184,
+            1522,
+            1146,
+            1522
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1136,
+        849.9999999999999,
+        1190,
+        849.9999999999999,
+        1190,
+        885.9999999999999,
+        1136,
+        885.9999999999999
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "(8)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1136,
+            849.9999999999999,
+            1190,
+            849.9999999999999,
+            1190,
+            885.9999999999999,
+            1136,
+            885.9999999999999
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2202,
+        1198,
+        2272,
+        1198,
+        2272,
+        1248,
+        2202,
+        1248
+      ],
+      "ignore": false,
+      "order": "23",
+      "anno_id": 1,
+      "text": "(11)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2202,
+            1198,
+            2272,
+            1198,
+            2272,
+            1248,
+            2202,
+            1248
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1144,
+        498,
+        1190,
+        498,
+        1190,
+        538,
+        1144,
+        538
+      ],
+      "ignore": false,
+      "order": "3",
+      "anno_id": 1,
+      "text": "(6)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1144,
+            498,
+            1190,
+            498,
+            1190,
+            538,
+            1144,
+            538
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1146,
+        738,
+        1194,
+        738,
+        1194,
+        786,
+        1146,
+        786
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": "(7)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1146,
+            738,
+            1194,
+            738,
+            1194,
+            786,
+            1146,
+            786
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1458,
+        1182,
+        2100,
+        1182,
+        2100,
+        1246,
+        1458,
+        1246
+      ],
+      "ignore": false,
+      "order": "22",
+      "anno_id": 1,
+      "text": "$$ \\hat{L} = \\text{RecNet}(\\bar{I}, E^{(1,2)}, E^{(2,3)}, E^{(3,4)}).  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1458,
+            1182,
+            2100,
+            1182,
+            2100,
+            1246,
+            1458,
+            1246
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        204,
+        2030,
+        486,
+        2030,
+        486,
+        2074,
+        204,
+        2074
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": "## 3.3. Algorithm",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            204,
+            2030,
+            486,
+            2030,
+            486,
+            2074,
+            204,
+            2074
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1228,
+        3124,
+        1330,
+        3124,
+        1330,
+        3164,
+        1228,
+        3164
+      ],
+      "ignore": false,
+      "order": "27",
+      "anno_id": 1,
+      "text": "24926",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1228,
+            3124,
+            1330,
+            3124,
+            1330,
+            3164,
+            1228,
+            3164
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1288,
+        300,
+        2276,
+        300,
+        2276,
+        1030,
+        1288,
+        1030
+      ],
+      "ignore": false,
+      "order": "20",
+      "anno_id": 1,
+      "text": " | <b>Algorithm 1</b> Pseudo-code for AcqNet |                                                                   | |-------------------------------------------|-------------------------------------------------------------------| |                                           | 1: trainable tensors: $\\alpha, \\beta \\in \\mathbb{R}^{8 \\times 8}$ | |                                           | 2: $forward(L)$ :                                                 | |                                           | 3: set $s$                                                        | |                                           | 4: $a^{(1)}, a^{(3)} = sigmoid(s\\alpha), sigmoid(s\\beta)$         | |                                           | 5: $a^{(2)}, a^{(4)} = 1 - a^{(1)}, 1 - a^{(3)}$                  | |                                           | 6: <b>for</b> $n$ in [1, 2, 3, 4]:                                | |                                           | 7: compute $I^{(n)}$ by Eq. (1)                                   | |                                           | 8: <b>if</b> $n > 1$ :                                            | |                                           | 9: compute $E^{(n-1,n)}$ by Eq. (12)                              | |                                           | 10: <b>end</b>                                                    | |                                           | 11: <b>end</b>                                                    | |                                           | 12: compute $\\bar{I}$ by Eq. (3)                                  | |                                           | 13: return $\\bar{I}, E^{(1,2)}, E^{(2,3)}, E^{(3,4)}$             |",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1288,
+            300,
+            2276,
+            300,
+            2276,
+            1030,
+            1288,
+            1030
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 1007,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "97_4_png.jpg"
+  }
+}

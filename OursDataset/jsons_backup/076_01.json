@@ -1,0 +1,622 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "title",
+      "poly": [
+        330.0000000000001,
+        220,
+        2195,
+        220,
+        2195,
+        455,
+        330.0000000000001,
+        455
+      ],
+      "ignore": false,
+      "order": "2",
+      "anno_id": 1,
+      "text": "# Vectorized Scenario Description and Motion Prediction for Scenario-Based Testing",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            330.0000000000001,
+            220,
+            2195,
+            220,
+            2195,
+            455,
+            330.0000000000001,
+            455
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "arxiv",
+      "poly": [
+        67.50000000000001,
+        907.4950000000001,
+        147.5,
+        907.4950000000001,
+        147.5,
+        2307.3450000000003,
+        67.50000000000001,
+        2307.3450000000003
+      ],
+      "ignore": false,
+      "order": "1",
+      "anno_id": 1,
+      "text": "arXiv:2302.01161v1 [cs.LG] 2 Feb 2023",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            67.50000000000001,
+            907.4950000000001,
+            147.5,
+            907.4950000000001,
+            147.5,
+            2307.3450000000003,
+            67.50000000000001,
+            2307.3450000000003
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        315,
+        487.5,
+        2217.5,
+        487.5,
+        2217.5,
+        755,
+        315,
+        755
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "  1<sup>st</sup> Max Winkelmann AD Functions & Simulation IAV GmbH Berlin, Germany max.winkelmann@iav.de  2<sup>nd</sup> Constantin Vasconi AD Functions & Simulation IAV GmbH Berlin, Germany constantin.vasconi@iav.de  3<sup>rd</sup> Steffen Müller Department of Automotive Engineering Technische Universität Berlin Berlin, Germany steffen.mueller@tu-berlin.de",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            315,
+            487.5,
+            2217.5,
+            487.5,
+            2217.5,
+            755,
+            315,
+            755
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        200,
+        912.5,
+        1252.5,
+        912.5,
+        1252.5,
+        1607.5,
+        200,
+        1607.5
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " Abstract-Automated vehicles (AVs) are tested in diverse scenarios, typically specified by parameters such as velocities, distances, or curve radii. To describe scenarios uniformly independent of such parameters, this paper proposes a vectorized scenario description defined by the road geometry and vehicles' trajectories. Data of this form are generated for three scenarios, merged, and used to train the motion prediction model VectorNet, allowing to predict an AV's trajectory for unseen scenarios. Predicting scenario evaluation metrics, VectorNet partially achieves lower errors than regression models that separately process the three scenarios' data. However, for comprehensive generalization, sufficient variance in the training data must be ensured. Thus, contrary to existing methods, our proposed method can merge diverse scenarios' data and exploit spatial and temporal nuances in the vectorized scenario description. As a result, data from specified test scenarios and real-world scenarios can be compared and combined for (predictive) analyses and scenario selection.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            200,
+            912.5,
+            1252.5,
+            912.5,
+            1252.5,
+            1607.5,
+            200,
+            1607.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        202.5,
+        1617.4999999999998,
+        1255,
+        1617.4999999999998,
+        1255,
+        1692.4999999999998,
+        202.5,
+        1692.4999999999998
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " Index Terms-automated driving, motion prediction, safety validation, scenario-based testing, scenario selection",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202.5,
+            1617.4999999999998,
+            1255,
+            1617.4999999999998,
+            1255,
+            1692.4999999999998,
+            202.5,
+            1692.4999999999998
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        557.5,
+        1747.5,
+        890,
+        1747.5,
+        890,
+        1795,
+        557.5,
+        1795
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": " # I. INTRODUCTION",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            557.5,
+            1747.5,
+            890,
+            1747.5,
+            890,
+            1795,
+            557.5,
+            1795
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        200,
+        1812.5000000000002,
+        1245,
+        1812.5000000000002,
+        1245,
+        2157.5,
+        200,
+        2157.5
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": " Validating the safety of automated vehicles (AVs) is challenging. Their environment's complex and open nature prevents all-encompassing testing of AVs. Due to the rare nature of accidents, statistical safety validation based on representative routes of human drivers is not possible either [1]. Thus, AVs' validation requires targeted testing to uncover problems effectively and determine residual risks precisely [2], [3].",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            200,
+            1812.5000000000002,
+            1245,
+            1812.5000000000002,
+            1245,
+            2157.5,
+            200,
+            2157.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        200,
+        2167.5,
+        1252.5,
+        2167.5,
+        1252.5,
+        2752.5,
+        200,
+        2752.5
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": " Which scenarios are risky differs from AV to AV, depending on the hardware and software. Thus, search-based techniques systematically vary scenarios and provoke critical behaviors [\\[4\\]](#page-9-1). Here, scenario-based testing provides the framework for variation [\\[5\\]](#page-9-1). First, a *functional* scenario is described in natural language, e.g., \"The AV (Ego) follows a curved road.\". An associated *logical* scenario specifies open parameters and their ranges, e.g.,  $v_{\\text{Ego}} \\in [8 \\frac{\\text{m}}{\\text{s}}, 16 \\frac{\\text{m}}{\\text{s}}]$ . Finally, *concrete* scenarios, e.g.,  $v_{\\text{Ego}} = 9 \\frac{\\text{m}}{\\text{s}}$ , are parameterized within the logical scenario. Here, data of executed *concrete* scenarios are used to perform predictive analyses for further *concrete* scenarios and select relevant *concrete* scenarios for executio.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            200,
+            2167.5,
+            1252.5,
+            2167.5,
+            1252.5,
+            2752.5,
+            200,
+            2752.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        197.5,
+        2765,
+        1255,
+        2765,
+        1255,
+        2907.5,
+        197.5,
+        2907.5
+      ],
+      "ignore": false,
+      "order": 9,
+      "anno_id": 1,
+      "text": " However, the description of scenarios by parameters has limitations. Conventional techniques for predictive analyses cannot be used across logical and functional scenarios as ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            197.5,
+            2765,
+            1255,
+            2765,
+            1255,
+            2907.5,
+            197.5,
+            2907.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        234.9999999999999,
+        2957.5,
+        1237.5,
+        2957.5,
+        1237.5,
+        2995,
+        234.9999999999999,
+        2995
+      ],
+      "ignore": false,
+      "order": 10,
+      "anno_id": 1,
+      "text": " This work was supported in part by IAV GmbH, 10587 Berlin, Germany",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            234.9999999999999,
+            2957.5,
+            1237.5,
+            2957.5,
+            1237.5,
+            2995,
+            234.9999999999999,
+            2995
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1297.5,
+        910,
+        2350,
+        910,
+        2350,
+        1800,
+        1297.5,
+        1800
+      ],
+      "ignore": false,
+      "order": 11,
+      "anno_id": 1,
+      "text": " their parameters vary considerably. Thus, the search for relevant concrete scenarios starts anew for each functional and logical scenario. Furthermore, real-world scenarios may only be described inadequately by parameters since, e.g., the road geometry can be arbitrarily complex  $[6]$ – $[8]$ . Thus, it is unclear what behavior to expect in real-world tests, and the comparison of AVs' behavior in tests and real-world scenarios is restricted.  This paper explores how a uniform scenario description and predictive analyses across logical, functional, and real-world scenarios can be achieved. Motion prediction techniques are examined as possible solutions. Our main contributions are:  - A vectorized scenario description suitable for diverse and complex concrete scenarios and (predictive) analyses. - The integration of motion prediction into scenariobased testing, enabling comprehensive predictive analyses across functional, logical, and real-world scenarios. - The implementation and investigation of our approach using the motion prediction model VectorNet [9].",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1297.5,
+            910,
+            2350,
+            910,
+            2350,
+            1800,
+            1297.5,
+            1800
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1645,
+        1849.9999999999998,
+        2000,
+        1849.9999999999998,
+        2000,
+        1897.4999999999998,
+        1645,
+        1897.4999999999998
+      ],
+      "ignore": false,
+      "order": 12,
+      "anno_id": 1,
+      "text": " # II. RELATED WORK",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1645,
+            1849.9999999999998,
+            2000,
+            1849.9999999999998,
+            2000,
+            1897.4999999999998,
+            1645,
+            1897.4999999999998
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1290,
+        1915.0000000000002,
+        2350,
+        1915.0000000000002,
+        2350,
+        2052.5,
+        1290,
+        2052.5
+      ],
+      "ignore": false,
+      "order": 13,
+      "anno_id": 1,
+      "text": " Below, we discuss the essential artifacts in scenario-based testing and assess their suitability as a basis for predictive analyses. The lower part of Fig. 1 illustrates these artifacts.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1290,
+            1915.0000000000002,
+            2350,
+            1915.0000000000002,
+            2350,
+            2052.5,
+            1290,
+            2052.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1297.5,
+        2095,
+        2212.5,
+        2095,
+        2212.5,
+        2130,
+        1297.5,
+        2130
+      ],
+      "ignore": false,
+      "order": 14,
+      "anno_id": 1,
+      "text": " ## A. From Functional Scenarios to Concrete Scenarios",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1297.5,
+            2095,
+            2212.5,
+            2095,
+            2212.5,
+            2130,
+            1297.5,
+            2130
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1297.5,
+        2155,
+        2345,
+        2155,
+        2345,
+        2442.5,
+        1297.5,
+        2442.5
+      ],
+      "ignore": false,
+      "order": 15,
+      "anno_id": 1,
+      "text": " **Functional scenarios** are described in natural language [5] and can be supported by sketches [10]. Thus, functional scenarios are human-readable, but their representation and abstraction limit their suitability as a data basis for predictive analyses. Similar limitations apply to abstract scenarios [10], which we do not discuss further due to their low prevalence.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1297.5,
+            2155,
+            2345,
+            2155,
+            2345,
+            2442.5,
+            1297.5,
+            2442.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1292.5,
+        2457.5,
+        2345,
+        2457.5,
+        2345,
+        2987.5,
+        1292.5,
+        2987.5
+      ],
+      "ignore": false,
+      "order": 16,
+      "anno_id": 1,
+      "text": " Logical scenarios complement functional scenarios with  $N_I$  influencing parameters [5], which we denote by inputs  $\\boldsymbol{x} \\in \\mathbb{R}^{N_I}$ . Furthermore, lower and upper bounds of  $\\boldsymbol{x}$  or the distribution  $p(x)$  are determined. For a specific functional scenario, different logical scenarios can exist if influences are modeled differently in different test setups or are not controllable. E.g., fog may be modeled by noise in a 2D simulation, rendered in a 3D simulation, or real but not controllable in a field test. Due to their open nature, logical scenarios cannot be directly processed but they provide the structure for predictive analyses and search-based techniques.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1292.5,
+            2457.5,
+            2345,
+            2457.5,
+            2345,
+            2987.5,
+            1292.5,
+            2987.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 762,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "76_1_png.jpg"
+  }
+}

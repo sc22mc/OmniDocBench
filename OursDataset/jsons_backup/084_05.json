@@ -1,0 +1,774 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "plain_text",
+      "poly": [
+        202.5,
+        210,
+        1252.5,
+        210,
+        1252.5,
+        350,
+        202.5,
+        350
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": " The term *penalties* depends on the difference between the current RTT and the minimum EMA RTT and is defined as follows:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202.5,
+            210,
+            1252.5,
+            210,
+            1252.5,
+            350,
+            202.5,
+            350
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        202.5,
+        527.5,
+        1252.5,
+        527.5,
+        1252.5,
+        620,
+        202.5,
+        620
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": " In Eq. 3,  $\\alpha$  depends on the magnitude of the difference between  $rtt_{diff}$  and  $rtt_{min}^{ema}$  and it is defined as follows:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202.5,
+            527.5,
+            1252.5,
+            527.5,
+            1252.5,
+            620,
+            202.5,
+            620
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        207.5,
+        962.5,
+        1252.5,
+        962.5,
+        1252.5,
+        1090,
+        207.5,
+        1090
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": " It is worth noticing that, in case  $rtt_{diff} < 0$ , the *penalties* term becomes negative, thus rewarding the agent when RTT improvements are detected.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            207.5,
+            962.5,
+            1252.5,
+            962.5,
+            1252.5,
+            1090,
+            207.5,
+            1090
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        202.5,
+        1100,
+        1252.5,
+        1100,
+        1252.5,
+        1592.5,
+        202.5,
+        1592.5
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": " 4) RL Algorithm: MARLIN adopts SAC [11], an off-policy actor-critic algorithm based on the maximum entropy RL framework. SAC augments the maximum reward objective, foundation of RL settings, with an entropy maximization term. Such term acts as a trade-off between exploration and exploitation, so that the agent aims to maximize its return while also acting as random as possible. In circumstances where multiple actions seem equally attractive, i.e. in the case of equal or close Q-Values, the learned policy is encouraged to assign equal probability mass to those actions.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202.5,
+            1100,
+            1252.5,
+            1100,
+            1252.5,
+            1592.5,
+            202.5,
+            1592.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        200,
+        1610,
+        1257.5,
+        1610,
+        1257.5,
+        2095,
+        200,
+        2095
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": " In practice, the effects of the entropy, or temperature, term prompt the agent to discard unsuitable trajectories in favor of more promising ones, as well as to improve the learning speed. The entropy term can be either fixed or optimized/learned as further steps are taken. However, the optimal entropy coefficient varies depending on a series of factors, such as the nature of the task or even the current policy. As a consequence, it is usually considered good practice to avoid fixed values, preferring instead to update the term at the same time actor, critic, and the target networks are optimized [7].",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            200,
+            1610,
+            1257.5,
+            1610,
+            1257.5,
+            2095,
+            200,
+            2095
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        195,
+        2202.5,
+        1255,
+        2202.5,
+        1255,
+        2490,
+        195,
+        2490
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": " The work described above is the first step of a multi-year research project. We have already identified future steps that follow naturally from our present work. While we proceed describing them sequentially, in reality these steps are much intertwined and we will likely addressed them in subsequent iterations.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            195,
+            2202.5,
+            1255,
+            2202.5,
+            1255,
+            2490,
+            195,
+            2490
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        192.5,
+        2500,
+        1255,
+        2500,
+        1255,
+        2990,
+        192.5,
+        2990
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": " We think that MARLIN would benefit from a more expressive reward function. We envision problem and reward formulations that truncate unpromising trajectories that have moved too distant from the optimal. We believe this could significantly speed up the solution convergence. Furthermore, we suspect that MARLIN's current state might present redundant information as well as features of low relevance to the problem. To address this, we plan to investigate smaller and more refined state representations, with the double goal of lowering complexity and improving convergence. We plan",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            192.5,
+            2500,
+            1255,
+            2500,
+            1255,
+            2990,
+            192.5,
+            2990
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1292.5,
+        2550,
+        2360,
+        2550,
+        2360,
+        2842.5,
+        1292.5,
+        2842.5
+      ],
+      "ignore": false,
+      "order": "19",
+      "anno_id": 1,
+      "text": " One of the main design choices we faced was the transport protocol we would use to train and evaluate MARLIN. The decision fell on a custom transport protocol because it is much simpler to integrate with MARLIN than TCP. Additionally, a custom protocol enables greater flexibility in terms of retrieving the information required to encode the agent state.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1292.5,
+            2550,
+            2360,
+            2550,
+            2360,
+            2842.5,
+            1292.5,
+            2842.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1300,
+        2855,
+        2362.5,
+        2855,
+        2362.5,
+        2987.5,
+        1300,
+        2987.5
+      ],
+      "ignore": false,
+      "order": "20",
+      "anno_id": 1,
+      "text": " For this study, we integrated MARLIN with Mockets, a message-based communication middleware implemented on top of UDP, following a school of thought similar to the one",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1300,
+            2855,
+            2362.5,
+            2855,
+            2362.5,
+            2987.5,
+            1300,
+            2987.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1300,
+        1987.5,
+        2355,
+        1987.5,
+        2355,
+        2420,
+        1300,
+        2420
+      ],
+      "ignore": false,
+      "order": "17",
+      "anno_id": 1,
+      "text": " Up until now, we shaped the problem of CC from the perspective of a single RL agent. Nonetheless, the need for CC algorithms in transport protocols originated from the lack of coordination in a multi-agent system, where single entities were acting in a completely self-centered manner. Therefore, we expect that the next step ahead in learning-based CC will come from the application of advancing Multi-Agent Reinforcement Learning (MARL) algorithms that can optimize cooperative and/or competitive agent behavior.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1300,
+            1987.5,
+            2355,
+            1987.5,
+            2355,
+            2420,
+            1300,
+            2420
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1297.5,
+        1235,
+        2355,
+        1235,
+        2355,
+        1975,
+        1297.5,
+        1975
+      ],
+      "ignore": false,
+      "order": "16",
+      "anno_id": 1,
+      "text": " Further advancements will require an evolution in the agent's design congruent with specific problems that afflict CC. The literature has shown that ML models can accurately distinguish between packet loss attributable to congestion or channel errors. We plan to integrate a similar classifier within MARLIN and investigate the feasibility of an analogous approach to identify variations in end-to-end latency that are caused by changes in the path to destination. The fundamental building block of CC algorithms is *how and when* to change the CWND size. MARLIN currently actively controls the \"how\", leaving the \"when\" to a heuristic. We will investigate learning-based approaches to include such decision factor into MARLIN, with the goal of turning it into a more comprehensive and reactive system, able to make rational decisions at its own tempo.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1297.5,
+            1235,
+            2355,
+            1235,
+            2355,
+            1975,
+            1297.5,
+            1975
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1295,
+        945,
+        2350,
+        945,
+        2350,
+        1237.5,
+        1295,
+        1237.5
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": " to train this new agent in diversified networking scenarios, which can capture different traffic patterns and network technologies, to assess the degree of generalizability. Finally, a thorough, automated hyperparameter tuning would further enhance MARLIN's performance and complete a first cycle of improvements.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1295,
+            945,
+            2350,
+            945,
+            2350,
+            1237.5,
+            1295,
+            1237.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        1342.5,
+        192.49999999999994,
+        2305,
+        192.49999999999994,
+        2305,
+        775,
+        1342.5,
+        775
+      ],
+      "ignore": false,
+      "order": 13,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1342.5,
+            192.49999999999994,
+            2305,
+            192.49999999999994,
+            2305,
+            775,
+            1342.5,
+            775
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        1460,
+        795,
+        2182.5,
+        795,
+        2182.5,
+        832.5,
+        1460,
+        832.5
+      ],
+      "ignore": false,
+      "order": 14,
+      "anno_id": 1,
+      "text": " Table II: Hyperparameters used in MARLIN.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1460,
+            795,
+            2182.5,
+            795,
+            2182.5,
+            832.5,
+            1460,
+            832.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        380,
+        372.49999999999994,
+        1072.5,
+        372.49999999999994,
+        1072.5,
+        497.49999999999994,
+        380,
+        497.49999999999994
+      ],
+      "ignore": false,
+      "order": "2",
+      "anno_id": 1,
+      "text": " $$ penalties = \\begin{cases} \\alpha \\frac{rtt_{diff}}{rtt_{min}^{ema}}, & \\text{if } \\frac{rtt_{diff}}{rtt_{min}^{ema}} < 1\\\\ 0.99, & \\text{otherwise} \\end{cases} $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            380,
+            372.49999999999994,
+            1072.5,
+            372.49999999999994,
+            1072.5,
+            497.49999999999994,
+            380,
+            497.49999999999994
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        405,
+        662.5,
+        1045,
+        662.5,
+        1045,
+        917.5,
+        405,
+        917.5
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": " $$ \\alpha = \\begin{cases} 1, & \\text{if } |\\frac{rtt_{diff}}{rtt_{\\min}^{ema}}| > 0.6 \\\\ 0.5, & \\text{if } 0.1 < |\\frac{rtt_{diff}}{rtt_{\\min}^{ema}}| \\le 0.6 \\\\ 0.3, & \\text{if } 0.05 < |\\frac{rtt_{diff}}{rtt_{\\min}^{ema}}| \\le 0.1 \\\\ 0.1, & \\text{otherwise} \\end{cases}  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            405,
+            662.5,
+            1045,
+            662.5,
+            1045,
+            917.5,
+            405,
+            917.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1197.5,
+        415,
+        1242.5,
+        415,
+        1242.5,
+        457.5,
+        1197.5,
+        457.5
+      ],
+      "ignore": false,
+      "order": "3",
+      "anno_id": 1,
+      "text": " (3)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1197.5,
+            415,
+            1242.5,
+            415,
+            1242.5,
+            457.5,
+            1197.5,
+            457.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1210,
+        775,
+        1252.5,
+        775,
+        1252.5,
+        815,
+        1210,
+        815
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": " (4)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1210,
+            775,
+            1252.5,
+            775,
+            1252.5,
+            815,
+            1210,
+            815
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        197.49999999999997,
+        2132.5,
+        567.5,
+        2132.5,
+        567.5,
+        2177.5,
+        197.49999999999997,
+        2177.5
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": " ## D. Future Directions",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            197.49999999999997,
+            2132.5,
+            567.5,
+            2132.5,
+            567.5,
+            2177.5,
+            197.49999999999997,
+            2177.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1432.5,
+        2475,
+        2207.5,
+        2475,
+        2207.5,
+        2517.5,
+        1432.5,
+        2517.5
+      ],
+      "ignore": false,
+      "order": "18",
+      "anno_id": 1,
+      "text": " # III. THE MOCKETS TRANSPORT PROTOCOL",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1432.5,
+            2475,
+            2207.5,
+            2475,
+            2207.5,
+            2517.5,
+            1432.5,
+            2517.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 855,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "84_5_png.jpg"
+  }
+}

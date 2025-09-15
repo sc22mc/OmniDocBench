@@ -1,0 +1,394 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                448,
+                110,
+                1224,
+                110,
+                1224,
+                152,
+                448,
+                152
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "Published as a conference paper at ICLR 2024",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        448,
+                        110,
+                        1224,
+                        110,
+                        1224,
+                        152,
+                        448,
+                        152
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                447.9999999999999,
+                340.00000000000006,
+                2105.9999999999995,
+                340.00000000000006,
+                2105.9999999999995,
+                1352,
+                447.9999999999999,
+                1352
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        447.9999999999999,
+                        340.00000000000006,
+                        2105.9999999999995,
+                        340.00000000000006,
+                        2105.9999999999995,
+                        1352,
+                        447.9999999999999,
+                        1352
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                450,
+                1402,
+                2102,
+                1402,
+                2102,
+                1530,
+                450,
+                1530
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "Figure 9: Construction of the PWC dataset: we use the GPT-4 to generate a variety of prompt-answer pairs according to contexts. The resulting dataset is used for instruction fine-tuning (240k for training) and evaluation  $(18k \\text{ for testing})$  in this work.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        450,
+                        1402,
+                        2102,
+                        1402,
+                        2102,
+                        1530,
+                        450,
+                        1530
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                448,
+                1640.0000000000002,
+                2058,
+                1640.0000000000002,
+                2058,
+                2052,
+                448,
+                2052
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "aspects (e.g., topic, genre, structure, style, polarity, key information and details) of the text as possible. The first half of these prompts should be like an instruction, the other should be like a question. In addition to the prompts specified to the above text, please also design 5 general prompts like \"rephrase the above text\", \"summarize the above text\", \"write a title for the above text\", \"extract a few keywords for the above text\" and \"write a paragraph (i.e., continuation) that follows the above text\". Each prompt should be outputted in the following format: [{\"prompt\": your generated prompt, \"answer\": the answer to the prompt}]",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        448,
+                        1640.0000000000002,
+                        2058,
+                        1640.0000000000002,
+                        2058,
+                        2052,
+                        448,
+                        2052
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                446.0000000000001,
+                2252,
+                2104,
+                2252,
+                2104,
+                2606,
+                446.0000000000001,
+                2606
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "According to Mu et al. (2023), we formulate an evaluation prompt to be used with the GPT-4 API. The prompt, as illustrated in Listing 2, consists of a task description along with three specific examples. We supply GPT-4 with a text, a prompt, and two distinct model-generated responses. The task for GPT-4 is to determine the superior answer or recognize a tie. The chosen examples encompass scenarios where Assistant A performs better, Assistant B performs better, and when a tie occurs. This methodology enables us to effectively assess<sup> $7$ </sup> the model's quality. Specially, the orders where the model responses are presented to the GPT-4 are swapped randomly to alleviate bias, as Touvron et al.  $(2023b)$  did.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        446.0000000000001,
+                        2252,
+                        2104,
+                        2252,
+                        2104,
+                        2606,
+                        446.0000000000001,
+                        2606
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                445.9999999999999,
+                2648,
+                2100,
+                2648,
+                2100,
+                2746,
+                445.9999999999999,
+                2746
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "Listing 2: Prompt for the GPT-4 evaluation. This prompt consists of a description of the task and three specific examples.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        445.9999999999999,
+                        2648,
+                        2100,
+                        2648,
+                        2100,
+                        2746,
+                        445.9999999999999,
+                        2746
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                442,
+                2762,
+                2040,
+                2762,
+                2040,
+                2892,
+                442,
+                2892
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "Given a piece of text, an instruction for this text, and two AI assistant answers, your task is to choose the better answer and provide reasons. Evaluate the answers holistically, paying special attention to",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        442,
+                        2762,
+                        2040,
+                        2762,
+                        2040,
+                        2892,
+                        442,
+                        2892
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                447.9999999999999,
+                2920,
+                2102,
+                2920,
+                2102,
+                3048,
+                447.9999999999999,
+                3048
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "<sup>7</sup>We find the GPT-4 rater tends to prefer longer responses, aligning with observations from recent work such as Zhao et al. (2024). Given that ICAE's responses are generally short (due to instruction fine-tuning with the PwC dataset), its actual performance should be better than the numbers reported in the evaluation.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        447.9999999999999,
+                        2920,
+                        2102,
+                        2920,
+                        2102,
+                        3048,
+                        447.9999999999999,
+                        3048
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1250,
+                3122,
+                1302,
+                3122,
+                1302,
+                3170,
+                1250,
+                3170
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "14",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1250,
+                        3122,
+                        1302,
+                        3122,
+                        1302,
+                        3170,
+                        1250,
+                        3170
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                446,
+                2148,
+                972,
+                2148,
+                972,
+                2192,
+                446,
+                2192
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "## D GPT-4 EVALUATION",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        446,
+                        2148,
+                        972,
+                        2148,
+                        972,
+                        2192,
+                        446,
+                        2192
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 1017,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "98_14_png.jpg"
+    }
+}

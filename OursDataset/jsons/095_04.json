@@ -1,0 +1,774 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "figure",
+            "poly": [
+                240,
+                296,
+                1224,
+                296,
+                1224,
+                770,
+                240,
+                770
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        240,
+                        296,
+                        1224,
+                        296,
+                        1224,
+                        770,
+                        240,
+                        770
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                252,
+                816.0000000000001,
+                1208,
+                816.0000000000001,
+                1208,
+                858.0000000000001,
+                252,
+                858.0000000000001
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "Figure 3. Overview of the OmniDocBench dataset construction.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        252,
+                        816.0000000000001,
+                        1208,
+                        816.0000000000001,
+                        1208,
+                        858.0000000000001,
+                        252,
+                        858.0000000000001
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                238,
+                1002,
+                1230,
+                1002,
+                1230,
+                1344,
+                238,
+                1344
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "Constructing a diverse and comprehensive document parsing benchmark with precise annotations is a significant challenge. As illustrated in Figure 3, we have designed a systematic and professional annotation framework for OmniDocBench, encompassing data acquisition, intelligent pre-annotation, and manual refinement. This ensures that OmniDocBench possesses the following key attributes:",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        238,
+                        1002,
+                        1230,
+                        1002,
+                        1230,
+                        1344,
+                        238,
+                        1344
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                236,
+                1372,
+                1224,
+                1372,
+                1224,
+                1768,
+                236,
+                1768
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "- Page Diversity. We sourced document pages from a variety of origins to ensure a wide range of document types. - Comprehensive Annotation. We meticulously annotated all elements on the pages, including bounding boxes, specific contents, and various potential attributes. - Annotation Accuracy. By integrating semi-automated annotation processes, annotator corrections, and expert quality checks, we ensure the reliability of all annotations.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        236,
+                        1372,
+                        1224,
+                        1372,
+                        1224,
+                        1768,
+                        236,
+                        1768
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                237.99999999999983,
+                1798,
+                1232,
+                1798,
+                1232,
+                1930,
+                237.99999999999983,
+                1930
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "The following sections detail the data acquisition process, the annotation methodology, and a statistical analysis of the final annotated dataset.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        237.99999999999983,
+                        1798,
+                        1232,
+                        1798,
+                        1232,
+                        1930,
+                        237.99999999999983,
+                        1930
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                234.0000000000001,
+                2080,
+                1232,
+                2080,
+                1232,
+                2866,
+                234.0000000000001,
+                2866
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "During the data acquisition phase, we sourced document pages from diverse origins and used clustering algorithms to initially select visually diverse pages, followed by manual annotation of page attributes to finalize the OmniDocBench pages. Specifically, we collected over 200,000 initial PDF documents from Common Crawl, Google, Baidu search engines, and internal data. Subsequently, we extracted visual features from these document pages using ResNet-50 and performed clustering using Faiss  $^{1}$ , sampling 6,000 visually diverse pages from 10 cluster centers. Finally, annotators provided page-level attribute annotations, including page type, layout type, and language type, and further balanced the selection to 981 samples for the final dataset. The OmniDocBench dataset includes pages from nine distinct types, multiple layout categories, and various attribute annotations, covering a wide range of real-world scenarios.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        234.0000000000001,
+                        2080,
+                        1232,
+                        2080,
+                        1232,
+                        2866,
+                        234.0000000000001,
+                        2866
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1320.0000000000002,
+                2418,
+                2308,
+                2418,
+                2308,
+                2846,
+                1320.0000000000002,
+                2846
+            ],
+            "ignore": false,
+            "order": 17,
+            "anno_id": 1,
+            "text": "**Expert Quality Inspection.** Despite thorough annotator corrections, the complexity of formulas and tables may re-",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1320.0000000000002,
+                        2418,
+                        2308,
+                        2418,
+                        2308,
+                        2846,
+                        1320.0000000000002,
+                        2846
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1314,
+                2018,
+                2308,
+                2018,
+                2308,
+                2394,
+                1314,
+                2394
+            ],
+            "ignore": false,
+            "order": 16,
+            "anno_id": 1,
+            "text": " **Automatic Annotation**. Manually annotating entire documents is time-consuming and costly. To enhance efficiency, we employ state-of-the-art detection and recognition models for pre-annotation of layout detection and content recognition. Specifically, we use fine-tuned LayoutLMv3 [\\[17\\]](#page-1-1) for layout detection annotations and PaddleOCR [\\[23\\]](#page-1-1), UniMERNet [\\[40\\]](#page-1-1), and GPT-4o [\\[2\\]](#page-1-1) for text, formula, and table annotations, respectively.**Annotator Correction**. After the layout detection phase, annotators refine the detection boxes and enhance annotations with reading order and affiliation details. Each character is verified to ensure accuracy in content recognition. For complex annotations of tables and formulas, requiring LaTeX and HTML formats, annotators use tools like Tables Generator  $^{2}$  and latexlive  $^{3}$  for verification and correction.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1314,
+                        2018,
+                        2308,
+                        2018,
+                        2308,
+                        2394,
+                        1314,
+                        2394
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1314.0000000000002,
+                1810,
+                2304,
+                1810,
+                2304,
+                2004,
+                1314.0000000000002,
+                2004
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": "For these annotation tasks on diverse pages, we design a standardized process to ensure quality and efficiency, comprising intelligent automatic annotation, annotator correction, and expert quality inspection.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1314.0000000000002,
+                        1810,
+                        2304,
+                        1810,
+                        2304,
+                        2004,
+                        1314.0000000000002,
+                        2004
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1318,
+                1322,
+                2312,
+                1322,
+                2312,
+                1706,
+                1318,
+                1706
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": "**Content Recognition Annotations:** Based on the content type within each region, we conduct the following three types of annotations: (1) Text Annotations: Pure text annotations for titles, text paragraphs, and other plain text content. (2) Formula Annotations: LaTeX format annotations for inline formulas, display formulas, and subscripts. (3) Table Annotations: Providing both HTML and LaTeX annotations for table data.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1318,
+                        1322,
+                        2312,
+                        1322,
+                        2312,
+                        1706,
+                        1318,
+                        1706
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1318,
+                618,
+                2308,
+                618,
+                2308,
+                1306,
+                1318,
+                1306
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": " Layout Detection Annotations: Unlike typical layout detection tasks, OmniDocBench includes four comprehensive types of annotations: (1) Layout Bounding Box Annotations: Positioanl information for 19 distinct region categories such as titles, text paragraphs, tables, and images. (2) Layout Attribute Annotations: Detailed attribute annotations for detected boxes, including 3 text box attribute categories, 6 table attribute categories, 9 bbox-level attribute labels in total. (3) Reading Order Annotations: Annotating the reading sequence of detected boxes. (4) Affiliation Annotations: For images, tables, formulas, and code blocks, we annotate captions and titles to distinguish them from main text. Similarly, for cross-page paragraphs, we annotate affiliation relationships.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1318,
+                        618,
+                        2308,
+                        618,
+                        2308,
+                        1306,
+                        1318,
+                        1306
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1320,
+                378.00000000000006,
+                2306,
+                378.00000000000006,
+                2306,
+                516,
+                1320,
+                516
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "To ensure the comprehensiveness of OmniDocBench's annotations, we conducted detailed annotations for layout detection and content recognition.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1320,
+                        378.00000000000006,
+                        2306,
+                        378.00000000000006,
+                        2306,
+                        516,
+                        1320,
+                        516
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1324,
+                298,
+                1728,
+                298,
+                1728,
+                342,
+                1324,
+                342
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "## 3.2. Data Annotation",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1324,
+                        298,
+                        1728,
+                        298,
+                        1728,
+                        342,
+                        1324,
+                        342
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                238,
+                906,
+                802,
+                906,
+                802,
+                954,
+                238,
+                954
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "# 3. OmniDocBench Dataset",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        238,
+                        906,
+                        802,
+                        906,
+                        802,
+                        954,
+                        238,
+                        954
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1318,
+                554,
+                1734,
+                554,
+                1734,
+                602,
+                1318,
+                602
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": "### 3.2.1. Annotation Types",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1318,
+                        554,
+                        1734,
+                        554,
+                        1734,
+                        602,
+                        1318,
+                        602
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                240,
+                1994,
+                654,
+                1994,
+                654,
+                2036,
+                240,
+                2036
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "## 3.1. Data Acquisition",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        240,
+                        1994,
+                        654,
+                        1994,
+                        654,
+                        2036,
+                        240,
+                        2036
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1322,
+                1742.0000000000002,
+                1770,
+                1742.0000000000002,
+                1770,
+                1784.0000000000002,
+                1322,
+                1784.0000000000002
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": "### 3.2.2. Annotation Process",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1322,
+                        1742.0000000000002,
+                        1770,
+                        1742.0000000000002,
+                        1770,
+                        1784.0000000000002,
+                        1322,
+                        1784.0000000000002
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                284,
+                2930,
+                1122,
+                2930,
+                1122,
+                2966,
+                284,
+                2966
+            ],
+            "ignore": false,
+            "order": 18,
+            "anno_id": 1,
+            "text": "<sup>1</sup>https://github.com/facebookresearch/faiss",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        284,
+                        2930,
+                        1122,
+                        2930,
+                        1122,
+                        2966,
+                        284,
+                        2966
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1218,
+                3108,
+                1320,
+                3108,
+                1320,
+                3160,
+                1218,
+                3160
+            ],
+            "ignore": false,
+            "order": 20,
+            "anno_id": 1,
+            "text": "24841",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1218,
+                        3108,
+                        1320,
+                        3108,
+                        1320,
+                        3160,
+                        1218,
+                        3160
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1368,
+                2890,
+                2032,
+                2890,
+                2032,
+                2968,
+                1368,
+                2968
+            ],
+            "ignore": false,
+            "order": 19,
+            "anno_id": 1,
+            "text": "<sup>2</sup> https://www.tablesgenerator.com/  <sup>3</sup>https://www.latexlive.com/",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1368,
+                        2890,
+                        2032,
+                        2890,
+                        2032,
+                        2968,
+                        1368,
+                        2968
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 985,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "95_4_png.jpg"
+    }
+}

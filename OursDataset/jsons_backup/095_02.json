@@ -1,0 +1,432 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "figure",
+      "poly": [
+        346,
+        300,
+        2204,
+        300,
+        2204,
+        1340.08,
+        346,
+        1340.08
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            346,
+            300,
+            2204,
+            300,
+            2204,
+            1340.08,
+            346,
+            1340.08
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        236,
+        1378.08,
+        2312,
+        1378.08,
+        2312,
+        1548.08,
+        236,
+        1548.08
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "Figure 2. Overview of OmniDocBench Data Diversity. The benchmark includes 9 diverse PDF document types. It supports rich annotation types, including layout annotations (e.g., title, table, figure) and recognition annotations (e.g., text spans, equations, tables). Each page is annotated with 6 page-level attributes (e.g., PDF type, layout type), along with fine-grained 3 text attributes (e.g., language) and 6 tables attributes (Items under \"*special issues*\" are treated as individual binary attributes (yes/no)), enabling detailed and robust evaluation.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            236,
+            1378.08,
+            2312,
+            1378.08,
+            2312,
+            1548.08,
+            236,
+            1548.08
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        234,
+        1654,
+        1230,
+        1654,
+        1230,
+        1840,
+        234,
+        1840
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "developed to target specific sub-tasks. For end-to-end evaluation, works like Nougat [7] and GOT-OCR [45] provide relatively small validation sets and assess predictions using page-level metrics such as Edit Distance [21].",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            234,
+            1654,
+            1230,
+            1654,
+            1230,
+            1840,
+            234,
+            1840
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        234.0000000000001,
+        1862,
+        1232,
+        1862,
+        1232,
+        2544,
+        234.0000000000001,
+        2544
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "However, these benchmarks present several key limitations: 1) Limited document diversity: Existing datasets primarily focus on academic papers, overlooking other realworld document types such as textbooks, exams, financial reports, and newspapers; 2) Inconsistent evaluation metrics: Current benchmarks rely heavily on generic text similarity metrics (e.g., Edit Distance [21] and BLEU [33]), which fail to fairly assess the accuracy of formulas and tables in LaTeX or HTML formats that allow for diverse syntactic expressions; and 3) **Lack of fine-grained evaluation:** Most evaluations report only an overall score, lacking insights into specific weaknesses, such as element-level score (e.g., text vs. formula) or per document-type performance (e.g., magazine or notes).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            234.0000000000001,
+            1862,
+            1232,
+            1862,
+            1232,
+            2544,
+            234.0000000000001,
+            2544
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        238,
+        2564,
+        1224,
+        2564,
+        1224,
+        2850,
+        238,
+        2850
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " To address these limitations, we introduce **Om**niDocBench, a new benchmark designed to provide a rigorous and comprehensive evaluation for document parsing models across both pipeline-based and end-to-end paradigms. In summary, our benchmark introduces the following key contributions:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            238,
+            2564,
+            1224,
+            2564,
+            1224,
+            2850,
+            238,
+            2850
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        234,
+        2878,
+        1226,
+        2878,
+        1226,
+        2966,
+        234,
+        2966
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": "• **High-quality, diverse evaluation set:** We include pages from 9 distinct document types, ranging from textbooks",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            234,
+            2878,
+            1226,
+            2878,
+            1226,
+            2966,
+            234,
+            2966
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1322,
+        2732,
+        2312,
+        2732,
+        2312,
+        2970,
+        1322,
+        2970
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "Pipeline-based methods treat the document content extraction task as a collection of single modules, such as document layout detection [13, 17, 36, 53], optical character recognition [15, 23, 30, 38, 43], formula recognition [6, 27, 40, 51], and table recognition [16, 18, 23]. In",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1322,
+            2732,
+            2312,
+            2732,
+            2312,
+            2970,
+            1322,
+            2970
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1220,
+        3118,
+        1326,
+        3118,
+        1326,
+        3162,
+        1220,
+        3162
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "24839",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1220,
+            3118,
+            1326,
+            3118,
+            1326,
+            3162,
+            1220,
+            3162
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1322,
+        2562,
+        1668,
+        2562,
+        1668,
+        2608,
+        1322,
+        2608
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "# 2. Related Work",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1322,
+            2562,
+            1668,
+            2562,
+            1668,
+            2608,
+            1322,
+            2608
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1319.9999999999998,
+        2650,
+        2287.9999999999995,
+        2650,
+        2287.9999999999995,
+        2694,
+        1319.9999999999998,
+        2694
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "## 2.1. Pipeline-based Document Content Extraction",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1319.9999999999998,
+            2650,
+            2287.9999999999995,
+            2650,
+            2287.9999999999995,
+            2694,
+            1319.9999999999998,
+            2694
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1314.0000000000002,
+        1658,
+        2314,
+        1658,
+        2314,
+        2490,
+        1314.0000000000002,
+        2490
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": " to newspapers, annotated using a combination of automated tools, manual verification, and expert review.  - **Flexible, multi-dimensional evaluation:** We support comprehensive evaluation at three levels—end-to-end, task-specific, and attribute-based. End-to-end evaluation measures the overall quality of full-page parsing results. Task-specific evaluation allows users to assess individual components such as layout detection, OCR, table recognition, or formula parsing. Attribute-based evaluation provides fine-grained analysis across 9 document types, 6 page-level attributes and 9 bbox-level attributes. - Comprehensive benchmarking of state-of-the-art methods: We systematically evaluate a suite of representative document parsing systems, including both pipeline-based tools and VLMs, providing the most comprehensive comparison and identifying performance bottlenecks across document types and content structures.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1314.0000000000002,
+            1658,
+            2314,
+            1658,
+            2314,
+            2490,
+            1314.0000000000002,
+            2490
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 983,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "95_2_png.jpg"
+  }
+}

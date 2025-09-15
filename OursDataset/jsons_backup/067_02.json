@@ -1,0 +1,546 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "plain_text",
+      "poly": [
+        372.4999999999998,
+        360,
+        2115,
+        360,
+        2115,
+        495,
+        372.4999999999998,
+        495
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": " In order to measure the part of  $P_{(t,T]}^{(A)}$  that is induced by changes in the FX rate  $\\chi$ , we decompose  $P_{(t,T]}^{(A)}$  as follows:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            372.4999999999998,
+            360,
+            2115,
+            360,
+            2115,
+            495,
+            372.4999999999998,
+            495
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        755,
+        545,
+        1730,
+        545,
+        1730,
+        737.5,
+        755,
+        737.5
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": " $$ P_{(t,T]}^{(A)} = \\underbrace{\\frac{A_t + A_T}{2} \\left(\\chi_T - \\chi_t\\right)}_{=:P_{(t,T]}^{(A)}(\\chi)} + \\frac{\\chi_t + \\chi_T}{2} \\left(A_T - A_t\\right).  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            755,
+            545,
+            1730,
+            545,
+            1730,
+            737.5,
+            755,
+            737.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2050,
+        567.5,
+        2107.5,
+        567.5,
+        2107.5,
+        620,
+        2050,
+        620
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "(2)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2050,
+            567.5,
+            2107.5,
+            567.5,
+            2107.5,
+            620,
+            2050,
+            620
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        380,
+        777.5,
+        2117.5,
+        777.5,
+        2117.5,
+        1052.5,
+        380,
+        1052.5
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " In the following paragraph, we further decompose  $A_T - A_t$  into different parts. Section 2 first treats the case of assets subject to reinvestment, while Section 3 treats the general case and shows how to apply the methodology for whole portfolios of assets. Finally, Section 4 demonstrates our decomposition by an example and applies the methodology to a performance attribution for our fund XAIA Credit Debt Capital.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            380,
+            777.5,
+            2117.5,
+            777.5,
+            2117.5,
+            1052.5,
+            380,
+            1052.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        372.4999999999999,
+        1087.5,
+        2112.5,
+        1087.5,
+        2112.5,
+        1525,
+        372.4999999999999,
+        1525
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " ## Remark 1.1 (Alternative $FX$ performance decompositions)  The decomposition of the PnL into FX-induced part and non-FX-induced part (2) intuitively assumes that (i) the whole FX rate difference  $\\chi_T - \\chi_t$  is earned on the arithmetic average of the asset values  $A_t$  and  $A_T$  at the beginning and at the end of the period, and (ii) the performance due to asset value change  $A_T - A_t$  is converted into EUR according to the arithmetic average of the initial and latest FX rates  $\\chi_t$  and  $\\chi_T$ . An alternative could be to only use  $A_t$  in (i) and  $\\chi_T$  in (ii), by replacing the decomposition (2) with the alternative definition",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            372.4999999999999,
+            1087.5,
+            2112.5,
+            1087.5,
+            2112.5,
+            1525,
+            372.4999999999999,
+            1525
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        875,
+        1562.5,
+        1610,
+        1562.5,
+        1610,
+        1735,
+        875,
+        1735
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": " $$ P_{(t,T]}^{(A)} = A_t \\left(\\chi_T - \\chi_t\\right) + \\chi_T \\left(A_T - A_t\\right). $$  $$ =\\underbrace{A_t \\left(\\chi_T - \\chi_t\\right)}_{=: \\tilde{P}_{(t,T]}^{(A)}(\\chi)} $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            875,
+            1562.5,
+            1610,
+            1562.5,
+            1610,
+            1735,
+            875,
+            1735
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        377.4999999999998,
+        1772.5,
+        2110,
+        1772.5,
+        2110,
+        2000,
+        377.4999999999998,
+        2000
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": "  While both definitions  $P^{(A)}_{(t,T]}(\\chi)$  and  $\\tilde{P}^{(A)}_{(t,T]}(\\chi)$  appear to be reasonable, we prefer (2). We notice that this is different to the practice of using the column “Result curr. global” in the front office system SOPHIS for FX-hedged performance monitoring, because the latter essentially corresponds to the expression  $\\chi_T (A_T - A_t)$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            377.4999999999998,
+            1772.5,
+            2110,
+            1772.5,
+            2110,
+            2000,
+            377.4999999999998,
+            2000
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        380,
+        2040,
+        2165,
+        2040,
+        2165,
+        2202.5,
+        380,
+        2202.5
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": " Yet another, more theoretical, decomposition is obtained by assuming that both  $\\{A_u\\}_{u\\in(t,T]}$  and  $\\{\\chi_u\\}_{u\\in(t,T]}$  are realizations of semi-martingales. The product formula then gives the identity",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            380,
+            2040,
+            2165,
+            2040,
+            2165,
+            2202.5,
+            380,
+            2202.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        795,
+        2245,
+        1697.5,
+        2245,
+        1697.5,
+        2362.5,
+        795,
+        2362.5
+      ],
+      "ignore": false,
+      "order": 9,
+      "anno_id": 1,
+      "text": " $$ P_{(t,T]}^{(A)} = \\int_{(t,T]} A_u \\, \\mathrm{d}\\chi_u + \\int_{(t,T]} \\chi_u \\, \\mathrm{d}A_u + [A,\\chi]_t.  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            795,
+            2245,
+            1697.5,
+            2245,
+            1697.5,
+            2362.5,
+            795,
+            2362.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2055,
+        2257.5,
+        2100,
+        2257.5,
+        2100,
+        2315,
+        2055,
+        2315
+      ],
+      "ignore": false,
+      "order": 10,
+      "anno_id": 1,
+      "text": "(3)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2055,
+            2257.5,
+            2100,
+            2257.5,
+            2100,
+            2315,
+            2055,
+            2315
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        380,
+        2397.5,
+        1942.5,
+        2397.5,
+        1942.5,
+        2450,
+        380,
+        2450
+      ],
+      "ignore": false,
+      "order": 11,
+      "anno_id": 1,
+      "text": " In intuitive terms, the right-hand side of (3) is a limit expression as  $n \\to \\infty$  of",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            380,
+            2397.5,
+            1942.5,
+            2397.5,
+            1942.5,
+            2450,
+            380,
+            2450
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        432.5,
+        2495,
+        2062.5,
+        2495,
+        2062.5,
+        2622.5,
+        432.5,
+        2622.5
+      ],
+      "ignore": false,
+      "order": 12,
+      "anno_id": 1,
+      "text": " $$ \\sum_{i=1}^{n} A_{u_{i-1}} \\left( \\chi_{u_i} - \\chi_{u_{i-1}} \\right) + \\sum_{i=1}^{n} \\chi_{u_{i-1}} \\left( A_{u_i} - A_{u_{i-1}} \\right) + \\sum_{i=1}^{n} (A_{u_i} - A_{u_{i-1}}) \\left( \\chi_{u_i} - \\chi_{u_{i-1}} \\right), $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            432.5,
+            2495,
+            2062.5,
+            2495,
+            2062.5,
+            2622.5,
+            432.5,
+            2622.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        372.4999999999999,
+        2677.5,
+        2112.5,
+        2677.5,
+        2112.5,
+        2842.5,
+        372.4999999999999,
+        2842.5
+      ],
+      "ignore": false,
+      "order": 13,
+      "anno_id": 1,
+      "text": "where the partition t = u0 < u1 < . . . < un = T of the interval (t, T] becomes finer and finer with increasing n. Under the assumption that A and χ are independent (or of finite\u0002variation) the co-variation term [A, χ]t vanishes and we observe that our decomposition",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            372.4999999999999,
+            2677.5,
+            2112.5,
+            2677.5,
+            2112.5,
+            2842.5,
+            372.4999999999999,
+            2842.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1227.5,
+        2967.5,
+        1255,
+        2967.5,
+        1255,
+        3010,
+        1227.5,
+        3010
+      ],
+      "ignore": false,
+      "order": 14,
+      "anno_id": 1,
+      "text": "2",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1227.5,
+            2967.5,
+            1255,
+            2967.5,
+            1255,
+            3010,
+            1227.5,
+            3010
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 683,
+    "height": 3508,
+    "width": 2481,
+    "image_path": "67_2_png.jpg"
+  }
+}

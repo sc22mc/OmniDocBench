@@ -1,0 +1,508 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        456,
+        116,
+        1218,
+        116,
+        1218,
+        150,
+        456,
+        150
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            456,
+            116,
+            1218,
+            116,
+            1218,
+            150,
+            456,
+            150
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        684,
+        334,
+        1856,
+        334,
+        1856,
+        1046,
+        684,
+        1046
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            684,
+            334,
+            1856,
+            334,
+            1856,
+            1046,
+            684,
+            1046
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        566,
+        1190,
+        1984,
+        1190,
+        1984,
+        1854,
+        566,
+        1854
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            566,
+            1190,
+            1984,
+            1190,
+            1984,
+            1854,
+            566,
+            1854
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        614.0000000000001,
+        1084,
+        1938,
+        1084,
+        1938,
+        1124,
+        614.0000000000001,
+        1124
+      ],
+      "ignore": false,
+      "order": "3",
+      "anno_id": 1,
+      "text": "Figure 7: Pretraining with the text continuation objective to predict next tokens",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            614.0000000000001,
+            1084,
+            1938,
+            1084,
+            1938,
+            1124,
+            614.0000000000001,
+            1124
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        447.9999999999999,
+        1892.0000000000002,
+        2102,
+        1892.0000000000002,
+        2102,
+        2020.0000000000002,
+        447.9999999999999,
+        2020.0000000000002
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "Figure 8: Instruct fine-tuning of the ICAE to make its produced memory slots interact with prompts for accomplishing various purposes in the target LLM. In this figure,  $(p_1, \\ldots, p_m)$  denotes the prompt tokens and  $(r_1, \\ldots, r_n)$  denotes the response tokens.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.9999999999999,
+            1892.0000000000002,
+            2102,
+            1892.0000000000002,
+            2102,
+            2020.0000000000002,
+            447.9999999999999,
+            2020.0000000000002
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        445.9999999999999,
+        2212,
+        2100,
+        2212,
+        2100,
+        2342,
+        445.9999999999999,
+        2342
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "We test the latency (Section 3.3.2) on 1 Nvidia A100 GPU (80GB). The test machine has the CPU of AMD EPYC<sup>™</sup> 7413 with 24 cores and 216GB RAM. The runtime configuration is python=3.9,  $\\text{pytorch}=2.0.1, \\text{cuda}=11.7, \\text{rudnn}=8.5.$ ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            445.9999999999999,
+            2212,
+            2100,
+            2212,
+            2100,
+            2342,
+            445.9999999999999,
+            2342
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        448,
+        2526,
+        2104,
+        2526,
+        2104,
+        2750,
+        448,
+        2750
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "We introduce the PROMPT-WITH-CONTEXT (PWC) dataset where each sample entry is a triple (text, prompt, answer), as depicted in Figure 9. To construct this dataset, we first sample 20k texts from the Pile dataset. Then, for each text, we employ the GPT-4 to provide 15 prompts (10 specific prompts and 5 general prompts) about the text and give the corresponding answers. The prompt instructing the GPT-4 is outlined in Listing  $1$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            2526,
+            2104,
+            2526,
+            2104,
+            2750,
+            448,
+            2750
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        447.9999999999999,
+        2770,
+        2102,
+        2770,
+        2102,
+        2862,
+        447.9999999999999,
+        2862
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "The dataset is composed of 240k examples for training purposes, with an additional 18k examples for testing. The context length distribution of test samples is presented in Table  $10$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.9999999999999,
+            2770,
+            2102,
+            2770,
+            2102,
+            2862,
+            447.9999999999999,
+            2862
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        438,
+        2974,
+        2020,
+        2974,
+        2020,
+        3054,
+        438,
+        3054
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "Design 10 prompts specified to the above text to test understanding of the above text. These prompts should be diverse and cover as many",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            438,
+            2974,
+            2020,
+            2974,
+            2020,
+            3054,
+            438,
+            3054
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        714,
+        2896,
+        1828,
+        2896,
+        1828,
+        2954,
+        714,
+        2954
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "Listing 1: Prompt used by GPT4 API to generate the PwC dataset.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            714,
+            2896,
+            1828,
+            2896,
+            1828,
+            2954,
+            714,
+            2954
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        440.0000000000001,
+        2416,
+        1280,
+        2416,
+        1280,
+        2464,
+        440.0000000000001,
+        2464
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "## C PROMPT-WITH-CONTEXT DATASET",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            440.0000000000001,
+            2416,
+            1280,
+            2416,
+            1280,
+            2464,
+            440.0000000000001,
+            2464
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        450,
+        2108,
+        920,
+        2108,
+        920,
+        2152,
+        450,
+        2152
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": "## B PROFILING SETUP",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            450,
+            2108,
+            920,
+            2108,
+            920,
+            2152,
+            450,
+            2152
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1242,
+        3126,
+        1296,
+        3126,
+        1296,
+        3168,
+        1242,
+        3168
+      ],
+      "ignore": false,
+      "order": 13,
+      "anno_id": 1,
+      "text": "13",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1242,
+            3126,
+            1296,
+            3126,
+            1296,
+            3168,
+            1242,
+            3168
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 1016,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "98_13_png.jpg"
+  }
+}

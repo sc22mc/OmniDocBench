@@ -1,0 +1,508 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        448,
+        112,
+        1222,
+        112,
+        1222,
+        152,
+        448,
+        152
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            112,
+            1222,
+            112,
+            1222,
+            152,
+            448,
+            152
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        532.0000000000001,
+        356,
+        2016,
+        356,
+        2016,
+        880,
+        532.0000000000001,
+        880
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            532.0000000000001,
+            356,
+            2016,
+            356,
+            2016,
+            880,
+            532.0000000000001,
+            880
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        734,
+        892,
+        1058,
+        892,
+        1058,
+        932,
+        734,
+        932
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "(a) GPT-4 judgments.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            734,
+            892,
+            1058,
+            892,
+            1058,
+            932,
+            734,
+            932
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        1480,
+        892,
+        1820,
+        892,
+        1820,
+        930,
+        1480,
+        930
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "(b) Human judgments",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1480,
+            892,
+            1820,
+            892,
+            1820,
+            930,
+            1480,
+            930
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        446.0000000000001,
+        978,
+        2104,
+        978,
+        2104,
+        1060,
+        446.0000000000001,
+        1060
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "Figure 3: Win-rate of AUTO-J against baselines on single-response critique generation task, judged by GPT-4 and Human. L2Chat refers to LLaMA-2-Chat-13B.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            446.0000000000001,
+            978,
+            2104,
+            978,
+            2104,
+            1060,
+            446.0000000000001,
+            1060
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        437.9999999999999,
+        1172,
+        2106,
+        1172,
+        2106,
+        1390,
+        437.9999999999999,
+        1390
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": "options to further optimize training and efficiency. The model is trained for 5 epochs (675 parameter update steps in total) and we save checkpoints for every 50 steps. We use AdamW (Loshchilov & Hutter, 2017) as our optimizer with  $\\beta_1 = 0.9, \\beta_2 = 0.95$  and weight decay of 0.1. We use a peak learning rate 1e-5 with 3% warmup steps and cosine learning rate decay to 0, and set the batch size to 64 and maximum sequence length to 4,096. The loss is only calculated on the output end.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            437.9999999999999,
+            1172,
+            2106,
+            1172,
+            2106,
+            1390,
+            437.9999999999999,
+            1390
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        448,
+        1663.9999999999998,
+        2104,
+        1663.9999999999998,
+        2104,
+        2155.9999999999995,
+        448,
+        2155.9999999999995
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "Task I: Pairwise Response Comparison (Eval-P) In this task, the evaluators will see a pair of generated responses for a given query and decide which is better or is tied. From each scenario defined in  $\\S3.1$ , we randomly sample 24 pairwise comparison samples from the data we collected in §3.2 and skip those that have been used as training data. For some scenarios, the number of paired samples with pre-existed human annotation is smaller than 24, so we extract queries from either ShareGPT or the brainstormed seed data for training scenario classifier in §B. Samples from these two sources have no annotated pairwise labels, so we only use the query for each sample, generate a new pair of responses from two random selected  $\\text{LLMs}^2$  and manually annotate them. In total, we have  $58 \\times 24 = 1,392$  testing samples, each with two responses generated by different LLMs and a human-annotated preference label. We refer to this test set as Eval-P, with the distribution on Win/Tie/Lose being 520/373/499.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            1663.9999999999998,
+            2104,
+            1663.9999999999998,
+            2104,
+            2155.9999999999995,
+            448,
+            2155.9999999999995
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        454,
+        2216,
+        2104,
+        2216,
+        2104,
+        2628,
+        454,
+        2628
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "Task II: Critique Generation for Single Response (Eval-C) In this task, we evaluate the quality of the generated critiques for single-response evaluation. The evaluators are required to write critiques for a response to pinpoint its shortcomings in addressing the query. We apply both GPT-4 and human evaluation to compare critiques generated by different models. In GPT-4 evaluation, we randomly shuffle the order of two critiques to mitigate the positional bias, and use the instruction in Tab. 16. In human evaluation, we recruit four expert-level annotators (graduate students) and guide them with the same instruction for GPT-4. We build the test set for this task on the basis of Eval-P by sampling 4 out of 24 queries for each scenario and pick the less preferred response for each query (if tie, we randomly pick one). We refer to this test set as Eval-C, with  $58 \\times 4 = 232$  query-response pairs.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            454,
+            2216,
+            2104,
+            2216,
+            2104,
+            2628,
+            454,
+            2628
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        442,
+        2684,
+        2104,
+        2684,
+        2104,
+        2960,
+        442,
+        2960
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "Task III: Overall Rating for Single Response (Eval-R) In this task, we evaluate the usefulness of the final rating for single-response evaluation in two ways: (1) The first is to use the ratings as verbal \"rewards\" to help improve the base policy models through the Best-of- $N$  selection (Lightman et al., 2023; Gao et al., 2023), i.e., selecting the best response among the first  $N$  candidates with the assigned rewards, and use GPT-4 to grade the selected response. Generally, a more reliable model will select a better response with a higher GPT-4 rating more often. (2) The second is to calculate the",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            442,
+            2684,
+            2104,
+            2684,
+            2104,
+            2960,
+            442,
+            2960
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        498,
+        3004,
+        1942,
+        3004,
+        1942,
+        3044,
+        498,
+        3044
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "<sup>2</sup>From LLaMA-2-chat family, Vicuna family, WizardLM family, Claude-2, ChatGPT and GPT-4",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            498,
+            3004,
+            1942,
+            3004,
+            1942,
+            3044,
+            498,
+            3044
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1258,
+        3132,
+        1292,
+        3132,
+        1292,
+        3166,
+        1258,
+        3166
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": "6",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1258,
+            3132,
+            1292,
+            3132,
+            1292,
+            3166,
+            1258,
+            3166
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        444,
+        1468,
+        1004,
+        1468,
+        1004,
+        1508,
+        444,
+        1508
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "# 5 EVALUATION SETTING",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            444,
+            1468,
+            1004,
+            1468,
+            1004,
+            1508,
+            444,
+            1508
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        451.9999999999999,
+        1570,
+        909.9999999999999,
+        1570,
+        909.9999999999999,
+        1614,
+        451.9999999999999,
+        1614
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "## 5.1 TASK AND TEST SET",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            451.9999999999999,
+            1570,
+            909.9999999999999,
+            1570,
+            909.9999999999999,
+            1614,
+            451.9999999999999,
+            1614
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 1054,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "99_6_png.jpg"
+  }
+}

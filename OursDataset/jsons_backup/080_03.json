@@ -1,0 +1,280 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "plain_text",
+      "poly": [
+        557.5,
+        530,
+        1997.5,
+        530,
+        1997.5,
+        917.5,
+        557.5,
+        917.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": " admits any carefully synchronizing word. For a given  $\\mathcal{A}$  we define its *power automaton* (which is itself a PFA) as  $\\mathcal{P}(\\mathcal{A}) = (2^Q, \\Sigma, \\tau)$ , where  $2^Q$  stands for the set of all subsets of  $Q$ , and  $\\Sigma$  is the same as in  $\\mathcal{A}$ . The transition function  $\\tau: 2^Q \\times \\Sigma \\to 2^Q$  is defined as follows. Let  $Q' \\subseteq Q$ . For every  $a \\in \\Sigma$  we define  $\\tau(Q',a) = \\bigcup_{q \\in Q'} \\delta(q,a)$  if  $\\delta(q,a)$  is defined for all states  $q \\in Q'$ , otherwise  $\\tau(Q',a)$  is not defined. We also note Q.w as an action of a word w on a set of states Q under the function  $\\delta$ . Let  $S \\subseteq Q$ . Then we denote  $S \\cdot w^{-1}$  as a preimage of  $S$  under the action of a word  w .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            557.5,
+            530,
+            1997.5,
+            530,
+            1997.5,
+            917.5,
+            557.5,
+            917.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        557.5,
+        925,
+        1995,
+        925,
+        1995,
+        1470,
+        557.5,
+        1470
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": " We note that the above concepts can also be considered for *deterministic* finite *automata* (DFA), for which the transition function is total. We define an a-cluster to be a DFA  $\\mathcal{A} = (Q, \\{a\\}, \\delta)$  such that the automaton is connected. In other words it means that such automaton is a cycle on letter  $a$  with paths that leads to the states of that cycle. The set of states that induce a cycle in the  $a$ -cluster is referred to as the *center* of the cluster. The *depth* of the cluster is the length of the longest path to the center of the cluster. If  $q$  belongs to the center of the a-cluster, the *branch* of the state  $q$  are the states that has a path to  $q$  that does not have any other state belonging to the center. *Destination* of the branch is a state in the center that has an in-transition from the last state of the branch. Example of the  $a$ -cluster is depicted on Figure 1.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            557.5,
+            925,
+            1995,
+            925,
+            1995,
+            1470,
+            557.5,
+            1470
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        987.5,
+        1554.9999999999998,
+        1537.5,
+        1554.9999999999998,
+        1537.5,
+        2240,
+        987.5,
+        2240
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            987.5,
+            1554.9999999999998,
+            1537.5,
+            1554.9999999999998,
+            1537.5,
+            2240,
+            987.5,
+            2240
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        952.5,
+        2290,
+        1600,
+        2290,
+        1600,
+        2342.5,
+        952.5,
+        2342.5
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " Figure 1: Example of the  $a$ -cluster",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            952.5,
+            2290,
+            1600,
+            2290,
+            1600,
+            2342.5,
+            952.5,
+            2342.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        547.5,
+        2407.5,
+        1992.5,
+        2407.5,
+        1992.5,
+        2545,
+        547.5,
+        2545
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " Center of that a-cluster is the set  $\\{3, 4, 5, 6\\}$ , the depth is 2 and there are two branches:  $b_1 = \\{1, 2\\}$  and  $b_2 = \\{7\\}$ . Destination of the branch  $b_1$  is the state 3 and of the branch  $b_2$  is state 4.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            547.5,
+            2407.5,
+            1992.5,
+            2407.5,
+            1992.5,
+            2545,
+            547.5,
+            2545
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        550,
+        2600,
+        1990,
+        2600,
+        1990,
+        2747.5,
+        550,
+        2747.5
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": " We define the sum of two automata  $\\mathcal{A} = (Q_1, \\Sigma_1, \\delta_1)$  and  $\\mathcal{B} = (Q_2, \\Sigma_2, \\delta_2)$  as  $\\mathcal{A} \\cup \\mathcal{B} = (Q_1 \\cup Q_2, \\Sigma_1 \\cup \\Sigma_2, \\delta_1 \\cup \\delta_2)$ . We can now state the obvious fact, useful to decide whether a given PFA is carefully synchronizing.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            550,
+            2600,
+            1990,
+            2600,
+            1990,
+            2747.5,
+            550,
+            2747.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1255,
+        2892.5,
+        1287.5,
+        2892.5,
+        1287.5,
+        2927.5,
+        1255,
+        2927.5
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": "3",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1255,
+            2892.5,
+            1287.5,
+            2892.5,
+            1287.5,
+            2927.5,
+            1255,
+            2927.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 824,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "80_3_png.jpg"
+  }
+}

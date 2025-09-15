@@ -1,0 +1,280 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "figure",
+            "poly": [
+                590,
+                290,
+                1955,
+                290,
+                1955,
+                942.5,
+                590,
+                942.5
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        590,
+                        290,
+                        1955,
+                        290,
+                        1955,
+                        942.5,
+                        590,
+                        942.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                297.4999999999999,
+                980,
+                2250,
+                980,
+                2250,
+                1117.5,
+                297.4999999999999,
+                1117.5
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": " Figure 3: Initial state sensitivity in learning dynamics in multi-memory games. In the top panels, colored lines are time series of  $x_i$  (X's strategy). The black line is the distance between the solid (sample of  $x$ ) and broken ( $x'$ ) lines. In the bottom panels, the black lines indicate the maximum eigenvalue in the learning dynamics of the solid line.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        297.4999999999999,
+                        980,
+                        2250,
+                        980,
+                        2250,
+                        1117.5,
+                        297.4999999999999,
+                        1117.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                295,
+                1165,
+                2257.5,
+                1165,
+                2257.5,
+                1895,
+                295,
+                1895
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        295,
+                        1165,
+                        2257.5,
+                        1165,
+                        2257.5,
+                        1895,
+                        295,
+                        1895
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                297.4999999999999,
+                1939.9999999999998,
+                2252.5,
+                1939.9999999999998,
+                2252.5,
+                2120,
+                297.4999999999999,
+                2120
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " Figure 4:  $\\mathbf{A}$ . Payoff matrices of three-action (rock-paper-scissors) and four-action (extended rock-paper-scissors) games. **B.** In each panel, colored lines indicate time series of  $x^{a|s}$  for random  $a \\in \\mathcal{A}$  and  $s \\in \\mathcal{S}$ . The black broken line indicates the Kullback-Leibler divergence averaged over all the states  $s \\in \\mathcal{S}$ , intuitively meaning a distance from the Nash equilibrium.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        297.4999999999999,
+                        1939.9999999999998,
+                        2252.5,
+                        1939.9999999999998,
+                        2252.5,
+                        2120,
+                        297.4999999999999,
+                        2120
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                297.4999999999999,
+                2212.5,
+                2257.5,
+                2212.5,
+                2257.5,
+                2400,
+                297.4999999999999,
+                2400
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": " that in the zero-memory version of the game. This theorem means that in zero-sum games, the region of Nash equilibrium does not expand even if players have memories. Taking into account that having multiple memories expands the region of Nash equilibrium, such as a cooperative equilibrium in prisoner's dilemma games  $[20]$ , this theorem is nontrivial.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        297.4999999999999,
+                        2212.5,
+                        2257.5,
+                        2212.5,
+                        2257.5,
+                        2400,
+                        297.4999999999999,
+                        2400
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                302.4999999999999,
+                2412.5,
+                2260,
+                2412.5,
+                2260,
+                2597.5,
+                302.4999999999999,
+                2597.5
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " In order to discuss whether our algorithms converge to this unique Nash equilibrium under Assumption 1, we consider the neighbor of Nash equilibrium and define sufficient small deviation from the Nash equilibrium, i.e.,  $\\delta := x - x^*1$  and  $\\epsilon := y - y^*1$ . Here, we assume that these deviations have the same scale  $O(\\delta) := O(\\delta_i) = O(\\epsilon_i)$  for all *i*. Then, defining that the superscript  $(k)$  shows  $O(\\delta^k)$  terms, the dynamics are",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        302.4999999999999,
+                        2412.5,
+                        2260,
+                        2412.5,
+                        2260,
+                        2597.5,
+                        302.4999999999999,
+                        2597.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1252.5,
+                3072.5,
+                1292.5,
+                3072.5,
+                1292.5,
+                3127.5,
+                1252.5,
+                3127.5
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "7",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1252.5,
+                        3072.5,
+                        1292.5,
+                        3072.5,
+                        1292.5,
+                        3127.5,
+                        1252.5,
+                        3127.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 745,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "73_7_png.jpg"
+    }
+}

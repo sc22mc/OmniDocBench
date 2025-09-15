@@ -1,0 +1,250 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        445,
+        115,
+        1230,
+        115,
+        1230,
+        152.5,
+        445,
+        152.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            445,
+            115,
+            1230,
+            115,
+            1230,
+            152.5,
+            445,
+            152.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        467.5,
+        342.5,
+        2090,
+        342.5,
+        2090,
+        390,
+        467.5,
+        390
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": " **Table 15:** Format of prompts used in GSM8K. The reasoning process of the \"Question\" is shown in Table 16",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            467.5,
+            342.5,
+            2090,
+            342.5,
+            2090,
+            390,
+            467.5,
+            390
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        447.5,
+        435,
+        2095,
+        435,
+        2095,
+        1117.5,
+        447.5,
+        1117.5
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.5,
+            435,
+            2095,
+            435,
+            2095,
+            1117.5,
+            447.5,
+            1117.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "| Table 15: Format of prompts used in GSM8K. The reasoning process of the \"Question\" is shown in Table 16 |\n|---------------------------------------------------------------------------------------------------------|\n|---------------------------------------------------------------------------------------------------------|\n\n**Prompt Format for Next Thought Generation**\n\n| Question: | James decides to run 3 sprints 3 times a week. He runs 60 meters each sprint. How many total meters does he run a week?                                           |\n|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Answer:   | Let's think step by step.                                                                                                                                         |\n|           | Recall historical reasoning experience (Ignore when experience is empty):                                                                                         |\n|           | ***************************************                                                                                                                           |\n|           | Pay attention to analysis and conclusion in the experience to avoid making similar mistakes by following the advice.                                              |\n|           | Below is a list of ordered reasoning steps, accompanied by their evaluated scores (A higher score means the reasoning step is more likely to complete the task.): |\n|           | Based on listed reasoning steps only within the above \"-\" (i.e., Not the ones in the experience block), please make one step of reasoning to generate only one    |\n|           | subsequential possible reasoning step.                                                                                                                            |\n\n**Prompt Format for Experience Generation**\n\n| Question: | James decides to run 3 sprints 3 times a week. He runs 60 meters each sprint. How many total meters does he run a week?                                                               |\n|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Answer:   | Let's think step by step. Below is a reasoning chain containing reasoning steps presented in order:                                                                                   |\n|           | Please evaluate this reasoning chain by giving detailed comments containing the following content: 1. Can this reasoning chain complete the task and reach the                        |\n|           | target correctly by executing its reasoning steps? why? Write a analysis report with conclusion under 'Anlysis Report:' 2. For each reasoning step, please provide                    |\n|           | a detailed analysis of whether the current step is a logical inference of the previous step and whether the reasoning step is beneficial to the correct solution. For                 |\n|           | each reasoning step with errors, please provide an error report and the corresponding advice on revision. For each reasoning step, please provide recommendation                      |\n|           | or rejection descriptions. Comments should be brief, avoid repeating the same analysis in different steps and follow the format: Reasoning step $\\frac{1}{2}$ idx <i>i</i> . Analysis |\n|           | report: . Advice: . Recommendation or Reject description: 3. What is your confidence score on these your evaluations and comments? Please select one value                            |\n|           | from [0.1, 0.3, 0.5, 0.7, 0.9, 1.0]. The score should be placed after 'Confidence score:' for users to read                      ",
+      "latex": ""
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        450,
+        1245,
+        2102.5,
+        1245,
+        2102.5,
+        3037.42,
+        450,
+        3037.42
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            450,
+            1245,
+            2102.5,
+            1245,
+            2102.5,
+            3037.42,
+            450,
+            3037.42
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "|---------------------------------------------------|\n|---------------------------------------------------|\n\n| <b>Experience obtained in Iteration 1</b> |\n|-------------------------------------------|\n|-------------------------------------------|\n\n|  | ######### The 1-th Reasoning Chain with Comments #########                                                                                                               |\n|--|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n|  | Below is a reasoning chain containing reasoning steps presented in order:                                                                                                |\n|  | Step 1: Firstly, we need to calculate the total distance James runs each time he sprints. Since he runs 60 meters each sprint, and he does this 3 times a week, we       |\n|  | multiply 60 by 3 Evaluate Score: $0.7$                                                                                                                                   |\n|  | Step 2: After calculating the total distance James runs each time he sprints, we need to calculate the total distance he runs in a week. Since he runs 3 times a week,   |\n|  | we multiply the total distance he runs each time by 3 Evaluate Score: 1.0                                                                                                |\n|  | Analysis Report: The reasoning chain can complete the task and reach the target correctly by executing its reasoning steps. The reasoning chain is correct and           |\n|  | logical, and it successfully solves the problem by calculating the total distance James runs in a week.                                                                  |\n|  | Reasoning step 1. Analysis: This step is logically correct. It accurately interprets the problem by identifying the need to calculate the total distance James runs each |\n|  | time he sprints. However, the description is slightly misleading. James does not run 3 sprints 3 times a week, he runs 3 sprints each time, and this happens 3 times a   |\n|  | week. The multiplication should be between the distance of each sprint and the number of sprints each time. Advice: The description should be revised to \"Since          |\n|  | he runs 60 meters each sprint, and he does this 3 times each time he runs, we multiply 60 by 3.\" Recommendation: The reasoning step is correct, but the description      |\n|  | needs to be revised for clarity.                                                                                                                                         |\n|  | Reasoning step 2. Analysis: This step is a logical inference from the previous step. It correctly calculates the total distance James runs in a week by multiplying the  |\n|  | total distance he runs each time by the number of times he runs in a week. Advice: No revision needed. Recommendation: The reasoning step is correct and should          |\n|  | be accepted.                                                                                                                                                             |\n|  | Confidence score: $0.9$                                                                                                                                                  |\n|  | ***************************************                                                                                                                                  |\n\n| Experience obtained in Iteration 2 |\n|------------------------------------|\n|------------------------------------|\n\n|  | ######### The 2-th Reasoning Chain with Comments ########                                                                                                                     |\n|--|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n|  | Below is a reasoning chain containing reasoning steps presented in order:                                                                                                     |\n|  | Step 1: Firstly, we need to calculate the total distance James runs each time he runs. Since he runs 60 meters each sprint, and he does this 3 times each time he runs,       |\n|  | we multiply 60 by 3 Evaluate Score: 1.0                                                                                                                                       |\n|  | Analysis Report: The given reasoning chain can partially complete the task and reach the target. However, it is incomplete as it stops after calculating the total            |\n|  | distance James runs each time he runs. It does not continue to calculate the total distance James runs in a week.                                                             |\n|  | Reasoning step 1. The first step correctly calculates the total distance James runs each time he runs. It logically infers from the problem that since James runs 60          |\n|  | meters each sprint, and he does this 3 times each time he runs, the total distance he runs each time is $60 * 3$ . This step is beneficial to the correct solution as it is a |\n|  | necessary calculation towards finding the total distance James runs in a week.                                                                                                |\n|  | Advice: The reasoning chain needs to be continued to include the calculation of the total distance James runs in a week. This can be done by multiplying the total            |\n|  | distance James runs each time he runs (which was calculated in step 1) by the number of times he runs in a week.                                                              |\n|  | Recommendation: Accept reasoning step 1 as it correctly calculates the total distance James runs each time he runs. However, the reasoning chain needs to be                  |\n|  | continued to include the calculation of the total distance James runs in a week.                                                                                              |\n\nConfidence score: 0.9 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n\n### Experience obtained in Iteration 3\n\n######## The 3-th Reasoning Chain with Comments ######## Below is a reasoning chain containing reasoning steps presented in order:\n\nStep 1: Identify the elements in the problem. James is running 3 sprints 3 times a week, with each sprint being 60 meters. We need to find the total distance he runs in a week.. Evaluate Score: 0.9\n\nStep 2: Calculate the total distance James runs in a single day. Since he runs 3 sprints each day and each sprint is 60 meters, the total distance in a single day would be 3 sprints \\* 60 meters/sprint = 180 meters. Evaluate Score: 0.9. Evaluate Score: 0.9\n\nStep  $\\frac{1}{2}$ : Now, calculate the total distance James runs in a week. Since he runs 3 times a week and each time he runs 180 meters, the total distance in a week would be 3 days/week  $*$  180 meters/day = 540 meters.. Ev\n\nAnalysis Report: The reasoning chain does complete the task and reach the target correctly. Each step logically follows from the previous one and contributes to the solution of the problem.\n\nReasoning step 1. The first step correctly identifies the elements of the problem and the task at hand. It correctly interprets the problem statement and sets up the basis for the next steps. Advice: None. Recommendation: Accept this step as it correctly identifies the problem and what needs to be done.<br>Reasoning step 2. This step logically follows from the first step. It correctly cal\n\nsprints he runs by the distance of each sprint. This step is beneficial to the solution as it breaks down the problem into smaller, manageable parts. Advice: None. Recommendation: Accept this step as it correctly calculates the daily running distance.<br>Reasoning step 3. This step is a logical inference from the previous step. It correctly calculates the total distance James runs in a\n\nhe runs each time by the number of times he runs in a week. This step is beneficial to the solution as it completes the calculation and provides the answer to the problem. Advice: None. Recommendation: Accept this step as it correctly calculates the weekly running distance. Confidence score: 1.0\n\nIgnore the subsequent iterations as the correct reasoning chain has been obtained.\n",
+      "latex": ""
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1247.5,
+        3125,
+        1300,
+        3125,
+        1300,
+        3170,
+        1247.5,
+        3170
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": "26",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1247.5,
+            3125,
+            1300,
+            3125,
+            1300,
+            3170,
+            1247.5,
+            3170
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        950,
+        1157.5,
+        1600,
+        1157.5,
+        1600,
+        1195,
+        950,
+        1195
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": "Table 16:</b> BoT's success reasoning process. ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            950,
+            1157.5,
+            1600,
+            1157.5,
+            1600,
+            1195,
+            950,
+            1195
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 18,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "100_26_png.jpg"
+  }
+}

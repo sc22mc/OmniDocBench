@@ -1,0 +1,588 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                517.5,
+                192.5,
+                1970,
+                192.5,
+                1970,
+                232.5,
+                517.5,
+                232.5
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "QR-CLIP: Introducing Explicit Open-World Knowledge for Location and Time Reasoning",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        517.5,
+                        192.5,
+                        1970,
+                        192.5,
+                        1970,
+                        232.5,
+                        517.5,
+                        232.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                237.5,
+                272.5,
+                2255,
+                272.5,
+                2255,
+                1092.5,
+                237.5,
+                1092.5
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        237.5,
+                        272.5,
+                        2255,
+                        272.5,
+                        2255,
+                        1092.5,
+                        237.5,
+                        1092.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>ID</th>\n<th>Method</th>\n<th>Training Mode</th>\n<th>Accuracy (~ Rank@1)</th>\n<th>Rank@5</th>\n<th>Example-F1</th>\n<th>F1-Score</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Location Reasoning</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1</td>\n<td>ResNet-50 (He et al., 2016)</td>\n<td>Supervised</td>\n<td>3.18%</td>\n<td>9.82%</td>\n<td>22.19%</td>\n<td>2.27%</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Swin-T (Liu et al., 2021)</td>\n<td>Supervised</td>\n<td>6.70%</td>\n<td>17.07%</td>\n<td>33.56%</td>\n<td>5.02%</td>\n</tr>\n<tr>\n<td>3</td>\n<td>CLIP (Radford et al., 2021)</td>\n<td>Zero-Shot</td>\n<td>11.11%</td>\n<td>27.85%</td>\n<td>44.96%</td>\n<td>9.74%</td>\n</tr>\n<tr>\n<td>4</td>\n<td>CLIP† (Fu et al., 2022)</td>\n<td>Fine-tune</td>\n<td>15.72%</td>\n<td>37.13%</td>\n<td>49.74%</td>\n<td>13.82%</td>\n</tr>\n<tr>\n<td>5</td>\n<td>CLIP+Seg (Fu et al., 2022)</td>\n<td>Fine-tune</td>\n<td>16.46%</td>\n<td>37.48%</td>\n<td>50.52%</td>\n<td>14.63%</td>\n</tr>\n<tr>\n<td>6</td>\n<td>QR-CLIP (Ours)</td>\n<td>Fine-tune</td>\n<td>19.31%</td>\n<td>38.78%</td>\n<td>50.96%</td>\n<td>17.70%</td>\n</tr>\n<tr>\n<td></td>\n<td><i>Improvements (AVG: 10.66%)</i></td>\n<td></td>\n<td>+17.31%</td>\n<td>+3.47%</td>\n<td>+0.87%</td>\n<td>+20.98%</td>\n</tr>\n<tr>\n<td>Time Reasoning</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>7</td>\n<td>ResNet-50 (He et al., 2016)</td>\n<td>Supervised</td>\n<td>0.84%</td>\n<td>5.14%</td>\n<td>39.99%</td>\n<td>0.46%</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Swin-T (Liu et al., 2021)</td>\n<td>Supervised</td>\n<td>0.97%</td>\n<td>5.53%</td>\n<td>43.95%</td>\n<td>0.72%</td>\n</tr>\n<tr>\n<td>9</td>\n<td>CLIP (Radford et al., 2021)</td>\n<td>Zero-Shot</td>\n<td>0.46%</td>\n<td>2.42%</td>\n<td>39.90%</td>\n<td>0.25%</td>\n</tr>\n<tr>\n<td>10</td>\n<td>CLIP† (Fu et al., 2022)</td>\n<td>Fine-tune</td>\n<td>1.00%</td>\n<td>3.07%</td>\n<td>43.09%</td>\n<td>0.54%</td>\n</tr>\n<tr>\n<td>11</td>\n<td>CLIP+Seg (Fu et al., 2022)</td>\n<td>Fine-tune</td>\n<td>0.92%</td>\n<td>3.15%</td>\n<td>42.89%</td>\n<td>0.71%</td>\n</tr>\n<tr>\n<td>12</td>\n<td>QR-CLIP (Ours)</td>\n<td>Fine-tune</td>\n<td>3.53%</td>\n<td>10.90%</td>\n<td>47.89%</td>\n<td>2.01%</td>\n</tr>\n<tr>\n<td><i>Improvements (AVG: 134.38%)</i></td>\n<td></td>\n<td></td>\n<td>+253%</td>\n<td>+97.11%</td>\n<td>+8.23%</td>\n<td>+179.17%</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                225,
+                1287.5,
+                1217.5,
+                1287.5,
+                1217.5,
+                1467.5,
+                225,
+                1467.5
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "  $W_i^{owk}$  and  $W_i^v$  are the weights of the [CLS] $_i^{owk}$  and [CLS] $_i^v$ ;  $q$  in this place is the addition of weight vision-language features  $W_i^{owk} \\times [\\text{CLS}]_i^{owk} + W_i^v \\times [\\text{CLS}]_i^v$ ; q is the ground-   truth features generated by  $F^{GT} = \\text{Enc}_t(GT)$ .",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        225,
+                        1287.5,
+                        1217.5,
+                        1287.5,
+                        1217.5,
+                        1467.5,
+                        225,
+                        1467.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                227.5,
+                1510,
+                1212.5,
+                1510,
+                1212.5,
+                1747.5,
+                227.5,
+                1747.5
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": " Location and Time Reasoning. We use the fused features  $F^{fused} = \\sum_{i=1}^{6} (W_i^{owk} \\times [\\text{CLS}]_i^{owk} + W_i^{v} \\times [\\text{CLS}]_i^{v})$  as our final features to predict the location and time. The prediction is completed by calculating the similarity between  $F^{fused}$  and the candidate location/time embeddings.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        227.5,
+                        1510,
+                        1212.5,
+                        1510,
+                        1212.5,
+                        1747.5,
+                        227.5,
+                        1747.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                227.5,
+                1780,
+                1210,
+                1780,
+                1210,
+                2470,
+                227.5,
+                2470
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " We believe that by using the CLIP pre-trained 400M openworld corpus and then fine-tuning it by adding additional [CLS] with location-and-time-specific data, it can basically reason about meta information. QR-CLIP will then improve its performance by retrieving valuable open-world knowledge and using it as auxiliary cues. Finally, the model balances vision and language embeddings, and by incorporating them into prediction, the model achieves its peak performance. The process is related to Horn's QR rule (Horn, 1984). Also, it mimics a procedure of information spreading (Wang et al.,  $2011$ ): diverse individuals have diverse perspectives and attitudes regarding the same thing (sec  $3.2$ ), but combining them effectively fosters a more profound comprehension (sec  $3.3$ ).",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        227.5,
+                        1780,
+                        1210,
+                        1780,
+                        1210,
+                        2470,
+                        227.5,
+                        2470
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                225,
+                2545,
+                547.5,
+                2545,
+                547.5,
+                2600,
+                225,
+                2600
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": " # 4. Experiments",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        225,
+                        2545,
+                        547.5,
+                        2545,
+                        547.5,
+                        2600,
+                        225,
+                        2600
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                235,
+                2630,
+                607.5,
+                2630,
+                607.5,
+                2672.5,
+                235,
+                2672.5
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " ## 4.1. Training Settings",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        235,
+                        2630,
+                        607.5,
+                        2630,
+                        607.5,
+                        2672.5,
+                        235,
+                        2672.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                230,
+                2715,
+                1215,
+                2715,
+                1215,
+                2947.5,
+                230,
+                2947.5
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " Dataset. We used two datasets: TARA dataset (Fu et al., 2022) and our collected OWK dataset. TARA dataset includes 15,429 samples. Each sample contains a news picture and the corresponding location, time description. Following the original setup, we train QR-CLIP on a train set contain-",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        230,
+                        2715,
+                        1215,
+                        2715,
+                        1215,
+                        2947.5,
+                        230,
+                        2947.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1280,
+                2597.5,
+                2262.5,
+                2597.5,
+                2262.5,
+                2977.5,
+                1280,
+                2977.5
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": " Implementation Details. QR-CLIP is based on CLIP+VIT-B/32 model with an input size of  $224 \\times 224$ , and it is implemented on the PyTorch 1.10.1 platform with the Adam optimizer to update the neural network's weights and biases. The training batch size is 32, and the initial learning rate is  $1e - 6$ . Our model utilizes a pre-trained model and takes hours in the fine-tune process on an NVIDIA RTX 3090 GPU running CUDA 11.7.1.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1280,
+                        2597.5,
+                        2262.5,
+                        2597.5,
+                        2262.5,
+                        2977.5,
+                        1280,
+                        2977.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1277.5,
+                2175,
+                2260,
+                2175,
+                2260,
+                2557.5,
+                1277.5,
+                2557.5
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": " where  $GT_i$  represents the hierarchical label, and Pred<sub>i</sub> represents the hierarchical prediction. If the entire label is {'Zurich, Switzerland, Europe'}, the progressive hierarchical labels are the three combinations of true label as {'Zurich, Switzerland, Europe'}, {'Switzerland, Europe'5948} and {'Europe'}. In addition, Rank@5 and F1-Score are utilized to evaluate the performance of the proposed method.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1277.5,
+                        2175,
+                        2260,
+                        2175,
+                        2260,
+                        2557.5,
+                        1277.5,
+                        2557.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1455,
+                2027.5,
+                2077.5,
+                2027.5,
+                2077.5,
+                2142.5,
+                1455,
+                2142.5
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": " $$ Example-F1 = \\frac{1}{N} \\sum_{i=1}^{N} \\frac{2|\\text{GT}_i \\cap \\text{Pred}_i|}{|\\text{GT}_i| + |\\text{Pred}_i|}, $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1455,
+                        2027.5,
+                        2077.5,
+                        2027.5,
+                        2077.5,
+                        2142.5,
+                        1455,
+                        2142.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2207.5,
+                2062.5,
+                2252.5,
+                2062.5,
+                2252.5,
+                2107.5,
+                2207.5,
+                2107.5
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": "(8)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2207.5,
+                        2062.5,
+                        2252.5,
+                        2062.5,
+                        2252.5,
+                        2107.5,
+                        2207.5,
+                        2107.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1277.5,
+                1657.5000000000002,
+                2265,
+                1657.5000000000002,
+                2265,
+                1950.0000000000002,
+                1277.5,
+                1950.0000000000002
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": " **Evaluation Metrics.** For a fair comparison, we first follow the same evaluation metrics on the TARA benchmark (Fu et al., 2022): Accuracy and Example-F1. Accuracy is calculated by comparing the predicted results with the entire labels. Example-F1 is calculated by comparing predictions with hierarchical labels:",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1277.5,
+                        1657.5000000000002,
+                        2265,
+                        1657.5000000000002,
+                        2265,
+                        1950.0000000000002,
+                        1277.5,
+                        1950.0000000000002
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1277.5,
+                1282.5,
+                2262.5,
+                1282.5,
+                2262.5,
+                1630,
+                1277.5,
+                1630
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": " ing 12,306 instances and evaluate our method using a test set containing 1,644 instances. The **OWK dataset** is derived from the WIT dataset (Srinivasan et al., 2021). Considering the limited computation resource, we only use  $122,408$ texts from the 37.5 million entity-rich image-text examples in English Wikipedia that correspond to the countries and years as our open-world knowledge.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1277.5,
+                        1282.5,
+                        2262.5,
+                        1282.5,
+                        2262.5,
+                        1630,
+                        1277.5,
+                        1630
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                232.5000000000001,
+                1110,
+                2260,
+                1110,
+                2260,
+                1195,
+                232.5000000000001,
+                1195
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "  $Table 1.$  Summary of the performance for different baselines on the image location and time prediction.  $\\dagger$  means fine-tune the original CLIP (Radford et al., 2021). 'AVG': average relative lift.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        232.5000000000001,
+                        1110,
+                        2260,
+                        1110,
+                        2260,
+                        1195,
+                        232.5000000000001,
+                        1195
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 660,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "64_5_png.jpg"
+    }
+}

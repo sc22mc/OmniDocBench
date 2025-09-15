@@ -1,0 +1,896 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "plain_text",
+      "poly": [
+        197.5,
+        210,
+        1250,
+        210,
+        1250,
+        507.5,
+        197.5,
+        507.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": " for this purpose was introduced in 2020 with VectorNet [23]. Thus, VectorNet is a solid baseline and ideally suitable for our application. The problem is flipped: In typical motion prediction tasks, AVs predict surrounding objects' trajectories. In testing, the trajectories of surrounding objects are (partially) known, but the AVs' behavior has to be predicted.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            197.5,
+            210,
+            1250,
+            210,
+            1250,
+            507.5,
+            197.5,
+            507.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        197.5,
+        510,
+        1247.5,
+        510,
+        1247.5,
+        697.5,
+        197.5,
+        697.5
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": " Scenario embeddings do not cover all properties of instantiated scenarios. The relevant properties may have to be determined by feature selection. Remaining properties can be accounted for by probabilistic motion prediction models.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            197.5,
+            510,
+            1247.5,
+            510,
+            1247.5,
+            697.5,
+            197.5,
+            697.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        555,
+        727.5,
+        897.5,
+        727.5,
+        897.5,
+        772.5,
+        555,
+        772.5
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": " # IV. EXPERIMENTS",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            555,
+            727.5,
+            897.5,
+            727.5,
+            897.5,
+            772.5,
+            555,
+            772.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        202.5,
+        792.5000000000001,
+        1252.5,
+        792.5000000000001,
+        1252.5,
+        1035,
+        202.5,
+        1035
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " Below, we describe our investigation aimed at addressing three main questions: Can VectorNet predict Ego trajectories...  - for individual functional scenarios it is trained on? - for multiple functional scenarios it is trained on? - for functional scenarios not seen during training?",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202.5,
+            792.5000000000001,
+            1252.5,
+            792.5000000000001,
+            1252.5,
+            1035,
+            202.5,
+            1035
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        202.5,
+        1070,
+        1235,
+        1070,
+        1235,
+        1110,
+        202.5,
+        1110
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " ## A. Generation of the Scenario Embeddings and Trajectories",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202.5,
+            1070,
+            1235,
+            1070,
+            1235,
+            1110,
+            202.5,
+            1110
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        195,
+        1135,
+        1250,
+        1135,
+        1250,
+        1320,
+        195,
+        1320
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": " To enable a comparison to regression metamodels, we generate vectorized scenario embeddings for the three scenarios in Fig. 2 parametrically but introduce random variations making the scenarios more complex and realistic (see Fig. 4).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            195,
+            1135,
+            1250,
+            1135,
+            1250,
+            1320,
+            195,
+            1320
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        197.5,
+        1327.5,
+        1255,
+        1327.5,
+        1255,
+        1915,
+        197.5,
+        1915
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": " The center of the lanes follows a polynomial of 3<sup>rd</sup> degree with  $x \\in [-55 \\text{ m}, 55 \\text{ m}]$ ; where vectors describe the lanes (at  $-55 \\text{ m} + \\frac{110 \\text{ m}}{24} \\cdot i \\;\\forall i \\in \\mathbb{N}_0^{\\leq 24}$ ), the *y*-coordinate of the lane's center is shifted uniformly by  $\\mathcal{U}(-0.5 \\text{ m}, 0.5 \\text{ m})$ . Accordingly, the lane width is  $3.5 \\text{ m} + \\mathcal{U}(-0.3 \\text{ m}, 0.3 \\text{ m})$ . Ego and Co use a lane keeping controller; the resulting vehicle orientations are varied randomly with  $\\mathcal{U}(-2.9^{\\circ}, 2.9^{\\circ})$ . The Co's velocity follows the description in Fig. 2 and is varied with  $\\mathcal{U}(-0.1 \\frac{\\text{m}}{\\text{s}}, 0.1 \\frac{\\text{m}}{\\text{s}})$ . Using a P-controller, the Ego tries to ensure a time gap of  $2 \\text{ s}$  to the Co. Concrete scenarios are sampled uniformly from the ranges given in Table I. The time step width is  $0.2 \\text{ s}$ , and the scenarios are simulated for  $5 \\text{ s}$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            197.5,
+            1327.5,
+            1255,
+            1327.5,
+            1255,
+            1915,
+            197.5,
+            1915
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        195,
+        1947.4999999999998,
+        1140,
+        1947.4999999999998,
+        1140,
+        1992.4999999999998,
+        195,
+        1992.4999999999998
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": " ## B. Training of the Motion Prediction Model VectorNet",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            195,
+            1947.4999999999998,
+            1140,
+            1947.4999999999998,
+            1140,
+            1992.4999999999998,
+            195,
+            1992.4999999999998
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        200,
+        2012.5,
+        1257.5,
+        2012.5,
+        1257.5,
+        2295,
+        200,
+        2295
+      ],
+      "ignore": false,
+      "order": 9,
+      "anno_id": 1,
+      "text": " We build upon a publically available implementation of VectorNet [9]. VectorNet is supplied with the lanes, the Co's trajectory, and the initial vector of the Ego (which holds information about the position, orientation, and velocity). It has to predict all following vectors of the Ego. Available data are split into 90% training and 10% validation data.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            200,
+            2012.5,
+            1257.5,
+            2012.5,
+            1257.5,
+            2295,
+            200,
+            2295
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        225,
+        2500,
+        1230,
+        2500,
+        1230,
+        2962.5,
+        225,
+        2962.5
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            225,
+            2500,
+            1230,
+            2500,
+            1230,
+            2962.5,
+            225,
+            2962.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\nInput Min Max Unit Explanation 0<sup>th</sup> polynomial coefficient -1 1  $a_0$  $-0.1$  $0.1$ 1<sup>st</sup> polynomial coefficient  $a_1$  $2^{\\text{nd}}$  $a_2$  $-0.01$  $0.01$ polynomial coefficient  $-0.001$  $0.001$ 3<sup>rd</sup> polynomial coefficient  $a_3$  $\\overline{\\text{m}}$  $v_{\\text{Ego}}$ 8  $16$ Ego's initial velocity  $\\overline{50 + 2v_{\\text{Ego}}}$  $50 + v_{\\text{Ego}}$  $Co's initial x-coordinate$  $\\mathrm{m}$  $x_{\\text{Co}}$  $\\mathbf{m}$ Co's initial velocity  $v_{\\rm Ego}$  $-4$  $v_{\\rm Ego}$  $+4$  $v_{\\text{Co}}$ 0 3 duration of constant velocity  $t_{\\rm v~Co}$  $\\mathbf{s}$  $-8$  $-1$ Co's acceleration  $\\frac{\\text{m}}{2}$  $a_{\\text{Cc}}$ 1 3 duration of acceleration  $t_{\\rm a, Ca}$ \n",
+      "latex": ""
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        1312.5,
+        2500,
+        2330,
+        2500,
+        2330,
+        2965,
+        1312.5,
+        2965
+      ],
+      "ignore": false,
+      "order": "23",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1312.5,
+            2500,
+            2330,
+            2500,
+            2330,
+            2965,
+            1312.5,
+            2965
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| Row | $N_{\\text{ACC}}$ | $N_{\\rm LK}$ | $N_{\\text{ACC\\&LK}}$ | $\\text{ADE}_{\\text{ACC}}$ | $\\text{ADE}_{\\text{LK}}$ | $\\text{ADE}_{\\text{ACC\\&LK}}$ |\n|-----|------------------|--------------|---------------------|---------------------------|--------------------------|------------------------------|\n| 1   | 2000             | 0            | 0                   | $0.37 \\,\\mathrm{m}$       | $12.47 \\,\\mathrm{m}$     | $8.96 \\,\\mathrm{m}$          |\n| 2   | 0                | 2000         | 0                   | $2.40 \\,\\mathrm{m}$       | $0.40 \\,\\mathrm{m}$      | $6.48 \\,\\mathrm{m}$          |\n| 3   | 0                | 0            | 2000                | $0.43 \\,\\mathrm{m}$       | $14.86 \\,\\mathrm{m}$     | $0.52 \\,\\mathrm{m}$          |\n| 4   | 2000             | 2000         | 0                   | $0.39 \\,\\mathrm{m}$       | $0.41 \\,\\mathrm{m}$      | $4.69 \\,\\mathrm{m}$          |\n| 5   | 0                | 2000         | 2000                | $1.58 \\,\\mathrm{m}$       | $0.97 \\,\\mathrm{m}$      | $1.73 \\,\\mathrm{m}$          |\n| 6   | 0                | 3000         | 3000                | $0.45 \\,\\mathrm{m}$       | $0.46 \\,\\mathrm{m}$      | $0.54 \\,\\mathrm{m}$          |\n| 7   | 2000             | 0            | 2000                | $0.37 \\,\\mathrm{m}$       | $9.18 \\,\\mathrm{m}$      | $0.47 \\,\\mathrm{m}$          |\n| 8   | 2000             | 2000         | 2000                | $0.40 \\,\\mathrm{m}$       | $0.42 \\,\\mathrm{m}$      | $0.60 \\,\\mathrm{m}$          |\n| 9   | 2000             | 2000         | 200                 | $0.41 \\text{ m}$          | $0.42 \\,\\mathrm{m}$      | $0.83 \\,\\mathrm{m}$          |\n| 10  | 0                | 0            | 200                 | $0.88 \\,\\mathrm{m}$       | $9.95 \\,\\mathrm{m}$      | $1.13 \\,\\mathrm{m}$          |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1297.5,
+        1745,
+        2350,
+        1745,
+        2350,
+        2135,
+        1297.5,
+        2135
+      ],
+      "ignore": false,
+      "order": "20",
+      "anno_id": 1,
+      "text": " Rows 1 to 3 of Table II indicate that trained with individual functional scenarios' data, VectorNet achieves good ADEs for the functional scenario it is trained on. Rows 4 to 7 show that combining data from two functional scenarios is possible; however, for LK and ACC&LK, 3k samples are required. Combining data from all three scenarios (row 8), the predictive performance is similar to that of the separately trained models (rows 1 to 3); Fig. 5 visualizes this model's predictions.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1297.5,
+            1745,
+            2350,
+            1745,
+            2350,
+            2135,
+            1297.5,
+            2135
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1302.5,
+        1682.5,
+        2190,
+        1682.5,
+        2190,
+        1720,
+        1302.5,
+        1720
+      ],
+      "ignore": false,
+      "order": "19",
+      "anno_id": 1,
+      "text": " ## A. Assessment Based on Predicted Ego Trajectories",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1302.5,
+            1682.5,
+            2190,
+            1682.5,
+            2190,
+            1720,
+            1302.5,
+            1720
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1300,
+        1540,
+        2347.5,
+        1540,
+        2347.5,
+        1635,
+        1300,
+        1635
+      ],
+      "ignore": false,
+      "order": "18",
+      "anno_id": 1,
+      "text": " Below, we assess VectorNet's predictive performance based on the predicted Ego trajectories and evaluation metrics.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1300,
+            1540,
+            2347.5,
+            1540,
+            2347.5,
+            1635,
+            1300,
+            1635
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1712.5,
+        1470,
+        1937.5,
+        1470,
+        1937.5,
+        1512.5,
+        1712.5,
+        1512.5
+      ],
+      "ignore": false,
+      "order": "17",
+      "anno_id": 1,
+      "text": " # V. RESULTS",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1712.5,
+            1470,
+            1937.5,
+            1470,
+            1937.5,
+            1512.5,
+            1712.5,
+            1512.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1295,
+        1240,
+        2347.5,
+        1240,
+        2347.5,
+        1430,
+        1295,
+        1430
+      ],
+      "ignore": false,
+      "order": 16,
+      "anno_id": 1,
+      "text": " As shown in Fig. 1, we also use VectorNet's predictions to calculate evaluation metrics and compare these to predictions of regression metamodels, which predict the evaluation metrics based on the respective inputs of the scenarios in Table I.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1295,
+            1240,
+            2347.5,
+            1240,
+            2347.5,
+            1430,
+            1295,
+            1430
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1287.5,
+        890,
+        2352.5,
+        890,
+        2352.5,
+        1227.5,
+        1287.5,
+        1227.5
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": " To answer the research questions, VectorNet is trained with different mixes of the three scenarios' data.  $N_{\\rm LK}$ ,  $N_{\\rm ACC}$ , and  $N_{\\text{ACC\\&LK}}$  denote the number of samples of the respective scenario VectorNet is supplied with.  $ADE_{LK}$ ,  $ADE_{ACC}$ , and  $ADE_{ACC\\&LK}$  denote the average displacement error (ADE) with respect to the Ego's trajectory. The ADEs are calculated based on a test set with a size of 10k per functional scenario.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1287.5,
+            890,
+            2352.5,
+            890,
+            2352.5,
+            1227.5,
+            1287.5,
+            1227.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1302.4999999999998,
+        822.5,
+        1957.4999999999998,
+        822.5,
+        1957.4999999999998,
+        865,
+        1302.4999999999998,
+        865
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": " ## C. Evaluation Procedure and Criteria",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1302.4999999999998,
+            822.5,
+            1957.4999999999998,
+            822.5,
+            1957.4999999999998,
+            865,
+            1302.4999999999998,
+            865
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        1302.5,
+        212.5,
+        2342.5,
+        212.5,
+        2342.5,
+        522.5,
+        1302.5,
+        522.5
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1302.5,
+            212.5,
+            2342.5,
+            212.5,
+            2342.5,
+            522.5,
+            1302.5,
+            522.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        1305,
+        2382.5,
+        2347.5,
+        2382.5,
+        2347.5,
+        2475,
+        1305,
+        2475
+      ],
+      "ignore": false,
+      "order": "22",
+      "anno_id": 1,
+      "text": " TABLE II AVERAGE DISPLACEMENT ERRORS (ADE) OF PRED. EGO TRAJECTORIES",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1305,
+            2382.5,
+            2347.5,
+            2382.5,
+            2347.5,
+            2475,
+            1305,
+            2475
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        409.9999999999999,
+        2392.5,
+        1060,
+        2392.5,
+        1060,
+        2472.5,
+        409.9999999999999,
+        2472.5
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": " TABLE I  LOGICAL SCENARIOS' INPUTS AND RANGES",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            409.9999999999999,
+            2392.5,
+            1060,
+            2392.5,
+            1060,
+            2472.5,
+            409.9999999999999,
+            2472.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1302.5,
+        2145,
+        2350,
+        2145,
+        2350,
+        2292.5,
+        1302.5,
+        2292.5
+      ],
+      "ignore": false,
+      "order": "21",
+      "anno_id": 1,
+      "text": " The more challenging task is the generalization to functional scenarios not seen during training. Row 3 shows that trained on ACC&LK, a low ADE for ACC is achieved. This is expected",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1302.5,
+            2145,
+            2350,
+            2145,
+            2350,
+            2292.5,
+            1302.5,
+            2292.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        1295,
+        582.5,
+        2357.5,
+        582.5,
+        2357.5,
+        732.5,
+        1295,
+        732.5
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": " Fig. 4. Data of the scenario ACC&LK. Each vector is defined by its start and end points, object type, object ID, and timestamp. The numbers next to the vectors represent their timestamps in seconds; lanes' timestamps are 0. Note that vectors can contain more features, e.g., bounding boxes or object colors.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1295,
+            582.5,
+            2357.5,
+            582.5,
+            2357.5,
+            732.5,
+            1295,
+            732.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 765,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "76_4_png.jpg"
+  }
+}

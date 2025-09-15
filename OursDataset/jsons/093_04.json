@@ -1,0 +1,516 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "table_caption",
+            "poly": [
+                452,
+                266,
+                910,
+                266,
+                910,
+                336,
+                452,
+                336
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "TABLE I  PERFORMANCE INDICATORS USED",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        452,
+                        266,
+                        910,
+                        266,
+                        910,
+                        336,
+                        452,
+                        336
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                1282,
+                274,
+                2270,
+                274,
+                2270,
+                366,
+                1282,
+                366
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "TABLE II  RESULTS FOR TESTING SSD, DETR, YOLOV5, YOLOV9, AND YOLOV10,  $\\text{WITH IOU} = 0.5$ ",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1282,
+                        274,
+                        2270,
+                        274,
+                        2270,
+                        366,
+                        1282,
+                        366
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                1278,
+                415.9999999999999,
+                2278,
+                415.9999999999999,
+                2278,
+                1500,
+                1278,
+                1500
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1278,
+                        415.9999999999999,
+                        2278,
+                        415.9999999999999,
+                        2278,
+                        1500,
+                        1278,
+                        1500
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th></th>\n<th>model</th>\n<th></th>\n<th>Ρ</th>\n<th>R</th>\n<th>$\\text{mAP}_{0.5}$</th>\n<th>$\\text{mAP}_{0.5}^{0.95}$</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td>SSD</td>\n<td>ALL</td>\n<td>$65.5\\%$</td>\n<td>$26.8\\%$</td>\n<td>57.4%</td>\n<td>$25.1\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>ONLY</td>\n<td>$73.1\\%$</td>\n<td>$26.8\\%$</td>\n<td>$59.8\\%$</td>\n<td>$26.3\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td>DETR</td>\n<td>ALL</td>\n<td>81.8%</td>\n<td>$12.7\\%$</td>\n<td>50.9%</td>\n<td>$24.1\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>ONLY</td>\n<td>81.8%</td>\n<td>$12.7\\%$</td>\n<td>$54.4\\%$</td>\n<td>$25.8\\%$</td>\n</tr>\n<tr>\n<td>0.3</td>\n<td>$YOLOv5-X$</td>\n<td>ALL</td>\n<td>$53.5\\%$</td>\n<td>$54.8\\%$</td>\n<td>$44.4\\%$</td>\n<td>$29.0\\%$</td>\n</tr>\n<tr>\n<td>$\\mathbb{H}$</td>\n<td></td>\n<td>ONLY</td>\n<td>95.1%</td>\n<td>$54.8\\%$</td>\n<td>$52.0\\%$</td>\n<td>$34.3\\%$</td>\n</tr>\n<tr>\n<td>C</td>\n<td>YOLOV9-T</td>\n<td>ALL</td>\n<td>$71.0\\%$</td>\n<td>$61.0\\%$</td>\n<td>67.0%</td>\n<td>37.0%</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>ONLY</td>\n<td>95.0%</td>\n<td>61.0%</td>\n<td>$78.0\\%$</td>\n<td>$44.0\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td>YOLOv9-E</td>\n<td>$\\text{ALL}$</td>\n<td>57.50%</td>\n<td>$52.0\\%$</td>\n<td>$51.0\\%$</td>\n<td>$27.0\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>ONLY</td>\n<td>89.0%</td>\n<td>$52.0\\%$</td>\n<td>$69.0\\%$</td>\n<td>$37.0\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td>YOLOv10-N</td>\n<td>ALL</td>\n<td>$74.0\\%$</td>\n<td>$60.0\\%$</td>\n<td>$50.0\\%$</td>\n<td>$23.0\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>ONLY</td>\n<td>90.0%</td>\n<td>$60.0\\%$</td>\n<td>$71.0\\%$</td>\n<td>$33.0\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td>$YOLOv10-X$</td>\n<td>ALL</td>\n<td>$50.0\\%$</td>\n<td>64.0%</td>\n<td>41.0%</td>\n<td>19.0%</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>ONLY</td>\n<td>79.0%</td>\n<td>$64.0\\%$</td>\n<td>$72.0\\%$</td>\n<td>$32.0\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td>SSD</td>\n<td>ALL</td>\n<td>62.5%</td>\n<td>$28.2\\%$</td>\n<td>$56.7\\%$</td>\n<td>$24.0\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>ONLY</td>\n<td>$71.4\\%$</td>\n<td>$28.2\\%$</td>\n<td>$60.6\\%$</td>\n<td>$25.9\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td>DETR</td>\n<td>ALL</td>\n<td>73.3%</td>\n<td>$14.1\\%$</td>\n<td>$54.4\\%$</td>\n<td>$25.8\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>ONLY</td>\n<td>73.3%</td>\n<td>$14.1\\%$</td>\n<td>57.2%</td>\n<td>$26.8\\%$</td>\n</tr>\n<tr>\n<td>0.1</td>\n<td>$YOLOv5-X$</td>\n<td>ALL</td>\n<td>$39.5\\%$</td>\n<td>$62.0\\%$</td>\n<td>$48.7\\%$</td>\n<td>$31.0\\%$</td>\n</tr>\n<tr>\n<td>$\\parallel$</td>\n<td></td>\n<td>ONLY</td>\n<td>$92.4\\%$</td>\n<td>$62.0\\%$</td>\n<td>$60.6\\%$</td>\n<td>$39.9\\%$</td>\n</tr>\n<tr>\n<td>$\\left( \\right)$</td>\n<td>YOLOv9-T</td>\n<td>ALL</td>\n<td>$71.0\\%$</td>\n<td>$66.0\\%$</td>\n<td>$67.0\\%$</td>\n<td>36.0%</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>ONLY</td>\n<td>94.0%</td>\n<td>66.0%</td>\n<td>81.0%</td>\n<td>$45.0\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td>YOLOv9-E</td>\n<td>ALL</td>\n<td>$57.0\\%$</td>\n<td>$62.0\\%$</td>\n<td>$50.0\\%$</td>\n<td>$26.0\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>ONLY</td>\n<td>88.0%</td>\n<td>$62.0\\%$</td>\n<td>$74.0\\%$</td>\n<td>$38.0\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td>YOLOv10-N</td>\n<td>ALL</td>\n<td>$74.0\\%$</td>\n<td>60.0%</td>\n<td>$50.0\\%$</td>\n<td>$23.0\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>ONLY</td>\n<td>90.0%</td>\n<td>$60.0\\%$</td>\n<td>$71.0\\%$</td>\n<td>$33.0\\%$</td>\n</tr>\n<tr>\n<td></td>\n<td>$YOLOv10-X$</td>\n<td>ALL</td>\n<td>$50.0\\%$</td>\n<td>$64.0\\%$</td>\n<td>$41.0\\%$</td>\n<td>19.0%</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>ONLY</td>\n<td>$79.0\\%$</td>\n<td>$64.0\\%$</td>\n<td>$72.0\\%$</td>\n<td>$32.0\\%$</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                227.9999999999999,
+                384,
+                1118,
+                384,
+                1118,
+                886,
+                227.9999999999999,
+                886
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        227.9999999999999,
+                        384,
+                        1118,
+                        384,
+                        1118,
+                        886,
+                        227.9999999999999,
+                        886
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>Indicator</th>\n<th>Formula</th>\n<th>Section</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Precision $(P)$</td>\n<td>$\\frac{\\text{TP}}{\\text{TP+FP}}$</td>\n<td>III, IV, V</td>\n</tr>\n<tr>\n<td>Recall-sensitivity $(R)$</td>\n<td>$\\frac{\\text{TP}}{\\text{TP+FN}}$</td>\n<td>III, IV, V</td>\n</tr>\n<tr>\n<td>Specificity</td>\n<td>$\\frac{\\text{TN}}{\\text{TN+FP}}$</td>\n<td>IV</td>\n</tr>\n<tr>\n<td>Accuracy</td>\n<td>$\\frac{\\text{TP+TN}}{\\text{TP+TN+FP+FN}}$</td>\n<td>IV, VII</td>\n</tr>\n<tr>\n<td>$F1$ score</td>\n<td>$\\frac{2 \\times P \\times R}{P+R}$</td>\n<td>IV</td>\n</tr>\n<tr>\n<td>Mean average precision $(mAP)$</td>\n<td>$\\frac{1}{N} \\sum_{k=1}^{N} AP_k$</td>\n<td>III</td>\n</tr>\n<tr>\n<td>Intersection over union $(IoU)$</td>\n<td>$\\frac{ A \\cap B }{ A \\cup B }$</td>\n<td>III</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                150,
+                1010,
+                1212,
+                1010,
+                1212,
+                1308,
+                150,
+                1308
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "of objects in images and is more accurate than many other detectors [28], [31], it tends to lose specimens (i.e., high value of FN) and also to have a not negligible number of FP. When testing SSD on ALL and ONLY, its precision score remains stable. The number of FP slightly increases in the ALL experiment, but not dramatically.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        150,
+                        1010,
+                        1212,
+                        1010,
+                        1212,
+                        1308,
+                        150,
+                        1308
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                154,
+                1312,
+                1204,
+                1312,
+                1204,
+                2150,
+                154,
+                2150
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "The DETR leverages the transformer architecture, originally designed for natural language processing tasks. It has emerged as a novel NN for object detection, comprising four main components: backbone, encoder, decoder, and prediction heads [32]. In our experiments, we employed ResNet-50 as the backbone, using a CNN to learn a 2-D representation of the input image. The model flattens this representation and supplements it with positional encoding before feeding it into a transformer encoder. Subsequently, the encoded image data pass through an encoderdecoder structure and is then directed to the prediction heads. These prediction heads, based on feed-forward networks, predict either a detection class and bounding box, or a NOOBJECT class (i.e., background). We utilized the PyTorch implementation of DETR in our application, and the testing results are presented in Table  $\\text{II}$ . As indicated, the recall is poor, resulting in a high number of FN. However, since it achieves the same  $P$  for ALL and ONLY, it follows model robust against empty patches.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        154,
+                        1312,
+                        1204,
+                        1312,
+                        1204,
+                        2150,
+                        154,
+                        2150
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                146,
+                2158,
+                1210,
+                2158,
+                1210,
+                2750,
+                146,
+                2750
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "YOLOV5 stands out for its lightweight and fast computation capabilities, demanding less computational power compared with other current state-of-the-art algorithms while maintaining comparable performance [16]. Although YOLOv5 is offered in several model sizes, in the following, we rely solely on the  $\\text{eXtra-large model}(X)$  since it is the most powerful configuration to find fine-grain objects inside a frame due to its architecture.  $YOLOv5-X$  has been trained on our custom dataset by finetuning pretrained weights [33] on an NVIDIA RTX 3060 OC. The YOLOv5-X results are depicted in Table II. In principle, its precision on ONLY is considerably high, while it balances precision and recall on ALL.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        146,
+                        2158,
+                        1210,
+                        2158,
+                        1210,
+                        2750,
+                        146,
+                        2750
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                148,
+                2754,
+                1214,
+                2754,
+                1214,
+                3104,
+                148,
+                3104
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "YOLOv9 [34] introduces some innovation with respect to its predecessor. Specifically, to improve accuracy, it introduces programmable gradient information (PGI) and the generalized efficient layer aggregation network (GELAN). PGI prevents data loss and ensures accurate gradient updates, whereas GELAN optimizes lightweight models with gradient path planning. We trained YOLOv9-T and YOLOv9-E using transfer",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        148,
+                        2754,
+                        1214,
+                        2754,
+                        1214,
+                        3104,
+                        148,
+                        3104
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1250,
+                2710,
+                2304,
+                2710,
+                2304,
+                3104,
+                1250,
+                3104
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": "Comparing all the NNs, SSD and DETR have performed almost the same obtaining a higher precision and a lower recall. SDD tends to miss fewer BMSB inside the frame than DETR, detecting at least the  $\\approx 27\\%$  of the total occurrences in contrast with the poor  $\\approx 13\\%$  reached by DETR. Both SSD and DETR revealed a significant robustness against background-only pixels because their performance is almost the same in the two sets, i.e., ALL and ONLY. Moreover, DETR raised less FP than SSD,",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1250,
+                        2710,
+                        2304,
+                        2710,
+                        2304,
+                        3104,
+                        1250,
+                        3104
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1250,
+                1962,
+                2306,
+                1962,
+                2306,
+                2698,
+                1250,
+                2698
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": " We extend our analysis to the latest release of YOLO family, namely, YOLOv10 [35]. The newest architecture offers a range of model scales, but we decided to rely on YOLOv10-N and  $YOLOv10$ -X. One of the main improvements is the introduction of consistent dual assignments, which replaces nonmaximum suppression. Moreover, the developers introduced partial selfattention to boost the detection ability without any burdening on inference speed. As reported in Table II, YOLOv10 confirms its ability to recognize objects also in challenging environments showcasing interesting performance for both the models. Once again, despite YOLOv10-N is the lightest version, it outperforms  $YOLOv10$ -X demonstrating also a fair robustness against background-only patches. On the other hand, YOLOv10-X gains limited knowledge on BMSB detection suggesting potential overfitting on training data.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1250,
+                        1962,
+                        2306,
+                        1962,
+                        2306,
+                        2698,
+                        1250,
+                        2698
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1249.9999999999998,
+                1612.0000000000002,
+                2294,
+                1612.0000000000002,
+                2294,
+                1952.0000000000002,
+                1249.9999999999998,
+                1952.0000000000002
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": " learning. Table  $\\mathbf{II}$  gives that both models achieve notable performance. YOLOv9-T demonstrates a solid robustness against background-only patches, overcoming YOLOv9-E in all the metrics. Despite the previous observation, YOLOv9-E depicts significant detection ability. Notably, YOLOv9-T showcases simultaneously a high mAP $_{0.5}$  and mAP $_{0.5}^{0.95}$ , setting interesting confidences and IoU values, respectively.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1249.9999999999998,
+                        1612.0000000000002,
+                        2294,
+                        1612.0000000000002,
+                        2294,
+                        1952.0000000000002,
+                        1249.9999999999998,
+                        1952.0000000000002
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "header",
+            "poly": [
+                153.9999999999999,
+                130,
+                2052,
+                130,
+                2052,
+                162,
+                153.9999999999999,
+                162
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "ALMSTEDT et al.: BEYOND THE NAKED EYE: COMPUTER VISION FOR DETECTING BROWN MARMORATED STINK BUG AND ITS PUNCTURES",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        153.9999999999999,
+                        130,
+                        2052,
+                        130,
+                        2052,
+                        162,
+                        153.9999999999999,
+                        162
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "header",
+            "poly": [
+                2282,
+                136,
+                2304,
+                136,
+                2304,
+                164,
+                2282,
+                164
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "9",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2282,
+                        136,
+                        2304,
+                        136,
+                        2304,
+                        164,
+                        2282,
+                        164
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 962,
+        "height": 3300,
+        "width": 2475,
+        "image_path": "93_4_png.jpg"
+    }
+}

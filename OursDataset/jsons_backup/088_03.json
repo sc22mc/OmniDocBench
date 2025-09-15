@@ -1,0 +1,664 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        152.5,
+        130,
+        1042.5,
+        130,
+        1042.5,
+        167.5,
+        152.5,
+        167.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "RAJA: SOFTWARE ARCHITECTURE FOR AGRICULTURAL ROBOTS",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            152.5,
+            130,
+            1042.5,
+            130,
+            1042.5,
+            167.5,
+            152.5,
+            167.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "header",
+      "poly": [
+        2247.5,
+        127.5,
+        2305,
+        127.5,
+        2305,
+        165,
+        2247.5,
+        165
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "127",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2247.5,
+            127.5,
+            2305,
+            127.5,
+            2305,
+            165,
+            2247.5,
+            165
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        652.5,
+        270,
+        1807.5,
+        270,
+        1807.5,
+        337.5,
+        652.5,
+        337.5
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "TABLE I REQUIREMENTS OF SOFTWARE ARCHITECTURE FOR THE AGRICULTURAL APPLICATIONS",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            652.5,
+            270,
+            1807.5,
+            270,
+            1807.5,
+            337.5,
+            652.5,
+            337.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        180,
+        389.9999999999999,
+        2282.5,
+        389.9999999999999,
+        2282.5,
+        1617.5,
+        180,
+        1617.5
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            180,
+            389.9999999999999,
+            2282.5,
+            389.9999999999999,
+            2282.5,
+            1617.5,
+            180,
+            1617.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| Requirements            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                         |\n|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Agility                 | The ability to respond quickly to a constantly changing environment. This feature is extremely important as the agricultural<br>environment is dynamic in nature, that is it frequently changes over time.                                                                                                                                                                                                                                          |\n| Flexibility             | The ability to be flexible enough to accommodate changes and modifications to the system over time. Patterns such as MVC<br>and microservices provide the flexibility to modify and add functionality.                                                                                                                                                                                                                                              |\n| Complexity              | A good architectural pattern should not introduce unnecessary complexity into the system. Patterns such as monolithic architecture<br>can be simple, but can become complex as the application grows. Patterns, such as Microservices can be more complex to<br>manage, but provide greater flexibility.                                                                                                                                            |\n| Real-time<br>processing | The software architecture should be capable of processing data in real-time to enable quick decision-making and response to<br>changing conditions.                                                                                                                                                                                                                                                                                                 |\n| Deployment              | This can be a problem depending on how a pattern is implemented, especially for larger applications. A small change in a comp-<br>onent can affect the application partially or completely, necessitating a partial or complete redeployment.                                                                                                                                                                                                       |\n| Adaptability            | the ability to quickly adapt to complex, dynamic, and often chaotic environments.                                                                                                                                                                                                                                                                                                                                                                   |\n| Maintainability         | It is the ability of a system to adapt to changes with ease.                                                                                                                                                                                                                                                                                                                                                                                        |\n| Reusability             | It is the ability of components and subsystems to be reused in other applications.                                                                                                                                                                                                                                                                                                                                                                  |\n| Testability             | It is the ability to easily test components belonging to specific layers in the architecture, other layers can be mocked or stubbed. To<br>isolate testing within a business component, a developer can mock a presentation component or screen, as well as mock the business<br>layer to test specific screen functionality. Patterns such as MVC and layered architecture provide clear separation of concerns,<br>making it easier to test code. |\n| Interoperability        | It is the ability of a system or systems to communicate with and exchange information with other external systems written and run<br>by third parties.                                                                                                                                                                                                                                                                                              |\n| Manageability           | It refers to how simple it is for system administrators to manage the application.                                                                                                                                                                                                                                                                                                                                                                  |\n| Reliability             | It is the ability of a system to remain operational over time.                                                                                                                                                                                                                                                                                                                                                                                      |\n| Performance             | It indicates the responsiveness of a system to execute any action within a given time interval.                                                                                                                                                                                                                                                                                                                                                     |\n| Scalability             | It is a property of a system that allows it to handle an increasing amount of work by adding resources to the system, i.e. the ability<br>to change the size or scale of the system.                                                                                                                                                                                                                                                                |\n| Modularity              | The software architecture should be modular, allowing for easy integration of new components and functionalities as needed.                                                                                                                                                                                                                                                                                                                         |\n| Cost                    | Cost of the system in terms of time to market, expected project lifetime, and legacy usage.                                                                                                                                                                                                                                                                                                                                                         |\n| Security                | It refers to a system's ability to prevent malicious or unintentional actions that are not intended.                                                                                                                                                                                                                                                                                                                                                |\n| Portability             | It is the ability of a system to run in a variety of computing environments.                                                                                                                                                                                                                                                                                                                                                                        |\n| Fault tolerance         | It is the ability to continue operating after a fault has occurred.                                                                                                                                                                                                                                                                                                                                                                                 |\n| Marketability           | It refers to how a system is used in relation to market competition.                                                                                                                                                                                                                                                                                                                                                                                |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        255.00000000000006,
+        1662.5,
+        1205,
+        1662.5,
+        1205,
+        1805,
+        255.00000000000006,
+        1805
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " The robot can be equipped with various end-effectors, such as grippers, cutting tools, and sprayers, to perform specific tasks.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            255.00000000000006,
+            1662.5,
+            1205,
+            1662.5,
+            1205,
+            1805,
+            255.00000000000006,
+            1805
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        150,
+        1950,
+        1212.5,
+        1950,
+        1212.5,
+        2437.5,
+        150,
+        2437.5
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": " The level of uncertainty in the agricultural environment is significantly higher than in other robotics applications. The agricultural climate is very complex in nature, meaning that it changes at all times. As a result, agricultural robots rely not only on advanced technology, but also on appropriate robot architecture, supported infrastructures, and services, such as communication between subsystems and data sharing and reuse. The unavailability of suitable robot architecture that can handle the existence of uncertainty in the agricultural environment may be one of the causes of this phenomenon.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            150,
+            1950,
+            1212.5,
+            1950,
+            1212.5,
+            2437.5,
+            150,
+            2437.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1250,
+        1790,
+        2307.5,
+        1790,
+        2307.5,
+        2425,
+        1250,
+        2425
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": " Robot architectural patterns define the overall structure and organization of a software system within the robot(s), and provide a blueprint for the development team to follow. In general, each architectural pattern has its own tradeoffs, and the choice of pattern will depend on the specific requirements of the system being developed. It is necessary to look for specific characteristics in architectural patterns that are appropriate for agricultural applications. Because warehouse or manufacturing-related architectural patterns may not be appropriate for agricultural applications, as it is highly dependent on environmental conditions, specific tasks, and goals, and because the agricultural field's environment is highly dynamic, uncertain, and unpredictable in nature.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1250,
+            1790,
+            2307.5,
+            1790,
+            2307.5,
+            2425,
+            1250,
+            2425
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        145,
+        2570,
+        1207.5,
+        2570,
+        1207.5,
+        2725,
+        145,
+        2725
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": " The overall requirements for the agricultural applications are listed in Table I below, which should be considered while making a robot architectural pattern.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            145,
+            2570,
+            1207.5,
+            2570,
+            1207.5,
+            2725,
+            145,
+            2725
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        152.5,
+        2915,
+        1205,
+        2915,
+        1205,
+        3050,
+        152.5,
+        3050
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": " There are some challenges listed in the Table  $\\mathbf{II}$  in developing agricultural robot software architecture considering all the requirements are as follows.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            152.5,
+            2915,
+            1205,
+            2915,
+            1205,
+            3050,
+            152.5,
+            3050
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1245,
+        2615,
+        2305,
+        2615,
+        2305,
+        2842.5,
+        1245,
+        2842.5
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": " There are several ways to categorize robotic software architectural patterns, depending on the criteria or characteristics that are being used. For example, it can be categories based on functionality of the robot and how it performs its tasks. Examples include:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1245,
+            2615,
+            2305,
+            2615,
+            2305,
+            2842.5,
+            1245,
+            2842.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1247.5,
+        2857.5,
+        2307.5,
+        2857.5,
+        2307.5,
+        3052.5,
+        1247.5,
+        3052.5
+      ],
+      "ignore": false,
+      "order": "16",
+      "anno_id": 1,
+      "text": " 1) Control Architecture Versus Cognitive Architecture: Control architecture focuses on the control of robotic systems, including low-level motor control and high-level planning and decision-making, while cognitive architecture focuses on the",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1247.5,
+            2857.5,
+            2307.5,
+            2857.5,
+            2307.5,
+            3052.5,
+            1247.5,
+            3052.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1252.5,
+        2537.5,
+        1967.5,
+        2537.5,
+        1967.5,
+        2587.5,
+        1252.5,
+        2587.5
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": " ## A. Categorization Based on Functionality",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1252.5,
+            2537.5,
+            1967.5,
+            2537.5,
+            1967.5,
+            2587.5,
+            1252.5,
+            2587.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        355,
+        1875.0000000000002,
+        1002.5,
+        1875.0000000000002,
+        1002.5,
+        1922.5000000000002,
+        355,
+        1922.5000000000002
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": " # III. REQUIREMENTS AND CHALLENGES",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            355,
+            1875.0000000000002,
+            1002.5,
+            1875.0000000000002,
+            1002.5,
+            1922.5000000000002,
+            355,
+            1922.5000000000002
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1377.5,
+        1667.5000000000002,
+        2170,
+        1667.5000000000002,
+        2170,
+        1767.5000000000002,
+        1377.5,
+        1767.5000000000002
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": " # IV. CHARACTERIZATION OF CURRENT ROBOTIC ARCHITECTURES AND PRINCIPLES",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1377.5,
+            1667.5000000000002,
+            2170,
+            1667.5000000000002,
+            2170,
+            1767.5000000000002,
+            1377.5,
+            1767.5000000000002
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        155,
+        2510,
+        1200,
+        2510,
+        1200,
+        2555,
+        155,
+        2555
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": " ## A. Requirements for Agricultural Robot Software Architecture",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            155,
+            2510,
+            1200,
+            2510,
+            1200,
+            2555,
+            155,
+            2555
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        152.5,
+        2787.5,
+        1132.5,
+        2787.5,
+        1132.5,
+        2877.5,
+        152.5,
+        2877.5
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": " ## B. Challenges in Developing Agricultural Robot Software Architecture",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            152.5,
+            2787.5,
+            1132.5,
+            2787.5,
+            1132.5,
+            2877.5,
+            152.5,
+            2877.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        285,
+        3180,
+        2170,
+        3180,
+        2170,
+        3220,
+        285,
+        3220
+      ],
+      "ignore": false,
+      "order": 17,
+      "anno_id": 1,
+      "text": "Authorized licensed use limited to: FUDAN UNIVERSITY. Downloaded on August 28,2025 at 01:50:40 UTC from IEEE Xplore. Restrictions apply.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            285,
+            3180,
+            2170,
+            3180,
+            2170,
+            3220,
+            285,
+            3220
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 913,
+    "height": 3300,
+    "width": 2475,
+    "image_path": "88_3_png.jpg"
+  }
+}

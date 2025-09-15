@@ -1,0 +1,698 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "title",
+      "poly": [
+        407.5,
+        370,
+        2067.5,
+        370,
+        2067.5,
+        497.5,
+        407.5,
+        497.5
+      ],
+      "ignore": false,
+      "order": "2",
+      "anno_id": 1,
+      "text": "# **Timewarp: Transferable Acceleration of Molecular Dynamics by Learning Time-Coarsened Dynamics**",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            407.5,
+            370,
+            2067.5,
+            370,
+            2067.5,
+            497.5,
+            407.5,
+            497.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        252.5,
+        657.5,
+        2222.5,
+        657.5,
+        2222.5,
+        760,
+        252.5,
+        760
+      ],
+      "ignore": false,
+      "order": "3",
+      "anno_id": 1,
+      "text": "  $\\textbf{Leon Klein} \\text{ } ^{\\ast\\dagger\\,1\\,2}\\text{ } \\textbf{ Andrew Y. K. Foong} \\text{ } ^{\\ast\\,1}\\text{ } \\textbf{ Tor Erlend Fjelde} \\text{ } ^{\\ast\\dagger\\,3}\\text{ } \\textbf{ Bruno Mlodozeniec} \\text{ } ^{\\ast\\dagger\\,3}\\text{ } \\textbf{ Marc Brockschmidt} \\text{ } ^{\\dag}$ Sebastian Nowozin<sup>†</sup> Frank Noé<sup>124</sup> Ryota Tomioka<sup>1</sup>",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            252.5,
+            657.5,
+            2222.5,
+            657.5,
+            2222.5,
+            760,
+            252.5,
+            760
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        627.5,
+        852.5,
+        817.5,
+        852.5,
+        817.5,
+        897.5,
+        627.5,
+        897.5
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": "Abstract",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            627.5,
+            852.5,
+            817.5,
+            852.5,
+            817.5,
+            897.5,
+            627.5,
+            897.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "arxiv",
+      "poly": [
+        70,
+        890,
+        137.5,
+        890,
+        137.5,
+        2350,
+        70,
+        2350
+      ],
+      "ignore": false,
+      "order": "1",
+      "anno_id": 1,
+      "text": "arXiv:2302.01170v1 [stat.ML] 2 Feb 2023",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            70,
+            890,
+            137.5,
+            890,
+            137.5,
+            2350,
+            70,
+            2350
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        310,
+        930,
+        1135,
+        930,
+        1135,
+        2370,
+        310,
+        2370
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "  *Molecular dynamics* (MD) simulation is a widely used technique to simulate molecular systems, most commonly at the all-atom resolution where the equations of motion are integrated with timesteps on the order of femtoseconds ( $1fs =$  $10^{-15}$ s). MD is often used to compute equilibrium properties, which requires sampling from an equilibrium distribution such as the Boltzmann distribution. However, many important processes, such as binding and folding, occur over timescales of milliseconds or beyond, and cannot be efficiently sampled with conventional MD. Furthermore, new MD simulations need to be performed from scratch for each molecular system studied. We present *Timewarp*, an enhanced sampling method which uses a normalising flow as a proposal distribution in a Markov chain Monte Carlo method targeting the Boltzmann distribution. The flow is trained offline on MD trajectories and learns to make large steps in time, simulating the molecular dynamics of  $10^5 - 10^6$  fs. Crucially, Timewarp is *transferable* between molecular systems: once trained, we show that it generalises to unseen small peptides (2-4 amino acids), exploring their metastable states and providing wallclock acceleration when sampling compared to standard MD. Our method constitutes an important step towards developing general, transferable algorithms for accelerating MD.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            310,
+            930,
+            1135,
+            930,
+            1135,
+            2370,
+            310,
+            2370
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        232.5,
+        2475,
+        550,
+        2475,
+        550,
+        2520,
+        232.5,
+        2520
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": " # 1. Introduction",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            232.5,
+            2475,
+            550,
+            2475,
+            550,
+            2520,
+            232.5,
+            2520
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        227.49999999999994,
+        2555,
+        1207.5,
+        2555,
+        1207.5,
+        2695,
+        227.49999999999994,
+        2695
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": " Molecular dynamics (MD) is a well-established technique for simulating physical systems at the atomic level. When performed accurately, it provides unrivalled insight into",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.49999999999994,
+            2555,
+            1207.5,
+            2555,
+            1207.5,
+            2695,
+            227.49999999999994,
+            2695
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        235,
+        2940,
+        355,
+        2940,
+        355,
+        2992.5,
+        235,
+        2992.5
+      ],
+      "ignore": false,
+      "order": "18",
+      "anno_id": 1,
+      "text": "Preprint.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            235,
+            2940,
+            355,
+            2940,
+            355,
+            2992.5,
+            235,
+            2992.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        217.5,
+        2732.5,
+        1212.5,
+        2732.5,
+        1212.5,
+        2902.5,
+        217.5,
+        2902.5
+      ],
+      "ignore": false,
+      "order": "17",
+      "anno_id": 1,
+      "text": "  $*$ Equal contribution $^{\\dagger}$ Work done while at Microsoft Research 1Microsoft Research AI4Science 2Freie Universität Berlin 3University of Cambridge 4Rice University. Correspondence to: Ryota Tomioka ryoto@microsoft.com.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            217.5,
+            2732.5,
+            1212.5,
+            2732.5,
+            1212.5,
+            2902.5,
+            217.5,
+            2902.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1295,
+        2920,
+        2187.5,
+        2920,
+        2187.5,
+        2980,
+        1295,
+        2980
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": " $$ m_i \\mathrm{d}x_i^v = -\\nabla_i U \\mathrm{d}t - \\gamma m_i x_i^v \\mathrm{d}t + \\sqrt{2m_i \\gamma k_B T} \\mathrm{d}B_t. $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1295,
+            2920,
+            2187.5,
+            2920,
+            2187.5,
+            2980,
+            1295,
+            2980
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2207.5,
+        2920,
+        2252.5,
+        2920,
+        2252.5,
+        2975,
+        2207.5,
+        2975
+      ],
+      "ignore": false,
+      "order": "16",
+      "anno_id": 1,
+      "text": "(2)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2207.5,
+            2920,
+            2252.5,
+            2920,
+            2252.5,
+            2975,
+            2207.5,
+            2975
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1277.5,
+        2747.5,
+        2260,
+        2747.5,
+        2260,
+        2887.5,
+        1277.5,
+        2887.5
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": " A popular method in MD to sample from the Boltzmann distribution is *Langevin dynamics* (Langevin, 1908), which obeys the following stochastic differential equation (SDE):",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1277.5,
+            2747.5,
+            2260,
+            2747.5,
+            2260,
+            2887.5,
+            1277.5,
+            2887.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1275,
+        2430,
+        2260,
+        2430,
+        2260,
+        2715,
+        1275,
+        2715
+      ],
+      "ignore": false,
+      "order": 13,
+      "anno_id": 1,
+      "text": " where  $U(x^p)$  is the potential energy,  $K(x^p)$  is the kinetic energy, and  $k_B$  is Boltzmann's constant. In practice we are interested in the marginal distribution of the positions,  $\\mu(x^p)$ . Many important quantities, such as the free energies associated with protein folding and protein-ligand binding, can be computed as expectations under  $\\mu(x^p)$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1275,
+            2430,
+            2260,
+            2430,
+            2260,
+            2715,
+            1275,
+            2715
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1377.5,
+        2322.5,
+        2157.5,
+        2322.5,
+        2157.5,
+        2402.5,
+        1377.5,
+        2402.5
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": " $$ \\mu(x^p, x^v) \\propto \\exp\\left(-\\frac{1}{k_B T} (U(x^p) + K(x^v))\\right), $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1377.5,
+            2322.5,
+            2157.5,
+            2322.5,
+            2157.5,
+            2402.5,
+            1377.5,
+            2402.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2202.5,
+        2335,
+        2255,
+        2335,
+        2255,
+        2385,
+        2202.5,
+        2385
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "(1)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2202.5,
+            2335,
+            2255,
+            2335,
+            2255,
+            2385,
+            2202.5,
+            2385
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1280,
+        1652.5000000000002,
+        2257.5,
+        1652.5000000000002,
+        2257.5,
+        2295,
+        1280,
+        2295
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": " the detailed mechanics of molecular motion, without the need for wet lab experiments. MD simulations have been used to understand processes of central interest in molecular biophysics, such as protein folding (Noé et al., 2009; Lindorff-Larsen et al., 2011), protein-ligand binding (Buch et al., 2011), and protein-protein association (Plattner et al., 2017). Many crucial applications of MD boil down to efficiently sampling from the *Boltzmann distribution*, *i.e.*, the equilibrium distribution of a molecular system at a temperature  $T$ . Let  $(x^p(t), x^v(t)) := x(t) \\in \\mathbb{R}^{6N}$  be the state of the molecule at time t, consisting of the positions  $x^p(t) \\in \\mathbb{R}^{3N}$  and velocities  $x^v(t) \\in \\mathbb{R}^{3N}$  of the  $N$  atoms in Cartesian coordinates. The Boltzmann distribution is given by:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1280,
+            1652.5000000000002,
+            2257.5,
+            1652.5000000000002,
+            2257.5,
+            2295,
+            1280,
+            2295
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        1275,
+        1360,
+        2260,
+        1360,
+        2260,
+        1580,
+        1275,
+        1580
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": " Figure 1. Initial state  $x(t)$  (Left) and accepted proposal state  $x(t + t)$  $\\tau \\sim p_{\\theta}(x(t+\\tau)|x(t))$  (Right) sampled from Timewarp for the tetrapeptide LAKS (not in trainset). The proposed state undergoes a large conformational change relative to the initial state, traversing from one metastable state to another.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1275,
+            1360,
+            2260,
+            1360,
+            2260,
+            1580,
+            1275,
+            1580
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        1320,
+        837.5,
+        2217.5,
+        837.5,
+        2217.5,
+        1242.5,
+        1320,
+        1242.5
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1320,
+            837.5,
+            2217.5,
+            837.5,
+            2217.5,
+            1242.5,
+            1320,
+            1242.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 777,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "77_1_png.jpg"
+  }
+}

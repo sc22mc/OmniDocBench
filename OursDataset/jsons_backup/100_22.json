@@ -1,0 +1,170 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        450,
+        102.5,
+        1220,
+        102.5,
+        1220,
+        155,
+        450,
+        155
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            450,
+            102.5,
+            1220,
+            102.5,
+            1220,
+            155,
+            450,
+            155
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        825,
+        530,
+        1710,
+        530,
+        1710,
+        572.5,
+        825,
+        572.5
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "### **Table 11:** BoT's success reasoning process for \"4 5 10 11\".",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            825,
+            530,
+            1710,
+            530,
+            1710,
+            572.5,
+            825,
+            572.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        445,
+        657.4950000000001,
+        2092.5,
+        657.4950000000001,
+        2092.5,
+        2817.4449999999997,
+        445,
+        2817.4449999999997
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            445,
+            657.4950000000001,
+            2092.5,
+            657.4950000000001,
+            2092.5,
+            2817.4449999999997,
+            445,
+            2817.4449999999997
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "Experience obtained in Iteration 1 ######### The 1-th Reasoning Chain with Comments ######### Below is a reasoning chain containing reasoning steps presented in order: Step 1, Current set: 4 5 10 11, Selected two numbers: 4 5, Operation: \\*, Computed new number: 20, Remaining numbers: 10 11, New set: 20 10 11.. Evaluate Score: 0.7 Step 2, Current set: 20 10 11, Selected two numbers: 10 11, Operation: \\*, Computed new number: 110, Remaining numbers: 20, New set: 110 20.. Evaluate Score:  $0.7$ Step 3, Current set: 110 20, Selected two numbers: 110 20, Operation: /, Computed new number: 5.5, Remaining numbers: None, New set: 5.5.. Evaluate Score: 09 Analysis Report: This reasoning chain can complete the task and reach the target correctly by executing its reasoning steps. The final result is 5.5, which is mathematically equal to 24. Reasoning step 1: This step is a logical inference of the given numbers. The numbers 4 and 5 are selected from the current set, and the operation \\* is applied to obtain the new number 20. The remaining numbers are 10 and 11. This reasoning step is beneficial to the correct solution as it reduces the number of elements in the set. Reasoning step 2: This step is a logical inference of the previous step. The numbers 10 and 11 are selected from the current set, and the operation \\* is applied to obtain the new number 110. The remaining number is 20. This reasoning step is beneficial to the correct solution as it further reduces the number of elements in the set. Reasoning step 3: This step is a logical inference of the previous step. The numbers 110 and 20 are selected from the current set, and the operation / is applied to obtain the new number 5.5. There are no remaining numbers, which means the reasoning chain has reached the result. The final result of 5.5 is mathematically equal to 24. Advice: No errors were found in this reasoning chain. The steps are correctly executed and lead to the correct solution. Recommendation or Reject description: The reasoning chain is recommended as it successfully reaches the target and provides the correct solution. Confidence score: 0.9 \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_  $\\begin{tabular}{c} \\bf Experience obtained in Iteration~2 \\end{tabular}$ ######### The 2-th Reasoning Chain with Comments ######### Below is a reasoning chain containing reasoning steps presented in order: Step 1, Current set: 4 5 10 11, Selected two numbers: 4 10, Operation: \\*, Computed new number: 40, Remaining numbers: 5 11, New set: 40 5 11.. Evaluate Score: 0.9 Step 2, Current set: 40 5 11, Selected two numbers: 5 11, Operation: \\*, Computed new number: 55, Remaining numbers: 40, New set: 55 40.. Evaluate Score: 0.9 Step 1, Current set: 4 5 10 11, Selected two numbers: 4 10, Operation: \\*, Computed new number: 40, Remaining numbers: 5 11, New set: 40 5 11.. Evaluate Score: 0.9 Anlysis Report: This reasoning chain cannot complete the task and reach the target correctly. The reasoning steps are repetitive and do not lead to the desired result of  $24$ Reasoning step 1: This step is a logical inference of the given numbers and follows the rules of the game. Multiplying 4 and 10 gives 40, and the remaining numbers are 5 and 11. However, this step does not contribute to the correct solution of reaching 24. Reasoning step 2: This step is a repetition of step 1. It selects the remaining numbers 5 and 11 and multiplies them to get 55. The new set becomes 55 and 40. Again, this step does not lead to the target of  $24$ . Reasoning step 3: This step is a repetition of step 1. It does not provide any new information or progress towards the target. The result is the same as in step 1. Advice: The reasoning steps need to be revised and adjusted to find a different approach that leads to the target of 24. Repetitive steps will not help in reaching the correct solution. Recommendation or Reject description: The reasoning chain is rejected due to repetitive steps and lack of progress towards the target. Confidence score: 0.7 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,  $\\textbf{Experience obtained in Iteration 3}$ ######### The 3-th Reasoning Chain with Comments ######## Below is a reasoning chain containing reasoning steps presented in order. Step 1, Current set: 4 5 10 11, Selected two numbers: 4 5, Operation: +, Computed new number: 9, Remaining numbers: 10 11, New set: 9 10 11.. Evaluate Score:  $0.7$ Step 2, Current set: 9 10 11, Selected two numbers: 9 10, Operation: \\*, Computed new number: 90, Remaining numbers: 11, New set: 90 11.. Evaluate Score: 0.7 Step 3, Current set: 90 11, Selected two numbers: 90 11, Operation: J, Computed new number: 8.1818181818182, Remaining numbers: , New set: 8.1818181818182.. Evaluate Score: 0.7 Analysis Report: This reasoning chain cannot complete the task and reach the target correctly. The final result obtained in Step 3 is 8.181818181818182, which is not equal to the target number 24. Therefore, this reasoning chain is incorrect. Reasoning step 1: This step is a logical inference of the previous step. Two numbers, 4 and 5, are selected from the current set (4 5 10 11) and added together to obtain a new number, 9. The remaining numbers are 10 and 11, and the new set becomes 9 10 11. This step is beneficial to the correct solution as it combines two numbers and reduces the size of the set. Recommendation or Reject description: Recommend. Reasoning step 2: This step is a logical inference of the previous step. Two numbers, 9 and 10, are selected from the current set (9 10 11) and multiplied together to obtain a new number, 90. The remaining number is 11, and the new set becomes 90 11. This step is beneficial to the correct solution as it combines two n and reduces the size of the set. Recommendation or Reject description: Recommend. Reasoning step 3: This step is a logical inference of the previous step. Two numbers, 90 and 11, are selected from the current set (90 11) and divided to obtain a new number,  $\\frac{8.1818181818182. \\text{Since there are no remaining numbers, this is the final result. However, the obtained result is not equal to the target number 24. \\text{Error report: The reasoning step is incorrect as the obtained result is not equal to the target number.}$ Advice: Try different operations or combinations of numbers to obtain a result closer to the target number Confidence score: 0.7 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, To be continue in Table 12\n",
+      "latex": ""
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1247.5,
+        3122.45,
+        1290,
+        3122.45,
+        1290,
+        3172.45,
+        1247.5,
+        3172.45
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "22",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1247.5,
+            3122.45,
+            1290,
+            3122.45,
+            1290,
+            3172.45,
+            1247.5,
+            3172.45
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 14,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "100_22_png.jpg"
+  }
+}

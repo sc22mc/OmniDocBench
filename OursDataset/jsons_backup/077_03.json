@@ -1,0 +1,1078 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        424.9999999999999,
+        190,
+        2060,
+        190,
+        2060,
+        237.5,
+        424.9999999999999,
+        237.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Timewarp: Transferable Acceleration of Molecular Dynamics by Learning Time-Coarsened Dynamics",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            424.9999999999999,
+            190,
+            2060,
+            190,
+            2060,
+            237.5,
+            424.9999999999999,
+            237.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        225,
+        290,
+        1207.5,
+        290,
+        1207.5,
+        577.5,
+        225,
+        577.5
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": " normalising flows are a family of distributions defined by a base distribution (usually a standard Gaussian), and a *diffeomorphism*  $f$ , *i.e.* a differentiable bijection with a differentiable inverse. Specifically, we set  $p_{\\theta}(x(t+\\tau)|x(t))$  as the density of the distribution defined by the following generative process:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            225,
+            290,
+            1207.5,
+            290,
+            1207.5,
+            577.5,
+            225,
+            577.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        289.9999999999999,
+        625,
+        1102.5,
+        625,
+        1102.5,
+        752.5,
+        289.9999999999999,
+        752.5
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": " $$ z^{p}, z^{v} \\sim \\mathcal{N}(0, I) $$  $$ x^{p}(t+\\tau), x^{v}(t+\\tau) := f_{\\theta}(z^{p}, z^{v}; x^{p}(t), x^{v}(t)). $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            289.9999999999999,
+            625,
+            1102.5,
+            625,
+            1102.5,
+            752.5,
+            289.9999999999999,
+            752.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1150,
+        660,
+        1202.5,
+        660,
+        1202.5,
+        705,
+        1150,
+        705
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "(3)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1150,
+            660,
+            1202.5,
+            660,
+            1202.5,
+            705,
+            1150,
+            705
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        227.49999999999994,
+        787.5,
+        1207.5,
+        787.5,
+        1207.5,
+        1282.5,
+        227.49999999999994,
+        1282.5
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " Here  $z^p \\in \\mathbb{R}^{3N}$  and  $z^v \\in \\mathbb{R}^{3N}$ . For all settings of  $\\theta$  and   $x(t)$ ,  $f_{\\theta}(\\cdot; x(t))$  is a diffeomorphism that takes the latent  variables  $(z^p, z^v) \\in \\mathbb{R}^{6N}$  to  $(x^p(t+\\tau), x^v(t+\\tau)) \\in \\mathbb{R}^{6N}$ .  The conditioning state  $x(t)$  parameterises a family of diffeo-  morphisms, defining a *conditional* normalising flow (Winkler et al., 2019). Note that there are no invertibility con-  straints on the mapping from the conditioning state  $x(t)$  to  the output  $x(t + \\tau)$ , only the map from  $z$  to  $x(t + \\tau)$  must  be invertible. Using the change of variables formula, we can  evaluate  $p_{\\theta}(x(t+\\tau)|x(t))$  analytically as:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.49999999999994,
+            787.5,
+            1207.5,
+            787.5,
+            1207.5,
+            1282.5,
+            227.49999999999994,
+            1282.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        220,
+        1340,
+        1220,
+        1340,
+        1220,
+        1422.5,
+        220,
+        1422.5
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": " $$ \\mathcal{N}\\left(f_{\\theta}^{-1}(x(t+\\tau);x(t));0,I\\right)\\left|\\det \\mathcal{J}_{f_{\\theta}^{-1}(\\cdot;x(t))}(x(t+\\tau))\\right| $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            220,
+            1340,
+            1220,
+            1340,
+            1220,
+            1422.5,
+            220,
+            1422.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        232.49999999999994,
+        1460,
+        1212.5,
+        1460,
+        1212.5,
+        1630,
+        232.49999999999994,
+        1630
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": " where  $f_{\\theta}^{-1}(\\cdot;x(t)) : \\mathbb{R}^{6N} \\to \\mathbb{R}^{6N}$  is the inverse of the diffeomorphism  $f_{\\theta}(\\cdot;x(t))$ , and  $\\mathcal{J}_{f_{\\theta}^{-1}(\\cdot;x(t))}(x(t+\\tau))$  denotes the Jacobian of  $f_{\\theta}^{-1}(\\cdot ; x(t))$  evaluated at  $x(t + \\tau)$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            232.49999999999994,
+            1460,
+            1212.5,
+            1460,
+            1212.5,
+            1630,
+            232.49999999999994,
+            1630
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        227.50000000000006,
+        1687.5,
+        632.5,
+        1687.5,
+        632.5,
+        1730,
+        227.50000000000006,
+        1730
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": " ## 3.2. Dataset generation",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.50000000000006,
+            1687.5,
+            632.5,
+            1687.5,
+            632.5,
+            1730,
+            227.50000000000006,
+            1730
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        225,
+        1767.5,
+        1210,
+        1767.5,
+        1210,
+        2600,
+        225,
+        2600
+      ],
+      "ignore": false,
+      "order": 9,
+      "anno_id": 1,
+      "text": " We now describe the dataset used to train the flow. We generate MD trajectories by integrating Equation (2) using the *OpenMM* library (Eastman et al., 2017). We simulate small proteins (peptides) in implicit water, *i.e.*, without explicitly modelling the degrees of freedom of the water molecules. Specifically, we generate a dataset of trajectories  $D = {\\mathcal{T}_i}_{i=1}^P$ , where  $P$  is the number of peptides. For each peptide  $i$ , we generate an MD trajectory that is temporally sampled with a spacing of  $\\tau$ , so that  $\\mathcal{T}_i = (x(0), x(\\tau), x(2\\tau), ...)$ . During training, we randomly sample pairs  $x(t), x(t+\\tau)$  from  $D$ . Each pair represents a sample from the conditional distribution  $\\mu(x(t+\\tau)|x(t))$ . These samples are used as examples to train the parameters  $\\theta$  of the flow. Additional details are provided in Appendix D. Since the flow is trained on trajectory data from *multiple* peptides, we can deploy it at test time to generalise to *new* peptides not seen in the training data.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            225,
+            1767.5,
+            1210,
+            1767.5,
+            1210,
+            2600,
+            225,
+            2600
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        227.5,
+        2660,
+        832.5,
+        2660,
+        832.5,
+        2710,
+        227.5,
+        2710
+      ],
+      "ignore": false,
+      "order": 10,
+      "anno_id": 1,
+      "text": " ## 3.3. Augmented normalising flows",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.5,
+            2660,
+            832.5,
+            2660,
+            832.5,
+            2710,
+            227.5,
+            2710
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        225,
+        2747.5,
+        1210,
+        2747.5,
+        1210,
+        2985,
+        225,
+        2985
+      ],
+      "ignore": false,
+      "order": 11,
+      "anno_id": 1,
+      "text": " Typically in molecular simulations, we are primarily interested in the distribution of the *positions*  $x^p$ , rather than the velocities  $x^v$ . Thus, it is not necessary for  $x^v(t), x^v(t+\\tau)$  to represent the actual velocities of the atoms in Equation (3). We hence simplify the learning problem by treating  $x^v$  as",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            225,
+            2747.5,
+            1210,
+            2747.5,
+            1210,
+            2985,
+            225,
+            2985
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1272.5,
+        2597.5,
+        2257.5,
+        2597.5,
+        2257.5,
+        2987.5,
+        1272.5,
+        2987.5
+      ],
+      "ignore": false,
+      "order": "28",
+      "anno_id": 1,
+      "text": " Iterating these updates yields a sample  $X_m^p, X_m^v \\sim \\mu_{aug}$  as  $m \\to \\infty$ . To obtain a Boltzmann-distributed sample of the positions  $X_m^p \\sim \\mu$ , we simply discard the auxiliary variables  $X_m^v$ . In practice, sending  $m \\to \\infty$  is infeasible. Instead, we fix a computational budget and simulate the chain until the budget is reached. Algorithm 1 shows pseudocode for the MCMC procedure, using a *batch sampling* procedure for the proposals which significantly speeds up sampling.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1272.5,
+            2597.5,
+            2257.5,
+            2597.5,
+            2257.5,
+            2987.5,
+            1272.5,
+            2987.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1442.5,
+        2517.5,
+        2100,
+        2517.5,
+        2100,
+        2577.5,
+        1442.5,
+        2577.5
+      ],
+      "ignore": false,
+      "order": "26",
+      "anno_id": 1,
+      "text": " $$ (X_m^p, X_m^v) \\leftarrow (X_m^p, \\epsilon), \\quad \\epsilon \\sim \\mathcal{N}(0, I). $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1442.5,
+            2517.5,
+            2100,
+            2517.5,
+            2100,
+            2577.5,
+            1442.5,
+            2577.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2210,
+        2527.5,
+        2257.5,
+        2527.5,
+        2257.5,
+        2567.5,
+        2210,
+        2567.5
+      ],
+      "ignore": false,
+      "order": "27",
+      "anno_id": 1,
+      "text": "(8)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2210,
+            2527.5,
+            2257.5,
+            2527.5,
+            2257.5,
+            2567.5,
+            2210,
+            2567.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2205,
+        2152.5,
+        2255,
+        2152.5,
+        2255,
+        2190,
+        2205,
+        2190
+      ],
+      "ignore": false,
+      "order": "24",
+      "anno_id": 1,
+      "text": "(7)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2205,
+            2152.5,
+            2255,
+            2152.5,
+            2255,
+            2190,
+            2205,
+            2190
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2202.5,
+        1872.5,
+        2257.5,
+        1872.5,
+        2257.5,
+        1917.5,
+        2202.5,
+        1917.5
+      ],
+      "ignore": false,
+      "order": "21",
+      "anno_id": 1,
+      "text": "(6)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2202.5,
+            1872.5,
+            2257.5,
+            1872.5,
+            2257.5,
+            1917.5,
+            2202.5,
+            1917.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1280,
+        2252.5,
+        2257.5,
+        2252.5,
+        2257.5,
+        2495,
+        1280,
+        2495
+      ],
+      "ignore": false,
+      "order": "25",
+      "anno_id": 1,
+      "text": " The flow used for  $p_{\\theta}$  must allow for efficient sampling *and* exact likelihood evaluation, which is crucial for fast implementation of Equations [\\(5\\)](#Equations-5) and [\\(7\\)](#Equations-7). Additionally, after each MH step, we resample the auxiliary variables  $X^v$  using a Gibbs sampling update:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1280,
+            2252.5,
+            2257.5,
+            2252.5,
+            2257.5,
+            2495,
+            1280,
+            2495
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1385,
+        2102.5,
+        2140,
+        2102.5,
+        2140,
+        2242.5,
+        1385,
+        2242.5
+      ],
+      "ignore": false,
+      "order": "23",
+      "anno_id": 1,
+      "text": " $$ \\alpha(X,\\tilde{X}) = \\min\\left(1, \\frac{\\mu_{\\text{aug}}(\\tilde{X})p_{\\theta}(X | \\tilde{X}^{p})}{\\mu_{\\text{aug}}(X)p_{\\theta}(\\tilde{X} | X^{p})}\\right)  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1385,
+            2102.5,
+            2140,
+            2102.5,
+            2140,
+            2242.5,
+            1385,
+            2242.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1302.5,
+        1832.5000000000002,
+        2185,
+        1832.5000000000002,
+        2185,
+        1965.0000000000002,
+        1302.5,
+        1965.0000000000002
+      ],
+      "ignore": false,
+      "order": "20",
+      "anno_id": 1,
+      "text": " $$ X_{m+1} := \\begin{cases} \\tilde{X}_m & \\text{with probability } \\alpha(X_m, \\tilde{X}_m) \\\\ X_m & \\text{with probability } 1 - \\alpha(X_m, \\tilde{X}_m) \\end{cases}  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1302.5,
+            1832.5000000000002,
+            2185,
+            1832.5000000000002,
+            2185,
+            1965.0000000000002,
+            1302.5,
+            1965.0000000000002
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1275,
+        1997.5,
+        2265,
+        1997.5,
+        2265,
+        2085,
+        1275,
+        2085
+      ],
+      "ignore": false,
+      "order": "22",
+      "anno_id": 1,
+      "text": " where  $\\alpha(X_m, \\tilde{X}_m)$  is the *Metropolis-Hastings (MH)* acceptance ratio (Metropolis et al., 1953) targeting Equation (4):",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1275,
+            1997.5,
+            2265,
+            1997.5,
+            2265,
+            2085,
+            1275,
+            2085
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1347.5,
+        1757.5,
+        1652.5,
+        1757.5,
+        1652.5,
+        1830,
+        1347.5,
+        1830
+      ],
+      "ignore": false,
+      "order": "18",
+      "anno_id": 1,
+      "text": " $$ \\tilde{X}_m \\sim p_\\theta(\\,\\cdot\\,|X_m^p) $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1347.5,
+            1757.5,
+            1652.5,
+            1757.5,
+            1652.5,
+            1830,
+            1347.5,
+            1830
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1280,
+        1650,
+        2262.5,
+        1650,
+        2262.5,
+        1742.5,
+        1280,
+        1742.5
+      ],
+      "ignore": false,
+      "order": "17",
+      "anno_id": 1,
+      "text": " Let  $m$  index the states in the Markov chain. Starting from an initial state  $X_0 = (X_0^p, X_0^v) \\in \\mathbb{R}^{6N}$  at  $m = 0$ , we iterate:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1280,
+            1650,
+            2262.5,
+            1650,
+            2262.5,
+            1742.5,
+            1280,
+            1742.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1390,
+        1525,
+        2140,
+        1525,
+        2140,
+        1602.5,
+        1390,
+        1602.5
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": " $$ \\mu_{\\text{aug}}(x^p, x^v) \\propto \\exp\\left(-\\frac{U(x^p)}{k_B T}\\right) \\mathcal{N}(x^v; 0, I).  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1390,
+            1525,
+            2140,
+            1525,
+            2140,
+            1602.5,
+            1390,
+            1602.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2210,
+        1540,
+        2252.5,
+        1540,
+        2252.5,
+        1585,
+        2210,
+        1585
+      ],
+      "ignore": false,
+      "order": "16",
+      "anno_id": 1,
+      "text": "(4)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2210,
+            1540,
+            2252.5,
+            1540,
+            2252.5,
+            1585,
+            2210,
+            1585
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2207.5,
+        1775,
+        2250,
+        1775,
+        2250,
+        1812.5,
+        2207.5,
+        1812.5
+      ],
+      "ignore": false,
+      "order": "19",
+      "anno_id": 1,
+      "text": "(5)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2207.5,
+            1775,
+            2250,
+            1775,
+            2250,
+            1812.5,
+            2207.5,
+            1812.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1275,
+        1315,
+        2257.5,
+        1315,
+        2257.5,
+        1510,
+        1275,
+        1510
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": " Once the flow  $p_{\\theta}(x(t+\\tau)|x(t))$  has been trained, we use it as a proposal distribution in an MCMC method to target the joint distribution of the positions  $x^p$  and the auxiliary variables  $x^v$ , which has density:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1275,
+            1315,
+            2257.5,
+            1315,
+            2257.5,
+            1510,
+            1275,
+            1510
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1275,
+        1230,
+        2252.5,
+        1230,
+        2252.5,
+        1285,
+        1275,
+        1285
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": " ## 3.4. Targeting the Boltzmann distribution with MCMC",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1275,
+            1230,
+            2252.5,
+            1230,
+            2252.5,
+            1285,
+            1275,
+            1285
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1277.5,
+        292.5,
+        2262.5,
+        292.5,
+        2262.5,
+        1172.5,
+        1277.5,
+        1172.5
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": " non-physical auxiliary variables within the augmented nor*malising flow* framework (Huang et al., 2020). For each datapoint  $x(t) = x^p(t), x^v(t)$  in  $\\mathcal{D}$ , instead of obtaining  $x^v(t)$  by recording the velocities in the MD trajectory, we *discard* the MD velocity and independently draw  $x^v(t) \\sim \\mathcal{N}(0, I)$ . The auxiliary variables  $x^v(t)$  now contain no information about the future state  $x^p(t+\\tau), x^v(t+\\tau)$ , since  $x^v(t)$  and  $x^{v}(t+\\tau)$  are drawn independently. Hence we can simplify  $f_{\\theta}$  to depend only on  $x^p(t)$ , with  $x^p(t+\\tau), x^v(t+\\tau) :=$   $f_{\\theta}(z^p, z^v; x^p(t))$ . This raises the question of why auxiliary variables are necessary: we could instead directly model  $p_{\\theta}(x^p(t+\\tau)|x^p(t))$ , without the need for  $x^v$ . We include auxiliary variables for two reasons: First, they increase the expressivity of the distribution for  $x^p$  without a prohibitive increase in computational cost (Huang et al., 2020; Chen et al., 2020). Second, constructing a conditional flow that respects *permutation equivariance* is simplified with auxiliary variables — we discuss this in more detail in Section  $4.1$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1277.5,
+            292.5,
+            2262.5,
+            292.5,
+            2262.5,
+            1172.5,
+            1277.5,
+            1172.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 779,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "77_3_png.jpg"
+  }
+}

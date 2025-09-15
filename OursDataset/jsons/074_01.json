@@ -1,0 +1,888 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "title",
+            "poly": [
+                597.5,
+                467.5,
+                1947.5,
+                467.5,
+                1947.5,
+                572.5,
+                597.5,
+                572.5
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "# Convergence to the Equilibrium State in an Outbreak: When Can Growth Rates Accurately be Measured?",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        597.5,
+                        467.5,
+                        1947.5,
+                        467.5,
+                        1947.5,
+                        572.5,
+                        597.5,
+                        572.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                442.5,
+                632.4999999999999,
+                2107.5,
+                632.4999999999999,
+                2107.5,
+                1192.5,
+                442.5,
+                1192.5
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " $Adam \\ Mielke^*$   Dynamical Systems, Technical University of Denmark, Asmussens Allé, 303B, 2800 Kgs. Lyngby, Denmark  Lasse Engbo Christiansen<sup> $\\dagger$ </sup> Statens Serum Institut, Artillerivej 5, 2300 Copenhagen S, Denmark (Dated: February 3,  $2023$ )  We investigate sub-leading orders of the classic SEIR-model using contact matrices from modeling of the Omicron and Delta variants of COVID-19 in Denmark. The goal of this is to illustrate when the growth rate, and by extension the infectiousness, can be accurately measured in a new outbreak, e.g. after introduction of a new variant of a virus. We find that as long as susceptible depletion is a minor effect, the transients are gone within around 4 generations.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        442.5,
+                        632.4999999999999,
+                        2107.5,
+                        632.4999999999999,
+                        2107.5,
+                        1192.5,
+                        442.5,
+                        1192.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                545,
+                1282.5,
+                987.5,
+                1282.5,
+                987.5,
+                1320,
+                545,
+                1320
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " # I. INTRODUCTION",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        545,
+                        1282.5,
+                        987.5,
+                        1282.5,
+                        987.5,
+                        1320,
+                        545,
+                        1320
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "arxiv",
+            "poly": [
+                70,
+                872.5,
+                147.5,
+                872.5,
+                147.5,
+                2370,
+                70,
+                2370
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "arXiv:2302.01076v1 [q-bio.PE] 2 Feb 2023",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        70,
+                        872.5,
+                        147.5,
+                        872.5,
+                        147.5,
+                        2370,
+                        70,
+                        2370
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                297.5,
+                1402.5,
+                1240,
+                1402.5,
+                1240,
+                1727.5,
+                297.5,
+                1727.5
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": " The exponential growth regime of a stratified SEIR-model is well-described  $[1-3]$  where the growth rate is equal to the largest eigenvalue of the generator matrix. However, this requires the system to be in the corresponding eigenstate, which is rarely the case, as the introduction of a disease often comes from a few single individuals.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        297.5,
+                        1402.5,
+                        1240,
+                        1402.5,
+                        1240,
+                        1727.5,
+                        297.5,
+                        1727.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                290,
+                1760,
+                1245,
+                1760,
+                1245,
+                2375,
+                290,
+                2375
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " The non-exponential growth has significant consequences for estimate of infectiousness at the introduction of a new disease or variant, because the growth rate is commonly used here. It is therefore essential to understand when an outbreak actually follows the largest eigenvalue, and, by extension, when the Corrections to the exponential growth from other effects such as spatial spread have already been investigated  $[4, 14]$ , whereas this paper will focus on the convergence to the eigenstate. This is of particular interest when comparing the relative infectiousness of a emerging new variant versus existing variants, see for instance  $[15]$ .",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        290,
+                        1760,
+                        1245,
+                        1760,
+                        1245,
+                        2375,
+                        290,
+                        2375
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                287.5,
+                2392.5,
+                1245,
+                2392.5,
+                1245,
+                2590,
+                287.5,
+                2590
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": " We will be working in a stratified SEIR-model framework, which has been the basis of multiple efforts to predict the real-world spread of disease, especially in recent years  $[4-13]$ . That is, we start with",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        287.5,
+                        2392.5,
+                        1245,
+                        2392.5,
+                        1245,
+                        2590,
+                        287.5,
+                        2590
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1427.5,
+                2237.5,
+                2135,
+                2237.5,
+                2135,
+                2327.5,
+                1427.5,
+                2327.5
+            ],
+            "ignore": false,
+            "order": 16,
+            "anno_id": 1,
+            "text": " # II. TIME SCALE OF SOLUTION CONVERGENCE",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1427.5,
+                        2237.5,
+                        2135,
+                        2237.5,
+                        2135,
+                        2327.5,
+                        1427.5,
+                        2327.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1312.5,
+                2395,
+                2252.5,
+                2395,
+                2252.5,
+                2540,
+                1312.5,
+                2540
+            ],
+            "ignore": false,
+            "order": 17,
+            "anno_id": 1,
+            "text": " Given some initial condition  $\\phi(0)$ , where  $\\phi(t) = \\begin{pmatrix} E(t) \\\\ I(t) \\end{pmatrix}$ , we make the decomposition",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1312.5,
+                        2395,
+                        2252.5,
+                        2395,
+                        2252.5,
+                        2540,
+                        1312.5,
+                        2540
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1609.9999999999998,
+                2552.5,
+                1964.9999999999998,
+                2552.5,
+                1964.9999999999998,
+                2657.5,
+                1609.9999999999998,
+                2657.5
+            ],
+            "ignore": false,
+            "order": 18,
+            "anno_id": 1,
+            "text": " Given some initial condition  $\\phi(0)$ , where  $\\phi(t) = \\begin{pmatrix} E(t) \\\\ I(t) \\end{pmatrix}$ , we make the decomposition",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1609.9999999999998,
+                        2552.5,
+                        1964.9999999999998,
+                        2552.5,
+                        1964.9999999999998,
+                        2657.5,
+                        1609.9999999999998,
+                        2657.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2210,
+                2572.5,
+                2242.5,
+                2572.5,
+                2242.5,
+                2622.5,
+                2210,
+                2622.5
+            ],
+            "ignore": false,
+            "order": 19,
+            "anno_id": 1,
+            "text": "(2)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2210,
+                        2572.5,
+                        2242.5,
+                        2572.5,
+                        2242.5,
+                        2622.5,
+                        2210,
+                        2622.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2212.5,
+                2812.5,
+                2250,
+                2812.5,
+                2250,
+                2875,
+                2212.5,
+                2875
+            ],
+            "ignore": false,
+            "order": 22,
+            "anno_id": 1,
+            "text": "(3)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2212.5,
+                        2812.5,
+                        2250,
+                        2812.5,
+                        2250,
+                        2875,
+                        2212.5,
+                        2875
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1312.4999999999998,
+                2677.5,
+                2262.5,
+                2677.5,
+                2262.5,
+                2770,
+                1312.4999999999998,
+                2770
+            ],
+            "ignore": false,
+            "order": 20,
+            "anno_id": 1,
+            "text": " for small t, where  $\\hat{e}_j$  is the  $j'th$  eigenvector of the  $\\text{generator matrix}$ ",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1312.4999999999998,
+                        2677.5,
+                        2262.5,
+                        2677.5,
+                        2262.5,
+                        2770,
+                        1312.4999999999998,
+                        2770
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1555,
+                2785,
+                1977.5,
+                2785,
+                1977.5,
+                2900,
+                1555,
+                2900
+            ],
+            "ignore": false,
+            "order": 21,
+            "anno_id": 1,
+            "text": " $$ G = \\begin{pmatrix} -\\eta \\mathbf{1} & \\operatorname{diag}(S)\\beta \\\\ \\eta \\mathbf{1} & -\\gamma \\mathbf{1} \\end{pmatrix} \\ .  $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1555,
+                        2785,
+                        1977.5,
+                        2785,
+                        1977.5,
+                        2900,
+                        1555,
+                        2900
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1312.5,
+                1965,
+                2252.5,
+                1965,
+                2252.5,
+                2150,
+                1312.5,
+                2150
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": " We will start with some theoretical observations about time scales, and then we will illustrate the convergence with numerical solution of Equation  $(1)$ while comparing to the theoretical time scale.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1312.5,
+                        1965,
+                        2252.5,
+                        1965,
+                        2252.5,
+                        2150,
+                        1312.5,
+                        2150
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1310,
+                1627.5,
+                2257.5,
+                1627.5,
+                2257.5,
+                1962.5,
+                1310,
+                1962.5
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": "  The states  $S$ ,  $E$ ,  $I$ , and  $R$  represent the fraction of the population that are susceptible, exposed, infectious, and recovered respectively, and the parameters  $\\eta$  and  $\\gamma$  are rates for the incubation and infection states respectively. The matrix  $\\beta$  contains the contacts between each group, e.g. between age groups.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1310,
+                        1627.5,
+                        2257.5,
+                        1627.5,
+                        2257.5,
+                        1962.5,
+                        1310,
+                        1962.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1585,
+                1347.5,
+                1887.5,
+                1347.5,
+                1887.5,
+                1397.5,
+                1585,
+                1397.5
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " $$ \\dot{S} = -\\text{diag}(S)\\beta I $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1585,
+                        1347.5,
+                        1887.5,
+                        1347.5,
+                        1887.5,
+                        1397.5,
+                        1585,
+                        1397.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1582.5,
+                1412.5,
+                1960,
+                1412.5,
+                1960,
+                1472.5,
+                1582.5,
+                1472.5
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": " $$ \\dot{E} = \\text{diag}(S)\\beta I - \\eta E $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1582.5,
+                        1412.5,
+                        1960,
+                        1412.5,
+                        1960,
+                        1472.5,
+                        1582.5,
+                        1472.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1592.4999999999998,
+                1490,
+                1829.9999999999998,
+                1490,
+                1829.9999999999998,
+                1537.5,
+                1592.4999999999998,
+                1537.5
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": " $$ \\dot{I} = \\eta E - \\gamma I $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1592.4999999999998,
+                        1490,
+                        1829.9999999999998,
+                        1490,
+                        1829.9999999999998,
+                        1537.5,
+                        1592.4999999999998,
+                        1537.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1584.9999999999998,
+                1557.5,
+                1829.9999999999998,
+                1557.5,
+                1829.9999999999998,
+                1605,
+                1584.9999999999998,
+                1605
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": " $$ \\dot{R} = \\gamma I + \\sigma H $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1584.9999999999998,
+                        1557.5,
+                        1829.9999999999998,
+                        1557.5,
+                        1829.9999999999998,
+                        1605,
+                        1584.9999999999998,
+                        1605
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2195,
+                1445,
+                2250,
+                1445,
+                2250,
+                1502.5,
+                2195,
+                1502.5
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": "(1)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2195,
+                        1445,
+                        2250,
+                        1445,
+                        2250,
+                        1502.5,
+                        2195,
+                        1502.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1312.5000000000002,
+                1285,
+                2127.5,
+                1285,
+                2127.5,
+                1325,
+                1312.5000000000002,
+                1325
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " the following system of differential equations",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1312.5000000000002,
+                        1285,
+                        2127.5,
+                        1285,
+                        2127.5,
+                        1325,
+                        1312.5000000000002,
+                        1325
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                302,
+                2792,
+                542,
+                2792,
+                542,
+                2880,
+                302,
+                2880
+            ],
+            "ignore": false,
+            "order": 23,
+            "anno_id": 1,
+            "text": " $*$ admi@dtu.dk  $\\dagger$ lsec@ssi.dk",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        302,
+                        2792,
+                        542,
+                        2792,
+                        542,
+                        2880,
+                        302,
+                        2880
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 748,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "74_1_png.jpg"
+    }
+}

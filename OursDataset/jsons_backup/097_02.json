@@ -1,0 +1,432 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "figure",
+      "poly": [
+        258.0000000000001,
+        308,
+        2222,
+        308,
+        2222,
+        960,
+        258.0000000000001,
+        960
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            258.0000000000001,
+            308,
+            2222,
+            308,
+            2222,
+            960,
+            258.0000000000001,
+            960
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        204,
+        1026,
+        2278,
+        1026,
+        2278,
+        1104,
+        204,
+        1104
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "Figure 1. Overview of our method. Four coding patterns are applied to aperture plane during single exposure of image frame. Image and events are jointly used to reconstruct light field through convolutional neural network (CNN).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            204,
+            1026,
+            2278,
+            1026,
+            2278,
+            1104,
+            204,
+            1104
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        206,
+        1200,
+        1196,
+        1200,
+        1196,
+        1438,
+        206,
+        1438
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "show that our method can reconstruct light fields more accurately than several other imaging methods with a single exposure, and our method works successfully with our prototype camera in capturing real 3-D scenes with convincing visual quality.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            206,
+            1200,
+            1196,
+            1200,
+            1196,
+            1438,
+            206,
+            1438
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        199.99999999999994,
+        1460,
+        1194,
+        1460,
+        1194,
+        2034,
+        199.99999999999994,
+        2034
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "To the best of our knowledge, we are the first to investigate the combination of coded-aperture imaging and events in the context of computational light-field imaging. Our contribution is not limited to shortening the measurement time for a light field, but it enables us to go beyond the *limitation of the frame-rate* of image sensors; Our method can better utilize the time resource during a single exposure, and obtain more information per unit time (i.e., being timeefficient) than the baseline coded-aperture imaging method. Our method is also distinctive in the sense that events are induced actively by the camera's optics rather than the moving objects or ego-motion of the camera.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            199.99999999999994,
+            1460,
+            1194,
+            1460,
+            1194,
+            2034,
+            199.99999999999994,
+            2034
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        202,
+        2180,
+        1194,
+        2180,
+        1194,
+        2966,
+        202,
+        2966
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": "The most straight-forward approach to light-field acquisition is to construct an array of cameras [\\[8, 40, 51\\]](#page-8-0), which involves costly and bulky hardware. Lens-array-based cameras [\\[1, 2, 31, 32\\]](#page-8-0) gained popularity because a light field can be captured in a single shot. However, this type of camera has an intrinsic trade-off between the number of views and the spatial resolution of each view. Mask-based coded-imaging methods [\\[10, 14, 22, 26, 29, 30, 45, 47\\]](#page-8-0) have been developed to increase the efficiency of light-field acquisition. With coded-aperture imaging, two to four images, taken from a stationary camera with different aperture-coding patterns, are sufficient to computationally reconstruct a light field with  $8 \\times 8$  views in full-sensor resolution [\\[10, 14, 42\\]](#page-8-0). However, since several coded images need to be acquired in sequence, the lengthy measurement time remains an issue. Joint aperture-exposure",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202,
+            2180,
+            1194,
+            2180,
+            1194,
+            2966,
+            202,
+            2966
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1279.9999999999998,
+        2368,
+        2272,
+        2368,
+        2272,
+        2856,
+        1279.9999999999998,
+        2856
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "Single-view view synthesis (SVVS) [5–7, 19, 20, 34, 43, 44, 53, 55] is used to reconstruct a 3-D scene from a single image. Since this is geometrically an ill-posed problem, SVVS methods rely on implicit prior knowledge learned from the training dataset rather than physical cues. These methods are not necessarily designed to be physically accurate but to hallucinate a visually-plausible 3-D scene. Our method takes an orthogonal approach to SVVS; we use not only a single image but also a coded aperture and events to obtain solid physical cues from the target 3D scene.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1279.9999999999998,
+            2368,
+            2272,
+            2368,
+            2272,
+            2856,
+            1279.9999999999998,
+            2856
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1282,
+        2874,
+        2266,
+        2874,
+        2266,
+        2974,
+        1282,
+        2974
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "Various computational imaging methods have been developed on the basis of deep-optics [13, 14, 21, 28, 33,",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1282,
+            2874,
+            2266,
+            2874,
+            2266,
+            2974,
+            1282,
+            2974
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1284,
+        1662,
+        2270,
+        1662,
+        2270,
+        2348,
+        1284,
+        2348
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": "Event cameras  $[3, 9]$  are bio-inspired sensors that can record intensity changes asynchronously at each pixel with a very low latency. Compared with ordinary frame-based cameras, event cameras can capture more fine-grained temporal information in a higher dynamic range, which opens up many applications such as optical-flow estimation, deblurring, video interpolation, and camera pose estimation. Event cameras have also been used extensively for 3-D reconstruction [17, 24, 35, 37, 56, 57]. In these studies, however, the events were usually caused either by the moving objects or ego-motion of the camera. Our method can be regarded as a new application of an event camera; the events are induced actively by the camera's optics in the framework of computational imaging.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1284,
+            1662,
+            2270,
+            1662,
+            2270,
+            2348,
+            1284,
+            2348
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1286,
+        1206,
+        2270,
+        1206,
+        2270,
+        1644,
+        1286,
+        1644
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "coding [28, 41, 42, 46] enables more flexible coding patterns during a single exposure but comes with complicated hardware implementation; as far as we know, only Mizuno et al. [28] reported a working prototype for this method but with awkward hardware restrictions for the noncommercialized image sensor. Our method also applies several aperture-coding patterns during a single exposure, but we combine them with an off-the-shelf event camera to achieve time-efficient and accurate light-field acquisition.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1286,
+            1206,
+            2270,
+            1206,
+            2270,
+            1644,
+            1286,
+            1644
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        202.00000000000006,
+        2090,
+        578,
+        2090,
+        578,
+        2140,
+        202.00000000000006,
+        2140
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": "# 2. Related Works",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202.00000000000006,
+            2090,
+            578,
+            2090,
+            578,
+            2140,
+            202.00000000000006,
+            2140
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1226,
+        3118,
+        1324,
+        3118,
+        1324,
+        3158,
+        1226,
+        3158
+      ],
+      "ignore": false,
+      "order": 11,
+      "anno_id": 1,
+      "text": "24924",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1226,
+            3118,
+            1324,
+            3118,
+            1324,
+            3158,
+            1226,
+            3158
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 1005,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "97_2_png.jpg"
+  }
+}

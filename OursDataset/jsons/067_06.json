@@ -1,0 +1,356 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "plain_text",
+            "poly": [
+                372.5,
+                357.5,
+                2120,
+                357.5,
+                2120,
+                460,
+                372.5,
+                460
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": " the PnL on that cash account, but this is not done here in our formula, because it is dedicated to the asset under concern only.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        372.5,
+                        357.5,
+                        2120,
+                        357.5,
+                        2120,
+                        460,
+                        372.5,
+                        460
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                372.4999999999999,
+                485.0000000000001,
+                2112.5,
+                485.0000000000001,
+                2112.5,
+                1325,
+                372.4999999999999,
+                1325
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "## Remark 3.1 (An alternative definition implemented in SOPHIS)  One potential alternative to the presented formula (4) could be to replace each occurrence of  $\\chi_{u_i}$  in the last term with  $\\chi_T$ . Intuitively, this alternative has the appeal that  $\\chi_T$  can be factored out of the sum, and the remaining formula is totally FX-free within the asset's currency. Since this is what the front office system SOPHIS does in its column \"Result curr. global\", when the global currency is EUR, let us briefly comment on the implied change of meaning. When using  $\\chi_T$  always, the obtained PnL intuitively assumes that each received coupon amount  $c_u$  at some time u is held in cash (not on a bank account, and also not invested in some other asset) between  $u$  and  $T$ . Changes in the FX rate at later time points then induce significant PnL movements to cash amounts that have long left the position under consideration. For example, consider a bond that pays a high coupon rate, so a lot of cash leaves the asset over time. But if the FX rate  $\\chi$  sharply increases at time  $T$ , all these past cash amounts induce PnL, even though they might have been consumed or spent elsewhere already and should not induce PnL at  $T$  anymore.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        372.4999999999999,
+                        485.0000000000001,
+                        2112.5,
+                        485.0000000000001,
+                        2112.5,
+                        1325,
+                        372.4999999999999,
+                        1325
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                377.4999999999999,
+                1385,
+                2117.5,
+                1385,
+                2117.5,
+                2050,
+                377.4999999999999,
+                2050
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " The change of the carry PnL part is especially important, if one aggregates several assets to a portfolio and wishes to decompose the PnL of the whole portfolio. It is then well possible that an asset is bought or sold at some time point  $u$  in  $(t,T]$ . For instance, it could be that at time  $u$  one receives a coupon payment from one asset and uses it to purchase another asset, or it could be that additional money flows into (out of) the asset to increase (reduce) the holdings. In qualitative terms, this is similar to the aforementioned coupon cash outflows, because we have to deal with in- and outflows in our PnL measurement. In order to take such dynamic rebalancings of a whole portfolio  $P$  into account in the PnL decomposition, we recommend to split the time period  $(t, T]$  into several parts  $t =: t_0 < t_1 < \\ldots \\le t_n = T$ , where the  $t_i$  include **all** transaction dates of the portfolio, i.e. all dates at which an asset is either sold or bought. Then finally, we obtain the decomposition",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        377.4999999999999,
+                        1385,
+                        2117.5,
+                        1385,
+                        2117.5,
+                        2050,
+                        377.4999999999999,
+                        2050
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                622.5,
+                2082.5,
+                1595,
+                2082.5,
+                1595,
+                2332.5,
+                622.5,
+                2332.5
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " $$ P_{(t,T]}^{(P)} = \\underbrace{\\sum_{A \\in P} \\sum_{i=1}^{n-1} P_{(t_{i-1},t_i]}^{(A)}(\\chi)}_{P^{(P)}(\\cdot)} + \\underbrace{\\sum_{A \\in P} \\sum_{i=1}^{n-1} P_{(t_{i-1},t_i]}^{(A)}(r)}_{P^{(P)}(\\cdot)}  $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        622.5,
+                        2082.5,
+                        1595,
+                        2082.5,
+                        1595,
+                        2332.5,
+                        622.5,
+                        2332.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                922.5,
+                2342.5,
+                1870,
+                2342.5,
+                1870,
+                2590,
+                922.5,
+                2590
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " $$ =P_{(t,T)}^{(P)}(\\chi) $$  $$ =P_{(t,T)}^{(P)}(r) $$  $$ +\\underbrace{\\sum_{A \\in P} \\sum_{i=1}^{n-1} P_{(t_{i-1},t_i]}^{(A)}(x)}_{=P_{(t,T)}^{(P)}(x)} + \\underbrace{\\sum_{A \\in P} \\sum_{i=1}^{n-1} P_{(t_{i-1},t_i]}^{(A)}(carry)}_{=P_{(t,T)}^{(P)}(carry)}. $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        922.5,
+                        2342.5,
+                        1870,
+                        2342.5,
+                        1870,
+                        2590,
+                        922.5,
+                        2590
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2065,
+                2130,
+                2105,
+                2130,
+                2105,
+                2182.5,
+                2065,
+                2182.5
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "(5)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2065,
+                        2130,
+                        2105,
+                        2130,
+                        2105,
+                        2182.5,
+                        2065,
+                        2182.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2062.5,
+                2390,
+                2100,
+                2390,
+                2100,
+                2437.5,
+                2062.5,
+                2437.5
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "(6)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2062.5,
+                        2390,
+                        2100,
+                        2390,
+                        2100,
+                        2437.5,
+                        2062.5,
+                        2437.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                372.5000000000001,
+                2612.5,
+                2145,
+                2612.5,
+                2145,
+                2830,
+                372.5000000000001,
+                2830
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " For the computation of this decomposition, required is availability of  $\\chi_t$ ,  $A_t = A_t(r_t, \\lambda_t, x_t)$ ,  $r_t$ , and  $x_t$  at all time points  $t_0, ..., t_n$ , and for all assets *A* in the portfolio *P*, as well as pricing routines that implement the asset prices in dependence on given parameters *r*, and *x*.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        372.5000000000001,
+                        2612.5,
+                        2145,
+                        2612.5,
+                        2145,
+                        2830,
+                        372.5000000000001,
+                        2830
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1232.5,
+                2962.5,
+                1260,
+                2962.5,
+                1260,
+                3015,
+                1232.5,
+                3015
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "6",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1232.5,
+                        2962.5,
+                        1260,
+                        2962.5,
+                        1260,
+                        3015,
+                        1232.5,
+                        3015
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 687,
+        "height": 3508,
+        "width": 2481,
+        "image_path": "67_6_png.jpg"
+    }
+}

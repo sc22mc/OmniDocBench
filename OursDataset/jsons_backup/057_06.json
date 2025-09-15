@@ -1,0 +1,550 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "table",
+      "poly": [
+        205,
+        190,
+        2355,
+        190,
+        2355,
+        762.5,
+        205,
+        762.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            205,
+            190,
+            2355,
+            190,
+            2355,
+            762.5,
+            205,
+            762.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| Action | Id | Condition                                                              | Template                                                       | Example                                                 |\n|--------|----|------------------------------------------------------------------------|----------------------------------------------------------------|---------------------------------------------------------|\n| TAP    | 1  | $(obj_{text/caption} \\neq NULL) \\land (obj_{confid} > \\alpha)$         | Tap $[obj_{text}]$ $[obj_{class}]$                             | Tap \"OK\" button                                         |\n|        | 2  | $(obj_{text/caption} \\neq NULL) \\land (\\beta < obj_{confid} < \\alpha)$ | Tap $[obj_{text}]$ $[obj_{class}]$ at $[obj_{position}]$       | Tap \"menu\" icon at top left<br>corner                   |\n|        | 3  | $(obj_{text/caption} == NULL) \\lor (obj_{confid} < \\beta)$             | Tap the $[obj_{class}]$ $[nbr_{relation}]$ $[nbr_{text}]$      | Tap the checkbox next to \"Dark<br>Mode\"                 |\n| SCROLL | 4  | $obj_{text} \\neq NULL$                                                 | Scroll [direction] [offset] of the screen to $[obj_{text}]$    | Scroll down half of the screen<br>to \"Advanced Setting\" |\n|        | 5  | $obj_{text} == NULL$                                                   | Scroll [direction] [offset] of the screen                      | Scroll up a quarter of the screen                       |\n| INPUT  | 6  | $(obj_{text/caption} \\neq NULL) \\land (obj_{confid} > \\alpha)$         | Input $[text]$ in the $[obj_{text}]$ edittext                  | Input \"100\" in the \"Amount\"<br>edittext                 |\n|        | 7  | $(obj_{text} == NULL) \\lor (obj_{confid} < \\alpha)$                    | Input [text] in the edittext $[nbr_{relation}]$ $[nbr_{text}]$ | Input \"John\" in the edittext be-<br>low \"Name\"          |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        200,
+        800,
+        2352.5,
+        800,
+        2352.5,
+        885,
+        200,
+        885
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "TABLE I: Description template, where \"obj\" and \"nbr\" denote the GUI element and its neighbor,  $\\alpha$  and  $\\beta$  denote high- and low-confidence element.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            200,
+            800,
+            2352.5,
+            800,
+            2352.5,
+            885,
+            200,
+            885
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        327.5,
+        975,
+        1120,
+        975,
+        1120,
+        1790,
+        327.5,
+        1790
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            327.5,
+            975,
+            1120,
+            975,
+            1120,
+            1790,
+            327.5,
+            1790
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        387.5,
+        1830,
+        1062.5,
+        1830,
+        1062.5,
+        1882.5,
+        387.5,
+        1882.5
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "Fig. 7: Example of GUI understanding.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            387.5,
+            1830,
+            1062.5,
+            1830,
+            1062.5,
+            1882.5,
+            387.5,
+            1882.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        202.5,
+        2017.5,
+        1252.5,
+        2017.5,
+        1252.5,
+        2152.5,
+        202.5,
+        2152.5
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "and the \"None\" element at the *bottom*. Note that the \"Audio cue settings\" element is omitted due to large spacing, which is consistent with human viewing.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202.5,
+            2017.5,
+            1252.5,
+            2017.5,
+            1252.5,
+            2152.5,
+            202.5,
+            2152.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        200,
+        2190,
+        1252.5,
+        2190,
+        1252.5,
+        2635,
+        200,
+        2635
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": "2) Subtitle Creation: The main instruction of interest is to create a clear and concise subtitle description based on  $\\{action, object\\}$ . The global GUI information is further used to complement the description by  $\\{position, relationship\\}$ . Based on the *action* obtained in Section II-B, the attribute of *object* inferred in Section II-C, and the corresponding GUI element information retrieved in Section II-D1, we propose description templates for *TAP*, *SCROLL*, *INPUT*, respectively. A summary of description templates can be seen in Table I.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            200,
+            2190,
+            1252.5,
+            2190,
+            1252.5,
+            2635,
+            200,
+            2635
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        200,
+        2652.5,
+        1255,
+        2652.5,
+        1255,
+        2990,
+        200,
+        2990
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": "For  $TAP$  action, the goal of the description should be clear and concise, e.g., tap \"OK\" button. However, we find that this simple description may not articulate all TAP actions due to two reasons. First, the text and caption of *object* are prone to errors or undetected, as the OCR-obtained text and the captionobtained annotation are not 100% accurate. Second, there may be multiple *objects* with the same text on the GUI. To resolve ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            200,
+            2652.5,
+            1255,
+            2652.5,
+            1255,
+            2990,
+            200,
+            2990
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1295,
+        2745,
+        2347.5,
+        2745,
+        2347.5,
+        2990,
+        1295,
+        2990
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": "After generating the natural language description for each action clip, we embed the description into the recording as subtitles as shown in Fig. 6. In detail, we create the subtitles by using the Wand image annotation library [42] and synchronize the subtitle display at the beginning of each action clip.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1295,
+            2745,
+            2347.5,
+            2745,
+            2347.5,
+            2990,
+            1295,
+            2990
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1295,
+        2237.5,
+        2352.5,
+        2237.5,
+        2352.5,
+        2737.5,
+        1295,
+        2737.5
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": "The description of *INPUT* is similar to *TAP*. For the high-confidence *object* with text (Template 6), it generates: Input [*text*] in the  $[obj_{text}]$  edittext. Different from the *TAP* descriptions, we do not apply the context of absolute position to help locate the low-confidence *object*. This is because the objects are gathering at the top when the keyboard pops up, so the absolute positioning may not help. Instead, we use the relative position of *neighbor* to describe the input *object* of which text is not detected or recognized with low confidence (Template 7), e.g., Input \"John\" in the edittext below \"Name\".",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1295,
+            2237.5,
+            2352.5,
+            2237.5,
+            2352.5,
+            2737.5,
+            1295,
+            2737.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1290,
+        1877.5,
+        2347.5,
+        1877.5,
+        2347.5,
+        2222.5,
+        1290,
+        2222.5
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "It is easy to describe a SCROLL action by its scrolling direction and offset (Template 5), e.g., scroll up a quarter of the screen. However, such an offset description is not precise and intuitive. To address this, if a new element with text appears by scrolling, we add this context to help describe where to scroll to (Template 4), e.g., scroll down half of the screen to \"Advanced Setting\".",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1290,
+            1877.5,
+            2347.5,
+            1877.5,
+            2347.5,
+            2222.5,
+            1290,
+            2222.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1295,
+        1325,
+        2360,
+        1325,
+        2360,
+        1860,
+        1295,
+        1860
+      ],
+      "ignore": false,
+      "order": 11,
+      "anno_id": 1,
+      "text": "where  $OCR_{confid}$  denotes the confidence predicted by OCR. Note that the confidence value of icon *object* is calculated likewise by captioning. The smaller the confidence value, the less intuitive the *object* is. Therefore, only the *object* with the highest confidence value  $(obj_{confid} > \\alpha)$  will apply the simplest and most straightforward description (Template 1), otherwise, we add the context of absolute position to help locate the *object* (Template 2). For the *object* whose text is not detected or recognized with low confidence, we leverage the context of its *neighbor* to help locate the target *object* (Template 3), e.g., tap the checkbox next to \"Dark Mode\".",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1295,
+            1325,
+            2360,
+            1325,
+            2360,
+            1860,
+            1295,
+            1860
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1362.5000000000002,
+        1115,
+        2237.5,
+        1115,
+        2237.5,
+        1247.5,
+        1362.5000000000002,
+        1247.5
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "$$ obj\\_confid =  \\begin{cases}  OCR_{confid} & \\text{if } obj_{text} \\text{ is unique in GUI} \\\\ 0 & \\text{otherwise} \\end{cases} $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1362.5000000000002,
+            1115,
+            2237.5,
+            1115,
+            2237.5,
+            1247.5,
+            1362.5000000000002,
+            1247.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2307.5,
+        1162.5,
+        2355,
+        1162.5,
+        2355,
+        1200,
+        2307.5,
+        1200
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "(2)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2307.5,
+            1162.5,
+            2355,
+            1162.5,
+            2355,
+            1200,
+            2307.5,
+            1200
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1292.5,
+        995.0000000000001,
+        2230,
+        995.0000000000001,
+        2230,
+        1037.5,
+        1292.5,
+        1037.5
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "this, we set up an *object* confidence value  $obj_{confid}$  as:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1292.5,
+            995.0000000000001,
+            2230,
+            995.0000000000001,
+            2230,
+            1037.5,
+            1292.5,
+            1037.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 564,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "57_6_png.jpg"
+  }
+}

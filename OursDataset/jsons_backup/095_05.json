@@ -1,0 +1,660 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "plain_text",
+      "poly": [
+        242,
+        308,
+        1226,
+        308,
+        1226,
+        494,
+        242,
+        494
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "sult in residual issues. To address these, we use CDM's rendering techniques [41] to identify unrenderable elements. These elements are then reviewed and corrected by three researchers to ensure accuracy in the final annotations.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            242,
+            308,
+            1226,
+            308,
+            1226,
+            494,
+            242,
+            494
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        234,
+        622,
+        1230,
+        622,
+        1230,
+        862,
+        234,
+        862
+      ],
+      "ignore": false,
+      "order": "3",
+      "anno_id": 1,
+      "text": "Page Diversity. OmniDocBench comprises a total of 981 PDF pages across 9 distinct types. Each page is annotated with global attributes, including text language, column layout type, and indicators for blurred scans, watermarks, and colored backgrounds.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            234,
+            622,
+            1230,
+            622,
+            1230,
+            862,
+            234,
+            862
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        233.99999999999994,
+        876,
+        1228,
+        876,
+        1228,
+        1810.1399999999999,
+        233.99999999999994,
+        1810.1399999999999
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": "Annotation Diversity: OmniDocBench contains over  $100,000$  annotations for page detection and recognition: (1) More than 20,000 block-level annotations across 15 categories, including over 15,979 text paragraphs, 989 image boxes, 428 table boxes, and so on. All document components except headers, footers, and page notes are labeled with reading order information, totaling over  $16,000$  annotations.  $(2)$  The dataset also includes more than  $70,000$ span-level annotations across 4 categories, with  $4,009$  inline formulas and 357 footnote markers represented in LaTeX format, while the remaining annotations are in text format. Annotation Attribute Diversity: (1) Text Attributes: All block-level annotations, except for tables and images, include text attribute tags. In addition to standard Chinese and English text, there are over 2,000 blocks with complex backgrounds and 493 with rotated text. (2) *Table Attributes:* In addition to standard Chinese and English tables, there are 142 tables with complex backgrounds, 81 containing formulas, 150 with merged cells, and 7 vertical tables.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            233.99999999999994,
+            876,
+            1228,
+            876,
+            1228,
+            1810.1399999999999,
+            233.99999999999994,
+            1810.1399999999999
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        239.9999999999999,
+        1964,
+        1230,
+        1964,
+        1230,
+        2296,
+        239.9999999999999,
+        2296
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": "To provide a fair and comprehensive evaluation for various models, we proposed an end-to-end evaluation pipeline consisting of several modules, including extraction, matching algorithm, and metric calculation, as shown in Figure 4. It ensures that OmniDocBench automatically performs unified evaluation on document parsing, thereby producing reliable and effective evaluation results.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            239.9999999999999,
+            1964,
+            1230,
+            1964,
+            1230,
+            2296,
+            239.9999999999999,
+            2296
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        242,
+        2424,
+        1232,
+        2424,
+        1232,
+        2970,
+        242,
+        2970
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "Preprocessing. The model-generated markdown text should be preprocessed, which includes removing images, eliminating markdown tags at the beginning of the document, and standardizing the number of repeated characters. **Elements Extraction.** Extraction is primarily carried out using regular expression matching. To ensure that the extraction of elements does not interfere with each other, it is necessary to follow a specific order. The extraction sequence is as follows: LaTeX tables, HTML tables, display formulas, markdown tables (which are then converted into HTML format), and code blocks.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            242,
+            2424,
+            1232,
+            2424,
+            1232,
+            2970,
+            242,
+            2970
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1316,
+        2202,
+        2310,
+        2202,
+        2310,
+        2892,
+        1316,
+        2892
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": "Adjacency Search Match. To avoid the impact of paragraph splitting on the final results, we proposed Adjacency Search Match, that merges and splits paragraphs in both GTs and Preds to achieve the best possible match. The specific strategy involves: i) Calculate a metrix of Normalized Edit Distance between GTs and Preds. The Pred and GT pairs whose similarity exceeds a specific threshold are considered as successful match. ii) For the rest, we apply fuzzy matching to determine whether one string is a subset of another string. If so, we further apply the merging algorithm which would try to merge adjacent paragraph. This process would continue to merge more paragraph until the Normalized Edit Distance starts to decrease. After this process, the best match will be found for GTs and Preds.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1316,
+            2202,
+            2310,
+            2202,
+            2310,
+            2892,
+            1316,
+            2892
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1320.0000000000002,
+        1888.0000000000002,
+        2308,
+        1888.0000000000002,
+        2308,
+        2074,
+        1320.0000000000002,
+        2074
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": "**Reading Order Extraction.** Upon completion of the extraction, the start and end positions of the extracted content in the original markdown are recorded for subsequent reading order calculation.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1320.0000000000002,
+            1888.0000000000002,
+            2308,
+            1888.0000000000002,
+            2308,
+            2074,
+            1320.0000000000002,
+            2074
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1318,
+        1034,
+        2304,
+        1034,
+        2304,
+        1430,
+        1318,
+        1430
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": " Pure Text Extraction. After extracting special components, the remaining content is considered pure text. Paragraphs are separated by double line breaks, allowing them to participate in subsequent matching processes, thus aligning with reading order annotation units in the GTs. If no double line break exists, single line breaks are used for paragraph separation. Additionally, previously extracted code blocks are merged into the text category for processing.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1318,
+            1034,
+            2304,
+            1034,
+            2304,
+            1430,
+            1318,
+            1430
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1320.0000000000002,
+        1440,
+        2308,
+        1440,
+        2308,
+        1876,
+        1320.0000000000002,
+        1876
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "Inline Formula Format Converting. We standardized inline formulas within paragraphs to Unicode format. This was necessary because different models produce inconsistent outputs for inline formulas. For formulas originally written in Unicode, it is hard to extract them using regular expressions. Therefore, to ensure a fair comparison, we do not extract inline formulas for separate evaluation. Instead, we include them in their Unicode format alongside the text paragraphs for evaluation.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1320.0000000000002,
+            1440,
+            2308,
+            1440,
+            2308,
+            1876,
+            1320.0000000000002,
+            1876
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        1314,
+        290,
+        2316,
+        290,
+        2316,
+        920,
+        1314,
+        920
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1314,
+            290,
+            2316,
+            290,
+            2316,
+            920,
+            1314,
+            920
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        1458,
+        958,
+        2162,
+        958,
+        2162,
+        994,
+        1458,
+        994
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "Figure 4. OmniDocBench Evaluation Pipeline.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1458,
+            958,
+            2162,
+            958,
+            2162,
+            994,
+            1458,
+            994
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        240.00000000000006,
+        546,
+        660,
+        546,
+        660,
+        586,
+        240.00000000000006,
+        586
+      ],
+      "ignore": false,
+      "order": "2",
+      "anno_id": 1,
+      "text": "## 3.3. Dataset Statistics",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            240.00000000000006,
+            546,
+            660,
+            546,
+            660,
+            586,
+            240.00000000000006,
+            586
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        244,
+        1876,
+        1168,
+        1876,
+        1168,
+        1926,
+        244,
+        1926
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": "# 4. OmniDocBench Evaluation Methodology",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            244,
+            1876,
+            1168,
+            1876,
+            1168,
+            1926,
+            244,
+            1926
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        242,
+        2352,
+        534,
+        2352,
+        534,
+        2392,
+        242,
+        2392
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "## 4.1. Extraction",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            242,
+            2352,
+            534,
+            2352,
+            534,
+            2392,
+            242,
+            2392
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1318,
+        2126,
+        1806,
+        2126,
+        1806,
+        2166,
+        1318,
+        2166
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": " ## 4.2. Matching Algorithm",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1318,
+            2126,
+            1806,
+            2126,
+            1806,
+            2166,
+            1318,
+            2166
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1221.9999999999998,
+        3120,
+        1331.9999999999998,
+        3120,
+        1331.9999999999998,
+        3160,
+        1221.9999999999998,
+        3160
+      ],
+      "ignore": false,
+      "order": "17",
+      "anno_id": 1,
+      "text": "24842",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1221.9999999999998,
+            3120,
+            1331.9999999999998,
+            3120,
+            1331.9999999999998,
+            3160,
+            1221.9999999999998,
+            3160
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1368,
+        2932,
+        1786,
+        2932,
+        1786,
+        2968,
+        1368,
+        2968
+      ],
+      "ignore": false,
+      "order": "16",
+      "anno_id": 1,
+      "text": "<sup>4</sup>https://mathpix.com/",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1368,
+            2932,
+            1786,
+            2932,
+            1786,
+            2968,
+            1368,
+            2968
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 986,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "95_5_png.jpg"
+  }
+}

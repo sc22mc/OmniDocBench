@@ -1,0 +1,394 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        178.00000000000003,
+        130,
+        222.00000000000003,
+        130,
+        222.00000000000003,
+        164,
+        178.00000000000003,
+        164
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "192 ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            178.00000000000003,
+            130,
+            222.00000000000003,
+            130,
+            222.00000000000003,
+            164,
+            178.00000000000003,
+            164
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "header",
+      "poly": [
+        1034,
+        132,
+        2322,
+        132,
+        2322,
+        162,
+        1034,
+        162
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "IEEE TRANSACTIONS ON AGRIFOOD ELECTRONICS, VOL. 2, NO. 2, SEPTEMBER/OCTOBER 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1034,
+            132,
+            2322,
+            132,
+            2322,
+            162,
+            1034,
+            162
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        336,
+        272,
+        2156,
+        272,
+        2156,
+        1060,
+        336,
+        1060
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            336,
+            272,
+            2156,
+            272,
+            2156,
+            1060,
+            336,
+            1060
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        166,
+        1102,
+        2322,
+        1102,
+        2322,
+        1206,
+        166,
+        1206
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "Fig. 1. Schematic representation of the experimental setup with plants of both groups monitored using bioimpedance measurement. The portable impedance analyzer Analog Discovery 2 is connected to each plant through a multiplexer, synchronized by a Python script controlling the channel opening by an Arduino board.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            166,
+            1102,
+            2322,
+            1102,
+            2322,
+            1206,
+            166,
+            1206
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        163.9999999999999,
+        1308,
+        1226,
+        1308,
+        1226,
+        2598,
+        163.9999999999999,
+        2598
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "Natick, MA, USA). To reduce the dataset to a smaller set of interpretable variables, the bioimpedance data were fitted by the MATLAB Zfit script [\\[26\\]](#page-9-1) with the single dispersion Cole electrical model [\\[23\\]](#page-9-1) shown in Fig. s2 (see Supplementary material). Here, the best fitting was calculated using the real and the imaginary components of the bioimpedance spectra as input data and iterating different combinations of nine selected optimal initial conditions with a reasonable magnitude for the considered dataset ranges, evaluating the results in terms of root-mean-square error (RMSE). As result of the fitting, the equivalent circuit parameters (i.e., the series resistor  $R_s$ , parallel resistor  $R_p$ , magnitude component of the constant phase element  $CPE_t$ , and phase angle component of the constant phase element  $CPE_p$ ,) were extracted for each measurement. One-way ANOVA was performed to evaluate statistical differences among each circuit parameter for class discrimination (i.e., between control and iron-stressed plants). The Tukey's honestly significant difference (HSD) method was performed, and the differences were calculated for an appropriate level of interaction ( $p \\le 0.05$ ). Results were reported as the mean and standard deviation (SD) of the mean. The possible linear dependency between the obtained equivalent circuit parameters and the greenhouse environmental conditions during the experiment was investigated by studying the correlation of each circuit component with respect to RH, T, and light, calculating Pearson's correlation coefficient for each relationship [\\[27\\]](#page-9-1).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            163.9999999999999,
+            1308,
+            1226,
+            1308,
+            1226,
+            2598,
+            163.9999999999999,
+            2598
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        164.0000000000001,
+        2754,
+        1222,
+        2754,
+        1222,
+        3102,
+        164.0000000000001,
+        3102
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "The dataset to train the models was composed of the equivalent circuit parameters extracted for the measurement acquired in the temporal interval between the 5th of August and the 27th of August, labeling the data according to the respective group of the plant, either control or stress. In addition, the measurements collected from the iron-stressed plants were further divided into two classes, with data from the 5th of August to the 16th of ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            164.0000000000001,
+            2754,
+            1222,
+            2754,
+            1222,
+            3102,
+            164.0000000000001,
+            3102
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1266,
+        3012,
+        2320,
+        3012,
+        2320,
+        3106,
+        1266,
+        3106
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "The eight plants, divided between four plants exposed to the complete nutrient solution (i.e., control) and four plants with",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1266,
+            3012,
+            2320,
+            3012,
+            2320,
+            3106,
+            1266,
+            3106
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1268,
+        1324.0000000000002,
+        2324,
+        1324.0000000000002,
+        2324,
+        2852.0200000000004,
+        1268,
+        2852.0200000000004
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": "August labeled as in early stress while data referring to the measurements of the subsequent days (i.e., until 27th of August) indicated as late stress. Afterward, the obtained dataset was partitioned with an 80:20 ratio into train and test sets, to train and validate various machine learning classification models, including discriminant analysis (DA), kernel methods (KM),  $k$ -nearest neighbors (KNN), linear models (LM), naive Bayes classifier (NBC), multilayer perceptron (MLP), support vector machines (SVM), and decision trees (DT), using MATLAB's automatic toolbox *fitcauto* that allows the evaluation of the performance of different classification algorithms by automatically optimizing their hyperparameters. The different type of machine learning algorithms was employed due to their different characteristics, to evaluate the one with better performance in discriminating the fruit ripening. LR utilizes a logistic function to model a binary dependent variable, assuming a linear relationship between log-odds and predictors. DT are nonparametric, creating simple decision rules from data features, providing easily interpretable models but susceptible to overfitting. NBC assumes conditional independence of features given the class variable, offering speed and effectiveness in generating simple models. KNN assigns class membership based on similarity among samples, calculating distances to k nearest neighbors. SVM draw hyperplanes in feature space to maximize class separation. MLP is a simple feed-forward neural network capable of learning nonlinear models with at least three layers and nonlinear activation functions [28]. The robustness of the trained model was assessed by a subsequent 10 000-round bootstrapping validation phase together with a tenfold cross validation, evaluated on an equally distributed subset of data, and the accuracy of the obtained models was evaluated in terms of  $F_1$ -score.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1268,
+            1324.0000000000002,
+            2324,
+            1324.0000000000002,
+            2324,
+            2852.0200000000004,
+            1268,
+            2852.0200000000004
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1534,
+        2932.02,
+        2052,
+        2932.02,
+        2052,
+        2974.02,
+        1534,
+        2974.02
+      ],
+      "ignore": false,
+      "order": 9,
+      "anno_id": 1,
+      "text": "# III. RESULTS AND DISCUSSION",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1534,
+            2932.02,
+            2052,
+            2932.02,
+            2052,
+            2974.02,
+            1534,
+            2974.02
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        170,
+        2690.02,
+        826,
+        2690.02,
+        826,
+        2730.02,
+        170,
+        2730.02
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": "## D. Data Processing and Classification",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            170,
+            2690.02,
+            826,
+            2690.02,
+            826,
+            2730.02,
+            170,
+            2730.02
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 931,
+    "height": 3300,
+    "width": 2475,
+    "image_path": "90_3_png.jpg"
+  }
+}

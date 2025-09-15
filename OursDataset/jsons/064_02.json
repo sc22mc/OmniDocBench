@@ -1,0 +1,394 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                515.0000000000001,
+                182.50000000000003,
+                1985,
+                182.50000000000003,
+                1985,
+                235.00000000000003,
+                515.0000000000001,
+                235.00000000000003
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "QR-CLIP:Introducing Explicit Open-World Knowledge for Location and Time Reasoning",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        515.0000000000001,
+                        182.50000000000003,
+                        1985,
+                        182.50000000000003,
+                        1985,
+                        235.00000000000003,
+                        515.0000000000001,
+                        235.00000000000003
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                237.5,
+                282.5,
+                2247.5,
+                282.5,
+                2247.5,
+                1055,
+                237.5,
+                1055
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        237.5,
+                        282.5,
+                        2247.5,
+                        282.5,
+                        2247.5,
+                        1055,
+                        237.5,
+                        1055
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                229.9999999999999,
+                1057.5,
+                2265,
+                1057.5,
+                2265,
+                1197.5,
+                229.9999999999999,
+                1197.5
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " Figure 1. Comparisons of traditional computer vision tasks (*left*) with location and time reasoning ( $right$ ). It is clear that—instead of simple image color, texture, and object information—location and time reasoning requires more human experiences and knowledge  $(a.k.a.$ open-world knowledge).",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        229.9999999999999,
+                        1057.5,
+                        2265,
+                        1057.5,
+                        2265,
+                        1197.5,
+                        229.9999999999999,
+                        1197.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                232.49999999999994,
+                1282.5,
+                1210,
+                1282.5,
+                1210,
+                2067.5,
+                232.49999999999994,
+                2067.5
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "Regarding the Q-principle, we design the **Quantity** module: we utilize two techniques to improve the model to provide as much information as possible. For traditional transformerbased models (Kenton & Toutanova, 2019; Dosovitskiy et al., 2020), they use a single [CLS] to represent the input. Initially, we design additional [CLS] tokens that mimic different human perspectives on the same image. Since everyone has unique knowledge and experience, it is possible to gain a more comprehensive understanding of a given item by combining the knowledge of different individuals. This also inspires us to use each  $[CLS]_i$  to retrieve various useful open-world knowledge to aid predictions. Furthermore, motivated by current contrastive learning methods (Zhang et al.,  $2022$ ), we design the local and global loss for finetuning the CLIP model, ensuring our QR-CLIP is suitable for the tasks.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        232.49999999999994,
+                        1282.5,
+                        1210,
+                        1282.5,
+                        1210,
+                        2067.5,
+                        232.49999999999994,
+                        2067.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                230,
+                2107.5,
+                1215,
+                2107.5,
+                1215,
+                2702.5,
+                230,
+                2702.5
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "For the **Relevance** module, we design a scoring mechanism that weights the fusion of image and open-world knowledge embeddings. Like ordinary society, not all of the knowledge from individuals are correct. Thus our scoring mechanism is like an error correction tool to help the model select the most valuable information. It adaptively balances the different information and encourages the model to provide pertinent ones for location and time reasoning. Furthermore, the scoring mechanism balances vision and language knowledge, which means that when the quality of explicit OWK is poor, our scoring mechanism can focus more on original image features, greatly improving robustness.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        230,
+                        2107.5,
+                        1215,
+                        2107.5,
+                        1215,
+                        2702.5,
+                        230,
+                        2702.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                227.5,
+                2735,
+                1220,
+                2735,
+                1220,
+                2972.5,
+                227.5,
+                2972.5
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " The experiments indicate the strong abilities of our QR-CLIP model. Considering the accuracy (or Rank@1) achieves 19.31% (17.3% relative improvement compared to previous SOTA) on location reasoning, and 3.53% (253% relative improvement) on time reasoning.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        227.5,
+                        2735,
+                        1220,
+                        2735,
+                        1220,
+                        2972.5,
+                        227.5,
+                        2972.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1272.5,
+                1280,
+                2270,
+                1280,
+                2270,
+                1765,
+                1272.5,
+                1765
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": " Overall, our contributions can be categorized as:  - We design the **QR-CLIP**, which first investigates utilizing explicit open-world knowledge to help location and time reasoning. - Our method achieves an average of 17.3% / 253% relative lifts on location and time reasoning tasks compared to the previous SOTA. - In addition, the comprehensive experimental record will inspire the related field.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1272.5,
+                        1280,
+                        2270,
+                        1280,
+                        2270,
+                        1765,
+                        1272.5,
+                        1765
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1280,
+                1822.5,
+                1635,
+                1822.5,
+                1635,
+                1882.5,
+                1280,
+                1882.5
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " # 2. Related Work",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1280,
+                        1822.5,
+                        1635,
+                        1822.5,
+                        1635,
+                        1882.5,
+                        1280,
+                        1882.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1275,
+                1915,
+                1702.5,
+                1915,
+                1702.5,
+                1962.5,
+                1275,
+                1962.5
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " ## 2.1. Foundation Models",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1275,
+                        1915,
+                        1702.5,
+                        1915,
+                        1702.5,
+                        1962.5,
+                        1275,
+                        1962.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1277.5,
+                1997.5,
+                2265,
+                1997.5,
+                2265,
+                2992.5,
+                1277.5,
+                2992.5
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": " The emergence of foundation models is a relatively recent phenomenon (Bommasani et al., 2021), and has fundamentally altered the game rules of AI communities. They are commonly trained on a massive amount of unlabeled data at scale (typically via self-supervised learning (Radford et al., 2021)), making them adaptable to various downstream applications. Among these are popular models include GPT-3 (Brown et al., 2020) and PaLM (Chowdhery et al., 2022) as large language model, CLIP (Radford et al., 2021) and Flamingo (Alayrac et al., 2022) as vision-language model, Dall-E (Ramesh et al., 2021) and Stable Diffusion (Rombach et al., 2022) for text-to-image generation, GaTo (Reed et al.) as a generalist model, and ChatGPT (Ouyang et al., 2022) as human-like conversation agent, *etc.* This paper uses CLIP pre-trained with 400 million image-text pairs as baseline architecture. It learns excellent open-world knowledge and multi-modal representation by learning with such a large-scale corpus, making it ideal as the basic solution. Based on it, we made OR-CLIP to fit the location and time reasoning task.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1277.5,
+                        1997.5,
+                        2265,
+                        1997.5,
+                        2265,
+                        2992.5,
+                        1277.5,
+                        2992.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 657,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "64_2_png.jpg"
+    }
+}

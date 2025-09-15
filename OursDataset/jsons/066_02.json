@@ -1,0 +1,698 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "figure",
+            "poly": [
+                290,
+                300,
+                2267.5,
+                300,
+                2267.5,
+                1057.5,
+                290,
+                1057.5
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        290,
+                        300,
+                        2267.5,
+                        300,
+                        2267.5,
+                        1057.5,
+                        290,
+                        1057.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                225,
+                1077.5,
+                2337.5,
+                1077.5,
+                2337.5,
+                1162.5,
+                225,
+                1162.5
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": " Fig. 2: Basic decomposition scheme of the CA-WL for  $i_{\\text{max}}=3$  decomposition levels resulting in one BL and three ELs. Depending on the underlying motion in the original sequence, the local depth of the decomposition differs.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        225,
+                        1077.5,
+                        2337.5,
+                        1077.5,
+                        2337.5,
+                        1162.5,
+                        225,
+                        1162.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                222.4999999999999,
+                1215,
+                1245,
+                1215,
+                1245,
+                2307.5,
+                222.4999999999999,
+                2307.5
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " box in Fig. 1. In the first step, splitting is performed by decomposing the input signal into even- and odd-indexed frames  $l_{2t}$  and  $l_{2t-1}$ . In the second step, the even frames are predicted from the odd frames by a prediction operator  $\\mathcal{P}$ . Subtracting the predicted values  $\\mathcal{P}(l_{2t-1})$  from the even frames, results in the HP coefficients  $h_{2t}$ . In the third step, the HP coefficients are filtered by an update operator  $\\mathcal{U}$  and are added back to the odd frames, resulting in the LP coefficients. To get coarser temporal resolutions, the lifting scheme can be iterated on the LP subband by  $i_{\\text{max}} = \\log_2(T)$  decomposition levels, where  $T$  equals the total number of original frames.Since the lifting structure offers a flexible framework, it can be modified in multiple ways. By introducing rounding operators as introduced in [\\[8\\]](#page-8-1), integer to integer transforms can be achieved, which yield perfect reconstruction. This makes the lifting structure of the WT highly attractive for many professional applications by offering a scalable representation and lossless reconstruction at the same time. However, due to temporal displacements in the sequence, blurriness and ghosting artifacts will appear in the LP subband. These can be alleviated by incorporating MC methods directly into the lifting structure without losing the property of perfect reconstruction. This is called motion compensated temporal filtering (MCTF) [\\[9\\]](#page-8-1) and can be achieved by realizing the prediction operator  $\\mathcal{P}$  by the warping operator  $W_{2t-1\\rightarrow 2t}$ . Instead of the original odd frames, a compensated version is subtracted from the even frames. In case of the Haar wavelet filters, the prediction step is given by",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        222.4999999999999,
+                        1215,
+                        1245,
+                        1215,
+                        1245,
+                        2307.5,
+                        222.4999999999999,
+                        2307.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1312.5,
+                1227.5,
+                2337.5,
+                1227.5,
+                2337.5,
+                1560,
+                1312.5,
+                1560
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": " contrast medium, there will be parts, where almost no motion occurs over time. In this case, an adaptive temporal scaling is advantageous, which performs iteratively a further decomposition, if subsequent frames are similar enough. If there are no changes over several frames, they shall be represented by only one LP frame. For significant changes among subsequent frames, for example when the contrast medium gets visible, these changes shall be represented in the LP subband with finer temporal resolution.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1312.5,
+                        1227.5,
+                        2337.5,
+                        1227.5,
+                        2337.5,
+                        1560,
+                        1312.5,
+                        1560
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1315,
+                1570,
+                2335,
+                1570,
+                2335,
+                2217.5,
+                1315,
+                2217.5
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": " Fig. 2 shows the basic approach of our proposed content adaptive wavelet transform. Index  $i$  indicates the number of the current decomposition level. For  $i=0$ , no decomposition has been done so far, which corresponds to the original video sequence. In the first row, a schematic video sequence is given, which consists of three sections, each with a different amount of moving content. The corresponding amount of motion is described by the legend on the right side of Fig 2. While in this example the first decomposition is performed for the entire sequence, the second decomposition is performed only on the frames with no or low motion. The third decomposition is exclusively done on frames with no motion. The resulting BL and ELs are marked at the right side. Since the maximum decomposition level  $i_{\\text{max}}$  is equal to 3, three ELs are generated. By combining the ELs with the BL at the decoder side, the original sequence can be reconstructed step by step without any loss.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1315,
+                        1570,
+                        2335,
+                        1570,
+                        2335,
+                        2217.5,
+                        1315,
+                        2217.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                474.9999999999999,
+                2335,
+                994.9999999999999,
+                2335,
+                994.9999999999999,
+                2382.5,
+                474.9999999999999,
+                2382.5
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " $$ h_{2t} = l_{2t} - \\lfloor \\mathcal{W}_{2t-1 \\to 2t}(l_{2t-1}) \\rfloor.  $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        474.9999999999999,
+                        2335,
+                        994.9999999999999,
+                        2335,
+                        994.9999999999999,
+                        2382.5,
+                        474.9999999999999,
+                        2382.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                1202.5,
+                2340,
+                1237.5,
+                2340,
+                1237.5,
+                2377.5,
+                1202.5,
+                2377.5
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "(1)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1202.5,
+                        2340,
+                        1237.5,
+                        2340,
+                        1237.5,
+                        2377.5,
+                        1202.5,
+                        2377.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                224.9999999999999,
+                2412.5,
+                1247.5,
+                2412.5,
+                1247.5,
+                2545,
+                224.9999999999999,
+                2545
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " However, to achieve an equivalent wavelet transform, the compensation has to be inverted in the update step  $[10]$ . By reversing the index of  $W$ , the LP coefficients of the Haar transform can be calculated by",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        224.9999999999999,
+                        2412.5,
+                        1247.5,
+                        2412.5,
+                        1247.5,
+                        2545,
+                        224.9999999999999,
+                        2545
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                427.5,
+                2580,
+                1032.5,
+                2580,
+                1032.5,
+                2680,
+                427.5,
+                2680
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": " $$ l_{2t-1} = l_{2t-1} + \\left\\lfloor \\frac{1}{2} \\mathcal{W}_{2t \\to 2t-1}(h_{2t}) \\right\\rfloor. $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        427.5,
+                        2580,
+                        1032.5,
+                        2580,
+                        1032.5,
+                        2680,
+                        427.5,
+                        2680
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                1200,
+                2602.5,
+                1247.5,
+                2602.5,
+                1247.5,
+                2645,
+                1200,
+                2645
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "(2)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1200,
+                        2602.5,
+                        1247.5,
+                        2602.5,
+                        1247.5,
+                        2645,
+                        1200,
+                        2645
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                227.49999999999994,
+                2707.5,
+                1239.9999999999998,
+                2707.5,
+                1239.9999999999998,
+                2785,
+                227.49999999999994,
+                2785
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " $W$  can be realized by different approaches of MC. In this work, we will employ a block-based approach.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        227.49999999999994,
+                        2707.5,
+                        1239.9999999999998,
+                        2707.5,
+                        1239.9999999999998,
+                        2785,
+                        227.49999999999994,
+                        2785
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                335.0000000000001,
+                2840,
+                1140,
+                2840,
+                1140,
+                2885,
+                335.0000000000001,
+                2885
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": " # 3. CONTENT ADAPTIVE WAVELET LIFTING",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        335.0000000000001,
+                        2840,
+                        1140,
+                        2840,
+                        1140,
+                        2885,
+                        335.0000000000001,
+                        2885
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                224.9999999999999,
+                2937.5,
+                1245,
+                2937.5,
+                1245,
+                3020,
+                224.9999999999999,
+                3020
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": " Considering video sequences from surveillance systems or medical data sets, which comprise a temporal acquisition of images with ",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        224.9999999999999,
+                        2937.5,
+                        1245,
+                        2937.5,
+                        1245,
+                        3020,
+                        224.9999999999999,
+                        3020
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1310,
+                2712.5,
+                2332.5,
+                2712.5,
+                2332.5,
+                3012.5,
+                1310,
+                3012.5
+            ],
+            "ignore": false,
+            "order": 18,
+            "anno_id": 1,
+            "text": "  holds, then the child nodes shall be pruned from the tree. Here,  $C(\\cdot)$  describes a cost functional, which represents the coding costs, such as entropy [11] or rate-distortion [12]. In this work, every decomposition level is performed for the entire input sequence in advance, before a retrospective evaluation of the resulting costs is done. Further, we decided to use a rate-distortion-based approach for calculating the coding costs. Therefore, we formulate the Lagrangian cost",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1310,
+                        2712.5,
+                        2332.5,
+                        2712.5,
+                        2332.5,
+                        3012.5,
+                        1310,
+                        3012.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "isolate_formula",
+            "poly": [
+                1470,
+                2622.5,
+                2172.5,
+                2622.5,
+                2172.5,
+                2692.5,
+                1470,
+                2692.5
+            ],
+            "ignore": false,
+            "order": 16,
+            "anno_id": 1,
+            "text": " $$ \\mathcal{C}(s_{i,[2t-1,2t]}) \\leq (\\mathcal{C}(s_{i+1,2t-1}) \\cup \\mathcal{C}(s_{i+1,2t}))  $$",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1470,
+                        2622.5,
+                        2172.5,
+                        2622.5,
+                        2172.5,
+                        2692.5,
+                        1470,
+                        2692.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "formula_caption",
+            "poly": [
+                2290,
+                2630,
+                2335,
+                2630,
+                2335,
+                2677.5,
+                2290,
+                2677.5
+            ],
+            "ignore": false,
+            "order": 17,
+            "anno_id": 1,
+            "text": "(3)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        2290,
+                        2630,
+                        2335,
+                        2630,
+                        2335,
+                        2677.5,
+                        2290,
+                        2677.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1320,
+                2275,
+                1992.5,
+                2275,
+                1992.5,
+                2315,
+                1320,
+                2315
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": " ## 3.1. Calculation of the Stopping Criterion",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1320,
+                        2275,
+                        1992.5,
+                        2275,
+                        1992.5,
+                        2315,
+                        1320,
+                        2315
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1315,
+                2342.5,
+                2330,
+                2342.5,
+                2330,
+                2592.5,
+                1315,
+                2592.5
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": " Haar WTs can be represented with tree structures [4]. For 3-D SBC, the tree structure is given by decomposing two subsequent frames into LP and HP frames. To realize the CA-WL, the costs of the single nodes in every tree have to be considered. If the combined costs of the child nodes exceed the costs of the parent node, this means for an arbitrary signal  $s$ , if",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1315,
+                        2342.5,
+                        2330,
+                        2342.5,
+                        2330,
+                        2592.5,
+                        1315,
+                        2592.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 676,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "66_2_png.jpg"
+    }
+}

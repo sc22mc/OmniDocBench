@@ -1,0 +1,736 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "figure",
+      "poly": [
+        208,
+        298,
+        1174,
+        298,
+        1174,
+        732,
+        208,
+        732
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            208,
+            298,
+            1174,
+            298,
+            1174,
+            732,
+            208,
+            732
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        384,
+        784,
+        1014,
+        784,
+        1014,
+        828,
+        384,
+        828
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "Figure 2. Network architecture of RecNet",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            384,
+            784,
+            1014,
+            784,
+            1014,
+            828,
+            384,
+            828
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        204,
+        922,
+        1192,
+        922,
+        1192,
+        1016,
+        204,
+        1016
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": " and  $a^{(3)}$ , respectively. In line 9, we compute an event stack from the consecutive coded-aperture images as",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            204,
+            922,
+            1192,
+            922,
+            1192,
+            1016,
+            204,
+            1016
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        230,
+        1054,
+        1074,
+        1054,
+        1074,
+        1186,
+        230,
+        1186
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "$$ E_{x,y}^{(n,n+1)} = Q\\left(\\frac{\\log(I_{x,y}^{(n+1)} + \\epsilon) - \\log(I_{x,y}^{(n)} + \\epsilon)}{\\tau + n_{x,y}}\\right)  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            230,
+            1054,
+            1074,
+            1054,
+            1074,
+            1186,
+            230,
+            1186
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1128,
+        1104,
+        1186,
+        1104,
+        1186,
+        1144,
+        1128,
+        1144
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "(12)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1128,
+            1104,
+            1186,
+            1104,
+            1186,
+            1144,
+            1128,
+            1144
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        210,
+        1234,
+        1198,
+        1234,
+        1198,
+        1716,
+        210,
+        1716
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": "where  $Q(x) := \\text{sign}(x) \\text{floor}(|x|)$  is a quantization operator, and  $\\epsilon = 0.01$  w.r.t. the intensity range of [0, 1] for  $I^{(n)}$  and  $I^{(n+1)}$ . To account for the randomness of the sensor, a zero- means Gaussian noise n with  $\\sigma = 0.021$  is added to the contrast threshold  $\\tau$ . Equation (12) follows a widely used event simulator [\\[36\\]](#page-9-1), but we implement it as being differentiable. Following previous studies [\\[14, 28, 42\\]](#page-9-1), we also add a zero-means Gaussian noise ( $\\sigma = 0.005$  w.r.t. the normalized intensity range [0, 1]) to the image frame  $\\overline{I}$  to account for the measurement noise.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            210,
+            1234,
+            1198,
+            1234,
+            1198,
+            1716,
+            210,
+            1716
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        202,
+        1728,
+        1200,
+        1728,
+        1200,
+        2466,
+        202,
+        2466
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": "A challenging issue with Eq.  $(12)$  is how to determine the contrast threshold  $\\tau$ . When the imaging process is computationally simulated, a smaller  $\\tau$  is better. This is because a smaller  $\\tau$  leads to a more fine-grained observation (a larger number of events), which in turn results in more accurate light-field reconstruction. However, it is difficult to determine a specific  $\\tau$  that is compatible with a real event camera (e.g., a DAVIS 346 camera) the  $\\tau$  of which cannot be controlled in an explicit (direct) manner. With our experimental configuration, we empirically estimate  $\\tau \\simeq 0.15$ , but it depends on the configuration. To address this issue, we treat  $\\tau$ as being variable, which makes the model of Eq.  $(12)$  more flexible. Specifically, we randomly draw  $\\tau$  from  $[0.075, 0.3]$ for each batch during training, which enables the algorithm to be independent of a specific  $\\tau$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202,
+            1728,
+            1200,
+            1728,
+            1200,
+            2466,
+            202,
+            2466
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        206,
+        2482,
+        1196,
+        2482,
+        1196,
+        2972,
+        206,
+        2972
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": "**RecNet.** Since network architectures are not the main focus of this paper, we used a plain network architecture consisting of a sequence of 2-D convolutional layers. The data obtained from the camera ( $\\bar{I}, E^{(1,2)}, E^{(2,3)}$ , and  $E^{(3,4)}$  stacked along the channel dimension) are fed to RecNet; the output from RecNet is a tensor with 64 channels corresponding to 64 views of the reconstructed light field (see Fig. 2 for more details). Similar architectures were used in previous works [\\[14, 42\\]](#page-9-1), achieving a good balance between the reconstruction quality and computational cost.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            206,
+            2482,
+            1196,
+            2482,
+            1196,
+            2972,
+            206,
+            2972
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1282,
+        2124,
+        2272,
+        2124,
+        2272,
+        2410,
+        1282,
+        2410
+      ],
+      "ignore": false,
+      "order": "16",
+      "anno_id": 1,
+      "text": "Our hardware setup is shown in Fig. 3. The optical system consists of a Nikon Rayfact lens (25 mm F1.4 SF2514MC), set of relay optics, beam splitter, and LCoS display (Forth Dimension Displays, SXGA-3DM,  $1280 \\times 1024$  pixels). We use an iniVation DAVIS 346 monochrome camera that can acquire both events and image frames with  $346 \\times 260$  pixels.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1282,
+            2124,
+            2272,
+            2124,
+            2272,
+            2410,
+            1282,
+            2410
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1290.0000000000002,
+        2422,
+        2272,
+        2422,
+        2272,
+        2856,
+        1290.0000000000002,
+        2856
+      ],
+      "ignore": false,
+      "order": "17",
+      "anno_id": 1,
+      "text": "We use the central portion of the LCoS display ( $1024 \\times 1024$  pixels) as the effective aperture area, and divide it into  $8 \\times 8$  regions (each with  $128 \\times 128$  pixels) to display the coding patterns (each with  $8 \\times 8$  elements). Four coding patterns,  $a^{(1)}$ ,  $a^{(2)}$ ,  $a^{(3)}$ , and  $a^{(4)}$ , are repeatedly displayed, each with a 5.0 msec duration. According to the hardware's document, the total time for each coding pattern ( $T_c$ ) takes 5.434 msec including the overhead time. The exposure time for an image frame  $\\bar{I}$  is set to  $4T_c \\; (\\simeq 22 \\; {\\rm msec}^3)$  to cover a ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1290.0000000000002,
+            2422,
+            2272,
+            2422,
+            2272,
+            2856,
+            1290.0000000000002,
+            2856
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1284,
+        1915.9999999999998,
+        2274,
+        1915.9999999999998,
+        2274,
+        2011.9999999999998,
+        1284,
+        2011.9999999999998
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": "where  $\\lambda$  is a non-negative weight. The threshold  $\\theta$  can be computed from the camera's throughput (events per sec.).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1284,
+            1915.9999999999998,
+            2274,
+            1915.9999999999998,
+            2274,
+            2011.9999999999998,
+            1284,
+            2011.9999999999998
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1280,
+        1208,
+        2280,
+        1208,
+        2280,
+        1792,
+        1280,
+        1792
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "As mentioned earlier, we use the reconstruction loss between the original and reconstructed light fields. However, this is insufficient in some cases. The learned patterns sometimes have significantly different brightness (the brightness of  $a^{(n)}$  is given as  $\\sum_{u,v} a_{u,v}^{(n)}$ ), which causes too many events spreading over all the pixels. These coding patterns are useless with a real event camera because such a large number of events cannot be recorded correctly due to the limited throughput of the camera. To avoid this problem, we optionally add the second term to the loss function to suppress the number of events in each batch  $(N_{\\text{event}})$  below a pre-defined threshold  $(\\theta)$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1280,
+            1208,
+            2280,
+            1208,
+            2280,
+            1792,
+            1280,
+            1792
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1284,
+        553.9999999999999,
+        2272,
+        553.9999999999999,
+        2272,
+        1190,
+        1284,
+        1190
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "Training and loss function. AcqNet and RecNet are implemented using PyTorch 2.0 and jointly trained on the BasicLFSR dataset [23]. We extract 29,327 training samples, each with  $64 \\times 64$  pixels and  $8 \\times 8$  views, from 144 light fields designated for training. The disparities among the neighboring viewpoints are mostly limited within  $[-3, 3]$ pixels. This is suitable for our method because the  $8 \\times 8$ viewpoints are arranged on the small aperture plane of the camera, which results in limited disparities among the viewpoints. We use the built-in Adam optimizer with default parameters and train the entire network over 600 epochs with a batch size of 16. The scale parameter  $s$  is initialized as 1 and multiplied by  $1.02$  for each epoch.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1284,
+            553.9999999999999,
+            2272,
+            553.9999999999999,
+            2272,
+            1190,
+            1284,
+            1190
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1284,
+        304,
+        2270,
+        304,
+        2270,
+        542,
+        1284,
+        542
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "Our plain architecture can be used for other imaging methods with minimal modifications (only by changing the number of channels for the input layer), which makes the comparison easier. Exploration for better network architectures is left as future work.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1284,
+            304,
+            2270,
+            304,
+            2270,
+            542,
+            1284,
+            542
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1356,
+        1830,
+        2126,
+        1830,
+        2126,
+        1884,
+        1356,
+        1884
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "$$ \\text{Loss} = \\text{MSE}(L, \\hat{L}) + \\lambda \\cdot \\text{max}(N_{\\text{event}} - \\theta, 0)  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1356,
+            1830,
+            2126,
+            1830,
+            2126,
+            1884,
+            1356,
+            1884
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2200,
+        1835.9999999999998,
+        2264,
+        1835.9999999999998,
+        2264,
+        1875.9999999999998,
+        2200,
+        1875.9999999999998
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": "(13)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2200,
+            1835.9999999999998,
+            2264,
+            1835.9999999999998,
+            2264,
+            1875.9999999999998,
+            2200,
+            1875.9999999999998
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1288,
+        2894,
+        2276,
+        2894,
+        2276,
+        2970,
+        1288,
+        2970
+      ],
+      "ignore": false,
+      "order": "18",
+      "anno_id": 1,
+      "text": "$^{3}$ This is shorter than those in some previous studies; the exposure time of a coded-aperture camera was set to 40 msec [14, 38] and 68 msec [28].",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1288,
+            2894,
+            2276,
+            2894,
+            2276,
+            2970,
+            1288,
+            2970
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1220,
+        3116,
+        1326,
+        3116,
+        1326,
+        3158,
+        1220,
+        3158
+      ],
+      "ignore": false,
+      "order": "19",
+      "anno_id": 1,
+      "text": "24927",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1220,
+            3116,
+            1326,
+            3116,
+            1326,
+            3158,
+            1220,
+            3158
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1282,
+        2040,
+        1566,
+        2040,
+        1566,
+        2088,
+        1282,
+        2088
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": "## 3.4. Hardware",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1282,
+            2040,
+            1566,
+            2040,
+            1566,
+            2088,
+            1282,
+            2088
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 1008,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "97_5_png.jpg"
+  }
+}

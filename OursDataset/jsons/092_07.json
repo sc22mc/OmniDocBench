@@ -1,0 +1,508 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                174,
+                132,
+                220,
+                132,
+                220,
+                164,
+                174,
+                164
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "466 ",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        174,
+                        132,
+                        220,
+                        132,
+                        220,
+                        164,
+                        174,
+                        164
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "header",
+            "poly": [
+                1034,
+                134,
+                2318,
+                134,
+                2318,
+                168,
+                1034,
+                168
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": " IEEE TRANSACTIONS ON AGRIFOOD ELECTRONICS, VOL. 2, NO. 2, SEPTEMBER/OCTOBER 2024",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1034,
+                        134,
+                        2318,
+                        134,
+                        2318,
+                        168,
+                        1034,
+                        168
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                162.0000000000001,
+                260,
+                1224,
+                260,
+                1224,
+                910,
+                162.0000000000001,
+                910
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "0.6 V. After a startup time of around two weeks, OCV sharply increased at about 100 mV per day, indicating that the bacteria colony was starting to thrive. Our reactors produced power for about three weeks after the initial OCV spike. During this period, the maximum recorded OCV was 0.84 V. Water was added whenever OCV started decreasing; after about two days, OCV was recovered. It could be because wet soils favor ionic movement and thus reduce the cell's internal resistance. At the end of the three weeks, OCV dropped and stopped recovering after watering. We noticed the weakened mint plants had died, eventually leading to bacteria starvation. This confirmed the importance of selecting a plant that thrives in marshy soil for longer power production windows.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        162.0000000000001,
+                        260,
+                        1224,
+                        260,
+                        1224,
+                        910,
+                        162.0000000000001,
+                        910
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                174,
+                1064,
+                1226,
+                1064,
+                1226,
+                2052,
+                174,
+                2052
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": " To operate from lower input voltages, dc/dc converters feature a low efficiency *cold start* circuit, which is responsible for charging the storage element at a voltage level needed to bootstrap a more efficient main converter. Because of the lower conversion efficiency of the cold start circuit (5% versus 90% for the BQ25505), the input power  $P_{\\text{IN, MIN}}$  needed to balance out the leakage at the storage element is higher during the cold start with respect to normal operation. If a PMFC cannot supply  $P_{\\text{PMFC}} \\geq P_{\\text{IN, MIN}}$ , cold start is not overcome, and the storage element cannot be charged.  $P_{\\text{IN, MIN}}$  largely depends on capacitor self-discharge current, which increases with rated capacitance, and on loads connected to the dc/dc output during cold start. To ensure both cold start overcoming and node energetic autonomy, we find the largest capacitor  $C_{\\text{MAX}}$  we can charge with the maximum  $P_{\\text{PMFC}}$  we can extract, using low-leakage capacitor technology. The tested capacitors are reported in Table I. We also remove all unnecessary loads from the dc/dc output during cold start, as explained in Section III-C2.  $C_{\\text{MAX}}$  poses a limit to the maximum energy we can draw during an *uninterruptible task*, which is something to keep in mind during system design.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        174,
+                        1064,
+                        1226,
+                        1064,
+                        1226,
+                        2052,
+                        174,
+                        2052
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                170,
+                2066,
+                1224,
+                2066,
+                1224,
+                3101.96,
+                170,
+                3101.96
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "For the purpose of correctly setting MPP to estimate  $C_{\\text{MAX}}$ , we set out to first experimentally find the FOCV value corresponding to the PMFC's MPP, then to validate our OCV sampling strategy (see Sections II and III-C2) with the FOCV found in the previous step. To recover the PMFC's MPP, we imposed a varying fraction of the steady-state OCV as MPP set-point to the dc/dc, bypassing the dc/dc's OCV measurement, and considered as MPP the fraction of OCV which yielded fastest capacitor charging. We selected a small 47  $\\mu$ F storage capacitor for this test  $(C_1, \\text{ Table I})$  to reduce recovery times in between tests. To ensure a steady state was reached in between tests, we unloaded the cell for 15 min and verified that the OCV recovered to the initial value of 800 mV. We swept most of the PMFC's P/V curve by executing eight tests with varying FOCV as MPP set-point (20% OCV to 90% OCV). Results are shown in Fig. 5: fastest capacitor charging, and thus MPP, is provided by a FOCV of 50%. We then validated the need for an external OCV sampling circuit for efficient PMFC MPP set-point recovery. As shown in Fig. 4-left, we can see that the dc/dc's internal OCV sampling is not ideal for PMFCs. In fact, the OCV measurements, marked with black arrows, gradually",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        170,
+                        2066,
+                        1224,
+                        2066,
+                        1224,
+                        3101.96,
+                        170,
+                        3101.96
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1270,
+                2108,
+                2318,
+                2108,
+                2318,
+                2952,
+                1270,
+                2952
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": "We then moved on to retrieving the  $C_{MAX}$  value for our test reactor at its MPP. Our small-sized cells could fully charge a 30 mF capacitor (3 10 mF caps in parallel,  $C_3$ , Table I). Tests with  $C_4$ ,  $C_5$  failed, even though nominal leakage is comparable to  $C_3$ 's: this could be ascribed to dielectric absorption. This effect is more marked in electrostatic double-layer capacitors ( $C_4$ ,  $C_5$ ) than in electrolytic capacitors ( $C_1$ ,  $C_2$ ,  $C_3$ ), and it determines a leakage current that takes hours or even days to settle down to its datasheet value.<sup>2</sup> Since the application requires the PMFC to overcome cold start with a 1 F capacitor, such as  $C_5$  (see Section IV), we will implement power output scaleup strategies, such as increasing reactor size and stacking multiple PMFCs together. The latter strategy has been proven to be effective, as a serial-parallel connection of three PMFCs was used to cold start an 8 F capacitor [10]. We leave these aspects for future work, as the scope of this article is to highlight the possibility of biosensing and energy harvesting on the same PMFC electrodes.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1270,
+                        2108,
+                        2318,
+                        2108,
+                        2318,
+                        2952,
+                        1270,
+                        2952
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1268,
+                1561.9999999999998,
+                2316,
+                1561.9999999999998,
+                2316,
+                2100,
+                1268,
+                2100
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": "stray away from the actual OCV (dotted line). Because of this, the operating point moves away from the intended set point, and the power input drops. Finally, we compared the dc/dc's charging speed when setting 50% FOCV MPP using the BQ's internal OCV sampling and then using the external OCV sampling. We charged an example 470  $\\mu$ F capacitor ( $C_2$ , Table I) and considered the fastest charging method to be most efficient at setting the actual MPP. Fig. 4-right confirms that the proposed external OCV sampling method ensures much faster charging when the main boost is active and actively polarizing the PMFC at its set-point MPP.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1268,
+                        1561.9999999999998,
+                        2316,
+                        1561.9999999999998,
+                        2316,
+                        2100,
+                        1268,
+                        2100
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                1262,
+                1378,
+                2320,
+                1378,
+                2320,
+                1490,
+                1262,
+                1490
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "Fig. 5. 47  $\\mu$ F C<sub>1</sub> capacitor (see Table I) charging curve with varying FOCV settings. Setting OCV to be 50% of the measured OCV voltage yields the fastest charging.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1262,
+                        1378,
+                        2320,
+                        1378,
+                        2320,
+                        1490,
+                        1262,
+                        1490
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                1272,
+                944,
+                2306,
+                944,
+                2306,
+                1336,
+                1272,
+                1336
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1272,
+                        944,
+                        2306,
+                        944,
+                        2306,
+                        1336,
+                        1272,
+                        1336
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                1278,
+                282.00000000000006,
+                2302,
+                282.00000000000006,
+                2302,
+                640,
+                1278,
+                640
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1278,
+                        282.00000000000006,
+                        2302,
+                        282.00000000000006,
+                        2302,
+                        640,
+                        1278,
+                        640
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                1266,
+                678,
+                2322,
+                678,
+                2322,
+                902,
+                1266,
+                902
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "Fig. 4. On the left, we verify that the BQ's integrated OCV measurement for FOCV MPPT is too fast for PMFC dynamics, as the OCV does not recover to its true value during measurements. On the right, we verify that a 470  $\\mu$ F capacitor  $(C_2 \\text{ Table I})$  charges faster with our OCV sampling method with respect to the dc/dc's integrated OCV measurement method, given the same MPP FOCV fraction (MPP 50% OCV).",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1266,
+                        678,
+                        2322,
+                        678,
+                        2322,
+                        902,
+                        1266,
+                        902
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1266,
+                3022,
+                2320,
+                3022,
+                2320,
+                3102,
+                1266,
+                3102
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": "<sup>2</sup>White Paper: Testing Super-Capacitors, Gamry Instruments, rev. 2.1–5/31/2018. [Online]. Available: <https://www.gamry.com>",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1266,
+                        3022,
+                        2320,
+                        3022,
+                        2320,
+                        3102,
+                        1266,
+                        3102
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                169.9999999999999,
+                998,
+                1220,
+                998,
+                1220,
+                1038,
+                169.9999999999999,
+                1038
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "## B. Cold-Start Performance of Active PMFC and MPPT Policy",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        169.9999999999999,
+                        998,
+                        1220,
+                        998,
+                        1220,
+                        1038,
+                        169.9999999999999,
+                        1038
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 953,
+        "height": 3300,
+        "width": 2475,
+        "image_path": "92_7_png.jpg"
+    }
+}

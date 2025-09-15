@@ -1,0 +1,356 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                432.5000000000001,
+                192.5,
+                2065,
+                192.5,
+                2065,
+                230,
+                432.5000000000001,
+                230
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": " Timewarp: Transferable Acceleration of Molecular Dynamics by Learning Time-Coarsened Dynamics",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        432.5000000000001,
+                        192.5,
+                        2065,
+                        192.5,
+                        2065,
+                        230,
+                        432.5000000000001,
+                        230
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                242.5,
+                270,
+                1210,
+                270,
+                1210,
+                732.5,
+                242.5,
+                732.5
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        242.5,
+                        270,
+                        1210,
+                        270,
+                        1210,
+                        732.5,
+                        242.5,
+                        732.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                230,
+                840,
+                1217.5,
+                840,
+                1217.5,
+                1065,
+                230,
+                1065
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " Figure 4. Experiments on 2AA test dipeptides QW (top row) and HT (bottom row). (a) TICA plots for a long MD chain and samples generated with the Timewarp MCMC algorithm (Algorithm 1). (b) Free energy comparison for the MD trajectory, Timewarp MCMC (Algorithm 1), and Timewarp exploration (Algorithm 2).",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        230,
+                        840,
+                        1217.5,
+                        840,
+                        1217.5,
+                        1065,
+                        230,
+                        1065
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                1280,
+                887.5,
+                2265,
+                887.5,
+                2265,
+                1387.5,
+                1280,
+                1387.5
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": " Figure 5. Speed-up factors in terms of ESS/s ratios for the slowest TICA component for the Timewarp MCMC and exploration algorithms, compared to MD. The dashed red line shows a speed-up factor of one. Gray areas depict peptides where Timewarp fails to explore all meta-stable states within 20 million steps, but MD does. Green areas depict peptides where MD fails to find all metastable states, but Timewarp does. (a), (b) Speed-up for the Timewarp MCMC algorithm (Algorithm 1) on test dipeptides (2AA) and tetrapeptides (4AA), respectively. (c), (d) Speed-up for the Timewarp exploration algorithm (Algorithm 2) on test dipeptides  $(2AA)$ and tetrapeptides  $(4AA)$ , respectively.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1280,
+                        887.5,
+                        2265,
+                        887.5,
+                        2265,
+                        1387.5,
+                        1280,
+                        1387.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                1272.5,
+                267.5,
+                2255,
+                267.5,
+                2255,
+                790,
+                1272.5,
+                790
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1272.5,
+                        267.5,
+                        2255,
+                        267.5,
+                        2255,
+                        790,
+                        1272.5,
+                        790
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                227.5,
+                1180,
+                1210,
+                1180,
+                1210,
+                1867.5,
+                227.5,
+                1867.5
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " experiments and results can be found in Appendix B. We train three flow models on three datasets: (i)  $AD$ , consisting of simulations of alanine dipeptide, (ii)  $2AA$ , with peptides with 2 amino acids, and (iii) 4AA, with peptides with 4 amino acids. All datasets are created with MD simulations performed with the same parameters (see Table 1 and Appendix D). For AD, we do not test transferability as there is only a single molecule. For 2AA and 4AA, we train on a randomly selected trainset of peptides, and evaluate on unseen test peptides. The relative frequencies of the amino acids in 2AA and 4AA are similar across the splits. For 4AA, the training set consists of about  $1\\%$  of the total number of possible tetrapeptides  $(20^4)$ , making the generalisation task significantly more difficult than for 2AA.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        227.5,
+                        1180,
+                        1210,
+                        1180,
+                        1210,
+                        1867.5,
+                        227.5,
+                        1867.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                227.5,
+                1947.5,
+                1220,
+                1947.5,
+                1220,
+                2987.5,
+                227.5,
+                2987.5
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": " Alanine dipeptide (AD) We first investigate alanine dipeptide, a small (22 atoms) single peptide molecule commonly used to benchmark MD software. We train Timewarp on AD as described in Section 5 and sample new states using Algorithm 1 for a chain length of 10 million, accepting roughly  $2\\%$  of the proposals. In Figure 3a we visualise the samples using a Ramachandran plot (Ramachandran et al., 1963), which shows the distribution of the backbone dihedral angles  $\\varphi$  and  $\\psi$ . Each mode in the plot represents a metastable state. We see that the Timewarp samples closely match MD, visiting all the metastable states with the correct relative weights. In Figure 3b we plot the free energy (*i.e.*, the relative log probability) of the  $\\varphi$  and  $\\psi$ angles, again showing close agreement. The roughness in the plot is due to some regions of state space having very few samples. In Figure 3c we show, for an initial state  $x(t)$ , the conditional distribution of MD obtained by integrating Equation (2),  $\\mu(x(t+\\tau)|x(t))$ , compared with the model  $p_{\\theta}(x(t+\\tau)|x(t))$ , demonstrating close agreement. Finally, Figure 3d shows the time-evolution of the  $\\varphi$  angle for MD and Timewarp. Timewarp exhibits significantly more tran-",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        227.5,
+                        1947.5,
+                        1220,
+                        1947.5,
+                        1220,
+                        2987.5,
+                        227.5,
+                        2987.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1277.5,
+                1745,
+                2265,
+                1745,
+                2265,
+                2990,
+                1277.5,
+                2990
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " **Dipeptides (2AA)** Next, we demonstrate transferability on dipeptides in 2AA. After training on the train dipeptides, we deploy Timewarp with Algorithm 1 on the test dipeptides for a chain length of 20 million. Timewarp achieves acceptance probabilities between  $0.03\\%$  and  $2\\%$  and explores all metastable states (Appendix [B.1](#B.1)). The results are shown for the dipeptides QW and HT in Figure 4, showing close agreement between Timewarp and long MD chains (1  $\\mu$ s =  $2 \\times 10^9$  timesteps). For these dipeptides, Timewarp achieves ESS/s speed-up factors over MD of 5 and 33 respectively (Appendix [B.4](#B.4)). In Figure 5, Left, we show the speed-up factors for Timewarp *versus* MD for each of the 100 test dipeptides. Timewarp provides a median speed-up factor of about five across these peptides. In addition, we generate samples with the Timewarp model without the MH correction as detailed in Section 3.5. We sample 100 parallel chains for only 10000 steps starting from the same initial state for each test peptide. For each peptide we select *only one* of these chains that finds all meta-stable states for evaluations. As before, we compute the ESS/s to compare with MD, showing a median speedup factor of  $\\approx 600$  (Figure 5c). Note that the actual speedup when using all the chains sampled in parallel will be much larger. Timewarp exploration leads to free energy estimates that are qualitatively similar to MD, but less accurate than Timewarp MCMC (Figure 4b).",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1277.5,
+                        1745,
+                        2265,
+                        1745,
+                        2265,
+                        2990,
+                        1277.5,
+                        2990
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1275,
+                1487.5,
+                2257.5,
+                1487.5,
+                2257.5,
+                1680,
+                1275,
+                1680
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " sitions between the metastable states than MD. As a result, the autocorrelation along the  $\\varphi$  angle decays much faster in terms of wall-clock time, resulting in a  $\\approx 7 \\times$  speed-up in terms of ESS/s compared to MD (see Appendix  $B.4$ ).",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1275,
+                        1487.5,
+                        2257.5,
+                        1487.5,
+                        2257.5,
+                        1680,
+                        1275,
+                        1680
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 783,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "77_7_png.jpg"
+    }
+}

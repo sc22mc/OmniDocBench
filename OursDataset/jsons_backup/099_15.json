@@ -1,0 +1,436 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        448.00000000000006,
+        114,
+        1230,
+        114,
+        1230,
+        150,
+        448.00000000000006,
+        150
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448.00000000000006,
+            114,
+            1230,
+            114,
+            1230,
+            150,
+            448.00000000000006,
+            150
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        514,
+        338,
+        2044,
+        338,
+        2044,
+        1084,
+        514,
+        1084
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            514,
+            338,
+            2044,
+            338,
+            2044,
+            1084,
+            514,
+            1084
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| scenario                   | train | test | scenario                    | train | test | scenario                      | train | test |\n|----------------------------|-------|------|-----------------------------|-------|------|-------------------------------|-------|------|\n| others                     | 317   | 79   | writing_cooking_recipe      | 40    | 11   | classification_identification | 24    | 6    |\n| functional_writing         | 128   | 32   | explaining_code             | 40    | 10   | language_polishing            | 22    | 4    |\n| brainstorming              | 90    | 24   | writing_legal_document      | 40    | 10   | chitchat                      | 22    | 7    |\n| seeking_advice             | 88    | 25   | asking_how_to_question      | 40    | 10   | writing_product_description   | 20    | 5    |\n| open_question              | 77    | 20   | writing_presentation_script | 38    | 10   | data_analysis                 | 18    | 5    |\n| explaining_general         | 66    | 17   | writing_social_media_post   | 38    | 10   | writing_marketing_materials   | 17    | 5    |\n| instructional_rewriting    | 58    | 15   | question_generation         | 38    | 10   | note_summarization            | 17    | 4    |\n| verifying_fact             | 49    | 13   | planning                    | 38    | 10   | paraphrasing                  | 17    | 5    |\n| analyzing_general          | 49    | 13   | writing_blog_post           | 36    | 9    | writing_technical_document    | 17    | 5    |\n| title_generation           | 48    | 12   | writing_job_application     | 36    | 10   | text_simplification           | 16    | 5    |\n| code_generation            | 48    | 12   | writing_personal_essay      | 36    | 10   | information_extraction        | 16    | 2    |\n| roleplay                   | 47    | 12   | value_judgement             | 35    | 9    | writing_biography             | 16    | 4    |\n| rejecting                  | 45    | 12   | code_to_code_translation    | 32    | 9    | text_correction               | 12    | 6    |\n| creative_writing           | 45    | 12   | writing_advertisement       | 31    | 8    | reading_comprehension         | 12    | 3    |\n| exam_question_without_math | 44    | 12   | writing_email               | 30    | 8    | keywords_extraction           | 12    | 3    |\n| writing_song_lyrics        | 44    | 11   | recommendation              | 29    | 8    | topic_modeling                | 10    | 3    |\n| text_to_text_translation   | 43    | 11   | ranking                     | 28    | 8    | writing_scientific_paper      | 10    | 3    |\n| text_summarization         | 43    | 12   | counterfactual              | 26    | 7    | peer_review                   | 7     | 2    |\n| code_correction_rewriting  | 43    | 11   | exam_question_with_math     | 24    | 4    | code_simplification           | 6     | 2    |\n| math_reasoning             | 41    | 12   | writing_news_article        | 24    | 6    | overll                        | 2383  | 623  |",
+      "latex": ""
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        446,
+        1120,
+        2110,
+        1120,
+        2110,
+        1208,
+        446,
+        1208
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "Table 7: The scenario distribution in the training and test set for scenario classifier, note that \"rejecting\" and \"peer\\_review\" are two early-defined scenarios that have been removed by us.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            446,
+            1120,
+            2110,
+            1120,
+            2110,
+            1208,
+            446,
+            1208
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        439.9999999999999,
+        1404,
+        2108,
+        1404,
+        2108,
+        1698,
+        439.9999999999999,
+        1698
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": "In this section we describe in detail the training process of the scenario classifier mentioned in  $\\S 3.2$ .  We model the scenario classification task as a generation task. The classifier are required to generate only the scenario name when given the query, with the prompt as \"Identify the scenario for the user's query, output 'default' if you are uncertain.\\n\\nQuery:\\n\\n{input}\\n\\nScenario:\" (the \"default\" scenario in the prompt is the early naming for \"others\" scenario).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            439.9999999999999,
+            1404,
+            2108,
+            1404,
+            2108,
+            1698,
+            439.9999999999999,
+            1698
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        444,
+        1728,
+        1174,
+        1728,
+        1174,
+        1774,
+        444,
+        1774
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": "In general, the training involves three steps:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            444,
+            1728,
+            1174,
+            1728,
+            1174,
+            1774,
+            444,
+            1774
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        542,
+        1818,
+        2104,
+        1818,
+        2104,
+        2352,
+        542,
+        2352
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "- 1. We first brainstorm about 10 seed queries for each scenario with the help of ChatGPT, and train a model that can directly output the scenario name when given a query as a conditional generation task on this small synthetic dataset. - 2. Using the trained model, we conducted an initial classification for queries in Chatbot Arena Conversations and ShareGPT<sup>4</sup> as they cover much more scenarios than other datasets. Based on this preliminary classification, we randomly select up to 50 queries from each scenario for a secondary manual validation, involving data cleaning and correcting misclassified labels. - 3. We combine the newly-collected dataset and the small synthetic dataset in step 1, and retrain our final classifier. We divide queries in each scenario in an 8:2 train/test split (Tab. 7). The accuracy and F1 of the final classifier on test set are 72.55 and 74.12, respectively.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            542,
+            1818,
+            2104,
+            1818,
+            2104,
+            2352,
+            542,
+            2352
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        449.99999999999966,
+        2404,
+        2104,
+        2404,
+        2104,
+        2680,
+        449.99999999999966,
+        2680
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "Our scenario classifier is trained from LLaMA-2-13B (Touvron et al., 2023b), and we set the max sequence length as  $2,048$ , and the max length for query as  $2,048-50=1,998$  both in training and inference. If a query  $Q$  with length  $L$  exceeds that limit, we truncate it from the middle and replace the dropped part with a \"...\" since the front and end of the sequence usually contain more important information for identifying scenario of the (such as the user's instruction):  $Q_{1:L} \\rightarrow$  $[Q_{1:999};...;Q_{L-1000:L}].$ ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            449.99999999999966,
+            2404,
+            2104,
+            2404,
+            2104,
+            2680,
+            449.99999999999966,
+            2680
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        450,
+        2700,
+        2102,
+        2700,
+        2102,
+        2924,
+        450,
+        2924
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "We train the scenario classifier for 3 epochs on the training set, and set the batch size as 64. Without warmup steps, we set the initial learning rate to 1e-5 and cosine decaying to 0 by the end of training. The optimizer is AdamW with  $\\beta_1 = 0.9, \\beta_2 = 0.95$  as in training AUTO-J, and we also use the speedup and GPU memory saving techniques like DeepSpeed Zero 3, BF16, TF32, and gradient-checkpointing. The loss is only calculated on the output end as well.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            450,
+            2700,
+            2102,
+            2700,
+            2102,
+            2924,
+            450,
+            2924
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        445.9999999999999,
+        2962,
+        2100,
+        2962,
+        2100,
+        3048,
+        445.9999999999999,
+        3048
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "<sup>4</sup>This dataset is collected from https://sharegpt.com/, containing shared conversations with ChatGPT or GPT-4. We use a public available subset of it.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            445.9999999999999,
+            2962,
+            2100,
+            2962,
+            2100,
+            3048,
+            445.9999999999999,
+            3048
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1250,
+        3126,
+        1302,
+        3126,
+        1302,
+        3168,
+        1250,
+        3168
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "15",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1250,
+            3126,
+            1302,
+            3126,
+            1302,
+            3168,
+            1250,
+            3168
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        448,
+        1300,
+        1520,
+        1300,
+        1520,
+        1348,
+        448,
+        1348
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": "# B TRAINING DETAILS OF SCENARIO CLASSIFIER",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            1300,
+            1520,
+            1300,
+            1520,
+            1348,
+            448,
+            1348
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 1035,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "99_15_png.jpg"
+  }
+}

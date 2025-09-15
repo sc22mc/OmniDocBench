@@ -1,0 +1,1158 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "plain_text",
+      "poly": [
+        282.50000000000006,
+        300,
+        1217.5,
+        300,
+        1217.5,
+        407.5,
+        282.50000000000006,
+        407.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "probability distribution over the generic vocabulary  $V_g$  at the decoding time step t is computed as,",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            282.50000000000006,
+            300,
+            1217.5,
+            300,
+            1217.5,
+            407.5,
+            282.50000000000006,
+            407.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        495,
+        450,
+        982.5,
+        450,
+        982.5,
+        525,
+        495,
+        525
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "$$ P_{v_q} = \\text{softmax}\\big(\\text{FC}_1(\\mathbf{o}_t)\\big), $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            495,
+            450,
+            982.5,
+            450,
+            982.5,
+            525,
+            495,
+            525
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1145,
+        467.49999999999994,
+        1207.5,
+        467.49999999999994,
+        1207.5,
+        509.99999999999994,
+        1145,
+        509.99999999999994
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "(4)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1145,
+            467.49999999999994,
+            1207.5,
+            467.49999999999994,
+            1207.5,
+            509.99999999999994,
+            1145,
+            509.99999999999994
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        285,
+        572.5,
+        970,
+        572.5,
+        970,
+        622.5,
+        285,
+        622.5
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "where  $FC_1$  is a fully connected layer.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            285,
+            572.5,
+            970,
+            572.5,
+            970,
+            622.5,
+            285,
+            622.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        287.5,
+        630,
+        1225,
+        630,
+        1225,
+        902.5,
+        287.5,
+        902.5
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "To calculate the probability distribution over the history-aware vocabulary  $V_h$ , we adopt a maxpooling layer over the context-updated history memory  $C_s$ , a fully connected layer, and a softmax function as follows,",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            287.5,
+            630,
+            1225,
+            630,
+            1225,
+            902.5,
+            287.5,
+            902.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        330,
+        952.5000000000001,
+        1105,
+        952.5000000000001,
+        1105,
+        1020.0000000000001,
+        330,
+        1020.0000000000001
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": "$$ P_{v_h} = \\text{softmax}\\big(\\text{FC}_2(\\text{max-pooling}(\\mathbf{C}_s))\\big), $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            330,
+            952.5000000000001,
+            1105,
+            952.5000000000001,
+            1105,
+            1020.0000000000001,
+            330,
+            1020.0000000000001
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1147.5,
+        962.5,
+        1205,
+        962.5,
+        1205,
+        1015,
+        1147.5,
+        1015
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": "(5)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1147.5,
+            962.5,
+            1205,
+            962.5,
+            1205,
+            1015,
+            1147.5,
+            1015
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        297.5,
+        1070,
+        967.5,
+        1070,
+        967.5,
+        1120,
+        297.5,
+        1120
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": "where  $FC_2$  is a fully connected layer.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            297.5,
+            1070,
+            967.5,
+            1070,
+            967.5,
+            1120,
+            297.5,
+            1120
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        290,
+        1127.5,
+        1207.5,
+        1127.5,
+        1207.5,
+        1290,
+        290,
+        1290
+      ],
+      "ignore": false,
+      "order": 9,
+      "anno_id": 1,
+      "text": "The final word probability distribution at time step  $t$  is computed by using a switching mechanism between  $P_{v_g}$  and  $P_{v_h}$  as follows,",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            290,
+            1127.5,
+            1207.5,
+            1127.5,
+            1207.5,
+            1290,
+            290,
+            1290
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        480,
+        1335,
+        1022.5,
+        1335,
+        1022.5,
+        1410,
+        480,
+        1410
+      ],
+      "ignore": false,
+      "order": 10,
+      "anno_id": 1,
+      "text": "$$ P = \\alpha_{v_g} \\ast P_{v_g} + \\alpha_{v_h} \\ast P_{v_h}, $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            480,
+            1335,
+            1022.5,
+            1335,
+            1022.5,
+            1410,
+            480,
+            1410
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1150,
+        1342.5,
+        1212.5,
+        1342.5,
+        1212.5,
+        1392.5,
+        1150,
+        1392.5
+      ],
+      "ignore": false,
+      "order": 11,
+      "anno_id": 1,
+      "text": "(6)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1150,
+            1342.5,
+            1212.5,
+            1342.5,
+            1212.5,
+            1392.5,
+            1150,
+            1392.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        287.50000000000006,
+        1450,
+        1222.5,
+        1450,
+        1222.5,
+        1667.5,
+        287.50000000000006,
+        1667.5
+      ],
+      "ignore": false,
+      "order": 12,
+      "anno_id": 1,
+      "text": "where  $\\alpha_{v_g}$  and  $\\alpha_{v_h}$  is the switching probability of generating from generic vocabulary or copying from history conversations.  $\\alpha_{v_g}$  and  $\\alpha_{v_h}$  is calculated as follows,",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            287.50000000000006,
+            1450,
+            1222.5,
+            1450,
+            1222.5,
+            1667.5,
+            287.50000000000006,
+            1667.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        335,
+        1722.5,
+        1157.5,
+        1722.5,
+        1157.5,
+        1867.5,
+        335,
+        1867.5
+      ],
+      "ignore": false,
+      "order": 13,
+      "anno_id": 1,
+      "text": "$$ [\\alpha_{v_g}, \\alpha_{v_h}] = \\text{softmax}\\big(\\text{FC}_3([o_j; \\text{max-pooling}(\\mathbf{C}_s)])\\big), $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            335,
+            1722.5,
+            1157.5,
+            1722.5,
+            1157.5,
+            1867.5,
+            335,
+            1867.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1155,
+        1852.5,
+        1197.5,
+        1852.5,
+        1197.5,
+        1902.5,
+        1155,
+        1902.5
+      ],
+      "ignore": false,
+      "order": 14,
+      "anno_id": 1,
+      "text": "(7)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1155,
+            1852.5,
+            1197.5,
+            1852.5,
+            1197.5,
+            1902.5,
+            1155,
+            1902.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        290.0000000000001,
+        1955,
+        1215,
+        1955,
+        1215,
+        2067.5,
+        290.0000000000001,
+        2067.5
+      ],
+      "ignore": false,
+      "order": 15,
+      "anno_id": 1,
+      "text": "where  $FC_3$  is a fully connected layer, and [;] is a concatenation operation over the last dimension.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            290.0000000000001,
+            1955,
+            1215,
+            1955,
+            1215,
+            2067.5,
+            290.0000000000001,
+            2067.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        285,
+        2107.5,
+        717.5,
+        2107.5,
+        717.5,
+        2160,
+        285,
+        2160
+      ],
+      "ignore": false,
+      "order": 16,
+      "anno_id": 1,
+      "text": "## 3.4 Model Training",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            285,
+            2107.5,
+            717.5,
+            2107.5,
+            717.5,
+            2160,
+            285,
+            2160
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        287.5,
+        2182.5,
+        1210,
+        2182.5,
+        1210,
+        2460,
+        287.5,
+        2460
+      ],
+      "ignore": false,
+      "order": 17,
+      "anno_id": 1,
+      "text": "We train the model to maximize the generation probability of the target response, given the current conversation context and history conversations in an end-to-end manner. The loss function of HAHT is defined as,",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            287.5,
+            2182.5,
+            1210,
+            2182.5,
+            1210,
+            2460,
+            287.5,
+            2460
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        412.5,
+        2505,
+        1077.5,
+        2505,
+        1077.5,
+        2650,
+        412.5,
+        2650
+      ],
+      "ignore": false,
+      "order": 18,
+      "anno_id": 1,
+      "text": "$$ \\mathcal{L} = -\\sum_{t=1}^{n_y} \\log \\left( P(y_j | X, H, y_{\\leq t}) \\right), $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            412.5,
+            2505,
+            1077.5,
+            2505,
+            1077.5,
+            2650,
+            412.5,
+            2650
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1152.5,
+        2550,
+        1202.5,
+        2550,
+        1202.5,
+        2607.5,
+        1152.5,
+        2607.5
+      ],
+      "ignore": false,
+      "order": 19,
+      "anno_id": 1,
+      "text": "(8)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1152.5,
+            2550,
+            1202.5,
+            2550,
+            1202.5,
+            2607.5,
+            1152.5,
+            2607.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        295,
+        2695,
+        1220,
+        2695,
+        1220,
+        2917.5,
+        295,
+        2917.5
+      ],
+      "ignore": false,
+      "order": 20,
+      "anno_id": 1,
+      "text": "where  $X$  denotes the current conversation context,    $H$  denotes all history conversations,  $y_{ denotes   tokens before time step  $t$ , and  $n_y$  denotes the length   of the ground truth response.$ ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            295,
+            2695,
+            1220,
+            2695,
+            1220,
+            2917.5,
+            295,
+            2917.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        295,
+        2957.5,
+        855,
+        2957.5,
+        855,
+        3020,
+        295,
+        3020
+      ],
+      "ignore": false,
+      "order": 21,
+      "anno_id": 1,
+      "text": "# 4 **Experimental Settings**",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            295,
+            2957.5,
+            855,
+            2957.5,
+            855,
+            3020,
+            295,
+            3020
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        285,
+        3052.5,
+        1212.5,
+        3052.5,
+        1212.5,
+        3225,
+        285,
+        3225
+      ],
+      "ignore": false,
+      "order": 22,
+      "anno_id": 1,
+      "text": "In this section, we introduce the experimental dataset, evaluation metrics, baseline methods, and model settings.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            285,
+            3052.5,
+            1212.5,
+            3052.5,
+            1212.5,
+            3225,
+            285,
+            3225
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1260,
+        2000,
+        2192.5,
+        2000,
+        2192.5,
+        2392.5,
+        1260,
+        2392.5
+      ],
+      "ignore": false,
+      "order": "28",
+      "anno_id": 1,
+      "text": "We conduct both automatic and human evaluations to demonstrate the effectiveness of the proposed model. For automatic evaluations, we leverage BLEU-2, BLEU-3 (Papineni et al., 2002), and ROUGE-L (Lin and Och, 2004) to measure word overlaps between the generated response text and ground truth text.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1260,
+            2000,
+            2192.5,
+            2000,
+            2192.5,
+            2392.5,
+            1260,
+            2392.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1285,
+        1920,
+        1760,
+        1920,
+        1760,
+        1975,
+        1285,
+        1975
+      ],
+      "ignore": false,
+      "order": "27",
+      "anno_id": 1,
+      "text": "## 4.2 Evaluation Metrics",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1285,
+            1920,
+            1760,
+            1920,
+            1760,
+            1975,
+            1285,
+            1975
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1272.5,
+        1097.5,
+        2197.5,
+        1097.5,
+        2197.5,
+        1875,
+        1272.5,
+        1875
+      ],
+      "ignore": false,
+      "order": "26",
+      "anno_id": 1,
+      "text": "The experiments are performed on a large dataset, *i.e.*, Facebook MULTI-SESSION CHAT (Facebook MSC) (Xu et al., 2022). It is a crowdsourced dataset consisting of multi-session conversations, where the interlocutors learn about each other's interests and discuss the things they have understood from past sessions. The number of history conversations in Facebook MSC varies from 1 to 4. Session number  $i$  indicates there are  $i$ -1 history conversations happening before the last conversation session. The statistics of the Facebook MSC dataset are summarized in Table 1. As session 1 does not have history conversations, we evaluate our model on session 2-5.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1272.5,
+            1097.5,
+            2197.5,
+            1097.5,
+            2197.5,
+            1875,
+            1272.5,
+            1875
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1265,
+        1017.5,
+        1805,
+        1017.5,
+        1805,
+        1075,
+        1265,
+        1075
+      ],
+      "ignore": false,
+      "order": "25",
+      "anno_id": 1,
+      "text": "## 4.1 **Experimental Dataset**",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1265,
+            1017.5,
+            1805,
+            1017.5,
+            1805,
+            1075,
+            1265,
+            1075
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        1270,
+        692.5,
+        2190,
+        692.5,
+        2190,
+        940,
+        1270,
+        940
+      ],
+      "ignore": false,
+      "order": "24",
+      "anno_id": 1,
+      "text": "Table 1: The statistics of Facebook Multi-Session Chat (Facebook MSC) Dataset. Session number  $i$  indicates there are  $i$ -1 history conversation sessions that happen before the last conversation session.  $\\star$ : Session 1 does not contain history conversation sessions.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1270,
+            692.5,
+            2190,
+            692.5,
+            2190,
+            940,
+            1270,
+            940
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        1285,
+        289.99999999999994,
+        2180,
+        289.99999999999994,
+        2180,
+        652.5,
+        1285,
+        652.5
+      ],
+      "ignore": false,
+      "order": "23",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1285,
+            289.99999999999994,
+            2180,
+            289.99999999999994,
+            2180,
+            652.5,
+            1285,
+            652.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| Session<br>number | Train |         | Valid |        | Test  |        |\n|-------------------|-------|---------|-------|--------|-------|--------|\n|                   | Conv. | Utter.  | Conv. | Utter. | Conv. | Utter. |\n| 1*                | 8939  | 131,438 | 1000  | 7,801  | 1015  | 6,634  |\n| 2                 | 4000  | 46,420  | 500   | 5,897  | 501   | 5,939  |\n| 3                 | 4000  | 47,259  | 500   | 5,890  | 501   | 5,924  |\n| 4                 | 1001  | 11,870  | 500   | 5,904  | 501   | 5,940  |\n| 5                 | -     | -       | 500   | 5,964  | 501   | 5,945  |\n| Total             | -     | 236,987 | -     | 31,456 | -     | 30,382 |",
+      "latex": ""
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1276,
+        2402,
+        2186,
+        2402,
+        2186,
+        2778,
+        1276,
+        2778
+      ],
+      "ignore": false,
+      "order": 29,
+      "anno_id": 1,
+      "text": "Moreover, we also randomly sample 50 MSCs from the test set to conduct human evaluations. We present all the history conversation sessions, current conversation context, and the generated responses to three well-educated annotators. The annotators will evaluate the quality of the generated responses from the following three aspects:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1276,
+            2402,
+            2186,
+            2402,
+            2186,
+            2778,
+            1276,
+            2778
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1286,
+        2812,
+        2190,
+        2812,
+        2190,
+        3226,
+        1286,
+        3226
+      ],
+      "ignore": false,
+      "order": 30,
+      "anno_id": 1,
+      "text": "- **Readability**: measures whether the generated responses are natural and fluent. - **Context Relevancy**: measures whether the generated responses are correlated with the current conversation context. - **History Relevancy**: measures whether the generated responses are correlated with history con-",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1286,
+            2812,
+            2190,
+            2812,
+            2190,
+            3226,
+            1286,
+            3226
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 590,
+    "height": 3508,
+    "width": 2481,
+    "image_path": "59_5_png.jpg"
+  }
+}

@@ -1,0 +1,554 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                452,
+                110,
+                1224,
+                110,
+                1224,
+                148,
+                452,
+                148
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "Published as a conference paper at ICLR 2024",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        452,
+                        110,
+                        1224,
+                        110,
+                        1224,
+                        148,
+                        452,
+                        148
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                612.0000000000001,
+                334,
+                1936,
+                334,
+                1936,
+                376,
+                612.0000000000001,
+                376
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "Table 4: Memory slots VS Original contexts (∼512 tokens) on the PWC test set",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        612.0000000000001,
+                        334,
+                        1936,
+                        334,
+                        1936,
+                        376,
+                        612.0000000000001,
+                        376
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                447.9999999999999,
+                1122,
+                2105.9999999999995,
+                1122,
+                2105.9999999999995,
+                1198,
+                447.9999999999999,
+                1198
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "Table 5: ICAE with different memory slot lengths and different pretraining setups. The last row is the comparison between 128-length ICAE's memory and 128-token summary produced by the GPT-4.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        447.9999999999999,
+                        1122,
+                        2105.9999999999995,
+                        1122,
+                        2105.9999999999995,
+                        1198,
+                        447.9999999999999,
+                        1198
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                451.9999999999998,
+                1228,
+                2112,
+                1228,
+                2112,
+                1716,
+                451.9999999999998,
+                1716
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        451.9999999999998,
+                        1228,
+                        2112,
+                        1228,
+                        2112,
+                        1716,
+                        451.9999999999998,
+                        1716
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>ICAE (Llama-2-7b-chat)</th>\n<th></th>\n<th>Judgement</th>\n<th></th>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td></td>\n<td>win (%)</td>\n<td>lose (%)</td>\n<td>tie (%)</td>\n<td>win/lose</td>\n</tr>\n<tr>\n<td>$k = 128$ (pretrained) VS $k = 64$ (pretrained)</td>\n<td></td>\n<td>57.6</td>\n<td>19.5</td>\n<td>22.9</td>\n<td>3.0</td>\n</tr>\n<tr>\n<td>$k = 64$ (pretrained) VS $k = 32$ (pretrained)</td>\n<td></td>\n<td>44.7</td>\n<td>21.8</td>\n<td>33.5</td>\n<td>2.1</td>\n</tr>\n<tr>\n<td>$k = 64$ (pretrained) VS $k = 128$ (no pretraining)</td>\n<td></td>\n<td>33.1</td>\n<td>28.0</td>\n<td>38.9</td>\n<td>1.2</td>\n</tr>\n<tr>\n<td>$k = 128$ (pretrained) VS $k = 128$ (no pretraining)</td>\n<td></td>\n<td>60.4</td>\n<td>9.5</td>\n<td>30.1</td>\n<td>6.4</td>\n</tr>\n<tr>\n<td>$k = 128$ (pretrained) VS $k = 128$ (pretrained only with AE)</td>\n<td></td>\n<td>36.4</td>\n<td>28.5</td>\n<td>35.1</td>\n<td>1.3</td>\n</tr>\n<tr>\n<td>$k = 128$ (pretrained) VS $k = 128$ (pretrained only with LM)</td>\n<td></td>\n<td>35.1</td>\n<td>24.9</td>\n<td>40.0</td>\n<td>1.4</td>\n</tr>\n<tr>\n<td>$k = 128$ (pretrained) VS 128-token summary (by GPT-4)</td>\n<td></td>\n<td>34.1</td>\n<td>17.6</td>\n<td>48.3</td>\n<td>1.9</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                506,
+                386,
+                2036,
+                386,
+                2036,
+                1072,
+                506,
+                1072
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        506,
+                        386,
+                        2036,
+                        386,
+                        2036,
+                        1072,
+                        506,
+                        1072
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>System 1<br>( <i>k</i> memory slots)</th>\n<th>System 2<br>(original context)</th>\n<th>win</th>\n<th>lose</th>\n<th>tie</th>\n<th>Judgement (%)<br>on par (win+tie)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Llama-7b (ICAE, <i>k</i> =128)</td>\n<td>Alpaca</td>\n<td>56.7</td>\n<td>26.9</td>\n<td>16.4</td>\n<td>73.1</td>\n</tr>\n<tr>\n<td></td>\n<td>StableLM-7b</td>\n<td>74.1</td>\n<td>18.8</td>\n<td>7.2</td>\n<td>81.3</td>\n</tr>\n<tr>\n<td></td>\n<td>GPT-4 (gold)</td>\n<td>3.4</td>\n<td>69.4</td>\n<td>27.2</td>\n<td>30.6</td>\n</tr>\n<tr>\n<td>Llama-2-7b-chat (ICAE, <i>k</i> =64)</td>\n<td>Llama-2-7b-chat</td>\n<td>13.6</td>\n<td>51.6</td>\n<td>34.8</td>\n<td>48.4</td>\n</tr>\n<tr>\n<td></td>\n<td>GPT-4 (gold)</td>\n<td>1.9</td>\n<td>44.7</td>\n<td>53.4</td>\n<td>55.3</td>\n</tr>\n<tr>\n<td>Llama-2-7b-chat (ICAE, <i>k</i> =128)</td>\n<td>Llama-2-7b-chat</td>\n<td>19.6</td>\n<td>45.4</td>\n<td>35.0</td>\n<td>54.6</td>\n</tr>\n<tr>\n<td></td>\n<td>GPT-4 (gold)</td>\n<td>2.8</td>\n<td>25.8</td>\n<td>71.4</td>\n<td>74.2</td>\n</tr>\n<tr>\n<td>Llama-2-7b-chat (ICAE, <i>k</i> =256)</td>\n<td>Llama-2-7b-chat</td>\n<td>22.0</td>\n<td>22.2</td>\n<td>55.8</td>\n<td>77.8</td>\n</tr>\n<tr>\n<td></td>\n<td>GPT-4 (gold)</td>\n<td>3.8</td>\n<td>20.5</td>\n<td>75.7</td>\n<td>79.5</td>\n</tr>\n<tr>\n<td>Llama-2-13b-chat (ICAE, <i>k</i> =256)</td>\n<td>Llama-2-13b-chat</td>\n<td>21.9</td>\n<td>20.8</td>\n<td>57.3</td>\n<td>79.2</td>\n</tr>\n<tr>\n<td></td>\n<td>GPT-4 (gold)</td>\n<td>4.0</td>\n<td>19.2</td>\n<td>76.8</td>\n<td>80.8</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                445.9999999999999,
+                1770,
+                2100,
+                1770,
+                2100,
+                2070,
+                445.9999999999999,
+                2070
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "non-pretrained counterpart, emphasizing the importance of pretraining. By comparing the outputs generated via the pretrained and non-pretrained ICAE, we find the pretrained ICAE suffers less from hallucination than the non-pretrained counterpart (see the examples in Table 9 in Appendix D). We assume the pretraining of ICAE improves the LLM's working memory as it shares some analogies with humans enhancing their memory capacity via extensive memory training which improves the brain's memory encoding capabilities. We also examine pretraining objectives and find combining<sup>3</sup> AE and LM yields better results than using AE or LM individually (the 4th row in Table 5).",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        445.9999999999999,
+                        1770,
+                        2100,
+                        1770,
+                        2100,
+                        2070,
+                        445.9999999999999,
+                        2070
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                448,
+                2106,
+                2098,
+                2106,
+                2098,
+                2244,
+                448,
+                2244
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "The last row of Table 5 compares ICAE's 128-length memory slots with a summary<sup>4</sup> within 128 tokens ( $\\sim 100$  words). Memory slots significantly outperform summaries under the same context length, with  $\\sim 2 \\times$  win/lose ratio, proving to be more compact and informative than natural language.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        448,
+                        2106,
+                        2098,
+                        2106,
+                        2098,
+                        2244,
+                        448,
+                        2244
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                447.9999999999999,
+                2428,
+                2105.9999999999995,
+                2428,
+                2105.9999999999995,
+                2602,
+                447.9999999999999,
+                2602
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "As discussed above, ICAE should achieve better compression performance with a more powerful target LLM. To verify this assumption, we compare the ICAE's performance on three target LLMs: Llama-7b, Llama-2-7b and Llama-2-13b in Table 6, which align well with our expectations – more powerful target LLMs can achieve better context compression ratios.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        447.9999999999999,
+                        2428,
+                        2105.9999999999995,
+                        2428,
+                        2105.9999999999995,
+                        2602,
+                        447.9999999999999,
+                        2602
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                448,
+                2738,
+                2104,
+                2738,
+                2104,
+                2914,
+                448,
+                2914
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": "We conducted an empirical test to evaluate the impact of ICAE's  $4 \\times$  context compression on inference efficiency. For this efficiency test, we fix the context (i.e., input) length to either 512 or 2048 and the generation length to 128. Table 7 shows that context compression by ICAE is helpful to improve LLM (i.e., Llama-7b) inference efficiency, achieving over  $2 \\times$  speedup. Its acceleration becomes",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        448,
+                        2738,
+                        2104,
+                        2738,
+                        2104,
+                        2914,
+                        448,
+                        2914
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                454,
+                2662,
+                752,
+                2662,
+                752,
+                2698,
+                454,
+                2698
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": "### 3.3.2 LATENCY",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        454,
+                        2662,
+                        752,
+                        2662,
+                        752,
+                        2698,
+                        454,
+                        2698
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                446,
+                2280,
+                736,
+                2280,
+                736,
+                2322,
+                446,
+                2322
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "## 3.3 ANALYSIS",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        446,
+                        2280,
+                        736,
+                        2280,
+                        736,
+                        2322,
+                        446,
+                        2322
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                452,
+                2348,
+                824,
+                2348,
+                824,
+                2394,
+                452,
+                2394
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "### 3.3.1 SCALABILITY",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        452,
+                        2348,
+                        824,
+                        2348,
+                        824,
+                        2394,
+                        452,
+                        2394
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1256,
+                3124,
+                1288,
+                3124,
+                1288,
+                3164,
+                1256,
+                3164
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": "7",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1256,
+                        3124,
+                        1288,
+                        3124,
+                        1288,
+                        3164,
+                        1256,
+                        3164
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                488,
+                2956,
+                1712,
+                2956,
+                1712,
+                3054,
+                488,
+                3054
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": "$^3\\mathcal{L}_{\\text{pretrain}} = \\lambda \\mathcal{L}_{\\text{AE}} + (1 - \\lambda)\\mathcal{L}_{\\text{LM}}$ . We find  $\\lambda = 0.4 \\sim 0.6$  leads to the best result.   $^{4}$ Produced by the GPT-4. The specific prompt text is presented in Appendix D.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        488,
+                        2956,
+                        1712,
+                        2956,
+                        1712,
+                        3054,
+                        488,
+                        3054
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 1027,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "98_7_png.jpg"
+    }
+}

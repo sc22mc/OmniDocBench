@@ -1,0 +1,330 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        455.00000000000006,
+        112.5,
+        1230,
+        112.5,
+        1230,
+        150,
+        455.00000000000006,
+        150
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            455.00000000000006,
+            112.5,
+            1230,
+            112.5,
+            1230,
+            150,
+            455.00000000000006,
+            150
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        807.5,
+        372.5,
+        1762.5,
+        372.5,
+        1762.5,
+        405,
+        807.5,
+        405
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "  Table 8: The 2-th Reasoning Chain with Comments of Table 7",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            807.5,
+            372.5,
+            1762.5,
+            372.5,
+            1762.5,
+            405,
+            807.5,
+            405
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        657.5,
+        1427.5,
+        1895,
+        1427.5,
+        1895,
+        1470,
+        657.5,
+        1470
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": "**Table 9:** Computation of edge weight between  $z_i$  (the step 2) and  $z_{i-1}$  (the step 3)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            657.5,
+            1427.5,
+            1895,
+            1427.5,
+            1895,
+            1470,
+            657.5,
+            1470
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        877.5,
+        2127.5,
+        1677.5,
+        2127.5,
+        1677.5,
+        2167.5,
+        877.5,
+        2167.5
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": "Table 10: Format of prompts used in Game of 24.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            877.5,
+            2127.5,
+            1677.5,
+            2127.5,
+            1677.5,
+            2167.5,
+            877.5,
+            2167.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1250,
+        3125,
+        1292.5,
+        3125,
+        1292.5,
+        3170,
+        1250,
+        3170
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "21",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1250,
+            3125,
+            1292.5,
+            3125,
+            1292.5,
+            3170,
+            1250,
+            3170
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        450,
+        2215,
+        2097.5,
+        2215,
+        2097.5,
+        3005,
+        450,
+        3005
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            450,
+            2215,
+            2097.5,
+            2215,
+            2097.5,
+            3005,
+            450,
+            3005
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "| Prompt Format for Next Thought Generation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |\n|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| In the game of 24, you are given four numbers, and the goal is to use basic arithmetic operations $(+, -, *, /)$ to combine these numbers and obtain a result of 24. You                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |\n| can only use each number once, and parentheses can be used to change the order of operations.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\n| Analysis format of each step: Step, Current set: , Selected two numbers: , Operation: , Computed new number: , Remaining numbers: , New set: .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\n| The given four numbers are: $5, 6, 9, 4$ .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |\n| Let's think step by step.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |\n| Recall historical reasoning experience (Ignore when experience is empty):<br>##########################################                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |\n| Pay attention to analysis and conclusion in the experience to avoid making similar mistakes by following the advice.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |\n| Below is a list of ordered reasoning steps, accompanied by their evaluated scores (A higher score means the reasoning step is more likely to complete the task.):                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n| Based on listed reasoning steps only within the above \"——\" (i.e., Not the ones in the experience block), please make one step of reasoning to generate only one                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n| subsequential possible reasoning step.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |\n| Prompt Format for Experience Generation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |\n| Given task: In the game of 24, you are given four numbers, and the goal is to use basic arithmetic operations $(+, -, *, /)$ to combine these numbers and obtain a result                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |\n| of 24. You can only use each number once, and parentheses can be used to change the order of operations.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |\n| The given four numbers are: 4 5 10 11. Let's think step by step. Below is a reasoning chain containing reasoning steps presented in order:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |\n|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n| Please evaluate this reasoning chain by giving detailed comments containing the following content: 1. Can this reasoning chain complete the task and reach the<br>target correctly by executing its reasoning steps? why? Write a analysis report with conclusion under 'Anlysis Report:'. 2. For each reasoning step, please provide<br>a detailed analysis of whether the current step is a logical inference of the previous step and whether the reasoning step is beneficial to the correct solution. For<br>each reasoning step with errors, please provide an error report and the corresponding advice on revision. For each reasoning step, please provide recommendation<br>or rejection descriptions. Comments should be brief, avoid repeating the same analysis in different steps and follow the format: Reasoning step ;idx. Analysis |\n\nreport: . Advice: . Recommendation or Reject description: . . 3. What is your confidence score on these your evaluations and comments? Please select one value from [0.1, 0.3, 0.5, 0.7, 0.9, 1.0]. The score should be placed after 'Confidence score:' for users to read.\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        450,
+        1512.5,
+        2102.5,
+        1512.5,
+        2102.5,
+        2027.5,
+        450,
+        2027.5
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            450,
+            1512.5,
+            2102.5,
+            1512.5,
+            2102.5,
+            2027.5,
+            450,
+            2027.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "| Prompt for the thought evaluation.                                                                                                                                           |\n|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| In the game of 24, you are given four numbers, and the goal is to use basic arithmetic operations $(+, -, *, /)$ to combine these numbers and obtain a result of 24. You     |\n| can only use each number once, and parentheses can be used to change the order of operations.                                                                                |\n| Analysis format of each step: Step, Current set: , Selected two numbers: , Operation: , Computed new number: , Remaining numbers: , New set: .                               |\n| The given four numbers are: $3\\ 5\\ 6\\ 8$ .                                                                                                                                   |\n| Let's think step by step.                                                                                                                                                    |\n| Below are the generated reasoning steps, presented in order, accompanied by their evaluated scores (A higher score means the reasoning step is more likely to                |\n| complete the task.):                                                                                                                                                         |\n|                                                                                                                                                                              |\n| Step 1, Current set: 3 5 6 8, Selected two numbers: 3 8, Operation: +, Computed new number: 11, Remaining numbers: 5 6, New set: 11 5 6.. Evaluate Score: 0.7                |\n| Step 2, Current set: 11 5 6, Selected two numbers: 5 6, Operation: *, Computed new number: 30, Remaining numbers: 11, New set: 30 11.. Evaluate Score: 0.9                   |\n| Step 3, Current set: 30 11, Selected two numbers: 30 11, Operation: -, Computed new number: 19, Remaining numbers: , New set: 19.                                            |\n|                                                                                                                                                                              |\n| What is your evaluation score for the logic, correctness, and benefit to reaching a final solution for these reasoning steps? Please select one value from $[0.1, 0.3, 0.5,$ |\n| $0.7, 0.9, 1.0]$ as the score, where a higher score means better reasoning steps. The score should be placed after 'Evaluation score:' for users to read.                    |\n| The generated evaluation score                                                                                                                                               |\n| Evaluation score: $0.9$                                                                                                                                                      |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        447.5,
+        455.00000000000006,
+        2097.5,
+        455.00000000000006,
+        2097.5,
+        1337.5,
+        447.5,
+        1337.5
+      ],
+      "ignore": false,
+      "order": "3",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.5,
+            455.00000000000006,
+            2097.5,
+            455.00000000000006,
+            2097.5,
+            1337.5,
+            447.5,
+            1337.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "######## The 2-th Reasoning Chain with Comments ####### Below is a reasoning chain containing reasoning steps presented in order: Step 1, Current set: 10 8, Selected two numbers: 10 8, Operation: /, Computed new number: 1.25, Remaining numbers: None, New set: 1.25. Evaluate Score: 0.8. Evaluate Score: 0.8 Step 2, Current set: 10 8, Selected two numbers: 10 8, Operation: /, Computed new number: 1.25, Remaining numbers: None, New set: 1.25.. Evaluate Score: 0.8 Step 3, Current set: 10 8, Selected two numbers: 10 8, Operation: /, Computed new number: 1.25, Remaining numbers: None, New set: 1.25.. Evaluate Score: 0.8 Analysis Report: This reasoning chain cannot complete the task and reach the target correctly. The reasoning steps provided are incorrect and do not lead to the solution of obtaining a result of 24. Reasoning Step 1: This reasoning step is incorrect. The selected two numbers, 10 and 8, are not present in the given number set of 3, 5, 6, and 8. Additionally, the operation of division (/) does not result in the computed Error Report: - The selected two numbers are not present in the given number set. - The operation and computed new number are incorrect. - The remaining numbers are not correctly identified. Advice: - Ensure that the selected two numbers are present in the given number set. - Use the correct operation that will result in the desired computed new number. Accurately identify the remaining numbers. Recommendation or Reject Description: Reject. This reasoning step is incorrect and does not contribute to the correct solution. Reasoning Step 2: This reasoning step is a repetition of Reasoning Step 1 and is therefore incorrect. The same errors are present in this step as in the previous step. Error Report: - The selected two numbers are not present in the given number set. - The operation and computed new number are incorrect. - The remaining numbers are not correctly identified. Advice: - Ensure that the selected two numbers are present in the given number set. - Use the correct operation that will result in the desired computed new number. Accurately identify the remaining numbers. Recommendation or Reject Description: Reject. This reasoning step is incorrect and does not contribute to the correct solution. Reasoning Step 3: This reasoning step is a repetition of Reasoning Step 1 and Reasoning Step 2. The same errors are present in this step as in the previous steps.<br>Error Report: - The selected two numbers are not present in numbers are not correctly identified. Advice: - Ensure that the selected two numbers are present in the given number set. - Use the correct operation that will result in the desired computed new number. Accurately identify the remaining numbers.\n\nRecommendation or Reject Description: Reject. This reasoning step is incorrect and does not contribute to the correct solution. Confidence Score: 0.9\n",
+      "latex": ""
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 13,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "100_21_png.jpg"
+  }
+}

@@ -1,0 +1,550 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                168,
+                132,
+                206,
+                132,
+                206,
+                162,
+                168,
+                162
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "10 ",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        168,
+                        132,
+                        206,
+                        132,
+                        206,
+                        162,
+                        168,
+                        162
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "header",
+            "poly": [
+                1150,
+                128,
+                2320,
+                128,
+                2320,
+                166,
+                1150,
+                166
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "IEEE TRANSACTIONS ON AGRIFOOD ELECTRONICS, VOL. 3, NO. 1, MARCH/APRIL 2025",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1150,
+                        128,
+                        2320,
+                        128,
+                        2320,
+                        166,
+                        1150,
+                        166
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                350.00000000000006,
+                270,
+                1044,
+                270,
+                1044,
+                340,
+                350.00000000000006,
+                340
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "TABLE III  COMPARISON OF MODEL'S COMPUTATION DEMANDS",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        350.00000000000006,
+                        270,
+                        1044,
+                        270,
+                        1044,
+                        340,
+                        350.00000000000006,
+                        340
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                168.0000000000001,
+                382,
+                1216,
+                382,
+                1216,
+                508,
+                168.0000000000001,
+                508
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        168.0000000000001,
+                        382,
+                        1216,
+                        382,
+                        1216,
+                        508,
+                        168.0000000000001,
+                        508
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th></th>\n<th>DETR</th>\n<th>SDD</th>\n<th>YOLOv5-X</th>\n<th>YOLOv9-T</th>\n<th>YOLOv9-E</th>\n<th>YOLOv10-N</th>\n<th>YOLOv10-2</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>#parameters [M]</td>\n<td>46</td>\n<td>35</td>\n<td>86.7</td>\n<td>2.0</td>\n<td>57.3</td>\n<td>2.3</td>\n<td>29.5</td>\n</tr>\n<tr>\n<td>GFLOPs</td>\n<td>127</td>\n<td>34.5</td>\n<td>205.7</td>\n<td>7.7</td>\n<td>189.0</td>\n<td>6.7</td>\n<td>160.4</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                166,
+                614,
+                1228,
+                614,
+                1228,
+                2006,
+                166,
+                2006
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "characterizing a more precise detection overall. Conversely, the  YOLOV5-X model was able to detect the largest number of  BMSB reaching the highest recall. Despite achieving partic ularly notable metrics scores in the ONLY set, the model has  depicted the least robustness against background-only patches,  namely, in the ALL set. So, YOLOV5-X was prone to recognize   $\\geq 55\\%$  of BMSB instances with a particularly promising pre cision when a BMSB appears inside the frame. However, this  latter capability deteriorates dramatically  $(P = 53.5\\%)$  when  images without BMSB are considered. It is noteworthy that each  network tends to achieve a larger  $P$  than  $R$ . This phenomenon is  strictly related to the poses experienced during the acquisition,  compounded by the noise surrounding the BMSB pixels, such as  blur or overexposure. Despite the dataset comprising a diverse  range of BMSB samples, certain poses and lighting/blurriness  conditions are more frequent than others. Also, since the dataset  consists of images captured by a drone operating according to an  autonomous protocol, characterizing the entire range of possi bilities is extremely challenging. As a result, the networks were  able to detect BMSB instances that presented limited variation  in pose and color appearance, thereby minimizing FP. How- ever, instances significantly affected by noise were occasionally  missed. Both YOLOv9 and YOLOv10-X achieve interesting  performance representing a true step ahead of the predeces sor, YOLOv5. Although YOLOv10-X obtained the largest  $R$ ,  YOLOv9-T achieves the best performance overall. Specifically,  it reaches a satisfactorily  $R \\approx 60\\%$  and almost the largest P  with both the thresholds,  $95.0\\%$  and  $94.0\\%$ , respectively.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        166,
+                        614,
+                        1228,
+                        614,
+                        1228,
+                        2006,
+                        166,
+                        2006
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                170,
+                2009.9999999999998,
+                1228,
+                2009.9999999999998,
+                1228,
+                2951.8999999999996,
+                170,
+                2951.8999999999996
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "Looking at mAP<sub>0.5</sub>, all the NNs have achieved  $\\geq 45\\%$  of BMSB, establishing a satisfactory confidence level overall. On the other hand, the NNs have developed limited abilities in contouring the BMSB according to mAP<sup>0.95</sup><sub>0.5</sub> because they are less robust when the IoU increases. In other words, the ma- jority of predictions overlap partially with the ground truth. This represents a predictable outcome due to the limited size of the BMSB with respect to the entire image. For monitor- ing purposes, recognizing all instances inside the frame, i.e., achieving high recall, is more important than accurately con- touring a bug, i.e., achieving high IoU. However, it noteworthy that both YOLOV9 and YOLOv10 demonstrate improved IoU values between prediction and ground truth, suggesting a clear enhancement with previous releases. Moreover, in comparison with the results in [\\[20\\]](#page-9-1) where entire images are simply resized and fed to the model, the current implementation of the slicing mechanism allows a boost in the performance, specifically in the recall. Indeed, image slicing prevents information losses since it retains every pixel of the original image.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        170,
+                        2009.9999999999998,
+                        1228,
+                        2009.9999999999998,
+                        1228,
+                        2951.8999999999996,
+                        170,
+                        2951.8999999999996
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                170,
+                2963.9,
+                1226,
+                2963.9,
+                1226,
+                3101.9,
+                170,
+                3101.9
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "Table III summarizes model's computation demands listing the number of parameters and the number of giga floating point operations per second (GFLOPs), respectively. We can observe",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        170,
+                        2963.9,
+                        1226,
+                        2963.9,
+                        1226,
+                        3101.9,
+                        170,
+                        3101.9
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1268,
+                2207.9,
+                2322,
+                2207.9,
+                2322,
+                2947.9,
+                1268,
+                2947.9
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": "To develop classification models capable of distinguishing between BSBM specimens and vegetal backgrounds based on spectral signatures, we assembled a library comprising 14 000 reference spectra from both classes. We employed the Kennard-Stone algorithm  $[37]$  on principal component (PC) scores to select these spectra. Then, we divided the images into training and test sets for model development and validation, respectively. Our classification approach focused on modeling the spectral information contained in the HSI images and identifying the relevant spectral regions to discriminate BMSB from vegetal backgrounds. To do this, we used the soft partial least squaresdiscriminant analysis (Soft PLS-DA) algorithm, coupled with sparse-based methods for spectral variable selection (s-Soft PLS-DA) [38]. This allowed us to build effective classification models tailored to our dataset.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1268,
+                        2207.9,
+                        2322,
+                        2207.9,
+                        2322,
+                        2947.9,
+                        1268,
+                        2947.9
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1268,
+                1308,
+                2320,
+                1308,
+                2320,
+                2200,
+                1268,
+                2200
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": "We captured 35 hyperspectral images of BMSB specimens positioned against various vegetal backgrounds (including bark, branches, grass, soil, green/brown leaves) within the 980–1660 nm spectral range, aiming to replicate real field conditions. We acquired the hyperspectral images using a HSI line-scan system equipped with a desktop NIR Spectral Scanner (DV Optic) incorporating a Specim N17E reflectance imaging spectrometer, coupled with a Xenics XEVA 1.7-320 camera ( $320 \\times 256$  pixels) and a Specim Oles 31  $f/2.0$  optical lens. The acquisition software conducted an automatic calibration of the images based on the dark current signal and a high-reflectance standard signal. We excluded pixels unrelated to either bugs or vegetal backgrounds based on a reflectance threshold measured at  $1000 \\text{ nm}$ . In addition, we preprocessed the images using standard normal variate (SNV) and mean center techniques. Subsequently, we applied principal component analysis (PCA) to each image to implement a masking procedure, thereby separating the pixels belonging to the bugs from those belonging to the vegetal backgrounds.<sup>1</sup>",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1268,
+                        1308,
+                        2320,
+                        1308,
+                        2320,
+                        2200,
+                        1268,
+                        2200
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1266,
+                690,
+                2324,
+                690,
+                2324,
+                1180,
+                1266,
+                1180
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "In the HALY.ID project, alongside a comprehensive analysis of RGB images primarily captured by UAVs, we also conducted an assessment of spectral imaging as a potential method for field monitoring to detect the presence of BMSB. To this purpose, SWIR-HSI and Vis-NIR MSI systems were evaluated both in the laboratory and in the field, respectively. In fact, unlike cameras operating exclusively within the visible spectrum, they may mitigate misclassifications caused by BMSB's resemblance to vegetal backgrounds with similar colors, such as bark or brown leaves.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1266,
+                        690,
+                        2324,
+                        690,
+                        2324,
+                        1180,
+                        1266,
+                        1180
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1264,
+                254,
+                2322,
+                254,
+                2322,
+                556,
+                1264,
+                556
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "that YOLOv5-X, YOLOv9-E, YOLOv10-X, SSD, and DETR are more \"desktop oriented\" due to their requirements, rather than YOLOv9-T and YOLOv10-N that appear compatible with current state-of-the-art embedding system boards. According to the computation footprint, both YOLOv9-T and YOLOv10-N are, even more so, the best NNs overall.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1264,
+                        254,
+                        2322,
+                        254,
+                        2322,
+                        556,
+                        1264,
+                        556
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1366,
+                612,
+                2222,
+                612,
+                2222,
+                660,
+                1366,
+                660
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "# IV. BMSB DETECTION USING SPECTRAL IMAGING",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1366,
+                        612,
+                        2222,
+                        612,
+                        2222,
+                        660,
+                        1366,
+                        660
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1266,
+                1240,
+                1742,
+                1240,
+                1742,
+                1280,
+                1266,
+                1280
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": "## A. Evaluation of SWIR-HSI",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1266,
+                        1240,
+                        1742,
+                        1240,
+                        1742,
+                        1280,
+                        1266,
+                        1280
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1266,
+                3022,
+                2320,
+                3022,
+                2320,
+                3098,
+                1266,
+                3098
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": " $^{1}$ A detailed description of the methodology used for acquiring and processing the hyperspectral images can be found in the work of Ferrari et al. [36].",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1266,
+                        3022,
+                        2320,
+                        3022,
+                        2320,
+                        3098,
+                        1266,
+                        3098
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 963,
+        "height": 3300,
+        "width": 2475,
+        "image_path": "93_5_png.jpg"
+    }
+}

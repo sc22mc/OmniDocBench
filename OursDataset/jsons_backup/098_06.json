@@ -1,0 +1,440 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        445.99999999999994,
+        114,
+        1226,
+        114,
+        1226,
+        148,
+        445.99999999999994,
+        148
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            445.99999999999994,
+            114,
+            1226,
+            114,
+            1226,
+            148,
+            445.99999999999994,
+            148
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        500,
+        340,
+        2046,
+        340,
+        2046,
+        382,
+        500,
+        382
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "Table 2: 1 example showing how the pretrained ICAE  $(k = 128)$  restores the original context.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            500,
+            340,
+            2046,
+            340,
+            2046,
+            382,
+            500,
+            382
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        452,
+        400.0000000000001,
+        2094,
+        400.0000000000001,
+        2094,
+        1390,
+        452,
+        1390
+      ],
+      "ignore": false,
+      "order": "3",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            452,
+            400.0000000000001,
+            2094,
+            400.0000000000001,
+            2094,
+            1390,
+            452,
+            1390
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| Origin Context                                                     | Restoration                                                       |\n|--------------------------------------------------------------------|-------------------------------------------------------------------|\n| Large pretrained language models have shown surprising In-         | Large pretrained models have shown surprising In-Context          |\n| Context Learning (ICL) ability. With a few demonstration           | Learning (ICL) ability. With a few demonstration input-label      |\n| input-label pairs, they can predict the label for an unseen in-    | pairs, they can predict the label for an unseen input without     |\n| put without additional parameter updates. Despite the great        | additional parameter updates. Despite the great success in per-   |\n| success in performance, the working mechanism of ICL still         | formance, the working mechanism of ICL still remains an open      |\n| remains an open problem. In order to better understand how         | problem. In order to better understand how ICL works, this        |\n| ICL works, this paper explains language models as meta-            | paper explains how language models as meta-optimizers and         |\n| optimizers and understands ICL as a kind of implicit finetun-      | understands ICL as a kind of implicit finetuning. Theoretically,  |\n| ing. Theoretically, we figure out that the Transformer attention   | we figure out that the Transformer attention has a dual form      |\n| has a dual form of gradient descent based optimization. On         | of gradient descent based on optimization. On top of it, we       |\n| top of it, we understand ICL as follows: GPT first produces        | understand ICL as follows: GPT first produces metagradients       |\n| metagradients according to the demonstration examples, and         | according to the demonstration examples, and then these meta-     |\n| then these meta-gradients are applied to the original GPT to       | gradients are applied to the original GPT to build an ICL model.  |\n| build an ICL model. Experimentally, we comprehensively             | Experimentally, we comprehensively compare the behavior of        |\n| compare the behavior of ICL and explicit finetuning based          | ICL and explicit finetuning based on real tasks to provide em-    |\n| on real tasks to provide empirical evidence that supports our      | pirical evidence that supports our findings. The experimental     |\n| understanding. The results prove that ICL behaves similarly        | evidence proves that ICL behaves like us to the same extent.      |\n| to explicit finetuning at the prediction level, the representation | Prediction at the explicit finetuning level, the representation   |\n| level, and the attention behavior level. Further, inspired by our  | level, and the attention behavior level. Further, inspired by our |\n| understanding of meta-optimization, we design a momentum-          | understanding of meta-optimization, we design a momentum-         |\n| based attention by analogy with the momentum-based gradient        | based attention by analogy with the gradient descent-based        |\n| descent algorithm. Its consistently better performance over        | momentum gradient algorithm. Its consistently better perfor-      |\n| vanilla attention supports our understanding again from an-        | mance against vanilla attention supports us again from another    |\n| other aspect, and more importantly, it shows the potential to      | aspect, and more importantly, it shows the potential to use our   |\n| utilize our understanding for future model designing.              | understanding for future modeling tasks.                          |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        902,
+        1552.0000000000002,
+        1638,
+        1552.0000000000002,
+        1638,
+        1784.0000000000002,
+        902,
+        1784.0000000000002
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            902,
+            1552.0000000000002,
+            1638,
+            1552.0000000000002,
+            1638,
+            1784.0000000000002,
+            902,
+            1784.0000000000002
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| Content type           | Loss | BLEU |\n|------------------------|------|------|\n| Normal text            | 0.01 | 99.3 |\n| Patterned random text  | 1.63 | 3.5  |\n| Completely random text | 4.55 | 0.2  |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        444,
+        1430,
+        2104,
+        1430,
+        2104,
+        1508,
+        444,
+        1508
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": "Table 3: Restoration performance for different types of 512-token content with 128 memory slots. Patterned random text is obtained by adding 1 to each token id in a normal text.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            444,
+            1430,
+            2104,
+            1430,
+            2104,
+            1508,
+            444,
+            1508
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        447.9999999999999,
+        1826,
+        2102,
+        1826,
+        2102,
+        1906,
+        447.9999999999999,
+        1906
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": "Based on this intuition, it is very likely that a more powerful LLM may support a higher compression ratio without significant forgetting. We will discuss it in Section  $3.3.1$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.9999999999999,
+            1826,
+            2102,
+            1826,
+            2102,
+            1906,
+            447.9999999999999,
+            1906
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        446,
+        2050,
+        2098,
+        2050,
+        2098,
+        2492,
+        446,
+        2492
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "In order to evaluate the fine-tuned ICAE's performance, we evaluate on the PWC test set. We use the GPT-4 to compare the outputs of the two systems to determine which one performs better or if they are on par with each other, following Mu et al. (2023). Table 4 shows the comparison of results of the LLMs conditioned on memory slots and original contexts. For Llama-7b (fine-tuned ICAE), we compare with Alpaca and StableLM-tuned-alpha-7b since there is no official instruction-tuned Llama-1 model. The Llama-7b (ICAE) conditioned on 128 memory slots largely outperforms both Alpaca and StableLM which can access original contexts ( $\\sim$ 512 tokens), with a win rate of 56.7% and 74.1% respectively and a win+tie rate of 73% $\\sim$ 81%. However, when compared to the GPT-4 (we regard it as the gold standard), there is still a significant gap, with around  $70\\%$  of the cases underperforming the GPT-4's results, and a win+tie ratio of about only 30%.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            446,
+            2050,
+            2098,
+            2050,
+            2098,
+            2492,
+            446,
+            2492
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        444,
+        2528,
+        2106,
+        2528,
+        2106,
+        2792,
+        444,
+        2792
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "When we switch the base model to Llama-2-chat, we observe ICAE's performance becomes much better than its counterpart based on Llama-1: when  $k = 128$ , its win+tie rate can reach around 75% against the GPT-4 although it still lags behind its counterpart conditioning on the original context as the compression is lossy. As  $k$  increases, the win+tie rate further improves while the compression rate decreases. We perform the same comparative studies on Llama-2-13b-chat and observe better results of ICAE, supporting our assumption in Section 3.2.1 that the ICAE can benefit more on larger LLMs.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            444,
+            2528,
+            2106,
+            2528,
+            2106,
+            2792,
+            444,
+            2792
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        448,
+        2822,
+        2108,
+        2822,
+        2108,
+        3046,
+        448,
+        3046
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "We investigate the impact of memory length on results. Table 5 shows pairwise comparisons between ICAE models with varying memory slot lengths. A higher compression ratio makes it harder to ensure response quality, but a larger ratio doesn't always lead to worse performance. Table 5 highlights that a pretrained ICAE with  $8 \\times$  compression (k=64) can match a non-pretrained ICAE with  $4 \\times$ compression ( $k=128$ ). Under the same ratio, the pretrained ICAE performs much better than its",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            2822,
+            2108,
+            2822,
+            2108,
+            3046,
+            448,
+            3046
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1254,
+        3126,
+        1284,
+        3126,
+        1284,
+        3166,
+        1254,
+        3166
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "6",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1254,
+            3126,
+            1284,
+            3126,
+            1284,
+            3166,
+            1254,
+            3166
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        448,
+        1972.0000000000002,
+        920,
+        1972.0000000000002,
+        920,
+        2006.0000000000002,
+        448,
+        2006.0000000000002
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "### 3.2.2 FINE-TUNED ICAE",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            1972.0000000000002,
+            920,
+            1972.0000000000002,
+            920,
+            2006.0000000000002,
+            448,
+            2006.0000000000002
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 1026,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "98_6_png.jpg"
+  }
+}

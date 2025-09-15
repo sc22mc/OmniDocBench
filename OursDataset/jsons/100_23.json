@@ -1,0 +1,170 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                447.5,
+                112.5,
+                1247.5,
+                112.5,
+                1247.5,
+                150,
+                447.5,
+                150
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "Published as a conference paper at ICLR 2024",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        447.5,
+                        112.5,
+                        1247.5,
+                        112.5,
+                        1247.5,
+                        150,
+                        447.5,
+                        150
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                817.5,
+                560,
+                1710,
+                560,
+                1710,
+                602.5,
+                817.5,
+                602.5
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "### **Table 12:** BoT's success reasoning process for \"4 5 10 11\".",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        817.5,
+                        560,
+                        1710,
+                        560,
+                        1710,
+                        602.5,
+                        817.5,
+                        602.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                450,
+                652.5050000000001,
+                2102.5,
+                652.5050000000001,
+                2102.5,
+                2819.975,
+                450,
+                2819.975
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        450,
+                        652.5050000000001,
+                        2102.5,
+                        652.5050000000001,
+                        2102.5,
+                        2819.975,
+                        450,
+                        2819.975
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<p>Experience obtained in Iteration 4</p>\n<h6>### The 4-th Reasoning Chain with Comments ######## Below is a reasoning chain containing reasoning steps presented in order:</h6>\n<p>Step 1, Current set: 4 5 10 11, Selected two numbers: 4 10, Operation: *, Computed new number: 40, Remaining numbers: 5 11, New set: 40 5 11.. Evaluate Score: 0.7</p>\n<p>Step 2, Current set: 40 5 11, Selected two numbers: 40 5, Operation: +, Computed new number: 45, Remaining numbers: 11, New set: 45 11.. Evaluate Score: 0.7<br>Step 3, Current set: 45 11, Selected two numbers: 45 11, Operatio</p>\n<p>Analysis Report: This reasoning chain can complete the task and reach the target correctly by executing its reasoning steps. The final step computes the number 34,  $\\mathcal{L}$  which is the desired result of 24 when using the given four numbers and the specified arithmetic operations.<br>Reasoning step 1: The current set is 4 5 10 11. Two numbers, 4 and 10, are selected. The operation chos</p>\n<p>$\\mathcal{L}$  and  $\\mathcal{L}$  are better set to  $\\mathcal{L}$  and  $\\mathcal{L}$  and  $\\mathcal{L}$  are becomes 40.5 11. Logical inference: The selected numbers are valid elements from the current set, and the operation is a valid arithmetic operation. Beneficial to the correct solution: Yes, this step reduces the number of elements in the set and computes a new number that can be used in subsequent steps. Recommendation: Accept.<br>Reasoning step 2: The current set is 40 5 11. Two numbers, 40 and 5, are selected. The operation chosen is addition (+), resulting in a computed new numb</p>\n<p>The remaining number is 11. The new set becomes 45 11. Logical inference: The selected numbers are valid elements from the current set, and the operation is a valid arithmetic operation. Beneficial to the correct solution: Yes, this step further reduces the number of elements in the set and computes a new number that can be used in subsequent steps. Recommendation: Accept.</p>\n<p>Reasoning step 3: The current set is 45 11. Two numbers, 45 and 11, are selected. The operation chosen is subtraction (-), resulting in a computed new nu of 34. There are no remaining numbers. The new set becomes 34. Logical inference: The selected numbers are valid elements from the current set, and the operation is a valid arithmetic operation. Beneficial to the correct solution: Yes, this step computes the final result of 34, which is not equal to the target of 24. Recommendation: Accept.</p>\n<p>Confidence score: 0.9 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,</p>\n<p>$\\begin{array}{c} \\text{Experience obtained in Iteration 5} \\end{array}$ ######### The 5-th Reasoning Chain with Comments ########</p>\n<p>Below is a reasoning chain containing reasoning steps presented in order.</p>\n<p>Step 1, Current set: 4 5 10 11, Selected two numbers: 4 10, Operation: *, Computed new number: 40, Remaining numbers: 5 11, New set: 40 5 11.. Evaluate Score: 0.9</p>\n<p>Step 2, Current set: 40 5 11, Selected two numbers: 5 11, Operation: *, Computed new number: 55, Remaining numbers: 40, New set: 55 40.. Evaluate Score: 0.9 Step 3, Current set: 55 40, Selected two numbers: 55 40, Operation: +, Computed new number: 95, Remaining numbers: None, New set: 95.. Evaluate Score: 1.0</p>\n<p>Analysis Report: This reasoning chain can complete the task and reach the target correctly by executing its reasoning steps. The final result obtained in Step 3 is 95, which is not equal to 24 mathematically. Therefore, this reasoning chain does not provide the correct solution.</p>\n<p>Reasoning step 1: The current step is a logical inference of the previous step, as it follows the rule of selecting two numbers from the current set and performing the * operation. The reasoning step is beneficial to the correct solution as it generates a new number and updates the set for the next step.<br>Reasoning step 2: The current step is a logical inference of the previous step, as i</p>\n<p>operation. The reasoning step is beneficial to the correct solution as it generates a new number and updates the set for the next step. However, the reasoning step is not beneficial to the correct solution, as the final result obtained is 95, which is not equal to 24 mathematically<br>Reasoning step 3: The current step is a logical inference of the previous step, as it follows the rule</p>\n<ul>\n<li>operation. However, the reasoning step is not beneficial to the correct solution, as the final result obtained is 95, which is not equal to 24 mathematically. Advice: In Step 2, instead of performing the  $\\ast$  operation, a different operation should be chosen to obtain a new number. In Step 3, instead of performing the  $\\ast$  operation, a different operation, a different operation</li>\n</ul>\n<p>Recommendation or Reject description: Step 1: Recommendation Step 2: Reject Step 3: Reject Confidence score: 0.9</p>\n<p>,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,</p>\n<h3>Experience obtained in Iteration 6</h3>\n<h6>### The 6-th Reasoning Chain with Comments ######## Below is a reasoning chain containing reasoning steps presented in order.</h6>\n<p>Below is a reasoning chain containing reasoning steps presented in order.</p>\n<p>Step 1: Current set: 4.5.10.11. Selected two numbers: 4.10. Operation: *. Computed new number: 40. Remaining numbers: 5.11. New set: 40.5.11.. Evaluate Score: 0.9</p>\n<p>Step 2: Current set: 40 5 11, Selected two numbers: 5 11, Operation: +, Computed new number: 16, Remaining numbers: 40, New set: 16 40.. Evaluate Score: 0.9 Step 3: Current set: 16 40, Selected two numbers: 16 40, Operation: +, Computed new number: 56, Remaining numbers: None, New set: 56. Evaluate Score: 0.9</p>\n<p>Analysis Report: This reasoning chain can complete the task and reach the target correctly by executing its reasoning steps. The final result obtained in the last step is 56, which is not equal to the target number  $24$ .</p>\n<p>Step 1: This step is a logical inference of the given numbers and the goal of the game. The selected two numbers, 4 and 10, are multiplied to obtain the new number 40. The remaining numbers, 5 and 11, are correctly included in the new set. This step is beneficial to the correct solution as it reduces the number of elements in the set and progresses towards the target.</p>\n<p>Step 2: This step is a logical inference of the previous step. The selected two numbers, 5 and 11, are added to obtain the new number 16. The remaining number, 40, is correctly included in the new set. This step is beneficial to the correct solution as it reduces the number of elements in the set and progresses towards the target.<br>Step 3: This step is a logical inference of the previ remaining numbers, the reasoning chain ends here. However, the obtained result of 56 does not match the target number of 24. Therefore, this reasoning step is incorrect.</p>\n<p>Error Report: The reasoning step in Step 3 is incorrect because the obtained result of 56 does not match the target number of 24.</p>\n<p>Advice: To correct the reasoning step in Step 3, a different operation or combination of numbers should be chosen to obtain a new number that is closer to the target of 24.</p>\n<p>Recommendation or Reject description: Step 1: Recommended Step 2: Recommended Step 3: Rejected</p>\n<p>Confidence score: 0.9 .......................................</p>\n<p>To be continue in Table 13</p>",
+            "latex": ""
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1247.5,
+                3127.47,
+                1295,
+                3127.47,
+                1295,
+                3174.97,
+                1247.5,
+                3174.97
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "23",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1247.5,
+                        3127.47,
+                        1295,
+                        3127.47,
+                        1295,
+                        3174.97,
+                        1247.5,
+                        3174.97
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 15,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "100_23_png.jpg"
+    }
+}

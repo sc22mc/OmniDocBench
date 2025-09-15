@@ -1,0 +1,508 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "plain_text",
+      "poly": [
+        555,
+        522.5,
+        2000,
+        522.5,
+        2000,
+        720,
+        555,
+        720
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": " **Lemma 3.** Let  $A = (Q, \\Sigma, \\delta)$  be a PFA with carefully synchronizing word w. Further, let  $q \\in Q$  be such that there exists  $p \\in Q$  such that  $q \\in p.a^{-1}$ . Let also  $A' = (Q \\cup \\{q'\\}, \\Sigma, \\delta')$  where  $\\delta'$  is defined as  $\\delta$  on  $Q$  and  $\\delta'(q', a) = q$ . Then  $w$  carefully synchronizes  $A'$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            555,
+            522.5,
+            2000,
+            522.5,
+            2000,
+            720,
+            555,
+            720
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        557.5,
+        755,
+        1997.5,
+        755,
+        1997.5,
+        1050,
+        557.5,
+        1050
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": " *Proof.* Since a is defined for all states of  $Q'$ , and  $|\\Sigma| = 2$ , then the first letter of  $w$  must be a. Let  $w'$  be the word  $w$  without the first letter. Since  $\\delta'(q', a) = q$  and we assumed that there exist  $p \\in Q$  such that  $q \\in p.a^{-1}$  it is straightforward, that  $Q'.a = Q.a$ . Since we have not added any other transitions to  $\\mathcal{A}'$  and  $\\delta'$  is defined as  $\\delta$  on  $Q$ , we obtain that  $Q'.aw' = Q.aw' = Q.w$  and that concludes the proof.  $\\Box$ ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            557.5,
+            755,
+            1997.5,
+            755,
+            1997.5,
+            1050,
+            557.5,
+            1050
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        612.5,
+        1087.5,
+        1915,
+        1087.5,
+        1915,
+        1132.5,
+        612.5,
+        1132.5
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": " For the next lemma we assume notation as in former part of the paper.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            612.5,
+            1087.5,
+            1915,
+            1087.5,
+            1915,
+            1132.5,
+            612.5,
+            1132.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        552.5,
+        1160,
+        1995,
+        1160,
+        1995,
+        1482.5,
+        552.5,
+        1482.5
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " **Lemma 4.** Let  $\\mathcal{B} = \\bigcup_{i=1}^k A_k$  and  $m \\in \\mathbb{N}$  be the smallest integer such that  $Q.a^m = Q.a^{m+1}$ . Define  $B_i = Q_i.a^m b$  and let  $\\mathcal{C}_1 = (S_1, \\{a\\}, \\eta_1), \\ldots, \\mathcal{C}_l =$  $(S_l, \\{a\\}, \\eta_l)$  be a-clusters with depth 1 and centers  $K_1, \\ldots, K_l$  respectively. Let  $\\mathcal{B}' = \\mathcal{B} \\cup \\bigcup_{i=1}^l \\mathcal{C}_i = (P', \\Sigma, \\rho').$  If we define b transitions for all states  $q \\in$  $\\bigcup_{i=1}^l K_i$  such that there exists  $0 < j < k+1$  such that  $\\rho'(q,b) \\in B_j$  then  $P'.w = \\{q_l^1, ..., q_l^k\\}.$ ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            552.5,
+            1160,
+            1995,
+            1160,
+            1995,
+            1482.5,
+            552.5,
+            1482.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        547.5,
+        1510,
+        1992.5,
+        1510,
+        1992.5,
+        1820,
+        547.5,
+        1820
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " *Proof.* Since a is the only letter defined for all states in  $\\mathcal{A}$  and  $Q.a^m = Q.a^{m+1}$  then *w* starts with a word  $a^{m_1}b$  for  $0 < m_1 < m+1$ . Note  $w = a^{m_1}bw'$  Observe that  $Q.a^{i+1} \\subseteq Q.a^i$  for all  $i \\geq 0$ . From that we have, that  $Q.a^m \\subseteq Q.a^{m_1}$  and further for all copies of  $\\mathcal{A}$  in  $\\mathcal{B}'$  we obtain that  $B_i \\in Q_i.a^{m_1}.b$ . Also, since the depth of any cluster  $C_i$  is 1, we have that  $P_j.a^{m_1} = K_j$  for all  $0 < j < m + 1$ . Notice that  $P' = \\bigcup_{i=1}^k Q_i \\cup \\bigcup_{i=1}^l S_i$ , so",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            547.5,
+            1510,
+            1992.5,
+            1510,
+            1992.5,
+            1820,
+            547.5,
+            1820
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        555.0000000000001,
+        2017.4999999999998,
+        767.5000000000001,
+        2017.4999999999998,
+        767.5000000000001,
+        2069.9999999999995,
+        555.0000000000001,
+        2069.9999999999995
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": " $\\text{which gives}$ ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            555.0000000000001,
+            2017.4999999999998,
+            767.5000000000001,
+            2017.4999999999998,
+            767.5000000000001,
+            2069.9999999999995,
+            555.0000000000001,
+            2069.9999999999995
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        550,
+        2220,
+        1997.5,
+        2220,
+        1997.5,
+        2317.5,
+        550,
+        2317.5
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": " But we know, that for all  $q \\in \\bigcup_{i=1} K_i$  there exists  $0 < i < k+1$  such that  $\\delta'(q, b) \\in B_i$ . From that we obtain",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            550,
+            2220,
+            1997.5,
+            2220,
+            1997.5,
+            2317.5,
+            550,
+            2317.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        545,
+        2537.5,
+        1992.5,
+        2537.5,
+        1992.5,
+        2625,
+        545,
+        2625
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": " and since each  $B_i = Q_i a^m b$  then  $B_i w' = Q_i a^m b w' = Q_i w = \\{q_l^i\\}$  and that concludes the proof. □",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            545,
+            2537.5,
+            1992.5,
+            2537.5,
+            1992.5,
+            2625,
+            545,
+            2625
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        552.5,
+        2662.5,
+        1997.5,
+        2662.5,
+        1997.5,
+        2815,
+        552.5,
+        2815
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": " Using these two lemmas we can move on to the description of the extended method of encryption and decryption. In the next two subsections we follow the notation provided in sections  $3$  and  $4$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            552.5,
+            2662.5,
+            1997.5,
+            2662.5,
+            1997.5,
+            2815,
+            552.5,
+            2815
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1250,
+        2885,
+        1292.5,
+        2885,
+        1292.5,
+        2930,
+        1250,
+        2930
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": "11",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1250,
+            2885,
+            1292.5,
+            2885,
+            1292.5,
+            2930,
+            1250,
+            2930
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1120,
+        2355,
+        1435,
+        2355,
+        1435,
+        2495,
+        1120,
+        2495
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": " $$ P'.w = \\bigcup_{i=1}^{k} B_i w'. $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1120,
+            2355,
+            1435,
+            2355,
+            1435,
+            2495,
+            1120,
+            2495
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1005,
+        2072.5,
+        1547.5,
+        2072.5,
+        1547.5,
+        2205,
+        1005,
+        2205
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": " $$ P'.w = \\bigcup_{i=1}^{k} B_i w' \\cup \\bigcup_{i=1}^{l} K_i bw'. $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1005,
+            2072.5,
+            1547.5,
+            2072.5,
+            1547.5,
+            2205,
+            1005,
+            2205
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        735,
+        1855.0000000000002,
+        1815,
+        1855.0000000000002,
+        1815,
+        1995.0000000000002,
+        735,
+        1995.0000000000002
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": " $$ P'.w = \\bigcup_{i=1}^{k} Q_i.w \\cup \\bigcup_{i=1}^{l} S_i.w = \\bigcup_{i=1}^{k} Q_i.a^{m_1}bw' \\cup \\bigcup_{i=1}^{l} S_i.a^{m_1}bw' $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            735,
+            1855.0000000000002,
+            1815,
+            1855.0000000000002,
+            1815,
+            1995.0000000000002,
+            735,
+            1995.0000000000002
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 815,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "80_11_png.jpg"
+  }
+}

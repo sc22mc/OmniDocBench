@@ -1,0 +1,744 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "table_caption",
+      "poly": [
+        219.9999999999999,
+        255,
+        1247.5,
+        255,
+        1247.5,
+        387.5,
+        219.9999999999999,
+        387.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": " Table 1: For the evaluation, sequences from surveillance systems, medical applications, and the HEVC test data set are employed. All sequences are used in 4:0:0 color sub-sampling format.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            219.9999999999999,
+            255,
+            1247.5,
+            255,
+            1247.5,
+            387.5,
+            219.9999999999999,
+            387.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        227.5000000000001,
+        430,
+        1250,
+        430,
+        1250,
+        822.5,
+        227.5000000000001,
+        822.5
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.5000000000001,
+            430,
+            1250,
+            430,
+            1250,
+            822.5,
+            227.5000000000001,
+            822.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n|      |               | Spatial resolution | Number of frames |\n|------|---------------|--------------------|------------------|\n| Surv | AirportNight1 | $688 \\times 352$   | 500              |\n|      | AirportNight2 | $688 \\times 432$   | 500              |\n|      | AirportNight3 | $688 \\times 372$   | 500              |\n|      | AirportDay1   | $688 \\times 432$   | 500              |\n| Med  | MedFrontal    | $512 \\times 512$   | 29               |\n|      | MedSagittal   | $512 \\times 512$   | 29               |\n| HEVC | ClassC        | $832 \\times 480$   | 300              |\n|      | ClassD        | $416 \\times 240$   | 300              |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        1295,
+        252.5,
+        2335,
+        252.5,
+        2335,
+        435,
+        1295,
+        435
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": " **Table 2**: Absolute  $PSNR_{LP_t}$  [dB] and relative rate [%] differences of our proposed CA-WL compared to the U-WL with (bottom) and without (top) block-based MC. Positive numbers denote a better visual quality and a higher rate of our proposed CA-WL and vice versa.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1295,
+            252.5,
+            2335,
+            252.5,
+            2335,
+            435,
+            1295,
+            435
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        1307.5,
+        470,
+        2322.5,
+        470,
+        2322.5,
+        1207.5,
+        1307.5,
+        1207.5
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1307.5,
+            470,
+            2322.5,
+            470,
+            2322.5,
+            1207.5,
+            1307.5,
+            1207.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n|                |                    | $\\lambda$ | Surv    | Med     | ClassC  | ClassD | Total average  |\n|----------------|--------------------|-----------|---------|---------|---------|--------|---------|\n| No MC          | $\\Delta$ PSNRLPt   | 1         | 4.12    | 5.28    | 12.83   | 18.07  | 8.88    |\n|                |                    | 3         | 1.64    | 1.91    | 6.32    | 11.4   | 5.3     |\n|                |                    | 5         | 0.97    | 1.16    | 3.73    | 8.89   | 3.67    |\n|                |                    | 7         | 0.65    | 1.16    | 4.09    | 8.27   | 3.5     |\n|                | $\\Delta$ File size | 1         | 5.99    | 0.09    | 11.64   | 9.07   | 6.56    |\n|                |                    | 3         | 0.8     | $-0.96$ | 2.53    | 5.77   | 2.18    |\n|                |                    | 5         | 0.23    | $-1.29$ | 0.84    | 4.04   | 1.08    |\n|                |                    | 7         | 0.16    | $-1.29$ | 0.25    | 3.07   | 0.67    |\n| Block-based MC | $\\Delta$ PSNRLPt   | 1         | 9.3     | 15.56   | 6.99    | 14.15  | 10.98   |\n|                |                    | 3         | 8.17    | 13.89   | 9.6     | 11.26  | 10.28   |\n|                |                    | 5         | 7.42    | 13.89   | 9.21    | 9.55   | 9.47    |\n|                |                    | 7         | 7.27    | 13.89   | 8.95    | 8.42   | 9.02    |\n|                | $\\Delta$ File size | 1         | 0.16    | $-5.58$ | 1.98    | 6.9    | 1.34    |\n|                |                    | 3         | $-0.52$ | $-5.64$ | $-1.7$  | 1.35   | $-1.06$ |\n|                |                    | 5         | $-0.69$ | $-5.64$ | $-1.96$ | 0.65   | $-1.38$ |\n|                |                    | 7         | $-0.8$  | $-5.64$ | $-2.18$ | 0.29   | $-1.57$ |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        225.00000000000009,
+        922.5,
+        592.5,
+        922.5,
+        592.5,
+        955,
+        225.00000000000009,
+        955
+      ],
+      "ignore": false,
+      "order": "3",
+      "anno_id": 1,
+      "text": " functional for a signal  $s$ ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            225.00000000000009,
+            922.5,
+            592.5,
+            922.5,
+            592.5,
+            955,
+            225.00000000000009,
+            955
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        542.5,
+        990,
+        920,
+        990,
+        920,
+        1045,
+        542.5,
+        1045
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": " $$ C(s) = D(s) + \\lambda R(s).  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            542.5,
+            990,
+            920,
+            990,
+            920,
+            1045,
+            542.5,
+            1045
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1200,
+        987.4999999999999,
+        1235,
+        987.4999999999999,
+        1235,
+        1032.5,
+        1200,
+        1032.5
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": "(4)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1200,
+            987.4999999999999,
+            1235,
+            987.4999999999999,
+            1235,
+            1032.5,
+            1200,
+            1032.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        219.9999999999999,
+        1067.5,
+        1250,
+        1067.5,
+        1250,
+        1592.5,
+        219.9999999999999,
+        1592.5
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": " To determine the distortion  $D(s)$  of the resulting LP frame, we calculate the MSE of the corresponding wavelet coefficients compared to the original signal according to [13]. In this work, not only the similarity of the LP frame to the odd-indexed frame, but also the similarity to the even indexed frame is considered, which is a very important aspect for many professional applications. The rate  $R(s)$ is composed of the required rate for lossless coding of the LP and HP frames and, in case of MC, the file size of the motion vectors. Then, the current decomposition can be evaluated locally by comparing the R-D costs of the children to the costs of the parent node for a given value  $\\lambda$ . If the R-D costs of the child nodes exceed the costs of the parent node, thus if the following inequality",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            219.9999999999999,
+            1067.5,
+            1250,
+            1067.5,
+            1250,
+            1592.5,
+            219.9999999999999,
+            1592.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        244.99999999999983,
+        1622.5000000000002,
+        1225,
+        1622.5000000000002,
+        1225,
+        1740.0000000000002,
+        244.99999999999983,
+        1740.0000000000002
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": " $$ D(l_{i,[2t-1,2t]}) + \\lambda R(l_{i,[2t-1,2t]}) \\leq $$  $$ (D(l_{i+1,2t-1}) + D(h_{i+1,2t})) + \\lambda (R(l_{i+1,2t-1}) + R(h_{i+1,2t})) $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            244.99999999999983,
+            1622.5000000000002,
+            1225,
+            1622.5000000000002,
+            1225,
+            1740.0000000000002,
+            244.99999999999983,
+            1740.0000000000002
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        1200,
+        1620,
+        1237.5,
+        1620,
+        1237.5,
+        1665,
+        1200,
+        1665
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "(5)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1200,
+            1620,
+            1237.5,
+            1620,
+            1237.5,
+            1665,
+            1200,
+            1665
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        215,
+        1757.5,
+        1242.5,
+        1757.5,
+        1242.5,
+        1932.5,
+        215,
+        1932.5
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": " holds, then a further decomposition is prevented. The Lagrange multiplier  $\\lambda$  can be any positive value. By choosing large values for  $\\lambda$ , the rate is decreased, while for small values the distortion is decreased.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            215,
+            1757.5,
+            1242.5,
+            1757.5,
+            1242.5,
+            1932.5,
+            215,
+            1932.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        220,
+        2000,
+        725,
+        2000,
+        725,
+        2045,
+        220,
+        2045
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": " ## 3.2. Handling of the Overhead",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            220,
+            2000,
+            725,
+            2000,
+            725,
+            2045,
+            220,
+            2045
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        217.5,
+        2087.5,
+        1245,
+        2087.5,
+        1245,
+        2517.5,
+        217.5,
+        2517.5
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": " For lossless reconstruction, the decomposition depth for every part of the input sequence has to be transmitted additionally. Therefore, a vector  $\\boldsymbol{v}$  is generated, whose length corresponds to  $T$ . This vector is initialized with zeros and gets an increment of 1 at every temporal position of a LP frame after one decomposition level. The position to the corresponding HP frame is set to zero. Consequently, the non-zero entries correspond to the number of applied decomposition levels  $i$  for every temporal position of a LP frame, while the distance d to the corresponding HP frame is given by  $d=2^{i-1}$ . For the schematic video sequence in Fig. 2, vector  $\\boldsymbol{v}$  is generated as follows:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            217.5,
+            2087.5,
+            1245,
+            2087.5,
+            1245,
+            2517.5,
+            217.5,
+            2517.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        272.4999999999999,
+        2552.5,
+        1195,
+        2552.5,
+        1195,
+        2770,
+        272.4999999999999,
+        2770
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": " | Initialize $v$ :        | $(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)$ | |-------------------------|----------------------------------------------------| | $v$ after level $i=1$ : | $(1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0)$ | | $v$ after level $i=2$ : | $(2, 0, 0, 0, 2, 0, 0, 0, 1, 0, 1, 0, 2, 0, 0, 0)$ | | $v$ after level $i=3$ : | $(3, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 2, 0, 0, 0)$ |",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            272.4999999999999,
+            2552.5,
+            1195,
+            2552.5,
+            1195,
+            2770,
+            272.4999999999999,
+            2770
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        217.5,
+        2800,
+        1247.5,
+        2800,
+        1247.5,
+        3017.5,
+        217.5,
+        3017.5
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": " The entire vector  $\\boldsymbol{v}$  is encoded using Context Adaptive Binary Arithmetic Coding (CABAC) [14] and is transmitted to the decoder side. Then, for lossless reconstruction of the previous stage, the decoder can easily determine the decomposition level and the temporal positions of the LP and HP frames regarding the original video sequence.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            217.5,
+            2800,
+            1247.5,
+            2800,
+            1247.5,
+            3017.5,
+            217.5,
+            3017.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1550,
+        1307.5,
+        2087.5,
+        1307.5,
+        2087.5,
+        1347.5,
+        1550,
+        1347.5
+      ],
+      "ignore": false,
+      "order": 16,
+      "anno_id": 1,
+      "text": " # 4. EXPERIMENTAL RESULTS",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1550,
+            1307.5,
+            2087.5,
+            1307.5,
+            2087.5,
+            1347.5,
+            1550,
+            1347.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1307.5,
+        1400,
+        2330,
+        1400,
+        2330,
+        1785,
+        1307.5,
+        1785
+      ],
+      "ignore": false,
+      "order": 17,
+      "anno_id": 1,
+      "text": " Our simulation setup comprises surveillance videos, medical sequences with contrast medium, and natural sequences from the HEVC test data set [15]. The dimensions are summarized in Table 1. The bit depth for all sequences constitutes 8 bits per sample. All surveillance sequences are characterized by a static background and some moving objects in the foreground. The medical sequences origin from Digital Subtraction Angiography (DSA), showing the inflow of a contrast medium into a human cranium in frontal and sagittal perspectives.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1307.5,
+            1400,
+            2330,
+            1400,
+            2330,
+            1785,
+            1307.5,
+            1785
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1310,
+        1792.5,
+        2340,
+        1792.5,
+        2340,
+        2575,
+        1310,
+        2575
+      ],
+      "ignore": false,
+      "order": 18,
+      "anno_id": 1,
+      "text": " In the following, we will compare our proposed CA-WL to a uniform wavelet lifting (U-WL) with the same number of total decomposition levels. The single frames of each subband are encoded by JPEG 2000, using the OpenJPEG [16] implementation with four spatial wavelet decomposition steps in  $xy$ -direction. Further, we evaluate the CA-WL and the U-WL with and without a block-based MC, respectively. For block-based MC, the block size is set to 8, while the search range starts with a size of 8 and is doubled for every decomposition level until a maximum size of 64. The increasing search range is important, since the input frames of higher decomposition levels have a larger temporal distance, which has to be covered. To keep the computational effort realistic, we limit the increment of the search range by 64 pixels. The resulting motion vectors are encoded using the QccPack library [17]. Then, the entire file size is composed of the rate resulting from each subband, the required motion vectors and the coding costs for transmitting vector  $\\boldsymbol{v}$ . The visual quality of the resulting LP subband is measured by the same metric as already used in Section 3.1, but in terms of  $PSNR_{LP_{t}}$  [13].",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1310,
+            1792.5,
+            2340,
+            1792.5,
+            2340,
+            2575,
+            1310,
+            2575
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1312.5,
+        2587.5,
+        2332.5,
+        2587.5,
+        2332.5,
+        3015,
+        1312.5,
+        3015
+      ],
+      "ignore": false,
+      "order": 19,
+      "anno_id": 1,
+      "text": "Table 2 gives the differences regarding  $PSNR_{LP_t}$  in [dB] and the entire file size in [%] of our proposed method compared to the U-WL for all data sets with and without the application of MC and for different values of  $\\lambda$ . As can be seen in the right column, our method always results in a better visual quality compared to the U-WL. By increasing  $\\lambda$ , the file size is reduced, while the PSNR<sub>LP<sub>t</sub></sub> gains are also decreased. However, for  $\\lambda = 7$ , the PSNR<sub>LP<sub>t</sub></sub> gains are still positive. By including MC into both methods, we are able to get a lower rate than for the U-WL, resulting in positive  $PSNR_{LP_t}$ gains at the same time. For  $\\lambda = 3$ , the file size can be reduced by up",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1312.5,
+            2587.5,
+            2332.5,
+            2587.5,
+            2332.5,
+            3015,
+            1312.5,
+            3015
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 677,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "66_3_png.jpg"
+  }
+}

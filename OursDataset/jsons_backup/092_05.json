@@ -1,0 +1,508 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        164,
+        132,
+        228,
+        132,
+        228,
+        166,
+        164,
+        166
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "464 ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            164,
+            132,
+            228,
+            132,
+            228,
+            166,
+            164,
+            166
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "header",
+      "poly": [
+        1034,
+        130,
+        2324,
+        130,
+        2324,
+        164,
+        1034,
+        164
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "IEEE TRANSACTIONS ON AGRIFOOD ELECTRONICS, VOL. 2, NO. 2, SEPTEMBER/OCTOBER 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1034,
+            130,
+            2324,
+            130,
+            2324,
+            164,
+            1034,
+            164
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        239.9999999999999,
+        268,
+        2266,
+        268,
+        2266,
+        1116,
+        239.9999999999999,
+        1116
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            239.9999999999999,
+            268,
+            2266,
+            268,
+            2266,
+            1116,
+            239.9999999999999,
+            1116
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        168,
+        1150,
+        2328,
+        1150,
+        2328,
+        1338,
+        168,
+        1338
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "Fig. 3. Sensor node block diagram. Passive wakeup is achieved by harvesting from the wakeup signal. First,  $V_{SMP}$  triggers an OCV measurement (a), then  $V_{WK}$  powers the IPSP (b), allowing energy to flow into the supercap. This continues until  $V_{CAP}$  can power the IPSP on its own (that is, above its load-detach voltage of 2 V). Above this threshold, the MCU stays in ultralow power mode and executes EIS (c) and then LoRa transmission (d) when notified that energy is sufficient by the voltage monitors. After the transmission, the nearly empty storage is further depleted to trigger the BQ's internal load-detach mechanism and go back to cell rest.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            168,
+            1150,
+            2328,
+            1150,
+            2328,
+            1338,
+            168,
+            1338
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        174,
+        1414,
+        1224,
+        1414,
+        1224,
+        1548,
+        174,
+        1548
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "Section  $\\mathbf{II}$ , rest periods also ensure that a correct steady-state OCV measurement can be executed, allowing us to set a more accurate MPP (see Section IV-B).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            174,
+            1414,
+            1224,
+            1414,
+            1224,
+            1548,
+            174,
+            1548
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        172,
+        1564,
+        1222,
+        1564,
+        1222,
+        2748,
+        172,
+        2748
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": "To the best of our knowledge, no estimation of the optimal resting period of a PMFC is currently available. For this reason, we do not assume its maximum duration when designing the sensor node architecture. If we rely on sensor node components to generate the wakeup signal, there is an upper limit on rest time. If the PMFC were to require long resting periods, the storage could become fully discharged while powering the components required for wakeup signal generation (e.g., timers, voltage monitors), preventing the node from ever waking up again. Because of this reason, we bring the node out of rest state through an external wakeup signal, which we also harvest in a passive wakeup approach. The energy harvested from this external signal is used to bootstrap the *input power and sensing path* (IPSP— Section  $III-C2$ ), which is the section of the sensor node allowing power to flow from the PMFC to the harvesting circuitry  $[35]$ . In this way, the sensor node can still successfully wakeup even if its storage becomes fully depleted. This technique ensures no upper bound on rest time, although it requires the external infrastructure to generate the wakeup signal. Depending on the application, we can rely on self-powered IR sensors, PV panels, or passive wakeup radios for passive wakeup [36]. If optimal rest times are short enough and compatible with an onboard wakeup generation, passive wakeup could act as a fail-safe to revive nodes discharged during rest.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            172,
+            1564,
+            1222,
+            1564,
+            1222,
+            2748,
+            172,
+            2748
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        178,
+        2832,
+        1092,
+        2832,
+        1092,
+        2874,
+        178,
+        2874
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": "## C. Sensor Node Block Diagram and Application Cycle",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            178,
+            2832,
+            1092,
+            2832,
+            1092,
+            2874,
+            178,
+            2874
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        178,
+        2908,
+        1228,
+        2908,
+        1228,
+        3100,
+        178,
+        3100
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": "We designed the proposed sensor node architecture shown in Fig.  $3$  by choosing cost-effective components needed to execute and transmit PMFC-powered, ultralow power EIS measurements and by building a *service circuitry*  $(SC)$  around them. The ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            178,
+            2908,
+            1228,
+            2908,
+            1228,
+            3100,
+            178,
+            3100
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1272,
+        2810,
+        2326,
+        2810,
+        2326,
+        2900,
+        1272,
+        2900
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "For the first bench demonstrator, we opted for two-terminal EIS measurements, as this work's goal is not to obtain the",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1272,
+            2810,
+            2326,
+            2810,
+            2326,
+            2900,
+            1272,
+            2900
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1270,
+        2012,
+        2318,
+        2012,
+        2318,
+        2796,
+        1270,
+        2796
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "The sensor node features two key components besides the  $dc$ dc converter: the AFE providing EIS functionality and the radio transceiver needed to transmit measurement results to a base station. We selected the MAX30134 EIS AFE and Semtech's SX1276 LoRa radio for their ultralow power consumption. While the latter is a staple in low-power, long-range communication, the MAX30134 still needs to be tested on PMFCs. The MAX30134 is a four-channel AFE providing biasing and full measurement path, ADC included, to be used on two or three terminal electrochemical sensors. This IC can execute voltage and temperature monitoring, dc measurements, and typical electrochemical measurements such as EIS and cyclic voltammetry. Finally, two factory-trimmed voltage monitors (Analog Devices, ADM8612) provide the signals triggering the measurement and transmission tasks at the appropriate storage voltages (see Section  $IV-E$ ).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1270,
+            2012,
+            2318,
+            2012,
+            2318,
+            2796,
+            1270,
+            2796
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1268,
+        1558,
+        2318,
+        1558,
+        2318,
+        2004,
+        1268,
+        2004
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "1) *Core Components Selection:* Due to the low voltage, low power limitations of PMFCs  $(1)$ , the sensor node requires an energy conversion stage which boosts the PMFC's output voltage and buffers its energy into a supercapacitor for a duty-cycled operation of the sensor node. We selected the BQ25505 IC by Texas Instruments for this purpose.<sup>1</sup> Besides featuring ultralow quiescent current (325 nA) and an efficient ship mode draining only 5 nA, this IC provides a  $V_{\\text{BATOK}}$  signal useful to detach loads during cold-start (see Section IV-B).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1268,
+            1558,
+            2318,
+            1558,
+            2318,
+            2004,
+            1268,
+            2004
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1272,
+        1408,
+        2326,
+        1408,
+        2326,
+        1556,
+        1272,
+        1556
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "SC adapts the chosen components to the requirements of optimal PMFC use. First, we will discuss our choice of components, then we will analyze the role of the SC in the architecture.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1272,
+            1408,
+            2326,
+            1408,
+            2326,
+            1556,
+            1272,
+            1556
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1268,
+        2982,
+        2322,
+        2982,
+        2322,
+        3102,
+        1268,
+        3102
+      ],
+      "ignore": false,
+      "order": 13,
+      "anno_id": 1,
+      "text": "<sup>1</sup>[Datasheet] BQ25505 ultralow-power boost charger with battery management and autonomous power multiplexer for primary battery in energy harvester applications, Texas Instruments, 8 2013, rev. F-March 2019.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1268,
+            2982,
+            2322,
+            2982,
+            2322,
+            3102,
+            1268,
+            3102
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 951,
+    "height": 3300,
+    "width": 2475,
+    "image_path": "92_5_png.jpg"
+  }
+}

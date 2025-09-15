@@ -1,0 +1,170 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                452.49999999999994,
+                110,
+                1232.5,
+                110,
+                1232.5,
+                147.5,
+                452.49999999999994,
+                147.5
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "Published as a conference paper at ICLR 2024",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        452.49999999999994,
+                        110,
+                        1232.5,
+                        110,
+                        1232.5,
+                        147.5,
+                        452.49999999999994,
+                        147.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                447.5,
+                527.5,
+                2105,
+                527.5,
+                2105,
+                777.5,
+                447.5,
+                777.5
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "Table 17: BoT's half success reasoning process for \"Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have together if Seattle has 20 sheep?\". The obtained reasoning chain is only halfway to the solution. This is generally caused by the LLMs used by BoT failing to understand the question correctly. Thus, even though BoT performs a correct reasoning process, the full reasoning chain toward the correct answers can not be obtained. Therefore, such a reasoning chain is still regarded as a success of BoT as it correctly solves the problem captured by the LLM.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        447.5,
+                        527.5,
+                        2105,
+                        527.5,
+                        2105,
+                        777.5,
+                        447.5,
+                        777.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                447.5,
+                822.5000000000001,
+                2097.5,
+                822.5000000000001,
+                2097.5,
+                2844.86,
+                447.5,
+                2844.86
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        447.5,
+                        822.5000000000001,
+                        2097.5,
+                        822.5000000000001,
+                        2097.5,
+                        2844.86,
+                        447.5,
+                        2844.86
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>Experience obtained in Iteration 1</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>######## The 1-th Reasoning Chain with Comments ########<br>Below is a reasoning chain containing reasoning steps presented in order:</td>\n</tr>\n<tr>\n<td>Step 1: If Seattle has 20 sheep, then we can use the given ratios to calculate the number of sheep in Charleston and Toulouse. According to the problem, Charleston<br>has 4 times as many sheep as Seattle. Therefore, Charleston has $4 * 20 = 80$ sheep.. Evaluate Score: 1.0</td>\n</tr>\n<tr>\n<td>Analysis Report: The reasoning chain is on the correct path to solve the problem. The first step correctly interprets the problem statement and accurately calculates<br>the number of sheep in Charleston based on the given information. It uses the correct mathematical operation (multiplication) to determine the number of sheep in<br>Charleston, which is a logical inference from the problem statement.<br>Reasoning step 1: This step is a logical inference from the given problem statement. The problem states that Charleston has 4 times as many sheep as Seattle.<br>Given that Seattle has 20 sheep, it is correct to multiply 20 by 4 to find the number of sheep in Charleston. This step is beneficial to the correct solution as it<br>accurately calculates the number of sheep in Charleston, which is needed to find the total number of sheep in all three cities. There are no errors in this step.</td>\n</tr>\n<tr>\n<td>Advice: No advice is needed for this step as it is correct.<br>Recommendation: This reasoning step is recommended as it correctly interprets the problem statement and accurately calculates the number of sheep in Charleston.<br>Confidence score: $1.0$</td>\n</tr>\n<tr>\n<td>##########################################</td>\n</tr>\n<tr>\n<td>Experience obtained in Iteration 3</td>\n</tr>\n<tr>\n<td>######## The 3-th Reasoning Chain with Comments ########<br>Below is a reasoning chain containing reasoning steps presented in order:</td>\n</tr>\n<tr>\n<td>Step 1: If Seattle has 20 sheep, then we can use the given ratios to calculate the number of sheep in Charleston and Toulouse. According to the problem, Charleston<br>has 4 times as many sheep as Seattle. Therefore, Charleston has $4 * 20 = 80$ sheep.. Evaluate Score: 1.0</td>\n</tr>\n<tr>\n<td>Analysis Report: The reasoning chain can complete the task and reach the target correctly by executing its reasoning steps. The task requires finding out the total<br>number of sheep in Toulouse, Charleston, and Seattle, given that Seattle has 20 sheep and the other cities have sheep in a certain ratio to Seattle. The reasoning<br>chain correctly interprets the problem and uses the given ratio to calculate the number of sheep in Charleston.</td>\n</tr>\n<tr>\n<td>Reasoning step 1: The first step correctly uses the information provided in the problem statement. It logically infers that since Charleston has 4 times as many<br>sheep as Seattle and Seattle has 20 sheep, Charleston has $4 * 20 = 80$ sheep. This step is beneficial to the correct solution as it correctly calculates the number of<br>sheep in Charleston based on the given ratio and the number of sheep in Seattle. There are no errors in this reasoning step.<br>Advice: No advice needed for this step as it is correctly reasoned and calculated.</td>\n</tr>\n<tr>\n<td>Recommendation or Reject description: I recommend this reasoning step as it correctly interprets the problem statement, uses the given ratio, and correctly<br>calculates the number of sheep in Charleston.<br>Confidence score: $1.0$</td>\n</tr>\n<tr>\n<td>##########################################</td>\n</tr>\n<tr>\n<td>Experience obtained in Iteration 5</td>\n</tr>\n<tr>\n<td>######## The 5-th Reasoning Chain with Comments ########<br>Below is a reasoning chain containing reasoning steps presented in order:</td>\n</tr>\n<tr>\n<td>Step 1: If Seattle has 20 sheep, then we can use the given ratios to calculate the number of sheep in Charleston and Toulouse. According to the problem, Charleston<br>has 4 times as many sheep as Seattle. Therefore, Charleston has $4 * 20 = 80$ sheep.. Evaluate Score: 1.0</td>\n</tr>\n<tr>\n<td>Analysis Report: This reasoning chain correctly applies the information given in the problem to determine the number of sheep in Charleston. It logically infers<br>from the given information that if Charleston has 4 times as many sheep as Seattle, and Seattle has 20 sheep, then Charleston must have $4 * 20 = 80$ sheep. This<br>reasoning step is beneficial to the correct solution as it accurately calculates the number of sheep in Charleston based on the given information.<br>Reasoning step 1. The first step is logically correct and follows from the problem statement. The step uses the given ratio of sheep between Charleston and Seattle<br>to calculate the number of sheep in Charleston. This step is beneficial to the correct solution as it correctly applies the given ratio to find the number of sheep in<br>Charleston. There are no errors in this step.</td>\n</tr>\n<tr>\n<td>Advice: No advice is needed for this step as it is logically correct and beneficial to the solution.<br>Recommendation: This step is recommended as it correctly applies the given ratio and calculates the number of sheep in Charleston.</td>\n</tr>\n<tr>\n<td>Confidence score: $1.0$</td>\n</tr>\n<tr>\n<td>##########################################</td>\n</tr>\n<tr>\n<td>Experience obtained in Iteration 9</td>\n</tr>\n<tr>\n<td>######## The 9-th Reasoning Chain with Comments ########</td>\n</tr>\n<tr>\n<td>Below is a reasoning chain containing reasoning steps presented in order:</td>\n</tr>\n<tr>\n<td>Step 1: Since Charleston has 4 times as many sheep as Seattle and Seattle has 20 sheep, we can calculate the number of sheep in Charleston by multiplying 4 by<br>20.. Evaluate Score: 1.0</td>\n</tr>\n<tr>\n<td>Analysis Report: The reasoning chain for Step 1 is accurate and logically sound. It correctly applies the information given in the problem statement to determine<br>the number of sheep in Charleston. This step is crucial for solving the problem as it establishes the number of sheep in Charleston, which is then used to determine<br>the number of sheep in Toulouse.</td>\n</tr>\n<tr>\n<td>Reasoning step 1. The step is a logical inference from the given problem statement. It correctly interprets the information that Charleston has 4 times as many<br>sheep as Seattle, and applies this information to calculate the number of sheep in Charleston. This step is beneficial to the correct solution as it provides the<br>necessary information to calculate the total number of sheep in all three locations.</td>\n</tr>\n<tr>\n<td>Advice: No advice is necessary for this step as it is correctly reasoned and accurately calculated.<br>Recommendation: I recommend accepting this reasoning step as it is correctly reasoned and accurately calculated.<br>Confidence score: 1.0</td>\n</tr>\n<tr>\n<td>##########################################</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1242.5,
+                3119.86,
+                1312.5,
+                3119.86,
+                1312.5,
+                3179.86,
+                1242.5,
+                3179.86
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "27",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1242.5,
+                        3119.86,
+                        1312.5,
+                        3119.86,
+                        1312.5,
+                        3179.86,
+                        1242.5,
+                        3179.86
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 19,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "100_27_png.jpg"
+    }
+}

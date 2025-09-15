@@ -1,0 +1,546 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "figure",
+            "poly": [
+                297.50000000000006,
+                270,
+                1112.5,
+                270,
+                1112.5,
+                805,
+                297.50000000000006,
+                805
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        297.50000000000006,
+                        270,
+                        1112.5,
+                        270,
+                        1112.5,
+                        805,
+                        297.50000000000006,
+                        805
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                195,
+                847.5000000000001,
+                1262.5,
+                847.5000000000001,
+                1262.5,
+                930.0000000000001,
+                195,
+                930.0000000000001
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": " Figure 4: Mean training reward over the last 100 partial episodes on the three training runs.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        195,
+                        847.5000000000001,
+                        1262.5,
+                        847.5000000000001,
+                        1262.5,
+                        930.0000000000001,
+                        195,
+                        930.0000000000001
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                202.5,
+                1032.5,
+                1257.5,
+                1032.5,
+                1257.5,
+                1222.5,
+                202.5,
+                1222.5
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " training: here, the agent is evaluated on completing a task longer than the partial episodes seen during training, which are limited to 200 steps, and a faster completion coincides better results.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        202.5,
+                        1032.5,
+                        1257.5,
+                        1032.5,
+                        1257.5,
+                        1222.5,
+                        202.5,
+                        1222.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                197.5,
+                1237.5,
+                1255,
+                1237.5,
+                1255,
+                1972.5,
+                197.5,
+                1972.5
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " We repeated the experiment 100 times for each of the three trained agents. Results are then compared to the performance of Secure Copy Protocol (SCP), which in our system uses TCP CUBIC as the transport protocol, on the same file transfer task. Figure 5 shows the optimal behaviour, computed from the a-priori knowledge of the background traffic, along with the batch of results obtained from the trained agents. The average, best, and worst performance of TCP CUBIC are also shown under the same conditions after having repeated the transfer 100 times as well. Figure 3 presents the variation of the CWND size during MARLIN's best run across all the three experiments. The color of each segment represents the RTT of the communication measured during a period of one SRTT immediately following the action that took the CWND size to the value represented by the rightmost end of the segment.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        197.5,
+                        1237.5,
+                        1255,
+                        1237.5,
+                        1255,
+                        1972.5,
+                        197.5,
+                        1972.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                195,
+                1992.5,
+                1260,
+                1992.5,
+                1260,
+                2777.5,
+                195,
+                2777.5
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": " Runs with significant performance degradation were aborted after 80 seconds, with 5a reporting 4 aborted experiments, 5b reporting 20, and 5c reporting 2. TCP CUBIC completes the file transfer in 45.03s in average, with its fastest transfer achieved in 33.97s, and a worst performance of 70.78s. Excluding aborted runs, MARLIN reached the target in 46.1s in average in 5a, 50.31s in 5b, and 46.9s in 5c. All agents' best performance was faster than TCP CUBIC's best. In 5a,  $48\\%$  of the experiments achieve a performance equal or better than the average accomplished by TCP CUBIC, 31% in 5b, and 47% in 5c. The fastest transfer was completed by 5b in 24.84s, 27% faster than the fastest SCP transfer and 45% faster than its average. For comparison, the available bandwidth on the link allows file transfers to be completed in 25s (see Figure 5); faster transfers can still occur if the traffic injected by MARLIN causes other flows to slow down.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        195,
+                        1992.5,
+                        1260,
+                        1992.5,
+                        1260,
+                        2777.5,
+                        195,
+                        2777.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                205,
+                2897.5,
+                1260,
+                2897.5,
+                1260,
+                2987.5,
+                205,
+                2987.5
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": " Despite the increased decision making complexity brought by continuous actions in a problem as intricate as CC in a ",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        205,
+                        2897.5,
+                        1260,
+                        2897.5,
+                        1260,
+                        2987.5,
+                        205,
+                        2987.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1295,
+                2502.5,
+                2352.5,
+                2502.5,
+                2352.5,
+                2990,
+                1295,
+                2990
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": " Due to the exceptional degree of heterogeneity, complexity, and intrinsic dynamism of networking environments, and following the reinvigorated interest in ML that captivated the scientific community in the last two decades, several recent efforts have focused on learning-based transport protocol optimization techniques. Some approaches focus on addressing very specific problem of transport protocols, such as accurately identifying congestion events, but do not aim at replacing CC algorithms. For instance, researchers have successfully built ML-based models that can distinguish between losses caused",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1295,
+                        2502.5,
+                        2352.5,
+                        2502.5,
+                        2352.5,
+                        2990,
+                        1295,
+                        2990
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1295,
+                1902.5,
+                2352.5,
+                1902.5,
+                2352.5,
+                2490,
+                1295,
+                2490
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": " Research efforts on the design and optimization of TCP CC have historically been very different from the approach discussed in this paper. Traditional CC algorithms aim at achieving full bottleneck link utilization by applying diverse heuristic strategies that increase the CWND size until a congestion sign emerges, such as a packet loss, e.g., NewReno [28] and CUBIC [29] (the default CC algorithm in modern Linux Kernels and recent Windows operating systems), or an increase in latency, e.g., Vegas [30] and, more recently, BBR [31]. These approaches have been shown to work well under specific network conditions, but underperform or experience other types of issues in other scenarios  $[32, 33, 34]$ .",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1295,
+                        1902.5,
+                        2352.5,
+                        1902.5,
+                        2352.5,
+                        2490,
+                        1295,
+                        2490
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1295,
+                1357.5,
+                2355,
+                1357.5,
+                2355,
+                1797.5,
+                1295,
+                1797.5
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": " Finally, although most trajectories obtained during evaluation express promising and valuable results (Figure 5), they also present a significant degree of instability, which warrants additional research. This behavior is particularly evident in 5b, where the model is trained using the function in Eq. 2. This model has had several transfers significantly faster than the ones in 5a and 5c, as well as those obtained with SCP; nonetheless, the model has proved considerably slower in average.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1295,
+                        1357.5,
+                        2355,
+                        1357.5,
+                        2355,
+                        1797.5,
+                        1295,
+                        1797.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1292.5,
+                1055,
+                2352.5,
+                1055,
+                2352.5,
+                1352.5,
+                1292.5,
+                1352.5
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": " Figure 3 shows the CWND size during one of the evaluation runs. Note that most of the time, following an increased RTT reading, the agent has learned to respond by reducing the CWND size or decreasing its growth speed in the next step. This behavior is compatible with many RTT-based CC algorithms.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1292.5,
+                        1055,
+                        2352.5,
+                        1055,
+                        2352.5,
+                        1352.5,
+                        1292.5,
+                        1352.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1292.5,
+                652.5,
+                2352.5,
+                652.5,
+                2352.5,
+                1047.5,
+                1292.5,
+                1047.5
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " Permuting the order of the background traffic patterns during training did not deteriorate the performance during evaluation. In fact, evaluation runs exhibited lower variance, a better fastest transfer, and similar average transfer time compared to the experiments shown in 5a. Moreover, fewer experiments had to be aborted. These results suggest that MARLIN's robustness might be further improved by feeding data from diverse scenarios to the algorithm.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1292.5,
+                        652.5,
+                        2352.5,
+                        652.5,
+                        2352.5,
+                        1047.5,
+                        1292.5,
+                        1047.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1292.5,
+                209.99999999999994,
+                2352.5,
+                209.99999999999994,
+                2352.5,
+                647.5,
+                1292.5,
+                647.5
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " real network and a training budget of 1M steps, which is modest when compared to other RL-based CC agents, results are promising and already comparable to TCP CUBIC in our environment. We believe that part of it is due to the sample efficiency of SAC. Another reason can be found in the shaping of the CC problem as an infinite-horizon task with strictly negative rewards, which enables the agent to exploit its acquired experience in tasks longer than the partial episodes seen during training and with different goals.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1292.5,
+                        209.99999999999994,
+                        2352.5,
+                        209.99999999999994,
+                        2352.5,
+                        647.5,
+                        1292.5,
+                        647.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1645,
+                1832.5000000000002,
+                2000,
+                1832.5000000000002,
+                2000,
+                1870.0000000000002,
+                1645,
+                1870.0000000000002
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": " # V. RELATED WORK",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1645,
+                        1832.5000000000002,
+                        2000,
+                        1832.5000000000002,
+                        2000,
+                        1870.0000000000002,
+                        1645,
+                        1870.0000000000002
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                202.5,
+                2827.5,
+                445,
+                2827.5,
+                445,
+                2870,
+                202.5,
+                2870
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " ## D. Discussion",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        202.5,
+                        2827.5,
+                        445,
+                        2827.5,
+                        445,
+                        2870,
+                        202.5,
+                        2870
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 857,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "84_7_png.jpg"
+    }
+}

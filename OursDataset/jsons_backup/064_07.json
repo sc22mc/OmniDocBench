@@ -1,0 +1,520 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        515,
+        187.5,
+        1975,
+        187.5,
+        1975,
+        237.5,
+        515,
+        237.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "QR-CLIP: Introducing Explicit Open-World Knowledge for Location and Time Reasonin",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            515,
+            187.5,
+            1975,
+            187.5,
+            1975,
+            237.5,
+            515,
+            237.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        242.5,
+        280,
+        1205,
+        280,
+        1205,
+        957.5,
+        242.5,
+        957.5
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            242.5,
+            280,
+            1205,
+            280,
+            1205,
+            957.5,
+            242.5,
+            957.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| ID Method                           | Accuracy (~ Rank@1) | Rank@5 | Example-F1 |\n|-------------------------------------|---------------------|--------|------------|\n| Location Reasoning (Only QM)        |                     |        |            |\n| CLIP+[CLS]v(n=6)+LL                 | 16.77%              | 36.89% | 49.63%     |\n| CLIP+[CLS]v(n=6)+GL                 | 17.13%              | 37.75% | 49.87%     |\n| CLIP+[CLS]v(n=6)+LL+GL              | 17.25%              | 37.80% | 49.98%     |\n| Time Reasoning (Only QM)            |                     |        |            |\n| CLIP+[CLS]v(n=6)+LL                 | 1.23%               | 5.33%  | 43.59%     |\n| CLIP+[CLS]v(n=6)+GL                 | 1.92%               | 5.60%  | 44.62%     |\n| CLIP+[CLS]v(n=6)+LL+GL              | 2.00%               | 5.37%  | 45.60%     |\n| Location Reasoning (QR-CLIP: QM+RM) |                     |        |            |\n| CLIP+[CLS]v(n=6)+LL                 | 19.11%              | 37.74% | 50.51%     |\n| CLIP+[CLS]v(n=6)+GL                 | 18.36%              | 37.87% | 50.03%     |\n| CLIP+[CLS]v(n=6)+LL+GL              | 19.31%              | 38.78% | 50.96%     |\n| Time Reasoning (QR-CLIP: QM+RM)     |                     |        |            |\n| CLIP+[CLS]v(n=6)+LL                 | 3.22%               | 11.57% | 47.80%     |\n| CLIP+[CLS]v(n=6)+GL                 | 2.98%               | 9.60%  | 46.32%     |\n| CLIP+[CLS]v(n=6)+LL+GL              | 3.53%               | 10.90% | 47.89%     |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        227.5,
+        965,
+        1212.5,
+        965,
+        1212.5,
+        1140,
+        227.5,
+        1140
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": " Table 3. The impact of various loss functions and components on performance. LL, GL indicate the local loss and global loss, respectively. QR-CLIP means the model contains entirely Quantity module (QM: Sec. 3.2) and Relevance module (RM: Sec. 3.3).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.5,
+            965,
+            1212.5,
+            965,
+            1212.5,
+            1140,
+            227.5,
+            1140
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        230,
+        1210,
+        1200,
+        1210,
+        1200,
+        1575,
+        230,
+        1575
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            230,
+            1210,
+            1200,
+            1210,
+            1200,
+            1575,
+            230,
+            1575
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| $ID$               | Candidate OWKs | Accuracy (~ Rank@1) | Rank@5 | Example-F1 |\n|--------------------|----------------|---------------------|--------|------------|\n| Location Reasoning |                |                     |        |            |\n| 39                 | 29,243         | 17.75%              | 37.75% | 50.32%     |\n| 40                 | 52,159         | 18.90%              | 37.94% | 50.84%     |\n| 41                 | 122,408        | 19.31%              | 38.78% | 50.96%     |\n| Time Reasoning     |                |                     |        |            |\n| 42                 | 29,243         | 1.59%               | 5.87%  | 45.64%     |\n| 43                 | 52,159         | 2.96%               | 10.65% | 47.77%     |\n| 44                 | 122,408        | 3.53%               | 10.90% | 47.89%     |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        230,
+        1587.5,
+        1217.5,
+        1587.5,
+        1217.5,
+        1672.5,
+        230,
+        1672.5
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " Table 4. The results of the effect of increasing the candidate numbers of Open-World Knowledge (OWK).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            230,
+            1587.5,
+            1217.5,
+            1587.5,
+            1217.5,
+            1672.5,
+            230,
+            1672.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        240,
+        1740,
+        1197.5,
+        1740,
+        1197.5,
+        2115,
+        240,
+        2115
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            240,
+            1740,
+            1197.5,
+            1740,
+            1197.5,
+            2115,
+            240,
+            2115
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n| ID                 | Method   | Accuracy (~ Rank@1) | Rank@5 | Example-F1 |\n|--------------------|----------|---------------------|--------|------------|\n| Location Reasoning |          |                     |        |            |\n| 45                 | Scorev   | 16.43%              | 36.74% | 49.97%     |\n| 46                 | Scoret   | 18.38%              | 37.53% | 50.19%     |\n| 47                 | Proposed | 19.31%              | 38.78% | 50.96%     |\n| Time Reasoning     |          |                     |        |            |\n| 48                 | Scorev   | 2.76%               | 10.59% | 47.53%     |\n| 49                 | Scoret   | 2.92%               | 10.37% | 47.60%     |\n| 50                 | Proposed | 3.53%               | 10.90% | 47.89%     |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        227.5,
+        2127.5,
+        1212.5,
+        2127.5,
+        1212.5,
+        2262.5,
+        227.5,
+        2262.5
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": " Table 5. The effect of different scoring mechanisms on network performance, where  $Score_v$  indicates that only images are scored and Score<sub> $t$ </sub> means scoring open-world knowledge only.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            227.5,
+            2127.5,
+            1212.5,
+            2127.5,
+            1212.5,
+            2262.5,
+            227.5,
+            2262.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        232.49999999999994,
+        2377.5,
+        1212.5,
+        2377.5,
+        1212.5,
+        2465,
+        232.49999999999994,
+        2465
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": " Table 5. The effect of different scoring mechanisms on network performance, where  $Score_v$  indicates that only images are scored and Score<sub> $t$ </sub> means scoring open-world knowledge only.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            232.49999999999994,
+            2377.5,
+            1212.5,
+            2377.5,
+            1212.5,
+            2465,
+            232.49999999999994,
+            2465
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        230,
+        2500,
+        1212.5,
+        2500,
+        1212.5,
+        2987.5,
+        230,
+        2987.5
+      ],
+      "ignore": false,
+      "order": 9,
+      "anno_id": 1,
+      "text": " **Effectiveness of Losses and Modules.** We further analyze the impact of losses, the Quantity Module (Sec 3.2) and Relevance Module (Sec 3.3). As shown in Tab. 3, adding both the local and global losses will increase model performance, which first indicates the effectiveness of these two losses (ID: 27-38). When we compare the Quantity module to the entire QR-CLIP, we can see that the Relevance module significantly improved the reasoning abilities (ID: 29,32,35,38), which verifies that the whole designs of the two modules are reasonable.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            230,
+            2500,
+            1212.5,
+            2500,
+            1212.5,
+            2987.5,
+            230,
+            2987.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1282.5,
+        2100,
+        1592.5,
+        2100,
+        1592.5,
+        2150,
+        1282.5,
+        2150
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": " ## 4.4. Visualization",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1282.5,
+            2100,
+            1592.5,
+            2100,
+            1592.5,
+            2150,
+            1282.5,
+            2150
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1272.5,
+        2185,
+        2260,
+        2185,
+        2260,
+        2972.5,
+        1272.5,
+        2972.5
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": " We provide a visual demonstration for QR-CLIP in Fig. 3. Taking the fourth picture as an example, when we use vanilla CLIP (Radford et al., 2021) as the baseline, as can be seen, it performs worse in this case, achieving lower Example-F1 scores (22.22%). After using additional [CLS] and finetuned them using global and local losses, our QR-CLIP detects an image from different perspectives and get higher scores (28.57%). After that, QR-model retrieves six OWKs used as language input; the six OWKs all describe the abstract information expressed in the image content: an election meeting. In addition, each piece of knowledge contains much information about the time associated with the meeting. The scoring mechanism then assigns different weights to each OWK, with the OWK that lacks valuable time information receiving a lower weight, guiding the model to pay attention to the correct time information.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1272.5,
+            2185,
+            2260,
+            2185,
+            2260,
+            2972.5,
+            1272.5,
+            2972.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1275,
+        1157.5,
+        2262.5,
+        1157.5,
+        2262.5,
+        2047.5,
+        1275,
+        2047.5
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": " **Performance of Scoring Mechanism.** This part analyzes the performance of different scoring mechanisms in the Relevance module (Sec 3.3), and the experimental results are shown in Tab. 5. When we used the Score<sub> $\\nu$ </sub>, some image features were even weakened, and the time and location prediction accuracy decreased after fusing open-world knowledge (ID:  $45,47,48,50$ ). When use the scoring mechanism on text  $(Score_t)$ —only the open world knowledge was weighted during the fusion process—the accuracy of location and time prediction was improved by  $1.13\\%$  and  $0.92\\%$ , respectively (ID:  $45,46,48,49$ ). This indicates that the weights have a significant influence on the final predictions. When both image and open-world knowledge embeddings are scored, the accuracy of location and time predictions increases by  $2.06\\%$ and 1.50%, respectively (ID: 45,47,48,50). This implies that providing only the information required for the final prediction helps our QR-CLIP better understand abstract information and caters to the idea of the QR rule.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1275,
+            1157.5,
+            2262.5,
+            1157.5,
+            2262.5,
+            2047.5,
+            1275,
+            2047.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1280,
+        290,
+        2262.5,
+        290,
+        2262.5,
+        1122.5,
+        1280,
+        1122.5
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": " Impact of Open-World Knowledge. To validate the performance of different amounts of open-world knowledge, we conduct an experiment to vilify whether increasing the number of OWKs is beneficial. As shown in Tab. 4, when 122,408 OWKs were added, compared to the method without open-world knowledge, the network was able to make more accurate predictions (absolute lift by 2.06% and  $1.53\\%$ ) about location and time (ID:  $18,25,41,44$ ). These results show that our method can effectively use open-world knowledge to improve the model's accuracy for image location and time. Besides, the performance gradually improves as the number of OWKs increases (ID: 39-44). It also shows that our method can further explore a more extensive range of open-world knowledge. Nonetheless, comparing each  $[CLS]_{i}^{v}$  with 122,408 OWKs is already time-consuming and limits our ability to increase the amount; in the future, we will find a more efficient way to overcome this challenge.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1280,
+            290,
+            2262.5,
+            290,
+            2262.5,
+            1122.5,
+            1280,
+            1122.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 662,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "64_7_png.jpg"
+  }
+}

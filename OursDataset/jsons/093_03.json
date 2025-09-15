@@ -1,0 +1,622 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                166,
+                128,
+                204,
+                128,
+                204,
+                160,
+                166,
+                160
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "8 ",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        166,
+                        128,
+                        204,
+                        128,
+                        204,
+                        160,
+                        166,
+                        160
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "header",
+            "poly": [
+                1148,
+                132,
+                2324,
+                132,
+                2324,
+                168,
+                1148,
+                168
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "IEEE TRANSACTIONS ON AGRIFOOD ELECTRONICS, VOL. 3, NO. 1, MARCH/APRIL 2025",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1148,
+                        132,
+                        2324,
+                        132,
+                        2324,
+                        168,
+                        1148,
+                        168
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                170,
+                274,
+                1224,
+                274,
+                1224,
+                706.0000000000001,
+                170,
+                706.0000000000001
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "results were obtained in the first year of the HALY.ID project, we do not discuss them here. Instead, we focus on the computer vision algorithms used to detect BMSB in images collected autonomously by the drone. From this perspective, it is evident that the majority of achievements related to BMSB detection have been generated within the HALY.ID project. Furthermore, unlike others, we are currently exploring solutions that can accurately determine the BMSB's position directly from aerial or in-field images.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        170,
+                        274,
+                        1224,
+                        274,
+                        1224,
+                        706.0000000000001,
+                        170,
+                        706.0000000000001
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                170,
+                940,
+                1224,
+                940,
+                1224,
+                2128,
+                170,
+                2128
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "In literature, efforts specifically concerning the detection of insect punctures on harvested fruits refer to visible superficial damage on the skin [21], generally detectable in the Vis-NIR range  $(400-1000 \\text{ nm})$ . Typically, the main applications for detecting nonvisible damage, internal to the fruit pulp, using SWIR-HSI, refer to the presence of bruising [22], [23], [24]. Efficient techniques for rapid and effective quality assessment of fruits and vegetables are essential to meet the growing consumer demand for better, more consistent, and safer food products. Lu et al. [25] focused on three innovative HSI-based techniques or sensing platforms—spectral scattering, integrated reflectance and transmittance, and spatially resolved spectroscopy-that have been developed in the laboratory for property and quality evaluation of fruits, vegetables, and other food products. Similarly, Alamar et al.  $[26]$  focused on the detection of mechanical damages, including bruising. Interestingly, Zamljen et al. [27] examined the metabolic response of apples to BMSB punctures. Compared to healthy fruits, the sugar and phenolic compounds contents differ, suggesting that NIR-HSI imaging could be useful in detecting damages caused by the BMSB. To the best of the authors' knowledge, there are no previous works concerning BMSB puncture detection and its annotation, which followed a practical on-field protocol and involved numerous samples collected over several years.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        170,
+                        940,
+                        1224,
+                        940,
+                        1224,
+                        2128,
+                        170,
+                        2128
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1266,
+                890,
+                2322,
+                890,
+                2322,
+                2032,
+                1266,
+                2032
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": "Before starting, we created a dataset of RGB images obtained from several UAV flights in real conditions in the study orchard in Carpi (Modena, Italy). Obviously, the larger the database used for training and validating NNs, the higher the performance of the created models can be [\\[29\\]](#page-9-1). Therefore, we augmented the initial image set due to its limited size. The images acquired by the UAV are 24-bit RGB, with dimensions of  $5184 \\times 3888$  pixels each (see Fig. 1). Since the BMSB occupies a minuscule fraction of the entire image, it is evident that directly inputting the raw image into the NN would yield unpromising results. This claim is enforced by Betti Sorbelli et al. [\\[20\\]](#page-9-1), who attributed the cause of performance degradation to the loss of information resulting from image scaling. Indeed, resizing the images to  $640 \\times 640$  pixels from their original sizes ( $5184 \\times 3888$  pixels) renders the BMSB practically invisible. Consequently, we processed the images by dividing them into nonoverlapping patches of size  $640 \\times 640$  pixels. We divided then the dataset into 70%, 20%, and 10% for training, validation, and test sets, respectively, by automatically and randomly distributing the indexed dataset with a script created for this purpose. The dataset contains 402 images and, as a consequence of the slicing technique, is decomposed in 17 766 patches of which 423 are positive ones (with BMSB).",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1266,
+                        890,
+                        2322,
+                        890,
+                        2322,
+                        2032,
+                        1266,
+                        2032
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1268,
+                2042,
+                2320,
+                2042,
+                2320,
+                2230,
+                1268,
+                2230
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": " Due to the slicing procedure, the testing results of the proposed models are conducted on two test sets: ALL that means patches with and without BMSB (1920 patches), and ONLY that means patches with BMSB (71 patches).",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1268,
+                        2042,
+                        2320,
+                        2042,
+                        2320,
+                        2230,
+                        1268,
+                        2230
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                174,
+                2358,
+                1220,
+                2358,
+                1220,
+                2946,
+                174,
+                2946
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "To develop an intelligent system for insect detection in orchards using images and CNNs, the first step is to collect a database of relevant images of insects in the trees, which need to be labeled and categorized to identify the type of insects encountered  $[28]$ . The next step is image preprocessing, which involves removing noise and distortion, resizing images, adjusting brightness and contrast, and data augmentation. From the preprocessed dataset, a representative subset of images needs to be selected for training CNNs to identify and classify insects in the images and adjust internal weights to improve accuracy. Then, the CNN must be validated and tested on separate image subsets to evaluate its performance.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        174,
+                        2358,
+                        1220,
+                        2358,
+                        1220,
+                        2946,
+                        174,
+                        2946
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                165.9999999999999,
+                2956,
+                1222,
+                2956,
+                1222,
+                3104,
+                165.9999999999999,
+                3104
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "Within HALY.ID, the following NNs were used to identify the BMSB insect: YOLOv5, YOLOv9, YOLOv10, SDD with VGG16 backbone, and DERT with ResNet-50 backbone.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        165.9999999999999,
+                        2956,
+                        1222,
+                        2956,
+                        1222,
+                        3104,
+                        165.9999999999999,
+                        3104
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1266,
+                2664,
+                2320,
+                2664,
+                2320,
+                3102,
+                1266,
+                3102
+            ],
+            "ignore": false,
+            "order": 16,
+            "anno_id": 1,
+            "text": "The SSD is a single shot detector known for its efficiency and accuracy. Like YOLOv5, SSD performs object detection, namely, object localization and classification, in a single forward pass. Key to its success is the use of a series of convolutional layers that produce feature maps at multiple scales, enabling the SSD to detect objects of various sizes within the image. The implementation of SSD in our application was implemented using the PyTorch library. For the SSD backbone we leverage VGG16 [30]. Although SSD demonstrates a rapid detection",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1266,
+                        2664,
+                        2320,
+                        2664,
+                        2320,
+                        3102,
+                        1266,
+                        3102
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1266,
+                2356,
+                2320,
+                2356,
+                2320,
+                2654,
+                1266,
+                2654
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": "To evaluate the network performance, we used metrics, such as precision  $(P)$ , recall  $(R)$ , mean average precision  $(mAP)$ , and intersection over union  $(IoU)$ , summarized in Table I, where TP, FP, and FN represent true positive, false positive, and false negative, respectively. We also include other indicators that will be used in subsequent evaluations.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1266,
+                        2356,
+                        2320,
+                        2356,
+                        2320,
+                        2654,
+                        1266,
+                        2654
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1262.0000000000002,
+                2290,
+                1682.0000000000002,
+                2290,
+                1682.0000000000002,
+                2334,
+                1262.0000000000002,
+                2334
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": "## B. Experimental Results",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1262.0000000000002,
+                        2290,
+                        1682.0000000000002,
+                        2290,
+                        1682.0000000000002,
+                        2334,
+                        1262.0000000000002,
+                        2334
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                318,
+                2288,
+                1082,
+                2288,
+                1082,
+                2330,
+                318,
+                2330
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "# III. BMSB DETECTION USING RGB IMAGING",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        318,
+                        2288,
+                        1082,
+                        2288,
+                        1082,
+                        2330,
+                        318,
+                        2330
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1262,
+                826,
+                1656,
+                826,
+                1656,
+                868,
+                1262,
+                868
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": "## A. Experimental Setup",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1262,
+                        826,
+                        1656,
+                        826,
+                        1656,
+                        868,
+                        1262,
+                        868
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                175.99999999999997,
+                868,
+                554,
+                868,
+                554,
+                910,
+                175.99999999999997,
+                910
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "## B. Puncture Detection",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        175.99999999999997,
+                        868,
+                        554,
+                        868,
+                        554,
+                        910,
+                        175.99999999999997,
+                        910
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                1264,
+                680,
+                2144,
+                680,
+                2144,
+                722,
+                1264,
+                722
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "Fig. 1. Examples of images from the dataset used in this article.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1264,
+                        680,
+                        2144,
+                        680,
+                        2144,
+                        722,
+                        1264,
+                        722
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                1300,
+                272,
+                2280,
+                272,
+                2280,
+                636,
+                1300,
+                636
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1300,
+                        272,
+                        2280,
+                        272,
+                        2280,
+                        636,
+                        1300,
+                        636
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 961,
+        "height": 3300,
+        "width": 2475,
+        "image_path": "93_3_png.jpg"
+    }
+}

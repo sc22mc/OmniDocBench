@@ -1,0 +1,638 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "table",
+            "poly": [
+                332,
+                302,
+                2220,
+                302,
+                2220,
+                768,
+                332,
+                768
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        332,
+                        302,
+                        2220,
+                        302,
+                        2220,
+                        768,
+                        332,
+                        768
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>Method Type</th>\n<th>Methods</th>\n<th>$Text^{Edit} \\downarrow$</th>\n<th></th>\n<th>$Formula^{Edit} \\downarrow$</th>\n<th></th>\n<th>$Formula^{CDM} \\uparrow$</th>\n<th></th>\n<th>$Table^{TEDS} \\uparrow$</th>\n<th></th>\n<th>$Table^{Edit} \\downarrow$</th>\n<th></th>\n<th>$Read Order^{Edit} \\downarrow$</th>\n<th></th>\n<th>$Overall^{Edit} \\downarrow$</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td></td>\n<td>EN</td>\n<td>ZH</td>\n<td>EN</td>\n<td>ZH</td>\n<td>EN</td>\n<td>ZH</td>\n<td>EN</td>\n<td>ZH</td>\n<td>EN</td>\n<td>ZH</td>\n<td>EN</td>\n<td>ZH</td>\n<td>EN</td>\n<td>ZH</td>\n</tr>\n<tr>\n<td>Pipeline Tools</td>\n<td>MinerU [42]</td>\n<td><b>0.061</b></td>\n<td><b>0.215</b></td>\n<td><b>0.278</b></td>\n<td>0.577</td>\n<td>57.3</td>\n<td>42.9</td>\n<td><b>78.6</b></td>\n<td>62.1</td>\n<td><b>0.18</b></td>\n<td>0.344</td>\n<td><b>0.079</b></td>\n<td>0.292</td>\n<td><b>0.15</b></td>\n<td>0.357</td>\n</tr>\n<tr>\n<td></td>\n<td>Marker [34]</td>\n<td>0.08</td>\n<td>0.315</td>\n<td>0.53</td>\n<td>0.883</td>\n<td>17.6</td>\n<td>11.7</td>\n<td>67.6</td>\n<td>49.2</td>\n<td>0.619</td>\n<td>0.685</td>\n<td>0.114</td>\n<td>0.34</td>\n<td>0.336</td>\n<td>0.556</td>\n</tr>\n<tr>\n<td></td>\n<td>Mathpix 4</td>\n<td>0.105</td>\n<td>0.384</td>\n<td>0.306</td>\n<td><b>0.454</b></td>\n<td>62.7</td>\n<td><b>62.1</b></td>\n<td>77.0</td>\n<td><b>67.1</b></td>\n<td>0.243</td>\n<td><b>0.32</b></td>\n<td>0.108</td>\n<td>0.304</td>\n<td>0.191</td>\n<td>0.365</td>\n</tr>\n<tr>\n<td>Expert VLMs</td>\n<td>GOT-OCR [45]</td>\n<td>0.189</td>\n<td>0.315</td>\n<td>0.360</td>\n<td>0.528</td>\n<td><b>74.3</b></td>\n<td>45.3</td>\n<td>53.2</td>\n<td>47.2</td>\n<td>0.459</td>\n<td>0.52</td>\n<td>0.141</td>\n<td>0.28</td>\n<td>0.287</td>\n<td>0.411</td>\n</tr>\n<tr>\n<td></td>\n<td>Nougat [7]</td>\n<td>0.365</td>\n<td>0.998</td>\n<td>0.488</td>\n<td>0.941</td>\n<td>15.1</td>\n<td>16.8</td>\n<td>39.9</td>\n<td>0.0</td>\n<td>0.572</td>\n<td>1.000</td>\n<td>0.382</td>\n<td>0.954</td>\n<td>0.452</td>\n<td>0.973</td>\n</tr>\n<tr>\n<td>General VLMs</td>\n<td>GPT4o [2]</td>\n<td>0.144</td>\n<td>0.409</td>\n<td>0.425</td>\n<td>0.606</td>\n<td>72.8</td>\n<td>42.8</td>\n<td>72.0</td>\n<td>62.9</td>\n<td>0.234</td>\n<td>0.329</td>\n<td>0.128</td>\n<td>0.251</td>\n<td>0.233</td>\n<td>0.399</td>\n</tr>\n<tr>\n<td></td>\n<td>Qwen2-VL-72B [44]</td>\n<td>0.096</td>\n<td>0.218</td>\n<td>0.404</td>\n<td>0.487</td>\n<td><b>82.2</b></td>\n<td>61.2</td>\n<td>76.8</td>\n<td>76.4</td>\n<td>0.387</td>\n<td>0.408</td>\n<td>0.119</td>\n<td><b>0.193</b></td>\n<td>0.252</td>\n<td><b>0.327</b></td>\n</tr>\n<tr>\n<td></td>\n<td>InternVL2-76B [8]</td>\n<td>0.353</td>\n<td>0.290</td>\n<td>0.543</td>\n<td>0.701</td>\n<td>67.4</td>\n<td>44.1</td>\n<td>63.0</td>\n<td>60.2</td>\n<td>0.547</td>\n<td>0.555</td>\n<td>0.317</td>\n<td>0.228</td>\n<td>0.44</td>\n<td>0.443</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                346,
+                918,
+                2200,
+                918,
+                2200,
+                1388,
+                346,
+                1388
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        346,
+                        918,
+                        2200,
+                        918,
+                        2200,
+                        1388,
+                        346,
+                        1388
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>Model Type</th>\n<th>Models</th>\n<th>Book</th>\n<th>Slides</th>\n<th>Financial<br>Report</th>\n<th>Textbook</th>\n<th>Exam<br>Paper</th>\n<th>Magazine</th>\n<th>Academic<br>Papers</th>\n<th>Notes</th>\n<th>Newspaper</th>\n<th>Overall</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Pipeline Tools</td>\n<td>MinerU [42]</td>\n<td><b>0.055</b></td>\n<td>0.124</td>\n<td><b>0.033</b></td>\n<td><b>0.102</b></td>\n<td><b>0.159</b></td>\n<td><b>0.072</b></td>\n<td><b>0.025</b></td>\n<td>0.984</td>\n<td><b>0.171</b></td>\n<td><b>0.206</b></td>\n</tr>\n<tr>\n<td>Pipeline Tools</td>\n<td>Marker [34]</td>\n<td>0.074</td>\n<td>0.34</td>\n<td>0.089</td>\n<td>0.319</td>\n<td>0.452</td>\n<td>0.153</td>\n<td>0.059</td>\n<td>0.651</td>\n<td>0.192</td>\n<td>0.274</td>\n</tr>\n<tr>\n<td>Pipeline Tools</td>\n<td>Mathpix4</td>\n<td>0.131</td>\n<td>0.22</td>\n<td>0.202</td>\n<td>0.216</td>\n<td>0.278</td>\n<td>0.147</td>\n<td>0.091</td>\n<td>0.634</td>\n<td>0.69</td>\n<td>0.3</td>\n</tr>\n<tr>\n<td>Expert VLMs</td>\n<td>GOT-OCR [45]</td>\n<td>0.111</td>\n<td>0.222</td>\n<td>0.067</td>\n<td><b>0.132</b></td>\n<td>0.204</td>\n<td>0.198</td>\n<td>0.179</td>\n<td>0.388</td>\n<td>0.771</td>\n<td>0.267</td>\n</tr>\n<tr>\n<td>Expert VLMs</td>\n<td>Nougat [7]</td>\n<td>0.734</td>\n<td>0.958</td>\n<td>1.000</td>\n<td>0.820</td>\n<td>0.930</td>\n<td>0.83</td>\n<td>0.214</td>\n<td>0.991</td>\n<td>0.871</td>\n<td>0.806</td>\n</tr>\n<tr>\n<td>General VLMs</td>\n<td>GPT4o [2]</td>\n<td>0.157</td>\n<td>0.163</td>\n<td>0.348</td>\n<td>0.187</td>\n<td>0.281</td>\n<td>0.173</td>\n<td>0.146</td>\n<td>0.607</td>\n<td>0.751</td>\n<td>0.316</td>\n</tr>\n<tr>\n<td>General VLMs</td>\n<td>Qwen2-VL-72B [44]</td>\n<td>0.096</td>\n<td><b>0.061</b></td>\n<td><b>0.047</b></td>\n<td>0.149</td>\n<td>0.195</td>\n<td><b>0.071</b></td>\n<td>0.085</td>\n<td><b>0.168</b></td>\n<td>0.676</td>\n<td><b>0.179</b></td>\n</tr>\n<tr>\n<td>General VLMs</td>\n<td>InternVL2-76B [8]</td>\n<td>0.216</td>\n<td>0.098</td>\n<td>0.162</td>\n<td>0.184</td>\n<td>0.247</td>\n<td>0.150</td>\n<td>0.419</td>\n<td>0.226</td>\n<td>0.903</td>\n<td>0.3</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                286.0000000000001,
+                1494,
+                1194,
+                1494,
+                1194,
+                1888,
+                286.0000000000001,
+                1888
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        286.0000000000001,
+                        1494,
+                        1194,
+                        1494,
+                        1194,
+                        1888,
+                        286.0000000000001,
+                        1888
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>Models</th>\n<th>Fuzzy</th>\n<th>Water</th>\n<th>Color</th>\n<th>None</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>MinerU [42]</td>\n<td>0.15/0.048</td>\n<td><b>0.151/0.031</b></td>\n<td>0.107/0.052</td>\n<td>0.079/0.035</td>\n</tr>\n<tr>\n<td>Marker [34]</td>\n<td>0.333/0.092</td>\n<td>0.484/0.126</td>\n<td>0.319/0.127</td>\n<td><b>0.062</b> /0.125</td>\n</tr>\n<tr>\n<td>Mathpix 4</td>\n<td>0.294/0.064</td>\n<td>0.290/0.059</td>\n<td>0.216/0.09</td>\n<td>0.135/0.043</td>\n</tr>\n<tr>\n<td>GOT-OCR [45]</td>\n<td>0.175/0.05</td>\n<td>0.190/0.056</td>\n<td>0.186/0.097</td>\n<td>0.177/0.081</td>\n</tr>\n<tr>\n<td>Nougat [7]</td>\n<td>0.934/0.051</td>\n<td>0.915/0.071</td>\n<td>0.873/0.096</td>\n<td>0.615/0.208</td>\n</tr>\n<tr>\n<td>GPT4o [2]</td>\n<td>0.263/0.078</td>\n<td>0.195/0.057</td>\n<td>0.184/0.078</td>\n<td>0.186/0.072</td>\n</tr>\n<tr>\n<td>Qwen2-VL-72B [44]</td>\n<td><b>0.082/0.01</b></td>\n<td>0.172/0.078</td>\n<td><b>0.104/0.05</b></td>\n<td>0.084/0.042</td>\n</tr>\n<tr>\n<td>InternVL2-76B [8]</td>\n<td>0.120/0.013</td>\n<td>0.197/0.042</td>\n<td>0.155/0.059</td>\n<td>0.261/0.082</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                282,
+                2190,
+                1200,
+                2190,
+                1200,
+                2596,
+                282,
+                2596
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        282,
+                        2190,
+                        1200,
+                        2190,
+                        1200,
+                        2596,
+                        282,
+                        2596
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>Models</th>\n<th>Single</th>\n<th>Double</th>\n<th>Three</th>\n<th>Complex</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>MinerU [42]</td>\n<td>0.311/0.187</td>\n<td>0.101/0.013</td>\n<td>0.117/0.046</td>\n<td>0.385/0.057</td>\n</tr>\n<tr>\n<td>Marker [34]</td>\n<td>0.299/0.143</td>\n<td>0.299/0.299</td>\n<td>0.149/0.063</td>\n<td>0.363/0.086</td>\n</tr>\n<tr>\n<td>Mathpix4</td>\n<td>0.207/0.123</td>\n<td>0.188/0.07</td>\n<td>0.225/0.029</td>\n<td>0.452/0.177</td>\n</tr>\n<tr>\n<td>GOT-OCR [45]</td>\n<td>0.163/0.106</td>\n<td>0.145/0.059</td>\n<td>0.257/0.072</td>\n<td>0.468/0.185</td>\n</tr>\n<tr>\n<td>Nougat [7]</td>\n<td>0.852/0.084</td>\n<td>0.601/0.224</td>\n<td>0.662/0.093</td>\n<td>0.873/0.09</td>\n</tr>\n<tr>\n<td>GPT4o [2]</td>\n<td>0.109/0.112</td>\n<td>0.204/0.076</td>\n<td>0.254/0.046</td>\n<td>0.426/0.188</td>\n</tr>\n<tr>\n<td>Qwen2-VL-72B [44]</td>\n<td>0.066/0.048</td>\n<td>0.145/0.049</td>\n<td>0.204/0.055</td>\n<td>0.394/0.203</td>\n</tr>\n<tr>\n<td>InternVL2-76B [8]</td>\n<td>0.082/0.052</td>\n<td>0.312/0.069</td>\n<td>0.682/0.098</td>\n<td>0.444/0.174</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                244,
+                2640,
+                1234,
+                2640,
+                1234,
+                2810,
+                244,
+                2810
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "Table 5. End-to-end reading order evaluation on OmniDocBench: results across different column layout types using Normalized Edit Distance. The value is Mean/Variance of scores in the attribute group.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        244,
+                        2640,
+                        1234,
+                        2640,
+                        1234,
+                        2810,
+                        244,
+                        2810
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                236,
+                1930.0000000000002,
+                1232,
+                1930.0000000000002,
+                1232,
+                2152,
+                236,
+                2152
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "Table 4. End-to-end text recognition on OmniDocBench: evaluation under various page attributes using the edit distance metric. The value is **Mean/Variance** of scores in the attribute group. Columns represent: Fuzzy (Fuzzy scan), Water (Watermark), Color (Colorful background). None (No special issue)",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        236,
+                        1930.0000000000002,
+                        1232,
+                        1930.0000000000002,
+                        1232,
+                        2152,
+                        236,
+                        2152
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                314,
+                1416,
+                2232,
+                1416,
+                2232,
+                1456,
+                314,
+                1456
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "Table 3. End-to-end text recognition performance on OmniDocBench: evaluation using edit distance across 9 PDF page types.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        314,
+                        1416,
+                        2232,
+                        1416,
+                        2232,
+                        1456,
+                        314,
+                        1456
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                244,
+                800.0000000000001,
+                2316,
+                800.0000000000001,
+                2316,
+                878.0000000000001,
+                244,
+                878.0000000000001
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "Table 2. Comprehensive evaluation of document parsing algorithms on OmniDocBench: performance metrics for text, formula, table, and reading order extraction, with overall scores derived from ground truth comparisons.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        244,
+                        800.0000000000001,
+                        2316,
+                        800.0000000000001,
+                        2316,
+                        878.0000000000001,
+                        244,
+                        878.0000000000001
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1318,
+                1533.9999999999998,
+                2308,
+                1533.9999999999998,
+                2308,
+                2120,
+                1318,
+                2120
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "Ignore Handling. We implement an ignore logic for certain components in PDF page content, meaning they participate in matching but are excluded from metric calculations. This is mainly because of inconsistent output standards among models, which should not affect the validation results. For fairness, we ignore: (1) Headers, footers, page numbers, and page footnotes, which are handled inconsistently by different models. (2) Captions for figures, tables, and footnotes often have uncertain placements, thus complicating the reading order. Additionally, some models embed table captions in HTML or LaTeX tables, while others treat them as plain text.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1318,
+                        1533.9999999999998,
+                        2308,
+                        1533.9999999999998,
+                        2308,
+                        2120,
+                        1318,
+                        2120
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1320,
+                2250,
+                2310,
+                2250,
+                2310,
+                2386,
+                1320,
+                2386
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": "**Pure Text.** We calculate Normalized Edit Distance [21], averaging these metrics at the sample level to obtain the final scores.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1320,
+                        2250,
+                        2310,
+                        2250,
+                        2310,
+                        2386,
+                        1320,
+                        2386
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1326,
+                2400,
+                2314,
+                2400,
+                2314,
+                2544,
+                1326,
+                2544
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": "Tables. All tables are converted to HTML format before calculating the Tree-Edit-Distance-based Similarity (TEDS) [54] metric and Normalized Edit Distance.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1326,
+                        2400,
+                        2314,
+                        2400,
+                        2314,
+                        2544,
+                        1326,
+                        2544
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1322,
+                2556,
+                2308,
+                2556,
+                2308,
+                2692,
+                1322,
+                2692
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": "**Formulas.** Formulas are currently evaluated using the Character Detection Matching (CDM) metric [41], Normalized Edit Distance, and BLEU [33].",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1322,
+                        2556,
+                        2308,
+                        2556,
+                        2308,
+                        2692,
+                        1322,
+                        2692
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1312,
+                2712,
+                2314,
+                2712,
+                2314,
+                2800,
+                1312,
+                2800
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": "Reading Order. Reading order is evaluated using the Normalized Edit Distance as metric. It only involves text com-",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1312,
+                        2712,
+                        2314,
+                        2712,
+                        2314,
+                        2800,
+                        1312,
+                        2800
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1226,
+                3114,
+                1326,
+                3114,
+                1326,
+                3156,
+                1226,
+                3156
+            ],
+            "ignore": false,
+            "order": 16,
+            "anno_id": 1,
+            "text": "24843",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1226,
+                        3114,
+                        1326,
+                        3114,
+                        1326,
+                        3156,
+                        1226,
+                        3156
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1318,
+                2176,
+                1778,
+                2176,
+                1778,
+                2210,
+                1318,
+                2210
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "## 4.3. Metric Calculation",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1318,
+                        2176,
+                        1778,
+                        2176,
+                        1778,
+                        2210,
+                        1318,
+                        2210
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1360,
+                2852,
+                2226,
+                2852,
+                2226,
+                2968,
+                1360,
+                2968
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": "sup>5</sup>https://github.com/tesseract-ocr/tesseract  <sup>6</sup>https://github.com/VikParuchuri/surya  <sup>7</sup>https://github.com/lukas-blecher/LaTeX-OCR",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1360,
+                        2852,
+                        2226,
+                        2852,
+                        2226,
+                        2968,
+                        1360,
+                        2968
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 987,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "95_6_png.jpg"
+    }
+}

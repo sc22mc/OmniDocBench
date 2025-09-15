@@ -1,0 +1,436 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "table",
+            "poly": [
+                357.9999999999999,
+                296,
+                2200,
+                296,
+                2200,
+                956,
+                357.9999999999999,
+                956
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        357.9999999999999,
+                        296,
+                        2200,
+                        296,
+                        2200,
+                        956,
+                        357.9999999999999,
+                        956
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>Benchmark</th>\n<th>Document<br>Domain</th>\n<th>BBox</th>\n<th>Text</th>\n<th>Table</th>\n<th>Formula</th>\n<th>Attributes</th>\n<th>Single-Task Eval</th>\n<th></th>\n<th></th>\n<th></th>\n<th>End-to-End Eval</th>\n<th></th>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td></td>\n<td>Annotaion Type</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>OCR</td>\n<td>DLA</td>\n<td>TR</td>\n<td>MFR</td>\n<td>OCR</td>\n<td>TR</td>\n<td>MFR</td>\n<td>ROD</td>\n</tr>\n<tr>\n<td>Single-Task Eval Benchmark</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Robust Reading [20]</td>\n<td>1</td>\n<td>✓</td>\n<td>✓</td>\n<td></td>\n<td></td>\n<td></td>\n<td>✓</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>PubLayNet [49], DocBank [26],<br>DocLayNet [35], M6Doc [9]</td>\n<td>1, 1,<br>5, 6</td>\n<td>✓</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>✓</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>PubTabNet [54], TableX [11]<br>TableBank [25]</td>\n<td>1, 1</td>\n<td>✓</td>\n<td>✓</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>✓</td>\n<td>✓</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Im2Latex-100K [10], UniMER-Test [40]</td>\n<td>1</td>\n<td></td>\n<td></td>\n<td></td>\n<td>✓</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>✓</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>End-to-end Eval Benchmarks</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Fox [29]</td>\n<td>2</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td></td>\n<td></td>\n<td>✓</td>\n<td></td>\n<td></td>\n<td></td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td></td>\n</tr>\n<tr>\n<td>Nougat [7]</td>\n<td>1</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td></td>\n</tr>\n<tr>\n<td>GOT OCR 2.0 [45]</td>\n<td>2</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td></td>\n</tr>\n<tr>\n<td>OmniDocBench</td>\n<td>9</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n<td>✓</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                238,
+                998,
+                2312,
+                998,
+                2312,
+                1120,
+                238,
+                1120
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "Table 1. A Comparison between OmniDocBench and existing benchmarks. BBox: Bounding boxes. Text: Text in Unicode. Table: Table in LaTeX/HTML/Markdown. Formula: Formula in LaTeX. Attributes: Page- and BBox-Level Attributes. OCR: Optical Character Recognition; *DLA*: Document Layout Analysis; *TR*: Table Recognition; *MFR*: Math Formula Recognition; *ROD*: Reading Order Detection",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        238,
+                        998,
+                        2312,
+                        998,
+                        2312,
+                        1120,
+                        238,
+                        1120
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                243.99999999999994,
+                1174,
+                1238,
+                1174,
+                1238,
+                1810,
+                243.99999999999994,
+                1810
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "this sense, such methods can utilize different expert models to address each specific task. Marker [34] integrates opensource models to parse documents into structured formats such as Markdown, JSON, and HTML. To get higher accuracy, an optional LLM-enabled version can also be integrated to merge tables across pages, handle inline math, and so on. Similarly, MinerU [42] first utilizes a layout detection model to segment the document page into different regions, then applies task-specific models for corresponding regions. Finally, it outputs the complete content in Markdown format with a reading order algorithm. By leveraging lightweight models and parallelized operations, pipelinebased methods can achieve efficient parsing speeds.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        243.99999999999994,
+                        1174,
+                        1238,
+                        1174,
+                        1238,
+                        1810,
+                        243.99999999999994,
+                        1810
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                234,
+                1926,
+                1224,
+                1926,
+                1224,
+                2462,
+                234,
+                2462
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "Document understanding and optical character recognition  $(OCR)$  are crucial tasks for evaluating the perception capabilities of vision-language models (VLMs). By incorporating extensive OCR corpus into the pretraining stage, VLMs like GPT4o [2] and Qwen2-VL [3] have demonstrated comparable performance in document content extraction tasks. Unlike pipeline-based methods, VLMs perform document parsing in an end-to-end manner. Furthermore, without requiring specialized data fine-tuning, these models are able to deal with diverse and even unseen document types for their generalization capabilities.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        234,
+                        1926,
+                        1224,
+                        1926,
+                        1224,
+                        2462,
+                        234,
+                        2462
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                236.00000000000006,
+                2476,
+                1230.0000000000002,
+                2476,
+                1230.0000000000002,
+                2760,
+                236.00000000000006,
+                2760
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "To integrate the efficiency of lightweight models and the generalizability of VLMs, many works [7, 14, 29, 32, 45, 46] have focus on training specialized end-to-end expert models for document parsing. These VLM-driven models excel at comprehending both visual layouts and textual contents, balancing a trade-off between accuracy and efficiency.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        236.00000000000006,
+                        2476,
+                        1230.0000000000002,
+                        2476,
+                        1230.0000000000002,
+                        2760,
+                        236.00000000000006,
+                        2760
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                242,
+                2874,
+                1218,
+                2874,
+                1218,
+                2964,
+                242,
+                2964
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "Document content extraction requires the ability to understand document layouts and recognize various types of con-",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        242,
+                        2874,
+                        1218,
+                        2874,
+                        1218,
+                        2964,
+                        242,
+                        2964
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1320,
+                1984,
+                2312,
+                1984,
+                2312,
+                2966,
+                1320,
+                2966
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "Page-level benchmarks have been proposed alongside some recent VLM-driven expert models  $[7, 29, 45]$ . However, the robustness of these benchmarks is compromised by limitations in data size, language, document type, and annotation. For example, Nougat [7] evaluates models using only printed English documents collected from arXiv while the page-level benchmark introduced by GOT-OCR [45] consists of only 90 pages of Chinese and English documents in total. Commonly-seen document types like handwritten notes, newspapers, and exam papers are further neglected. Lacking detailed annotations, the benchmarks can only conduct naive evaluation between the full-page results of Ground Truths and predictions without special handling for different output formats and specialized metrics for different content types. The evaluation of the model performance can be severely biased due to limited document domains, unaligned output format and mismatched metrics. Therefore, there is an urgent need for a more finely annotated, diverse, and reasonable page-level document content extraction benchmark.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1320,
+                        1984,
+                        2312,
+                        1984,
+                        2312,
+                        2966,
+                        1320,
+                        2966
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1314.0000000000002,
+                1178,
+                2304,
+                1178,
+                2304,
+                1956,
+                1314.0000000000002,
+                1956
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "tent. However, current benchmarks fall short of a comprehensive page-level evaluation, as they focus solely on evaluating the model's performance on module-level recognition. PubLayNet [49] and concurrent benchmarks [9, 26, 35] specialize in evaluating a model's ability to detect document page layouts. OCRBench [31] proposes five OCR-related tasks with a greater emphasis on evaluating the model's visual understanding and reasoning capabilities. Only linelevel assessments are provided for text recognition and handwritten mathematical expression recognition (HMER). Similarly, single-module benchmarks  $[20, 26, 40, 54]$  disentangle the task into different dimensions and focus narrowly on specific parts. Such paradigm overlooks the importance of structural and semantic information like the reading order and fails to evaluate the model's overall ability when processing the full-page documents as a whole.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1314.0000000000002,
+                        1178,
+                        2304,
+                        1178,
+                        2304,
+                        1956,
+                        1314.0000000000002,
+                        1956
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                244.0000000000001,
+                1844,
+                1156,
+                1844,
+                1156,
+                1892,
+                244.0000000000001,
+                1892
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "## 2.2. VLM-based Document Content Extraction",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        244.0000000000001,
+                        1844,
+                        1156,
+                        1844,
+                        1156,
+                        1892,
+                        244.0000000000001,
+                        1892
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                240.00000000000006,
+                2804,
+                1222,
+                2804,
+                1222,
+                2846,
+                240.00000000000006,
+                2846
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "## 2.3. Benchmarks for Document Content Extraction",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        240.00000000000006,
+                        2804,
+                        1222,
+                        2804,
+                        1222,
+                        2846,
+                        240.00000000000006,
+                        2846
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1228,
+                3120,
+                1322,
+                3120,
+                1322,
+                3152,
+                1228,
+                3152
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": "24840",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1228,
+                        3120,
+                        1322,
+                        3120,
+                        1322,
+                        3152,
+                        1228,
+                        3152
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 984,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "95_3_png.jpg"
+    }
+}

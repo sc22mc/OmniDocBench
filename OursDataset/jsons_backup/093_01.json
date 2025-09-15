@@ -1,0 +1,888 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "title",
+      "poly": [
+        288,
+        252,
+        2204,
+        252,
+        2204,
+        562,
+        288,
+        562
+      ],
+      "ignore": false,
+      "order": "3",
+      "anno_id": 1,
+      "text": "# Beyond the Naked Eye: Computer Vision for Detecting Brown Marmorated Stink Bug and Its Punctures",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            288,
+            252,
+            2204,
+            252,
+            2204,
+            562,
+            288,
+            562
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "header",
+      "poly": [
+        170,
+        134,
+        200,
+        134,
+        200,
+        164,
+        170,
+        164
+      ],
+      "ignore": false,
+      "order": "1",
+      "anno_id": 1,
+      "text": "6 ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            170,
+            134,
+            200,
+            134,
+            200,
+            164,
+            170,
+            164
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "header",
+      "poly": [
+        1152,
+        134,
+        2320,
+        134,
+        2320,
+        160,
+        1152,
+        160
+      ],
+      "ignore": false,
+      "order": "2",
+      "anno_id": 1,
+      "text": " IEEE TRANSACTIONS ON AGRIFOOD ELECTRONICS, VOL. 3, NO. 1, MARCH/APRIL 2025",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1152,
+            134,
+            2320,
+            134,
+            2320,
+            160,
+            1152,
+            160
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        214,
+        620,
+        2270,
+        620,
+        2270,
+        1034,
+        214,
+        1034
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "Lennart Almstedt<sup>1</sup>, Francesco Betti Sorbelli<sup>1</sup>, Bas Boom<sup>1</sup>, Rosalba Calvini<sup>1</sup>, Elena Costi<sup>1</sup>,  Alexandru Dinca<sup>,</sup>, Veronica Ferrari<sup>,</sup>, Daniele Giannetti<sup>,</sup>, Loretta Ichim<sup>,</sup>, *Member, IEEE*,  Amin Kargar<sup>®</sup>, *Graduate Student Member, IEEE*, Catalin Lazar<sup>®</sup>, Lara Maistrello<sup>®</sup>, Alfredo Navarra<sup>®</sup>,  David Niederprüm<sup>1</sup>, Peter Offermans<sup>1</sup>, Brendan O'Flynn<sup>1</sup>,  Lorenzo Palazzetti<sup>,</sup>, *Graduate Student Member, IEEE*, Niccolò Patelli<sup>,</sup>  Cristina M. Pinotti<sup>,</sup>, *Senior Member, IEEE*, Dan Popescu<sup>,</sup>, *Member, IEEE*, Aravind K. Rangarajan<sup>,</sup>  Liviu Serghei<sup>,</sup> Alessandro Ulrici<sup>,</sup> Lars Wolf<sup>,</sup> *Senior Member, IEEE*, Dimitrios Zorbas<sup>,</sup> *Member, IEEE*,  and Leonard Zurek",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            214,
+            620,
+            2270,
+            620,
+            2270,
+            1034,
+            214,
+            1034
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        172,
+        1164,
+        1224,
+        1164,
+        1224,
+        1902,
+        172,
+        1902
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "*Abstract*—In this article, we introduce machine learning (ML) techniques developed for the monitoring of the brown marmorated stink bug (BMSB), a significant agricultural pest responsible for considerable crop damage worldwide. The HALY.ID project, initiated in early 2021, aims to enhance BMSB monitoring through the utilization of information and communication technology methods. We employ computer vision techniques on RGB images captured by drones and investigate the performance of deep neural networks to evaluate the impact of this invasive species on crop yields in orchards around Europe. Specifically, we evaluate the single shot multibox detector, detection transformer, YOLOv5, YOLOv9, and YOLOv10 architectures for full-level and patch-level image analysis, respectively. To improve detection accuracy, we experiment with shortwave infrared hyperspectral imaging (SWIR-HSI) in laboratory settings. Given that pheromone baited traps are the most accepted tools for pest detection by field operators, we also propose an Internet of Things sticky trap with an integrated camera equipped with lightweight convolutional neural networks",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            172,
+            1164,
+            1224,
+            1164,
+            1224,
+            1902,
+            172,
+            1902
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1264,
+        1170,
+        2322,
+        1170,
+        2322,
+        1412,
+        1264,
+        1412
+      ],
+      "ignore": false,
+      "order": "17",
+      "anno_id": 1,
+      "text": "models operating \"on the edge\" in this resource constrained system. In addition, we develop a client-server application for real-time bug detection, integrating the ML models to provide accessible results to farmers. Lastly, we explore effective postharvesting strategies using SWIR-HSI images to detect insect punctures invisible to the naked eye, thereby enhancing the quality of marketable fruit.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1264,
+            1170,
+            2322,
+            1170,
+            2322,
+            1412,
+            1264,
+            1412
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1270,
+        1448,
+        2320,
+        1448,
+        2320,
+        1566,
+        1270,
+        1566
+      ],
+      "ignore": false,
+      "order": "18",
+      "anno_id": 1,
+      "text": "Index Terms—Brown marmorated stink bug (BMSB), computer vision algorithms, hyperspectral imaging, insect detection, RGB imaging, unmanned aerial vehicles (UAVs).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1270,
+            1448,
+            2320,
+            1448,
+            2320,
+            1566,
+            1270,
+            1566
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        174,
+        1974,
+        1226,
+        1974,
+        1226,
+        2226,
+        174,
+        2226
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": "Manuscript received 28 March 2024; revised 24 May 2024 and 9 July 2024; accepted 9 July 2024. Date of publication 6 August 2024; date of current version 11 April 2025. This work was supported by \"HALY-ID\" project funded by the European Union's Horizon 2020 through grant agreement ICT-AGRI-FOOD under Grant 862665 and Grant 862671, in part by MIPAAF, and in part by GNCS - INdAM. This article was recommended by Editor-in-Chief D. Demarchi. (*Corresponding author: Lorenzo Palazzetti.*)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            174,
+            1974,
+            1226,
+            1974,
+            1226,
+            2226,
+            174,
+            2226
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        172,
+        2236,
+        1220,
+        2236,
+        1220,
+        2302,
+        172,
+        2302
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "Lennart Almstedt, David Niederprüm, Lars Wolf, and Leonard Zurek are with the Technical University of Braunschweig, 38106 Braunschweig, Germany.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            172,
+            2236,
+            1220,
+            2236,
+            1220,
+            2302,
+            172,
+            2302
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        168.0000000000001,
+        2308,
+        1218,
+        2308,
+        1218,
+        2382,
+        168.0000000000001,
+        2382
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "Francesco Betti Sorbelli, Alfredo Navarra, and Cristina M. Pinotti are with the University of Perugia, 06123 Perugia, Italy.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            168.0000000000001,
+            2308,
+            1218,
+            2308,
+            1218,
+            2382,
+            168.0000000000001,
+            2382
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        169.9999999999999,
+        2384,
+        1220,
+        2384,
+        1220,
+        2452,
+        169.9999999999999,
+        2452
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "Bas Boom, Peter Offermans, and Aravind K. Rangarajan are with IMEC OnePlanet Research Center, 6708 WH Wageningen, The Netherlands.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            169.9999999999999,
+            2384,
+            1220,
+            2384,
+            1220,
+            2452,
+            169.9999999999999,
+            2452
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        169.9999999999999,
+        2460,
+        1218,
+        2460,
+        1218,
+        2564,
+        169.9999999999999,
+        2564
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "Rosalba Calvini, Elena Costi, Veronica Ferrari, Lara Maistrello, Niccolò Patelli, and Alessandro Ulrici are with the University of Modena and Reggio Emilia, 41121 Modena, Italy.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            169.9999999999999,
+            2460,
+            1218,
+            2460,
+            1218,
+            2564,
+            169.9999999999999,
+            2564
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        176,
+        2572,
+        1220,
+        2572,
+        1220,
+        2678,
+        176,
+        2678
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "Alexandru Dinca, Loretta Ichim, Catalin Lazar, Dan Popescu, and Liviu Serghei are with the Politehnica University of Bucharest, 060042 Bucharest, Romania.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            176,
+            2572,
+            1220,
+            2572,
+            1220,
+            2678,
+            176,
+            2678
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        176,
+        2684,
+        1142,
+        2684,
+        1142,
+        2716,
+        176,
+        2716
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "Daniele Giannetti is with the University of Parma, 43121 Parma, Italy.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            176,
+            2684,
+            1142,
+            2684,
+            1142,
+            2716,
+            176,
+            2716
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        172,
+        2726,
+        1224,
+        2726,
+        1224,
+        2788,
+        172,
+        2788
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": "Amin Kargar and Brendan O'Flynn are with Tyndall National Institute, T12 R5CP Cork, Ireland.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            172,
+            2726,
+            1224,
+            2726,
+            1224,
+            2788,
+            172,
+            2788
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        170,
+        2794,
+        1226,
+        2794,
+        1226,
+        2902,
+        170,
+        2902
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": "Lorenzo Palazzetti is with the University of Florence, 50134 Florence, Italy, and also with the University of Perugia, 06123 Perugia, Italy (e-mail: lorenzo.palazzetti@unifi.it, lorenzo.palazzetti@collaboratori.unipg.it).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            170,
+            2794,
+            1226,
+            2794,
+            1226,
+            2902,
+            170,
+            2902
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        207.99999999999994,
+        2910,
+        1221.9999999999998,
+        2910,
+        1221.9999999999998,
+        2942,
+        207.99999999999994,
+        2942
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": "Dimitrios Zorbas is with Nazarbayev University, Astana 010000, Kazakhstan. ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            207.99999999999994,
+            2910,
+            1221.9999999999998,
+            2910,
+            1221.9999999999998,
+            2942,
+            207.99999999999994,
+            2942
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        208,
+        2944,
+        930,
+        2944,
+        930,
+        2974,
+        208,
+        2974
+      ],
+      "ignore": false,
+      "order": "16",
+      "anno_id": 1,
+      "text": "Digital Object Identifier 10.1109/TAFE.2024.3429537",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            208,
+            2944,
+            930,
+            2944,
+            930,
+            2974,
+            208,
+            2974
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1314,
+        2838,
+        2324,
+        2838,
+        2324,
+        2980,
+        1314,
+        2980
+      ],
+      "ignore": false,
+      "order": "22",
+      "anno_id": 1,
+      "text": "1) We worked with RGB images of insects \"in the field\" and generated diverse image datasets from various campaigns and imaging platforms, smartphones, drones, and open",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1314,
+            2838,
+            2324,
+            2838,
+            2324,
+            2980,
+            1314,
+            2980
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1270,
+        2636,
+        2322,
+        2636,
+        2322,
+        2826,
+        1270,
+        2826
+      ],
+      "ignore": false,
+      "order": "21",
+      "anno_id": 1,
+      "text": "To address the challenges posed by BMSB, and in particular those related to computer vision, HALY.ID proposes to leverage machine learning  $(ML)$  technologies [4] in the following research activities.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1270,
+            2636,
+            2322,
+            2636,
+            2322,
+            2826,
+            1270,
+            2826
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1266,
+        1688,
+        2320,
+        1688,
+        2320,
+        2630,
+        1266,
+        2630
+      ],
+      "ignore": false,
+      "order": "20",
+      "anno_id": 1,
+      "text": "THE European project HALY.ID [1], started at the beginning of 2021, aimed at monitoring the *Halyomorpha halys*, also known as the brown marmorated stink bug (BMSB), a global agricultural pest causing significant damage to crops. The BMSB, originating from East Asia  $[2]$ , is a highly destructive and polyphagous pest, infesting various fruit trees, such as pears, peaches, and apricots, leading to substantial crop damage worldwide with significant economic impact. Its global spread is facilitated by human activities, such as international trade, and worsened by climate change, causing significant financial losses, notably in regions, such as Italy's Emilia Romagna [3], which is known for its fertile orchards. Current monitoring methods primarily rely on traps, which use lures with aggregation pheromones that attract bugs in the vicinity, increasing the local damages [3]. Unfortunately, once the BMSB specimens are discovered to be present in an orchard, there is no specific chemical defense except for the use of broad-spectrum systemic pesticides that disrupt integrated pest management strategies, and raise environmental and human health concerns for customers.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1266,
+            1688,
+            2320,
+            1688,
+            2320,
+            2630,
+            1266,
+            2630
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        426,
+        3028,
+        2062,
+        3028,
+        2062,
+        3098,
+        426,
+        3098
+      ],
+      "ignore": false,
+      "order": "23",
+      "anno_id": 1,
+      "text": "© 2024 The Authors. This work is licensed under a Creative Commons Attribution 4.0 License. For more information, see  https://creativecommons.org/licenses/by/4.0/",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            426,
+            3028,
+            2062,
+            3028,
+            2062,
+            3098,
+            426,
+            3098
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1646,
+        1616,
+        1946,
+        1616,
+        1946,
+        1662,
+        1646,
+        1662
+      ],
+      "ignore": false,
+      "order": "19",
+      "anno_id": 1,
+      "text": "# I. INTRODUCTION",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1646,
+            1616,
+            1946,
+            1616,
+            1946,
+            1662,
+            1646,
+            1662
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 959,
+    "height": 3300,
+    "width": 2475,
+    "image_path": "93_1_png.jpg"
+  }
+}

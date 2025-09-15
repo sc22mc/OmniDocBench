@@ -1,0 +1,516 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        448,
+        116,
+        1222,
+        116,
+        1222,
+        148,
+        448,
+        148
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            116,
+            1222,
+            116,
+            1222,
+            148,
+            448,
+            148
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        588.0000000000001,
+        340,
+        1964,
+        340,
+        1964,
+        838,
+        588.0000000000001,
+        838
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            588.0000000000001,
+            340,
+            1964,
+            340,
+            1964,
+            838,
+            588.0000000000001,
+            838
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "| Model                                                           | Eval-P |        | Eval-C  |        |\n|-----------------------------------------------------------------|--------|--------|---------|--------|\n|                                                                 | Seen   | Unseen | Seen    | Unseen |\n| Unseen scenarios: Randomly select one scenario from each group. |        |        |         |        |\n| Auto-J (Complete Version)                                       | 54.5   | 56.8   | 146/200 | 25/32  |\n| Auto-J (Training w/o unseen scenarios)                          | 53.5   | 55.7   | 143/200 | 25/32  |\n| Unseen scenarios: Scenarios of NLP Tasks group.                 |        |        |         |        |\n| Auto-J (Complete Version)                                       | 54.2   | 57.6   | 136/188 | 35/44  |\n| Auto-J (Training w/o unseen scenarios)                          | 54.2   | 54.9   | 130/188 | 38/44  |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        450,
+        873.9999999999999,
+        2100,
+        873.9999999999999,
+        2100,
+        1094,
+        450,
+        1094
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "Table 8: Auto-J's generality on unseen scenarios. We train two new variants by removing a set of scenarios from the training data, and compare their performance with the complete version of Auto-J that has been trained on all data. We report the agreement rate with human label on the pairwise response comparison task (Eval-P), and the winrate against ChatGPT judged by GPT-4 on the critique generation task (Eval-C).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            450,
+            873.9999999999999,
+            2100,
+            873.9999999999999,
+            2100,
+            1094,
+            450,
+            1094
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "table",
+      "poly": [
+        446,
+        1182,
+        2096,
+        1182,
+        2096,
+        1398,
+        446,
+        1398
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            446,
+            1182,
+            2096,
+            1182,
+            2096,
+            1398,
+            446,
+            1398
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "You are given the criteria to craft good responses for this type of query from users: - {scenario description} The criteria are as follows: [Criteria start] {criteria for the scenario} [Criteria end]",
+      "latex": ""
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        814,
+        1436,
+        1734,
+        1436,
+        1734,
+        1484,
+        814,
+        1484
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "Table 9: Scenario criteria as system message in prompt.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            814,
+            1436,
+            1734,
+            1436,
+            1734,
+            1484,
+            814,
+            1484
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        444,
+        1602,
+        1554,
+        1602,
+        1554,
+        1646,
+        444,
+        1646
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": "# С AUTO-J'S GENERALITY ON UNSEEN SCENARIOS",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            444,
+            1602,
+            1554,
+            1602,
+            1554,
+            1646,
+            444,
+            1646
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        444,
+        2702,
+        738,
+        2702,
+        738,
+        2744,
+        444,
+        2744
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "# D PROMPTS",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            444,
+            2702,
+            738,
+            2702,
+            738,
+            2744,
+            444,
+            2744
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        446.0000000000001,
+        2820,
+        2104,
+        2820,
+        2104,
+        3044,
+        446.0000000000001,
+        3044
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": "Tab. 9-16 shows different prompts. Tab. 9-13 guide GPT-4 to generate training data (§3.2). Tab. 9 and 10 provide GPT-4 system messages, where the scenario and the criteria are defined. Tab. 11-13 show GPT-4 user messages, providing the instance-related information. Tab. 14-15 elaborate the prompts ( $\\S 5.2$ ), which all baseline models use to generate the testing results. Tab. 16 is used for GPT-4 evaluation that conducts a pairwise comparison between our AUTO-J with one baseline.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            446.0000000000001,
+            2820,
+            2104,
+            2820,
+            2104,
+            3044,
+            446.0000000000001,
+            3044
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        442,
+        2466,
+        2098,
+        2466,
+        2098,
+        2600,
+        442,
+        2600
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "Compared with the complete version of Auto-J, the two re-trained variants only show slightly degraded performance on the two evaluated tasks both on the seen and unseen scenarios, which indicates that Auto-J can generalize well to scenarios unseen during training.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            442,
+            2466,
+            2098,
+            2466,
+            2098,
+            2600,
+            442,
+            2600
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        447.99999999999966,
+        2258,
+        2116,
+        2258,
+        2116,
+        2434,
+        447.99999999999966,
+        2434
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "Under both setting, we select the complete version of Auto-J as the baseline to compare with. We report the agreement with human annotattion labels on the pairwise response selection task (Eval-P) and the win rate against ChatGPT in the critique generation task (Eval-C) judged by GPT-4. The results are shown in Tab. 8.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.99999999999966,
+            2258,
+            2116,
+            2258,
+            2116,
+            2434,
+            447.99999999999966,
+            2434
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        534,
+        1922,
+        2100,
+        1922,
+        2100,
+        2196,
+        534,
+        2196
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "- 1. We randomly select one scenario from each scenario group as the unseen scenarios, and retrain Auto-J with the remaining scenarios. This in total leads to 8 unseen scenarios in testing. - 2. We take the complete \"NLP Tasks\" group as the unseen scenarios, and retrain Auto-J with the remaining scenarios. This in total leads to 11 unseen scenarios in testing.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            534,
+            1922,
+            2100,
+            1922,
+            2100,
+            2196,
+            534,
+            2196
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        446,
+        1722,
+        2102,
+        1722,
+        2102,
+        1860,
+        446,
+        1860
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "It is quite important to see how Auto-J performs on the scenarios that are not included in its training data. To investigate this research problem, we retrain two variants of Auto-J by holding out two sets of unseen scenarios.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            446,
+            1722,
+            2102,
+            1722,
+            2102,
+            1860,
+            446,
+            1860
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1246,
+        3132,
+        1300,
+        3132,
+        1300,
+        3172,
+        1246,
+        3172
+      ],
+      "ignore": false,
+      "order": 13,
+      "anno_id": 1,
+      "text": "16",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1246,
+            3132,
+            1300,
+            3132,
+            1300,
+            3172,
+            1246,
+            3172
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 1036,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "99_16_png.jpg"
+  }
+}

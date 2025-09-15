@@ -1,0 +1,432 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        167.50000000000003,
+        132.5,
+        232.50000000000003,
+        132.5,
+        232.50000000000003,
+        167.5,
+        167.50000000000003,
+        167.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "134 ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            167.50000000000003,
+            132.5,
+            232.50000000000003,
+            132.5,
+            232.50000000000003,
+            167.5,
+            167.50000000000003,
+            167.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "header",
+      "poly": [
+        1145,
+        132.5,
+        2327.5,
+        132.5,
+        2327.5,
+        165,
+        1145,
+        165
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "IEEE TRANSACTIONS ON AGRIFOOD ELECTRONICS, VOL. 2, NO. 1, MARCH/APRIL 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1145,
+            132.5,
+            2327.5,
+            132.5,
+            2327.5,
+            165,
+            1145,
+            165
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        167.5,
+        267.5,
+        1227.5,
+        267.5,
+        1227.5,
+        1105,
+        167.5,
+        1105
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "This layered architecture enables: 1) efficient and accurate handling during pick and place tasks, 2) reliable sensor data interpretation and collision avoidance. However, it might struggles with scalability and modularity. Hence, as an alternative microservices architecture could be explore. Microservices architectures are known for their scalability. In a food processing scenario where different aspects (e.g., motion planning, object detection) might have varying computational demands, microservices can be individually scaled to meet specific requirements. Microservices allow for more independent modification of components. If there are changes in the food processing requirements for specific tasks (e.g., new products with different shapes), the relevant microservices can be updated without affecting the entire system. However, it may also brings complexity in terms of service communication, coordination, and potential challenges in maintaining consistency across services.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            167.5,
+            267.5,
+            1227.5,
+            267.5,
+            1227.5,
+            1105,
+            167.5,
+            1105
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        170,
+        1260,
+        1225,
+        1260,
+        1225,
+        2352.5,
+        170,
+        2352.5
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": " The food-packaging use-case addresses packaging of various food products, such as bags of chips. The task is to pick these products from a bin and place them in a variety of containers. The most suitable software architecture for a food packaging robot depends on various factors, including the specific requirements of the robot, the type of food being packaged, the production environment, and the available resources. However, some common architectural patterns that may be suitable for food packaging robots include client-server architecture, microservices architecture, and event-driven architecture. Even combining multiple architecture together could provide benefits, such as scalability, modularity, and flexibility, which can be crucial for ensuring the smooth and efficient operation of the robot in a complex production environment. In this study, we proposed event-driven architecture for packaging bags of chips by the robot, that allows for easy integration of new components, as well as efficient communication and coordination between subsystems, as shown in Fig. 3. Event-driven architecture is suitable for packaging bags of chips because it can handle a large number of events that occur during the packaging process. The software architecture can consists of the five high level modules having their specific tasks and responsibilities described as follows.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            170,
+            1260,
+            1225,
+            1260,
+            1225,
+            2352.5,
+            170,
+            2352.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1262.5,
+        2905,
+        2322.5,
+        2905,
+        2322.5,
+        3107.5,
+        1262.5,
+        3107.5
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "The software architecture can then respond to the event by adjusting the flow of bags of chips into the box or by stopping the packaging process if the weight is not within the desired range. In addition, if there are any issues with the packaging process,",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1262.5,
+            2905,
+            2322.5,
+            2905,
+            2322.5,
+            3107.5,
+            1262.5,
+            3107.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        1260,
+        2075,
+        2325,
+        2075,
+        2325,
+        2150,
+        1260,
+        2150
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "Fig. 3. Proposed event-driven architectural pattern for packaging chips of bags in a box by robot manipulators.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1260,
+            2075,
+            2325,
+            2075,
+            2325,
+            2150,
+            1260,
+            2150
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        1340,
+        275.0000000000001,
+        2250,
+        275.0000000000001,
+        2250,
+        2040,
+        1340,
+        2040
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1340,
+            275.0000000000001,
+            2250,
+            275.0000000000001,
+            2250,
+            2040,
+            1340,
+            2040
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        282.5,
+        3177.5,
+        2175,
+        3177.5,
+        2175,
+        3215,
+        282.5,
+        3215
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": "Authorized licensed use limited to: FUDAN UNIVERSITY. Downloaded on August 28,2025 at 01:50:40 UTC from IEEE Xplore. Restrictions apply",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            282.5,
+            3177.5,
+            2175,
+            3177.5,
+            2175,
+            3215,
+            282.5,
+            3215
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        174.99999999999997,
+        1187.5,
+        627.5,
+        1187.5,
+        627.5,
+        1235,
+        174.99999999999997,
+        1235
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": " ## C. Food Packaging Robots",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            174.99999999999997,
+            1187.5,
+            627.5,
+            1187.5,
+            627.5,
+            1235,
+            174.99999999999997,
+            1235
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1305.9999999999998,
+        2256,
+        2328,
+        2256,
+        2328,
+        2902,
+        1305.9999999999998,
+        2902
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "- 4) Placing controller module: The placing controller module receives the events from the picking controller module on weather object to be placed or not through the event bus. It emits events related to the object packed in a box by the robot manipulator or not. It ensures that the bags of chips are correctly placed in the box by the robot manipulator or not. - 5) Weighing controller module: The weighing controller module receives the events from the placing controller module on weather object to be placed or not through the event bus. It emits events related to the weight of the box. It ensures that the weight of the box within the desired range.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1305.9999999999998,
+            2256,
+            2328,
+            2256,
+            2328,
+            2902,
+            1305.9999999999998,
+            2902
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        210,
+        2360,
+        1232,
+        2360,
+        1232,
+        3094,
+        210,
+        3094
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": " - 1) *Object detection module:* This module is responsible for detecting and identifying the bags of chips and their positions. It emits events related to the detection and sends them to the event bus. - 2) *Decision making module:* This module receives the events from the object detection module through the event bus. It processes the events and makes decisions about the object to be picked. It emits events related to the picking or placing instructions. - 3) *Picking controller module:* The picking controller module receives the events from the decision making module to pick object or not through the event bus. It emits events related to the object picked by the robot manipulator or not. It ensures that the bags of chips correctly picked by the robot manipulator or not.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            210,
+            2360,
+            1232,
+            2360,
+            1232,
+            3094,
+            210,
+            3094
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 907,
+    "height": 3300,
+    "width": 2475,
+    "image_path": "88_10_png.jpg"
+  }
+}

@@ -1,0 +1,702 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "table",
+      "poly": [
+        450,
+        192.5,
+        2065,
+        192.5,
+        2065,
+        912.5,
+        450,
+        912.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            450,
+            192.5,
+            2065,
+            192.5,
+            2065,
+            912.5,
+            450,
+            912.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": "",
+        "table_layout": "",
+        "language": ""
+      },
+      "html": "\n|    | Feature                  | Description                       |   | Statistic                |\n|----|--------------------------|-----------------------------------|---|--------------------------|\n| 1  | Current CWND             | Current CWND                      | 1 | Last                     |\n| 2  | KBs Sent                 | Amount of KB sent *               | 2 | Mean                     |\n| 3  | New KBs sent             | Amount of KB acked *              | 3 | STD                      |\n| 4  | Acked KBs                | Amount of KB acked *              | 4 | Min                      |\n| 5  | Packets sent             | Packets sent *                    | 5 | Max                      |\n| 6  | Retransmissions          | Number of packets retransmitted * | 6 | EMA                      |\n| 7  | Instantaneous Throughput | Throughput *                      | 7 | Difference from Previous |\n| 8  | Instantaneous Goodput    | Goodput *                         |   |                          |\n| 9  | Unacked KBs              | Amount of KBs in flight           |   |                          |\n| 10 | Last RTT                 | Last RTT detected *               |   |                          |\n| 12 | Min RTT                  | Min RTT *                         |   |                          |\n| 12 | Max RTT                  | Max RTT *                         |   |                          |\n| 13 | SRTT                     | Smoothed RTT *                    |   |                          |\n| 14 | VAR RTT                  | RTT variance *                    |   |                          |\n|    |                          | * During the last RTT timeframe   |   |                          |\n",
+      "latex": ""
+    },
+    {
+      "category_type": "table_caption",
+      "poly": [
+        202.5,
+        922.5,
+        2345,
+        922.5,
+        2345,
+        967.5,
+        202.5,
+        967.5
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": " Table I: Features composing the state of the environment. The horizon of the observation is also augmented with the previous 10 observations.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202.5,
+            922.5,
+            2345,
+            922.5,
+            2345,
+            967.5,
+            202.5,
+            967.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        197.5,
+        1062.5,
+        1255,
+        1062.5,
+        1255,
+        1155,
+        197.5,
+        1155
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": " LIN takes care of delivering observations and reward pairs to the agent and actions back to the protocol.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            197.5,
+            1062.5,
+            1255,
+            1062.5,
+            1255,
+            1155,
+            197.5,
+            1155
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        205,
+        1165,
+        1255,
+        1165,
+        1255,
+        1647.5,
+        205,
+        1647.5
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " At a given step  $t$ , the agent receives network statistics from the transport protocol via the gRPC middleware. Statistics are then processed and stacked with the previous 10 observations to form the state  $s_t$ . The agent can take actions that will increase, maintain constant, or decrease the transport protocol CWND by a chosen factor. Ideally, the agent should learn to maximize the volume of data transmitted in the minimum amount of time, while being watchful of growing queueing delays, which would manifest with an increase in the measured RTT.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            205,
+            1165,
+            1255,
+            1165,
+            1255,
+            1647.5,
+            205,
+            1647.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        202.5,
+        1660.0000000000002,
+        1257.5,
+        1660.0000000000002,
+        1257.5,
+        1897.5000000000002,
+        202.5,
+        1897.5000000000002
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": " MARLIN is implemented on top of the RL Baselines3 Zoo (RL-Zoo3) [20] framework, which follows best practices for using Stable-Baselines3 (SB3) [21], a PyTorch [22]-based library that implements state-of-the-art RL algorithms following the OpenAI gym interface [23].",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202.5,
+            1660.0000000000002,
+            1257.5,
+            1660.0000000000002,
+            1257.5,
+            1897.5000000000002,
+            202.5,
+            1897.5000000000002
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        200,
+        1910,
+        1255,
+        1910,
+        1255,
+        2447.5,
+        200,
+        2447.5
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": " 1) State: Table I describes the state encoded in MARLIN. 14 features are gathered during the time frame that follows the action taken at step  $t - 1$ . MARLIN then augments the state space with 7 statistics, i.e., last, mean, standard deviation, minimum, maximum, Exponential Moving Average (EMA), and difference from the previous state  $s_{t-1}$ , that are computed for each of the 14 features. The previous  $N$  states are also stacked together to form a history of the previous observations, attempting to adhere to the Markov property. The final state served to the agent will then have  $N \\times |Features| \\times |Stats|$  features. This totals up to 980 ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            200,
+            1910,
+            1255,
+            1910,
+            1255,
+            2447.5,
+            200,
+            2447.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        197.5,
+        2452.5,
+        1257.5,
+        2452.5,
+        1257.5,
+        2847.5,
+        197.5,
+        2847.5
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": " N  is considered a hyperparameter of the problem; table II has a complete list of all hyperparameters used for MARLIN. For the choice of  $N$ , we followed the empirical considerations made in  $[24]$ , and chose 10 as the length of the history after some preliminary trials and evaluations. During the training process, observations are processed and normalized through a moving average by using the VecNormalize environment wrapper present in SB3.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            197.5,
+            2452.5,
+            1257.5,
+            2452.5,
+            1257.5,
+            2847.5,
+            197.5,
+            2847.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        202.5,
+        2850,
+        1262.5,
+        2850,
+        1262.5,
+        2990,
+        202.5,
+        2990
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": " 2) Actions: MARLIN takes continuous actions contained in the range  $[-1, 1]$ , which represent the percentage gain of the CWND size. For example, if the action chosen by the agent is",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            202.5,
+            2850,
+            1262.5,
+            2850,
+            1262.5,
+            2990,
+            202.5,
+            2990
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1292.5,
+        2405,
+        2355,
+        2405,
+        2355,
+        2790,
+        1292.5,
+        2790
+      ],
+      "ignore": false,
+      "order": "16",
+      "anno_id": 1,
+      "text": " The careful reader might notice that such rewarding system encourages the agent to accumulate acked bytes regardless explicit impact on the RTT, falling into the risk of privileging actions that could produce more acked bytes in the immediate future, with the drawback of causing undesired queuing delays. To prevent such risk, we consider a second formulation of the reward function that introduces a RTT-based penalty coefficient:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1292.5,
+            2405,
+            2355,
+            2405,
+            2355,
+            2790,
+            1292.5,
+            2790
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1292.5,
+        2205,
+        2357.5,
+        2205,
+        2357.5,
+        2407.5,
+        1292.5,
+        2407.5
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": " A strictly negative reward function promotes the agent to accumulate the smallest amount of penalties. The penalty received is much smaller the closer the agent it is, at each step, to having utilized the link to the best of its possibilities.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1292.5,
+            2205,
+            2357.5,
+            2205,
+            2357.5,
+            2407.5,
+            1292.5,
+            2407.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1295,
+        1962.5,
+        2355,
+        1962.5,
+        2355,
+        2202.5,
+        1295,
+        2202.5
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": " where  $target_t$  represents the amount of bytes the agent   should have delivered up to step  $t$  since the beginning   of the episode in order to fully utilize the link and   acked\\_kilobytes $^{cumulative}_{t}$  represents the number of kilobytes   there were acknowledged by the receiver until step  $t$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1295,
+            1962.5,
+            2355,
+            1962.5,
+            2355,
+            2202.5,
+            1295,
+            2202.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1292.5,
+        1667.5,
+        2352.5,
+        1667.5,
+        2352.5,
+        1802.5,
+        1292.5,
+        1802.5
+      ],
+      "ignore": false,
+      "order": "11",
+      "anno_id": 1,
+      "text": " 3) *Reward:* We designed a reward function that gives higher rewards to the agent the closer it gets to fully utilizing the available bandwidth:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1292.5,
+            1667.5,
+            2352.5,
+            1667.5,
+            2352.5,
+            1802.5,
+            1292.5,
+            1802.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1292.5,
+        1265,
+        2347.5,
+        1265,
+        2347.5,
+        1652.5,
+        1292.5,
+        1652.5
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": " For the purpose of this study, we capped the CWND size to 50 KB, a value that, if reached, would yield double the throughput that the network can accommodate in the setup we used for training and evaluation. This choice only impacts the very first phases of training, when the agent takes random steps to prime the model. After this phase, which in MARLIN is set to last 10K steps, our experiments have shown that the agent correctly never fills the CWND to 50 KB.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1292.5,
+            1265,
+            2347.5,
+            1265,
+            2347.5,
+            1652.5,
+            1292.5,
+            1652.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        1292.5,
+        1070,
+        2355,
+        1070,
+        2355,
+        1260,
+        1292.5,
+        1260
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": " going to be 1, the CWND is doubled; a value of  $0$  means no change in the CWND;  $-0.5$  reduces the window size by 50%. The initial CWND size is set to 4KB at the beginning of the episode, as per the transport protocol implementation default.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1292.5,
+            1070,
+            2355,
+            1070,
+            2355,
+            1260,
+            1292.5,
+            1260
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1295,
+        2852.5,
+        2377.5,
+        2852.5,
+        2377.5,
+        2967.5,
+        1295,
+        2967.5
+      ],
+      "ignore": false,
+      "order": "17",
+      "anno_id": 1,
+      "text": " $$ r_{t} = -\\frac{target_{t}}{target_{t} + acked\\_kilobytes_{t}^{cumulative} * (1 - penalties)} $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1295,
+            2852.5,
+            2377.5,
+            2852.5,
+            2377.5,
+            2967.5,
+            1295,
+            2967.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1427.5,
+        1840,
+        2207.5,
+        1840,
+        2207.5,
+        1947.5,
+        1427.5,
+        1947.5
+      ],
+      "ignore": false,
+      "order": "12",
+      "anno_id": 1,
+      "text": " $$ r_t = -\\frac{target_t}{target_t + acked\\_kilobytes_t^{cumulative}}  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1427.5,
+            1840,
+            2207.5,
+            1840,
+            2207.5,
+            1947.5,
+            1427.5,
+            1947.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2290,
+        1865,
+        2347.5,
+        1865,
+        2347.5,
+        1902.5,
+        2290,
+        1902.5
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": " (1)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2290,
+            1865,
+            2347.5,
+            1865,
+            2347.5,
+            1902.5,
+            2290,
+            1902.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2297.5,
+        2950,
+        2350,
+        2950,
+        2350,
+        2987.5,
+        2297.5,
+        2987.5
+      ],
+      "ignore": false,
+      "order": 18,
+      "anno_id": 1,
+      "text": " (2)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2297.5,
+            2950,
+            2350,
+            2950,
+            2350,
+            2987.5,
+            2297.5,
+            2987.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 854,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "84_4_png.jpg"
+  }
+}

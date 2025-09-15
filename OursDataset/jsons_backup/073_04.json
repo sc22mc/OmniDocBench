@@ -1,0 +1,622 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "section",
+      "poly": [
+        305,
+        292.5,
+        705,
+        292.5,
+        705,
+        347.5,
+        305,
+        347.5
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": " # 3 Algorithm",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            305,
+            292.5,
+            705,
+            292.5,
+            705,
+            347.5,
+            305,
+            347.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        297.4999999999999,
+        390,
+        2257.5,
+        390,
+        2257.5,
+        527.5,
+        297.4999999999999,
+        527.5
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": " In the following, we define multi-memory versions of two major learning algorithms, i.e., replicator dynamics and gradient ascent. Although we consider the learning of player X, that of player Y can be formulated in the same manner.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            297.4999999999999,
+            390,
+            2257.5,
+            390,
+            2257.5,
+            527.5,
+            297.4999999999999,
+            527.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        302.5,
+        575,
+        2185,
+        575,
+        2185,
+        622.5,
+        302.5,
+        622.5
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": " **Definition 1** (expected future payoff). We define the expected future payoff from the distribution  $\\mathbf{p}$  as",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            302.5,
+            575,
+            2185,
+            575,
+            2185,
+            622.5,
+            302.5,
+            622.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        977.5,
+        660,
+        1577.5,
+        660,
+        1577.5,
+        785,
+        977.5,
+        785
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": " $$ \\pi(\\boldsymbol{p}, \\mathbf{x}, \\mathbf{y}) := \\sum_{t=0}^{\\infty} \\boldsymbol{M}^{t}(\\boldsymbol{p} - \\boldsymbol{p}^{\\text{st}}) \\cdot \\boldsymbol{u},  $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            977.5,
+            660,
+            1577.5,
+            660,
+            1577.5,
+            785,
+            977.5,
+            785
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2192.5,
+        690,
+        2247.5,
+        690,
+        2247.5,
+        742.5,
+        2192.5,
+        742.5
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "(5)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2192.5,
+            690,
+            2247.5,
+            690,
+            2247.5,
+            742.5,
+            2192.5,
+            742.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        305.0000000000001,
+        822.5,
+        1730,
+        822.5,
+        1730,
+        862.5,
+        305.0000000000001,
+        862.5
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": " which is the total payoff player  $X$  obtains from the present round to the future.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            305.0000000000001,
+            822.5,
+            1730,
+            822.5,
+            1730,
+            862.5,
+            305.0000000000001,
+            862.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        302.5000000000001,
+        897.4999999999999,
+        2247.5,
+        897.4999999999999,
+        2247.5,
+        987.4999999999999,
+        302.5000000000001,
+        987.4999999999999
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": " In this definition, the stationary payoff  $\\boldsymbol{p}^{\\text{st}} \\cdot \\boldsymbol{u} = u^{\\text{st}}$  is the offset term every round, and thus  $\\pi(\\boldsymbol{p}^{\\text{st}}, \\mathbf{x}, \\mathbf{y}) =$ 0.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            302.5000000000001,
+            897.4999999999999,
+            2247.5,
+            897.4999999999999,
+            2247.5,
+            987.4999999999999,
+            302.5000000000001,
+            987.4999999999999
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        302.5000000000001,
+        1022.5,
+        2252.5,
+        1022.5,
+        2252.5,
+        1120,
+        302.5000000000001,
+        1120
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": " **Definition 2** (normalization). We define the normalization function Norm:  $\\prod_{s\\in\\mathcal{S}}\\mathbb{R}^m_+ \\mapsto \\prod_{s\\in\\mathcal{S}}\\text{int}(\\Delta^{m-1})$  as",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            302.5000000000001,
+            1022.5,
+            2252.5,
+            1022.5,
+            2252.5,
+            1120,
+            302.5000000000001,
+            1120
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "isolate_formula",
+      "poly": [
+        1017.5,
+        1152.5,
+        1525,
+        1152.5,
+        1525,
+        1277.5,
+        1017.5,
+        1277.5
+      ],
+      "ignore": false,
+      "order": 9,
+      "anno_id": 1,
+      "text": " $$ \\text{Norm}(\\mathbf{x}) = \\left\\{ \\frac{x^{a|s}}{\\sum_{a'} x^{a'|s}} \\right\\}_{a,s}, $$",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1017.5,
+            1152.5,
+            1525,
+            1152.5,
+            1525,
+            1277.5,
+            1017.5,
+            1277.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "formula_caption",
+      "poly": [
+        2202.5,
+        1185,
+        2245,
+        1185,
+        2245,
+        1237.5,
+        2202.5,
+        1237.5
+      ],
+      "ignore": false,
+      "order": 10,
+      "anno_id": 1,
+      "text": "(6)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            2202.5,
+            1185,
+            2245,
+            1185,
+            2245,
+            1237.5,
+            2202.5,
+            1237.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        357.5,
+        1307.5,
+        1857.5,
+        1307.5,
+        1857.5,
+        1355,
+        357.5,
+        1355
+      ],
+      "ignore": false,
+      "order": 11,
+      "anno_id": 1,
+      "text": " In this definition,  $\\text{Norm}(\\mathbf{x})$  satisfies the condition of probability variables for all s. ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            357.5,
+            1307.5,
+            1857.5,
+            1307.5,
+            1857.5,
+            1355,
+            357.5,
+            1355
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        362.5,
+        1367.5,
+        2097.5,
+        1367.5,
+        2097.5,
+        1405,
+        362.5,
+        1405
+      ],
+      "ignore": false,
+      "order": 12,
+      "anno_id": 1,
+      "text": " Based on these definitions, we formulate discretized MMRD and MMGA as Algorithm 1 and 2.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            362.5,
+            1367.5,
+            2097.5,
+            1367.5,
+            2097.5,
+            1405,
+            362.5,
+            1405
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        299.9999999999999,
+        2040,
+        2255,
+        2040,
+        2255,
+        2232.5,
+        299.9999999999999,
+        2232.5
+      ],
+      "ignore": false,
+      "order": "14",
+      "anno_id": 1,
+      "text": " Algorithm 1 (Discretized MMRD) takes its learning rate  $\\eta$  as an input. In each time step, the players choose their actions following their strategies (lines 2 and 3), while the state is updated by their chosen actions (lines 4 and 7). Then, each player reinforces its strategy by how much payoff the chosen action brings up to the future. Here, note that for simplicity, this payoff is given by an expected payoff (line 5).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            299.9999999999999,
+            2040,
+            2255,
+            2040,
+            2255,
+            2232.5,
+            299.9999999999999,
+            2232.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1255,
+        3085,
+        1290,
+        3085,
+        1290,
+        3130,
+        1255,
+        3130
+      ],
+      "ignore": false,
+      "order": "16",
+      "anno_id": 1,
+      "text": "4",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1255,
+            3085,
+            1290,
+            3085,
+            1290,
+            3130,
+            1255,
+            3130
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        300,
+        1449.9999999999998,
+        2240,
+        1449.9999999999998,
+        2240,
+        1982.4999999999998,
+        300,
+        1982.4999999999998
+      ],
+      "ignore": false,
+      "order": "13",
+      "anno_id": 1,
+      "text": "  Algorithm 1 Discretized MMRD Input: $\\eta$ 1: for $t = 0, 1, 2, \\cdots$ do X chooses $a$ with probability $x^{a|s_i}$ 2: (Y chooses *b* with probability $y^{b|s_i}$ ) 3: $s_{i'} \\leftarrow abs_{i}^{-}$ 4: $x^{a|s_i} \\leftarrow x^{a|s_i} + \\eta \\pi(\\boldsymbol{e}_{i'}, \\mathbf{x}, \\mathbf{y})$ 5: $\\mathbf{x} \\leftarrow \\text{Norm}(\\mathbf{x})$ 6: 7: $s_i \\leftarrow s_{i'}$ 8: end for",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            300,
+            1449.9999999999998,
+            2240,
+            1449.9999999999998,
+            2240,
+            1982.4999999999998,
+            300,
+            1982.4999999999998
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        299.9999999999999,
+        2287.5,
+        2255,
+        2287.5,
+        2255,
+        2997.5,
+        299.9999999999999,
+        2997.5
+      ],
+      "ignore": false,
+      "order": "15",
+      "anno_id": 1,
+      "text": "$Algorithm 2 Discretized MMGA$  ``` Input: \\eta, \\gamma1: for t = 0, 1, 2, \\cdots do              for a \\in \\mathcal{A}, s \\in \\mathcal{S} do   2:   3:                  \\mathbf{x}' \\leftarrow \\mathbf{x}x'^{a|s} \\leftarrow x'^{a|s} + \\gamma4:                   \\Delta^{a|s} \\leftarrow \\frac{u^{\\text{st}}(\\text{Norm}(\\mathbf{x}'), \\mathbf{y}) - u^{\\text{st}}(\\mathbf{x}, \\mathbf{y})}{\\gamma}5:              end for   6.              for a \\in \\mathcal{A}, s \\in \\mathcal{S} do   7:                  x^{a|s} \\leftarrow x^{a|s}(1 + n\\Delta^{a|s})8:   9:              end for              \\mathbf{x} \\leftarrow \\text{Norm}(\\mathbf{x})10: 11: end for",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            299.9999999999999,
+            2287.5,
+            2255,
+            2287.5,
+            2255,
+            2997.5,
+            299.9999999999999,
+            2997.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 742,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "73_4_png.jpg"
+  }
+}

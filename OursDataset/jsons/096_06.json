@@ -1,0 +1,702 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "table_caption",
+            "poly": [
+                285.99999999999994,
+                302,
+                1120,
+                302,
+                1120,
+                334,
+                285.99999999999994,
+                334
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "**Table 5.** Distribution of the number of unique axes  $(\\%)$ ",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        285.99999999999994,
+                        302,
+                        1120,
+                        302,
+                        1120,
+                        334,
+                        285.99999999999994,
+                        334
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                240,
+                558,
+                1162,
+                558,
+                1162,
+                630,
+                240,
+                630
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "the number of unique axes shown in this table",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        240,
+                        558,
+                        1162,
+                        558,
+                        1162,
+                        630,
+                        240,
+                        630
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                216,
+                365.99999999999994,
+                1190,
+                365.99999999999994,
+                1190,
+                562,
+                216,
+                562
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        216,
+                        365.99999999999994,
+                        1190,
+                        365.99999999999994,
+                        1190,
+                        562,
+                        216,
+                        562
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>Dataset1</th>\n<th>0</th>\n<th>1</th>\n<th>2</th>\n<th>3</th>\n<th>4</th>\n<th>5</th>\n<th>6</th>\n<th>7</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Train</td>\n<td>0.0</td>\n<td>1.3</td>\n<td>13.5</td>\n<td>25.7</td>\n<td>24.8</td>\n<td>18.8</td>\n<td>10.9</td>\n<td>5.1</td>\n</tr>\n<tr>\n<td>Test</td>\n<td>0.0</td>\n<td>1.4</td>\n<td>12.8</td>\n<td>25.7</td>\n<td>25.6</td>\n<td>19.6</td>\n<td>10.2</td>\n<td>4.6</td>\n</tr>\n<tr>\n<td>1 SL-MH, SL-PB, SP360, and HoliCity all have the same distribution of</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                206.0000000000001,
+                730.0000000000001,
+                1194,
+                730.0000000000001,
+                1194,
+                1118,
+                206.0000000000001,
+                1118
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " Ignoring back labels. After removing label ambiguity, we ignored back labels because the training and test sets had only  $0.1\\%$  and  $0.3\\%$  back labels, respectively. Therefore, the VP estimator detected 13 points, that is, the five VPs (front, left, right, top, and bottom) and eight ADPs in Table 2. If all VP/ADPs are successfully detected, our method can estimate a unique rotation for over 98% images with two or more unique axes from the VP/ADPs in Table 5.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        206.0000000000001,
+                        730.0000000000001,
+                        1194,
+                        730.0000000000001,
+                        1194,
+                        1118,
+                        206.0000000000001,
+                        1118
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                206,
+                1234,
+                1192,
+                1234,
+                1192,
+                2030,
+                206,
+                2030
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " Following [\\[53\\]](#page-9-1), we fixed the image sensor height to 24 mm,  $d_u = d_v$ , used the principal points  $(c_u, c_v)$  as the image center, and the translation vectors  $\\mathbf{t}$  as the zero vectors. Therefore, in our method, we focused on the estimation of five camera parameters, that is, focal length  $f$ , distortion coefficient  $k_1$ , pan angle  $\\phi$ , tilt angle  $\\theta$ , and roll angle  $\\psi$  in a Manhattan world. We independently trained the VP estimator and distortion estimator using a mini-batch size of 32. We optimized the VP estimator, which was pretrained on ImageNet [\\[42\\]](#page-9-1), using the Adam optimizer [\\[17\\]](#page-9-1) and Random Erasing augmentation [\\[62\\]](#page-9-1) with  $(p, s_l, s_h, r_1, r_2) = (0.5, 0.02, 0.33, 0.3, 3.3)$ . The initial learning rate was set to  $1 \\times 10^{-4}$  and was multiplied by 0.1 at the 100th epoch. We also trained the distortion estimator pretrained on Wakai *et al.*'s original network [\\[53\\]](#page-9-1) using the RAdam optimizer [\\[31\\]](#page-9-1) with a learning rate of  $1 \\times 10^{-5}$ .",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        206,
+                        1234,
+                        1192,
+                        1234,
+                        1192,
+                        2030,
+                        206,
+                        2030
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1280,
+                1196,
+                2274,
+                1196,
+                2274,
+                1788,
+                1280,
+                1788
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": " creased, as Table 6 reveals. The AP, AR, and PCK results suggest that VP/ADP estimation is an easier task than human pose estimation because the VP/ADPs have the implicit constraints of the geometric coordinates shown in Fig- $\\frac{1}{2}$  ure 3. Table 6 also reveals that ADP detection is more difficult than VP detection because VPs generally have specific appearances at infinity. In terms of distance errors, the VP estimator addressed the various directions of VP/ADPs. In addition, considering the qualitative results in Figure 5, the VP estimator stably detected VP/ADPs in the entire image. Therefore, the VP estimator can precisely detect VP/ADPs from a fisheye image.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1280,
+                        1196,
+                        2274,
+                        1196,
+                        2274,
+                        1788,
+                        1280,
+                        1788
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                208,
+                2146,
+                1198,
+                2146,
+                1198,
+                2278,
+                208,
+                2278
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " We implemented the comparison methods according to the corresponding papers but trained them on SL-MH, SL-PB, SP360, and HoliCity.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        208,
+                        2146,
+                        1198,
+                        2146,
+                        1198,
+                        2278,
+                        208,
+                        2278
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                199.99999999999994,
+                2428,
+                1194,
+                2428,
+                1194,
+                2868,
+                199.99999999999994,
+                2868
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": " To demonstrate the validity and effectiveness of the proposed VP estimator, we used pose estimation metrics and the distance error between the detected and ground-truth VP/ADPs. Following [7], we used the standard keypoint metrics of the average precision (AP) and average recall (AR) [47] with a 5.6-pixel  $sk_i$  object keypoint similarity [36] as well as the percentage of correct keypoints  $(PCK)$  [2] with a 5.6-pixel distance threshold, which corresponds to  $1/10$ th of the heatmap height.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        199.99999999999994,
+                        2428,
+                        1194,
+                        2428,
+                        1194,
+                        2868,
+                        199.99999999999994,
+                        2868
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                206.0000000000001,
+                2880,
+                1194,
+                2880,
+                1194,
+                2970,
+                206.0000000000001,
+                2970
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": " Overall, the VP estimator detected the VP/ADPs, although the performance in the cross-domain evaluation de-",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        206.0000000000001,
+                        2880,
+                        1194,
+                        2880,
+                        1194,
+                        2970,
+                        206.0000000000001,
+                        2970
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1280,
+                2632,
+                2270,
+                2632,
+                2270,
+                2970,
+                1280,
+                2970
+            ],
+            "ignore": false,
+            "order": 17,
+            "anno_id": 1,
+            "text": " The Pritts *et al.*'s [\\[41\\]](#page-10-0) and Lochman *et al.*'s [\\[32\\]](#page-10-0) methods could not perform calibration for some images because of a lack of arcs. In particular, Lochman et al.'s method [\\[32\\]](#page-10-0) had a  $59.1\\%$  executable rate, that is, the number of successful executions divided by the number of all images. Note that we calculated errors using only these successful executions. By contrast, our learning-based method can ad-",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1280,
+                        2632,
+                        2270,
+                        2632,
+                        2270,
+                        2970,
+                        1280,
+                        2970
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1282,
+                1928,
+                2272,
+                1928,
+                2272,
+                2620,
+                1282,
+                2620
+            ],
+            "ignore": false,
+            "order": 16,
+            "anno_id": 1,
+            "text": " To validate the accuracy of the camera parameters, we compared our method with conventional methods that estimate both rotation and distortion. Following  $[53]$ , we evaluated the mean absolute error and reprojection error (REPE). Our method achieved the lowest mean absolute angle error and REPE of the methods listed in Table 7. The pan-angle errors in our method using HRNet-W32 for the VP estimator are substantially smaller than those of Lochman *et al.*'s method [32] by  $20.16^{\\circ}$  on the SL-MH test set. Our method achieved  $3.15^{\\circ}$  and  $3.00^{\\circ}$  errors for the tilt and roll angles, respectively, outperforming the other methods. We evaluated our method using HRNet-W48 (a larger backbone) and obtained a slight RMSE improvement of 0.16 pixels with respect to the RMSE obtained using HRNet-W32.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1282,
+                        1928,
+                        2272,
+                        1928,
+                        2272,
+                        2620,
+                        1282,
+                        2620
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                212,
+                2346,
+                806,
+                2346,
+                806,
+                2394,
+                212,
+                2394
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " #### 4.4.1 Vanishing point estimation",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        212,
+                        2346,
+                        806,
+                        2346,
+                        806,
+                        2394,
+                        212,
+                        2394
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                212,
+                2066,
+                694,
+                2066,
+                694,
+                2106,
+                212,
+                2106
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "## 4.4. Experimental results",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        212,
+                        2066,
+                        694,
+                        2066,
+                        694,
+                        2106,
+                        212,
+                        2106
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1280.0000000000002,
+                1850.0000000000002,
+                2028.0000000000002,
+                1850.0000000000002,
+                2028.0000000000002,
+                1892.0000000000002,
+                1280.0000000000002,
+                1892.0000000000002
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": "### 4.4.2 Parameter and reprojection errors",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1280.0000000000002,
+                        1850.0000000000002,
+                        2028.0000000000002,
+                        1850.0000000000002,
+                        2028.0000000000002,
+                        1892.0000000000002,
+                        1280.0000000000002,
+                        1892.0000000000002
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1224,
+                3116,
+                1328,
+                3116,
+                1328,
+                3158,
+                1224,
+                3158
+            ],
+            "ignore": false,
+            "order": 18,
+            "anno_id": 1,
+            "text": "11889",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1224,
+                        3116,
+                        1328,
+                        3116,
+                        1328,
+                        3158,
+                        1224,
+                        3158
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                202,
+                1160,
+                654,
+                1160,
+                654,
+                1204,
+                202,
+                1204
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "## 4.3. Parameter settings",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        202,
+                        1160,
+                        654,
+                        1160,
+                        654,
+                        1204,
+                        202,
+                        1204
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                1279.9999999999998,
+                964,
+                2272,
+                964,
+                2272,
+                1096,
+                1279.9999999999998,
+                1096
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": " Figure 5. Qualitative results of VP/ADP detection using the proposed VP estimator on the SL-MH test set. The VP estimator estimated five VP and eight ADP heatmaps for each VP/ADP.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1279.9999999999998,
+                        964,
+                        2272,
+                        964,
+                        2272,
+                        1096,
+                        1279.9999999999998,
+                        1096
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                1300,
+                296,
+                2260,
+                296,
+                2260,
+                928,
+                1300,
+                928
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1300,
+                        296,
+                        2260,
+                        296,
+                        2260,
+                        928,
+                        1300,
+                        928
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 998,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "96_6_png.jpg"
+    }
+}

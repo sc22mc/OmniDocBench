@@ -1,0 +1,356 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        440,
+        110,
+        1227.5,
+        110,
+        1227.5,
+        155,
+        440,
+        155
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            440,
+            110,
+            1227.5,
+            110,
+            1227.5,
+            155,
+            440,
+            155
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        395,
+        355,
+        2095,
+        355,
+        2095,
+        1430,
+        395,
+        1430
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "**Algorithm 2:** Best-First Aggregation and Greedy aggregation  **Input:** M reasoning chains where the reasoning steps of m-th chain are denoted as  $z_{i=1}^{n^m}$ . **Output:** Aggregated chain  $\\overline{z}_{1...n}$ .   1 - Best-First Aggregation  2 **for** each chain  $m = 1, 2, ..., M$  **do**Compute the sum of edge weights for *m*-th chain as  $V^m = \\sum_{i=m}^{n^m} V_{i-1,i}$ .  end  5 Get the best chain among M chains by performing  $m^* = argmax_m \\{V^m\\}$   6 Assign the aggregated chain as the best chain,  $\\overline{z}_{1...n} := \\left\\{z_{i=1}^{n^{m^*}}\\right\\}$    7 - Greedy Aggregation  8  $\\overline{z}_1 := z_1^{m^*}$  where  $m^* = argmax_m \\{V_1^m\\}$ .   9 **for** each aggregation step  $i = 2, ..., n$  **do**   10 **for** each chain  $m = 1, 2, ..., M$  **do**   11 Collect  $J^m = \\{j, sim(\\overline{z}_{i-1}, z_j^m) > 0.7; j \\in n^m\\}$ .   12 Get  $j^{*,m} = argmax_{j \\in J^m} \\{V_{j,j+1}^m\\}$    13 **end**   14 Get the best next reasoning step by performing:  $\\overline{z}_i = z_{j^*+1}^m$  where    $j^* = argmax_{j \\in \\{j^{*,m}\\}_{m=1}^M} \\{V_{j,j+1}^m\\}$ .   15 **end**   16 Obtain the aggregated chain  $\\overline{z}_{1...n}$ .",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            395,
+            355,
+            2095,
+            355,
+            2095,
+            1430,
+            395,
+            1430
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        447.49999999999994,
+        1522.5,
+        1385,
+        1522.5,
+        1385,
+        1567.5,
+        447.49999999999994,
+        1567.5
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "# D THOUGHT STRUCTURES AGGREGATION",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.49999999999994,
+            1522.5,
+            1385,
+            1522.5,
+            1385,
+            1567.5,
+            447.49999999999994,
+            1567.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        447.5,
+        2460,
+        1287.5,
+        2460,
+        1287.5,
+        2510,
+        447.5,
+        2510
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": " # E INFLUENCE OF THE BAD FEEDBACK",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.5,
+            2460,
+            1287.5,
+            2460,
+            1287.5,
+            2510,
+            447.5,
+            2510
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1242.5,
+        3135,
+        1300,
+        3135,
+        1300,
+        3175,
+        1242.5,
+        3175
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "16",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1242.5,
+            3135,
+            1300,
+            3135,
+            1300,
+            3175,
+            1242.5,
+            3175
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        447.5,
+        2567.5,
+        2102.5,
+        2567.5,
+        2102.5,
+        2782.5,
+        447.5,
+        2782.5
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "The feedback obtained by evaluating the aggregated reasoning chain with LLMs may include analysis of limited usefulness and completely incorrect conclusions and error reports. This issue typically arises due to the nature of LLMs, which are language models and do not inherently verify the accuracy of the generated text. Additionally, the capabilities of LLMs, such as gpt-3.5-turbo, are constrained when used as validators for mathematical problems.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.5,
+            2567.5,
+            2102.5,
+            2567.5,
+            2102.5,
+            2782.5,
+            447.5,
+            2782.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        442.5,
+        2825,
+        2100,
+        2825,
+        2100,
+        3050,
+        442.5,
+        3050
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "A direct example is presented in Table 7. The analysis report concludes that \"The final result obtained in Step 3 is 80, which is mathematically equal to 24.\" Even worse, the experience further contains that \"the reasoning chain is correct\" and \"No errors were found in the reasoning steps.\". Using the prompt with this experience as the input in the first iteration, BoT is misled to generate wrong reasoning steps, and the corresponding aggregated chain can be seen at the beginning of Table 8. It is evident ",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            442.5,
+            2825,
+            2100,
+            2825,
+            2100,
+            3050,
+            442.5,
+            3050
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        437.5,
+        1840,
+        2110,
+        1840,
+        2110,
+        2390,
+        437.5,
+        2390
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": "As shown in the first block of the algorithm 16, the Best-first aggregation is a straightforward approach for aggregation as it directly extracts the chain with the highest sum of edge weights. This method is fast and stable. It typically guarantees competitive performance as the subsequent experience is able to be generated by analyzing the best chain among obtained reasoning chains. However, it can only select existing chains without making effective adjustments. Greedy aggregation is more advanced as it combines reasoning steps from different chains to produce a new, better reasoning chain with the highest edge weights. The greedy aggregation procedure in algorithm 16 contains two steps. It first collects reasoning steps that are similar to the aggregated reasoning step  $z_{i-1}$ . Thus, the next aggregated reasoning step is selected from the next reasoning steps of this collected set by maximizing the edge weights. And,  $sim$  is the similarity function that uses LLMs to assess the percentage of identical words and mathematical numbers shared between two paragraphs.  $0.7$  is an empirical threshold obtained from experiments.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            437.5,
+            1840,
+            2110,
+            1840,
+            2110,
+            2390,
+            437.5,
+            2390
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        447.5,
+        1632.5,
+        2102.5,
+        1632.5,
+        2102.5,
+        1812.5,
+        447.5,
+        1812.5
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": "After completing the reasoning in Heterogeneous Tree Structures, the aggregation process of BoT first extracts the best reasoning chain from each tree and then combines them using either the Best-First or Greedy aggregation method into a single reasoning chain. More details of these two aggregation methods can be accessed in the source code *examples/BoostingOfThought/BoT\\_aggregator.py*.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.5,
+            1632.5,
+            2102.5,
+            1632.5,
+            2102.5,
+            1812.5,
+            447.5,
+            1812.5
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 7,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "100_16_png.jpg"
+  }
+}

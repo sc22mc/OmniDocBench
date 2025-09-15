@@ -1,0 +1,584 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "title",
+            "poly": [
+                302.0000000000001,
+                434,
+                2172,
+                434,
+                2172,
+                500,
+                302.0000000000001,
+                500
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "# Time-Efficient Light-Field Acquisition Using Coded Aperture and Events",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        302.0000000000001,
+                        434,
+                        2172,
+                        434,
+                        2172,
+                        500,
+                        302.0000000000001,
+                        500
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                268,
+                584,
+                2212,
+                584,
+                2212,
+                708,
+                268,
+                708
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "Shuji Habuchi<sup>†</sup>   $\\text{Chihiro Tsutake}^{\\dagger}$ Keita Takahashi<sup>†</sup> Toshiaki Fujii<sup>†</sup> Hajime Nagahara<sup>‡</sup> <sup>†</sup> Nagoya University, Japan <sup>‡</sup> Osaka University, Japan",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        268,
+                        584,
+                        2212,
+                        584,
+                        2212,
+                        708,
+                        268,
+                        708
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                608,
+                842,
+                802,
+                842,
+                802,
+                872,
+                608,
+                872
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "Abstract",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        608,
+                        842,
+                        802,
+                        842,
+                        802,
+                        872,
+                        608,
+                        872
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                212.00000000000006,
+                2044,
+                528,
+                2044,
+                528,
+                2088,
+                212.00000000000006,
+                2088
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "# 1. Introduction",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        212.00000000000006,
+                        2044,
+                        528,
+                        2044,
+                        528,
+                        2088,
+                        212.00000000000006,
+                        2088
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                200.0000000000001,
+                946,
+                1200,
+                946,
+                1200,
+                1934,
+                200.0000000000001,
+                1934
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " We propose a computational imaging method for timeefficient light-field acquisition that combines a coded aperture with an event-based camera. Different from the conventional coded-aperture imaging method, our method applies a sequence of coding patterns during a single exposure for an image frame. The parallax information, which is related to the differences in coding patterns, is recorded as events. The image frame and events, all of which are measured in a single exposure, are jointly used to computationally reconstruct a light field. We also designed an algorithm pipeline for our method that is end-to-end trainable on the basis of deep optics and compatible with real camera hardware. We experimentally showed that our method can achieve more accurate reconstruction than several other imaging methods with a single exposure. We also developed a hardware prototype with the potential to complete the measurement on the camera within 22 msec and demonstrated that light fields from real 3-D scenes can be obtained with convincing visual quality. Our software and supplementary video are available from our project website<sup> $1$ </sup>.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        200.0000000000001,
+                        946,
+                        1200,
+                        946,
+                        1200,
+                        1934,
+                        200.0000000000001,
+                        1934
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1284.0000000000002,
+                840.0000000000001,
+                2278.0000000000005,
+                840.0000000000001,
+                2278.0000000000005,
+                1176,
+                1284.0000000000002,
+                1176
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": " plane of a camera. With this method, the light field of a target scene is optically encoded before being recorded on the image sensor. Some images taken from a stationary camera with different coding patterns are used to computationally reconstruct the original light field. As indicated from several studies  $[10, 14, 42]$ , the number of images to acquire can be reduced to only a few (e.g.,  $2-4$ ).",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1284.0000000000002,
+                        840.0000000000001,
+                        2278.0000000000005,
+                        840.0000000000001,
+                        2278.0000000000005,
+                        1176,
+                        1284.0000000000002,
+                        1176
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1284,
+                1196.0000000000002,
+                2276,
+                1196.0000000000002,
+                2276,
+                2372,
+                1284,
+                2372
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": " An issue with coded-aperture imaging is the long measurement time, since two or more images should be acquired in sequence. As a solution for this issue, we propose a time-efficient light-field acquisition method that can complete the measurement in a single exposure. Our method combines a coded aperture [\\[10, 14, 22, 30, 38\\]](#page-9-1) and an event-based camera [\\[3, 9\\]](#page-9-1), as shown in Fig. 1, that can simultaneously capture image frames and events. Our method is based on the premise that the aperture coding can be controlled faster than the frame-rate of the image sensor.<sup>2</sup> We apply several coding patterns in sequence during a single exposure for an image frame. Therefore, we do not directly observe individual coded-aperture images, but we have the sum of them as a single image frame. The camera also measures the events asynchronously during the exposure. Since the target scene is assumed static, the events are caused exclusively by the change in coding patterns. In other words, we actively induce the events by changing the coding patterns over time. These events include the information related to the parallax among different viewpoints, which is essential for light-field/3-D reconstruction. The image frame and events, all of which are measured in a single exposure, are jointly used to computationally reconstruct the light field.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1284,
+                        1196.0000000000002,
+                        2276,
+                        1196.0000000000002,
+                        2276,
+                        2372,
+                        1284,
+                        2372
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                206,
+                2136,
+                1192,
+                2136,
+                1192,
+                2472,
+                206,
+                2472
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " A light field is usually represented as a set of multi-view images that captures a target 3-D scene from a dense  $2\\text{-D}$ grid of viewpoints. Light fields have been used for various applications such as depth estimation  $[11, 16, 39]$ , object/material recognition [25, 49], view synthesis [4, 15, 27], and 3-D display [12, 18, 50]. In this paper, we consider light-field acquisition from static 3-D scenes.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        206,
+                        2136,
+                        1192,
+                        2136,
+                        1192,
+                        2472,
+                        206,
+                        2472
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                195.9999999999999,
+                2492,
+                1194,
+                2492,
+                1194,
+                2884,
+                195.9999999999999,
+                2884
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " Due to the large number of images contained in a light field (e.g.,  $8 \\times 8$  views), how to acquire a light field has been a long-standing issue [8, 31, 40, 51]. Since views included in a light field are highly redundant with each other, viewby-view sampling seems to be a waste of resources. To achieve more efficient acquisition, researchers investigated coded-aperture imaging [10, 14, 22, 30, 38], with which semi-transparent coding patterns are placed at the aperture",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        195.9999999999999,
+                        2492,
+                        1194,
+                        2492,
+                        1194,
+                        2884,
+                        195.9999999999999,
+                        2884
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1276,
+                2400,
+                2272,
+                2400,
+                2272,
+                2838,
+                1276,
+                2838
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": " We first formalize our imaging method and clarify the quasi-equivalence between our method and the baseline coded-aperture imaging method. We then discuss our design of an end-to-end trainable algorithm tailored for our imaging method while considering the compatibility with real camera hardware. To validate our method, we conducted quantitative evaluations, in which the imaging process was computationally simulated, and real-world experiments using our prototype camera. Experimental results",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1276,
+                        2400,
+                        2272,
+                        2400,
+                        2272,
+                        2838,
+                        1276,
+                        2838
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1284,
+                2890,
+                2272,
+                2890,
+                2272,
+                2970,
+                1284,
+                2970
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": "<sup>2</sup>Some electronic devices used for implementing a coded aperture can run much faster than standard image sensors.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1284,
+                        2890,
+                        2272,
+                        2890,
+                        2272,
+                        2970,
+                        1284,
+                        2970
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                254,
+                2928,
+                1046,
+                2928,
+                1046,
+                2968,
+                254,
+                2968
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": " <sup>1</sup>https://www.fujii.nuee.nagoya-u.ac.jp/Research/EventLF/",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        254,
+                        2928,
+                        1046,
+                        2928,
+                        1046,
+                        2968,
+                        254,
+                        2968
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1216,
+                3106,
+                1328,
+                3106,
+                1328,
+                3160,
+                1216,
+                3160
+            ],
+            "ignore": false,
+            "order": 15,
+            "anno_id": 1,
+            "text": "24923",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1216,
+                        3106,
+                        1328,
+                        3106,
+                        1328,
+                        3160,
+                        1216,
+                        3160
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "header",
+            "poly": [
+                602,
+                4.0000000000000036,
+                2064,
+                4.0000000000000036,
+                2064,
+                50,
+                602,
+                50
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "his CVPR paper is the Open Access version, provided by the Computer Vision Foundation.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        602,
+                        4.0000000000000036,
+                        2064,
+                        4.0000000000000036,
+                        2064,
+                        50,
+                        602,
+                        50
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "header",
+            "poly": [
+                752.0000000000002,
+                62,
+                1916.0000000000002,
+                62,
+                1916.0000000000002,
+                144,
+                752.0000000000002,
+                144
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "Except for this watermark, it is identical to the accepted version; the final published version of the proceedings is available on IEEE Xplore.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        752.0000000000002,
+                        62,
+                        1916.0000000000002,
+                        62,
+                        1916.0000000000002,
+                        144,
+                        752.0000000000002,
+                        144
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 1004,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "97_1_png.jpg"
+    }
+}

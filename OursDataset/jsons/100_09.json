@@ -1,0 +1,474 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                442.49999999999994,
+                110,
+                1222.5,
+                110,
+                1222.5,
+                152.5,
+                442.49999999999994,
+                152.5
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "Published as a conference paper at ICLR 2024",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        442.49999999999994,
+                        110,
+                        1222.5,
+                        110,
+                        1222.5,
+                        152.5,
+                        442.49999999999994,
+                        152.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                440,
+                350,
+                2107.5,
+                350,
+                2107.5,
+                430,
+                440,
+                430
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "of BoT will produce the most representative reasoning chain in the current iteration, thus leading to more meaningful *experience* to enhance the prompt. We verify this in the ablation study section.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        440,
+                        350,
+                        2107.5,
+                        350,
+                        2107.5,
+                        430,
+                        440,
+                        430
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                445,
+                455,
+                2100,
+                455,
+                2100,
+                922.5,
+                445,
+                922.5
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "To better present how BoT learns from errors and previous advice, we show in Table 3 that GPT-4 is able to avoid previous errors and produce more specific advice with the increase of iteration and eventually obtain the correct solution. In the first iteration, with the simple prompt, LLMs even make a mistake in following the task rules as the new set is wrong in step 3. After analyzing, it presents correct advice on this mistake. However, the analysis at the initial iteration is vague, such as \"try other numbers and operations\". After five iterations, BoT aggregates multiple such analyses, deriving a more potent prompt, making the LLMs select the right numbers 9 and 7. Also, the advice is more concrete and useful. The advice for this right selection is to increase the corresponding evaluation score. Through the continuous accumulation such *experiences*, BoT progressively refines the prompt, culminating in the direct generation of a correct solution in the 8-th iteration.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        445,
+                        455,
+                        2100,
+                        455,
+                        2100,
+                        922.5,
+                        445,
+                        922.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                442.5,
+                1540,
+                2100,
+                1540,
+                2100,
+                1902.5,
+                442.5,
+                1902.5
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": " *Experience* consistently leads to thought revision, but too much can have the opposite effect. When the prompt accumulates issues and advice by the \"adding\" type, both aggregation strategies can lead to high solve rates. Maintaining a complete experience is important for revising thoughts, especially for the AQuA dataset, which includes wider mathematical reasoning problems. However, BoT (No), which does not perform aggregation but directly uses all reasoning chains from generated trees, suffers the worst performance in all cases, especially when the experience accumulation type is \"adding\". As BoT builds 15 trees each iteration, putting them all together into a prompt may cover core information, not to mention that most such experiences are invalid or harmful.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        442.5,
+                        1540,
+                        2100,
+                        1540,
+                        2100,
+                        1902.5,
+                        442.5,
+                        1902.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                442.5,
+                1940,
+                2105,
+                1940,
+                2105,
+                2242.5,
+                442.5,
+                2242.5
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " Advice is more important to generate thoughts than others. In all cases of Table 4, BoT variations that embrace advice as experience achieve the top solve rate. For example, with the same \"adding\" type, when the experience does not contain advice, the performance drops by more than  $10\\%$  and  $20\\%$  in Game of 24 and AQuA, respectively. On the contrary, including issues in the *experience* serves as an auxiliary mechanism for performance improvement. Only by cooperating issues can the BoT with advice gain the best solve rate; for example, the number grows by  $4.4\\%$  for BoT (Greedy) in AOuA.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        442.5,
+                        1940,
+                        2105,
+                        1940,
+                        2105,
+                        2242.5,
+                        442.5,
+                        2242.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                445,
+                2277.5,
+                2100,
+                2277.5,
+                2100,
+                2730,
+                445,
+                2730
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " Greedy aggregation can be the only required choice for performance purposes. As compared to the Best-first that selects one from existing thought chains and no aggregation that maintains all thought chains, greedy aggregation adaptively merges tree structures into one better thought chain that may not exist in the current iteration. By doing so, LLM is able to perform a more meaningful analysis on a stronger thought chain, thus producing important experiences to enhance the prompt. As shown in Table 4, once the Greedy aggregation is used, BoT improves by more than  $2\\%$  in all cases. In AOuA, containing more math problems, this number is even  $10\\%$ . Besides, as our discussion in Fig. 4, ToT with a similar experience-driven boosting mechanism reaches  $80\\%$  but still lags behind the BoT. This may be attributed to the inability to execute the greedy aggregation within its singular tree structure.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        445,
+                        2277.5,
+                        2100,
+                        2277.5,
+                        2100,
+                        2730,
+                        445,
+                        2730
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                442.5,
+                2915,
+                2107.5,
+                2915,
+                2107.5,
+                3055,
+                442.5,
+                3055
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": "This paper verified that a simple prompt can be enhanced by gradually accumulating error analysis on its generated thoughts to address complex tasks. We have proposed a novel framework, the Boosting of Thoughts (BoT), to implement such progressive prompt enhancement for effective thought generation",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        442.5,
+                        2915,
+                        2107.5,
+                        2915,
+                        2107.5,
+                        3055,
+                        442.5,
+                        3055
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1250,
+                3112.5,
+                1300,
+                3112.5,
+                1300,
+                3167.5,
+                1250,
+                3167.5
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": "9",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1250,
+                        3112.5,
+                        1300,
+                        3112.5,
+                        1300,
+                        3167.5,
+                        1250,
+                        3167.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                437.5,
+                2805,
+                815,
+                2805,
+                815,
+                2850,
+                437.5,
+                2850
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "# 5 CONCLUSION",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        437.5,
+                        2805,
+                        815,
+                        2805,
+                        815,
+                        2850,
+                        437.5,
+                        2850
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                447.5000000000001,
+                979.9999999999999,
+                875.0000000000001,
+                979.9999999999999,
+                875.0000000000001,
+                1027.5,
+                447.5000000000001,
+                1027.5
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": "## 4.3 ABLATION STUDY",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        447.5000000000001,
+                        979.9999999999999,
+                        875.0000000000001,
+                        979.9999999999999,
+                        875.0000000000001,
+                        1027.5,
+                        447.5000000000001,
+                        1027.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table_caption",
+            "poly": [
+                517.5,
+                1075,
+                2030,
+                1075,
+                2030,
+                1127.5,
+                517.5,
+                1127.5
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "Table 4:</b> Comparison of BoT variations applied to GPT-4 on the Game of 24 and AQuA Datasets.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        517.5,
+                        1075,
+                        2030,
+                        1075,
+                        2030,
+                        1127.5,
+                        517.5,
+                        1127.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "table",
+            "poly": [
+                452.4999999999999,
+                1172.5,
+                2087.5,
+                1172.5,
+                2087.5,
+                1480,
+                452.4999999999999,
+                1480
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        452.4999999999999,
+                        1172.5,
+                        2087.5,
+                        1172.5,
+                        2087.5,
+                        1480,
+                        452.4999999999999,
+                        1480
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": "",
+                "table_layout": "",
+                "language": ""
+            },
+            "html": "<table>\n<thead>\n<tr>\n<th>--</th>\n<th>--</th>\n<th>--</th>\n<th>--</th>\n<th>----------------------------------------------------------------------------------------------------</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th>Experience $       F^{1...t}     $</th>\n<th></th>\n<th>Accumulation Type</th>\n<th>Game of 24</th>\n<th></th>\n<th></th>\n<th>AQuA</th>\n<th></th>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Issues</td>\n<td>Advice</td>\n<td>Replace</td>\n<td>Add</td>\n<td>BoT (Best first)</td>\n<td>BoT (Greedy)</td>\n<td>BoT (No)</td>\n<td>BoT (Best first)</td>\n<td>BoT (Greedy)</td>\n<td>BoT (No)</td>\n</tr>\n<tr>\n<td>✓</td>\n<td>✓</td>\n<td></td>\n<td>✓</td>\n<td>81.2</td>\n<td>83.7</td>\n<td>67.1</td>\n<td>78</td>\n<td>81.4</td>\n<td>56.2</td>\n</tr>\n<tr>\n<td>✓</td>\n<td></td>\n<td>✓</td>\n<td></td>\n<td>74.7</td>\n<td>78.2</td>\n<td>70</td>\n<td>47.3</td>\n<td>56.8</td>\n<td>44.9</td>\n</tr>\n<tr>\n<td>✓</td>\n<td></td>\n<td></td>\n<td>✓</td>\n<td>72.8</td>\n<td>74.1</td>\n<td>70.2</td>\n<td>52.4</td>\n<td>62.7</td>\n<td>46.3</td>\n</tr>\n<tr>\n<td>✓</td>\n<td></td>\n<td></td>\n<td>✓</td>\n<td>69.2</td>\n<td>70.7</td>\n<td>67.6</td>\n<td>54.1</td>\n<td>60</td>\n<td>40.3</td>\n</tr>\n<tr>\n<td></td>\n<td>✓</td>\n<td>✓</td>\n<td></td>\n<td>74.9</td>\n<td>76.9</td>\n<td>72.7</td>\n<td>68.3</td>\n<td>74.2</td>\n<td>71.9</td>\n</tr>\n<tr>\n<td></td>\n<td>✓</td>\n<td></td>\n<td>✓</td>\n<td>77.9</td>\n<td>80</td>\n<td>72.4</td>\n<td>73.6</td>\n<td>77</td>\n<td>64.1</td>\n</tr>\n</tbody>\n</table>",
+            "latex": ""
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 28,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "100_9_png.jpg"
+    }
+}

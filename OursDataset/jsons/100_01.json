@@ -1,0 +1,394 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "header",
+            "poly": [
+                452.49999999999994,
+                112.5,
+                1230,
+                112.5,
+                1230,
+                152.5,
+                452.49999999999994,
+                152.5
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": "Published as a conference paper at ICLR 2024",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        452.49999999999994,
+                        112.5,
+                        1230,
+                        112.5,
+                        1230,
+                        152.5,
+                        452.49999999999994,
+                        152.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "title",
+            "poly": [
+                442.5,
+                325,
+                2102.5,
+                325,
+                2102.5,
+                485,
+                442.5,
+                485
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": "# BOOSTING OF THOUGHTS: TRIAL-AND-ERROR PROBLEM SOLVING WITH LARGE LANGUAGE MODELS",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        442.5,
+                        325,
+                        2102.5,
+                        325,
+                        2102.5,
+                        485,
+                        442.5,
+                        485
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                470,
+                560,
+                2240,
+                560,
+                2240,
+                795,
+                470,
+                795
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": "Sijia Chen, Baochun Li  Department of Electrical and Computer Engineering University of Toronto Toronto, Ontario, Canada sjia.chen@mail.utoronto.ca, bli@ece.toronto.edu Di Nin  Department of Electrical and Computer Engineering, University of Alberta Edmonton, Alberta, Canada dniu@ualberta.ca",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        470,
+                        560,
+                        2240,
+                        560,
+                        2240,
+                        795,
+                        470,
+                        795
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                592.5,
+                1020,
+                1950,
+                1020,
+                1950,
+                1845,
+                592.5,
+                1845
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": "The reasoning performance of Large Language Models (LLMs) on a wide range of problems critically relies on chain-of-thought prompting, which involves providing a few chain of thought demonstrations as exemplars in prompts. Recent work, e.g., Tree of Thoughts, has pointed out the importance of exploration and selfevaluation in reasoning step selection for complex problem solving. In this paper, we present Boosting of Thoughts (BoT), an automated prompting framework for problem solving with LLMs by iteratively exploring and self-evaluating many trees of thoughts in order to acquire an ensemble of trial-and-error reasoning experiences, which will serve as a new form of prompting to solve the complex problem. Starting from a simple prompt without requiring examples, BoT iteratively explores and evaluates a large collection of reasoning steps, and more importantly, uses error analysis obtained from the LLM on them to explicitly revise prompting, which in turn enhances reasoning step generation, until a final answer is attained. Our experiments with GPT-4 and Llama2 across extensive complex mathematical problems demonstrate that BoT consistently achieves higher or comparable problem-solving rates than other advanced prompting approaches. The source code is available under the folder *examples/BoTReasoning* of https://github.com/iQua/llmpebase.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        592.5,
+                        1020,
+                        1950,
+                        1020,
+                        1950,
+                        1845,
+                        592.5,
+                        1845
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                445,
+                2047.5,
+                2102.5,
+                2047.5,
+                2102.5,
+                2310,
+                445,
+                2310
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "Large language models (LLMs) with the autoregressive paradigm have gained remarkable performance across various tasks due to their potential reasoning ability Brown et al. (2020); Lewkowycz et al. (2022). The guarantee of such ability in complex tasks heavily relies on chain-ofthought (CoT) Wei et al. (2022) prompting, which provides step-by-step reasoning examples. This approach suggests that the reasoning ability can be elicited through a chain of thoughts, where a thought serves as an intermediate step toward problem solving.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        445,
+                        2047.5,
+                        2102.5,
+                        2047.5,
+                        2102.5,
+                        2310,
+                        445,
+                        2310
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                442.5,
+                2342.5,
+                2107.5,
+                2342.5,
+                2107.5,
+                2842.5,
+                442.5,
+                2842.5
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": "Thus, subsequent studies Fu et al. (2022); Wang et al. (2022); Yao et al. (2024); Besta et al. (2023), especially Tree-of-Thought (ToT) Yao et al. (2024), have been proposed to improve CoT. To guarantee effectiveness, the prompt of these approaches generally includes human annotations on one specific task. Such a reliance limits their scalability. Recent work that either employs a double-check with LLMs to improve answers Paul et al. (2023); Weng et al. (2023); Madaan et al. (2023) or boosts prompts based on feedback Zheng et al. (2023); Zhang et al. (2023a); Hou et al. (2023); Pitis et al. (2023) has demonstrated significant promise. The existing literature generally tends to discard ineffective thoughts from the prompt. However, humans typically can continuously learn from errors by carefully analyzing them to gain experience, thereby gradually improving performance. We therefore ask: whether the thought generation of LLMs can dispense with human annotation and mimic such a problem-solving way of humans to achieve effective reasoning across various tasks?",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        442.5,
+                        2342.5,
+                        2107.5,
+                        2342.5,
+                        2107.5,
+                        2842.5,
+                        442.5,
+                        2842.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                440,
+                2867.5,
+                2105,
+                2867.5,
+                2105,
+                3055,
+                440,
+                3055
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": "This paper proposes a novel framework, shown in Fig. 1, referred to as the Boosting of Thoughts (BoT), which achieves the *boosting* mechanism that embraces *aggregation* and *experience*, thereby enabling the progressive refinement of unreliable reasoning steps (weak thoughts) by learning from errors to eventually solve various problems. Starting with a simple prompt without human annotations",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        440,
+                        2867.5,
+                        2105,
+                        2867.5,
+                        2105,
+                        3055,
+                        440,
+                        3055
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "footer",
+            "poly": [
+                1240,
+                3120,
+                1282.5,
+                3120,
+                1282.5,
+                3175,
+                1240,
+                3175
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": "1",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1240,
+                        3120,
+                        1282.5,
+                        3120,
+                        1282.5,
+                        3175,
+                        1240,
+                        3175
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                447.4999999999999,
+                1940,
+                859.9999999999999,
+                1940,
+                859.9999999999999,
+                1985,
+                447.4999999999999,
+                1985
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": "# 1 Introduction",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        447.4999999999999,
+                        1940,
+                        859.9999999999999,
+                        1940,
+                        859.9999999999999,
+                        1985,
+                        447.4999999999999,
+                        1985
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1145,
+                910,
+                1397.5,
+                910,
+                1397.5,
+                957.5,
+                1145,
+                957.5
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " ABSTRACT",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1145,
+                        910,
+                        1397.5,
+                        910,
+                        1397.5,
+                        957.5,
+                        1145,
+                        957.5
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 11,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "100_1_png.jpg"
+    }
+}

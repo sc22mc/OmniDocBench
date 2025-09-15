@@ -1,0 +1,394 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        448,
+        112,
+        1226,
+        112,
+        1226,
+        148,
+        448,
+        148
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            448,
+            112,
+            1226,
+            112,
+            1226,
+            148,
+            448,
+            148
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "title",
+      "poly": [
+        454.0000000000001,
+        334,
+        2032,
+        334,
+        2032,
+        396,
+        454.0000000000001,
+        396
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "# GENERATIVE JUDGE FOR EVALUATING ALIGNMENT",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            454.0000000000001,
+            334,
+            2032,
+            334,
+            2032,
+            396,
+            454.0000000000001,
+            396
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        472,
+        480,
+        2014,
+        480,
+        2014,
+        722,
+        472,
+        722
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "Junlong Li<sup>1,6</sup> Shichao Sun<sup>3,6</sup> Weizhe Yuan<sup>4</sup> Run-Ze Fan<sup>5,6</sup> Hai Zhao<sup>1</sup>   Pengfei Liu<sup>1,2,6</sup>\\*<sup>1</sup>Shanghai Jiao Tong University <sup>2</sup>Shanghai Artificial Intelligence Laboratory  <sup>3</sup>Hong Kong Polytechnic University <sup>4</sup>New York University <sup>5</sup>Chinese Academy of Sciences <sup>6</sup>Generative AI Research Lab (GAIR)",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            472,
+            480,
+            2014,
+            480,
+            2014,
+            722,
+            472,
+            722
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        596,
+        896,
+        1954,
+        896,
+        1954,
+        1758,
+        596,
+        1758
+      ],
+      "ignore": false,
+      "order": "5",
+      "anno_id": 1,
+      "text": "The rapid development of Large Language Models (LLMs) has substantially expanded the range of tasks they can address. In the field of Natural Language Processing (NLP), researchers have shifted their focus from conventional NLP tasks (e.g., sequence tagging and parsing) towards tasks that revolve around aligning with human needs (e.g., brainstorming and email writing). This shift in task distribution imposes new requirements on evaluating these aligned models regarding *generality* (i.e., assessing performance across diverse scenarios), *flexibility* (i.e., examining under different protocols), and *interpretability* (i.e., scrutinizing models with explanations). In this paper, we propose a generative judge with 13B parameters, AUTO-J, designed to address these challenges. Our model is trained on user queries and LLM-generated responses under massive real-world scenarios and accommodates diverse evaluation protocols (e.g., pairwise response comparison and single-response evaluation) with well-structured natural language critiques. To demonstrate the efficacy of our approach, we construct a new testbed covering 58 different scenarios. Experimentally, AUTO-J outperforms a series of strong competitors, including both open-source and closed-source models, by a large margin. We also provide detailed analysis and case studies to further reveal the potential of our method and make a variety of resources public at https://github.com/GAIR-NLP/auto-j.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            596,
+            896,
+            1954,
+            896,
+            1954,
+            1758,
+            596,
+            1758
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        446,
+        1954,
+        2096,
+        1954,
+        2096,
+        2498,
+        446,
+        2498
+      ],
+      "ignore": false,
+      "order": "7",
+      "anno_id": 1,
+      "text": "In natural language processing, the evaluation methodology for generation tasks is continually updating with the advancement of *modeling techniques*, ranging from ROUGE (Lin, 2004) to ROUGE-WE (Ng & Abrecht, 2015) (a metric enhanced with word embedding (Mikolov et al., 2013)) and then to BERTScore (Zhang et al., 2019), BARTScore (Yuan et al., 2021), and GPTScore (Fu et al., 2023) (metrics enhanced by pre-trained language models (Peters et al., 2018; Devlin et al., 2019; Lewis et al., 2020)), aiming for a more reliable evaluation for ever-growing modeling techniques. Recently, the advent of large language models (Brown et al., 2020; Touvron et al., 2023a;b) has not only reshaped the implementation for modeling techniques (i.e., *paradigm shift* from \"pre-train, fine-tuning\" to \"pre-train, supervised fine-tune, and reward model-based tune\" (Ziegler et al., 2019; Stiennon et al., 2020; Ouyang et al., 2022)) but also broadened the spectrum of tasks that modeling techniques seek to address (i.e., task distribution shift from traditional NLP tasks towards those more aligned with human needs (Bai et al., 2022a; OpenAI, 2023; Zhou et al., 2023; Taori et al., 2023)).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            446,
+            1954,
+            2096,
+            1954,
+            2096,
+            2498,
+            446,
+            2498
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        446,
+        2522,
+        2102,
+        2522,
+        2102,
+        2976,
+        446,
+        2976
+      ],
+      "ignore": false,
+      "order": "8",
+      "anno_id": 1,
+      "text": "Given the evolving modeling techniques, the evaluation methods are in urgent need of upgrading and improvement to adapt to new challenges and requirements, particularly in the following aspects: (i) *generality*: the evaluation method should support massive real-world scenarios where gold references are usually unavailable. Traditional approaches frequently require human references and apply a single evaluation metric to constrained tasks (e.g., ROUGE (Lin, 2004) for text summarization, BLEU (Papineni et al., 2002) for machine translation) are struggling to keep pace with the current demands for evaluation. (ii) flexibility: the evaluation method should accommodate different protocols with desirable performance. The current LLM-based modeling paradigm requires methodological support of the evaluation in various aspects, and the evaluation protocols they demand also exhibit variations. For instance, when learning a reward model, it is necessary to compare two responses,",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            446,
+            2522,
+            2102,
+            2522,
+            2102,
+            2976,
+            446,
+            2976
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        496,
+        3010,
+        864,
+        3010,
+        864,
+        3048,
+        496,
+        3048
+      ],
+      "ignore": false,
+      "order": "9",
+      "anno_id": 1,
+      "text": "<sup>\\*</sup> Corresponding author",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            496,
+            3010,
+            864,
+            3010,
+            864,
+            3048,
+            496,
+            3048
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1250,
+        3134,
+        1284,
+        3134,
+        1284,
+        3164,
+        1250,
+        3164
+      ],
+      "ignore": false,
+      "order": "10",
+      "anno_id": 1,
+      "text": "1",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1250,
+            3134,
+            1284,
+            3134,
+            1284,
+            3164,
+            1250,
+            3164
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        452,
+        1852,
+        860,
+        1852,
+        860,
+        1892,
+        452,
+        1892
+      ],
+      "ignore": false,
+      "order": "6",
+      "anno_id": 1,
+      "text": "# INTRODUCTION 1",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            452,
+            1852,
+            860,
+            1852,
+            860,
+            1892,
+            452,
+            1892
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "section",
+      "poly": [
+        1160,
+        792,
+        1390,
+        792,
+        1390,
+        838,
+        1160,
+        838
+      ],
+      "ignore": false,
+      "order": "4",
+      "anno_id": 1,
+      "text": "ABSTRACT",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1160,
+            792,
+            1390,
+            792,
+            1390,
+            838,
+            1160,
+            838
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 1040,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "99_1_png.jpg"
+  }
+}

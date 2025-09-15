@@ -1,0 +1,356 @@
+{
+  "layout_dets": [
+    {
+      "category_type": "header",
+      "poly": [
+        450,
+        100.00000000000001,
+        1222,
+        100.00000000000001,
+        1222,
+        152,
+        450,
+        152
+      ],
+      "ignore": false,
+      "order": 1,
+      "anno_id": 1,
+      "text": "Published as a conference paper at ICLR 2024",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            450,
+            100.00000000000001,
+            1222,
+            100.00000000000001,
+            1222,
+            152,
+            450,
+            152
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        444.0000000000001,
+        346,
+        2102,
+        346,
+        2102,
+        432,
+        444.0000000000001,
+        432
+      ],
+      "ignore": false,
+      "order": 2,
+      "anno_id": 1,
+      "text": "in performance on long contexts, as highlighted by Liu et al. (2023). In contrast to these efforts, we approach the long context problem from a novel angle - context compression.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            444.0000000000001,
+            346,
+            2102,
+            346,
+            2102,
+            432,
+            444.0000000000001,
+            432
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure",
+      "poly": [
+        680,
+        470,
+        1862,
+        470,
+        1862,
+        1246,
+        680,
+        1246
+      ],
+      "ignore": false,
+      "order": 3,
+      "anno_id": 1,
+      "text": "",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            680,
+            470,
+            1862,
+            470,
+            1862,
+            1246,
+            680,
+            1246
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "figure_caption",
+      "poly": [
+        447.9999999999999,
+        1264,
+        2102,
+        1264,
+        2102,
+        1358,
+        447.9999999999999,
+        1358
+      ],
+      "ignore": false,
+      "order": 4,
+      "anno_id": 1,
+      "text": "Figure 2: Various context lengths (e.g., 2572 chars, 512 words, 128 memory slots) serve the same function when conditioned on by an LLM for responding to the given prompt.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            447.9999999999999,
+            1264,
+            2102,
+            1264,
+            2102,
+            1358,
+            447.9999999999999,
+            1358
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        442,
+        1400,
+        2104,
+        1400,
+        2104,
+        1622,
+        442,
+        1622
+      ],
+      "ignore": false,
+      "order": 5,
+      "anno_id": 1,
+      "text": "Context compression is motivated by the fact that a text can be represented in different lengths in an LLM while conveying the same information. As shown in Figure 2, if we use characters to represent the text, it will have a length of 2,572; if we represent it using (sub-)words, we only need a context length of 512 without affecting the response accuracy. So, is there a more compact representation allowing us to achieve the same goal with a shorter context?",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            442,
+            1400,
+            2104,
+            1400,
+            2104,
+            1622,
+            442,
+            1622
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        450,
+        1650.0000000000002,
+        2100,
+        1650.0000000000002,
+        2100,
+        1876.0000000000002,
+        450,
+        1876.0000000000002
+      ],
+      "ignore": false,
+      "order": 6,
+      "anno_id": 1,
+      "text": "We explore this problem and propose the ICAE which leverages the power of an LLM to achieve high compression of contexts. The ICAE consists of 2 modules: a learnable encoder adapted from the LLM with LoRA (Hu et al., 2021) for encoding a long context into a small number of memory slots, and a fixed decoder, which is the LLM itself where the memory slots representing the original context are conditioned on to interact with prompts to accomplish various goals, as illustrated in Figure 1.",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            450,
+            1650.0000000000002,
+            2100,
+            1650.0000000000002,
+            2100,
+            1876.0000000000002,
+            450,
+            1876.0000000000002
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        442,
+        1904,
+        2102,
+        1904,
+        2102,
+        2262,
+        442,
+        2262
+      ],
+      "ignore": false,
+      "order": 7,
+      "anno_id": 1,
+      "text": "We first **pretrain** the ICAE using both autoencoding (AE) and language modeling (LM) objectives so that it can learn to generate memory slots from which the decoder (i.e., the LLM) can recover the original context or perform continuation. The pretraining with massive text data enables the ICAE to be well generalized, allowing the resulting memory slots to represent the original context more accurately and comprehensively. Then, we **fine-tune** the pretrained ICAE on instruction data for practical scenarios by enhancing its generated memory slots' interaction with various prompts. We show the ICAE (based on Llama) learned with our pretraining and fine-tuning method can effectively produce memory slots with  $4 \\times$  context compression. We highlight our contributions as follows:",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            442,
+            1904,
+            2102,
+            1904,
+            2102,
+            2262,
+            442,
+            2262
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "plain_text",
+      "poly": [
+        443.9999999999998,
+        2308,
+        2110,
+        2308,
+        2110,
+        3048,
+        443.9999999999998,
+        3048
+      ],
+      "ignore": false,
+      "order": 8,
+      "anno_id": 1,
+      "text": "We propose In-context Autoencoder (ICAE) a novel approach to context compression by leveraging the power of an LLM. The ICAE either enables an LLM to express more information with the same context length or allows it to represent the same content with a shorter context, thereby enhancing the model's ability to handle long contexts with improved latency and memory cost during inference. Its promising results and its scalability may suggest further research efforts in context management for an LLM, which is orthogonal to other long context modeling studies and can be combined with them to further improve the handling of long contexts in an LLM. - In addition to context compression, ICAE provides an access to probe how an LLM performs memorization. We observe that extensive self-supervised learning (e.g., autoencoding) in the pretraining phase is very helpful to enhance the ICAE's capability to encode the original context into compressed memory slots. This pretraining process may share some analogies with humans enhancing their memory capacity through extensive memory training, which improves the brain's memory encoding capabilities (Ericsson et al., 1980; Engle et al., 1999; Maguire et al., 2003). We also show that an LLM's memorization pattern is highly similar to humans (see Table 2 and Table 3). All these results imply a novel perspective on the connection between working memory in cognitive science (Baddeley, 1992) and representation learning in LLMs (i.e., context window).",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            443.9999999999998,
+            2308,
+            2110,
+            2308,
+            2110,
+            3048,
+            443.9999999999998,
+            3048
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    },
+    {
+      "category_type": "footer",
+      "poly": [
+        1254,
+        3128,
+        1290,
+        3128,
+        1290,
+        3170,
+        1254,
+        3170
+      ],
+      "ignore": false,
+      "order": 9,
+      "anno_id": 1,
+      "text": "2",
+      "line_with_spans": [
+        {
+          "category_type": "text_span",
+          "poly": [
+            1254,
+            3128,
+            1290,
+            3128,
+            1290,
+            3170,
+            1254,
+            3170
+          ],
+          "text": ""
+        }
+      ],
+      "attribute": {
+        "text_language": "",
+        "text_background": "",
+        "text_rotate": ""
+      }
+    }
+  ],
+  "extra": {
+    "relation": []
+  },
+  "page_info": {
+    "page_attribute": {},
+    "page_no": 1022,
+    "height": 3300,
+    "width": 2550,
+    "image_path": "98_2_png.jpg"
+  }
+}

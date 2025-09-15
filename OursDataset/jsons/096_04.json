@@ -1,0 +1,546 @@
+{
+    "layout_dets": [
+        {
+            "category_type": "plain_text",
+            "poly": [
+                202,
+                306,
+                1194,
+                306,
+                1194,
+                490,
+                202,
+                490
+            ],
+            "ignore": false,
+            "order": 1,
+            "anno_id": 1,
+            "text": " of a polyhedron. We cannot escape the trade-off between the strength of constraints and the ease of training. This trade-off depends on the arrangement of the directions of points and the number of directions.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        202,
+                        306,
+                        1194,
+                        306,
+                        1194,
+                        490,
+                        202,
+                        490
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                206.0000000000001,
+                508.00000000000006,
+                1194,
+                508.00000000000006,
+                1194,
+                1494,
+                206.0000000000001,
+                1494
+            ],
+            "ignore": false,
+            "order": 2,
+            "anno_id": 1,
+            "text": " To solve this problem concerning the arrangement and number of points, we define additional VP-related points called ADPs based on the spatial symmetry as follows. We found that six 3D VPs form a regular octahedron that has the symmetry of regular octahedron groups (octahedral symmetry), see Figure 3. This symmetry means that a regular octahedron has three types of rotational symmetric axes. To estimate a unique camera rotation requiring two or more directions, the point arrangement prefers 3D spatial uniformity, such as the vertexes of regular polygons. Considering the wide spatial uniformity and small number of points, we use the ADPs, which are the eight diagonal points that indicate the directions of the cubic corners in Table 2. This arrangement of VPs and ADPs (VP/ADPs) also has the symmetry of regular octahedron groups and the greatest spatial uniformity in the case of eight points because of the diagonal directions, as shown in Figure 3. Therefore, 3D VP/ADP coordinates are the optimal arrangement given a practical number of points. The supplementary materials describe details of the symmetry and optimal arrangement.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        206.0000000000001,
+                        508.00000000000006,
+                        1194,
+                        508.00000000000006,
+                        1194,
+                        1494,
+                        206.0000000000001,
+                        1494
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                206,
+                1621.9999999999998,
+                1192,
+                1621.9999999999998,
+                1192,
+                2260,
+                206,
+                2260
+            ],
+            "ignore": false,
+            "order": 4,
+            "anno_id": 1,
+            "text": " Vanishing-point estimator. We found that VP estimation in images corresponds to single human pose estimation [2] in terms of labeled image-coordinate detection. These two tasks, VP detection and pose estimation, are similar because of the geometric relations of VPs and pose keypoints; that is, 3D VPs form a regular octahedron, and pose keypoints are based on a human skeleton. This similarity suggests that heatmap regression can achieve accurate and robust VP estimation as it does for single human pose estimation. Furthermore, using ADPs to increase the number of points, we can overcome the problem of the heatmap regression for VPs; that is, a unique camera rotation cannot be determined for images with few VPs.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        206,
+                        1621.9999999999998,
+                        1192,
+                        1621.9999999999998,
+                        1192,
+                        2260,
+                        206,
+                        2260
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                203.99999999999994,
+                2282,
+                1198,
+                2282,
+                1198,
+                2768,
+                203.99999999999994,
+                2768
+            ],
+            "ignore": false,
+            "order": 5,
+            "anno_id": 1,
+            "text": " Additionally, Wakai *et al.*  $[53]$  reported that mismatches in dataset domains degrade calibration accuracy. This degradation suggests that regressors consisting of fully connected layers extract domain-specific features without geometric cues such as VPs. In contrast to conventional regressors, heatmap regressors using 2D Gaussian kernels on labeled points have the potential for pixel-wise accuracy in pose estimation  $[37]$ . Therefore, we propose a heatmapregression network, called the \"VP estimator,\" that detects image VP/ADPs and is likely to avoid such degradation.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        203.99999999999994,
+                        2282,
+                        1198,
+                        2282,
+                        1198,
+                        2768,
+                        203.99999999999994,
+                        2768
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                206.0000000000001,
+                2780,
+                1194,
+                2780,
+                1194,
+                2964,
+                206.0000000000001,
+                2964
+            ],
+            "ignore": false,
+            "order": 6,
+            "anno_id": 1,
+            "text": " Distortion estimator. To estimate camera rotation, we require intrinsic parameters that project image coordinates to 3D incident ray vectors because the rotation is calculated using these incident ray vectors in Manhattan world coor-",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        206.0000000000001,
+                        2780,
+                        1194,
+                        2780,
+                        1194,
+                        2964,
+                        206.0000000000001,
+                        2964
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1277.9999999999998,
+                2876,
+                2274,
+                2876,
+                2274,
+                2968,
+                1277.9999999999998,
+                2968
+            ],
+            "ignore": false,
+            "order": 14,
+            "anno_id": 1,
+            "text": " Here, we describe the estimation of camera rotation from the VP/ADPs. Note that this estimation, which is based on",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1277.9999999999998,
+                        2876,
+                        2274,
+                        2876,
+                        2274,
+                        2968,
+                        1277.9999999999998,
+                        2968
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1278,
+                2580,
+                2278,
+                2580,
+                2278,
+                2866,
+                1278,
+                2866
+            ],
+            "ignore": false,
+            "order": 13,
+            "anno_id": 1,
+            "text": " **Inference.** Figure 4 shows our calibration pipeline for the inference. First, we obtain the VP/ADPs from the VP estimator and intrinsics from the distortion estimator. Second, these 2D VP/ADPs are projected onto a unit sphere in world coordinates using backprojection. Finally, we convert the 3D VP/ADPs to the extrinsics, as described below.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1278,
+                        2580,
+                        2278,
+                        2580,
+                        2278,
+                        2866,
+                        1278,
+                        2866
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1283.9999999999998,
+                2278,
+                2268,
+                2278,
+                2268,
+                2572,
+                1283.9999999999998,
+                2572
+            ],
+            "ignore": false,
+            "order": 12,
+            "anno_id": 1,
+            "text": " **Training.** Using the generated fisheye images with ground- truth camera parameters in Section  $4.1$  and VP/ADP labels in Section  $4.2$ , we train our two estimators independently. The VP estimator is trained using the modified HRNet loss function described above. In addition, the distortion estima- tor is trained using the harmonic non-grid bearing loss [\\[53\\]](#page-11-0).",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1283.9999999999998,
+                        2278,
+                        2268,
+                        2278,
+                        2268,
+                        2572,
+                        1283.9999999999998,
+                        2572
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1282,
+                1429.9999999999998,
+                2268,
+                1429.9999999999998,
+                2268,
+                2170,
+                1282,
+                2170
+            ],
+            "ignore": false,
+            "order": 10,
+            "anno_id": 1,
+            "text": " Implementation details. We use the HRNet [47] backbone, which has shown strong performance in various tasks, for our VP estimator. We found that the HRNet loss function evaluates only images that include detected keypoints; that is, detection failure does not affect the loss value. To tackle this problem, we modified this loss function to evaluate all images, including those with detection failure. This modification is suitable for deep single image camera calibration because, unlike human pose estimation, we always estimate camera rotation. To achieve sub-pixel precision, DARK [60] is applied to the heatmaps as postprocessing. Note that we do not employ DARK to generate heatmaps as a preprocessing step because such preprocessing leads to inconsistency between the heatmaps and camera parameters. Rectangular images are center cropped for the VP estimator.",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1282,
+                        1429.9999999999998,
+                        2268,
+                        1429.9999999999998,
+                        2268,
+                        2170,
+                        1282,
+                        2170
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "plain_text",
+            "poly": [
+                1282,
+                1228,
+                2272,
+                1228,
+                2272,
+                1412,
+                1282,
+                1412
+            ],
+            "ignore": false,
+            "order": 9,
+            "anno_id": 1,
+            "text": " dinates. For the intrinsics in Equation  $(3)$ , we use Wakai *et al.*'s calibration network [53] without the tilt and roll angle regressors, which is called the \"distortion estimator.\" Therefore, our network has two estimators in Figure  $1$ .",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1282,
+                        1228,
+                        2272,
+                        1228,
+                        2272,
+                        1412,
+                        1282,
+                        1412
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure_caption",
+            "poly": [
+                1282,
+                908,
+                2274,
+                908,
+                2274,
+                1138,
+                1282,
+                1138
+            ],
+            "ignore": false,
+            "order": 8,
+            "anno_id": 1,
+            "text": " Figure 4. Calibration pipeline for inference. The intrinsics are estimated by the distortion estimator. Camera models project VP/ADPs onto the unit sphere using backprojection. The extrinsics are calculated from the fitting. The input fisheye image is generated from [38].",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1282,
+                        908,
+                        2274,
+                        908,
+                        2274,
+                        1138,
+                        1282,
+                        1138
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "figure",
+            "poly": [
+                1286,
+                300,
+                2274,
+                300,
+                2274,
+                872,
+                1286,
+                872
+            ],
+            "ignore": false,
+            "order": 7,
+            "anno_id": 1,
+            "text": "",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1286,
+                        300,
+                        2274,
+                        300,
+                        2274,
+                        872,
+                        1286,
+                        872
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                216,
+                1550,
+                704,
+                1550,
+                704,
+                1584,
+                216,
+                1584
+            ],
+            "ignore": false,
+            "order": 3,
+            "anno_id": 1,
+            "text": " ## 3.2. Network architecture",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        216,
+                        1550,
+                        704,
+                        1550,
+                        704,
+                        1584,
+                        216,
+                        1584
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        },
+        {
+            "category_type": "section",
+            "poly": [
+                1274,
+                2200,
+                1810,
+                2200,
+                1810,
+                2244,
+                1274,
+                2244
+            ],
+            "ignore": false,
+            "order": 11,
+            "anno_id": 1,
+            "text": "## 3.3. Training and inference",
+            "line_with_spans": [
+                {
+                    "category_type": "text_span",
+                    "poly": [
+                        1274,
+                        2200,
+                        1810,
+                        2200,
+                        1810,
+                        2244,
+                        1274,
+                        2244
+                    ],
+                    "text": ""
+                }
+            ],
+            "attribute": {
+                "text_language": "",
+                "text_background": "",
+                "text_rotate": ""
+            }
+        }
+    ],
+    "extra": {
+        "relation": []
+    },
+    "page_info": {
+        "page_attribute": {},
+        "page_no": 996,
+        "height": 3300,
+        "width": 2550,
+        "image_path": "96_4_png.jpg"
+    }
+}
