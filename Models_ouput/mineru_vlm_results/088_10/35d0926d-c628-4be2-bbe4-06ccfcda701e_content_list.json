@@ -1,0 +1,42 @@
+[
+    {
+        "type": "text",
+        "text": "This layered architecture enables: 1) efficient and accurate handling during pick and place tasks, 2) reliable sensor data interpretation and collision avoidance. However, it might struggles with scalability and modularity. Hence, as an alternative microservices architecture could be explore. Microservices architectures are known for their scalability. In a food processing scenario where different aspects (e.g., motion planning, object detection) might have varying computational demands, microservices can be individually scaled to meet specific requirements. Microservices allow for more independent modification of components. If there are changes in the food processing requirements for specific tasks (e.g., new products with different shapes), the relevant microservices can be updated without affecting the entire system. However, it may also brings complexity in terms of service communication, coordination, and potential challenges in maintaining consistency across services.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. Food Packaging Robots",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The food- packaging use- case addresses packaging of various food products, such as bags of chips. The task is to pick these products from a bin and place them in a variety of containers. The most suitable software architecture for a food packaging robot depends on various factors, including the specific requirements of the robot, the type of food being packaged, the production environment, and the available resources. However, some common architectural patterns that may be suitable for food packaging robots include client- server architecture, microservices architecture, and event- driven architecture. Even combining multiple architecture together could provide benefits, such as scalability, modularity, and flexibility, which can be crucial for ensuring the smooth and efficient operation of the robot in a complex production environment. In this study, we proposed event- driven architecture for packaging bags of chips by the robot, that allows for easy integration of new components, as well as efficient communication and coordination between subsystems, as shown in Fig. 3. Event- driven architecture is suitable for packaging bags of chips because it can handle a large number of events that occur during the packaging process. The software architecture can consists of the five high level modules having their specific tasks and responsibilities described as follows.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1) Object detection module: This module is responsible for detecting and identifying the bags of chips and their positions. It emits events related to the detection and sends them to the event bus. \n2) Decision making module: This module receives the events from the object detection module through the event bus. It processes the events and makes decisions about the object to be picked. It emits events related to the picking or placing instructions. \n3) Picking controller module: The picking controller module receives the events from the decision making module to pick object or not through the event bus. It emits events related to the object picked by the robot manipulator or not. It ensures that the bags of chips correctly picked by the robot manipulator or not.",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/b987edd9164cf43a1e6cc5b6cf79f52e900b20c8a3bb5a0d09efa68478eed578.jpg",
+        "image_caption": [
+            "Fig. 3. Proposed event-driven architectural pattern for packaging chips of bags in a box by robot manipulators."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4) Placing controller module: The placing controller module receives the events from the picking controller module on weather object to be placed or not through the event bus. It emits events related to the object packed in a box by the robot manipulator or not. It ensures that the bags of chips are correctly placed in the box by the robot manipulator or not. \n5) Weighing controller module: The weighing controller module receives the events from the placing controller module on weather object to be placed or not through the event bus. It emits events related to the weight of the box. It ensures that the weight of the box within the desired range.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The software architecture can then respond to the event by adjusting the flow of bags of chips into the box or by stopping the packaging process if the weight is not within the desired range. In addition, if there are any issues with the packaging process,",
+        "page_idx": 0
+    }
+]

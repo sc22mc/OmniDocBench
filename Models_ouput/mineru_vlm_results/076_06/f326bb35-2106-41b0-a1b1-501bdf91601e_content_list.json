@@ -1,0 +1,44 @@
+[
+    {
+        "type": "text",
+        "text": "VI. CONCLUSION AND FUTURE WORK",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This paper presented a vectorized scenario description that provides a uniform way to describe both test and real- world scenarios, including spatial and temporal nuances. Unlike scenario description formats such as OpenScenario, which are intended for scenario definition, our vectorized scenario description is especially suitable for (predictive) analyses. We demonstrated this by generating and merging data from three functional scenarios to train the motion prediction model VectorNet. The results showed that VectorNet is able to predict an AV's trajectories based on both individual and multiple scenarios. Given existing data, a small amount of data is sufficient to enable generalization to new functional scenarios. Based on the predicted trajectories, evaluation metrics can also be predicted. Here, VectorNet partially achieves higher predictive performance than conventional regression metamodels. However, for our scenarios that inputs can still represent, the regression metamodels' overall performance is better.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Our results suggest that conventional search- based techniques are preferable for individual test campaigns with specified scenarios. However, our method can benefit from data accumulated during development and testing, and enables new use cases. For example, the behavior of AVs in specified test and real- world scenarios could be compared without scenario identification [24]. For this purpose, data from (virtual) tests could be combined to predict the behavior in real- world scenarios. If the actual behavior deviates from expectations, this indicates factors of reality that have not been thoroughly investigated in tests - a valuable hint for SOTIF area 3 [21].",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Possible future work includes integrating dynamics models into the motion prediction to explicitly predict longitudinal and lateral behavior and enforce physically possible predictions. Probabilistic motion prediction models could account for uncertainties. The scenario embeddings could be extended to include inputs such as weather conditions and additional scenario elements such as traffic lights [7], [8]. The model could also be extended to predict logs and learn the behavior of other objects in the environment. This would allow studying interactions between the Ego and its environment.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In summary, integrating motion prediction into scenariobased testing is a promising direction to accelerate and fortify scenario- based testing by expanding the data pool for scenario selection and linking specified (virtual) and real- world tests.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "REFERENCES",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "[1] N. Kalra and S. Paddock, Driving to safety: How many miles of driving would it take to demonstrate autonomous vehicle reliability? Transportation Research Part A: Policy and Practice, vol. 94, pp. 182- 193, Dec.2016. [2] ISO Central Secretary, Road vehicles - Safety of the intended functionality,\" International Organization for Standardization, Geneva, CH, Standard ISO 21448:2022, Jun.2022. [3] United Nations Economic Commission for Europe, UN Regulation No. 157 - Automated Lane Keeping Systems (ALKS),\" United Nations, Standard E/ECE/TRANS/505/Rev.3/Add.156, Mar. 2021. [4] A.CorsoR.MossM.KorenR.Leeand M.KochenderferA Survey of Algorithms for Black- Box Safety Validation of Cyber- Physical Systems,Journal of Artificial Intelligence Research, vol. 72, pp.377- 428, Jan.2022.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "[5] T. Menzel, G. Bagschik, and M. Maurer, \"Scenarios for Development, Test and Validation of Automated Vehicles,\" in 2018 IEEE Intelligent Vehicles Symposium (IV), Jun. 2018, pp. 1821- 1827. [6] M. Wen, J. Park, and K. Cho, \"A scenario generation pipeline for autonomous vehicle simulators,\" Human- centric Computing and Information Sciences, vol. 10, no. 1, p. 24, Jun. 2020. [7] S. Tan, K. Wong, S. Wang, S. Manivatagam, M. Ren, and R. Urtasun, \"SceneGen: Learning to generate realistic traffic scenes,\" in 2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Jun. 2021, pp. 892- 901. [8] L. Feng, Q. Li, Z. Peng, S. Tan, and B. Zhou, \"TrafficGen: Learning to Generate Diverse and Realistic Traffic Scenarios,\" arXiv:2210.06609, Oct. 2022. [9] B. Zhang, \"VectorNet,\" https://github.com/ForeverFancy/VectorNet, Dec. 2022. [10] C. Neurohr, L. Westhofen, M. Butz, M. H. Bollmann, U. Eberle, and R. Galbas, \"Criticality Analysis for the Verification and Validation of Automated Vehicles,\" IEEE Access, vol. 9, pp. 18016- 18041, 2021. [11] M. Steimle, T. Menzel, and M. Maurer, \"Toward a Consistent Taxonomy for Scenario- Based Development and Test Approaches for Automated Vehicles: A Proposal for a Structuring Framework,\" in 2021 IEEE Access, vol. 9, pp. 147- 148- 147- 148- 149- 148- 149- 149- 149- 149- 149- 149- 149- 149- 149- 149- 149- 149- 149- 149- 149- 149- 149- 149- 149- 149- 149. [12] X. Zhang, J. Tao, K. Tan, M. Törngren, J. M. G. Sánchez, M. R. Ramli, X. Tao, M. Gyllenhammar, F. Wotawa, N. Mohan, M. Nica, and H. Felbinger, \"Finding Critical Scenarios for Automated Driving Systems: A Systematic Literature Review,\" arXiv:2110.08664, Oct. 2021. [13] F. Batsch, S. Kanarachos, M. Cheah, R. Ponticelli, and M. Blundell, \"A taxonomy of validation strategies to ensure the safe operation of highly automated vehicles,\" Journal of Intelligent Transportation Systems, pp. 1- 20, Mar. 2020. [14] S. Riedmaier, T. Ponn, D. Ludwig, B. Schick, and F. Diermeyer, \"Survey on Scenario- Based Safety Assessment of Automated Vehicles,\" IEEE Access, vol. 8, pp. 87- 456- 87- 477, 2020. [15] J. Cai, W. Deng, H. Guang, Y. Wang, J. Li, and J. Ding, \"A Survey on Data- Driven Scenario Generation for Automated Vehicle Testing,\" Machines, vol. 10, no. 11, p. 1101, Nov. 2022. [16] H. Zhang, H. Zhou, J. Sun, and Y. Tian, \"Risk Assessment of Highly Automated Vehicles with Naturalistic Driving Data: A Surrogate- based optimization Method,\" in 2022 IEEE Intelligent Vehicles Symposium (IV), Jun. 2022, pp. 580- 585. [17] M. Winkelmann, M. Kohlhoff, H. H. Tadjine, and S. Müller, \"Probabilistic Metamodels for an Efficient Characterization of Complex Driving Scenarios,\" IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 12, pp. 23896- 23905, Dec. 2022. [18] Z. Huang, M. Arief, H. Lam, and D. Zhao, \"Synthesis of Different Autonomous Vehicles Test Approaches,\" in 2018 21st International Conference on Intelligent Transportation Systems (ITSC), Nov. 2018, pp. 2000- 2005. [19] S. Feng, Y. Feng, H. Sun, Y. Zhang, and H. X. Liu, \"Testing Scenario Library Generation for Connected and Automated Vehicles: An Adaptive Framework,\" IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 2, pp. 1213- 1222, Feb. 2022. [20] M. Winkelmann, C. Vasconi, and S. Müller, \"Transfer Importance Sampling - How Testing Automated Vehicles in Multiple Test Setups Helps With the Bias- Variance Tradeoff,\" in 2022 IEEE 25th International Conference on Intelligent Transportation Systems (ITSC), Oct. 2022, pp. 26- 31. [21] M. Scholtes, L. Westhofen, L. R. Turner, K. Lotto, M. Schuldes, H. Weber, N. Wagener, C. Neuronr, M. H. Bollmann, F. Kortke, J. Hiller, M. Hoss, J. Bock, and L. Eckstein, \"6- Layer Model for a Structured Description and Categorization of Urban Traffic and Environment,\" IEEE Access, vol. 9, pp. 59- 131- 59- 147, 2021. [22] Sally Goldman, \"Embeddings,\" https://developers.google.com/machine- learning/crash- course/embeddings/video- lecture.[23] J. Gao, C. Sun, H. Zhao, Y. Shen, D. Anguelov, C. Li, and C. Schmid, \"VectorNet: Encoding HD Maps and Agent Dynamics From Vectorized Representation,\" in 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Jun. 2020, pp. 11- 522- 11- 530. [24] F. Montanari, C. Stadler, J. Sichermann, R. German, and A. Djanatliev, \"Maneuver- based Resimulation of Driving Scenarios based on Real Driving Data,\" in 2021 IEEE Intelligent Vehicles Symposium (IV), Jul. 2021, pp. 1124- 1131.",
+        "page_idx": 0
+    }
+]

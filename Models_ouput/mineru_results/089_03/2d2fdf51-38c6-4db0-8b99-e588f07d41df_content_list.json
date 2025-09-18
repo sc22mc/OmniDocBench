@@ -1,0 +1,68 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/67982bbc7ad34e99beda6e9deb4af4593b55b92ad9cebf55b221b0de74bd558d.jpg",
+        "image_caption": [
+            "Fig.2SteptractiCrestial machine learning model will use them to predict the presence of the queen bee. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/09ef7f062e102f9787852316cc5913ea7335d35b11367a92c174b1b7c5f4fa9e.jpg",
+        "table_caption": [
+            "TABLEI DATASETAUGMENTED SIZESWITHHOP SIZE OF5 SAND DIFFERENTCHUNK LENGTHS "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Chunk size</td><td>Dataset1[4]</td><td>Dataset2[24]</td><td>total</td></tr><tr><td>0.5s</td><td>85200</td><td>67524</td><td>152 724</td></tr><tr><td>1s</td><td>85200</td><td>67497</td><td>152 697</td></tr><tr><td>3s</td><td>85200</td><td>67342</td><td>152 542</td></tr><tr><td>5s</td><td>78100</td><td>67049</td><td>145149</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "lasting approximately $1 0 \\mathrm { { m i n } }$ . In total, there are 576 audio files, half labeled as“Missing Queen”and the other half as“Normal Beehive.”These recordings represent the activities of the two hives over two distinct days. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B.Audio Chunk Split ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Despite utilizing two datasets with a substantial amount of data,this study incorporates a data augmentation technique to expand thenumberof input samples.Thisinvolvesbreaking down audio files into smaller segments.Adjusting the hop size, which represents the space between the start of consecutive chunks within the original audio,itis possible to increase the number of chunks.This technique isdescribed in [31] with the name“time slicing window”and can be found in other works [32] with similar names like “TimeShiftRange”and “RandXTranslation.”We subsequently evaluate the impact on theresultsby exploringvariouschunk sizes:O.5,1,3,and 5 s,while maintaining the same number of chunks and avoiding overlap.To attain this objective,a hop size of 5 swas utilized, leading to varying numbers of samples as detailedin Table I. The inconsistency in the count of resulting segments arises from the consideration of only complete chunks,with no employment of padding techniques to ensure uniform length across all audio files. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C.Feature Extraction ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Usingraw audio data for sound classification is not convenient due to its high dimensionality, leading to computational challenges and increased processing costs.Raw waveforms may not directly capture relevant features for classfication,requiring sophisticated feature extraction techniques.In addition,raw audiois susceptible to environmental noise,making models sensitive and less robust.To address these issues,different preprocessing techniques are commonly employed to enhance model efficiency and performance by providing more compact and informative representations of the audio signals. In this study are compared two types of features: mel-frequency cepstral coefficients (MFCC) and the STFT spectrograms. These preprocessing techniques are used to produce the input vector used by the machine learning model as shown in Fig.2. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Mel-Frequency cepstral coefficients: The first method is a widely-used technique for acoustic-applications [33],in particular,to capture relevant characteristics of the human auditory systemby transforming the audio signalintoacompactrepresentation witha user-defined number, denoted as $n$ ,ofcoefficients. Results were compared across varying $n$ values from 10 to 50. By extracting arelatively small number of coefficients,MFCCs reduce the dimensionality of the feature space while retaining essential information about the audio signal.Thisis crucial for efficient processing and classification. The MFCC extractionis done on each audio chunk of the dataset,this process is explained bythe following sequence of steps necessary to obtain the MFCC coefficients vector. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1） Division of the audio into windows of 2048 audio samples with partial overlap,usinga hop length of 512 samples.   \n2）Application of the Hann windowing function to smooth the signal at the window edges.   \n3）Use of discrete Fourier transform (DFT) to convert the signal to the frequency domain.   \n4）Application of the mel filterbank set of triangular filters, evenly spaced ontheMel scale.   \n5）Application of discrete cosine transform to obtain coefficients for each window.   \n6） Computation of the mean value for each coefficient across all windows,resulting in the $n$ features that will be used as input for the classifiers. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Short Time Fourier Transform: The second method uses only the Fourier transform as explained in [34], to obtain a reduced ",
+        "page_idx": 0
+    }
+]

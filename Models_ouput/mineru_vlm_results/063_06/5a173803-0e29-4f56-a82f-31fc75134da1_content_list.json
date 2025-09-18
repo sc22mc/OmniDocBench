@@ -1,0 +1,64 @@
+[
+    {
+        "type": "text",
+        "text": "over  $\\mathbb{F}_q$  . Let  $\\mathcal{C}_g$  be the affine plane curve defined by this equation. Note that  $\\mathcal{C}_g$  is nonsingular and irreducible over  $\\overline{\\mathbb{F}_q}$  , an algebraic closure of  $\\mathbb{F}_q$  . Denote the set of  $\\mathbb{F}_q$  - rational points of  $\\mathcal{C}_g$  by",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\mathcal{C}_g(\\mathbb{F}_q) = \\left\\{(x,y)\\in \\mathbb{F}_q^2\\mid g^2 x^\\ell +gy^\\ell +1 = 0\\right\\}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "and let  $N_{g} = |\\mathcal{C}_{g}(\\mathbb{F}_{q})|$  be its cardinality. Furthermore, let  $\\widetilde{\\mathcal{C}}_g$  be the (Zariski) closure of  $\\mathcal{C}_g$  in the projective plane defined by the homogeneous equation",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ng^{2}X^{\\ell} + gY^{\\ell} + Z^{\\ell} = 0. \\tag{4}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note that  $\\widetilde{\\mathcal{C}}_g$  is also non- singular. We let  $\\widetilde{N_g}$  denote the cardinality of  $\\widetilde{\\mathcal{C}}_g(\\mathbb{F}_q)$  . Having Conjecture  $\\boxed{\\mathbf{B}}$  and Conjecture  $\\boxed{\\mathbf{C}}$  in mind, we are especially concerned with whether or not a point  $(x,y)\\in \\mathcal{C}_g(\\mathbb{F}_q)$  satisfying  $xy\\neq 0$  . The following lemma shows that this is always true except for very limited special cases.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 2.1. Equation 4) has a nontrivial solution  $(x,y,z)$  with  $xyz = 0$  if and only if one of the following situations holds:",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(i  $\\ell = 1$  or2; (ii)  $\\ell = 4$  and  $- 1\\notin L$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Moreover, if  $\\ell >2$  then  $xz\\neq 0$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. Suppose that  $(x,y,z)$  is a nontrivial solution to Equation 4) with  $xyz = 0$  . Then only one of  $x,y,z$  is zero. Observe that if  $x = 0$  or  $z = 0$  , then  $- g\\in L$  and  $gL$  is either of order 1 or 2 in  $\\mathbb{F}_q^\\times /L$  ; if  $y = 0$  , then  $- g^{2}\\in L$  and  $gL$  is of order 4 in  $\\mathbb{F}_q^\\times /L$  . In particular, we have  $xz\\neq 0$  provided that  $\\ell \\neq 2$  . In the case where  $\\ell = 4$  , we see that  $- L = g^{2}L\\neq L$  It follows that  $- 1\\notin L$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Conversely, if  $\\ell = 1$  then it's clear that Equation 4) has a nontrivial solution  $(x,y,z)$  with  $xyz = 0$  . Suppose that  $\\ell = 2$  , then  $\\mathbb{F}_q^\\times /L = \\{L,gL\\}$  . If  $- 1\\notin L$  , then  $- L = gL$  . In this case,  $g = - a^{2}\\in L$  for some  $a\\in \\mathbb{F}_q^\\times$  . Then, we clearly have solutions  $(x,y,z) = (1,a,0)$  and  $(0,1,a)$  . Suppose  $- 1\\in L$  , then  $- g^{2} = b^{2}\\in L$  for some  $b\\in \\mathbb{F}_q^\\times$  and we have the solution  $(x,y,z) = (1,0,b)$  in this case.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Finally, suppose that  $\\ell = 4$  and  $- 1\\notin L$  . Then both  $g^{2}L$  and  $- L$  are of order 2 in the cyclic group  $\\mathbb{F}_q^\\times /L$  . Thus,  $- L = g^{2}L$  and this gives a solution  $(x,y,z) = (1,0,b)$  where  $- g^{2} = b^{4}\\in L$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Following [Wei48], the number  $N_{g}$  of solutions to Equation 3) can be expressed as a character sum which we now recall. As usual, by a multiplicative character of  $\\mathbb{F}_q$  we mean a character of the group  $\\mathbb{F}_q^\\times$  , i.e. a group homomorphism from  $\\mathbb{F}_q^\\times$  to  $\\mathbb{C}^{\\times}$  . As we only deal with multiplicative characters of  $\\mathbb{F}_q$  , we'll simply call them characters. The trivial character will be denoted by  $\\epsilon$  such that  $\\epsilon (a) = 1$  for all  $a\\in \\mathbb{F}_q^\\times$  . We extend the domain of a character  $\\chi$  such that  $\\chi (0) = 1$  if  $\\chi = \\epsilon$  and  $\\chi (0) = 0$  otherwise. We call the extension of  $\\chi$  an extended character and still denote the extension by  $\\chi$  if there is no",
+        "page_idx": 0
+    }
+]

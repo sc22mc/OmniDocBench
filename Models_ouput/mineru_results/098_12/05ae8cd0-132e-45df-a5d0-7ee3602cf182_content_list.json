@@ -1,0 +1,33 @@
+[
+    {
+        "type": "text",
+        "text": "Hugo Touvron,Louisartin,KevinStone,PeterAlbert,AmjadAlmahairi,YasmineBabaei,Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et al. Llama 2: Open foundation and fine-tuned chat models. arXiv preprint arXiv:2307.09288,2023b.   \nAshish Vaswani,Noam Shazeer,NikiParmar,Jakob Uszkoreit,Llion Jones,AidanNGomez,Lukasz Kaiser,and Illia Polosukhin. Attention is all you need. Advances in neural information processing systems,30,2017.   \nYizhong Wang, Yeganeh Kordi, Swaroop Mishra, Alisa Liu, Noah A Smith, Daniel Khashabi, and Hannaneh Hajishirzi. Self-instruct: Aligning language model with self generated instructions. arXiv preprint arXiv:2212.10560,2022.   \nZhenhailong Wang, Shaoguang Mao, Wenshan Wu,Tao Ge,Furu Wei,and Heng Ji. Unleashing the emergent cognitive synergyin large language models: A task-solving agent through multi-persona self-collaboration. arXiv preprint arXiv:2307.05300,2023.   \nJason Wei,MaartenBosma,Vincent Y Zhao,Kelvin Guu,Adams WeiYu,BrianLester,NanDu, Andrew MDai,and Quoc VLe.Finetuned language modelsare zero-shot learners.arXiv preprint arXiv:2109.01652,2021.   \nJason Wei, Xuezhi Wang,Dale Schuurmans,Maarten Bosma,Fei Xia,EdChiQuoc VLe,Denny Zhou,et al. Chain-of-thought prompting elicits reasoning in large language models. Advances in neural information processing systems,35:24824-24837,2022.   \nDavid Wingate,Mohammad Shoeybi,and Taylor Sorensen. Prompt compresson and contrastive conditioning for controllability and toxicity reduction in language models.arXiv preprint arXiv:2210.03162,2022.   \nYuhuai Wu,Markus NRabe,DeLesley Hutchins,and Christian Szegedy.Memorizing transformers. arXiv preprint arXiv:2203.08913,2022.   \nYadong Zhang,Shaoguang Mao,Tao Ge, Xun Wang,Yan Xia,Man Lan,and Furu Wei. K-level reasoning with large language models. arXiv preprint arXiv:2402.01521,2024.   \nHao Zhao,Maksym Andriushchenko, Francesco Croce,and Nicolas Flammarion. Long is more foralignment: A simple but tough-to-beat baseline for instruction fine-tuning.arXiv preprint arXiv:2402.04833,2024.   \nLin Zheng, Chong Wang,and Lingpeng Kong. Linear complexity randomized self-attention mechanism.In International Conference on Machine Learning,2022. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AMODEL TRAINING CONFIGURATION ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We show how to perform pretraining with the text continuation objective and instruction fine-tuning in Figure7and 8. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We train the ICAE on 8 Nvidia A10o GPUs (80GB). The hyperparameters for pretraining and fine-tuning ICAE are presented in Table 8.We by default train the ICAE with bf16. ",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/48b86aaab80b7aaafeeb8bb4ecbdbbe8efc9dd9effcd6de718ded79e2ea187e3.jpg",
+        "table_caption": [
+            "Table 8: Hyperparameters for training "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Hyperparameter</td><td>Value</td></tr><tr><td>Optimizer</td><td>AdamW</td></tr><tr><td>learning rate</td><td>1e-4 (pretrain); 5e-5 (fine-tuning)</td></tr><tr><td>batch size</td><td>256</td></tr><tr><td>warmup</td><td>300</td></tr><tr><td>#updates</td><td>200k (pretrain);30k (fine-tuning)</td></tr><tr><td>clip norm</td><td>2.0</td></tr></table>",
+        "page_idx": 0
+    }
+]

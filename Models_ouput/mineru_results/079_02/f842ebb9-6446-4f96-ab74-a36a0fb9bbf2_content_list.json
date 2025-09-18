@@ -1,0 +1,92 @@
+[
+    {
+        "type": "text",
+        "text": "A similar bilinear form $F _ { K }$ can be defined for an arbitrary convex body $K$ Since $V _ { n } ( T L _ { 1 } , . . . , T L _ { n } ) =$ $| d e t ( T ) | V _ { n } ( L _ { 1 } , . . . , L _ { n } )$ (for any $_ { n }$ -tuple of convex bodies $( L _ { i } )$ ，and any affine transform $T$ )，nonnegativity of $F _ { K }$ is an affine invariant property. In 2O18, Saroglou, Soprunov and Zvavitch obtained a characterization of $n$ -simplices among polytopes : ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Theorem 1. Let $P \\subset \\mathbb { R } ^ { n }$ be an n-polytope. Assume $F _ { P } \\geq 0$ Then $P$ is an $n$ -simplex. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(here $F _ { P } \\geq 0$ means $F _ { P } ( A , B ) \\geq 0$ for all $( A , B ) \\in ( { \\cal { K } } ^ { n } ) ^ { 2 }$ ,where $K ^ { n }$ denotes the set of all convex bodies in $\\mathbb { R } ^ { n }$ ） ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "It was conjectured that this characterization further holds among all ( $_ { n }$ -dimensional） convex bodies, see [SZ16, Conj 1.2],or [SSZ2, Conj 5.1]. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Conjecture 1. Let $K \\subset \\mathbb { R } ^ { n }$ be a convex body. Assume $F _ { K } \\ge 0$ Then $K$ is an $_ { n }$ -simplex. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Several necessary conditions (for $F _ { K } \\ge 0$ to hold）were derived ： $K$ cannot be decomposable, nor weakly decomposable (see [SSZ2,Def 5.3] where this notion was introduced),the surface area measure $S _ { K }$ cannot have a regular direction $^ { 1 }$ in its support (see [SSZ2, Prop 4.2]), $K$ cannot have infinitely many facets on its boundary. We refer to [SZ16],[SSZ1],[SSZ2] for proofs,and comments on these conditions. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this work,we provide a new necessary condition, namely: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Theorem 2. Let $K$ be a convex body such that $K$ has a facet $F$ satisfying : $I s o p ( F ) > I s o p ( K )$ . Then $F _ { K } \\ge 0$ doesn't hold : there exists a pair of convex bodies $( A , B ) \\in ( { \\cal { K } } ^ { n } ) ^ { 2 }$ such that $F _ { K } ( A , B ) < 0$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "It allows in particular to recover the necessity (for non-negativity of $F _ { K }$ )of having at most finitely many facets. We leave as an open question whether Theorem 2 alows to recover characterization amongst polytopes,i.e. Theorem 1, see Question1below. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Acknowledgements.The author wishes to thank Artem Zvavitch for introducing her to this topic and for feedback on preliminary drafts of the current work.The author also thanks Evgueni Abakumov and Omer Friedland for many discussions and support.Finally,many thanks to Dylan Langharst for pointing to the reverse isoperimetric inequality by Ball,and for many editing suggestions which helped clarifying the presentation. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.PRELIMINARIES ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A classical result due to Minkowski [Mink] states that, for any $m \\geq 2$ ，and any $_ { f I }$ -tuple $( K _ { 1 } , . . . , K _ { m } )$ of compact convex sets in $\\mathbb { R } ^ { n }$ ,the volume of the Minkowski sum $\\sum \\lambda _ { i } K _ { i }$ ,is a polynomial in the $\\lambda _ { i } \\geq 0$ . More precisely， Minkowski's theorem asserts there exists coeffcients $c _ { a } \\geq 0$ ， indexed by $m$ -tuples $a = ( a _ { 1 } , . . . , a _ { m } ) \\in \\mathbb { N } ^ { m }$ summing to $n$ (i.e. $| a | = a _ { 1 } + \\ldots + a _ { m } = n ,$ ，which only depend on $( K _ { 1 } , . . . , K _ { m } )$ ,and such that, for any $\\lambda _ { 1 } , . . . , \\lambda _ { m } \\geq 0$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4248d1e0677f2d9cf40d333884a237a86007b0acb7c6a7a55dc13cc580e952b7.jpg",
+        "text": "$$\n\\left| \\sum _ { i = 1 } ^ { m } \\lambda _ { i } K _ { i } \\right| _ { n } = \\sum _ { a \\in \\mathbb { N } ^ { m } , | a | = n } { \\frac { n ! } { a _ { 1 } ! . . . a _ { m } ! } } \\left( \\prod _ { j = 1 } ^ { m } \\lambda _ { j } ^ { a _ { j } } \\right) c _ { a } = : \\sum _ { | a | = n } { \\binom { n } { a } } \\lambda ^ { a } c _ { a } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "These coeffcients are called mixed volumes,and usually one denotes ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4b5d54275404634850749f0f741f931949891e9a56591ee2dfac815ce7161bd6.jpg",
+        "text": "$$\nV _ { n } ( K _ { 1 } [ a _ { 1 } ] , . . . , K _ { m } [ a _ { m } ] ) : = c _ { a } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "with $a = ( a _ { 1 } , . . . , a _ { m } )$ ,where $K _ { i } [ a _ { i } ]$ means that $K _ { i }$ appears $a _ { i }$ times as an argument. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "It follows directly from Minkowski's theorem that,for any compact convex sets $K _ { 1 } , K _ { 1 } ^ { \\prime } , K _ { 2 } , . . . , K _ { n }$ ， any $x _ { 1 } \\in \\mathbb { R } ^ { n }$ ,any $\\lambda \\geq 0$ ，and any permutation $\\sigma \\in S ( n )$ ： ",
+        "page_idx": 0
+    }
+]

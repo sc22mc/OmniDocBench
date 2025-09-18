@@ -1,0 +1,82 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/20e63cfaf712addfccbc63805c050bdec294aac1869feab6b9e33a921730f265.jpg",
+        "image_caption": [
+            "Fig.3.  t  t file in order to automatize the process of producing the following results."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/b5ab2a7d4bf094a68d7a7ff3cff9fc9520e99e35962cf750c0dda453156ce077.jpg",
+        "table_caption": [
+            "TABLEII NN ARCHITECTURE"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Layer</td><td>Size</td></tr><tr><td>Input</td><td>Depends on the feature size</td></tr><tr><td>Inner 1</td><td>16 fully connected (ReLU)</td></tr><tr><td>Inner 2</td><td>8 fully connected (ReLU)</td></tr><tr><td>Output</td><td>Sigmoid function</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "in [29], named dataset 2. This dataset presents a different subfolders organization with respect to dataset 1 [4] that was already available. Subsequently, we have incorporated the ability to amalgamate extracted features from diverse datasets and store them in distinct folders. This facilitates the efficient reuse of data for conducting multiple experiments on audio chunks with identical settings, preventing the need to re- extract features that are already available. The complete dataflow is shown in Fig. 1, where it is visible that the features are merged only after the extraction from the relative dataset, and following operations are performed as they would be done for a single dataset.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "III. RESULTS",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. Experiment Setup",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "All the experiments execute the complete sequences of steps described in Fig. 3. Starting from a base configuration, each group of experiments explored the effect of different settings on the classification performances of the model. The base configuration has the following settings.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1) Audio chunk split: Length of  $5\\mathrm{s}$  with a hop size of  $5\\mathrm{s}$ , so they are contiguous without overlapping. \n2) Feature extraction: For each experiment two types of audio features are extracted: MFCC with 20 coefficients and STFT with a window size of 1024 samples. \n3) Training/test data split: Training data are  $80\\%$  and the remaining  $20\\%$  are used for the final test. \n4)  $K$ -fold cross-validation: It is performed dividing the training set into 10 folders. \n5) Classifiers: The NN has two fully connected inner layers with an architecture resumed in Table II, and the SVM is trained with the C parameter set to one.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. NN Size Influence",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the subsequent set of experiments, we explored the impact of varying the NN size by adjusting the number of layers from 1 to 4 and modifying the number of neurons per layer within the range of 2 to 8. The experiments were conducted separately using MFCC features and STFT features. The findings, presented in Figs. 4 and 5, align with the trend observed in the prior study [23], indicating that larger networks tend to achieve higher F1- score. It is important to note, however, that when utilizing combined datasets, a slightly lower accuracy is observed compared to the results obtained with individual datasets. The simplest network, with four layers and two neurons, shows a reduction of the F1- score of about  $8\\%$  and  $5\\%$  with MFCC and STFT, respectively. However, the gap is reduced to  $1\\%$  or lower values when at least six neurons per layer are present. Colors in Figs. 4 and 5 are scaled to the same range to make them comparable. It is possible to visually observe that STFT features better performed over MFCC features in almost all cases, with exceptions for the smallest networks.",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/c0d054d7e858a4103dfd502e624de50cc71033396616179a9890f0a281271475.jpg",
+        "image_caption": [
+            "Fig. 4. Cross-validation and final test results changing the number of layers and the number of nodes in the NN using the MFCC features. On the left the F1-score using only dataset 1 and on the right combining dataset 1 and dataset 2. In these figures is reported the mean value  $\\pm$  the standard deviation and, between parenthesis, the final test."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/000c219c3a066639c86726b97e9893709f3d27962d9ccf1650daa4296a2e75c0.jpg",
+        "image_caption": [
+            "Fig. 5. Cross-validation and final test results changing the number of layers and the number of nodes in the NN using the STFT features. On the left the F1-score using only dataset 1 and on the right combining dataset 1 and dataset 2. In these figures is reported the mean value  $\\pm$  the standard deviation and, between parenthesis, the final test."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    }
+]

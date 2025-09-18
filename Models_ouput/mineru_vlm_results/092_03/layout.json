@@ -1,0 +1,586 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        175,
+                        257,
+                        1225,
+                        2112
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                257,
+                                1225,
+                                2112
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        257,
+                                        1225,
+                                        2112
+                                    ],
+                                    "type": "text",
+                                    "content": "respond quickly to change, MFCs have slow dynamics because of the redox reactions and the evolution of the biofilm. When PMFC operating conditions vary, transients must be settled before we can draw conclusions on steady- state characteristics, such as maximum power point (MPP). For example, many commonly used dc- dc converters integrate FOCV MPPT algorithms by periodically detaching the load for some milliseconds to measure the OCV, and then modulating the cell voltage to a preset fraction of that OCV value [26]. While this trivial OCV measurement works very well for fast energy sources, such as photovoltaic cells, PMFCs require tens of minutes to reach OCV after unloading. If this is not accounted for when coupling PMFCs to commercial dc- dcs, it leads to incorrect OCV sampling, which sets the working point far from the actual MPP. To adapt common dc- dcs to the slow dynamics characterizing PMFCs, Alaraj et al. [27] developed an MFC- specific MPPT algorithm, which includes waiting a correct amount of time where the cell is unloaded to capture steady- state OCV. Similarly, in this article, we capture the steady- state OCV after a sufficient unloading time of the PMFC—which we term cell rest—and externally apply a fraction of the measured OCV as MPP reference to the dc- dc. This operation is executed through a simple sample- and- hold circuit, which is briefly powered after cell unloading periods to obtain a new MPP reference (see Section III- C2). The benefits of this method can be appreciated in Fig. 4. We do not rely on the OCV fraction found from the polarization curve (MPP at "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        257,
+                                        1225,
+                                        2112
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "30\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        257,
+                                        1225,
+                                        2112
+                                    ],
+                                    "type": "text",
+                                    "content": ") but choose the OCV percentage that experimentally resulted in the fastest capacitor charging through the BQ25505, which we found to be "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        257,
+                                        1225,
+                                        2112
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "50\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        257,
+                                        1225,
+                                        2112
+                                    ],
+                                    "type": "text",
+                                    "content": " (see Fig. 5). The downside of unloading a cell for some time to measure OCV correctly is that we cannot extract power from that cell during its rest period. If this can initially be seen as a limitation of our method, allowing cells to rest actually benefits the longevity of PMFCs, as continuous current drainage was proven to reduce PMFC performance in the long run [13], [14], [20], [28]. Besides, if multiple PMFCs are available, one can switch between cells to ensure continuous power extraction and cell rest, as shown in Reyes et al.'s [28] work."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        175,
+                        2112,
+                        1225,
+                        2755
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                2112,
+                                1225,
+                                2755
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        2112,
+                                        1225,
+                                        2755
+                                    ],
+                                    "type": "text",
+                                    "content": "Finally, while high internal impedance is one of the major limiting factors in PMFC power output, it can be a key element in understanding electrobiochemical phenomena ruling the functioning of PMFCs. The development of cell impedance models can come in handy for MPPT, optimizing cell lifetime, and using the cell as a plant health biosensor. Cells are highly complex systems: although a favorite in literature has been the Randles cell, there is a lack of agreed- upon cell mathematical models. PMFC models can be obtained and used in different ways. For instance, Ma et al. [29] used a data- driven approach for modeling the relationship between temperature, pH, and OCV during startup. As mentioned, literature has often relied on EIS measurements to develop physical- based cell models [11]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        175,
+                        2758,
+                        1225,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                2758,
+                                1225,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        2758,
+                                        1225,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "In this study, our main interest in EIS measurements lies in enabling online estimation of cell state from electrochemical properties so that appropriate actions can be taken to reach or maintain the cell's desired power production rate for as long as possible. We are also interested in enabling further studies of the link between EIS measurements and plant state. Unfortunately, Carmalin et al. [30] stress the lack of studies on the subject but "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1269,
+                                1158,
+                                2321,
+                                1452
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1158,
+                                        2321,
+                                        1452
+                                    ],
+                                    "type": "text",
+                                    "content": "hint that EIS fit parameters such as solution resistance could be influenced by plant factors, such as root exudate type, rate, and present bacterial community. Other projects such as [31] and [32] executed EIS on PMFCs, but most interpret results without considering plant interaction with the cell's electrobiochemical characteristics."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1331,
+                        277,
+                        2267,
+                        927
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1331,
+                                277,
+                                2267,
+                                927
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1331,
+                                        277,
+                                        2267,
+                                        927
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1331,
+                                                277,
+                                                2267,
+                                                927
+                                            ],
+                                            "type": "image",
+                                            "image_path": "e24c7e836fc8f8d4c6cab786a2340b3bba014dc0b31733ae1ed3408fb4107b1d.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 3,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1264,
+                                973,
+                                2321,
+                                1089
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1264,
+                                        973,
+                                        2321,
+                                        1089
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1264,
+                                                973,
+                                                2321,
+                                                1089
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 1. On the left, the construction details of the reactor are shown. Figure A and B, respectively, show the dimensions of the anode and cathode carbon brush electrodes, the titanium wire inserted into the electrodes."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 4,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        1269,
+                        1158,
+                        2321,
+                        1452
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 5,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1269,
+                        1458,
+                        2319,
+                        1603
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                1458,
+                                2319,
+                                1603
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1458,
+                                        2319,
+                                        1603
+                                    ],
+                                    "type": "text",
+                                    "content": "If the link between EIS and plant state is found, our monitoring system can be used as an inexpensive and portable plant biosensor, assisting researchers in large data collection campaigns."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        1536,
+                        1663,
+                        2051,
+                        1706
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1536,
+                                1663,
+                                2051,
+                                1706
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1536,
+                                        1663,
+                                        2051,
+                                        1706
+                                    ],
+                                    "type": "text",
+                                    "content": "III. SYSTEM IMPLEMENTATION"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1269,
+                        1732,
+                        2319,
+                        1980
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                1732,
+                                2319,
+                                1980
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1732,
+                                        2319,
+                                        1980
+                                    ],
+                                    "type": "text",
+                                    "content": "This section outlines the sensor node's key building blocks and the application scenario. It begins with a review of the construction of our test PMFCs in Section III- A, followed by an analysis of the proposed application scenario in Section III- B and the sensor node's block diagram in Section III- C."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1272,
+                        2039,
+                        1923,
+                        2085
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                2039,
+                                1923,
+                                2085
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2039,
+                                        1923,
+                                        2085
+                                    ],
+                                    "type": "text",
+                                    "content": "A. PMFC Construction and Operation"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1269,
+                        2112,
+                        2319,
+                        2405
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                2112,
+                                2319,
+                                2405
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2112,
+                                        2319,
+                                        2405
+                                    ],
+                                    "type": "text",
+                                    "content": "We built our test reactors using carbon brush electrodes and soil from the campus ground. Fig. 1 showcases the construction details. We designed a single- chamber fuel cell without a polymer electrolyte membrane (PEM) separating anodic and cathodic regions, to keep deployment costs as low as possible, albeit the Coulomb efficiency slightly lower [33]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1269,
+                        2409,
+                        2319,
+                        3003
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                2409,
+                                2319,
+                                3003
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2409,
+                                        2319,
+                                        3003
+                                    ],
+                                    "type": "text",
+                                    "content": "To compensate for the absence of a PEM, oxygen diffusion was limited by placing the two electrodes at a "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2409,
+                                        2319,
+                                        3003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "10~\\mathrm{cm}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2409,
+                                        2319,
+                                        3003
+                                    ],
+                                    "type": "text",
+                                    "content": " depth difference. The anode was placed at the bottom of the vase, with no openings to maintain the anoxic environment required for the anodic reaction. The cathode was buried "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2409,
+                                        2319,
+                                        3003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "2\\mathrm{cm}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2409,
+                                        2319,
+                                        3003
+                                    ],
+                                    "type": "text",
+                                    "content": " below ground to ensure oxygen could reach its surface for the oxygen reduction reaction. The reactor volume was "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2409,
+                                        2319,
+                                        3003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "1044~\\mathrm{cm^3}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2409,
+                                        2319,
+                                        3003
+                                    ],
+                                    "type": "text",
+                                    "content": ". The cathode was slightly oversized than the anode (cathode diameter: "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2409,
+                                        2319,
+                                        3003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "11\\mathrm{cm}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2409,
+                                        2319,
+                                        3003
+                                    ],
+                                    "type": "text",
+                                    "content": ", anode diameter: "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2409,
+                                        2319,
+                                        3003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "8\\mathrm{cm}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2409,
+                                        2319,
+                                        3003
+                                    ],
+                                    "type": "text",
+                                    "content": ") to compensate for slower cathodic reaction kinetics [34]. The plant in our MFC cells is common Mentha Piperita: it is a fast- growing, hardy, and easy- to- source plant, supposed to tolerate well a damp environment."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1269,
+                        3009,
+                        2319,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                3009,
+                                2319,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        3009,
+                                        2319,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "Newly built reactors require a startup time. Naturally present bacteria in the soil need to establish a thriving colony, which"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2475,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

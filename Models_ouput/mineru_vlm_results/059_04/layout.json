@@ -1,0 +1,1300 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        292,
+                        287,
+                        1210,
+                        740
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                292,
+                                287,
+                                1210,
+                                740
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        292,
+                                        287,
+                                        1210,
+                                        740
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                292,
+                                                287,
+                                                1210,
+                                                740
+                                            ],
+                                            "type": "image",
+                                            "image_path": "6b50549fe76e744b7de76f743446cdbd488ab220e760fc89482c9f3d9d7c86e4.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                287,
+                                810,
+                                1210,
+                                908
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        287,
+                                        810,
+                                        1210,
+                                        908
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                287,
+                                                810,
+                                                1210,
+                                                908
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 4: The structure of the history-aware context encoder in HAHT."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        287,
+                        1006,
+                        1208,
+                        1168
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                287,
+                                1006,
+                                1208,
+                                1168
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        287,
+                                        1006,
+                                        1208,
+                                        1168
+                                    ],
+                                    "type": "text",
+                                    "content": "conversation aggregator "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1006,
+                                        1208,
+                                        1168
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "F_{c}"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1006,
+                                        1208,
+                                        1168
+                                    ],
+                                    "type": "text",
+                                    "content": " to aggregate all utterance representations "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1006,
+                                        1208,
+                                        1168
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{U}^i"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1006,
+                                        1208,
+                                        1168
+                                    ],
+                                    "type": "text",
+                                    "content": " into the condensed history memory "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1006,
+                                        1208,
+                                        1168
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{c}^i"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        615,
+                        1171,
+                        1203,
+                        1238
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                615,
+                                1171,
+                                1203,
+                                1238
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        615,
+                                        1171,
+                                        1203,
+                                        1238
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\mathbf{c}^i = F_c(\\mathbf{U}^i). \\tag{2}",
+                                    "image_path": "da1eac732e556c033cfc946e412946498cd269359966d4672ce906280b6e16ba.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        287,
+                        1276,
+                        1210,
+                        1441
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                287,
+                                1276,
+                                1210,
+                                1441
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        287,
+                                        1276,
+                                        1210,
+                                        1441
+                                    ],
+                                    "type": "text",
+                                    "content": "The conversation aggregator is developed based on the following self- attentive mechanism (Lin et al., 2017),"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        419,
+                        1480,
+                        1203,
+                        1638
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                419,
+                                1480,
+                                1203,
+                                1638
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        419,
+                                        1480,
+                                        1203,
+                                        1638
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\begin{array}{rl} & F_{c}(\\mathbf{U}^{i}) = \\alpha \\mathbf{U}^{i},\\\\ & \\alpha = \\mathrm{softmax}\\big(\\mathbf{W}_{k}\\mathrm{tanh}\\big(\\mathbf{W}_{q}\\mathbf{U}^{i\\top}\\big)\\big), \\end{array} \\tag{3}",
+                                    "image_path": "ddedc268a1756a07450b1c7de8b0e04c3302cac3cb223552b274dd6fb8faa9b9.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        287,
+                        1687,
+                        1210,
+                        1848
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                287,
+                                1687,
+                                1210,
+                                1848
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        287,
+                                        1687,
+                                        1210,
+                                        1848
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1687,
+                                        1210,
+                                        1848
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{W}_q"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1687,
+                                        1210,
+                                        1848
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1687,
+                                        1210,
+                                        1848
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{W}_k"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1687,
+                                        1210,
+                                        1848
+                                    ],
+                                    "type": "text",
+                                    "content": " are learnable parameters. "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1687,
+                                        1210,
+                                        1848
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\alpha \\in \\mathbb{R}^{n_i}"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1687,
+                                        1210,
+                                        1848
+                                    ],
+                                    "type": "text",
+                                    "content": " is the importance vector of the history conversation utterances in "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1687,
+                                        1210,
+                                        1848
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "H^i"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        292,
+                        1859,
+                        1210,
+                        2139
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                292,
+                                1859,
+                                1210,
+                                2139
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        292,
+                                        1859,
+                                        1210,
+                                        2139
+                                    ],
+                                    "type": "text",
+                                    "content": "After applying previous steps to all history conversations "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        1859,
+                                        1210,
+                                        2139
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "H"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        1859,
+                                        1210,
+                                        2139
+                                    ],
+                                    "type": "text",
+                                    "content": " we will finally obtain a history memory matrix "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        1859,
+                                        1210,
+                                        2139
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{C}\\in \\mathbb{R}^{M\\times d}"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        1859,
+                                        1210,
+                                        2139
+                                    ],
+                                    "type": "text",
+                                    "content": " containing a history memory for each history conversation, where "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        1859,
+                                        1210,
+                                        2139
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "M"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        1859,
+                                        1210,
+                                        2139
+                                    ],
+                                    "type": "text",
+                                    "content": " is the number of history conversation sessions."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        295,
+                        2185,
+                        1019,
+                        2238
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                295,
+                                2185,
+                                1019,
+                                2238
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        295,
+                                        2185,
+                                        1019,
+                                        2238
+                                    ],
+                                    "type": "text",
+                                    "content": "3.2 History-aware Context Encoder"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        292,
+                        2262,
+                        1210,
+                        2936
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                292,
+                                2262,
+                                1210,
+                                2936
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        292,
+                                        2262,
+                                        1210,
+                                        2936
+                                    ],
+                                    "type": "text",
+                                    "content": "History conversation sessions usually contain the background stories (e.g., interlocutors' profiles or previous discussions between them) that bring out the current conversation session. Leveraging the history conversations will help the model to better understand the current conversation context and respond properly. On the other hand, the current conversation context can help the model update the history memories. Thus, we encode the history memory "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2262,
+                                        1210,
+                                        2936
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{C}"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2262,
+                                        1210,
+                                        2936
+                                    ],
+                                    "type": "text",
+                                    "content": " together with the current conversation context by adopting the transformer attention between them."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        292,
+                        2946,
+                        1210,
+                        3223
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                292,
+                                2946,
+                                1210,
+                                3223
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        292,
+                                        2946,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": "For the current conversation context "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2946,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2946,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " we also prepend a special token \"User:\" or \"Assistant:\" to each utterance depending on the role of the utterance speaker and concatenate all utterances into a single sentence. Then, we adopt the embedding "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1272,
+                                1175,
+                                2193,
+                                1511
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1175,
+                                        2193,
+                                        1511
+                                    ],
+                                    "type": "text",
+                                    "content": "layer "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1175,
+                                        2193,
+                                        1511
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "E_{m}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1175,
+                                        2193,
+                                        1511
+                                    ],
+                                    "type": "text",
+                                    "content": " to obtain a sequence of context token embeddings "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1175,
+                                        2193,
+                                        1511
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{S} = \\{\\mathbf{s}^1,\\mathbf{s}^2,\\dots ,\\mathbf{s}^{n_x}\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1175,
+                                        2193,
+                                        1511
+                                    ],
+                                    "type": "text",
+                                    "content": " , where "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1175,
+                                        2193,
+                                        1511
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "n_x"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1175,
+                                        2193,
+                                        1511
+                                    ],
+                                    "type": "text",
+                                    "content": " is the length of the context sequence. Next, we concatenate the history memory matrix "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1175,
+                                        2193,
+                                        1511
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{C}\\in \\mathbb{R}^{M\\times d}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1175,
+                                        2193,
+                                        1511
+                                    ],
+                                    "type": "text",
+                                    "content": " with "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1175,
+                                        2193,
+                                        1511
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{S}\\in \\mathbb{R}^{n_x\\times d}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1175,
+                                        2193,
+                                        1511
+                                    ],
+                                    "type": "text",
+                                    "content": " over the first dimension and apply "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1175,
+                                        2193,
+                                        1511
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "n_{enc}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1175,
+                                        2193,
+                                        1511
+                                    ],
+                                    "type": "text",
+                                    "content": " Transformer encoder layers."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1277,
+                        301,
+                        2180,
+                        901
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1277,
+                                301,
+                                2180,
+                                901
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        301,
+                                        2180,
+                                        901
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1277,
+                                                301,
+                                                2180,
+                                                901
+                                            ],
+                                            "type": "image",
+                                            "image_path": "a469f1e8c7676188f958421cfd3f3fcd8ba66c774aa886c3c9cc09867d99cf30.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 11,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1270,
+                                978,
+                                2190,
+                                1076
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1270,
+                                        978,
+                                        2190,
+                                        1076
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1270,
+                                                978,
+                                                2190,
+                                                1076
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 5: The structure of the history-aware response generator in HAHT."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 12,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1272,
+                        1175,
+                        2193,
+                        1511
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 13,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1272,
+                        1518,
+                        2193,
+                        2188
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                1518,
+                                2193,
+                                2188
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1518,
+                                        2193,
+                                        2188
+                                    ],
+                                    "type": "text",
+                                    "content": "By employing attention in the transformer encoder layers, our model can understand the conversation context by attending to all context token embeddings and history conversation memories. We denote this history- aware context encoding by "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1518,
+                                        2193,
+                                        2188
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{S}_c\\in \\mathbb{R}^{n_x\\times d}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1518,
+                                        2193,
+                                        2188
+                                    ],
+                                    "type": "text",
+                                    "content": " . After context encoding, history conversation memories are updated based on the latest information from the current conversation context. We denote this context- updated history memory as "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1518,
+                                        2193,
+                                        2188
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{C}_s\\in \\mathbb{R}^{M\\times d}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1518,
+                                        2193,
+                                        2188
+                                    ],
+                                    "type": "text",
+                                    "content": " . The concatenation of "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1518,
+                                        2193,
+                                        2188
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{C}_s"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1518,
+                                        2193,
+                                        2188
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1518,
+                                        2193,
+                                        2188
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{S}_c"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1518,
+                                        2193,
+                                        2188
+                                    ],
+                                    "type": "text",
+                                    "content": " over the first dimension will become the input of the response generator."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                },
+                {
+                    "bbox": [
+                        1275,
+                        2241,
+                        2066,
+                        2294
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1275,
+                                2241,
+                                2066,
+                                2294
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2241,
+                                        2066,
+                                        2294
+                                    ],
+                                    "type": "text",
+                                    "content": "3.3 History-aware Response Generator"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1272,
+                        2318,
+                        2193,
+                        2992
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                2318,
+                                2193,
+                                2992
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "text",
+                                    "content": "Inspired by CopyNet (Gu et al., 2016), we construct two vocabularies, i.e., generic vocabulary "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{g}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "text",
+                                    "content": " and history- aware vocabulary "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{h}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "text",
+                                    "content": ", to better generate history- aware responses. The generic vocabulary "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{g}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "text",
+                                    "content": " contains the words that appear in all the training dataset, and the history- aware vocabulary "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{h}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "text",
+                                    "content": " only contain the words that appear in the history conversations "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "H"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "text",
+                                    "content": ". To generate a word of the response, the response generator will choose to generate a generic word from "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{g}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "text",
+                                    "content": " or directly copy a word from "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{h}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2318,
+                                        2193,
+                                        2992
+                                    ],
+                                    "type": "text",
+                                    "content": " based on the switching mechanism (Gulcehre et al., 2016)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "bbox": [
+                        1272,
+                        3002,
+                        2190,
+                        3223
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                3002,
+                                2190,
+                                3223
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        3002,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": "Specifically, at each decoding time step "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        3002,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        3002,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " we feed "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        3002,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{C}_s"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        3002,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": ", "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        3002,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{S}_c"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        3002,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " and the ground truth word sequence before "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        3002,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        3002,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " into "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        3002,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "n_{dec}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        3002,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " Transformer decoder layers and obtain a hidden representation vector "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        3002,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{o}_t\\in \\mathbb{R}^d"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        3002,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": ". The"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 17
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2481,
+                3508
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

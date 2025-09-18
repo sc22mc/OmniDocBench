@@ -1,0 +1,96 @@
+[
+    {
+        "type": "text",
+        "text": "The term penalties depends on the difference between the current RTT and the minimum EMA RTT and is defined as follows:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\npenalty = \\left\\{ \\begin{array}{ll}\\alpha \\frac{rt_{t_{min}}^{diff}}{rt_{t_{min}}^{ema}}, & \\mathrm{if} \\frac{rt_{t_{min}}^{diff}}{rt_{t_{min}}^{ema}} < 1\\\\ 0.99, & \\mathrm{otherwise} \\end{array} \\right. \\tag{3}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In Eq. 3  $\\alpha$  depends on the magnitude of the difference between  $rtt_{diff}$  and  $rtt_{min}^{ema}$  and it is defined as follows:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\alpha = \\left\\{ \\begin{array}{ll}1, & \\mathrm{if} \\frac{|rtt_{diff}|}{rtt_{min}} >0.6\\\\ 0.5, & \\mathrm{if} 0.1< \\frac{|rtt_{diff}|}{rtt_{min}}\\leq 0.6\\\\ 0.3, & \\mathrm{if} 0.05< \\frac{|rtt_{diff}|}{rtt_{min}^{ema}}\\leq 0.1\\\\ 0.1, & \\mathrm{otherwise} \\end{array} \\right. \\tag{4}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "It is worth noticing that, in case  $rtt_{diff}< 0$  , the penalties term becomes negative, thus rewarding the agent when RTT improvements are detected.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4) RL Algorithm: MARLIN adopts SAC [11], an off-policy actor-critic algorithm based on the maximum entropy RL framework. SAC augments the maximum reward objective, foundation of RL settings, with an entropy maximization term. Such term acts as a trade-off between exploration and exploitation, so that the agent aims to maximize its return while also acting as random as possible. In circumstances where multiple actions seem equally attractive, i.e. in the case of equal or close Q-Values, the learned policy is encouraged to assign equal probability mass to those actions.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In practice, the effects of the entropy, or temperature, term prompt the agent to discard unsuitable trajectories in favor of more promising ones, as well as to improve the learning speed. The entropy term can be either fixed or optimized/learned as further steps are taken. However, the optimal entropy coefficient varies depending on a series of factors, such as the nature of the task or even the current policy. As a consequence, it is usually considered good practice to avoid fixed values, preferring instead to update the term at the same time actor, critic, and the target networks are optimized [7].",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D.Future Directions",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The work described above is the first step of a multi- year research project. We have already identified future steps that follow naturally from our present work. While we proceed describing them sequentially, in reality these steps are much intertwined and we will likely addressed them in subsequent iterations.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We think that MARLIN would benefit from a more expressive reward function. We envision problem and reward formulations that truncate unpromising trajectories that have moved too distant from the optimal. We believe this could significantly speed up the solution convergence. Furthermore, we suspect that MARLIN's current state might present redundant information as well as features of low relevance to the problem. To address this, we plan to investigate smaller and more refined state representations, with the double goal of lowering complexity and improving convergence. We plan to train this new agent in diversified networking scenarios, which can capture different traffic patterns and network technologies, to assess the degree of generalizability. Finally, a thorough, automated hyperparameter tuning would further enhance MARLIN's performance and complete a first cycle of improvements.",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/09af7dd21b226005184ac684c336e53068f7b658ec172631c69e011ba788dfaa.jpg",
+        "table_caption": [
+            "Table II: Hyperparameters used in MARLIN."
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Hyperparameter</td><td>Value</td></tr><tr><td>Training steps</td><td>1 × 106</td></tr><tr><td>History length</td><td>10</td></tr><tr><td>Training episode length</td><td>200</td></tr><tr><td>Learning rate</td><td>3 × 10-4</td></tr><tr><td>Buffer size</td><td>5 × 105</td></tr><tr><td>Warm-up (learning starts)</td><td>1 × 104 steps</td></tr><tr><td>Batch size</td><td>512</td></tr><tr><td>Tau</td><td>5 × 10-3</td></tr><tr><td>Gamma</td><td>0.99</td></tr><tr><td>Training Frequency</td><td>1 episode</td></tr><tr><td>Gradient Steps</td><td>-1 (same as episode length)</td></tr><tr><td>Entropy regularization coefficient</td><td>&quot;auto&quot; (Learned)</td></tr><tr><td>MLP policy hidden layers</td><td>[400, 300]</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Further advancements will require an evolution in the agent's design congruent with specific problems that afflict CC. The literature has shown that ML models can accurately distinguish between packet loss attributable to congestion or channel errors. We plan to integrate a similar classifier within MARLIN and investigate the feasibility of an analogous approach to identify variations in end- to- end latency that are caused by changes in the path to destination. The fundamental building block of CC algorithms is how and when to change the CwND size. MARLIN currently actively controls the \"how\", leaving the \"when\" to a heuristic. We will investigate learning- based approaches to include such decision factor into MARLIN, with the goal of turning it into a more comprehensive and reactive system, able to make rational decisions at its own tempo.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Up until now, we shaped the problem of CC from the perspective of a single RL agent. Nonetheless, the need for CC algorithms in transport protocols originated from the lack of coordination in a multi- agent system, where single entities were acting in a completely self- centered manner. Therefore, we expect that the next step ahead in learning- based CC will come from the application of advancing Multi- Agent Reinforcement Learning (MARL) algorithms that can optimize cooperative and/or competitive agent behavior.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "III. THE MOCKETS TRANSPORT PROTOCOL",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "One of the main design choices we faced was the transport protocol we would use to train and evaluate MARLIN. The decision fell on a custom transport protocol because it is much simpler to integrate with MARLIN than TCP. Additionally, a custom protocol enables greater flexibility in terms of retrieving the information required to encode the agent state.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For this study, we integrated MARLIN with Mockets, a message- based communication middleware implemented on top of UDP, following a school of thought similar to the one",
+        "page_idx": 0
+    }
+]

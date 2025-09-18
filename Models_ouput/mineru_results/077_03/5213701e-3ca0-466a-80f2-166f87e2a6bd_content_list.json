@@ -1,0 +1,117 @@
+[
+    {
+        "type": "text",
+        "text": "malising flows area family of distributions defined by a base distribution (usuallya standard Gaussian),and a diffeomorphism $f$ ,i.e.adifferentiable bijectionwithadifferentiable inverse.Specifically, we set $p _ { \\theta } ( x ( t + \\tau ) | x ( t ) )$ as the density of the distribution defined by the following generative process: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/70fe694ed0fb1ced1ac558517faf287eaf668e19a996f9c95abf77aa8b7beaf9.jpg",
+        "text": "$$\n\\begin{array} { c } { z ^ { p } , z ^ { v } \\sim \\mathcal { N } ( 0 , I ) } \\\\ { x ^ { p } ( t + \\tau ) , x ^ { v } ( t + \\tau ) : = f _ { \\theta } ( z ^ { p } , z ^ { v } ; x ^ { p } ( t ) , x ^ { v } ( t ) ) . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here $z ^ { p } \\in \\mathbb { R } ^ { 3 N }$ and $z ^ { v } \\in \\mathbb { R } ^ { 3 N }$ . For all settings of $\\theta$ and ${ \\mathrm { : } } ( t ) , f _ { \\theta } ( \\cdot ; x ( t ) )$ is a diffeomorphism that takes the latent variables $\\left( z ^ { p } , z ^ { v } \\right) \\in \\mathbb { R } ^ { 6 N }$ to $( x ^ { p } ( t + \\tau ) , x ^ { v } ( t + \\tau ) ) \\in \\mathbb { R } ^ { 6 N }$ The conditioning state $x ( t )$ parameterises a family of diffeomorphisms,defininga conditional normalising flow (Winkler et al., 2O19). Note that there are no invertibility constraints on the mapping from the conditioning state $x ( t )$ to the output $x ( t + \\tau )$ ,only the map from $z$ to $x ( t + \\tau )$ must beinvertible.Using the change of variables formula, we can evaluate $p _ { \\theta } ( x ( t + \\tau ) | x ( t ) )$ analytically as: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/56bef0f223e55545767f18cd9e818253c5732ab2b90ee19f7e8e051d39c87ae7.jpg",
+        "text": "$$\n\\begin{array} { r } { \\mathcal { N } \\left( f _ { \\theta } ^ { - 1 } ( x ( t + \\tau ) ; x ( t ) ) ; 0 , I \\right) \\left| \\operatorname* { d e t } \\mathcal { I } _ { f _ { \\theta } ^ { - 1 } ( { } \\cdot { } ; x ( t ) ) } ( x ( t + \\tau ) ) \\right| , } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $f _ { \\theta } ^ { - 1 } ( { } \\cdot { } ; x ( t ) ) : \\mathbb { R } ^ { 6 N } \\to \\mathbb { R } ^ { 6 N }$ is the inverse of the diffeomorphism $f _ { \\theta } ( \\cdot ; x ( t ) )$ ,and $\\mathcal { T } _ { f _ { \\theta } ^ { - 1 } ( { } \\cdot { } ; x ( t ) ) } ( x ( t { + } \\tau ) )$ denotes the Jacobian of $f _ { \\theta } ^ { - 1 } ( \\cdot ; x ( t ) )$ evaluated at $x ( t + \\tau )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.2.Dataset generation ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We now describe the dataset used to train the flow.We generate MD trajectories by integrating Equation (2) using the OpenMMlibrary (Eastman etal.,2017).We simulate small proteins (peptides) in implicit water,i.e.，without explicitly modelling the degrees of freedom of the water molecules.Specifically，we generate a dataset of trajectories $\\mathcal { D } = \\{ \\mathcal { T } _ { i } \\} _ { i = 1 } ^ { P }$ ,where $P$ is the number of peptides. For each peptide $i$ ，we generate an MD trajectory that is temporally sampled with a spacing of $\\tau$ so that $\\mathcal { T } _ { i } =$ $( x ( 0 ) , x ( \\tau ) , x ( 2 \\tau ) , \\ldots )$ .During training,we randomly samplepairs $x ( t ) , x ( t + \\tau )$ from $\\mathcal { D }$ .Each pair representsa sample from the conditional distribution $\\mu ( x ( t + \\tau ) | x ( t ) )$ These samples are used as examples to train the parameters $\\theta$ of the flow. Additional details are provided in Appendix D. Since the flow is trained on trajectory data from multiple peptides,we can deploy it at test time to generalise to new peptides not seen in the training data. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.3.Augmented normalising flows ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Typically in molecular simulations,we are primarily interested inthe distribution of the positions $x ^ { p }$ ,rather than the velocities $x ^ { v }$ .Thus, it is not necessary for $x ^ { v } ( t ) , x ^ { v } ( t { + } \\tau )$ to represent the actual velocities of the atoms in Equation (3). We hence simplify the learning problem by treating $x ^ { v }$ as non-physical auxiliary variables within the augmented normalising flow framework (Huang et al., 202O). For each datapoint $x ( t ) = x ^ { p } ( t ) , x ^ { v } ( t )$ in $\\mathcal { D }$ ,instead of obtaining $x ^ { v } ( t )$ byrecording the velocities in the MD trajectory,we discard theMD velocity and independently draw $x ^ { v } ( t ) \\sim \\mathcal { N } ( 0 , I )$ Theauxiliary variables $x ^ { v } ( t )$ now contain no information about the future state $x ^ { p } ( t + \\tau ) , x ^ { v } ( t + \\tau )$ ,since $x ^ { v } ( t )$ and $x ^ { v } ( t + \\tau )$ are drawn independently. Hence we can simplify $f _ { \\theta }$ to depend only on $x ^ { p } ( t )$ ,with $x ^ { p } ( t + \\tau ) , x ^ { v } ( t + \\tau ) : =$ $f _ { \\theta } ( z ^ { p } , z ^ { v } ; x ^ { p } ( t ) )$ . This raises the question of why auxiliary variables are necessary: we could instead directly model $p _ { \\theta } ( x ^ { p } ( t + \\tau ) | x ^ { p } ( t ) )$ ,without the need for $x ^ { v }$ .We include auxiliaryvariables for tworeasons:First,theyincrease the expressivity of the distribution for $x ^ { p }$ without a prohibitive increase in computational cost (Huang et al., 202O; Chen et al.,202O). Second, constructing a conditional flow that respectspermutation equivariance is simplified with auxiliary variables—we discuss this in more detail in Section 4.1. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.4.Targeting the Boltzmann distribution with MCMC ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Once the flow $p _ { \\theta } ( x ( t + \\tau ) | x ( t ) )$ has been trained, we use it as a proposal distribution in anMCMC method to target the joint distribution of the positions $x ^ { p }$ and the auxiliary variables $x ^ { v }$ , which has density: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/c3c1a575e5678ee95e0db4371f34ab4527979f8aa435eca102acc66f425c581f.jpg",
+        "text": "$$\n\\begin{array} { r } { \\textstyle \\mu _ { \\mathrm { a u g } } ( x ^ { p } , x ^ { v } ) \\propto \\exp \\left( { - \\frac { U ( x ^ { p } ) } { k _ { B } T } } \\right) \\mathcal { N } ( x ^ { v } ; 0 , I ) . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $m$ index the states in the Markov chain.Starting from an initial state $X _ { 0 } = ( X _ { 0 } ^ { p } , X _ { 0 } ^ { v } ) \\in \\mathbb { R } ^ { 6 N }$ at $m = 0$ ,weiterate: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/378f6ff0d8effb402a38c394d6da0d1936a2ade07f2115e7bd6f9f1df7d5a49e.jpg",
+        "text": "$$\n\\begin{array} { r l } & { \\quad \\tilde { X } _ { m } \\sim p _ { \\theta } ( \\cdot | X _ { m } ^ { p } ) } \\\\ & { \\quad X _ { m + 1 } : = \\left\\{ \\begin{array} { l l } { \\tilde { X } _ { m } } & { \\mathrm { w i t h ~ p r o b a b i l i t y ~ } \\alpha ( X _ { m } , \\tilde { X } _ { m } ) } \\\\ { X _ { m } } & { \\mathrm { w i t h ~ p r o b a b i l i t y ~ } 1 - \\alpha ( X _ { m } , \\tilde { X } _ { m } ) } \\end{array} \\right. } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\alpha ( X _ { m } , \\tilde { X } _ { m } )$ is the Metropolis-Hastings (MH) acceptance ratio (Metropolis et al., 1953) targeting Equation (4): ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/2750d56fc2276a6c259fc74e5be392c51f2d9b1d39d25cf205ef02f1dac0c10d.jpg",
+        "text": "$$\n\\alpha ( X , \\tilde { X } ) = \\operatorname* { m i n } \\left( 1 , \\frac { \\mu _ { \\mathrm { a u g } } ( \\tilde { X } ) p _ { \\theta } ( X \\mid \\tilde { X } ^ { p } ) } { \\mu _ { \\mathrm { a u g } } ( X ) p _ { \\theta } ( \\tilde { X } \\mid X ^ { p } ) } \\right)\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The flow used for $p _ { \\theta }$ must allow for efficient sampling and exact likelihood evaluation,which is crucial for fast implementation of Equations (5) and (7).Additionally,after each MH step,we resample the auxiliary variables $X ^ { v }$ using a Gibbs sampling update: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/efbe850642abd04c528287b5226e981c658829d6d166a1cdb986009845a825e0.jpg",
+        "text": "$$\n( X _ { m } ^ { p } , X _ { m } ^ { v } ) \\gets ( X _ { m } ^ { p } , \\epsilon ) , \\quad \\epsilon \\sim \\mathcal { N } ( 0 , I ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Iterating these updates yields a sample $X _ { m } ^ { p } , X _ { m } ^ { v } \\sim \\mu _ { \\mathrm { a u g } }$ as $m \\to \\infty$ .To obtaina Boltzmann-distributed sample of the positions $X _ { m } ^ { p } \\sim \\mu$ ,we simply discard the auxiliary variables $X _ { m } ^ { v }$ . In practice, sending $m \\to \\infty$ is infeasible. Instead, we fix a computational budget and simulate the chain until the budget is reached.Algorithm1 shows pseudocode for the MCMC procedure, using a batch sampling procedure for the proposals which significantly speeds up sampling. ",
+        "page_idx": 0
+    }
+]

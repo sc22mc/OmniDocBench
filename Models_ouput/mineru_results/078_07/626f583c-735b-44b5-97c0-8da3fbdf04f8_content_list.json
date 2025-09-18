@@ -1,0 +1,200 @@
+[
+    {
+        "type": "text",
+        "text": "where we defined ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/9b30b6c1827203c4203eb3f9706af4df41accb4bccb8e1497cfac7d37f64783f.jpg",
+        "text": "$$\nR = 1 - i f f ^ { \\prime } , \\quad \\varphi = \\int \\frac { d \\eta } { f ^ { 2 } ( \\eta ) } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note that these actions in terms of the ladder operators are the same if we choose the $\\xi _ { k }$ or the $\\pi _ { k }$ representation. Therefore,since $\\hat { \\xi } _ { k } \\psi _ { 0 } = e ^ { i \\varphi } f \\psi _ { 1 } / \\sqrt { 2 }$ ，we have ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/143a3b2f134a9f3a9c36e71254885731769fbef51211b98d5844b5b0f747e91e.jpg",
+        "text": "$$\n\\begin{array} { c } { { \\langle 0 | \\hat { \\xi } _ { k } ^ { 2 } | 0 \\rangle = \\displaystyle \\int _ { - \\infty } ^ { + \\infty } d \\xi _ { k } \\psi _ { 0 } ^ { * } \\hat { \\xi } _ { k } ^ { 2 } \\psi _ { 0 } = \\displaystyle \\int _ { - \\infty } ^ { + \\infty } d \\xi _ { k } \\Big | \\hat { \\xi } _ { k } \\psi _ { 0 } \\Big | ^ { 2 } = } } \\\\ { { = \\displaystyle \\int _ { - \\infty } ^ { + \\infty } d \\xi _ { k } \\Big | \\frac { f \\psi _ { 1 } e ^ { i \\varphi } } { \\sqrt 2 } \\Big | ^ { 2 } = \\frac { f ^ { 2 } ( \\eta ) } 2 . } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To calculate the spectrum we just need to find the expression of $f ( \\eta )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The solution to the auxiliary equation $( 3 8 )$ can be constructed from the solutions $f _ { 1 }$ and $f _ { 2 }$ of the corresponding homogeneous equation: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d5306ed77cfab4369b470229cce6316fea33c91b1e464a19394cfa47aa9fe1ca.jpg",
+        "text": "$$\nf ^ { \\prime \\prime } + \\omega _ { k } ^ { 2 } f = 0 ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/2fbcf433be326c579c8f475cecb74fa2e6659ab7dd5c50a207c4943170b2ad8b.jpg",
+        "text": "$$\nf _ { 1 } ( \\eta ) = \\frac { 1 } { \\sqrt { k } } \\left( \\cos ( k \\eta ) - \\frac { \\sin ( k \\eta ) } { k \\eta } \\right) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/5f719ea6bf73f09128fd536f093db271a8f467c111154a6cd5d72970410127af.jpg",
+        "text": "$$\nf _ { 2 } ( \\eta ) = \\frac { 1 } { \\sqrt { k } } \\left( \\frac { \\cos ( k \\eta ) } { k \\eta } + \\sin ( k \\eta ) \\right) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Then the function $f$ takes the form ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/a700e543565738af7797b065f3fda8263decba1e805eda139320fe0ac8fa3598.jpg",
+        "text": "$$\nf ( \\eta ) = \\frac { 1 } { \\mathcal { W } } \\left( A _ { 1 } ^ { 2 } f _ { 1 } ^ { 2 } + A _ { 2 } ^ { 2 } f _ { 2 } ^ { 2 } + 2 f _ { 1 } f _ { 2 } \\sqrt { A _ { 1 } ^ { 2 } A _ { 2 } ^ { 2 } - \\mathcal { W } ^ { 2 } } \\right) ^ { \\frac { 1 } { 2 } } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $A _ { 1 }$ ， $A _ { 2 }$ are $\\eta$ -independent constants and $\\mathcal { W }$ isthe Wronskian: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/2eda2eb28b308d67576bb36660f0e992f3dbba18c8f93e098c3e3a13d39997b6.jpg",
+        "text": "$$\n\\mathcal { W } = f _ { 1 } f _ { 2 } ^ { \\prime } - f _ { 1 } ^ { \\prime } f _ { 2 } = 1 .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The two constants must be set through initial conditions: we require that at the beginning of inflation,when all $\\begin{array} { r } { \\frac { k } { a H } \\gg 1 } \\end{array}$ sihal expansion of the Universe does not affect perturbations and therefore each mode behaves as a harmonic oscillator with constant frequency. Hence we impose that modes asymptotically approach Minkowskian quantum harmonic oscillatorswith frequency $k$ ： ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/df9134306ee4943cc2905b803dc2787ea7a362104f52cbb4f9edd31d1bd6c126.jpg",
+        "text": "$$\n\\operatorname * { l i m } _ { - k \\eta  \\infty } f ( \\eta ) = \\frac 1 { \\sqrt k } ;\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "this is satisfied by setting $A _ { 1 } ^ { 2 } = A _ { 2 } ^ { 2 } = 1$ ，so that the expression for $f$ is ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/bebe78ebca6079f797e16549c4eab0ee631d5b2ffea16e359513910d70a26fc6.jpg",
+        "text": "$$\nf ( \\eta ) = \\sqrt { \\frac { 1 + k ^ { 2 } \\eta ^ { 2 } } { k ^ { 3 } \\eta ^ { 2 } } } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Then,inserting this expression into the Spectrum, taking the large scale limit $- k \\eta \\ll 1$ and remembering the dependence of $\\eta$ on the scale factor $\\underline { { \\lVert 3 2 \\rVert } }$ ,the final expression for the spectrum is ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/ea295e5cdc7586e6e9cb476830ab4a32f26e4a01afd1625afe75ed7f359f3c11.jpg",
+        "text": "$$\n\\begin{array} { l } { { \\displaystyle { \\mathcal P } ^ { \\mathrm { s t d } } ( k ) =  \\frac { k ^ { 3 } } { 4 \\pi ^ { 2 } } \\frac { f ^ { 2 } ( \\eta ) } { 2 a ^ { 2 } \\epsilon }  _ { - k \\eta \\ll 1 } = } } \\\\ { { \\displaystyle = \\frac { H _ { s } ^ { 2 } } { 8 \\pi ^ { 2 } \\epsilon } ( 1 + k ^ { 2 } \\eta ^ { 2 } )  _ { - k \\eta \\ll 1 } = \\frac { H _ { s } ^ { 2 } } { 8 \\pi ^ { 2 } \\epsilon } } . }  \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We have obtained the usual fat, $k$ -independent Spectrum ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. Modified Power Spectrum ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here we will derive the Power Spectrum that arises from the Fourier-transformed Mukhanov-Sasaki variable $\\xi _ { k }$ obeyingthemodifiedalgebra $\\big < 1 2 \\big >$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/56af940059a0cb1f7db464072bc8fee65122b296d2c80613358c91c10d319a52.jpg",
+        "text": "$$\n\\begin{array} { r } { \\Big [ \\hat { \\xi } _ { k } , \\hat { \\pi } _ { k } \\Big ] = i \\left( 1 - \\mu ^ { 2 } \\hat { \\pi } _ { k } ^ { 2 } \\right) . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Due to the modified commutator depending on $\\pi _ { k }$ , it will beeasier to work in the momentum polarization. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "By using arguments similar to those in $\\boxed { 2 2 } \\boxed { 2 8 }$ ,ifwe impose that in the momentum polarization the scalar field operator acts simply differentially，we can find the action of the multiplicative momentum operator ${ \\hat { \\pi } } _ { k } \\psi ( \\pi _ { k } ) = g ( \\pi _ { k } ) \\psi ( \\pi _ { k } )$ as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/43c9ce7a91d76951a3971e757afc986ec5e66d779dbef83e88e1f6af7aa47e03.jpg",
+        "text": "$$\n{ \\frac { \\mathrm { d } g } { \\mathrm { d } \\pi _ { k } } } = 1 - \\mu ^ { 2 } g ^ { 2 } , \\quad { \\frac { \\mathrm { a r c t a n h } ( \\mu g ) } { \\mu } } = \\pi _ { k } ;\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "therefore the action of the fundamental operators is ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/94a74c0d1e8fbae970ffcf2e14affa7cf9818d93143daf8d566651bf361c211a.jpg",
+        "text": "$$\n\\begin{array} { l } { { \\displaystyle { \\hat { \\pi } } _ { k } \\psi ( \\pi _ { k } ) = \\frac { \\operatorname { t a n h } ( \\mu \\pi _ { k } ) } { \\mu } \\psi ( \\pi _ { k } ) , } } \\\\ { { \\displaystyle { \\hat { \\xi } } _ { k } \\psi ( \\pi _ { k } ) = i \\frac { \\mathrm { d } } { \\mathrm { d } \\pi _ { k } } \\psi ( \\pi _ { k } ) . } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Given the action $\\textcircled { \\scriptsize { \\left\\lfloor 5 6 \\right\\rfloor } }$ for the modified operator $\\hat { \\pi } _ { k }$ ,the Hamiltonian $\\mathcal { H } _ { k }$ fora single Fourier mode yieldsa timedependent Schrodinger equation with a modified kinetic term: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/c667c029517a4e1b21876a5f3beb52d2a1c046892a7c98cfa7486c89427ecf7a.jpg",
+        "text": "$$\ni \\frac { \\partial } { \\partial \\eta } \\psi ( \\eta , \\pi _ { k } ) = \\frac { 1 } { 2 } \\left( \\frac { \\operatorname { t a n h } ^ { 2 } ( \\mu \\pi _ { k } ) } { \\mu ^ { 2 } } - \\omega _ { k } ^ { 2 } ( \\eta ) \\frac { \\partial ^ { 2 } } { \\partial \\pi _ { k } ^ { 2 } } \\right) \\psi ( \\eta , \\pi _ { k } ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This partial differential equation (PDE) is quite difficult to solve, so we perform an expansion in powers of $\\mu ^ { 2 }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/1e0a809b0384ead31638deec628ee1d7d8920bd93b7be6075f257fa17b8b673b.jpg",
+        "text": "$$\n\\frac { \\operatorname { t a n h } ^ { 2 } ( \\mu \\pi _ { k } ) } { \\mu ^ { 2 } } = \\pi _ { k } ^ { 2 } - \\mu ^ { 2 } \\frac { 2 \\pi _ { k } ^ { 4 } } { 3 } + \\mathcal { O } \\big ( \\mu ^ { 4 } \\big ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/06e5ec9d0eafba0ef0d95884189a4a3a30455e4ae42658c2e26037a61e515d4c.jpg",
+        "text": "$$\n\\psi ( \\eta , \\pi _ { k } ) = \\psi ^ { 0 } ( \\eta , \\pi _ { k } ) + \\mu ^ { 2 } \\psi ^ { 1 } ( \\eta , \\pi _ { k } ) + \\mathcal { O } \\bigl ( \\mu ^ { 4 } \\bigr ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

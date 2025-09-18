@@ -1,0 +1,1072 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        234,
+                        306,
+                        2213,
+                        1290
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                234,
+                                306,
+                                2213,
+                                1290
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        234,
+                                        306,
+                                        2213,
+                                        1290
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                234,
+                                                306,
+                                                2213,
+                                                1290
+                                            ],
+                                            "type": "image",
+                                            "image_path": "7ea32cb71398b4790a37d08e390a12b1cc452618107250d998ef050b8904e813.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                224,
+                                1395,
+                                2259,
+                                1488
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        1395,
+                                        2259,
+                                        1488
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                224,
+                                                1395,
+                                                2259,
+                                                1488
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 2. Schematic illustration of the Timewarp conditional flow architecture, described in Section 4. Left: A single conditional RealNVP coupling layer. Middle: A single atom transformer module. Right: the multithread kernel self-attention module."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        224,
+                        1570,
+                        1208,
+                        1716
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                1570,
+                                1208,
+                                1716
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        1570,
+                                        1208,
+                                        1716
+                                    ],
+                                    "type": "text",
+                                    "content": "not use a positional encoding. Second, instead of dot product attention, we use a simple kernel self- attention module, which we describe next."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        226,
+                        1768,
+                        1208,
+                        2168
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                1768,
+                                1208,
+                                2168
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        1768,
+                                        1208,
+                                        2168
+                                    ],
+                                    "type": "text",
+                                    "content": "Kernel self- attention We motivate the kernel self- attention module with the observation that physical forces acting on the atoms in a molecule are local: i.e., they act more strongly on nearby atoms. Intuitively, for values of "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1768,
+                                        1208,
+                                        2168
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\tau"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1768,
+                                        1208,
+                                        2168
+                                    ],
+                                    "type": "text",
+                                    "content": " that are not too large, the positions at time "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1768,
+                                        1208,
+                                        2168
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t + \\tau"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1768,
+                                        1208,
+                                        2168
+                                    ],
+                                    "type": "text",
+                                    "content": " will be more influenced by atoms that are nearby at time "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1768,
+                                        1208,
+                                        2168
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1768,
+                                        1208,
+                                        2168
+                                    ],
+                                    "type": "text",
+                                    "content": ", compared to atoms that are far away. Thus, we define the attention weight "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1768,
+                                        1208,
+                                        2168
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "w_{ij}"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1768,
+                                        1208,
+                                        2168
+                                    ],
+                                    "type": "text",
+                                    "content": " for atom "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1768,
+                                        1208,
+                                        2168
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1768,
+                                        1208,
+                                        2168
+                                    ],
+                                    "type": "text",
+                                    "content": " attending to atom "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1768,
+                                        1208,
+                                        2168
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "j"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1768,
+                                        1208,
+                                        2168
+                                    ],
+                                    "type": "text",
+                                    "content": " as follows:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        379,
+                        2178,
+                        1203,
+                        2316
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                379,
+                                2178,
+                                1203,
+                                2316
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        379,
+                                        2178,
+                                        1203,
+                                        2316
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "w_{ij} = \\frac{\\exp(-\\|x_i^p - x_j^p\\|_2^2 / \\ell^2)}{\\sum_{j' = 1}^{N}\\exp(-\\|x_i^p - x_{j'}^p\\|_2^2 / \\ell^2)}, \\tag{11}",
+                                    "image_path": "307d3884acf6512ab7033620f30d3bd3e5bc340f25d40c72a9fc222caae2e197.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        224,
+                        2336,
+                        1206,
+                        2432
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                2336,
+                                1206,
+                                2432
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        2336,
+                                        1206,
+                                        2432
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2336,
+                                        1206,
+                                        2432
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\ell"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2336,
+                                        1206,
+                                        2432
+                                    ],
+                                    "type": "text",
+                                    "content": " is a lengthscale hyperparameter. The output vectors "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2336,
+                                        1206,
+                                        2432
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{r_{\\mathrm{out},i}\\}_{i = 1}^{N}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2336,
+                                        1206,
+                                        2432
+                                    ],
+                                    "type": "text",
+                                    "content": ", given the input vectors "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2336,
+                                        1206,
+                                        2432
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{r_{\\mathrm{in},i}\\}_{i = 1}^{N}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2336,
+                                        1206,
+                                        2432
+                                    ],
+                                    "type": "text",
+                                    "content": ", are then:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        469,
+                        2445,
+                        1203,
+                        2517
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                469,
+                                2445,
+                                1203,
+                                2517
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        469,
+                                        2445,
+                                        1203,
+                                        2517
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\begin{array}{r}r_{\\mathrm{out},i} = \\sum_{j = 1}^{N}w_{ij}V\\cdot r_{\\mathrm{in},j}, \\end{array} \\tag{12}",
+                                    "image_path": "a9fe46021a960eb8b72e85318337e1ad7f470189242314bc315cb79fb164d180.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        224,
+                        2537,
+                        1208,
+                        2989
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                2537,
+                                1208,
+                                2989
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        2537,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2537,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V\\in \\mathbb{R}^{d_{\\mathrm{out}}\\times d_{\\mathrm{in}}}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2537,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " is a learnable matrix. This kernel self- attention is an instance of the RBF kernel attention investigated in Tsai et al. (2019). Similarly to Vaswani et al. (2017), we introduce a multithread version of kernel self- attention, where each head has a different lengthscale. This is illustrated in Figure 2, Right. We found that kernel self- attention was significantly faster to compute than dot product attention, and produced similar or improved performance."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1570,
+                        1565,
+                        1620
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                1570,
+                                1565,
+                                1620
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1570,
+                                        1565,
+                                        1620
+                                    ],
+                                    "type": "text",
+                                    "content": "4.1. Symmetries"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1275,
+                        1650,
+                        2261,
+                        1798
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1275,
+                                1650,
+                                2261,
+                                1798
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        1650,
+                                        2261,
+                                        1798
+                                    ],
+                                    "type": "text",
+                                    "content": "The MD dynamics respects certain physical symmetries that would be advantageous to incorporate. We now describe how each of these symmetries is incorporated in Timewarp."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        1275,
+                        1851,
+                        2264,
+                        2052
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1275,
+                                1851,
+                                2264,
+                                2052
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        1851,
+                                        2264,
+                                        2052
+                                    ],
+                                    "type": "text",
+                                    "content": "Permutation equivariance Let "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        1851,
+                                        2264,
+                                        2052
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\sigma"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        1851,
+                                        2264,
+                                        2052
+                                    ],
+                                    "type": "text",
+                                    "content": " be a permutation of the "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        1851,
+                                        2264,
+                                        2052
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        1851,
+                                        2264,
+                                        2052
+                                    ],
+                                    "type": "text",
+                                    "content": " atoms. Since the atoms have no intrinsic ordering, the only effect of a permutation of "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        1851,
+                                        2264,
+                                        2052
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t)"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        1851,
+                                        2264,
+                                        2052
+                                    ],
+                                    "type": "text",
+                                    "content": " on the future state "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        1851,
+                                        2264,
+                                        2052
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t + \\tau)"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        1851,
+                                        2264,
+                                        2052
+                                    ],
+                                    "type": "text",
+                                    "content": " is to permute the atoms similarly, i.e.,"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1415,
+                        2082,
+                        2254,
+                        2145
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1415,
+                                2082,
+                                2254,
+                                2145
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1415,
+                                        2082,
+                                        2254,
+                                        2145
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\mu (\\sigma x(t + \\tau)|\\sigma x(t)) = \\mu (x(t + \\tau)|x(t)). \\tag{13}",
+                                    "image_path": "36408ccb8efa3042193224038672685f221ec18faaa5362a8b53863912220d6e.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1272,
+                        2184,
+                        2264,
+                        2379
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                2184,
+                                2264,
+                                2379
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2184,
+                                        2264,
+                                        2379
+                                    ],
+                                    "type": "text",
+                                    "content": "Our conditional flow satisfies permutation equivariance exactly. To show this, we use the following proposition proved in Appendix A.1, which is an extension of Köhler et al. (2020); Rezende et al. (2019) for conditional flows:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        1269,
+                        2395,
+                        2264,
+                        2702
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                2395,
+                                2264,
+                                2702
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": "Proposition 4.1. Let "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\sigma"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": " be a symmetry action, and let "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f(\\cdot ;\\cdot)"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": " be an equivariant map such that "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f(\\sigma z;\\sigma x) = \\sigma f(z;x)"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": " for all "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\sigma ,z,x"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": ". Further, let the base distribution "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p(z)"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": " satisfy "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p(\\sigma z) = p(z)"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": " for all "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\sigma ,z"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": ". Then the conditional flow defined by "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z\\sim p(z)"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": ", "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t + \\tau)\\coloneqq f(z;x(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": " satisfies "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p(\\sigma x(t + \\tau)|\\sigma x(t)) = p(x(t + \\tau)|x(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2395,
+                                        2264,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                },
+                {
+                    "bbox": [
+                        1275,
+                        2739,
+                        2261,
+                        2989
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1275,
+                                2739,
+                                2261,
+                                2989
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2739,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": "Our flow satisfies "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2739,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_{\\theta}(\\sigma z;\\sigma x(t)) = \\sigma f_{\\theta}(z;x(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2739,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": ", since the transformer is permutation equivariant, and permuting "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2739,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2739,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2739,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t)"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2739,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " together permutes the inputs. Furthermore, the base distribution "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2739,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p(z) = \\mathcal{N}(0,I)"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2739,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " is permutation invariant. Note that the auxiliary variables allow us to easily construct a"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

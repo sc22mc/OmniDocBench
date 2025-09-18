@@ -1,0 +1,94 @@
+[
+    {
+        "type": "text",
+        "text": "Proof. Let  $a,b\\in \\mathbb{Z}$  be two fixed integers and let",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nS(d,t) = \\{(x,y)\\in I\\times I\\mid ax + by\\equiv td\\pmod {n}\\} .\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Then the union of  $S(d,t)$  for all such  $d$  and  $t$  is a subset of  $I\\times I$  .This union indeed contains all elements of  $I\\times I$  . To see this, let  $(x,y)\\in I\\times I$  and let  $d = (ax + by,n)$  . Pick  $\\textstyle 1\\leq t\\leq \\frac{n}{d}$  such that  $\\begin{array}{r}t\\equiv \\frac{ax + by}{d} (\\mathrm{mod}\\frac{n}{d}) \\end{array}$  . Then  $(t,\\textstyle {\\frac{n}{d}}) = 1$  and  $ax + by\\equiv td$  (mod  $n$  Thus,  $(x,y)\\in S(d,t)$  . Finally, if  $S(d,t)\\cap S(d^{\\prime},t^{\\prime})\\neq \\emptyset$  , then choose one pair  $(x,y)$  in this intersection. We obtain  $d = (ax + by,n) = d^{\\prime}$  . Furthermore,  $td\\equiv t^{\\prime}d^{\\prime}$  (mod  $n$  ) implies that  $\\begin{array}{r}t\\equiv t^{\\prime}(\\mathrm{mod}\\frac{n}{d}) \\end{array}$  . Since  $\\textstyle 1\\leq t,t^{\\prime}\\leq \\frac{n}{d}$  , we have  $t = t^\\prime$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.PROOF OF THE MAIN RESULT",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Recall that we aim at showing the following sum",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nN(q,\\ell) = \\sum_{\\stackrel{1\\leq t\\leq q - 1,}{(t,q - 1) = 1}}N_{g^t}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "is not equal to zero where  $g$  is a fixed generator of  $\\mathbb{F}_q^\\times$  . It's not hard to see that if  $g^{t}L = g^{s}L$  then  $N_{g^t} = N_{g^s}$  . We have the following reduction for  $N(q,\\ell)$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proposition 4.1. Let g be generator of  $\\mathbb{F}_q^\\times$  and  $\\ell \\mid q - 1$  . Then",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nN(q,\\ell) = \\frac{\\phi(q - 1)}{\\phi(\\ell)}\\sum_{\\stackrel{1\\leq t\\leq \\ell ,}{(t,\\ell) = 1}}N_{g^t}.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. By the definition of  $N(q,\\ell)$  , it is a sum indexed by all elements of  $(\\mathbb{Z} / (q - 1)\\mathbb{Z})^{\\times}$  Recall that  $(\\mathbb{Z} / (q - 1)\\mathbb{Z})^{\\times} = M\\cdot N$  where  $M$  and  $N$  are given in Lemma 3.1 for  $n = q - 1$  and  $d = \\ell$  . Note that if  $t_1\\in N$  , then  $t_1\\equiv 1$  (mod  $\\ell$  ) and  $g^{t_1}L = gL$  . It follows that  $N_{g^{1t_2}} =$ $N_{g^t 2}$  for any integer  $t_2$  . Hence,",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nN(q,\\ell) = \\sum_{t\\in (\\mathbb{Z} / (q - 1)\\mathbb{Z})^\\times}N_{g^t} = \\sum_{t_1\\in N}\\sum_{t_2\\in M}N_{g^{t_1t_2}} = |N|\\sum_{t_2\\in M}N_{g^{t_2}}.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The result follows since  $\\begin{array}{r}{|N| = \\frac{\\phi(q - 1)}{\\phi(\\ell)}} \\end{array}$  and  $M\\simeq (\\mathbb{Z} / \\ell \\mathbb{Z})^{\\times}$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Recall from  $(5)$  that",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nN_{g^t} = q + \\sum_{1\\leq j,k\\leq \\ell -1}\\chi^j (-g^{-2t})\\chi^k (-g^{-t})J(\\chi^j,\\chi^k)\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $x$  is a nontrivial character of  $\\mathbb{F}_q$  of order  $\\ell$  . We can rewrite  $N_{g^t}$  as follows.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 4.2. For  $1\\leq t\\leq \\ell$  and  $(t,\\ell) = 1$",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nN_{g^t} = q + 1 + \\sum_{1\\leq j,k\\leq \\ell -1,\\atop j + k\\neq \\ell}\\chi (-1)^{j + k}\\chi (g^{-1})^{(2j + k)t}J(\\chi^j,\\chi^k).\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

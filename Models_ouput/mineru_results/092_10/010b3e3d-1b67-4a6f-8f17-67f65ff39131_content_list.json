@@ -1,0 +1,44 @@
+[
+    {
+        "type": "text",
+        "text": "application.To dimension the storage element,we assume it must yield $E _ { \\mathrm { E I S } } = 3 . 6 4 \\ : \\mathrm { J }$ when discharging from 3.6 to $2 \\mathrm { V } .$ We reach the value of $\\begin{array} { r } { C _ { \\mathrm { C A P } } = \\frac { 2 E _ { \\mathrm { E I S } } } { 3 . 6 ^ { 2 } - 2 ^ { 2 } } = 0 . 8 1 \\mathrm { \\bar { F } } . } \\end{array}$ Due to commercial availability constraints,we round this value up to $1 \\ \\mathrm { F } .$ We thus select Eaton's PHVL 3F, $3 . 9 \\mathrm { ~ V ~ }$ supercapacitors (Table I, $C _ { 5 }$ ） and place them in series to obtain a $1 \\mathrm { ~ F ~ }$ storage capacitance. Besides granting us a safety margin,the additional capacitance also allows us to safely account for storage leakage $( 4 ~ \\mu \\mathrm { A } )$ ， which consumesan extra $8 . 0 8 \\ \\mathrm { m J }$ and $1 . 2 5 ~ \\mu \\mathrm { J }$ during EIS and TX,respectively. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Finally,considering both the selected capacitor,its leakage, and the estimated task energy consumptions forEIS and TX,we compute the two task triggering thresholds to be $V _ { \\mathrm { E I S } } = 3 . 4 \\ : \\mathrm { V }$ and $V _ { \\mathrm { T X } } = 2 . 1 \\ : \\mathrm { V } .$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "V.CONCLUSION ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "PMFCs are apromising technology in the field of energy harvesting,and EIS measurements have largely been used to characterize and improve MFCs.Unfortunately,costly EIS workstations limit impedance spectra monitoring upon deployment.Thiswork has pioneered an innovative ultralow power EIS-monitoring technology powered by a PMFC. This breakthrough opens up exciting new possibilities for the use of PMFCs as biosensors.In a practical and novel self-powered sensing approach,the same reactor serves as both an energy source and an EIS biosensor.EIS measurements are triggered when energy levels are sufficient and then communicated to a base station throughLoRa,demonstrating the potential forreal-world application.We also propose to periodically detach the EHS from thecell to let it recover, in an intermittent harvesting approach apt to maximize PMFCs’ power production window. We then assessed the ultralow power capabilities of the MAX30134, which successfully matched reference potentiostat results,and evaluated the consumption of a full-frequency range EIS sweep at $E _ { \\mathrm { E I S } } = 3 . 6 4 \\mathrm { J }$ ,proving that ultralow-power EIS is compatible with PMFC power production.Our research has demonstrated the significant variations of the impedance spectra across time (three days) and different activity levels (active and inactive) of PMFCs.This finding underscores the potential relevance of EIS inassessingplant health. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Future work will explore this cost-effective infrastructure for collecting dense crop data upon deployment and developing acomprehensive link between plant health and EIS measurements. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "REFERENCES ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "[1]A.Albanese,M.Nardello,G.Fiacco,andD.Brunelli,“Tiny machine learning for high accuracy product quality inspection,IEEE Sensors J., vol.23,no.2,pp.1575-1583,Jan.2023.   \n[2]D.Ayala-Ruiz,A.Castillo Atoche,E.Ruiz-Ibarra,E.Osorio,and J. Castillo,\"Aself-powered PMFC-based wireless sensor node for smartcity applications,Wireless Commun.Mobile Comput.,vol.2019,pp.1-10, Jun.2019.   \n[3]D.Sartori and D.Brunelli,“A smart sensor for precision agriculture powered by microbial fuel cels,”in Proc.IEEE Sensors Appl.Symp., 2016,pp.1-6.   \n[4]M.Nardello,H.Desai,D.Brunelli,and B.Lucia,“Camaroptera:A batteryless long-range remote visual sensing system,”in Proc.7th Int.Workshop Energy Harvesting Energy-Neutral Sens.Syst.,2019, pp.8-14.   \n[5]L.Caronti,K.Akhunov,M.Nardell,K.S.Ylldlrlm,andD.Bruneli, “Fine-grained hardware acceleration for eficient batteryless intermittent inference on theedge”ACM Trans.Embedded Comput.Syst.,vol.22, no.5,2023,Art.no.82.   \n[6]D.Balsamo,A.S.Weddell,G.V.Merrett,B.M.Al-Hashimi,D.Brunell, andL.Benini,“Hibernus:Sustaining computation during intermittent supply for energy-harvestingsystems,IEEE Embedded Syst.Lett.,vol.7, no.1,pp.15-18,Mar.2015.   \n[7]F.T.Kabutey etal.,“An overviewof plant microbial fuel_cells (PMFCs): Configurations and applications,”Renewable Sustain. Energy Rev., vol.110,pp.402-414,2019.   \n[8]A.Torrisi et al.,“Batteryless soil EIS sensor powered by microbial fuel cell,”in Proc.Annu.Meeting ItalianElectron.Soc.,Cham,Switzerland: SpringerNature,2023,pp.277-282.   \n[9]B.Kim,S.V.Mohan,D.Fapyane,and I.S.Chang,“Controlling voltage reversal in microbial fuel cells,Trends Biotechnol.,vol.38,no.6, pp.667-678,2020.   \n[10]E.Osorio-de-la Rosa et al.,“Arrays of plant microbial fuel cells for implementing self-sustainable wireless sensor networks,”IEEE Sensors J.,vol.21,no.2,pp.1965-1974,Jan.2021.   \n[11]M.Sindhuja,N.S.Kumar,V.Sudha,and S.Harinipriya,“Equivalent circuit modeling of microbial fuel cells using impedance spectroscopy,” J.EnergyStorage,vol.7,pp.136-146,2016.   \n[12]I.J6csak,G.Vegvari,andE.Vozary,“Electrical impedancemeasurement onplants:A review with some insights to other fields,”Theor.Exp.Plant Physiol.,vol.31,pp.1-17,Aug.2019.   \n[13]M.Rossi,A.aaciPTosatoandDrunellLetthemicrobespower your sensingdisplay,inProc.IEEE Sensors,2017,pp.1-3.   \n[14]E.Gardel,M.Nielsen,P.Grisdela,andP.Girguis,“Dutycyclinginfluences current generation in multi-anode environmental microbial fuel cells,” Environ.Sci.Technol.,vol.46,pp.5222-5229,Apr.2012.   \n[15]D.Brunelli,P.Tosato,andM.Rossi,“Flora health wireless monitoring withplant-microbial fuel cell,”Procedia Eng.,vol.168,pp.1646-1650, 2016.   \n[16]G.Beretta et al.，“Microbial assisted hexavalent chromium removal in bioelectrochemical systems,Water,vol.12,no.2,2020,Art.no.466.   \n[17]M.Helder,D.P.Strik,R.A.Timmers,S.M.Raes,H.V.Hamelers,and C.J.Buismanesieefooatoalfueellin dutchwinter,BiomassBioenergy,vol.51,pp.1-7,2013.   \n[18]N.F.Tapia,C.Rojas,C.A.Bonilla,andI.T.Vargas,“Evaluation of sedum asdriverforplant microbial fuelcells inasemi-arid green roof ecosystem, Ecological Eng.,vol.108,pp.203-210,2017.   \n[19]N.F.Tapia,C.Rojas,C.A.Bonilla,andI.T.Vargas,“A newmethod for sensing soil water content in green roofs using plant microbial fuel cells,” Sensors,vol.18,no.1,2018,Art.no.71.   \n[20]D.Brunelli,P.Tosato,and M.Rossi,“Microbial fuel cell asa biosensor andapower source for flora health monitoring,in Proc.IEEE Sensors, 2016,pp.1-3.   \n[21]M.Rossi et al.，“Long range wireless sensing powered byplantmicrobial fuel cellinProc.Des.Autom.Test EuropeConf.Exhib.,2017, pp.1651-1654.   \n[22]M.Alaraj,M.RadenkovicandJ.-D.Park,“Intellgentenergyharvesting scheme for microbial fuel cells:Maximum powerpoint trackingand voltage overshoot avoidance”J.Power Sources,vol.342,pp.726-732, Feb.2017.   \n[23]T.Yamashita,T.Hayashi,H.Iwasaki,M.Awatsu,andH.Yokoyama, “Ultra-low-power energy harvester for microbial fuelcellsand its application to environmental sensing and long-range wireless data transmission,” J.PowerSources,vol.430,pp.1-11,2019.   \n[24] Z.Ren et al.,“Accelerated start-upand improved performance of wastewater microbial fuel cells in four circuit modes: Role of anodic potential,\" J.PowerSources,vol.535,2022,Art.no.231403.   \n[25]H.C.Boghani,J.R.Kim,R.M.Dinsdale,A.J.Guwy,andG.C.Premier, “Control of power sourced from a microbial fuelcellreduces its startuptimeand increases bioelectrochemical activityBioresource Technol., vol.140,pp.277-285,2013.   \n[26]D.Bruneli,D.Dondi,A.Bertacchini,L.Larcher,P.Pavan,andL. Benini,“Photovoltaic scavenging systems: Modeling and optimization,” MicroelectronicsJ.,vol.40,no.9,pp.1337-1344,2009.   \n[27]M.Alaraj and J.-D.Park,“Net power positive maximum power point tracking energy harvestingsystem formicrobial fuel cell”J.Power Sources,vol.418,pp.225-232,2019.   \n[28]A.CostillaReyes,C.Erbay,S.Carreon-Bautista,A.Han,andE.SanchezSinencio,“A time-interleave-based powermanagement systemwith maximumpower extraction and health protection algorithm for multiple microbial fuel cells for Internet of Things smart nodes,Appl.Sci.,vol.8, no.12.2018. Art.no.2404. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,85 @@
+[
+    {
+        "type": "text",
+        "text": "2IN-CONTEXT AUTOENCODER ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.1MODEL ARCHITECTURE ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Like a typical autoencoder(Kramer,1991),ICAE consists of an encoder and a decoder. Similar to the design of Gisting (Mu et al.,2023) and AutoCompressor (Chevalier et al.,2023), the ICAE performs both the encoding and decoding processes in an in-context manner,as illustrated in Figure 3. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/cd3abfd1eaeeb77b03e6245c0a871a0e73f4bb157874548bea071ee472272741.jpg",
+        "image_caption": [
+            "Figure 3:The encoder of the ICAE is aLoRA-adapted LLM,which isused for encoding the original context $\\pmb { c } = ( w _ { 1 } , w _ { 2 } , \\dots , w _ { L } )$ into a few memory slots $( \\widetilde { m _ { 1 } } , \\dots , \\widetilde { m _ { k } } )$ . The decoder of the ICAE is the targetLLM itself that can condition on the memory slots produced by the encoder for various purposes (e.g., the autoencoding task as in this figure). $e ( \\cdot )$ denotes the word embedding lookup in the target LLMand $e _ { m } ( \\cdot )$ denotes the learnable embedding lookup of memory tokens that are used for producing memory slots.\"[AE]\"is a special token to indicate the autoencoding pretraining task. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Given the intuition，we propose to use a LoRA-adapted LLMas the encoder of the ICAE,as illustrated in Figure 3. When encoding a context $\\pmb { c } = ( w _ { 1 } , \\dots , w _ { L } )$ with the length $L$ we first append $k$ $( k < < L )$ memory tokens $( m _ { 1 } , \\ldots , m _ { k } )$ to the context $^ c$ to obtain their outputs $( \\widetilde { m _ { 1 } } , \\dots , \\widetilde { m _ { k } } )$ as the memory slots for the context $^ c$ .Therefore,the ICAE encoder is very lightweight-it only adds a LoRA adapter and an embedding lookup for memory tokens compared with the target LLM. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "As introduced above, we expect the memory slots $( \\widetilde { m _ { 1 } } , \\dots , \\widetilde { m _ { k } } )$ to be conditioned on by the target LLMon behalf of the original context $^ c$ .Therefore,we use the untouched target LLMas the decoder of the ICAE to ensure the compatibility of memory slots within the target LLM. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.2PRETRAINING ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.2.1AUTOENCODING ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Likea typical autoencoder,one of the ICAE's pretraining objectives is to restore the original input text $^ c$ of the length $L$ from its produced memory slots $( \\widetilde { m _ { 1 } } , \\ldots , \\widetilde { m _ { k } } )$ of the length $k$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/286baeb21a5f6b9c8efaabd978e945e81613cdcf6844ca36eba199e6556fd488.jpg",
+        "text": "$$\n\\mathcal { L } _ { \\mathrm { A E } } = \\operatorname* { m a x } _ { \\widehat { m _ { 1 } } , \\ldots , \\widehat { m _ { k } } } P ( c | \\widetilde { m _ { 1 } } , \\ldots , \\widetilde { m _ { k } } ; \\Theta _ { L L M } ) = \\operatorname* { m a x } _ { \\Theta _ { L o R A } , e _ { m } } P ( c | m _ { 1 } \\ldots m _ { k } ; \\Theta _ { L L M } , \\Theta _ { L o R A } , e _ { m } )\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To indicate the autoencoding task,we append a special token “[AE]”to $( \\widetilde { m _ { 1 } } , \\dots , \\widetilde { m _ { k } } )$ in the decoder, as Figure 3 shows.As this pretraining objective does not need any extra annotation,we can use massive text data to train the In-context Autoencoder. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.2.2 TEXT CONTINUATION ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "While autoencoding pretraining offers a straightforward learning objective to encode a context, its inherent simplicity and exclusive focus on the single objective may lead to suboptimal generalization. To address this issue,we incorporate an additional objective during the pretraining phase: text continuation,as illustrated in Figure7in Appendix A.This self-supervised task is widely acknowledged to facilitate the learning of more generalizable representations in language models: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/23c2e83536a70bfad0f8e53f0abce88802bd97fdc08201ef71300d9bd64adb5c.jpg",
+        "text": "$$\n\\mathcal { L } _ { \\mathrm { L M } } = \\operatorname* { m a x } _ { \\widetilde { m _ { 1 } } , \\ldots , \\widetilde { m _ { k } } } P ( \\varrho | \\widetilde { m _ { 1 } } , \\ldots , \\widetilde { m _ { k } } ; \\Theta _ { L L M } ) = \\operatorname* { m a x } _ { \\Theta _ { L o R A } , e _ { m } } P ( o | m _ { 1 } \\ldots m _ { k } ; \\Theta _ { L L M } , \\Theta _ { L o R A } , e _ { m } )\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

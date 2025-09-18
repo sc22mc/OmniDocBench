@@ -1,0 +1,32 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/388690959fb5e3116869c3a10d2d155649554031678c32825c86e64ac5b1ca63.jpg",
+        "image_caption": [
+            "Figure 6.Experimentson4AAtestetrapeptidesSAEL,CTSAandLPEM(top,dleandbotomrowsrespectively).Sampleswere generatedviaMD,Timewarpexploration(Algorithm2)andTimewarpCMC(Algorithm1).(a)TCAplotsofsamples.(b)Free energiesalongthefrsttwoTCAcomponents.（c)PotentialenergydistributionForSAELallmetastablestatesarefoundbyallethods, forCTSAtheMDtrajectorymissesonestate,andforLPEMTimewarpMCMC misstheslowest ransition.Inallcass Timewarp exploration discovers all metastable states. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Tetrapeptides (4AA） Finally，we study the more challenging 4AA dataset.After training on the trainset,we sample 20 million Markov chain states for each test tetrapeptide using Algorithm1 and compare with longMD trajectories $( 1 \\mu \\mathrm { s } = 2 \\times 1 0 ^ { 9 }$ timesteps). In contrast to the simpler dipeptides,both Timewarp MCMC and the longMD trajectories miss some metastable states. However, Timewarp in exploration mode (Algorithm 2) can be used as a validation tool to quickly verify exploration of the whole state space. Figure 6a shows that metastable states unexplored by MD and Timewarp MCMC can be found by the Timewarp exploration algorithm.We confirm the physical validity of these discovered states by running shorter MD trajectories in their vicinity (see Appendix B.5). As with 2AA,we againreport the speedup factors for Timewarp relative to MD in Figure 5b,d. Although Timewarp MCMC fails to speed up sampling for most tetrapeptides due to an insufficiently high acceptance rate and a lower $\\tau$ valuethanfor the 2AA model, Timewarp exploration shows a median speedup factorof $\\approx 5 0$ .For8 test tetrapeptides,MD fails to explore all metastable states,whereas Timewarp succeedsthese are marked in green. For 1O tetrapeptides, Timewarp MCMC failsto find all metastable statesfound byMD一 these are marked in grey. We report numerical values for the $\\mathrm { E S S } / \\mathrm { s }$ speed-up factor only if both methods explore the same metastable states.Figure 6b shows that when Timewarp MCMC discovers all metastable states,its free energy estimates match those of MD very well. However, it sometimes misses metastable states leading to poor free energy estimates in those regions. Figure 6c shows that Timewarp MCMC also leads to a potential energy distribution that matchesMD very closely. In contrast, Timewarp exploration discovers all metastable states (even ones that MD misses),but has lessaccurate free energyplots.Italso hasa potential energy distribution that is slightly too high relative to MD and Timewarp MCMC. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "7. Conclusion ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We presented Timewarp,a transferable enhanced sampling method which uses deep networks to propose large conformational changes when simulating molecular systems. We showed that Timewarp used with an MH correction can accelerate asymptotically unbiased sampling on many unseen dipeptides,allowing faster computation of equilibrium expectation values. Although this acceleration was only possible fora minority of the tetrapeptideswe considered, we showed that Timewarp used without the MH correction explores the metastable states of both dipeptides and tetrapeptides much faster than standard MD.This provides a promisingmethod to quickly validate ifMD simulations havevisited all metastable states.Although further work needsto be done to scale Timewarp to larger,more interestingbiomolecules,this work clearlydemonstrates the ability of deep learning algorithms to leverage transferability to accelerate the MD sampling problem. ",
+        "page_idx": 0
+    }
+]

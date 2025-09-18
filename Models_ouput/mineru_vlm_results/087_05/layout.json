@@ -1,0 +1,732 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        153,
+                        264,
+                        1202,
+                        359
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                264,
+                                1202,
+                                359
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        264,
+                                        1202,
+                                        359
+                                    ],
+                                    "type": "text",
+                                    "content": "contributions of this study to field segmentation using coordinate- based methods."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        153,
+                        366,
+                        1205,
+                        1059
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                366,
+                                1205,
+                                1059
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        366,
+                                        1205,
+                                        1059
+                                    ],
+                                    "type": "text",
+                                    "content": "There are a limited number of examples in the literature where field segmentation is performed using machinery coordinate data. This is despite the fact that GPS is a proven, robust, and readily available technology. The review highlights how existing vehicular trajectory segmentation methods do not translate well to the field segmentation problem. Common trajectory segmentation policies either require a priori knowledge of machinery operator behavior and their driving patterns; geo- markers from third party sources; or rely on using established road networks. These concepts and methods do not crossover to an agricultural setting. To the best of the authors' knowledge, challenging conjoined field segmentation cases have not been addressed in the current literature. A cost- effective coordinate- based solution to automatically segment agricultural fields is required."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        423,
+                        1168,
+                        935,
+                        1214
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                423,
+                                1168,
+                                935,
+                                1214
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        423,
+                                        1168,
+                                        935,
+                                        1214
+                                    ],
+                                    "type": "text",
+                                    "content": "III. MATERIALS AND METHOD"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        153,
+                        1237,
+                        1205,
+                        1980
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                1237,
+                                1205,
+                                1980
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        1237,
+                                        1205,
+                                        1980
+                                    ],
+                                    "type": "text",
+                                    "content": "A coordinate- based method is presented to overcome the challenges highlighted in Section II. First, the data acquisition from two harvesting implements is outlined in Section III- A. Then, the proposed algorithm is presented in two stages. In Stage I, measurements are preprocessed to determine whether PTO activation has occurred and if road travel has taken place between activation periods, as described in Section III- B. In Stage II, pathways that may be present between adjacent fields in the sampled image are removed by applying a series of morphological image operations. The algorithm then detects the individual field boundaries from the processed image. Finally, the field boundaries are converted back to Cartesian and the machinery coordinate data are labeled as belonging to a particular field, with details given in Section III- C. The method is fully automated, deterministic, and segments all fields in a job site in one pass."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        153,
+                        2088,
+                        443,
+                        2135
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                2088,
+                                443,
+                                2135
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        2088,
+                                        443,
+                                        2135
+                                    ],
+                                    "type": "text",
+                                    "content": "A. Data Capture"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        153,
+                        2158,
+                        1205,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                2158,
+                                1205,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        2158,
+                                        1205,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "Georeferenced time series implement data were collected on two implements; a 2013, "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        2158,
+                                        1205,
+                                        3102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "540~\\mathrm{r / min}"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        2158,
+                                        1205,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": ", McHale Fusion 3 Plus baler- wrapper [51] and McHale Proglide R3100 mower [52]. A custom electronic control unit (ECU) was programmed to relay data from the implements across a J1939/CAN network [53] to a Deutz- Fahr Agrotron 6180 [54] and a John Deere 6150R [55]. The machinery was owned and operated by a machinery contractor based in Galway, Ireland, as detailed in [56]. For machinery coordinates, a NEO- M8 GNSS positioning receiver with a wideband GNSS antenna was fitted to the implements [57]. The acquisition frequency of the GNSS is "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        2158,
+                                        1205,
+                                        3102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "1\\mathrm{Hz}"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        2158,
+                                        1205,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": ". PTO speed was measured using an NPN digital hall- effect sensor [50] installed on the implement drivetrain sprocket with a protruding notch. Pulse counts were translated to frequency, which are represented as the PTO rotations per minute (rpm). Fuel usage measurements were obtained from the tractor J1939 interface. The data were stored locally in a document- based database operating on an 8th generation Intel Nuc (Intel i3 processor and 4 GB of RAM) running Ubuntu 16."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        1460,
+                        412,
+                        2091,
+                        752
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1460,
+                                412,
+                                2091,
+                                752
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1460,
+                                        412,
+                                        2091,
+                                        752
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1460,
+                                                412,
+                                                2091,
+                                                752
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Fields per Site</td><td>Site Count</td></tr><tr><td>1</td><td>134</td></tr><tr><td>2</td><td>19</td></tr><tr><td>3</td><td>2</td></tr><tr><td>4</td><td>0</td></tr><tr><td>Total</td><td>155</td></tr></table>",
+                                            "image_path": "a4b16e0ed89aa1ff83d0ebb2ae70986610fecf347d11ff9cdf2423483fc95fac.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 7,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                1279,
+                                264,
+                                2272,
+                                376
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1279,
+                                        264,
+                                        2272,
+                                        376
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1279,
+                                                264,
+                                                2272,
+                                                376
+                                            ],
+                                            "type": "text",
+                                            "content": "TABLEI RESULT FROM STAGE I ON THE BALER TRAJECTORY DATA SHOWING THE NUMBER OF SINGLE AND CONJOINED FIELD SITES IN THE BALER DATASET"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 6,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        1460,
+                        950,
+                        2091,
+                        1287
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1460,
+                                950,
+                                2091,
+                                1287
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1460,
+                                        950,
+                                        2091,
+                                        1287
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1460,
+                                                950,
+                                                2091,
+                                                1287
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Fields per Site</td><td>Site Count</td></tr><tr><td>1</td><td>162</td></tr><tr><td>2</td><td>9</td></tr><tr><td>3</td><td>0</td></tr><tr><td>4</td><td>1</td></tr><tr><td>Total</td><td>172</td></tr></table>",
+                                            "image_path": "f172d608ab0cb0f9d571a42afa4fe3aa5f7abe00ceecdcf090151f4b6aab59c8.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 9,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                1269,
+                                795,
+                                2279,
+                                910
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        795,
+                                        2279,
+                                        910
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1269,
+                                                795,
+                                                2279,
+                                                910
+                                            ],
+                                            "type": "text",
+                                            "content": "TABLE II RESULT FROM STAGE I ON THE MOWER TRAJECTORY DATA SHOWING THE NUMBER OF SINGLE AND CONJOINED FIELD SITES IN THE MOWER DATASET"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 8,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        1252,
+                        1362,
+                        1801,
+                        1412
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1252,
+                                1362,
+                                1801,
+                                1412
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1252,
+                                        1362,
+                                        1801,
+                                        1412
+                                    ],
+                                    "type": "text",
+                                    "content": "B. Stage I: Data Preprocessing"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1252,
+                        1435,
+                        2301,
+                        1676
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1252,
+                                1435,
+                                2301,
+                                1676
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1252,
+                                        1435,
+                                        2301,
+                                        1676
+                                    ],
+                                    "type": "text",
+                                    "content": "In preprocessing, unique job sites are determined from the measurement campaign by coarse filtering the raw machinery trajectory data. At this stage in the process, it is acceptable to label several fields from a single work episode as belonging to one site."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1291,
+                        1683,
+                        2195,
+                        1729
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1291,
+                                1683,
+                                2195,
+                                1729
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1291,
+                                        1683,
+                                        2195,
+                                        1729
+                                    ],
+                                    "type": "text",
+                                    "content": "A site is determined by the filtering rules listed below."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        1291,
+                        1732,
+                        2279,
+                        1778
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1291,
+                                1732,
+                                2279,
+                                1778
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1291,
+                                        1732,
+                                        2279,
+                                        1778
+                                    ],
+                                    "type": "text",
+                                    "content": "1) Periods where the PTO remains active "
+                                },
+                                {
+                                    "bbox": [
+                                        1291,
+                                        1732,
+                                        2279,
+                                        1778
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(> = 400~\\mathrm{r / min})"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                },
+                {
+                    "bbox": [
+                        1341,
+                        1782,
+                        2301,
+                        2574
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1341,
+                                1782,
+                                2301,
+                                2574
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1341,
+                                        1782,
+                                        2301,
+                                        2574
+                                    ],
+                                    "type": "text",
+                                    "content": "a) In scenarios where normal machinery operation is interrupted and the operator must stop the PTO, the data are segmented if the Euclidean distance from the PTO stop location is greater than "
+                                },
+                                {
+                                    "bbox": [
+                                        1341,
+                                        1782,
+                                        2301,
+                                        2574
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "40~\\mathrm{m}"
+                                },
+                                {
+                                    "bbox": [
+                                        1341,
+                                        1782,
+                                        2301,
+                                        2574
+                                    ],
+                                    "type": "text",
+                                    "content": " to the PTO restart location. (In the recorded datasets, operators may stop and restart the PTO during harvesting operations in a field. The most common example is to deal with blockages. This may not be representative of all implementers). \n2) Machinery operation continues without stoppages "
+                                },
+                                {
+                                    "bbox": [
+                                        1341,
+                                        1782,
+                                        2301,
+                                        2574
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(> = 120~\\mathrm{min})"
+                                },
+                                {
+                                    "bbox": [
+                                        1341,
+                                        1782,
+                                        2301,
+                                        2574
+                                    ],
+                                    "type": "text",
+                                    "content": " between operations. \n3) Machinery speeds do not exceed "
+                                },
+                                {
+                                    "bbox": [
+                                        1341,
+                                        1782,
+                                        2301,
+                                        2574
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "8\\mathrm{m / s}"
+                                },
+                                {
+                                    "bbox": [
+                                        1341,
+                                        1782,
+                                        2301,
+                                        2574
+                                    ],
+                                    "type": "text",
+                                    "content": " during in-field operation. (In the recorded datasets, operators do not exceed this speed during harvesting operations in a field, only on the road between job sites. This may not be representative of all implements)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                },
+                {
+                    "bbox": [
+                        1252,
+                        2580,
+                        2299,
+                        2676
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1252,
+                                2580,
+                                2299,
+                                2676
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1252,
+                                        2580,
+                                        2299,
+                                        2676
+                                    ],
+                                    "type": "text",
+                                    "content": "The results of the filtered trajectories based on the policies listed above are shown in Tables I and II."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15
+                },
+                {
+                    "bbox": [
+                        1252,
+                        2732,
+                        1702,
+                        2781
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1252,
+                                2732,
+                                1702,
+                                2781
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1252,
+                                        2732,
+                                        1702,
+                                        2781
+                                    ],
+                                    "type": "text",
+                                    "content": "C. Stage II: Path Removal"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1249,
+                        2808,
+                        2301,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1249,
+                                2808,
+                                2301,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1249,
+                                        2808,
+                                        2301,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "Once the raw machinery trajectory data have been filtered into job sites, the algorithm moves to Stage II, Path Removal. Fig. 3 describes the procedure; the process is divided into six steps. Each step is labeled alphabetically and will be referred to throughout this section. The goal of this stage is to remove pathways between fields and isolate field geometric boundaries"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 17
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2475,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

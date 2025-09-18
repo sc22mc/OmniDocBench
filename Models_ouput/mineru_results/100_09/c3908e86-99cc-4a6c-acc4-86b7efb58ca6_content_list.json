@@ -1,0 +1,54 @@
+[
+    {
+        "type": "text",
+        "text": "of BoT will produce the most representative reasoning chain in the current iteration,thus leading to more meaningful experience to enhance the prompt.We verify this in the ablation study section. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To better present how BoT learns from errors and previous advice,we show in Table $\\bigstar$ thatGPT-4 is able to avoid previous errors and produce more specific advice with the increase of iteration and eventually obtain the correct solution. In the first iteration, with the simple prompt,LLMs even make a mistake in following the task rules as the new setis wrong in step 3.After analyzing, it presents correct advice onthis mistake.However,the analysis at the initial iteration is vague,such as“try other numbers and operations. After five iterations,BoT aggregates multiple such analyses,deriving a more potent prompt, making the LLMs select the right numbers 9 and 7. Also,the advice is more concrete and useful.The advice for this right selection is to increase the corresponding evaluation score.Through the continuous accumulation such experiences,BoT progressively refines the prompt, culminating in the direct generation of a correct solution in the 8-th iteration. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.3ABLATION STUDY ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/627c1c523de9f8286d002e436efff2b5078440e0c52b7fb47df7011ea712eea0.jpg",
+        "table_caption": [
+            "Table 4:Comparison of BoTvariations applied to GPT-4on the Game of 24 and AQuA Datasets. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"2\">Experience F...t</td><td colspan=\"2\">Accumulation Type</td><td colspan=\"3\">Game of 24</td><td colspan=\"3\">AQuA</td></tr><tr><td>Issues</td><td>Advice</td><td>Replace</td><td>Add</td><td>BoT(Best first）</td><td>BoT(Greedy)</td><td>BoT(No)</td><td>BoT(Best first）</td><td>BoT(Greedy)</td><td>BoT(No)</td></tr><tr><td>√</td><td>√</td><td></td><td>√</td><td>81.2</td><td>83.7</td><td>67.1</td><td>78</td><td>81.4</td><td>56.2</td></tr><tr><td></td><td></td><td></td><td></td><td>74.7</td><td>78.2</td><td>70</td><td>47.3</td><td>56.8</td><td>44.9</td></tr><tr><td></td><td></td><td>√</td><td></td><td>72.8</td><td>74.1</td><td>70.2</td><td>52.4</td><td>62.7</td><td>46.3</td></tr><tr><td></td><td></td><td></td><td>√</td><td>69.2</td><td>70.7</td><td>67.6</td><td>54.1</td><td>60</td><td>40.3</td></tr><tr><td></td><td></td><td>√</td><td></td><td>74.9</td><td>76.9</td><td>72.7</td><td>68.3</td><td>74.2</td><td>71.9</td></tr><tr><td></td><td></td><td></td><td>√</td><td>77.9</td><td>80</td><td>72.4</td><td>73.6</td><td>77</td><td>64.1</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Experience consistently leads to thought revision,but too much can have the opposite effect. When the prompt accumulates issues and advice by the“adding”type,both aggregation strategies can lead to high solve rates.Maintaining a complete experience is important for revising thoughts, especially for the AQuA dataset,which includes wider mathematical reasoning problems.However, BoT(No), which does not perform aggregation but directly uses allreasoning chains from generated trees,suffers the worst performance in allcases,especially when the experience accumulation type is “adding\".As BoT builds 15 trees each iteration, putting them alltogether into a prompt may cover core information, not to mention that most such experiences are invalid or harmful. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Advice is more important to generate thoughts than others.In all cases of Table4 BoT variations that embrace advice as experience achieve the top solve rate. For example, with the same“adding” type,when the experience does not contain advice, the performance drops by more than $1 0 \\%$ and $2 0 \\%$ in Game of 24 and AQuA,respectively. On the contrary, including issues in the experience serves as an auxiliary mechanism for performance improvement. Only by cooperating issues can the BoT with advice gain the best solve rate; for example, the number grows by $4 . 4 \\%$ forBoT(Greedy) inAQuA. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Greedy aggregation can be the only required choice for performance purposes.As compared to the Best-first that selects one from existing thought chains and no aggregation that maintains all thought chains,greedy aggregation adaptively merges tree structures into one better thought chain that may not exist in the current iteration.Bydoing so,LLM isable to performa more meaningful analysis on a stronger thought chain,thus producing important experiences to enhance the prompt.As shown in Table $\\textcircled { 4 }$ once the Greedy aggregation is used, BoT improves by more than $2 \\%$ in all cases. In AQuA,containing more math problems, this number is even $1 0 \\%$ .Besides,as our discussion in Fig. 4 ToTwith a similar experience-driven boosting mechanism reaches $8 0 \\%$ but still lags behind the BoT.This may be attributed to the inability to execute the greedy aggregation within its singular tree structure. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5CONCLUSION ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This paper verified that a simple prompt can be enhanced by gradually accumulating error analysis on its generated thoughts to address complex tasks.We have proposed a novel framework,the Boosting of Thoughts (BoT),to implement such progressive prompt enhancement for efective thought generation ",
+        "page_idx": 0
+    }
+]

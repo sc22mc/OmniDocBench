@@ -1,0 +1,59 @@
+[
+    {
+        "type": "text",
+        "text": "A Machine Learning Approach for Queen Bee Detection Through Remote Audio Sensing to Safeguard Honeybee Colonies",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Luca Barbisan, Student Member, IEEE, Giovanna Turvani  $\\oplus$ , and Fabrizio Riente  $\\oplus$ , Member, IEEE",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract—Honeybees play a pivotal role in maintaining global ecosystems and agricultural productivity through their indispensable contribution to crop pollination. However, the alarming rise in honeybee mortality, attributed to various stress factors including climate change, has highlighted the urgency of implementing effective monitoring strategies. Remote sensing of beehives emerges as a promising solution, with a focus on understanding and mitigating the impacts of these stressors. Differently from other approaches proposed in the literature, this study specifically explores the potential of lightweight machine learning models and the extraction of compressed feature to enable future deployment on microcontroller devices. The experimentation involves the application of support vector machines and neural network classifiers, considering the influence of variable audio chunk durations, the utilization of different hyperparameters and combining the audio recorded in several hives and available in different datasets.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Index Terms—Bee monitoring, edge computing, environmental monitoring, machine learning.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "I. INTRODUCTION",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "P LINGS of the current era. Several studies have highlighted a decline in insects on both local and global scales [1], all of these are important for maintaining a balanced ecosystem. Among them, honeybees stand out as crucial contributors in global agricultural production, pollinating approximately 70 out of the nearly 100 crop species that contribute to  $90\\%$  of the world's food supply.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Unfortunately, a significant increase in colony losses has been reported worldwide in recent years, mainly attributed to the phenomenon known as \"colony collapse disorder' [2]. Factors, such as climate change, intensive agriculture, land- use alterations, pesticides, biodiversity decline, Varroa mites, and pollution, are identified as the primary causes of global bee mortality. This decline in honeybee health has prompted a growing demand among beekeepers and researchers for innovative methods to monitor colony health effectively.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Different factors can be monitored to detect possible problems that affect the health of a beehive [3]. Some studies focused on the detection of swarm activities using a combination of weight sensors and microphones [4] or accelerometers [5], [6] and analyzing the signals by means of the short time Fourier transform (STFT) to extract different information. Qandour et al. [7] were able to identify the presence of the Varroa mite inside the hive using recorded sound from inside the colony and extracting different characteristics of the frequency domain, such as the peak frequency, the spectral centroid, the bandwidth, and the frequency of root variance.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Most of the proposed approaches are equipped with multiple sensors to collect hive parameters, such as temperature, humidity, carbon dioxide, and weight [8], [9], [10], [11], [12], but also methods that adopt computer vision for tracking bees at hive entrances demonstrate a good alternative for bee activity monitoring [13], [14]. However, the sound analysis alone has proven to be very effective in detecting various hive events, such as swarming [15], [16] or the presence and absence of a queen [17]. The presence of the queen bee is a fundamental condition for the survival of the hive [18], the queen is the only fertile female, in the event she dies, the hive would not have any chance of survival. It is important to identify as soon as possible the absence of the queen bee and inform the beekeeper about this event, then he can act to add another queen bee into the hive.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The Internet of Things (IoTs) systems can be a viable solution, they are networks of interconnected devices that communicate and share data over the internet. In the context of audio signal collection, IoT technologies enable the deployment of smart sensor systems. These include wireless sensor networks (WSNs) that allows to cover wide areas, smart microphones for local audio processing, edge computing for latency reduction, cloud integration for data storage and analysis, and machine learning that enables advanced audio analytics. Together, these technologies enhance efficiency and enable various applications, such as remote monitoring and surveillance. Concerning the energy usage and the implications of deploying these systems within a beehive, it is crucial to deploy a device that does not introduce stressors to the hive's natural conditions and does not demand frequent human intervention, such as battery replacements. While certain studies investigate embedded systems with long range communication protocols, some of these approaches may demand considerable computational power and could necessitate modifications to the beehive [8], [13], [14], [19]. This renders them impractical for real- world applications. Recent studies highlight sound analysis as a promising and noninvasive",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,666 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        204,
+                        201,
+                        1252,
+                        749
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                201,
+                                1252,
+                                749
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        201,
+                                        1252,
+                                        749
+                                    ],
+                                    "type": "text",
+                                    "content": "problems, especially robotics [7]. We describe the design and architecture of MARLIN and discuss how we trained the agent, the hyperparameters used, and the main assumptions and choices we made during its design phase, comparing our work with other RL- based approaches to CC. Furthermore, we discuss the future directions of this research, of which this paper is just the first step. Finally, we present preliminary experimental results obtained in a real networking scenario, where we investigate the current performance of MARLIN and compare it to the Transmission Control Protocol (TCP) in handling a file transfer task."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        198,
+                        792,
+                        1249,
+                        884
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                792,
+                                1249,
+                                884
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        792,
+                                        1249,
+                                        884
+                                    ],
+                                    "type": "text",
+                                    "content": "II. DESIGNING A REINFORCEMENT LEARNING AGENT FOR CONGESTION CONTROL"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        198,
+                        904,
+                        1249,
+                        1201
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                904,
+                                1249,
+                                1201
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        904,
+                                        1249,
+                                        1201
+                                    ],
+                                    "type": "text",
+                                    "content": "MARLIN is a RL agent for CC, trained in a real network by using continuous actions to update the CwND. For the purpose of this research, we did not consider fairness towards competing MARLIN flows and/or other protocols as one of the optimization objectives of MARLIN, which we leave as a future research question."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        204,
+                        1201,
+                        1249,
+                        1699
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                1201,
+                                1249,
+                                1699
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        1201,
+                                        1249,
+                                        1699
+                                    ],
+                                    "type": "text",
+                                    "content": "Within MARLIN, learning is based on SAC [11], which trains a stochastic, off- policy, entropy- regularized agent. The agent interfaces with a custom transport protocol, presented in Section III via Remote Procedure Calls (RPCs) in a nonblocking, bi- directional fashion, as shown in Figure 1. The frequency of action taking depends on the latest Smoothed Round- Trip Time (SRTT) estimated for the path. The reward function is shaped as a strictly negative reward to intrinsically encode the principle that every step taken to transfer the information is a step too much."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        204,
+                        1706,
+                        1249,
+                        2349
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                1706,
+                                1249,
+                                2349
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        1706,
+                                        1249,
+                                        2349
+                                    ],
+                                    "type": "text",
+                                    "content": "Although it is generally desirable that the agent completes its tasks as quickly as possible, the RL setting proposed here does not aim for terminal states. It is inconvenient for the agent to overfit its trajectories on a fixed amount of bytes to transfer, or a fixed episode length, such that it will try to find a terminal state at any cost in a certain number of timesteps. Instead, we aim at designing RL agents able to work on \"crowded\" links and achieve high channel utilization independently from the volume of data transferred during training. For such reason, training is based on infinite- horizon tasks, never encountering a terminal state and following the Partial Episode Bootstrapping (PEB) principles for infinite- horizon training presented in [12]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        198,
+                        2382,
+                        1093,
+                        2432
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                2382,
+                                1093,
+                                2432
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        2382,
+                                        1093,
+                                        2432
+                                    ],
+                                    "type": "text",
+                                    "content": "A. Congestion Control as Markov Decision Process"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        204,
+                        2448,
+                        1249,
+                        2844
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                2448,
+                                1249,
+                                2844
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        2448,
+                                        1249,
+                                        2844
+                                    ],
+                                    "type": "text",
+                                    "content": "Traditional CC algorithms implemented within transport protocols such as TCP take actions, e.g., updating their CwND, in response to changes in the environment they sense with the goal of achieving maximum throughput and minimum congestion. Changes may include, for example, packet loss, duplicate packets, or variations in the measured Round- Trip Time (RTT). Such sequential decision making setting can be naturally posed as a Markov Decision Process (MDP) [13]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        198,
+                        2851,
+                        1249,
+                        2993
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                2851,
+                                1249,
+                                2993
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        2851,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": "The MDP framework formalizes with "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2851,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\langle S,A,p,R\\rangle"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2851,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " the sequential agent- environment interaction as the exchange of three different signals at every time step "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2851,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2851,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " of the process. The"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1300,
+                        201,
+                        2351,
+                        1138
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1300,
+                                201,
+                                2351,
+                                1138
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1300,
+                                        201,
+                                        2351,
+                                        1138
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1300,
+                                                201,
+                                                2351,
+                                                1138
+                                            ],
+                                            "type": "image",
+                                            "image_path": "2b4396e05df11d2eefe219cdf56578bf4a56a827de3dfebb148a367ce163fbe4.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 8,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1292,
+                                1161,
+                                2346,
+                                1250
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1292,
+                                        1161,
+                                        2346,
+                                        1250
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1292,
+                                                1161,
+                                                2346,
+                                                1250
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 1: Agent-Protocol interface. Communication protocol and agent communicate through a gRPC server."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 9,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1297,
+                        1339,
+                        2346,
+                        1940
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                1339,
+                                2346,
+                                1940
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "text",
+                                    "content": "RL \"learning from interaction\" fundamentals [14] stem from this abstraction: the action "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "a_{t} \\in A(s_{t})"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "text",
+                                    "content": " taken by the agent at a certain step "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "text",
+                                    "content": " after sensing the state "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "s_{t} \\in S"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "text",
+                                    "content": " leads to a consequent response of the environment as a reward signal "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "r_{t + 1} \\in R \\subset \\mathbb{R}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "text",
+                                    "content": " and transitions to a new state "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "s_{t + 1}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "text",
+                                    "content": ". This process follows the environment dynamics described by the probability function "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p(s_{t + 1}, r_{t + 1} | s_{t}, a_{t}): S \\times R \\times S \\times A \\longrightarrow [0, 1]"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "text",
+                                    "content": ". Such formulation of the transition dynamics also defines the Markov property, which requires the state to include all the relevant information about past interactions that would impact the future, as each possible value of "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "r_{t} \\in R"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "s_{t} \\in S"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "text",
+                                    "content": " depend solely on the previous state and action "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "s_{t - 1}, a_{t - 1}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1339,
+                                        2346,
+                                        1940
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1297,
+                        1947,
+                        2346,
+                        2541
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                1947,
+                                2346,
+                                2541
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1947,
+                                        2346,
+                                        2541
+                                    ],
+                                    "type": "text",
+                                    "content": "Communication networks are a subtle environment for a RL agent. Packets in modern networks are often transmitted a few milliseconds apart, sometimes microseconds. At the same time, running Stochastic Gradient Descent (SGD) to update the model during training, or even simply computing a new action, can take up a significantly greater amount of time. As a consequence, the environment might have already changed significantly by the time the action is taken, potentially making it obsolete or, even, wrong. This has been identified as one of the main reasons why it is hard to maintain the performance achieved in a simulated environment after moving to a real- world deployment [15]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1297,
+                        2547,
+                        2346,
+                        2993
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                2547,
+                                2346,
+                                2993
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2547,
+                                        2346,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": "Furthermore, actions do not instantly affect the agent's perception, as the effects of changing the CwND require some time before they have an impact on the network and that impact is propagated back to the source. As new packets are transmitted at a different rate after an action has been taken, they first need to reach their destination, then the receiver needs to generate and transmit a new ACKnowledge (ACK) message for those packets, and finally that ACK needs to arrive back at the source before any information about the impact of"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

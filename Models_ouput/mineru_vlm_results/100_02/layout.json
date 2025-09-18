@@ -1,0 +1,273 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        443,
+                        336,
+                        2106,
+                        650
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                443,
+                                336,
+                                2106,
+                                650
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        336,
+                                        2106,
+                                        650
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                443,
+                                                336,
+                                                2106,
+                                                650
+                                            ],
+                                            "type": "image",
+                                            "image_path": "a5209569576f040c0f7ec0c943622ae420e9fb1d7b241a118584803011d5d32b.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                683,
+                                2106,
+                                976
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        683,
+                                        2106,
+                                        976
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                443,
+                                                683,
+                                                2106,
+                                                976
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 1: Boosting of thoughts iteratively enhances the prompt by adding experience, which comprises the analysis conducted by large language models (LLM or LM) on the generated thought chain. The experience specifically contains the thought chain itself, the corresponding error reports, and detailed advice on revising each reasoning step. Thus, those ineffective thoughts marked with a red cross can also contribute to prompt refinement. By accumulating experiences over iterations in the prompt, BoT can eventually yield a correct thought chain starting from a simple prompt. The examples presented here are extracted from results obtained by applying GPT-4 with BoT on the Game of 24 task."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        443,
+                        1075,
+                        2106,
+                        1353
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1075,
+                                2106,
+                                1353
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1075,
+                                        2106,
+                                        1353
+                                    ],
+                                    "type": "text",
+                                    "content": "for LLMs, BoT may get weak thoughts. With aggregation, BoT is capable of deriving a more logical and effective thought chain from them, thereby guiding the subsequent refinement. This guidance in our framework is achieved by tuning the prompt with experience, which is the detailed error reports, advice, and instructions of each reasoning step obtained by exploiting LLMs to analyze the aggregated chain. When such experience accumulates in the prompt, it gradually leads to stronger thoughts."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        443,
+                        1372,
+                        2106,
+                        1742
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1372,
+                                2106,
+                                1742
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1372,
+                                        2106,
+                                        1742
+                                    ],
+                                    "type": "text",
+                                    "content": "Specifically, BoT implements such a Boosting mechanism as an experience- driven iteration process, as shown in Fig. 1. In each iteration, for a given prompt, BoT builds massive simplistic thought structures in parallel with the LLM. We select the tree structure as in ToT Yao et al. (2024) but significantly modify it to weighted binary trees with various growth strategies for our boosting purposes. After extracting the root- to- leaf branch with the highest score per tree, the aggregation component of BoT is performed to aggregate them into one single thought chain. Subsequently, this chain is evaluated by the same LLM to gain the experience, which is added to the prompt as guidance for the thought generation in the next iteration."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        441,
+                        1765,
+                        2108,
+                        2541
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                1765,
+                                2108,
+                                2541
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        1765,
+                                        2108,
+                                        2541
+                                    ],
+                                    "type": "text",
+                                    "content": "Our contributions can be summarized in three folds. First, instead of generating more complicated structures for thoughts with well- designed prompts, this paper shows that it is possible to rely solely on a simple initial prompt, as weak thoughts can be refined progressively based on previous experience toward solving problems. Second, to achieve such a boosting mechanism, we propose Boosting of Thoughts (BoT), a novel framework that performs an experience- driven iterative process. Due to starting from a simple prompt, BoT is scalable across various tasks. While guaranteeing effectiveness, BoT is fast as it builds simplistic thought structures in parallel and converges to a solution after a few iterations. Finally, with GPT- 4 and LlamaV2, we evaluate the performance of BoT on complex mathematical problems. Finally, relying on GPT- 4 OpenAI (2023) and LlamaV2 Touvron et al. (2023), we evaluate the performance of BoT on complex mathematical problems. The problem- solving rates indicate that BoT, employing binary tree thought structures, significantly surpasses the current state- of- the- art on the GSM81 and AQuA while achieving the second- best results on other datasets. Especially on the new challenging task, Game of 24 Yao et al. (2024), BoT is "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1765,
+                                        2108,
+                                        2541
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "9.7\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1765,
+                                        2108,
+                                        2541
+                                    ],
+                                    "type": "text",
+                                    "content": " higher than the leading approach ToT. Our BoT thus demonstrates that, through enhancing the prompt by accumulating error analysis of ineffective thought chains and the corresponding advice, even without human annotation, LLMs are scalable across various tasks while sustaining high performance."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        443,
+                        2620,
+                        879,
+                        2673
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2620,
+                                879,
+                                2673
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2620,
+                                        879,
+                                        2673
+                                    ],
+                                    "type": "text",
+                                    "content": "2 RELATED WORK"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        2729,
+                        2106,
+                        3049
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2729,
+                                2106,
+                                3049
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2729,
+                                        2106,
+                                        3049
+                                    ],
+                                    "type": "text",
+                                    "content": "Multi- Step Reasoning. The prominent work Chain- of- thought (CoT) prompting Wei et al. (2022) shows that step- by- step reasoning behaviors from LLMs can be elicited by providing intermediate reasoning steps, termed thoughts, within the prompt for each question, as also supported by Self- Consistency (Wang et al. (2022) and a series of CoT- based work Zhou et al. (2023b); Fu et al. (2022). The recent work, Tree of Thoughts (ToT) Yao et al. (2024), converts the sequential reasoning process into a tree structure, in which each thought (node) may consider previous reasoning paths to produce multiple next- step thoughts. With such backtracking and expanded exploration during reasoning,"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

@@ -1,0 +1,80 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/f9b1b0553fe16518f7824fdbec84d8581bdc9e04675d01a4d71979e3f64c4a4f.jpg",
+        "image_caption": [
+            "Fig. 7. Bode plots of the inactive PMFC obtained with the MAX30134 on the third day of tests, compared with the results obtained with the Autolab PGSTAT302 N."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/61c4196c3fca75887ed39495d6b0dc4b56e9eed5db802af2dff2dac7c4d92ce9.jpg",
+        "image_caption": [
+            "Fig. 8. Bode plots of the active PMFC obtained with the MAX30134 on the third day of tests, compared with the results obtained with the Autolab PGSTAT302 N."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/136adc061dc9a6d38ff3a7610d1265b6e3671b85b8ee289b3ecf3f3ef57e2904.jpg",
+        "image_caption": [
+            "Fig. 9. Complete EIS measurement power profile with removed static consumption. On the top left, initial operations are displayed: turn ON, register load, and OCV measurement consumption. On the top right, we can see a detail of the turn-off peak."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "E. Energy Consumption Estimation",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The energy storage must be able to sustain node operation during its most energy- consuming, uninterruptible task. In this application, both EIS measurement sweep and data transmission/reception events are to be executed without interruption. We estimate the most energy- consuming task between the two and dimension the energy storage accordingly. The current draw for the sensor node SC and components in the different execution states (pictured in Fig. 2) are reported in Table II.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1) EIS Measurement Consumption: We evaluate the power consumption of the MAX30134 during a typical EIS measurement sweep, equal to the one used in the previous section. The sweep takes  $T_{\\mathrm{EIS,AFE}} = 722.2 \\mathrm{s}$  and  $E_{\\mathrm{EIS,AFE}} = 1.53 \\mathrm{J}$ . Moreover,",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/3d8a278823e7ccf0dafaa24f9fb0ed716b313f294880d3b9c763b649ae27208d.jpg",
+        "table_caption": [
+            "TABLE III CONTENTS OF THE LORA MESSAGE"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Field</td><td>Message content</td><td>Bytes</td></tr><tr><td>Node ID</td><td>&quot;N&quot; + node ID</td><td>3</td></tr><tr><td>Timestep</td><td>&quot;T&quot; + timestamp</td><td>5</td></tr><tr><td>19 impedance values</td><td>&quot;R&quot; + real part + &quot;I&quot; + imaginary part</td><td>114</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "the MSP430FR5959 consumes  $I_{\\mathrm{MCU,FRAOM}} = 103 \\mu \\mathrm{A / MHz}$  if FRAM is active,  $I_{\\mathrm{MCU,FRAOM}} = 65 \\mu \\mathrm{A / MHz}$  if FRAM is inactive. The inactive mode can be used if FRAM access is not required for some time; short tasks can be executed from RAM. Assuming we can run EIS sweep task without accessing FRAM memory, that we run the MCU at  $16 \\mathrm{MHz}$  (to produce the  $8 \\mathrm{MHz}$  SPI clock needed to drive the MAX30134) and that we supply the MCU with an average  $V_{\\mathrm{DD,MCU}} = 2.8 \\mathrm{V}$  (halfway between  $V_{\\mathrm{MIN}}$  and  $V_{\\mathrm{MAX}}$ ), the energy required to run the MCU with FRAM off for a time  $t_{\\mathrm{EIS,AFE}}$  at  $f_{\\mathrm{CLK}} = 16 \\mathrm{MHz}$  is  $E_{\\mathrm{MCU}}^{\\mathrm{EIS}} = 2.11 \\mathrm{J}$ . We also consider the energy consumption of the BQ, the voltage monitors and the other SC active during EIS, consuming a total of  $1 \\mathrm{mJ}$  (see Table II). Moreover, snapshot and restore operations to/from FRAM needed for intermittent operation require an energy overhead of  $E_{\\mathrm{RST}} = 8.29 \\mu \\mathrm{J}$  and  $E_{\\mathrm{SN}} = 7.83 \\mu \\mathrm{J}$ , respectively.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Summing all the energy contributions, we obtain  $E_{\\mathrm{EIS}} = 3.64 \\mathrm{J}$ . It is worth noting that most of this energy is consumed by the MCU, which must be kept active during all the SPI transactions. As the power consumption of an MCU is directly linked to the clock frequency, in order to minimize the energy demand, we lower the main clock frequency to the minimum acceptable frequency for the SPI to comply with the MAX30134. In this case, we set the MCLK to  $16 \\mathrm{MHz}$  in order to generate a SPI clock of  $8 \\mathrm{MHz}$ , the minimum frequency required by the MAX30134 SPI interface. EIS measurement consumption can mostly be reduced by increasing the minimum EIS frequency point to be studied, as sub- Hz frequency points take a long time to execute.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2) LoRa Message Consumption: We rely on the LoRa transceiver Semtech SX1276 to transmit EIS measurement data to a gateway. The information coming from each 19-point EIS sweep can be packed into a 122-byte LoRa message (see Table III). Transmitting EIS data packet at SF7 and  $250 \\mathrm{kHz}$ , we obtain a minimum airtime of  $t_{\\mathrm{airtime}} = 112.8 \\mathrm{ms}$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Transmitting at minimum power (2 dBm) draws  $I_{\\mathrm{TX}} = 22.54 \\mathrm{mA}$ . This value leave us with  $E_{\\mathrm{LoRa}}^{\\mathrm{TX}} = 7.11 \\mathrm{mJ}$ . The chosen radio chip requires to be piloted through  $8 \\mathrm{MHz}$  SPI, such as the MAX30134 chip, thus it accounts for  $E_{\\mathrm{MCU}}^{\\mathrm{LoRa}} = 0.33 \\mathrm{mJ}$ . We also add the consumption of the active BQ, the two voltage monitors and the SC active during the TX phase, amounting to  $0.15 \\mu \\mathrm{J}$  (see Table II). Summing these contributions together, along with a snapshot, a restore event, we obtain  $E_{\\mathrm{TX}} = 7.4 \\mathrm{mJ}$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We thus conclude that the EIS measurement is the most energy- consuming, uninterruptible operation foreseen by the",
+        "page_idx": 0
+    }
+]

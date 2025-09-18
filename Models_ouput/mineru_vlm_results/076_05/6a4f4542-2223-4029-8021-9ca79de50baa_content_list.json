@@ -1,0 +1,76 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/ec1e1d12570acc46dea43e0bb558b940c1a0cbc6118f4a6e2101b68c7c16cfbd.jpg",
+        "image_caption": [
+            "Fig. 5. Trained with 2k samples of each functional scenario (6k samples overall), VectorNet can predict the Ego's trajectory for all three functional scenarios."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/85b92185fd14aa9975b9b5e3d422bef45698601b23c434066ba31b03b7ab28c5.jpg",
+        "image_caption": [
+            "Fig. 6. Trained on 2k samples of the scenario ACC&LK, VectorNet learns that the Ego follows the Co, which enables predictions for the scenario ACC. However, the prediction for the scenario LK indicates that VectorNet primarily considers the Co's trajectory to predict the lateral behavior of the Ego, not the lanes. VectorNet does not know that the Ego's lateral behavior is determined by the lanes, and only the longitudinal behavior is determined by the Co."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/87b381a567714b86469845373b97eab4055081bb8ad5177faab240edf70b79b8.jpg",
+        "image_caption": [
+            "Fig. 7. Trained on the scenarios ACC and LK (2k samples each), generalization to ACC&LK is not achieved. Here, within the training data, the presence of the Co indicates a straight trajectory of the Ego, curved lanes indicate a constant velocity of the Ego. Accordingly, there is insufficient variance for generalization."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "since ACC is a special case of ACC&LK (a straight road). The generalization to LK, however, is poor. Row 4 shows that no generalization from ACC and LK to ACC&LK is achieved. Fig. 6 and Fig. 7 indicate that these results are due to insufficient variance in the training data.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Row 9 shows that generalization from ACC and LK to ACC&LK is achieved if some data from the scenario ACC&LK are added. The resulting ADE is better than what is achieved with the same number of samples of ACC&LK on their own (see row 10). Hence, existing data can improve predictions for new functional scenarios or reduce the amount of data necessary to achieve a certain predictive performance.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Originally, VectorNet uses 211k training and 41k validation samples [23, p. 5]. Our results show that with  $\\leq 2k$  samples, reasonable ADEs are achievable. We expect that adjusting the architecture or hyperparameters would allow working with even less data or increasing predictive performance.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. Assessment Based on Predicted Evaluation Metrics",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Next, we assess the prediction of evaluation metrics derived from VectorNet's predictions (see Fig. 1). The baselines are an extra- tree (ET) and a Bayesian neural network (BNN) with [17]'s hyperparameters. All models are trained with 2k samples. Table III shows that for different evaluation metrics, different models achieve the best mean average errors (MAEs).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The regression models' high performance can be attributed to them learning directly on the relevant features (5 to 10 scenario inputs). However, they cannot account for the complex spatial and temporal nuances described in the scenario embeddings (although it would be possible to take these nuances into account, this would result in up to 150 features, which regression models can hardly process). VectorNet, on the other hand, can account for the nuances but must first identify the relevant features influencing the Ego's trajectory (for the ACC scenarios, the feature (FT) matrix has 581 entries). Hence, learning based on vectorized scenario embeddings is more flexible but also more challenging.",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{r}{^1 (2\\mathrm{~lanes}\\cdot 24\\frac{\\mathrm{vec.}}{\\mathrm{lan e}} +\\mathrm{Co}\\cdot 25\\frac{\\mathrm{vec.}}{\\mathrm{Co}} +\\mathrm{Ego}\\cdot 1\\frac{\\mathrm{vec.}}{\\mathrm{Ego}})\\cdot 7\\frac{\\mathrm{FT}}{\\mathrm{vec.}} = 518\\mathrm{~FT}} \\end{array}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/9723b359e1c1d884229f8e48971d758bb783c0a16b8ce6b027dd72e3911ee1fd.jpg",
+        "table_caption": [
+            "TABLE III MEAN AVERAGE ERRORS (MAE) OF PREDICTED EVALUATION METRICS"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Scenario</td><td>Evaluation Metric</td><td>MAE ET</td><td>MAE BNN</td><td>MAE VectorNet</td></tr><tr><td rowspan=\"2\">ACC</td><td>αmin</td><td>0.13 m</td><td>0.07 m</td><td>0.58 m</td></tr><tr><td>dmin</td><td>0.87 m</td><td>0.44 m</td><td>0.26 m</td></tr><tr><td>LK</td><td>Plat max</td><td>0.09 m</td><td>0.08 m</td><td>0.38 m</td></tr><tr><td rowspan=\"3\">ACC&amp;amp;LK</td><td>αmin</td><td>0.19 m</td><td>0.09 m</td><td>0.74 m</td></tr><tr><td>dmin</td><td>1.14 m</td><td>0.55 m</td><td>0.43 m</td></tr><tr><td>Plat max</td><td>0.08 m</td><td>0.08 m</td><td>0.21 m</td></tr></table>",
+        "page_idx": 0
+    }
+]

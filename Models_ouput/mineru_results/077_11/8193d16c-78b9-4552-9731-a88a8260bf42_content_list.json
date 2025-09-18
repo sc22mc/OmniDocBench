@@ -1,0 +1,126 @@
+[
+    {
+        "type": "text",
+        "text": "A. Symmetries of the architecture ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A.1. Proof of Proposition 4.1 ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Inthisappendix we provide more detailsonthe equivarianceof the Timewarp architecture.We firstprove Proposition 4.1 from the main body: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof.Let $X ( t + \\tau ) _ { x ( t ) }$ denote the random variable obtained by sampling $Z \\sim p ( z )$ and computing $X ( t + \\tau ) : = f ( Z ; x ( t ) )$ Here we subscript $X ( t + \\tau ) _ { x ( t ) }$ by $x ( t )$ to emphasize that this is the random variable obtained when conditioning the flow on $x ( t )$ .We first note that the equivariance condition on the densities $p ( \\sigma x ( t + \\tau ) | \\sigma x ( t ) ) = p ( x ( t + \\tau ) | x ( t ) )$ is equivalent to the following constraint on the random variables: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/9e53635cf0ebf5ad1cb188aff0c73d8138fde019de7f1ba0e6dd36554a463118.jpg",
+        "text": "$$\n\\begin{array} { r } { X ( t + \\tau ) _ { \\sigma x ( t ) } \\stackrel { d } { = } \\sigma X ( t + \\tau ) _ { x ( t ) } , } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "vhere $\\circeq$ denotes equality in distribution. To see this,let $p _ { X }$ denote the density of the random variable $X$ .Then,in terms of lensities, Equation (20) is equivalent to stating that,for all $x$ ， ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/08813fac486b7e4d03520c380e239de42c7240b397b7063ac26928a0406338a5.jpg",
+        "text": "$$\n\\begin{array} { l } { { p _ { X ( t + \\tau ) _ { \\sigma x ( t ) } } ( x ) = p _ { \\sigma X ( t + \\tau ) _ { x ( t ) } } ( x ) } } \\\\ { { \\qquad = p _ { X ( t + \\tau ) _ { x ( t ) } } ( \\sigma ^ { - 1 } x ) , } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "vhere inEquation (2)we used thechange-of-variables formula,along with the fact that the groupactions weconsider rotations,translations,permutations) have unit absolute Jacobian determinant. Redefining $x \\gets \\sigma x$ ,we get that for all $x$ ， ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/fd95e203da5ca8539a725a3e72e0c1f8afcf921bd13917da1555ad8ab8633fc8.jpg",
+        "text": "$$\np _ { X ( t + \\tau ) _ { \\sigma x ( t ) } } ( \\sigma x ) = p _ { X ( t + \\tau ) _ { x ( t ) } } ( x ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Recalling the notation that $X ( t + \\tau ) _ { x ( t ) }$ is interpreted as the random variable obtained by conditioning the flow on $x ( t )$ this can be written as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/7cdbc424c9af18d0de9d97808168d3ba8a6d1156e063e34ae8e5de91977ba422.jpg",
+        "text": "$$\np ( \\sigma x | \\sigma x ( t ) ) = p ( x | x ( t ) )\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "which is exactlytheequivarianceconditionstated in terms of densities above.Having rephrased the equivariance condition in terms of random variables in Equation (2O),the proof of Proposition 4.1 is straightforward. ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/c0033b680b5b9526233e6431858424d170f26a58c77a3d56006941fc6a8a3cfd.jpg",
+        "text": "$$\n\\begin{array} { r l } & { X ( t + \\tau ) _ { \\sigma x ( t ) } : = f ( Z , \\sigma x ( t ) ) } \\\\ & { ~ \\stackrel { d } { = } f ( \\sigma Z , \\sigma x ( t ) ) } \\\\ & { ~ = \\sigma f ( Z , x ( t ) ) } \\\\ & { ~ : = \\sigma X ( t + \\tau ) _ { x ( t ) } , } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where in Equation (26) we used the fact that the base distribution $p ( z )$ is $\\sigma$ -invariant. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A.2.Translation equivariance via canonicalisation ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We now describe the canonicalisation technique used to make our models translation equivariant. Let $q ( x ^ { p } ( t + \\tau ) , x ^ { v } ( t +$ $\\tau ) | x ^ { p } ( t ) )$ be an arbitrary conditional density model, which is not necessarily translation equivariant.Wecan make it translation equivariant in the following way. Let $\\overline { { x ^ { p } } }$ denote the average position of the atoms, ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/13a2e9abf5c69e054dd4838d6bc2d0b29f82b1876cd8b3161629eaa98b7e0514.jpg",
+        "text": "$$\n\\overline { { x ^ { p } } } : = \\frac { 1 } { N } \\sum _ { i = 1 } ^ { N } x _ { i } ^ { p } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Thenwedefine ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/eec1cb996d1028c80149e8aec42c7d659e411391eb5e6f0dc454a7df89e74d98.jpg",
+        "text": "$$\n\\begin{array} { r } { p ( x ^ { p } ( t + \\tau ) , x ^ { v } ( t + \\tau ) | x ^ { p } ( t ) ) : = q ( x ^ { p } ( t + \\tau ) - \\overline { { x ^ { p } ( t ) } } , x ^ { v } ( t + \\tau ) | x ^ { p } ( t ) - \\overline { { x ^ { p } ( t ) } } ) } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "vhere the subtraction of $\\overline { { x ^ { p } ( t ) } }$ is broadcasted over all atoms.We now consider the effect of translating both $x ^ { p } ( t )$ and $x ^ { p } ( t + \\tau )$ by the same amount. Let $a$ be a translation vector in $\\mathbb { R } ^ { 3 }$ .Then ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/7b72fc3cc971fc955ad40234770f5766756e918b93d722699e25fba98f2a5844.jpg",
+        "text": "$$\n\\begin{array} { r l } & { + \\tau ) + a , x ^ { v } ( t + \\tau ) | x ^ { p } ( t ) + a ) = q ( x ^ { p } ( t + \\tau ) + a - ( \\overline { { x ^ { p } ( t ) + a } } ) , x ^ { v } ( t + \\tau ) | x ^ { p } ( t ) + a - ( \\overline { { x ^ { p } ( t ) + a } } ) } \\\\ & { \\qquad = q ( x ^ { p } ( t + \\tau ) + a - \\overline { { x ^ { p } ( t ) } } - a , x ^ { v } ( t + \\tau ) | x ^ { p } ( t ) + a - \\overline { { x ^ { p } ( t ) } } - a ) } \\\\ & { \\qquad = q ( x ^ { p } ( t + \\tau ) - \\overline { { x ^ { p } ( t ) } } , x ^ { v } ( t + \\tau ) | x ^ { p } ( t ) - \\overline { { x ^ { p } ( t ) } } ) } \\\\ & { \\qquad = p ( x ^ { p } ( t + \\tau ) , x ^ { v } ( t + \\tau ) | x ^ { p } ( t ) ) . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

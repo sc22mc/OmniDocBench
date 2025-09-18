@@ -1,0 +1,43 @@
+[
+    {
+        "type": "text",
+        "text": "Proof. It is immediate from construction, since we have not removed any transitions from  $\\Sigma$  within any  $Q_{i}$ , that for any  $Q_{i} \\in P$  holds  $Q_{i}.w = q_{l}^{i}$ , since  $w$  carefully synchronizes  $\\mathcal{A}$  and each  $Q_{i}$  on  $\\Sigma$  induces an isomorphic copy of  $\\mathcal{A}$ . So we have, that  $\\{q_{l}^{1},q_{l}^{2},..,q_{l}^{|u| + 1}\\} \\subseteq P.w$ . To prove that  $P.w \\subseteq \\{q_{l}^{1},q_{l}^{2},..,q_{l}^{|u| + 1}\\} \\subseteq P.w$  it suffices to notice, that, from fact 2 automaton  $\\mathcal{B}$  is deterministic and for any prefix  $w'$  of  $w$  if  $Q.w' = \\{a_{b_{1},\\dots ,a_{b_{k}}}\\}$ , then  $Q_{i}.w' = \\{q_{a_{1},\\dots ,a_{b_{k}}}^{i}\\}$ .  $\\square$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 2. There exist an algorithm with  $O(|P||w|)$  time complexity and  $O(|P||w|)$  space complexity which computes a partition of  $P$  on sets  $Q_{1}$ ,  $Q_{2}$ , ...,  $Q_{|w| + 1}$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. We describe a desired algorithm. Suppose we have an array with  $|P|$  columns and  $|w| + 1$  rows. Put every element of  $P$  in a different column of a first row. Then we fill the  $i$ - th row by taking a state from the  $(i - 1)$ - th row of the corresponding column and applying to it the  $i$ - th letter of a word  $w$  until the end of the row. After this procedure, from lemma 1, the last row contains only the states from the set  $\\{q_{l}^{1},q_{l}^{2},..,q_{l}^{|u| + 1}\\}$ . We can now compute each  $Q_{i}$  by taking those states from the first row that lie in the same columns as the state  $q_{l}^{i}$ .  $\\square$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "With these two lemmas we are ready to present a decryption method:",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. using Lemma 1 compute the set  $\\{q_{l}^{1},q_{l}^{2},..,q_{l}^{|u| + 1}\\}$  \n2. using Lemma 2 compute the partition of  $P$  on sets  $Q_{1}$ $Q_{2},\\ldots ,Q_{|w| + 1}$  \n3. for every transition  $x\\in \\{0,1\\}$  in  $\\mathcal{B}$  if  $x$  joins a states from different sets, say  $Q_{i}$  and  $Q_{j}$  , then join  $q_{l}^{i}$  and  $q_{l}^{j}$  with transition  $\\mathcal{L}$  , otherwise remove the transition.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Observe, that after applying that procedure to the ciphertext  $\\mathcal{B}$  we end up with a graph that was our plaintext, what can be concluded directly from the encryption procedure. In general one can decipher the message only by knowing any carefully synchronizing word for  $\\mathcal{A}$  or computing every possible induced subautomaton isomorphic to  $\\mathcal{A}$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5 Extensions",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "As the ciphertext which is a result of our encryption method consists of  $n$  copies of isomorphic automaton with added transitions between those copies one can think of more \"sophisticated\" method of creating a ciphertext. As mentioned in the previous section a potential attacker can decipher the message computing every possible induced subautomaton isomorphic to a public key. However, the problem of determining for two given graphs say  $G$  and  $H$ , whether  $G$  has a copy of  $H$  as an induced subgraph is  $NP$ - complete [6]. In this section we present two lemmas that can be used to obfuscate the ciphertext even more. The first one involves adding the state to the public key and the second one adding arbitrary number of  $a$ - clusters to the ciphertext.",
+        "page_idx": 0
+    }
+]

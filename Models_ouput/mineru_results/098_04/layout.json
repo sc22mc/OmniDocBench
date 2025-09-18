@@ -1,0 +1,2998 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        355,
+                        2102,
+                        449
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                350,
+                                2107,
+                                415
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        350,
+                                        556,
+                                        415
+                                    ],
+                                    "score": 1.0,
+                                    "content": "where",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        558,
+                                        358,
+                                        970,
+                                        407
+                                    ],
+                                    "score": 0.92,
+                                    "content": "\\pmb { o } = ( w _ { L + 1 } , \\dots , w _ { L + N } )",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        971,
+                                        350,
+                                        2107,
+                                        415
+                                    ],
+                                    "score": 0.989,
+                                    "content": "denotes the continuation of context c. This objective helps improve",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                399,
+                                2019,
+                                457
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        399,
+                                        2019,
+                                        457
+                                    ],
+                                    "score": 0.988,
+                                    "content": "generalization and circumvent excessive reliance on, and overfiting to,the autoencoding task.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        }
+                    ],
+                    "index": 0.5
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        451,
+                        487,
+                        1050,
+                        534
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                483,
+                                1054,
+                                540
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        483,
+                                        1054,
+                                        540
+                                    ],
+                                    "score": 1.0,
+                                    "content": "2.3INSTRUCTIONFINE-TUNING",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        559,
+                        2107,
+                        791
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                560,
+                                2108,
+                                614
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        560,
+                                        2108,
+                                        614
+                                    ],
+                                    "score": 0.993,
+                                    "content": "After pretraining,the memory slots produced by the pretrained ICAE are expected to represent",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                603,
+                                2105,
+                                657
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        603,
+                                        2105,
+                                        657
+                                    ],
+                                    "score": 0.981,
+                                    "content": "the original context. However, for LLMs,the purpose of providing a context extends beyond rote",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                652,
+                                2111,
+                                705
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        652,
+                                        2111,
+                                        705
+                                    ],
+                                    "score": 0.988,
+                                    "content": "memorization or continuation; instead,the more common use scenario is using the provided context",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                689,
+                                2111,
+                                757
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        689,
+                                        2111,
+                                        757
+                                    ],
+                                    "score": 0.99,
+                                    "content": " as a basis for accurately and appropriately responding to various prompts, ultimately accomplishing",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                739,
+                                1625,
+                                795
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        739,
+                                        1625,
+                                        795
+                                    ],
+                                    "score": 0.976,
+                                    "content": "the tasks we want it to perform (Wei et al., 2021; Ouyang et al.,2022).",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        813,
+                        2107,
+                        953
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                812,
+                                2107,
+                                866
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        812,
+                                        2107,
+                                        866
+                                    ],
+                                    "score": 0.988,
+                                    "content": "To enhance the interaction of memory slots produced by the ICAE with diverse prompts,we further",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                853,
+                                2112,
+                                915
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        853,
+                                        2112,
+                                        915
+                                    ],
+                                    "score": 0.988,
+                                    "content": "fine-tune the ICAE with the PwC dataset (Prompt-with-Context),a datasetl introduced in this paper",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                903,
+                                1897,
+                                960
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        903,
+                                        1897,
+                                        960
+                                    ],
+                                    "score": 0.988,
+                                    "content": "consisting of thousands of (context, prompt,response) samples (as shown in Figure 1).",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        449,
+                        974,
+                        2107,
+                        1115
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                977,
+                                2107,
+                                1027
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        977,
+                                        2107,
+                                        1027
+                                    ],
+                                    "score": 0.971,
+                                    "content": "Formally,the ICAE is fine-tuned for learning to encode the context into the memory slots based on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1017,
+                                2111,
+                                1076
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1017,
+                                        1704,
+                                        1076
+                                    ],
+                                    "score": 0.987,
+                                    "content": "which the decoder (i.e., the target LLM) can produce a desirable response",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1705,
+                                        1029,
+                                        1851,
+                                        1068
+                                    ],
+                                    "score": 0.89,
+                                    "content": "r _ { 1 } \\ldots r _ { n }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1852,
+                                        1017,
+                                        2111,
+                                        1076
+                                    ],
+                                    "score": 0.984,
+                                    "content": "according to a",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1067,
+                                1478,
+                                1121
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1067,
+                                        676,
+                                        1121
+                                    ],
+                                    "score": 0.994,
+                                    "content": "given prompt",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        678,
+                                        1075,
+                                        835,
+                                        1115
+                                    ],
+                                    "score": 0.89,
+                                    "content": "p _ { 1 } \\ldots p _ { m }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        836,
+                                        1067,
+                                        1478,
+                                        1121
+                                    ],
+                                    "score": 0.945,
+                                    "content": ",asshown in Figure 8 in Appendix A:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "type": "interline_equation",
+                    "bbox": [
+                        712,
+                        1131,
+                        1836,
+                        1290
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                712,
+                                1131,
+                                1836,
+                                1290
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        712,
+                                        1131,
+                                        1836,
+                                        1290
+                                    ],
+                                    "score": 0.93,
+                                    "content": "\\begin{array} { r l } {  { \\mathcal { L } _ { \\mathrm { F T } } = \\operatorname* { m a x } _ { \\widetilde { m _ { 1 } } \\dots m _ { k } } P ( r _ { 1 } \\dots r _ { n } | \\widetilde { m _ { 1 } } \\dots m _ { k } , p _ { 1 } \\dots p _ { m } ; \\Theta _ { L L M } ) } } \\\\ & { = \\operatorname* { m a x } _ { \\Theta _ { L o R A } , e _ { m } } P ( r _ { 1 } \\dots r _ { n } | m _ { 1 } \\dots m _ { k } , p _ { 1 } \\dots p _ { m } ; \\Theta _ { L L M } , \\Theta _ { L o R A } , e _ { m } ) } \\end{array}",
+                                    "type": "interline_equation",
+                                    "image_path": "8cafd40b97918ccfce3a0f36bd8a7f2bcb98a8132ea61cd06a2ddc3c8f18b3bf.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15,
+                    "virtual_lines": [
+                        {
+                            "bbox": [
+                                712,
+                                1131,
+                                1836,
+                                1184.0
+                            ],
+                            "spans": [],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                712,
+                                1184.0,
+                                1836,
+                                1237.0
+                            ],
+                            "spans": [],
+                            "index": 15
+                        },
+                        {
+                            "bbox": [
+                                712,
+                                1237.0,
+                                1836,
+                                1290.0
+                            ],
+                            "spans": [],
+                            "index": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        1307,
+                        840,
+                        1359
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                435,
+                                1300,
+                                843,
+                                1368
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        1300,
+                                        843,
+                                        1368
+                                    ],
+                                    "score": 0.998,
+                                    "content": "3EXPERIMENTS",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        }
+                    ],
+                    "index": 17
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        447,
+                        1387,
+                        1004,
+                        1434
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                438,
+                                1381,
+                                1006,
+                                1442
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1381,
+                                        1006,
+                                        1442
+                                    ],
+                                    "score": 0.989,
+                                    "content": "3.1EXPERIMENTAL SETTING",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        }
+                    ],
+                    "index": 18
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        1460,
+                        2107,
+                        1692
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                1460,
+                                2107,
+                                1514
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1460,
+                                        2107,
+                                        1514
+                                    ],
+                                    "score": 0.982,
+                                    "content": "DataWe pretrain the ICAE with the Pile (Gao et al.,2O2O).For instruction fine-tuning,we use the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1504,
+                                2110,
+                                1561
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1504,
+                                        2110,
+                                        1561
+                                    ],
+                                    "score": 0.98,
+                                    "content": "PwC dataset,as introduced in Section 2.3,which contains 240k (context, prompt,response) samples",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1554,
+                                2107,
+                                1603
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1554,
+                                        2107,
+                                        1603
+                                    ],
+                                    "score": 0.982,
+                                    "content": "for training and 18k samples for testing.The context length distribution of test samples is shown in",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1594,
+                                2110,
+                                1653
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1594,
+                                        2110,
+                                        1653
+                                    ],
+                                    "score": 0.98,
+                                    "content": "Figure 10.By default,the maximal token length (excluding memory slots) we set during training is",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1640,
+                                1524,
+                                1697
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1640,
+                                        1524,
+                                        1697
+                                    ],
+                                    "score": 0.978,
+                                    "content": "512 in both the ICAE's encoder and decoder in our experiments.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        }
+                    ],
+                    "index": 21
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        1738,
+                        2106,
+                        1972
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1742,
+                                2107,
+                                1790
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1742,
+                                        2107,
+                                        1790
+                                    ],
+                                    "score": 0.978,
+                                    "content": "Model ConfigurationWe use the LlaMa (Touvron et al.,2O23a;b)as the target LLM to test the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1786,
+                                2108,
+                                1840
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1786,
+                                        2108,
+                                        1840
+                                    ],
+                                    "score": 0.968,
+                                    "content": "ICAE's performance in context compression. For the encoder of the ICAE,LoRA is applied to the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1831,
+                                2108,
+                                1891
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1831,
+                                        2108,
+                                        1891
+                                    ],
+                                    "score": 0.979,
+                                    "content": "query and value projections of the LLM's multi-head attention.In our default seting,the memory",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1869,
+                                2108,
+                                1937
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1869,
+                                        626,
+                                        1937
+                                    ],
+                                    "score": 0.991,
+                                    "content": "slotlength",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        627,
+                                        1882,
+                                        656,
+                                        1920
+                                    ],
+                                    "score": 0.82,
+                                    "content": "k",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        657,
+                                        1869,
+                                        1197,
+                                        1937
+                                    ],
+                                    "score": 0.99,
+                                    "content": "is set to 128,and the LoRA rank",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1198,
+                                        1887,
+                                        1223,
+                                        1920
+                                    ],
+                                    "score": 0.76,
+                                    "content": "r",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1224,
+                                        1869,
+                                        2108,
+                                        1937
+                                    ],
+                                    "score": 0.993,
+                                    "content": "is set to 128 unless otherwise specified. The resulting",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1924,
+                                1682,
+                                1977
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1924,
+                                        826,
+                                        1977
+                                    ],
+                                    "score": 1.0,
+                                    "content": "ICAEonlyaddsabout",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        827,
+                                        1927,
+                                        888,
+                                        1968
+                                    ],
+                                    "score": 0.86,
+                                    "content": "1 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        889,
+                                        1924,
+                                        1682,
+                                        1977
+                                    ],
+                                    "score": 0.97,
+                                    "content": "learnable parameters on top of the targetLLM.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        }
+                    ],
+                    "index": 26
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        2028,
+                        712,
+                        2074
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                436,
+                                2021,
+                                719,
+                                2081
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2021,
+                                        719,
+                                        2081
+                                    ],
+                                    "score": 0.995,
+                                    "content": "3.2RESULTS",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        }
+                    ],
+                    "index": 29
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        2088,
+                        934,
+                        2135
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                2084,
+                                938,
+                                2143
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2084,
+                                        938,
+                                        2143
+                                    ],
+                                    "score": 0.995,
+                                    "content": "3.2.1PRETRAINED ICAE",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        }
+                    ],
+                    "index": 30
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        451,
+                        2157,
+                        2103,
+                        2298
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2155,
+                                2111,
+                                2212
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2155,
+                                        2111,
+                                        2212
+                                    ],
+                                    "score": 0.994,
+                                    "content": "We first evaluate the autoencoding performance of the pretrained ICAE (without instruction fine-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2203,
+                                2111,
+                                2255
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2203,
+                                        2111,
+                                        2255
+                                    ],
+                                    "score": 0.982,
+                                    "content": "tuning)using the following three metrics to understand how wellit restores the original context from",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2246,
+                                2111,
+                                2302
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2246,
+                                        1619,
+                                        2302
+                                    ],
+                                    "score": 0.973,
+                                    "content": "its produced memory slots: BLEU (Papineni et al.,2002),Exact-Match",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1620,
+                                        2248,
+                                        1728,
+                                        2297
+                                    ],
+                                    "score": 0.7,
+                                    "content": "( \\mathrm { E M } ) ^ { 2 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1729,
+                                        2246,
+                                        2111,
+                                        2302
+                                    ],
+                                    "score": 0.974,
+                                    "content": "and cross entropy loss.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 33
+                        }
+                    ],
+                    "index": 32
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        2316,
+                        2108,
+                        2687
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                2322,
+                                2111,
+                                2369
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        2322,
+                                        2111,
+                                        2369
+                                    ],
+                                    "score": 0.981,
+                                    "content": "Figure 4 presents the autoencoding results of the ICAE based on the Llama-7b. The ICAE demon-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 34
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2365,
+                                2111,
+                                2418
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2365,
+                                        2111,
+                                        2418
+                                    ],
+                                    "score": 0.985,
+                                    "content": "strates avery low overalloss,below O.O5,indicating that the produced memory slots retain almost",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 35
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2411,
+                                2110,
+                                2464
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2411,
+                                        2110,
+                                        2464
+                                    ],
+                                    "score": 0.967,
+                                    "content": "all the information of the original context.When the context length is within 3Oo,the ICAE can",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 36
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2454,
+                                2111,
+                                2511
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2454,
+                                        1552,
+                                        2511
+                                    ],
+                                    "score": 0.993,
+                                    "content": "almost perfectly reconstruct the original context,achieving nearly",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1553,
+                                        2458,
+                                        1655,
+                                        2502
+                                    ],
+                                    "score": 0.86,
+                                    "content": "100 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1656,
+                                        2454,
+                                        2111,
+                                        2511
+                                    ],
+                                    "score": 0.957,
+                                    "content": "BLEU and EM scores. As",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 37
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2499,
+                                2110,
+                                2558
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2499,
+                                        2110,
+                                        2558
+                                    ],
+                                    "score": 0.973,
+                                    "content": "the context length increases beyond 4Oo,both BLEU and EM scores start to decline,indicating",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 38
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2549,
+                                2110,
+                                2602
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2549,
+                                        2110,
+                                        2602
+                                    ],
+                                    "score": 0.973,
+                                    "content": "insuficient capacityof the 128-length memory slots.However,evenatacontext length of 500,the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 39
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2591,
+                                2110,
+                                2649
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2591,
+                                        2110,
+                                        2649
+                                    ],
+                                    "score": 0.976,
+                                    "content": "median BLEU remains over 0.98,and the median EM approaches O.6 (e.g., perfectly reconstructing",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 40
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2637,
+                                2005,
+                                2692
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2637,
+                                        2005,
+                                        2692
+                                    ],
+                                    "score": 0.98,
+                                    "content": "about the first 30o words of a 512-token context),showing remarkable performance of ICAE.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 41
+                        }
+                    ],
+                    "index": 37.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        451,
+                        2710,
+                        2102,
+                        2805
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                2701,
+                                2105,
+                                2770
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2701,
+                                        1213,
+                                        2770
+                                    ],
+                                    "score": 0.974,
+                                    "content": "We then analyze the effect of the memory size",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1214,
+                                        2713,
+                                        1242,
+                                        2752
+                                    ],
+                                    "score": 0.8,
+                                    "content": "k",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1243,
+                                        2701,
+                                        2105,
+                                        2770
+                                    ],
+                                    "score": 0.992,
+                                    "content": "on the result. According to Figure 5,as the memory",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 42
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2750,
+                                2111,
+                                2815
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2750,
+                                        635,
+                                        2815
+                                    ],
+                                    "score": 0.981,
+                                    "content": "slot length",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        636,
+                                        2758,
+                                        666,
+                                        2797
+                                    ],
+                                    "score": 0.78,
+                                    "content": "k",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        667,
+                                        2750,
+                                        2111,
+                                        2815
+                                    ],
+                                    "score": 0.979,
+                                    "content": "decreases,the ICAE'sability to memorize longer samples significantly deteriorates.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43
+                        }
+                    ],
+                    "index": 42.5
+                }
+            ],
+            "page_idx": 0,
+            "page_size": [
+                2550,
+                3300
+            ],
+            "discarded_blocks": [
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        449,
+                        112,
+                        1223,
+                        157
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                108,
+                                1228,
+                                162
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        108,
+                                        1228,
+                                        162
+                                    ],
+                                    "score": 0.971,
+                                    "content": "Published as a conference paper at ICLR 2024",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        1260,
+                        3133,
+                        1286,
+                        3165
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                1254,
+                                3129,
+                                1292,
+                                3177
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1254,
+                                        3129,
+                                        1292,
+                                        3177
+                                    ],
+                                    "score": 1.0,
+                                    "content": "4",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        444,
+                        2835,
+                        2110,
+                        3051
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                496,
+                                2828,
+                                2111,
+                                2888
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        496,
+                                        2828,
+                                        2111,
+                                        2888
+                                    ],
+                                    "score": 0.979,
+                                    "content": "1Despite some (prompt,response) datasets such as Self-Instruct (Wang et al.,2022),most of their samples",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2875,
+                                2107,
+                                2924
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2875,
+                                        2107,
+                                        2924
+                                    ],
+                                    "score": 0.979,
+                                    "content": "eitherhave no context orveryshort contexts,whichare notsuitable forevaluation inour seting.Therefore,we",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2921,
+                                2089,
+                                2966
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2921,
+                                        2089,
+                                        2966
+                                    ],
+                                    "score": 0.978,
+                                    "content": "establish the PwC dataset with the helpof the GPT-4(OpenAI,2O23).We include the details inAppendix C.",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                498,
+                                2953,
+                                2110,
+                                3018
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        498,
+                                        2960,
+                                        578,
+                                        3006
+                                    ],
+                                    "score": 0.48,
+                                    "content": "^ 2 \\mathrm { E M }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        580,
+                                        2953,
+                                        2110,
+                                        3018
+                                    ],
+                                    "score": 0.986,
+                                    "content": "denotes the proportion of the exact matching prefix length to the total length.Fora context of 512",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                3000,
+                                2094,
+                                3057
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        3000,
+                                        1835,
+                                        3057
+                                    ],
+                                    "score": 0.976,
+                                    "content": "tokens,if its first 256 tokens are perfectly restored but its 257th token is not,the EMscore is",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1836,
+                                        3007,
+                                        2075,
+                                        3052
+                                    ],
+                                    "score": 0.89,
+                                    "content": "2 5 6 / 5 1 2 = 0 . 5",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        2076,
+                                        3003,
+                                        2094,
+                                        3053
+                                    ],
+                                    "score": 0.58,
+                                    "content": "：",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "para_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        355,
+                        2102,
+                        449
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                350,
+                                2107,
+                                415
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        350,
+                                        556,
+                                        415
+                                    ],
+                                    "score": 1.0,
+                                    "content": "where",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        558,
+                                        358,
+                                        970,
+                                        407
+                                    ],
+                                    "score": 0.92,
+                                    "content": "\\pmb { o } = ( w _ { L + 1 } , \\dots , w _ { L + N } )",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        971,
+                                        350,
+                                        2107,
+                                        415
+                                    ],
+                                    "score": 0.989,
+                                    "content": "denotes the continuation of context c. This objective helps improve",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                399,
+                                2019,
+                                457
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        399,
+                                        2019,
+                                        457
+                                    ],
+                                    "score": 0.988,
+                                    "content": "generalization and circumvent excessive reliance on, and overfiting to,the autoencoding task.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        }
+                    ],
+                    "index": 0.5,
+                    "bbox_fs": [
+                        439,
+                        350,
+                        2107,
+                        457
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        451,
+                        487,
+                        1050,
+                        534
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                483,
+                                1054,
+                                540
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        483,
+                                        1054,
+                                        540
+                                    ],
+                                    "score": 1.0,
+                                    "content": "2.3INSTRUCTIONFINE-TUNING",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        559,
+                        2107,
+                        791
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                560,
+                                2108,
+                                614
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        560,
+                                        2108,
+                                        614
+                                    ],
+                                    "score": 0.993,
+                                    "content": "After pretraining,the memory slots produced by the pretrained ICAE are expected to represent",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                603,
+                                2105,
+                                657
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        603,
+                                        2105,
+                                        657
+                                    ],
+                                    "score": 0.981,
+                                    "content": "the original context. However, for LLMs,the purpose of providing a context extends beyond rote",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                652,
+                                2111,
+                                705
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        652,
+                                        2111,
+                                        705
+                                    ],
+                                    "score": 0.988,
+                                    "content": "memorization or continuation; instead,the more common use scenario is using the provided context",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                689,
+                                2111,
+                                757
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        689,
+                                        2111,
+                                        757
+                                    ],
+                                    "score": 0.99,
+                                    "content": " as a basis for accurately and appropriately responding to various prompts, ultimately accomplishing",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                739,
+                                1625,
+                                795
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        739,
+                                        1625,
+                                        795
+                                    ],
+                                    "score": 0.976,
+                                    "content": "the tasks we want it to perform (Wei et al., 2021; Ouyang et al.,2022).",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        }
+                    ],
+                    "index": 5,
+                    "bbox_fs": [
+                        439,
+                        560,
+                        2111,
+                        795
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        813,
+                        2107,
+                        953
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                812,
+                                2107,
+                                866
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        812,
+                                        2107,
+                                        866
+                                    ],
+                                    "score": 0.988,
+                                    "content": "To enhance the interaction of memory slots produced by the ICAE with diverse prompts,we further",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                853,
+                                2112,
+                                915
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        853,
+                                        2112,
+                                        915
+                                    ],
+                                    "score": 0.988,
+                                    "content": "fine-tune the ICAE with the PwC dataset (Prompt-with-Context),a datasetl introduced in this paper",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                903,
+                                1897,
+                                960
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        903,
+                                        1897,
+                                        960
+                                    ],
+                                    "score": 0.988,
+                                    "content": "consisting of thousands of (context, prompt,response) samples (as shown in Figure 1).",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        }
+                    ],
+                    "index": 9,
+                    "bbox_fs": [
+                        439,
+                        812,
+                        2112,
+                        960
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        449,
+                        974,
+                        2107,
+                        1115
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                977,
+                                2107,
+                                1027
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        977,
+                                        2107,
+                                        1027
+                                    ],
+                                    "score": 0.971,
+                                    "content": "Formally,the ICAE is fine-tuned for learning to encode the context into the memory slots based on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1017,
+                                2111,
+                                1076
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1017,
+                                        1704,
+                                        1076
+                                    ],
+                                    "score": 0.987,
+                                    "content": "which the decoder (i.e., the target LLM) can produce a desirable response",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1705,
+                                        1029,
+                                        1851,
+                                        1068
+                                    ],
+                                    "score": 0.89,
+                                    "content": "r _ { 1 } \\ldots r _ { n }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1852,
+                                        1017,
+                                        2111,
+                                        1076
+                                    ],
+                                    "score": 0.984,
+                                    "content": "according to a",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1067,
+                                1478,
+                                1121
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1067,
+                                        676,
+                                        1121
+                                    ],
+                                    "score": 0.994,
+                                    "content": "given prompt",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        678,
+                                        1075,
+                                        835,
+                                        1115
+                                    ],
+                                    "score": 0.89,
+                                    "content": "p _ { 1 } \\ldots p _ { m }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        836,
+                                        1067,
+                                        1478,
+                                        1121
+                                    ],
+                                    "score": 0.945,
+                                    "content": ",asshown in Figure 8 in Appendix A:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        }
+                    ],
+                    "index": 12,
+                    "bbox_fs": [
+                        438,
+                        977,
+                        2111,
+                        1121
+                    ]
+                },
+                {
+                    "type": "interline_equation",
+                    "bbox": [
+                        712,
+                        1131,
+                        1836,
+                        1290
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                712,
+                                1131,
+                                1836,
+                                1290
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        712,
+                                        1131,
+                                        1836,
+                                        1290
+                                    ],
+                                    "score": 0.93,
+                                    "content": "\\begin{array} { r l } {  { \\mathcal { L } _ { \\mathrm { F T } } = \\operatorname* { m a x } _ { \\widetilde { m _ { 1 } } \\dots m _ { k } } P ( r _ { 1 } \\dots r _ { n } | \\widetilde { m _ { 1 } } \\dots m _ { k } , p _ { 1 } \\dots p _ { m } ; \\Theta _ { L L M } ) } } \\\\ & { = \\operatorname* { m a x } _ { \\Theta _ { L o R A } , e _ { m } } P ( r _ { 1 } \\dots r _ { n } | m _ { 1 } \\dots m _ { k } , p _ { 1 } \\dots p _ { m } ; \\Theta _ { L L M } , \\Theta _ { L o R A } , e _ { m } ) } \\end{array}",
+                                    "type": "interline_equation",
+                                    "image_path": "8cafd40b97918ccfce3a0f36bd8a7f2bcb98a8132ea61cd06a2ddc3c8f18b3bf.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15,
+                    "virtual_lines": [
+                        {
+                            "bbox": [
+                                712,
+                                1131,
+                                1836,
+                                1184.0
+                            ],
+                            "spans": [],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                712,
+                                1184.0,
+                                1836,
+                                1237.0
+                            ],
+                            "spans": [],
+                            "index": 15
+                        },
+                        {
+                            "bbox": [
+                                712,
+                                1237.0,
+                                1836,
+                                1290.0
+                            ],
+                            "spans": [],
+                            "index": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        1307,
+                        840,
+                        1359
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                435,
+                                1300,
+                                843,
+                                1368
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        1300,
+                                        843,
+                                        1368
+                                    ],
+                                    "score": 0.998,
+                                    "content": "3EXPERIMENTS",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        }
+                    ],
+                    "index": 17
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        447,
+                        1387,
+                        1004,
+                        1434
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                438,
+                                1381,
+                                1006,
+                                1442
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1381,
+                                        1006,
+                                        1442
+                                    ],
+                                    "score": 0.989,
+                                    "content": "3.1EXPERIMENTAL SETTING",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        }
+                    ],
+                    "index": 18
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        1460,
+                        2107,
+                        1692
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                1460,
+                                2107,
+                                1514
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1460,
+                                        2107,
+                                        1514
+                                    ],
+                                    "score": 0.982,
+                                    "content": "DataWe pretrain the ICAE with the Pile (Gao et al.,2O2O).For instruction fine-tuning,we use the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1504,
+                                2110,
+                                1561
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1504,
+                                        2110,
+                                        1561
+                                    ],
+                                    "score": 0.98,
+                                    "content": "PwC dataset,as introduced in Section 2.3,which contains 240k (context, prompt,response) samples",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1554,
+                                2107,
+                                1603
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1554,
+                                        2107,
+                                        1603
+                                    ],
+                                    "score": 0.982,
+                                    "content": "for training and 18k samples for testing.The context length distribution of test samples is shown in",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1594,
+                                2110,
+                                1653
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1594,
+                                        2110,
+                                        1653
+                                    ],
+                                    "score": 0.98,
+                                    "content": "Figure 10.By default,the maximal token length (excluding memory slots) we set during training is",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1640,
+                                1524,
+                                1697
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1640,
+                                        1524,
+                                        1697
+                                    ],
+                                    "score": 0.978,
+                                    "content": "512 in both the ICAE's encoder and decoder in our experiments.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        }
+                    ],
+                    "index": 21,
+                    "bbox_fs": [
+                        439,
+                        1460,
+                        2110,
+                        1697
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        1738,
+                        2106,
+                        1972
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1742,
+                                2107,
+                                1790
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1742,
+                                        2107,
+                                        1790
+                                    ],
+                                    "score": 0.978,
+                                    "content": "Model ConfigurationWe use the LlaMa (Touvron et al.,2O23a;b)as the target LLM to test the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1786,
+                                2108,
+                                1840
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1786,
+                                        2108,
+                                        1840
+                                    ],
+                                    "score": 0.968,
+                                    "content": "ICAE's performance in context compression. For the encoder of the ICAE,LoRA is applied to the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1831,
+                                2108,
+                                1891
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1831,
+                                        2108,
+                                        1891
+                                    ],
+                                    "score": 0.979,
+                                    "content": "query and value projections of the LLM's multi-head attention.In our default seting,the memory",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1869,
+                                2108,
+                                1937
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1869,
+                                        626,
+                                        1937
+                                    ],
+                                    "score": 0.991,
+                                    "content": "slotlength",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        627,
+                                        1882,
+                                        656,
+                                        1920
+                                    ],
+                                    "score": 0.82,
+                                    "content": "k",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        657,
+                                        1869,
+                                        1197,
+                                        1937
+                                    ],
+                                    "score": 0.99,
+                                    "content": "is set to 128,and the LoRA rank",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1198,
+                                        1887,
+                                        1223,
+                                        1920
+                                    ],
+                                    "score": 0.76,
+                                    "content": "r",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1224,
+                                        1869,
+                                        2108,
+                                        1937
+                                    ],
+                                    "score": 0.993,
+                                    "content": "is set to 128 unless otherwise specified. The resulting",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1924,
+                                1682,
+                                1977
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1924,
+                                        826,
+                                        1977
+                                    ],
+                                    "score": 1.0,
+                                    "content": "ICAEonlyaddsabout",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        827,
+                                        1927,
+                                        888,
+                                        1968
+                                    ],
+                                    "score": 0.86,
+                                    "content": "1 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        889,
+                                        1924,
+                                        1682,
+                                        1977
+                                    ],
+                                    "score": 0.97,
+                                    "content": "learnable parameters on top of the targetLLM.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        }
+                    ],
+                    "index": 26,
+                    "bbox_fs": [
+                        438,
+                        1742,
+                        2108,
+                        1977
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        2028,
+                        712,
+                        2074
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                436,
+                                2021,
+                                719,
+                                2081
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2021,
+                                        719,
+                                        2081
+                                    ],
+                                    "score": 0.995,
+                                    "content": "3.2RESULTS",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        }
+                    ],
+                    "index": 29
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        2088,
+                        934,
+                        2135
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                2084,
+                                938,
+                                2143
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2084,
+                                        938,
+                                        2143
+                                    ],
+                                    "score": 0.995,
+                                    "content": "3.2.1PRETRAINED ICAE",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        }
+                    ],
+                    "index": 30
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        451,
+                        2157,
+                        2103,
+                        2298
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2155,
+                                2111,
+                                2212
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2155,
+                                        2111,
+                                        2212
+                                    ],
+                                    "score": 0.994,
+                                    "content": "We first evaluate the autoencoding performance of the pretrained ICAE (without instruction fine-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2203,
+                                2111,
+                                2255
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2203,
+                                        2111,
+                                        2255
+                                    ],
+                                    "score": 0.982,
+                                    "content": "tuning)using the following three metrics to understand how wellit restores the original context from",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2246,
+                                2111,
+                                2302
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2246,
+                                        1619,
+                                        2302
+                                    ],
+                                    "score": 0.973,
+                                    "content": "its produced memory slots: BLEU (Papineni et al.,2002),Exact-Match",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1620,
+                                        2248,
+                                        1728,
+                                        2297
+                                    ],
+                                    "score": 0.7,
+                                    "content": "( \\mathrm { E M } ) ^ { 2 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1729,
+                                        2246,
+                                        2111,
+                                        2302
+                                    ],
+                                    "score": 0.974,
+                                    "content": "and cross entropy loss.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 33
+                        }
+                    ],
+                    "index": 32,
+                    "bbox_fs": [
+                        439,
+                        2155,
+                        2111,
+                        2302
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        2316,
+                        2108,
+                        2687
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                2322,
+                                2111,
+                                2369
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        2322,
+                                        2111,
+                                        2369
+                                    ],
+                                    "score": 0.981,
+                                    "content": "Figure 4 presents the autoencoding results of the ICAE based on the Llama-7b. The ICAE demon-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 34
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2365,
+                                2111,
+                                2418
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2365,
+                                        2111,
+                                        2418
+                                    ],
+                                    "score": 0.985,
+                                    "content": "strates avery low overalloss,below O.O5,indicating that the produced memory slots retain almost",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 35
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2411,
+                                2110,
+                                2464
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2411,
+                                        2110,
+                                        2464
+                                    ],
+                                    "score": 0.967,
+                                    "content": "all the information of the original context.When the context length is within 3Oo,the ICAE can",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 36
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2454,
+                                2111,
+                                2511
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2454,
+                                        1552,
+                                        2511
+                                    ],
+                                    "score": 0.993,
+                                    "content": "almost perfectly reconstruct the original context,achieving nearly",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1553,
+                                        2458,
+                                        1655,
+                                        2502
+                                    ],
+                                    "score": 0.86,
+                                    "content": "100 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1656,
+                                        2454,
+                                        2111,
+                                        2511
+                                    ],
+                                    "score": 0.957,
+                                    "content": "BLEU and EM scores. As",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 37
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2499,
+                                2110,
+                                2558
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2499,
+                                        2110,
+                                        2558
+                                    ],
+                                    "score": 0.973,
+                                    "content": "the context length increases beyond 4Oo,both BLEU and EM scores start to decline,indicating",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 38
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2549,
+                                2110,
+                                2602
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2549,
+                                        2110,
+                                        2602
+                                    ],
+                                    "score": 0.973,
+                                    "content": "insuficient capacityof the 128-length memory slots.However,evenatacontext length of 500,the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 39
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2591,
+                                2110,
+                                2649
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2591,
+                                        2110,
+                                        2649
+                                    ],
+                                    "score": 0.976,
+                                    "content": "median BLEU remains over 0.98,and the median EM approaches O.6 (e.g., perfectly reconstructing",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 40
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2637,
+                                2005,
+                                2692
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2637,
+                                        2005,
+                                        2692
+                                    ],
+                                    "score": 0.98,
+                                    "content": "about the first 30o words of a 512-token context),showing remarkable performance of ICAE.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 41
+                        }
+                    ],
+                    "index": 37.5,
+                    "bbox_fs": [
+                        438,
+                        2322,
+                        2111,
+                        2692
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        451,
+                        2710,
+                        2102,
+                        2805
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                2701,
+                                2105,
+                                2770
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2701,
+                                        1213,
+                                        2770
+                                    ],
+                                    "score": 0.974,
+                                    "content": "We then analyze the effect of the memory size",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1214,
+                                        2713,
+                                        1242,
+                                        2752
+                                    ],
+                                    "score": 0.8,
+                                    "content": "k",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1243,
+                                        2701,
+                                        2105,
+                                        2770
+                                    ],
+                                    "score": 0.992,
+                                    "content": "on the result. According to Figure 5,as the memory",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 42
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2750,
+                                2111,
+                                2815
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2750,
+                                        635,
+                                        2815
+                                    ],
+                                    "score": 0.981,
+                                    "content": "slot length",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        636,
+                                        2758,
+                                        666,
+                                        2797
+                                    ],
+                                    "score": 0.78,
+                                    "content": "k",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        667,
+                                        2750,
+                                        2111,
+                                        2815
+                                    ],
+                                    "score": 0.979,
+                                    "content": "decreases,the ICAE'sability to memorize longer samples significantly deteriorates.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43
+                        }
+                    ],
+                    "index": 42.5,
+                    "bbox_fs": [
+                        439,
+                        2701,
+                        2111,
+                        2815
+                    ]
+                }
+            ]
+        }
+    ],
+    "_backend": "pipeline",
+    "_version_name": "2.1.8"
+}

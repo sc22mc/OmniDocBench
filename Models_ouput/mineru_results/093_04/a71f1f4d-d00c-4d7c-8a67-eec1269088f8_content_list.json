@@ -1,0 +1,57 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/0bb2cd69cedc621e03878521d5f463c9c9223a74fa08f1b5880c391e377ab749.jpg",
+        "table_caption": [
+            "TABLEI PERFORMANCE INDICATORSUSED "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Indicator</td><td>Formula</td><td>Section</td></tr><tr><td>Precision (P)</td><td>TPFP</td><td>III,IV,V</td></tr><tr><td>Recall-sensitivity (R)</td><td>TPFN</td><td>III,IV,V</td></tr><tr><td>Specificity</td><td>TNFP</td><td>IV</td></tr><tr><td>Accuracy</td><td>TP+TN+TP+FN</td><td>IV,VII</td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td>AP</td><td>目</td></tr><tr><td>Intersection over union (IoU)</td><td>AOBI</td><td>ⅢI</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "of objects in images and is more accurate than many other detectors [28],[31], it tends to lose specimens (i.e.,high value of FN) and also to have a not negligible number ofFP.When testing SSD on ALL and ONLY,its precision score remains stable. The number of FP slightly increases in the ALL experiment, but not dramatically. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The DETR leverages the transformer architecture,originally designed for natural language processing tasks.It has emerged asa novel NN for object detection,comprising four main components:backbone,encoder, decoder,and prediction heads [32]. In our experiments,we employed ResNet-50 as the backbone, using a CNN to learn a 2-D representation of the input image. The model flattens this representation and supplements it with positional encoding before feeding itinto a transformer encoder. Subsequently, the encoded image data pass through an encoderdecoder structure and is then directed to the prediction heads. These prediction heads,based on feed-forward networks,predict eithera detection class and bounding box,ora NoObJECTclass (i.e.,background).We utilized the PyTorch implementation of DETR in our application,and the testing results are presented in Table II.As indicated, the recall is poor,resulting ina high number of FN.However, since itachieves the same $P$ forALL and ONLY, it follows model robust against empty patches. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "YOLOv5 stands out for its lightweight and fast computation capabilities,demanding less computational power compared with other current state-of-the-art algorithms while maintaining comparable performance [16].Although YOLOv5isoffered in several model sizes,in the following,we rely solely on the eXtra-large model(X) since itis the most powerful configuration to find fine-grain objects insidea frame due to its architecture. YOLOv5-X has been trained on our custom dataset by finetuning pretrained weights [33] on an NVIDIA RTX 3060 OC. The YOLOv5-X results are depicted in Table II. In principle, itsprecision on ONLY is considerably high,while it balances precision and recall on ALL. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "YOLOv9 [34] introduces some innovation with respect to its predecessor. Specifically,to improve accuracy, it introduces programmable gradient information (PGI） and the generalized efficient layer aggregation network (GELAN). PGI prevents data loss and ensures accurate gradient updates,whereas GELAN optimizes lightweight models with gradient path planning.We trained YOLOv9-T and YOLOv9-E using transfer learning. Table II gives that both models achieve notable performance.YOLOv9-T demonstrates a solid robustness against background-only patches,overcoming YOLOv9-E in all the metrics.Despite the previous observation,YOLOv9-E depicts significant detection ability. Notably，YOLOv9-T showcases simultneouslya high $\\mathrm { m A P _ { 0 . 5 } }$ and $\\mathrm { m A P _ { 0 . 5 } ^ { 0 . 9 5 } }$ ,setinginteresting confidences and IoU values,respectively. ",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/372bb103f551c410287353f047f2122d257283990a9464e2853d30be524ca0aa.jpg",
+        "table_caption": [
+            "TABLEII RESULTS FOR TESTING SSD,DETR,YOLOV5,YOLOV9,AND YOLOV10, $\\mathrm { W I T H } \\mathrm { I O U } = 0 . 5$ "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>model</td><td>P</td><td>R</td><td>mAP0.5</td><td>mAP85</td></tr><tr><td></td><td>SSD</td><td>ALL</td><td>65.5% 26.8%</td><td>57.4%</td><td>25.1%</td></tr><tr><td></td><td>ONLY</td><td>73.1%</td><td>26.8%</td><td>59.8%</td><td>26.3%</td></tr><tr><td>DETR</td><td>ANLY</td><td>81.8%</td><td>12.7%</td><td>50.9%</td><td>24.1%</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>8 YOLOv5-X</td><td>ALL</td><td>53.5%</td><td>54.8%</td><td>44.4%</td><td>29.0%</td></tr><tr><td></td><td></td><td>ONLY</td><td>95.1% 54.8%</td><td>52.0%</td><td>34.3%</td></tr><tr><td>=5</td><td>YOLOv9-T</td><td>ANLY</td><td></td><td>67.0%</td><td>37.0%</td></tr><tr><td></td><td></td><td>71.0%</td><td>61.0%</td><td></td><td></td></tr><tr><td>YOLOv9-E</td><td>ALL</td><td>57.50%</td><td>52.0%</td><td>51.0%</td><td>27.0%</td></tr><tr><td></td><td>ONLY</td><td>89.0%</td><td>52.0%</td><td>69.0%</td><td>37.0%</td></tr><tr><td>YOLOv10-N</td><td>ANLY</td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td>74.0%</td><td>60.0%</td><td>51.0%</td><td>23.0%</td></tr><tr><td rowspan=\"2\">YOLOv10-X</td><td>ALL</td><td>50.0%</td><td>64.0%</td><td>41.0%</td><td>19.0%</td></tr><tr><td>ONLY</td><td>79.0%</td><td>64.0%</td><td>72.0%</td><td>32.0%</td></tr><tr><td></td><td>SSD</td><td>ALL</td><td>62.5%</td><td>28.2% 56.7%</td><td>24.0%</td></tr><tr><td rowspan=\"3\">DETR</td><td>ONLY</td><td>71.4%</td><td>28.2%</td><td>60.6%</td><td>25.9%</td></tr><tr><td></td><td>73.3%</td><td>141%</td><td>54.%</td><td>25.8%</td></tr><tr><td>ANLLY</td><td></td><td></td><td></td><td></td></tr><tr><td>I0= YOLOv5-X</td><td></td><td>39.5%</td><td>62.0%</td><td></td><td></td></tr><tr><td></td><td>ANLY</td><td></td><td></td><td>48.7%</td><td>31.0%</td></tr><tr><td>C YOLOv9-T</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>ANLY</td><td>71.0%</td><td>66.0%</td><td>67.0%</td><td>36.0%</td></tr><tr><td>YOLOv9-E</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>ANLY</td><td>57.0%</td><td>62.0%</td><td>50.0%</td><td>26.0%</td></tr><tr><td>YOLOv10-N</td><td>ALL</td><td>74.0%</td><td>60.0%</td><td>50.0%</td><td>23.0%</td></tr><tr><td></td><td>ONLY</td><td>90.0%</td><td>60.0%</td><td>71.0%</td><td>33.0%</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>YOLOv10-X</td><td>ANLY</td><td>50.0%</td><td>64.0%</td><td>41.0%</td><td>19.0%</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Weextend our analysis to the latest release of YOLO family, namely,YOLOv10 [35]. The newest architecture offers a range ofmodel scales,but we decided to rely on YOLOv1o-Nand YOLOv10-X.One of the main improvements is the introduction of consistent dual assignments,which replaces nonmaximum suppression.Moreover,the developers introduced partial selfattention to boost the detection ability without any burdening oninference speed.As reported in Table II,YOLOv10 confirms its ability to recognize objects also in challenging environments showcasing interesting performance for both the models.Once again,despite YOLOv10-N is the lightest version,it outperforms YOLOv10-X demonstrating also a fair robustness against background-only patches.On the otherhand,YOLOv10-X gains limited knowledge on BMSB detection suggesting potential overfitting on training data. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Comparing all the NNs,SSD and DETR have performed almost the same obtaining a higher precision and a lower recall. SDD tends to miss fewerBMSB inside the frame than DETR, detectingat least the $\\approx 2 7 \\%$ of the total occurrences in contrast with thepoor $\\approx 1 3 \\%$ reachedbyDETR.BothSSDandDETR revealed asignificantrobustnessagainst background-only pixels because their performance is almost the same in the two sets, i.e.,ALL and ONLY.Moreover,DETR raised lessFP than SSD, ",
+        "page_idx": 0
+    }
+]

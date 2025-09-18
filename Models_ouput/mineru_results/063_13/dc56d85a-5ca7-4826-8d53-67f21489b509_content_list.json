@@ -1,0 +1,84 @@
+[
+    {
+        "type": "text",
+        "text": "By omitting pairs $( j , k )$ of $I \\times I$ satisfying $j + k = \\ell$ ,Lemma $\\overline { { 3 . 4 } }$ gives that ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/55092f6d5dcf63ba77ed270494b859a4ae711e4b968e58cd696e2337203c889a.jpg",
+        "text": "$$\nN - \\varphi ( \\ell ) ( q + 1 ) = \\sum _ { d | \\ell } \\sum _ { 1 \\leq t \\leq \\frac { \\ell } { d } , \\atop ( t , \\frac { \\ell } { d } ) = 1 } \\sum _ { ( j , k ) \\in S ^ { \\prime } ( d , t ) \\atop ( t , \\frac { \\ell } { d } ) = 1 } \\chi ( - 1 ) ^ { j + k } J ( \\chi ^ { j } , \\chi ^ { k } ) c _ { \\ell } ( 2 j + k ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For $( j , k ) \\in S ^ { \\prime } ( d , t )$ ,one has $( 2 j + k , \\ell ) = d$ and then $c _ { \\ell } ( 2 j + k ) = c _ { \\ell } ( d )$ by Corollary3.3] Thus, ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/2e2fc3b2035c953bbface45ccd93de47cc888bc01148bd85c64560b184f7606f.jpg",
+        "text": "$$\nN - \\varphi ( \\ell ) ( q + 1 ) = \\sum _ { d | \\ell } c _ { \\ell } ( d ) f ( d )\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/01efa94007aefd5f396e498680486a200eae50b8c22c3d6d6e69111e552ad74b.jpg",
+        "text": "$$\nf ( d ) = \\sum _ { \\stackrel { 1 \\leq t \\leq \\frac { \\ell } { d } } { ( t , \\frac { \\ell } { d } ) = 1 } } \\sum _ { ( j , k ) \\in S ^ { \\prime } ( d , t ) } \\chi ( - 1 ) ^ { j + k } J ( \\chi ^ { j } , \\chi ^ { k } ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We need to estimate $| f ( d ) |$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "By definition, every pair $( j , k )$ of $S ^ { \\prime } ( d , t )$ satisfies $j + k \\not \\equiv 0$ (mod $\\ell$ and thus $| J ( \\chi ^ { j } , \\chi ^ { k } ) | =$ $\\sqrt { q }$ by (v) of Lemma $\\boxed { 2 . 2 }$ Since $| \\chi ( - 1 ) | = 1$ , it follows that ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/07b0dfd56cc782e3b4c5e6451d667ec8b5c79d2d7aa90b8a429d3743adadf222.jpg",
+        "text": "$$\n\\vert f ( d ) \\vert \\leq \\sum _ { \\begin{array} { c } { 1 \\leq t \\leq \\frac { \\ell } { d } , } \\\\ { ( t , \\frac { \\ell } { d } ) = 1 } \\end{array} } \\vert S ^ { \\prime } ( d , t ) \\vert \\sqrt { q } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now, we compute $\\left| S ^ { \\prime } ( d , t ) \\right|$ . Observe that every pair $( j , k )$ in $S ^ { \\prime } ( d , t )$ is determined by （ $j \\in I$ with the proviso that $j + k \\neq \\ell$ .Thus,for $( j , k ) \\in I \\times I$ satisfying the congruence $2 j + k \\equiv t d$ (mod e） we have to exclude the pair $( j , k )$ with $j \\equiv t d$ (mod e). Note that $t d \\leq \\ell$ while $j \\le \\ell - 1$ , this congruence can occur only when $d \\not \\ni q$ and $j = t d$ .Moreover, as $k \\neq 0$ , we also need to exclude the case where $2 j \\equiv t d { \\mathrm { ~ ( m o d ~ } } \\ell { \\mathrm { ) } }$ . This depends on the parity of $\\ell$ . We discuss in the next paragraph to steer clear of confusing. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Suppose that $\\ell$ is odd. Let $s \\in I$ be such that $2 s \\equiv 1 { \\pmod { \\ell } }$ . Then, we need to exclude $j \\in I$ such that $j \\equiv s t d \\ ( \\mathrm { m o d } \\ \\ell )$ .If $d = \\ell$ ,then there is no such $j$ because $j \\not \\equiv 0$ (mod $\\ell$ ） When $d \\not \\ni q$ ,there is exactly one $j _ { 0 } \\in I$ satisfying $j _ { 0 } \\equiv s t d$ (mod e). Remember that we also have to exclude the case where $j = t d$ .As a consequence,if $\\ell$ is odd,then ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/279e373c894ee54920e694d96e02c34386c1661cdf81484de1cbdb46e811d6e8.jpg",
+        "text": "$$\n| S ^ { \\prime } ( d , t ) | = { \\left\\{ \\begin{array} { l l } { | I | } & { { \\mathrm { i f ~ } } d = \\ell ; } \\\\ { | I | - 2 } & { { \\mathrm { i f ~ } } d \\neq \\ell . } \\end{array} \\right. }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now we assume that $\\ell$ is even. There are three cases to consider: (i) $^ { t d }$ is odd, (ii) td is even and $d \\not \\ni q$ and (ii) $ t = 1 , d = \\ell$ .For case (i),since $t d$ is odd, there is no $j$ such that $2 j \\equiv t d$ (mod e). Only the case where $j = t d$ has to be excluded.For (ii) and (ii), we have that $t d$ is even and then there is some $j _ { 1 } \\in I$ such that $2 j _ { 1 } \\equiv t d$ (mod $\\ell$ ).In fact, we have $\\begin{array} { r } { j _ { 1 } \\equiv \\frac { t d } { 2 } } \\end{array}$ $( \\mathrm { m o d } ~ \\frac { \\ell } { 2 } )$ .If $d \\not \\ni q$ ,then either $\\begin{array} { r } { j _ { 1 } = \\frac { t d } { 2 } } \\end{array}$ or $\\begin{array} { r } { j _ { 1 } = \\frac { t d } { 2 } + \\frac { \\ell } { 2 } } \\end{array}$ and in particular, $j _ { 1 } \\neq t d$ in this case. If $d = \\ell$ ,then $t = 1$ and $j _ { 1 } = \\frac { \\ell } { 2 }$ .We conclude that ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/001325931cac8ee0a07c91387382632a0b905d098f990f724c5cd7a017950e8f.jpg",
+        "text": "$$\n| S ^ { \\prime } ( d , t ) | = \\left\\{ \\begin{array} { l l } { { | I | - 1 } } & { { \\mathrm { i f } d = \\ell ; } } \\\\ { { | I | - 1 } } & { { \\mathrm { i f } d \\ne \\ell \\mathrm { a n d } t d \\mathrm { i s } \\mathrm { o d d } ; } } \\\\ { { | I | - 3 } } & { { \\mathrm { o t h e r w i s e } . } } \\end{array} \\right.\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

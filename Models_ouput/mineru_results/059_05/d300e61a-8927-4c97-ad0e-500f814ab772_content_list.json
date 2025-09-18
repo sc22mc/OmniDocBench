@@ -1,0 +1,144 @@
+[
+    {
+        "type": "text",
+        "text": "probability distribution over the generic vocabulary $V _ { g }$ at the decoding time step $t$ is computed as, ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/c67cfdfb38475758ce55dafc4903f8c3f9fe6e749c26898b0058c47565d24980.jpg",
+        "text": "$$\nP _ { v _ { g } } = \\operatorname { s o f t m a x } \\big ( \\operatorname { F C } _ { 1 } ( \\mathbf { o } _ { t } ) \\big ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\mathrm { F C _ { 1 } }$ is a fully connected layer. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To calculate the probability distribution over the history-aware vocabulary $V _ { h }$ ,we adopt a maxpooling layer over the context-updated history memory $\\mathbf { C } _ { s }$ ,a fully connected layer,and a softmax function as follows, ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/188a30c76c0995660767338377750121467c402f6aa30c98ecae88d478b7a509.jpg",
+        "text": "$$\nP _ { v _ { h } } = \\mathrm { s o f t m a x } \\big ( \\mathrm { F C } _ { 2 } ( \\mathrm { m a x - p o o l i n g } ( \\mathbf { C } _ { s } ) ) \\big ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\mathrm { F C _ { 2 } }$ is a fully connected layer. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The final word probability distribution at time step $t$ is computed by using a switching mechanism between $P _ { v _ { g } }$ and $P _ { v _ { h } }$ as follows, ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/e37d059d8461aab685c3fe6d315bdf2e5e7e11bc1495069347d6c5c5195da476.jpg",
+        "text": "$$\nP = \\alpha _ { v _ { g } } * P _ { v _ { g } } + \\alpha _ { v _ { h } } * P _ { v _ { h } } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\alpha _ { v _ { g } }$ and $\\alpha _ { v _ { h } }$ is the switching probability of generating from generic vocabulary or copying from history conversations. $\\alpha _ { v _ { g } }$ and $\\alpha _ { v _ { h } }$ is calculated as follows, ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/2d7564ac21fe9fb4a2ce588dc751746fc2735958c48791ae65fc463097143083.jpg",
+        "text": "$$\n\\begin{array} { r } { \\left[ \\alpha _ { v _ { g } } , \\alpha _ { v _ { h } } \\right] = \\qquad } \\\\ { \\mathrm { s o f t m a x } \\big ( \\mathrm { F C } _ { 3 } ( [ o _ { j } ; \\mathrm { m a x - p o o l i n g } ( \\mathbf { C } _ { s } ) ] ) \\big ) , } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\mathrm { F C _ { 3 } }$ isa fully connected layer, and $[ ; ]$ isa concatenation operation over the last dimension. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.4Model Training ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We train the model to maximize the generation probability of the target response, given the current conversation context and history conversations in an end-to-end manner. The loss function ofHAHT is defined as, ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/7d8c1671022211e306869257f9a4781957b388281e730c103c6be2ec54334dde.jpg",
+        "text": "$$\n\\mathcal { L } = - \\sum _ { t = 1 } ^ { n _ { y } } \\log \\big ( P ( y _ { j } | X , H , y _ { < t } ) \\big ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $X$ denotes the current conversation context, $H$ denotes all history conversations, $y _ { < t }$ denotes tokens before time step $t$ ,and $n _ { y }$ denotes the length of the ground truth response. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4Experimental Settings ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this section,we introduce the experimental dataset, evaluationmetrics,baselinemethods,and model settings. ",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/b20f9e20c38b77b6c003ec124786a291f7837649f9c155fbfd87ca60e548cee3.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\">Session number</td><td colspan=\"2\">Train</td><td colspan=\"2\">Valid</td><td colspan=\"2\">Test</td></tr><tr><td>Conv.</td><td>Utter.</td><td>Conv.</td><td>Utter.</td><td>Conv.</td><td>Utter.</td></tr><tr><td>1</td><td>8939</td><td>131,438</td><td>1000</td><td>7,801</td><td>1015</td><td>6,634</td></tr><tr><td>2</td><td>4000</td><td>46,420</td><td>500</td><td>5,897</td><td>501</td><td>5,939</td></tr><tr><td>3</td><td>4000</td><td>47,259</td><td>500</td><td>5,890</td><td>501</td><td>5,924</td></tr><tr><td>4</td><td>1001</td><td>11,870</td><td>500</td><td>5,904</td><td>501</td><td>5,940</td></tr><tr><td>5</td><td>-</td><td>-</td><td>500</td><td>5,964</td><td>501</td><td>5,945</td></tr><tr><td>Total</td><td></td><td>236,987</td><td>-</td><td>31,456</td><td>-</td><td>30,382</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Table1:The statistics ofFacebook Multi-Session Chat (Facebook MSC) Dataset. Session number $i$ indicates there are $i - 1$ history conversation sessions that happen before the last conversation session.\\*:Session 1 does not contain history conversation sessions. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.1Experimental Dataset ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The experiments are performed on a large dataset, i.e.,FacebookMULTI-SESSIONCHAT(Facebook MSC) (Xu et al., 2022). It is a crowdsourced dataset consisting of multi-session conversations, where the interlocutors learn about each other's interests and discuss the things they have understood from past sessions.The number of history conversationsinFacebook MSC varies from1 to 4. Session number $i$ indicates there are i-1 history conversations happening before the last conversation session. The statistics of theFacebookMSC datasetare summarized in Table 1.As session 1 doesnot have history conversations,we evaluate our model on session 2-5. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.2Evaluation Metrics ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We conduct both automatic and human evaluations to demonstrate the effectiveness of the proposed model. For automatic evaluations,we leverage BLEU-2,BLEU-3 (Papineni et al., 2002)，and ROUGE-L (Lin and Och, 2004) to measure word overlaps between the generated response text and ground truth text. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Moreover, we also randomly sample 5O MSCs from the test set to conduct human evaluations. We present all the history conversation sessions, current conversation context,and the generated responses to three well-educated annotators. The annotators will evaluate the quality of the generated responses from the following three aspects: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "·Readability: measures whether the generated responsesare natural and fluent. · Context Relevancy: measures whether the generated responses are correlated with the current conversation context. ·History Relevancy: measures whether the generated responses are correlated with history con",
+        "page_idx": 0
+    }
+]

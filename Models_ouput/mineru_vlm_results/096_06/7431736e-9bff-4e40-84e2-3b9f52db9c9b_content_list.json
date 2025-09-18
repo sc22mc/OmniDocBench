@@ -1,0 +1,87 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/0cb1f12e0a966c1c6168069a4a21a7fff13dedb3d7e52bcde7c18d3b632aa344.jpg",
+        "table_caption": [
+            "Table 5. Distribution of the number of unique axes  $(\\%)$"
+        ],
+        "table_footnote": [
+            "1 SL-MH, SL-PB, SP360, and HoliCity all have the same distribution of the number of unique axes shown in this table"
+        ],
+        "table_body": "<table><tr><td rowspan=\"2\">Dataset¹</td><td colspan=\"8\">Number of unique axes</td></tr><tr><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>Train</td><td>0.0</td><td>1.3</td><td>13.5</td><td>25.7</td><td>24.8</td><td>18.8</td><td>10.9</td><td>5.1</td></tr><tr><td>Test</td><td>0.0</td><td>1.4</td><td>12.8</td><td>25.7</td><td>25.6</td><td>19.6</td><td>10.2</td><td>4.6</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Ignoring back labels. After removing label ambiguity, we ignored back labels because the training and test sets had only  $0.1\\%$  and  $0.3\\%$  back labels, respectively. Therefore, the VP estimator detected 13 points, that is, the five VPs (front, left, right, top, and bottom) and eight ADPs in Table 2. If all VP/ADPs are successfully detected, our method can estimate a unique rotation for over  $98\\%$  images with two or more unique axes from the VP/ADPs in Table 5.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.3. Parameter settings",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Following [53], we fixed the image sensor height to 24 mm,  $d_{u} = d_{v}$ , used the principal points  $(c_{u}, c_{v})$  as the image center, and the translation vectors  $\\mathbf{t}$  as the zero vectors. Therefore, in our method, we focused on the estimation of five camera parameters, that is, focal length  $f$ , distortion coefficient  $k_{1}$ , pan angle  $\\phi$ , tilt angle  $\\theta$ , and roll angle  $\\psi$  in a Manhattan world. We independently trained the VP estimator and distortion estimator using a minibatch size of 32. We optimized the VP estimator, which was pretrained on ImageNet [42], using the Adam optimizer [17] and Random Erasing augmentation [62] with  $(p, s_{l}, s_{h}, r_{1}, r_{2}) = (0.5, 0.02, 0.33, 0.3, 3.3)$ . The initial learning rate was set to  $1 \\times 10^{- 4}$  and was multiplied by 0.1 at the 100th epoch. We also trained the distortion estimator pretrained on Wakai et al.'s original network [53] using the RAdam optimizer [31] with a learning rate of  $1 \\times 10^{- 5}$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.4. Experimental results",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We implemented the comparison methods according to the corresponding papers but trained them on SL- MH, SL- PB, SP360, and HoliCity.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.4.1 Vanishing point estimation",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To demonstrate the validity and effectiveness of the proposed VP estimator, we used pose estimation metrics and the distance error between the detected and ground- truth VP/ADPs. Following [7], we used the standard keypoint metrics of the average precision (AP) and average recall (AR) [47] with a 5.6- pixel  $sk_{i}$  object keypoint similarity [36] as well as the percentage of correct keypoints (PCK) [2] with a 5.6- pixel distance threshold, which corresponds to  $1 / 10$ th of the heatmap height.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Overall, the VP estimator detected the VP/ADPs, although the performance in the cross- domain evaluation de creased, as Table 6 reveals. The AP, AR, and PCK results suggest that VP/ADP estimation is an easier task than human pose estimation because the VP/ADPs have the implicit constraints of the geometric coordinates shown in Figure 3. Table 6 also reveals that ADP detection is more difficult than VP detection because VPs generally have specific appearances at infinity. In terms of distance errors, the VP estimator addressed the various directions of VP/ADPs. In addition, considering the qualitative results in Figure 5, the VP estimator stably detected VP/ADPs in the entire image. Therefore, the VP estimator can precisely detect VP/ADPs from a fisheye image.",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/ef7b4370b3148566bf718209dcbf495a8ae78ed4920aee8aa53ce5ca87e0f629.jpg",
+        "image_caption": [
+            "Figure 5. Qualitative results of VP/ADP detection using the proposed VP estimator on the SL-MH test set. The VP estimator estimated five VP and eight ADP heatmaps for each VP/ADP."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.4.2 Parameter and reprojection errors",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To validate the accuracy of the camera parameters, we compared our method with conventional methods that estimate both rotation and distortion. Following [53], we evaluated the mean absolute error and reprojection error (REPE). Our method achieved the lowest mean absolute angle error and REPE of the methods listed in Table 7. The pan- angle errors in our method using HRNet- W32 for the VP estimator are substantially smaller than those of Lochman et al.'s method [32] by  $20.16^{\\circ}$  on the SL- MH test set. Our method achieved  $3.15^{\\circ}$  and  $3.00^{\\circ}$  errors for the tilt and roll angles, respectively, outperforming the other methods. We evaluated our method using HRNet- W48 (a larger backbone) and obtained a slight RMSE improvement of 0.16 pixels with respect to the RMSE obtained using HRNet- W32.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The Pritts et al.'s [41] and Lochman et al.'s [32] methods could not perform calibration for some images because of a lack of arcs. In particular, Lochman et al.'s method [32] had a  $59.1\\%$  executable rate, that is, the number of successful executions divided by the number of all images. Note that we calculated errors using only these successful executions. By contrast, our learning- based method can ad",
+        "page_idx": 0
+    }
+]

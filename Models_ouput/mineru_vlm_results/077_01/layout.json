@@ -1,0 +1,769 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        413,
+                        363,
+                        2078,
+                        511
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                413,
+                                363,
+                                2078,
+                                511
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        413,
+                                        363,
+                                        2078,
+                                        511
+                                    ],
+                                    "type": "text",
+                                    "content": "Timewarp: Transferable Acceleration of Molecular Dynamics by Learning Time-Coarsened Dynamics"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        252,
+                        656,
+                        2228,
+                        762
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                252,
+                                656,
+                                2228,
+                                762
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        252,
+                                        656,
+                                        2228,
+                                        762
+                                    ],
+                                    "type": "text",
+                                    "content": "Leon Klein \\*12 Andrew Y. K. Foong \\*1 Tor Erlend Fjelde \\*13 Bruno Mlodozeniec \\*13 Marc Brockschmidt Sebastian Nowozin Frank Noe 124 Ryota Tomioka 1"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        619,
+                        851,
+                        813,
+                        904
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                619,
+                                851,
+                                813,
+                                904
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        619,
+                                        851,
+                                        813,
+                                        904
+                                    ],
+                                    "type": "text",
+                                    "content": "Abstract"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        308,
+                        927,
+                        1129,
+                        2369
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                308,
+                                927,
+                                1129,
+                                2369
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        308,
+                                        927,
+                                        1129,
+                                        2369
+                                    ],
+                                    "type": "text",
+                                    "content": "Molecular dynamics (MD) simulation is a widely used technique to simulate molecular systems, most commonly at the all- atom resolution where the equations of motion are integrated with timesteps on the order of femtoseconds "
+                                },
+                                {
+                                    "bbox": [
+                                        308,
+                                        927,
+                                        1129,
+                                        2369
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(1\\mathrm{fs} ="
+                                },
+                                {
+                                    "bbox": [
+                                        308,
+                                        927,
+                                        1129,
+                                        2369
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "10^{- 15}\\mathrm{s})"
+                                },
+                                {
+                                    "bbox": [
+                                        308,
+                                        927,
+                                        1129,
+                                        2369
+                                    ],
+                                    "type": "text",
+                                    "content": " . MD is often used to compute equilibrium properties, which requires sampling from an equilibrium distribution such as the Boltzmann distribution. However, many important processes, such as binding and folding, occur over timescales of milliseconds or beyond, and cannot be efficiently sampled with conventional MD. Furthermore, new MD simulations need to be performed from scratch for each molecular system studied. We present Timewarp, an enhanced sampling method which uses a normalising flow as a proposal distribution in a Markov chain Monte Carlo method targeting the Boltzmann distribution. The flow is trained offline on MD trajectories and learns to make large steps in time, simulating the molecular dynamics of "
+                                },
+                                {
+                                    "bbox": [
+                                        308,
+                                        927,
+                                        1129,
+                                        2369
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "10^{5} - 10^{6}"
+                                },
+                                {
+                                    "bbox": [
+                                        308,
+                                        927,
+                                        1129,
+                                        2369
+                                    ],
+                                    "type": "text",
+                                    "content": " fs. Crucially, Timewarp is transferable between molecular systems: once trained, we show that it generalises to unseen small peptides (2- 4 amino acids), exploring their metastable states and providing wallclock acceleration when sampling compared to standard MD. Our method constitutes an important step towards developing general, transferable algorithms for accelerating MD."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        229,
+                        2465,
+                        548,
+                        2521
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                229,
+                                2465,
+                                548,
+                                2521
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        229,
+                                        2465,
+                                        548,
+                                        2521
+                                    ],
+                                    "type": "text",
+                                    "content": "1. Introduction"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        224,
+                        2554,
+                        1206,
+                        2702
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                2554,
+                                1206,
+                                2702
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        2554,
+                                        1206,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": "Molecular dynamics (MD) is a well- established technique for simulating physical systems at the atomic level. When performed accurately, it provides unrivalled insight into "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1277,
+                                1650,
+                                2261,
+                                2293
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1650,
+                                        2261,
+                                        2293
+                                    ],
+                                    "type": "text",
+                                    "content": "the detailed mechanics of molecular motion, without the need for wet lab experiments. MD simulations have been used to understand processes of central interest in molecular biophysics, such as protein folding (Noé et al., 2009; Lindorff- Larsen et al., 2011), protein- ligand binding (Buch et al., 2011), and protein- protein association (Plattner et al., 2017). Many crucial applications of MD boil down to efficiently sampling from the Boltzmann distribution, i.e., the equilibrium distribution of a molecular system at a temperature "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1650,
+                                        2261,
+                                        2293
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "T"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1650,
+                                        2261,
+                                        2293
+                                    ],
+                                    "type": "text",
+                                    "content": ". Let "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1650,
+                                        2261,
+                                        2293
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(x^{p}(t),x^{v}(t))\\coloneqq x(t)\\in \\mathbb{R}^{6N}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1650,
+                                        2261,
+                                        2293
+                                    ],
+                                    "type": "text",
+                                    "content": " be the state of the molecule at time "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1650,
+                                        2261,
+                                        2293
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1650,
+                                        2261,
+                                        2293
+                                    ],
+                                    "type": "text",
+                                    "content": ", consisting of the positions "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1650,
+                                        2261,
+                                        2293
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{p}(t)\\in \\mathbb{R}^{3N}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1650,
+                                        2261,
+                                        2293
+                                    ],
+                                    "type": "text",
+                                    "content": " and velocities "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1650,
+                                        2261,
+                                        2293
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{v}(t)\\in \\mathbb{R}^{3N}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1650,
+                                        2261,
+                                        2293
+                                    ],
+                                    "type": "text",
+                                    "content": " of the "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1650,
+                                        2261,
+                                        2293
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1650,
+                                        2261,
+                                        2293
+                                    ],
+                                    "type": "text",
+                                    "content": " atoms in Cartesian coordinates. The Boltzmann distribution is given by:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1315,
+                        841,
+                        2203,
+                        1244
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1315,
+                                841,
+                                2203,
+                                1244
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1315,
+                                        841,
+                                        2203,
+                                        1244
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1315,
+                                                841,
+                                                2203,
+                                                1244
+                                            ],
+                                            "type": "image",
+                                            "image_path": "ac7a20e9d38c2fced3615298d724af7d0044af7b98441e5b89064c8f56945434.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 6,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1275,
+                                1353,
+                                2264,
+                                1580
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        1353,
+                                        2264,
+                                        1580
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1275,
+                                                1353,
+                                                2264,
+                                                1580
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 1. Initial state "
+                                        },
+                                        {
+                                            "bbox": [
+                                                1275,
+                                                1353,
+                                                2264,
+                                                1580
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "x(t)"
+                                        },
+                                        {
+                                            "bbox": [
+                                                1275,
+                                                1353,
+                                                2264,
+                                                1580
+                                            ],
+                                            "type": "text",
+                                            "content": " (Left) and accepted proposal state "
+                                        },
+                                        {
+                                            "bbox": [
+                                                1275,
+                                                1353,
+                                                2264,
+                                                1580
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "x(t+"
+                                        },
+                                        {
+                                            "bbox": [
+                                                1275,
+                                                1353,
+                                                2264,
+                                                1580
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "\\tau)\\sim p_{\\theta}(x(t + \\tau)|x(t))"
+                                        },
+                                        {
+                                            "bbox": [
+                                                1275,
+                                                1353,
+                                                2264,
+                                                1580
+                                            ],
+                                            "type": "text",
+                                            "content": " (Right) sampled from Timewarp for the tenispeptide LAKs (not in trainset). The proposed state undergoes a large conformational change relative to the initial state, traversing from one metastable state to another."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 7,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1650,
+                        2261,
+                        2293
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 8,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1374,
+                        2306,
+                        2254,
+                        2399
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1374,
+                                2306,
+                                2254,
+                                2399
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1374,
+                                        2306,
+                                        2254,
+                                        2399
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\begin{array}{r}\\mu (x^p,x^v)\\propto \\exp \\left(-\\frac{1}{k_BT} (U(x^p) + K(x^v))\\right), \\end{array} \\tag{1}",
+                                    "image_path": "5fa5299ff6fea2127055184519d4ba36134695de247843ac93635ba8933c066a.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        1275,
+                        2418,
+                        2261,
+                        2719
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1275,
+                                2418,
+                                2261,
+                                2719
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2418,
+                                        2261,
+                                        2719
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2418,
+                                        2261,
+                                        2719
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "U(x^{p})"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2418,
+                                        2261,
+                                        2719
+                                    ],
+                                    "type": "text",
+                                    "content": " is the potential energy, "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2418,
+                                        2261,
+                                        2719
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "K(x^{v})"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2418,
+                                        2261,
+                                        2719
+                                    ],
+                                    "type": "text",
+                                    "content": " is the kinetic energy, and "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2418,
+                                        2261,
+                                        2719
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "k_{B}"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2418,
+                                        2261,
+                                        2719
+                                    ],
+                                    "type": "text",
+                                    "content": " is Boltzmann's constant. In practice we are interested in the marginal distribution of the positions, "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2418,
+                                        2261,
+                                        2719
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mu (x^{p})"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2418,
+                                        2261,
+                                        2719
+                                    ],
+                                    "type": "text",
+                                    "content": ". Many important quantities, such as the free energies associated with protein folding and protein- ligand binding, can be computed as expectations under "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2418,
+                                        2261,
+                                        2719
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mu (x^{p})"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2418,
+                                        2261,
+                                        2719
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1275,
+                        2745,
+                        2259,
+                        2894
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1275,
+                                2745,
+                                2259,
+                                2894
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2745,
+                                        2259,
+                                        2894
+                                    ],
+                                    "type": "text",
+                                    "content": "A popular method in MD to sample from the Boltzmann distribution is Langevin dynamics (Langevin, 1908), which obeys the following stochastic differential equation (SDE):"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1292,
+                        2910,
+                        2254,
+                        2976
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1292,
+                                2910,
+                                2254,
+                                2976
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1292,
+                                        2910,
+                                        2254,
+                                        2976
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "m_{i}\\mathrm{d}x_{i}^{v} = -\\nabla_{i}U\\mathrm{d}t - \\gamma m_{i}x_{i}^{v}\\mathrm{d}t + \\sqrt{2m_{i}\\gamma k_{B}T}\\mathrm{d}B_{t}. \\tag{2}",
+                                    "image_path": "4848fa31522857dc9d23371bcc5f4849d78d0956c137739edec60d4da93fd5d9.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

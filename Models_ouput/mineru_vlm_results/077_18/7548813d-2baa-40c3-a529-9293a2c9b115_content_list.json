@@ -1,0 +1,33 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/102d9b287a7d57856d043d41d14edfffdc1c638ec90feda1c361be6ee44af621.jpg",
+        "table_caption": [
+            "Table 5. Timewarp loss weighting factors"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Dataset</td><td>Llik(θ)</td><td>Lacc(θ)</td><td>Lent(θ)</td></tr><tr><td>AD</td><td>0.99</td><td>0.01</td><td>0.1</td></tr><tr><td>2AA</td><td>0.9</td><td>0.1</td><td>0.1</td></tr><tr><td>4AA</td><td>1</td><td>0</td><td>0</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/16ea88dd5fd3e250d4a66771358c6008079f746dbd248cc58f03d728f5b28acd.jpg",
+        "table_caption": [
+            "Table 6. Timewarp training parameters"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Dataset + training method</td><td>Batch size</td><td>No. of A-100s</td><td>Training time</td></tr><tr><td>AD — likelihood</td><td>256</td><td>1</td><td>1 week</td></tr><tr><td>AD — acceptance</td><td>64</td><td>1</td><td>2 days</td></tr><tr><td>2AA — likelihood</td><td>256</td><td>4</td><td>2 weeks</td></tr><tr><td>2AA — acceptance</td><td>256</td><td>4</td><td>4 days</td></tr><tr><td>4AA — likelihood</td><td>256</td><td>4</td><td>3 weeks</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "F. Computing infrastructure",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The training was performed on 4 NVIDIA A- 100 GPUs for the 2AA and 4AA datasets and on a single NVIDIA A- 100 GPU for the AD dataset. Inference with the model as well as all MD simulations were conducted on single NVIDIA V- 100 GPUs for AD and 2AA, and on single NVIDIA A- 100 GPUs for 4AA.",
+        "page_idx": 0
+    }
+]

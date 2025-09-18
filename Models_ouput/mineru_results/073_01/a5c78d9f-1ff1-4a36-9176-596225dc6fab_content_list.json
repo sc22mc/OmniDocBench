@@ -1,0 +1,45 @@
+[
+    {
+        "type": "text",
+        "text": "Learning in Multi-Memory Games Triggers Complex Dynamics Diverging from Nash Equilibrium ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "KaitoAriu CyberAgent,Inc./KTH kaito_ariu@cyberagent.co.jp ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Yuma Fujimoto Research Center for Integrative Evolutionary Science,   \nSOKENDAI (The Graduate University for Advanced Studies).   \nUniversal Biology Institute (UBI), the University of Tokyo. CyberAgent,Inc. fujimoto_yuma@soken.ac.jp Kenshi Abe CyberAgent, Inc. abe_kenshi@cyberagent.co.jp ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Repeated games consider a situation where multiple agents are motivated by their independent rewards throughout learning. In general,the dynamics of their learning become complex. Especially when their rewards compete with each other like zero-sum games,the dynamics often do not converge to their optimum,i.e.,Nash equilibrium.To tackle such complexity,many studies haveunderstoodvarious learning algorithms as dynamical systems and discovered qualitative insights among the algorithms.However, such studies have yet to handle multi-memory games (where agents can memorize actions they played in the past and choose their actions based on their memories),even though memorization plays a pivotal role in artificial inteligence and interpersonal relationship.This study extends two major learning algorithms in games,i.e.,replicator dynamics and gradient ascent,into multi-memory games.Then, we prove their dynamicsare identical.Furthermore,theoretically and experimentally,we clarify that the learning dynamics diverge from the Nash equilibrium in multi-memory zero-sum games and reach heteroclinic cycles (sojourn longer around the boundary of the strategy space),providing a fundamental advance in learning in games. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1Introduction ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Repeated game models that multiple agents aim to optimize their objective functions based ona normal-form game[1].It is known that in this game,the setofoptimalstrategies forallthe agents always exists as Nash equilibria [2].Various algorithms with which each agent achieves its optimal strategy have been proposed, such as Cross learning [3],replicator dynamics [4,5],gradient ascent[6,7,8,9],Q-learning[10,11,12], and so on. In zero-sum games where two agents have conflicts in their benefits,however,the above learning algorithms cannot converge to their equilibrium [13,14].Indeed,the dynamics of learning draw a loop around the equilibrium point,even though the shape of the trajectory differs more or less depending on the algorithm.Thus,solving the dynamics around the Nash equilibrium is a touchstone for discussng whether the learningworkswell. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Currently,several studies attempt to understand trajectoriesof multi-agent learning by integrating various crossdisciplinaylgorithms[15,16,17,18].Forexample,ifwetakeaninfinitesimalstepsizeofleaing, Cross learning draws the same trajectory as a replicator dynamics.The replicator dynamics can be interpreted as the weighted version of infinitesimal gradient ascent.Furthermore,Q-learning differs only in the extra term of exploration with the replicator dynamics.Another study has shown a relationship between the replicator dynamicsand Q-learning by introducing a generalized regularizer which puls the strategy back to the probabilistic simplex at the shortest distance [13].Like these studies,it is important to understand the trajectory of multi-agent learning theoretically. ",
+        "page_idx": 0
+    }
+]

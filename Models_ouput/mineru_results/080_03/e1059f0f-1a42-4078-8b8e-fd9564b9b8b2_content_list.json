@@ -1,0 +1,31 @@
+[
+    {
+        "type": "text",
+        "text": "admits any carefully synchronizing word. For a given $\\mathcal { A }$ we define its power automaton (which is itself a PFA) as $\\mathcal { P } ( \\mathcal { A } ) = ( 2 ^ { Q } , \\Sigma , \\tau )$ ，where $2 ^ { Q }$ stands for the set of all subsets of $Q$ ，and $\\Sigma$ is the same as in $\\mathcal { A }$ . The transition function $\\tau : 2 ^ { Q } \\times \\Sigma  2 ^ { Q }$ is defined as follows.Let $Q ^ { \\prime } \\subseteq Q$ For every $a \\in \\Sigma$ we define $\\begin{array} { r } { \\tau ( Q ^ { \\prime } , a ) = \\bigcup _ { q \\in Q ^ { \\prime } } \\delta ( q , a ) } \\end{array}$ if $\\delta ( q , a )$ is defined for all states $q \\in Q ^ { \\prime }$ ,otherwise $\\tau ( Q ^ { \\prime } , a )$ isnot defined.Wealso note $Q . w$ as an action of a word $w$ ona set of states $Q$ under the function $\\delta$ .Let $S \\subseteq Q$ . Then we denote $S . w ^ { - 1 }$ as a preimage of $S$ under theaction ofaword $w$ ： ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We note that the above concepts can also be considered for deterministic $\\mathit { \\Delta } f$ niteautomata (DFA),for which the transition function is total. We define an $a$ -cluster tobea DFA $\\mathcal { A } = ( Q , \\{ a \\} , \\delta )$ such that the automaton is connected. In other words it means that such automaton is a cycle on letter $a$ with paths that leads to the states of that cycle. The set of states that induce a cycle in the $a$ -clusterisreferred toas the center of the cluster.The depth of the cluster is the length of the longest path to the center of the cluster.If $q$ belongs to the center of the $a$ -cluster,thebranchofthestate $q$ arethestatesthathasapath to $q$ that does not have any other state belonging to the center.Destination of the branch is a state in the center that has an in-transition from the last state ofthebranch.Exampleof the $a$ -clusterisdepicted onFigure1. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/9822dd38d541430bb26c0637dd957d1913e26c686b3544d56f3f3fe31b21ba87.jpg",
+        "image_caption": [
+            "Figure 1: Example of the $a$ -cluster "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Center of that $a$ -cluster is the set $\\{ 3 , 4 , 5 , 6 \\}$ ,thedepthis2and thereare two branches: $b _ { 1 } = \\{ 1 , 2 \\}$ and $b _ { 2 } = \\{ 7 \\}$ .Destination of the branch $b _ { 1 }$ isthe state3and of the branch $b _ { 2 }$ is state 4. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Wedefine the sum of two automata $\\mathcal { A } = ( Q _ { 1 } , \\Sigma _ { 1 } , \\delta _ { 1 } )$ and $\\boldsymbol { B } = ( Q _ { 2 } , \\Sigma _ { 2 } , \\delta _ { 2 } )$ as $\\mathcal { A } \\cup \\mathcal { B } = ( Q _ { 1 } \\cup Q _ { 2 } , \\Sigma _ { 1 } \\cup \\Sigma _ { 2 } , \\delta _ { 1 } \\cup \\delta _ { 2 } )$ .We can now state the obvious fact,useful to decide whether a given PFA is carefully synchronizing. ",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,3083 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        353,
+                        2068,
+                        1013
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                349,
+                                2048,
+                                395
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        349,
+                                        2048,
+                                        395
+                                    ],
+                                    "score": 0.981,
+                                    "content": "In this paper，we show an avenue for aligning language models with user",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                386,
+                                1959,
+                                439
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        386,
+                                        1959,
+                                        439
+                                    ],
+                                    "score": 0.993,
+                                    "content": "intent on a wide range of tasks by fine-tuning with human feedback.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                430,
+                                1981,
+                                476
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        430,
+                                        1981,
+                                        476
+                                    ],
+                                    "score": 0.995,
+                                    "content": "Starting with a set of labeler-written prompts and prompts submitted",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                473,
+                                2023,
+                                519
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        473,
+                                        2023,
+                                        519
+                                    ],
+                                    "score": 0.969,
+                                    "content": "through the OpenAI API,we collect a dataset of labeler demonstrations",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                513,
+                                1981,
+                                560
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        513,
+                                        1981,
+                                        560
+                                    ],
+                                    "score": 0.97,
+                                    "content": "of the desired model behavior，which we use to fine-tune GPT-3 using",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                558,
+                                1959,
+                                599
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        558,
+                                        1959,
+                                        599
+                                    ],
+                                    "score": 0.984,
+                                    "content": "supervised learning.We then collect a dataset of rankings of model",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                594,
+                                2030,
+                                648
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        594,
+                                        2030,
+                                        648
+                                    ],
+                                    "score": 0.981,
+                                    "content": "outputs, which we use to further fine-tune this supervised model using",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                640,
+                                2070,
+                                687
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        640,
+                                        2070,
+                                        687
+                                    ],
+                                    "score": 0.995,
+                                    "content": "reinforcement learning from human feedback.We call the resulting models",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                675,
+                                2007,
+                                730
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        675,
+                                        2007,
+                                        730
+                                    ],
+                                    "score": 0.967,
+                                    "content": "InstructGPT. In human evaluations on our prompt distribution, outputs",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                718,
+                                2053,
+                                770
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        718,
+                                        2053,
+                                        770
+                                    ],
+                                    "score": 0.991,
+                                    "content": "from the 1.3B parameter InstructGPT model are preferred to outputs from",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                757,
+                                1866,
+                                815
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        757,
+                                        1139,
+                                        815
+                                    ],
+                                    "score": 0.987,
+                                    "content": "the175BGPT-3，despitehaving",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1140,
+                                        765,
+                                        1238,
+                                        805
+                                    ],
+                                    "score": 0.6,
+                                    "content": "{ 1 0 0 } \\mathrm { { x } }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1240,
+                                        757,
+                                        1866,
+                                        815
+                                    ],
+                                    "score": 0.986,
+                                    "content": "fewer parameters.Moreover,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                805,
+                                2027,
+                                852
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        805,
+                                        2027,
+                                        852
+                                    ],
+                                    "score": 0.983,
+                                    "content": "InstructGPT models show improvements in truthfulness and reductions in",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                846,
+                                2048,
+                                893
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        846,
+                                        2048,
+                                        893
+                                    ],
+                                    "score": 0.992,
+                                    "content": "toxic output generation while having minimal performance regressions on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                886,
+                                1870,
+                                933
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        886,
+                                        1870,
+                                        933
+                                    ],
+                                    "score": 0.985,
+                                    "content": "public NLP datasets.Even though InstructGPT still makes simple",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                929,
+                                1983,
+                                975
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        929,
+                                        1983,
+                                        975
+                                    ],
+                                    "score": 0.981,
+                                    "content": "mistakes,our results show that fine-tuning with human feedback isa",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                970,
+                                1959,
+                                1018
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        970,
+                                        1959,
+                                        1018
+                                    ],
+                                    "score": 0.983,
+                                    "content": "promising direction for aligning language models with human intent.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 15
+                        }
+                    ],
+                    "index": 7.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        457,
+                        1015,
+                        1362,
+                        1054
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                448,
+                                1010,
+                                1370,
+                                1059
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        448,
+                                        1010,
+                                        1370,
+                                        1059
+                                    ],
+                                    "score": 0.952,
+                                    "content": "?rompt:Write a title for the above text.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 16
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        443,
+                        1058,
+                        2068,
+                        1245
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                438,
+                                1054,
+                                2071,
+                                1100
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1054,
+                                        2071,
+                                        1100
+                                    ],
+                                    "score": 0.986,
+                                    "content": "Assistant A: Improving Fine-Tuning for Language Models:A GPT-3-inspired",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1096,
+                                638,
+                                1142
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1096,
+                                        638,
+                                        1142
+                                    ],
+                                    "score": 1.0,
+                                    "content": "Approach",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1134,
+                                2047,
+                                1184
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1134,
+                                        2047,
+                                        1184
+                                    ],
+                                    "score": 0.995,
+                                    "content": "Assistant B:Training language models to follow instructions with human",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1178,
+                                639,
+                                1222
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1178,
+                                        639,
+                                        1222
+                                    ],
+                                    "score": 0.999,
+                                    "content": "feedback",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        },
+                        {
+                            "bbox": [
+                                446,
+                                1216,
+                                527,
+                                1252
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        1216,
+                                        527,
+                                        1252
+                                    ],
+                                    "score": 0.891,
+                                    "content": "1",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        }
+                    ],
+                    "index": 19
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        1305,
+                        942,
+                        1372
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                1305,
+                                943,
+                                1347
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1305,
+                                        943,
+                                        1347
+                                    ],
+                                    "score": 0.953,
+                                    "content": "Your output should be:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                449,
+                                1344,
+                                522,
+                                1375
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        449,
+                                        1344,
+                                        522,
+                                        1375
+                                    ],
+                                    "score": 0.783,
+                                    "content": "111",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        }
+                    ],
+                    "index": 22.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        448,
+                        1389,
+                        2076,
+                        1513
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                1383,
+                                2072,
+                                1433
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1383,
+                                        2072,
+                                        1433
+                                    ],
+                                    "score": 0.989,
+                                    "content": "{\"reason\":\"This text discusses how to make large language models follow",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1428,
+                                1982,
+                                1473
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1428,
+                                        1982,
+                                        1473
+                                    ],
+                                    "score": 0.97,
+                                    "content": "user instructions better,and Assistant B's response is more in line",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1469,
+                                1485,
+                                1514
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1469,
+                                        1485,
+                                        1514
+                                    ],
+                                    "score": 0.943,
+                                    "content": "withthe meaning of the text.\"，\"choice\":\"B\"}",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        }
+                    ],
+                    "index": 25
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        1595,
+                        670,
+                        1662
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                1591,
+                                678,
+                                1640
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1591,
+                                        678,
+                                        1640
+                                    ],
+                                    "score": 0.969,
+                                    "content": "Example3:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                449,
+                                1635,
+                                522,
+                                1665
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        449,
+                                        1635,
+                                        522,
+                                        1665
+                                    ],
+                                    "score": 0.661,
+                                    "content": "1",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        }
+                    ],
+                    "index": 27.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        440,
+                        1679,
+                        2072,
+                        2656
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1677,
+                                2021,
+                                1723
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1677,
+                                        2021,
+                                        1723
+                                    ],
+                                    "score": 0.981,
+                                    "content": "Text:Though technology companies announced massive layoffs last year,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1715,
+                                2072,
+                                1766
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1715,
+                                        2072,
+                                        1766
+                                    ],
+                                    "score": 0.989,
+                                    "content": "2023 has been much worse.Layoffs have far outpaced last year's cuts，as",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1754,
+                                2025,
+                                1809
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1754,
+                                        2025,
+                                        1809
+                                    ],
+                                    "score": 0.971,
+                                    "content": "tech giants including Amazon, Facebook parent company Meta, Microsoft，",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1798,
+                                2026,
+                                1851
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1798,
+                                        2026,
+                                        1851
+                                    ],
+                                    "score": 0.955,
+                                    "content": "Google，IBM,SAP,and Salesforce - as well as many smaller companies -",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1840,
+                                2070,
+                                1893
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1840,
+                                        2070,
+                                        1893
+                                    ],
+                                    "score": 0.986,
+                                    "content": "announce sweeping job cuts.The problem:Big Tech went on a hiring binge",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 33
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1880,
+                                1919,
+                                1933
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1880,
+                                        1919,
+                                        1933
+                                    ],
+                                    "score": 0.99,
+                                    "content": "during the pandemic when lockdowns sparked a tech buying spree to",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 34
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1924,
+                                1937,
+                                1976
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1924,
+                                        1937,
+                                        1976
+                                    ],
+                                    "score": 0.99,
+                                    "content": "support remote work and an uptick in e-commerce，and now they face",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 35
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1968,
+                                1983,
+                                2014
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1968,
+                                        1983,
+                                        2014
+                                    ],
+                                    "score": 0.979,
+                                    "content": "revenue declines.Although global IT spending is forecast to rise in",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 36
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                2005,
+                                2072,
+                                2058
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2005,
+                                        2072,
+                                        2058
+                                    ],
+                                    "score": 0.985,
+                                    "content": "2023,with enterprise software and IT services experiencing the greatest",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 37
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2049,
+                                2052,
+                                2098
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2049,
+                                        2052,
+                                        2098
+                                    ],
+                                    "score": 0.962,
+                                    "content": "growth，the overall increase is expected to be modest，with data center",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 38
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2090,
+                                2027,
+                                2142
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2090,
+                                        2027,
+                                        2142
+                                    ],
+                                    "score": 0.994,
+                                    "content": "systems and communications services growing by less than 1%，according",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 39
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2133,
+                                2025,
+                                2179
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2133,
+                                        2025,
+                                        2179
+                                    ],
+                                    "score": 0.994,
+                                    "content": "to market research firm Gartner.Meanwhile hardware sales are forecast",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 40
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2173,
+                                2010,
+                                2224
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2173,
+                                        2010,
+                                        2224
+                                    ],
+                                    "score": 0.967,
+                                    "content": "to decline.Continuing supply chain issues,inflation,and the war in",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 41
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2215,
+                                1869,
+                                2262
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2215,
+                                        1869,
+                                        2262
+                                    ],
+                                    "score": 0.982,
+                                    "content": "Ukraine are also having an impact on both business and consumer",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 42
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2255,
+                                2027,
+                                2307
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2255,
+                                        2027,
+                                        2307
+                                    ],
+                                    "score": 0.984,
+                                    "content": "spending,leading to fears of recession.According to data compiled by",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2299,
+                                1916,
+                                2346
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2299,
+                                        1916,
+                                        2346
+                                    ],
+                                    "score": 0.981,
+                                    "content": "Layoffs.fyi,the online tracker keeping tabs on job losses in the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 44
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2340,
+                                2048,
+                                2386
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2340,
+                                        2048,
+                                        2386
+                                    ],
+                                    "score": 0.981,
+                                    "content": "technology sector，784 tech companies have laid off about 208,181 staff",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 45
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                2377,
+                                1710,
+                                2432
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2377,
+                                        1710,
+                                        2432
+                                    ],
+                                    "score": 0.966,
+                                    "content": "so far this year，compared to 164,41l layoffs last year.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 46
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                2420,
+                                2005,
+                                2473
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2420,
+                                        2005,
+                                        2473
+                                    ],
+                                    "score": 0.994,
+                                    "content": "Prompt: How many job losses have occurred in the technology sector so",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 47
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                2467,
+                                725,
+                                2507
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        2467,
+                                        725,
+                                        2507
+                                    ],
+                                    "score": 0.931,
+                                    "content": "farin 2023？",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 48
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                2503,
+                                2027,
+                                2556
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2503,
+                                        2027,
+                                        2556
+                                    ],
+                                    "score": 0.98,
+                                    "content": "Assistant A: 208,181 job losses have occurred in the technology sector",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 49
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2547,
+                                787,
+                                2591
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2547,
+                                        787,
+                                        2591
+                                    ],
+                                    "score": 0.938,
+                                    "content": "so far in 2023.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 50
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2588,
+                                917,
+                                2633
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2588,
+                                        917,
+                                        2633
+                                    ],
+                                    "score": 0.991,
+                                    "content": "Assistant B:208,181.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 51
+                        },
+                        {
+                            "bbox": [
+                                446,
+                                2628,
+                                524,
+                                2664
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        2628,
+                                        524,
+                                        2664
+                                    ],
+                                    "score": 0.93,
+                                    "content": "1",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 52
+                        }
+                    ],
+                    "index": 40.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        449,
+                        2716,
+                        941,
+                        2785
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                2714,
+                                944,
+                                2759
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        2714,
+                                        944,
+                                        2759
+                                    ],
+                                    "score": 0.978,
+                                    "content": "Your output should be:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 53
+                        },
+                        {
+                            "bbox": [
+                                449,
+                                2754,
+                                522,
+                                2789
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        449,
+                                        2754,
+                                        522,
+                                        2789
+                                    ],
+                                    "score": 0.726,
+                                    "content": "1",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 54
+                        }
+                    ],
+                    "index": 53.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        2799,
+                        2007,
+                        2887
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2786,
+                                2008,
+                                2851
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2786,
+                                        2008,
+                                        2851
+                                    ],
+                                    "score": 0.984,
+                                    "content": "{\"reason\": \"Both answers are acceptable and correct. They should be a",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 55
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2833,
+                                969,
+                                2887
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2833,
+                                        969,
+                                        2887
+                                    ],
+                                    "score": 0.965,
+                                    "content": "tie.\"，\"choice\":\"Tie\"}",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 56
+                        }
+                    ],
+                    "index": 55.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        452,
+                        2926,
+                        2022,
+                        3048
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2923,
+                                2025,
+                                2968
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2923,
+                                        2025,
+                                        2968
+                                    ],
+                                    "score": 0.972,
+                                    "content": "Your response should only be in the JSON format above; THERE SHOULD BE",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 57
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2953,
+                                1940,
+                                3016
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2953,
+                                        1940,
+                                        3016
+                                    ],
+                                    "score": 0.931,
+                                    "content": "NO OTHER CONTENT INCLUDED IN YOUR RESPONSE.Write the \"reaSOn\" keY",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 58
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                3002,
+                                2025,
+                                3056
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        3002,
+                                        2025,
+                                        3056
+                                    ],
+                                    "score": 0.974,
+                                    "content": "before writing the \"choice\" key， so that you think step-by-step before",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 59
+                        }
+                    ],
+                    "index": 58
+                }
+            ],
+            "page_idx": 0,
+            "page_size": [
+                2550,
+                3300
+            ],
+            "discarded_blocks": [
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        449,
+                        113,
+                        1223,
+                        157
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                108,
+                                1227,
+                                161
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        108,
+                                        1227,
+                                        161
+                                    ],
+                                    "score": 0.979,
+                                    "content": "Published as a conference paper at ICLR 2024",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        1254,
+                        3132,
+                        1296,
+                        3168
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                1245,
+                                3127,
+                                1304,
+                                3185
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1245,
+                                        3127,
+                                        1304,
+                                        3185
+                                    ],
+                                    "score": 1.0,
+                                    "content": "16",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "para_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        353,
+                        2068,
+                        1013
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                349,
+                                2048,
+                                395
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        349,
+                                        2048,
+                                        395
+                                    ],
+                                    "score": 0.981,
+                                    "content": "In this paper，we show an avenue for aligning language models with user",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                386,
+                                1959,
+                                439
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        386,
+                                        1959,
+                                        439
+                                    ],
+                                    "score": 0.993,
+                                    "content": "intent on a wide range of tasks by fine-tuning with human feedback.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                430,
+                                1981,
+                                476
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        430,
+                                        1981,
+                                        476
+                                    ],
+                                    "score": 0.995,
+                                    "content": "Starting with a set of labeler-written prompts and prompts submitted",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                473,
+                                2023,
+                                519
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        473,
+                                        2023,
+                                        519
+                                    ],
+                                    "score": 0.969,
+                                    "content": "through the OpenAI API,we collect a dataset of labeler demonstrations",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                513,
+                                1981,
+                                560
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        513,
+                                        1981,
+                                        560
+                                    ],
+                                    "score": 0.97,
+                                    "content": "of the desired model behavior，which we use to fine-tune GPT-3 using",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                558,
+                                1959,
+                                599
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        558,
+                                        1959,
+                                        599
+                                    ],
+                                    "score": 0.984,
+                                    "content": "supervised learning.We then collect a dataset of rankings of model",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                594,
+                                2030,
+                                648
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        594,
+                                        2030,
+                                        648
+                                    ],
+                                    "score": 0.981,
+                                    "content": "outputs, which we use to further fine-tune this supervised model using",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                640,
+                                2070,
+                                687
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        640,
+                                        2070,
+                                        687
+                                    ],
+                                    "score": 0.995,
+                                    "content": "reinforcement learning from human feedback.We call the resulting models",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                675,
+                                2007,
+                                730
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        675,
+                                        2007,
+                                        730
+                                    ],
+                                    "score": 0.967,
+                                    "content": "InstructGPT. In human evaluations on our prompt distribution, outputs",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                718,
+                                2053,
+                                770
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        718,
+                                        2053,
+                                        770
+                                    ],
+                                    "score": 0.991,
+                                    "content": "from the 1.3B parameter InstructGPT model are preferred to outputs from",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                757,
+                                1866,
+                                815
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        757,
+                                        1139,
+                                        815
+                                    ],
+                                    "score": 0.987,
+                                    "content": "the175BGPT-3，despitehaving",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1140,
+                                        765,
+                                        1238,
+                                        805
+                                    ],
+                                    "score": 0.6,
+                                    "content": "{ 1 0 0 } \\mathrm { { x } }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1240,
+                                        757,
+                                        1866,
+                                        815
+                                    ],
+                                    "score": 0.986,
+                                    "content": "fewer parameters.Moreover,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                805,
+                                2027,
+                                852
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        805,
+                                        2027,
+                                        852
+                                    ],
+                                    "score": 0.983,
+                                    "content": "InstructGPT models show improvements in truthfulness and reductions in",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                846,
+                                2048,
+                                893
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        846,
+                                        2048,
+                                        893
+                                    ],
+                                    "score": 0.992,
+                                    "content": "toxic output generation while having minimal performance regressions on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                886,
+                                1870,
+                                933
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        886,
+                                        1870,
+                                        933
+                                    ],
+                                    "score": 0.985,
+                                    "content": "public NLP datasets.Even though InstructGPT still makes simple",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                929,
+                                1983,
+                                975
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        929,
+                                        1983,
+                                        975
+                                    ],
+                                    "score": 0.981,
+                                    "content": "mistakes,our results show that fine-tuning with human feedback isa",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                970,
+                                1959,
+                                1018
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        970,
+                                        1959,
+                                        1018
+                                    ],
+                                    "score": 0.983,
+                                    "content": "promising direction for aligning language models with human intent.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 15
+                        }
+                    ],
+                    "index": 7.5,
+                    "bbox_fs": [
+                        436,
+                        349,
+                        2070,
+                        1018
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        457,
+                        1015,
+                        1362,
+                        1054
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                448,
+                                1010,
+                                1370,
+                                1059
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        448,
+                                        1010,
+                                        1370,
+                                        1059
+                                    ],
+                                    "score": 0.952,
+                                    "content": "?rompt:Write a title for the above text.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 16
+                        }
+                    ],
+                    "index": 16,
+                    "bbox_fs": [
+                        448,
+                        1010,
+                        1370,
+                        1059
+                    ]
+                },
+                {
+                    "type": "list",
+                    "bbox": [
+                        443,
+                        1058,
+                        2068,
+                        1245
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                438,
+                                1054,
+                                2071,
+                                1100
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1054,
+                                        2071,
+                                        1100
+                                    ],
+                                    "score": 0.986,
+                                    "content": "Assistant A: Improving Fine-Tuning for Language Models:A GPT-3-inspired",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1096,
+                                638,
+                                1142
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1096,
+                                        638,
+                                        1142
+                                    ],
+                                    "score": 1.0,
+                                    "content": "Approach",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1134,
+                                2047,
+                                1184
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1134,
+                                        2047,
+                                        1184
+                                    ],
+                                    "score": 0.995,
+                                    "content": "Assistant B:Training language models to follow instructions with human",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1178,
+                                639,
+                                1222
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1178,
+                                        639,
+                                        1222
+                                    ],
+                                    "score": 0.999,
+                                    "content": "feedback",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                446,
+                                1216,
+                                527,
+                                1252
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        1216,
+                                        527,
+                                        1252
+                                    ],
+                                    "score": 0.891,
+                                    "content": "1",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21,
+                            "is_list_start_line": true
+                        }
+                    ],
+                    "index": 19,
+                    "bbox_fs": [
+                        438,
+                        1054,
+                        2071,
+                        1252
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        1305,
+                        942,
+                        1372
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                1305,
+                                943,
+                                1347
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1305,
+                                        943,
+                                        1347
+                                    ],
+                                    "score": 0.953,
+                                    "content": "Your output should be:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                449,
+                                1344,
+                                522,
+                                1375
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        449,
+                                        1344,
+                                        522,
+                                        1375
+                                    ],
+                                    "score": 0.783,
+                                    "content": "111",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        }
+                    ],
+                    "index": 22.5,
+                    "bbox_fs": [
+                        444,
+                        1305,
+                        943,
+                        1375
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        448,
+                        1389,
+                        2076,
+                        1513
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                1383,
+                                2072,
+                                1433
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1383,
+                                        2072,
+                                        1433
+                                    ],
+                                    "score": 0.989,
+                                    "content": "{\"reason\":\"This text discusses how to make large language models follow",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1428,
+                                1982,
+                                1473
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1428,
+                                        1982,
+                                        1473
+                                    ],
+                                    "score": 0.97,
+                                    "content": "user instructions better,and Assistant B's response is more in line",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1469,
+                                1485,
+                                1514
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1469,
+                                        1485,
+                                        1514
+                                    ],
+                                    "score": 0.943,
+                                    "content": "withthe meaning of the text.\"，\"choice\":\"B\"}",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        }
+                    ],
+                    "index": 25,
+                    "bbox_fs": [
+                        440,
+                        1383,
+                        2072,
+                        1514
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        1595,
+                        670,
+                        1662
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                1591,
+                                678,
+                                1640
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1591,
+                                        678,
+                                        1640
+                                    ],
+                                    "score": 0.969,
+                                    "content": "Example3:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                449,
+                                1635,
+                                522,
+                                1665
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        449,
+                                        1635,
+                                        522,
+                                        1665
+                                    ],
+                                    "score": 0.661,
+                                    "content": "1",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        }
+                    ],
+                    "index": 27.5,
+                    "bbox_fs": [
+                        442,
+                        1591,
+                        678,
+                        1665
+                    ]
+                },
+                {
+                    "type": "list",
+                    "bbox": [
+                        440,
+                        1679,
+                        2072,
+                        2656
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1677,
+                                2021,
+                                1723
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1677,
+                                        2021,
+                                        1723
+                                    ],
+                                    "score": 0.981,
+                                    "content": "Text:Though technology companies announced massive layoffs last year,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1715,
+                                2072,
+                                1766
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1715,
+                                        2072,
+                                        1766
+                                    ],
+                                    "score": 0.989,
+                                    "content": "2023 has been much worse.Layoffs have far outpaced last year's cuts，as",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1754,
+                                2025,
+                                1809
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1754,
+                                        2025,
+                                        1809
+                                    ],
+                                    "score": 0.971,
+                                    "content": "tech giants including Amazon, Facebook parent company Meta, Microsoft，",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1798,
+                                2026,
+                                1851
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1798,
+                                        2026,
+                                        1851
+                                    ],
+                                    "score": 0.955,
+                                    "content": "Google，IBM,SAP,and Salesforce - as well as many smaller companies -",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1840,
+                                2070,
+                                1893
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1840,
+                                        2070,
+                                        1893
+                                    ],
+                                    "score": 0.986,
+                                    "content": "announce sweeping job cuts.The problem:Big Tech went on a hiring binge",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 33
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1880,
+                                1919,
+                                1933
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1880,
+                                        1919,
+                                        1933
+                                    ],
+                                    "score": 0.99,
+                                    "content": "during the pandemic when lockdowns sparked a tech buying spree to",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 34
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1924,
+                                1937,
+                                1976
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1924,
+                                        1937,
+                                        1976
+                                    ],
+                                    "score": 0.99,
+                                    "content": "support remote work and an uptick in e-commerce，and now they face",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 35
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1968,
+                                1983,
+                                2014
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1968,
+                                        1983,
+                                        2014
+                                    ],
+                                    "score": 0.979,
+                                    "content": "revenue declines.Although global IT spending is forecast to rise in",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 36
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                2005,
+                                2072,
+                                2058
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2005,
+                                        2072,
+                                        2058
+                                    ],
+                                    "score": 0.985,
+                                    "content": "2023,with enterprise software and IT services experiencing the greatest",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 37
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2049,
+                                2052,
+                                2098
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2049,
+                                        2052,
+                                        2098
+                                    ],
+                                    "score": 0.962,
+                                    "content": "growth，the overall increase is expected to be modest，with data center",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 38
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2090,
+                                2027,
+                                2142
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2090,
+                                        2027,
+                                        2142
+                                    ],
+                                    "score": 0.994,
+                                    "content": "systems and communications services growing by less than 1%，according",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 39
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2133,
+                                2025,
+                                2179
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2133,
+                                        2025,
+                                        2179
+                                    ],
+                                    "score": 0.994,
+                                    "content": "to market research firm Gartner.Meanwhile hardware sales are forecast",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 40
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2173,
+                                2010,
+                                2224
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2173,
+                                        2010,
+                                        2224
+                                    ],
+                                    "score": 0.967,
+                                    "content": "to decline.Continuing supply chain issues,inflation,and the war in",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 41
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2215,
+                                1869,
+                                2262
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2215,
+                                        1869,
+                                        2262
+                                    ],
+                                    "score": 0.982,
+                                    "content": "Ukraine are also having an impact on both business and consumer",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 42,
+                            "is_list_end_line": true
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2255,
+                                2027,
+                                2307
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2255,
+                                        2027,
+                                        2307
+                                    ],
+                                    "score": 0.984,
+                                    "content": "spending,leading to fears of recession.According to data compiled by",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2299,
+                                1916,
+                                2346
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2299,
+                                        1916,
+                                        2346
+                                    ],
+                                    "score": 0.981,
+                                    "content": "Layoffs.fyi,the online tracker keeping tabs on job losses in the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 44
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2340,
+                                2048,
+                                2386
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2340,
+                                        2048,
+                                        2386
+                                    ],
+                                    "score": 0.981,
+                                    "content": "technology sector，784 tech companies have laid off about 208,181 staff",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 45
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                2377,
+                                1710,
+                                2432
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2377,
+                                        1710,
+                                        2432
+                                    ],
+                                    "score": 0.966,
+                                    "content": "so far this year，compared to 164,41l layoffs last year.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 46,
+                            "is_list_end_line": true
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                2420,
+                                2005,
+                                2473
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2420,
+                                        2005,
+                                        2473
+                                    ],
+                                    "score": 0.994,
+                                    "content": "Prompt: How many job losses have occurred in the technology sector so",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 47,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                2467,
+                                725,
+                                2507
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        2467,
+                                        725,
+                                        2507
+                                    ],
+                                    "score": 0.931,
+                                    "content": "farin 2023？",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 48,
+                            "is_list_end_line": true
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                2503,
+                                2027,
+                                2556
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2503,
+                                        2027,
+                                        2556
+                                    ],
+                                    "score": 0.98,
+                                    "content": "Assistant A: 208,181 job losses have occurred in the technology sector",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 49,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2547,
+                                787,
+                                2591
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2547,
+                                        787,
+                                        2591
+                                    ],
+                                    "score": 0.938,
+                                    "content": "so far in 2023.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 50,
+                            "is_list_end_line": true
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2588,
+                                917,
+                                2633
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2588,
+                                        917,
+                                        2633
+                                    ],
+                                    "score": 0.991,
+                                    "content": "Assistant B:208,181.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 51,
+                            "is_list_start_line": true,
+                            "is_list_end_line": true
+                        },
+                        {
+                            "bbox": [
+                                446,
+                                2628,
+                                524,
+                                2664
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        2628,
+                                        524,
+                                        2664
+                                    ],
+                                    "score": 0.93,
+                                    "content": "1",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 52,
+                            "is_list_start_line": true,
+                            "is_list_end_line": true
+                        }
+                    ],
+                    "index": 40.5,
+                    "bbox_fs": [
+                        436,
+                        1677,
+                        2072,
+                        2664
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        449,
+                        2716,
+                        941,
+                        2785
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                2714,
+                                944,
+                                2759
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        2714,
+                                        944,
+                                        2759
+                                    ],
+                                    "score": 0.978,
+                                    "content": "Your output should be:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 53
+                        },
+                        {
+                            "bbox": [
+                                449,
+                                2754,
+                                522,
+                                2789
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        449,
+                                        2754,
+                                        522,
+                                        2789
+                                    ],
+                                    "score": 0.726,
+                                    "content": "1",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 54
+                        }
+                    ],
+                    "index": 53.5,
+                    "bbox_fs": [
+                        444,
+                        2714,
+                        944,
+                        2789
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        2799,
+                        2007,
+                        2887
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2786,
+                                2008,
+                                2851
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2786,
+                                        2008,
+                                        2851
+                                    ],
+                                    "score": 0.984,
+                                    "content": "{\"reason\": \"Both answers are acceptable and correct. They should be a",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 55
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2833,
+                                969,
+                                2887
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2833,
+                                        969,
+                                        2887
+                                    ],
+                                    "score": 0.965,
+                                    "content": "tie.\"，\"choice\":\"Tie\"}",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 56
+                        }
+                    ],
+                    "index": 55.5,
+                    "bbox_fs": [
+                        442,
+                        2786,
+                        2008,
+                        2887
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        452,
+                        2926,
+                        2022,
+                        3048
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2923,
+                                2025,
+                                2968
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2923,
+                                        2025,
+                                        2968
+                                    ],
+                                    "score": 0.972,
+                                    "content": "Your response should only be in the JSON format above; THERE SHOULD BE",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 57
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2953,
+                                1940,
+                                3016
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2953,
+                                        1940,
+                                        3016
+                                    ],
+                                    "score": 0.931,
+                                    "content": "NO OTHER CONTENT INCLUDED IN YOUR RESPONSE.Write the \"reaSOn\" keY",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 58
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                3002,
+                                2025,
+                                3056
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        3002,
+                                        2025,
+                                        3056
+                                    ],
+                                    "score": 0.974,
+                                    "content": "before writing the \"choice\" key， so that you think step-by-step before",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 59
+                        }
+                    ],
+                    "index": 58,
+                    "bbox_fs": [
+                        438,
+                        2923,
+                        2025,
+                        3056
+                    ]
+                }
+            ]
+        }
+    ],
+    "_backend": "pipeline",
+    "_version_name": "2.1.8"
+}

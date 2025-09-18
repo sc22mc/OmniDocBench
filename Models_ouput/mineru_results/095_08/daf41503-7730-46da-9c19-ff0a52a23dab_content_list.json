@@ -1,0 +1,80 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/ecfaaccd5669ff4c6a7ea8d1948b19d9f7c1fb96fac97546c0f3228bd1bd6196.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "Table8.Component-levelevaluationonOmniDocBenchOCRsubset:results groupedbytextatributesusingtheeditdistancemetric. "
+        ],
+        "table_body": "<table><tr><td rowspan=\"2\">Model Type</td><td rowspan=\"2\">Model</td><td colspan=\"3\">EN LanHage Mixed</td><td colspan=\"3\">wte singte Mut</td><td colspan=\"4\">RotateTert Rotate270</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>Normal</td><td></td><td></td><td>Horizontal</td></tr><tr><td rowspan=\"5\">Expert Vision</td><td>PaddleOCR [23]</td><td>0.071</td><td>0.055</td><td>0.118</td><td>0.060</td><td>0.038</td><td>0.085</td><td>0.060</td><td>0.015</td><td>0.285</td><td>0.021</td></tr><tr><td>Tesseract OCR5</td><td>0.179</td><td>0.553</td><td>0.553</td><td>0.453</td><td>0.463</td><td>0.394</td><td>0.448</td><td>0.369</td><td>0.979</td><td>0.982</td></tr><tr><td>SUOT-OCR [45]</td><td>0.047</td><td>0.12</td><td>0.14</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td>0.093</td><td>0.16</td><td>0.235</td><td>0.104</td><td>0.634</td><td>0.767</td><td>0.255</td></tr><tr><td>Mathpix4</td><td>0.033</td><td>0.240</td><td>0.261</td><td>0.185</td><td>0.121</td><td>0.166</td><td>0.180</td><td>0.038</td><td>0.185</td><td>0.638</td></tr><tr><td rowspan=\"3\">Vision Laguage</td><td></td><td></td><td></td><td>82</td><td></td><td>05</td><td></td><td>0.3</td><td>0.73</td><td>0.721</td><td>0.9</td></tr><tr><td></td><td></td><td>074</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>0.074</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/12fe9e5220b7f8005ba4e4cdea28cbe4e37c34d304a2ec6b1f582467645ac54e.jpg",
+        "table_caption": [
+            "Table9. Component-level formula recognition evaluation on OmniDocBench formula subset. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Models</td><td>CDM</td><td>ExpRate@CDM</td><td>BLEU</td><td>Norm Edit</td></tr><tr><td>GOT-OCR [45]</td><td>74.1</td><td>28.0</td><td>55.07</td><td>0.290</td></tr><tr><td>Mathpix 4</td><td>86.6</td><td>2.8</td><td>66.56</td><td>0.322</td></tr><tr><td>Pix2Tex7</td><td>73.9</td><td>39.5</td><td>46.00</td><td>0.337</td></tr><tr><td>UniMERNet-B[40]</td><td>85.0</td><td>60.2</td><td>60.84</td><td>0.238</td></tr><tr><td>GPT4o [2]</td><td>86.8</td><td>65.5</td><td>45.17</td><td>0.282</td></tr><tr><td>InternVL2-76B[8]</td><td>67.4</td><td>54.5</td><td>47.63</td><td>0.308</td></tr><tr><td>Qwen2-VL-72B [44]</td><td>83.8</td><td>55.4</td><td>53.71</td><td>0.285</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ever, struggle with high-density documents like newspapers due to limitations in input resolution and token length. In contrast,pipeline tools leverage layout-based segmentation to process components individually,maintaining accuracy in complex layouts. Enhancing VLMs with layout-aware designs and domain-specific fine-tuning offers a promising path forward. OmniDocBench facilitates this by providing detailed annotations for layout,text,formulas,and tables,enabling comprehensive benchmarking and modular tool development for diverse document parsing tasks. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.2.Single Task Evaluation Results ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Layout Detection Results. Layout detection is the first step in document parsing using pipeline tools.A robust layout detection algorithm should perform well across a variety of document types. Table 6 presents an evaluation of leading layout detection models. The DocLayout-YOLO method, which is pre-trained on diverse synthetic document data, significantly outperforms other approaches. This superiorityis a key factor in MinerU's integration of DocLayoutYOLO,contributing to its outstanding overall performance. Othermethodsperform well onbooksand academic literature but struggle with more diverse formats due to limited trainingdata. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "TableRecognition Results. In Table 7,We evaluate table recognition models across three dimensions on our OmniDocBench table subset:language diversity, table frame types，and special situations.Among all models,OCRbased models demonstrate superior overall performance, with RapidTable achieving the highest scores in language diversity and maintaining stable performance across different frame types.Expert VLMs show competitive results in specific scenarios,with StructEqTable [55] excelling in noframe tables and showing better rotation robustness.GeneralVLMs(Qwen2-VL-7Band InternVL2-8B) exhibit relatively lower but consistent performance, suggesting that while general-purpose VLMs have made progress in table understanding,they stilllagbehind specialized solutions. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Text Recognition Results. Table 8 compares OCR tools across languages，backgrounds,and rotations using Edit Distance.PaddleOCR outperforms all competitors,followed by GOT-OCR and Mathpix.General VLMsstruggle to handle text rotation or mixed-language scenarios. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Formula Recognition Results. Table 9 presents results on formula parsing,using CDM,BLEU,and normalized EditDistance.GPT-4o,Mathpix,and UniMERNet achieve resultsof $8 6 . 8 \\%$ ， $8 6 . 6 \\%$ ，and $8 5 . 0 \\%$ ，respectively.Notably,GPT-4o excelswith a recall rate of $6 5 . 5 \\%$ understrict conditions requiring perfect character accuracy. Although Mathpix shows high character-level precision,it occasionally omits punctuation, such as commas,leading to a lower overall correctness rate.Nonetheless,all three models are strong candidates for formula recognition tasks. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "6. Conclusion ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This paper addresses the lack of diverse and realistic benchmarks in document parsing research by introducing OmniDocBench,a dataset featuring a variety of page types with comprehensive annotations,along with a flexible and reliable evaluation framework. OmniDocBench enables systematic and fair assessments of document parsing methods,providing crucial insights for advancing the field.Its task-specific and attribute-level evaluations facilitate targeted model optimization,promoting more robust and effective parsing solutions. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "7. Acknowledgments ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This project was supported by National Key R&D Program of China (NO.2022ZD0160102) and Shanghai Artificial IntelligenceLaboratory. ",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,144 @@
+[
+    {
+        "type": "text",
+        "text": "Plugging these expansions back into the Schrodinger equation [58] we obtain two new PDEs for the two components  $\\psi^0$  and  $\\psi^1$  ..",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{l} i\\frac{\\partial}{\\partial\\eta}\\psi^0 = \\frac{1}{2}\\left(\\pi_k^2 -\\omega_k^2 (\\eta)\\frac{\\partial^2}{\\partial\\pi_k^2}\\right)\\psi^0,\\\\ \\displaystyle i\\frac{\\partial}{\\partial\\eta}\\psi^1 = \\frac{1}{2}\\left(\\pi_k^2 -\\omega_k^2 (\\eta)\\frac{\\partial^2}{\\partial\\pi_k^2}\\right)\\psi^1 +F, \\end{array} \\tag{61}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nF = F(\\eta ,\\pi_k) = -\\frac{\\pi_k^4}{3}\\psi^0 (\\eta ,\\pi_k), \\tag{63}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $F$  indicates a source term for the  $\\mu^2$  - order equation that results to be dependent on the zero- order solution.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now, the zero- order PDE [61] is the Schrodinger equation of a time- dependent harmonic oscillator with standard operators, but in the momentum polarization; therefore the solution  $\\psi^0 (\\eta ,\\pi_k)$  is just the Fourier transform of  $\\psi^0 (\\eta ,\\xi_k)$  properly rescaled to account for the normalization of Hermite polynomials:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\psi_{n}^{0}(\\eta ,\\pi_{k}) = (-i)^{n}\\frac{h_{n}\\left(\\frac{\\pi_{k}f}{|R|}\\right)}{\\sqrt{2^{n}n!}}\\sqrt{\\frac{(R^{*})^{n}f}{R^{n + 1}\\sqrt{\\pi}}} e^{-\\frac{\\pi_{k}^{2}f^{2}}{2R}}e^{i\\alpha_{n}},\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $R$  has been defined in (44), and  $f$  and  $\\alpha_{n}$  have the same expressions as before.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "On the other hand, the first order PDE (62) is the same of the zero order one but with the addition of the source term  $F(\\eta ,\\pi_k)$  .In order to solve it, we consider that the eigenfunctions  $\\psi_n(\\eta ,\\pi_k)$  form a complete orthonormal basis such that  $\\langle \\psi_{n_1}|\\psi_{n_2}\\rangle = \\delta_{n_1,n_2}$  and any function can be expressed as a linear combination of them. Therefore we can write  $\\psi^1$  and  $\\psi^0$  as",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\psi^0 = \\sum_n c_n(\\eta)\\psi_n(\\eta ,\\pi_k),\\quad \\psi^1 = \\sum_n d_n(\\eta)\\psi_n(\\eta ,\\pi_k), \\tag{65}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $c_{n}(\\eta),d_{n}(\\eta)$  are time- dependent coefficients; when we plug these expansions back into the first order Schrodinger equation (62) we are left with just a recurrence relation for the coefficients, since all the eigenfunctions  $\\psi_n^0$  satisfy the zero- order equation (61) that corresponds to the homogeneous part of the first order one:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ni\\sum_{n}\\frac{\\mathrm{d}d_{n}}{\\mathrm{d}\\eta}\\psi_{n}^{0}(\\eta ,\\pi_{k}) = -\\frac{\\pi_{k}^{4}}{3}\\sum_{n}c_{n}(\\eta)\\psi_{n}^{0}(\\eta ,\\pi_{k}). \\tag{66}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Considering just the ground state and using the result 43 for  $\\pi_{k}$  we obtain",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\pi_k^4\\psi_0 = \\frac{3}{4}\\frac{R^2(R^*)^2}{f^4}\\psi_0 - \\frac{3}{\\sqrt{2}}\\frac{R^3R^*}{f^4} e^{2i\\phi}\\psi_{2} + \\sqrt{\\frac{3}{2}}\\frac{R^4}{f^4} e^{4i\\phi}\\psi_4; \\tag{67}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "it is thus clear that, when  $c_{n} = \\delta_{0,n}$  , the only non- zero coefficients on the left hand side are  $d_0$ $d_{2}$  and  $d_{4}$  . Therefore the relations for these coefficients are:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ni\\frac{\\mathrm{d}d_0}{\\mathrm{d}\\eta} = -\\frac{1}{4}\\frac{(1 + f^2f^{\\prime 2})^2}{f^4}, \\tag{68}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ni\\frac{\\mathrm{d}d_2}{\\mathrm{d}\\eta} = +\\frac{1}{\\sqrt{2}}\\frac{(1 + f^2f^{\\prime 2})(1 - iff^{\\prime})^2}{f^4} e^{2i\\phi}, \\tag{69}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ni\\frac{\\mathrm{d}d_4}{\\mathrm{d}\\eta} = -\\frac{1}{\\sqrt{6}}\\frac{(1 - iff^{\\prime})^4}{f^4} e^{4i\\phi}. \\tag{70}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Finally, the ground state of our system in the  $\\pi_{k}$  representation is",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\psi_0^{\\mathrm{tot}}(\\eta ,\\pi_k) = \\psi_0^0 (\\eta ,\\pi_k) + \\mu^2\\sum_{n = 0}^{21}d_{2n}(\\eta)\\psi_{2n}^0 (\\eta ,\\pi_k). \\tag{11}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "From here on we will omit the superscript indicating the order, since we expressed  $\\psi^1$  and  $\\psi^0$  as a linear combination of  $\\psi_{n}$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now, in order to find the final spectrum of perturbations we have to evaluate the expectation value  $\\left\\langle \\hat{\\xi}_k^2\\right\\rangle$  on the ground state; we can use the expression (42) and therefore write",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{l}{\\langle \\psi_0^{\\mathrm{tot}}\\big|\\hat{\\xi}_k^2\\big|\\psi_0^{\\mathrm{tot}}\\big\\rangle = \\int d\\pi_k\\psi_0^{\\mathrm{tot}^*}\\hat{\\xi}_k^2\\psi_0^{\\mathrm{tot}} = \\int d\\pi_k\\big|\\hat{\\xi}_k\\psi_0^{\\mathrm{tot}}\\big|^2}\\\\ {= \\int d\\pi_kf^2\\bigg|\\frac{1 + \\mu^2d_0}{\\sqrt{2}} e^{i\\phi}\\psi_1 + \\mu^2 d_2e^{-i\\phi}\\psi_1 + \\ldots \\bigg|^2,} \\end{array} \\tag{72}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where the dots stand for terms proportional to  $\\psi_{3}$  and  $\\psi_{5}$  , whose square modulus would contribute with terms of order  $\\mu^4$  which we would neglect. Given that the norm of  $\\psi_0^{\\mathrm{tot}}$  is easily calculated to be  $|N|^2 = 1 + 2\\mu^2\\mathrm{Re}(d_0)$  since  $\\begin{array}{r}\\int d\\pi_k|\\psi_n| = 1 \\end{array}$  , the normalized expectation value of  $\\hat{\\xi}_k^2$  results to be",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{l}\\frac{\\left\\langle\\hat{\\xi}_k^2\\right\\rangle}{|N|^2} = \\frac{f^2}{2|N|^2}\\left(1 + 2\\mu^2\\mathrm{Re}(d_0) + 2\\sqrt{2}\\mu^2\\mathrm{Re}(d_2e^{-2i\\phi})\\right) = \\\\ \\displaystyle = \\frac{f^2}{2}\\left(1 + \\frac{2\\sqrt{2}\\mu^2\\mathrm{Re}(d_2e^{-2i\\phi})}{1 + 2\\mu^2\\mathrm{Re}(d_0)}\\right). \\end{array} \\tag{73}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "As expected, the zero- order term is the same as for the standard Spectrum (45); on the other hand, for the  $\\mu^2$  order correction we see that we only need  $d_0$  and  $d_{2}$  among the coefficients of the expansion.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now, looking at equation (68) we see that the right hand side is real; therefore  $d_0$  has a purely imaginary time derivative, and its real time- independent part must be set through initial conditions; we will adopt the same prescription as in [33] [34] where we assume that the wavefunction is in the instantaneous ground state at the beginning of inflation: we therefore write  $d_0(\\eta_s) = 0$  and, since its real part is independent of time, it will remain zero throughout the evolution. Then we solve the integral (69) for  $d_2(\\eta)$ , insert it into the Spectrum and find",
+        "page_idx": 0
+    }
+]

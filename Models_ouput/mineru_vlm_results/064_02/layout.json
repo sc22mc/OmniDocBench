@@ -1,0 +1,430 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        244,
+                        277,
+                        2244,
+                        1042
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                244,
+                                277,
+                                2244,
+                                1042
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        244,
+                                        277,
+                                        2244,
+                                        1042
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                244,
+                                                277,
+                                                2244,
+                                                1042
+                                            ],
+                                            "type": "image",
+                                            "image_path": "b847d98553fe9c2a4fa5fcc96761a97b3032fffa5fad035984d90c634e82c983.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                224,
+                                1062,
+                                2264,
+                                1201
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        1062,
+                                        2264,
+                                        1201
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                224,
+                                                1062,
+                                                2264,
+                                                1201
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 1. Comparisons of traditional computer vision tasks (left) with location and time reasoning (right). It is clear that—instead of simple image color, texture, and object information—location and time reasoning requires more human experiences and knowledge (a.k.a. open-world knowledge)."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        226,
+                        1280,
+                        1208,
+                        2075
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                1280,
+                                1208,
+                                2075
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        1280,
+                                        1208,
+                                        2075
+                                    ],
+                                    "type": "text",
+                                    "content": "Regarding the Q- principle, we design the Quantity module: we utilize two techniques to improve the model to provide as much information as possible. For traditional transformer- based models (Kenton & Toutanova, 2019; Dosovitskiy et al., 2020), they use a single [CLS] to represent the input. Initially, we design additional [CLS] tokens that mimic different human perspectives on the same image. Since everyone has unique knowledge and experience, it is possible to gain a more comprehensive understanding of a given item by combining the knowledge of different individuals. This also inspires us to use each "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1280,
+                                        1208,
+                                        2075
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[CLS]_i"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1280,
+                                        1208,
+                                        2075
+                                    ],
+                                    "type": "text",
+                                    "content": " to retrieve various useful open- world knowledge to aid predictions. Furthermore, motivated by current contrastive learning methods (Zhang et al., 2022), we design the local and global loss for fine- tuning the CLIP model, ensuring our QR- CLIP is suitable for the tasks."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        226,
+                        2105,
+                        1208,
+                        2702
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                2105,
+                                1208,
+                                2702
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        2105,
+                                        1208,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": "For the Relevance module, we design a scoring mechanism that weights the fusion of image and open- world knowledge embeddings. Like ordinary society, not all of the knowledge from individuals are correct. Thus our scoring mechanism is like an error correction tool to help the model select the most valuable information. It adaptively balances the different information and encourages the model to provide pertinent ones for location and time reasoning. Furthermore, the scoring mechanism balances vision and language knowledge, which means that when the quality of explicit OWK is poor, our scoring mechanism can focus more on original image features, greatly improving robustness."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        226,
+                        2729,
+                        1208,
+                        2976
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                2729,
+                                1208,
+                                2976
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        2729,
+                                        1208,
+                                        2976
+                                    ],
+                                    "type": "text",
+                                    "content": "The experiments indicate the strong abilities of our QR- CLIP model. Considering the accuracy (or Rank@1) achieves "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        2729,
+                                        1208,
+                                        2976
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "19.31\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        2729,
+                                        1208,
+                                        2976
+                                    ],
+                                    "type": "text",
+                                    "content": " (17.3% relative improvement compared to previous SOTA) on location reasoning, and "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        2729,
+                                        1208,
+                                        2976
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "3.53\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        2729,
+                                        1208,
+                                        2976
+                                    ],
+                                    "type": "text",
+                                    "content": " (253% relative improvement) on time reasoning."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1283,
+                        2083,
+                        1329
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                1283,
+                                2083,
+                                1329
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1283,
+                                        2083,
+                                        1329
+                                    ],
+                                    "type": "text",
+                                    "content": "Overall, our contributions can be categorized as:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        1318,
+                        1356,
+                        2264,
+                        1765
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1318,
+                                1356,
+                                2264,
+                                1765
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1318,
+                                        1356,
+                                        2264,
+                                        1765
+                                    ],
+                                    "type": "text",
+                                    "content": "- We design the QR-CLIP, which first investigates utilizing explicit open-world knowledge to help location and time reasoning.- Our method achieves an average of "
+                                },
+                                {
+                                    "bbox": [
+                                        1318,
+                                        1356,
+                                        2264,
+                                        1765
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "17.3\\% / 253\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1318,
+                                        1356,
+                                        2264,
+                                        1765
+                                    ],
+                                    "type": "text",
+                                    "content": " relative lifts on location and time reasoning tasks compared to the previous SOTA.- In addition, the comprehensive experimental record will inspire the related field."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1831,
+                        1626,
+                        1884
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                1831,
+                                1626,
+                                1884
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1831,
+                                        1626,
+                                        1884
+                                    ],
+                                    "type": "text",
+                                    "content": "2. Related Work"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1917,
+                        1700,
+                        1963
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                1917,
+                                1700,
+                                1963
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1917,
+                                        1700,
+                                        1963
+                                    ],
+                                    "type": "text",
+                                    "content": "2.1. Foundation Models"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1993,
+                        2261,
+                        2989
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                1993,
+                                2261,
+                                2989
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1993,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": "The emergence of foundation models is a relatively recent phenomenon (Bommasani et al., 2021), and has fundamentally altered the game rules of AI communities. They are commonly trained on a massive amount of unlabeled data at scale (typically via self- supervised learning (Radford et al., 2021)), making them adaptable to various downstream applications. Among these are popular models include GPT- 3 (Brown et al., 2020) and PaLM (Chowdhery et al., 2022) as large language model, CLIP (Radford et al., 2021) and Flamingo (Alayrac et al., 2022) as vision- language model, Dall- E (Ramesh et al., 2021) and Stable Diffusion (Rombach et al., 2022) for text- to- image generation, GaTo (Reed et al.) as a generalist model, and ChatGPT (Ouyang et al., 2022) as human- like conversation agent, etc. This paper uses CLIP pre- trained with 400 million image- text pairs as baseline architecture. It learns excellent open- world knowledge and multi- modal representation by learning with such a large- scale corpus, making it ideal as the basic solution. Based on it, we made QR- CLIP to fit the location and time reasoning task."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

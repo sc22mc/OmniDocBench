@@ -1,0 +1,556 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "table",
+                    "bbox": [
+                        520,
+                        396,
+                        2027,
+                        663
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                520,
+                                396,
+                                2027,
+                                663
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        520,
+                                        396,
+                                        2027,
+                                        663
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                520,
+                                                396,
+                                                2027,
+                                                663
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Target LLM</td><td>AE \nBLEU(%)</td><td>Loss</td><td>PPL (original context)</td><td>Text Continuation \nPPL (memory slot)</td><td>Δ</td></tr><tr><td>Llama-7b</td><td>99.1</td><td>0.017</td><td>9.01</td><td>9.50</td><td>+0.49</td></tr><tr><td>Llama-2-7b</td><td>99.5</td><td>0.009</td><td>8.81</td><td>9.18</td><td>+0.37</td></tr><tr><td>Llama-2-13b</td><td>99.8</td><td>0.004</td><td>8.15</td><td>8.45</td><td>+0.30</td></tr></table>",
+                                            "image_path": "8322ead1ea4bd2d3b5d3a3be552439f8c85f0cf6743b274f409614aa687725d5.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                563,
+                                333,
+                                1976,
+                                382
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        563,
+                                        333,
+                                        1976,
+                                        382
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                563,
+                                                333,
+                                                1976,
+                                                382
+                                            ],
+                                            "type": "text",
+                                            "content": "Table 6: The results of pretrained ICAE ( "
+                                        },
+                                        {
+                                            "bbox": [
+                                                563,
+                                                333,
+                                                1976,
+                                                382
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "512\\rightarrow 128"
+                                        },
+                                        {
+                                            "bbox": [
+                                                563,
+                                                333,
+                                                1976,
+                                                382
+                                            ],
+                                            "type": "text",
+                                            "content": " ) based on different target LLMs"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        609,
+                        765,
+                        1938,
+                        1201
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                609,
+                                765,
+                                1938,
+                                1201
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        609,
+                                        765,
+                                        1938,
+                                        1201
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                609,
+                                                765,
+                                                1938,
+                                                1201
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Input \n(Batch×Length)</td><td>Method</td><td>Compression Time \n(Cachable)</td><td>Decoding Time</td><td>Total Time</td></tr><tr><td rowspan=\"2\">8*2048</td><td>LLM</td><td>-</td><td>24.0</td><td>24.0</td></tr><tr><td>LLM+ICAE</td><td>3.4</td><td>3.9</td><td>7.3 (3.3×)</td></tr><tr><td rowspan=\"2\">8*512</td><td>LLM</td><td>-</td><td>9.3</td><td>9.3</td></tr><tr><td>LLM+ICAE</td><td>0.6</td><td>3.7</td><td>4.3 (2.2×)</td></tr><tr><td rowspan=\"2\">32*512</td><td>LLM</td><td>-</td><td>24.3</td><td>24.3</td></tr><tr><td>LLM+ICAE</td><td>2.6</td><td>4.2</td><td>6.8 (3.6×)</td></tr></table>",
+                                            "image_path": "a5338f6e2a854d609a5862dcefe40b692bf7e23ef05f7f6102d1ad8d26043245.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 3,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                441,
+                                706,
+                                2101,
+                                755
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        706,
+                                        2101,
+                                        755
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                441,
+                                                706,
+                                                2101,
+                                                755
+                                            ],
+                                            "type": "text",
+                                            "content": "Table 7: Latency comparison of LLM (generation) and LLM "
+                                        },
+                                        {
+                                            "bbox": [
+                                                441,
+                                                706,
+                                                2101,
+                                                755
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "^+"
+                                        },
+                                        {
+                                            "bbox": [
+                                                441,
+                                                706,
+                                                2101,
+                                                755
+                                            ],
+                                            "type": "text",
+                                            "content": " ICAE (compression then generation)"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        443,
+                        1254,
+                        2108,
+                        1438
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1254,
+                                2108,
+                                1438
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1254,
+                                        2108,
+                                        1438
+                                    ],
+                                    "type": "text",
+                                    "content": "even more significant - around "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1254,
+                                        2108,
+                                        1438
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "3.5\\times"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1254,
+                                        2108,
+                                        1438
+                                    ],
+                                    "type": "text",
+                                    "content": " in compute- intensive scenarios (e.g., "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1254,
+                                        2108,
+                                        1438
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "8\\times 2048"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1254,
+                                        2108,
+                                        1438
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1254,
+                                        2108,
+                                        1438
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "32\\times 512"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1254,
+                                        2108,
+                                        1438
+                                    ],
+                                    "type": "text",
+                                    "content": " Given that the compressed memory slots can be cached in advance (for frequently used texts like textbooks, government reports or articles of law), ICAE may introduce over "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1254,
+                                        2108,
+                                        1438
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "7\\times"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1254,
+                                        2108,
+                                        1438
+                                    ],
+                                    "type": "text",
+                                    "content": " inference speedup in these cases. Details of the profiling are presented in Appendix B."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        448,
+                        1471,
+                        1254,
+                        1521
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                448,
+                                1471,
+                                1254,
+                                1521
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        448,
+                                        1471,
+                                        1254,
+                                        1521
+                                    ],
+                                    "type": "text",
+                                    "content": "3.3.3 MULTIPLE SPANS OF MEMORY SLOTS"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        1541,
+                        2106,
+                        1956
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1541,
+                                2106,
+                                1956
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1956
+                                    ],
+                                    "type": "text",
+                                    "content": "Thus far, we have mainly discussed a single span of memory slots. In this section, we shall discuss multiple spans of memory slots. As illustrated in Figure 6(Left), we can segment a long context into "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1956
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1956
+                                    ],
+                                    "type": "text",
+                                    "content": " chunks, compress them individually, and then concatenate them to represent the original long context. However, this did not work initially, because the model had never seen multiple span concatenation patterns during training. Fortunately, we can incorporate a small number of multiple span concatenation samples during training, enabling the model to work with concatenated spans of memory slots, as OpenAI's work (Bavarian et al., 2022) on introducing the \"fill in the middle\" ability for the GPT. The results in Figure 6(Right) indicate that, using an equivalent length context, ICAE's memory achieves better performance - because memory can represent "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1956
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "4\\times"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1956
+                                    ],
+                                    "type": "text",
+                                    "content": " the original context length."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        443,
+                        1976,
+                        2108,
+                        2207
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1976,
+                                2108,
+                                2207
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1976,
+                                        2108,
+                                        2207
+                                    ],
+                                    "type": "text",
+                                    "content": "The ability of ICAE demonstrates great promise to handle long contexts, as it can save a significant amount of GPU memory when addressing long contexts without touching the existing LLM. As illustrated in Figure 6(Right), 2048- length memory slots can perform on par with 4096- token contexts. This means that conditioning on 2048 memory slots instead of the original 4096 context tokens can save about 20GB of GPU memory with minimal quality degradation."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        446,
+                        2253,
+                        879,
+                        2306
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                2253,
+                                879,
+                                2306
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        2253,
+                                        879,
+                                        2306
+                                    ],
+                                    "type": "text",
+                                    "content": "4 RELATED WORK"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        2346,
+                        2106,
+                        2673
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2346,
+                                2106,
+                                2673
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2346,
+                                        2106,
+                                        2673
+                                    ],
+                                    "type": "text",
+                                    "content": "Prompt compression and context distillation (Askell et al., 2021; Snell et al., 2022) are closely related areas to this work: Wingate et al. (2022) proposed a method to learn compact soft prompts to simulate the original natural language prompt by optimizing the KL divergence. However, this approach has a very high computational cost, as it requires performing back- propagation for each new incoming prompt to learn and obtain the compressed prompt, which severely limits its application. Qin & Van Durme (2023) propose Neural Agglomerative Embeddings named NUGGET, which encodes language into a compact representation for an encoder- decoder model."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        443,
+                        2692,
+                        2106,
+                        2880
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2692,
+                                2106,
+                                2880
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2692,
+                                        2106,
+                                        2880
+                                    ],
+                                    "type": "text",
+                                    "content": "The most closely related studies to our research are GIST (Mu et al., 2023) and AutoCompressors (Chevalier et al., 2023). GIST achieves prompt compression by fine- tuning an LLM in a similar way to ours. The resulting model can produce gist tokens as the compression of a prompt, which are similar to our memory slots. Nonetheless, this approach is limited to compressing short prompts and"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

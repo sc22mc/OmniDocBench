@@ -1,0 +1,118 @@
+[
+    {
+        "type": "text",
+        "text": "A. Symmetries of the architecture",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A.1. Proof of Proposition 4.1",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this appendix we provide more details on the equivariance of the Timewarp architecture. We first prove Proposition 4.1 from the main body:",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. Let  $X(t + \\tau)_{x(t)}$  denote the random variable obtained by sampling  $Z\\sim p(z)$  and computing  $X(t + \\tau)\\coloneqq f(Z;x(t))$  Here we subscript  $X(t + \\tau)_{x(t)}$  by  $x(t)$  to emphasize that this is the random variable obtained when conditioning the flow on  $x(t)$  . We first note that the equivariance condition on the densities  $p(\\sigma x(t + \\tau)|\\sigma x(t)) = p(x(t + \\tau)|x(t))$  is equivalent to the following constraint on the random variables:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nX(t + \\tau)_{\\sigma x(t)}\\overset {d}{=}\\sigma X(t + \\tau)_{x(t)}, \\tag{20}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $\\stackrel {d}{=}$  denotes equality in distribution. To see this, let  $p_{X}$  denote the density of the random variable  $X$  . Then, in terms of densities, Equation (20) is equivalent to stating that, for all  $x$",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & p_{X(t + \\tau)_{\\sigma x(t)}}(x) = p_{X(t + \\tau)_{x(t)}}(x)\\\\ & \\qquad = p_{X(t + \\tau)_{x(t)}}(\\sigma^{-1}x), \\end{array} \\tag{22}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where in Equation (22) we used the change- of- variables formula, along with the fact that the group actions we consider (rotations, translations, permutations) have unit absolute Jacobian determinant. Redefining  $x\\gets \\sigma x$  , we get that for all  $x$",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\np_{X(t + \\tau)_{\\sigma x(t)}}(\\sigma x) = p_{X(t + \\tau)_{x(t)}}(x). \\tag{23}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Recalling the notation that  $X(t + \\tau)_{x(t)}$  is interpreted as the random variable obtained by conditioning the flow on  $x(t)$  , this can be written as",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\np(\\sigma x|\\sigma x(t)) = p(x|x(t)) \\tag{24}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "which is exactly the equivariance condition stated in terms of densities above. Having rephrased the equivariance condition in terms of random variables in Equation (20), the proof of Proposition 4.1 is straightforward",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & X(t + \\tau)_{\\sigma x(t)}\\coloneqq f(Z,\\sigma x(t))\\\\ & \\qquad \\stackrel {d}{=}f(\\sigma Z,\\sigma x(t))\\\\ & \\qquad = \\sigma f(Z,x(t))\\\\ & \\qquad \\coloneqq \\sigma X(t + \\tau)_{x(t)}, \\end{array} \\tag{25}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where in Equation (26) we used the fact that the base distribution  $p(z)$  is  $\\sigma$  - invariant.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A.2. Translation equivariance via canonicalisation",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We now describe the canonicalisation technique used to make our models translation equivariant. Let  $q(x^{p}(t + \\tau),x^{v}(t+$ $\\tau)|x^{p}(t))$  be an arbitrary conditional density model, which is not necessarily translation equivariant. We can make it translation equivariant in the following way. Let  $\\overline{x^p}$  denote the average position of the atoms,",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\overline{x^p} \\coloneqq \\frac{1}{N}\\sum_{i = 1}^{N}x_i^p. \\tag{29}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Then we define",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\np(x^p (t + \\tau),x^v (t + \\tau)|x^p (t))\\coloneqq q(x^p (t + \\tau) - \\overline{x^p(t)},x^v (t + \\tau)|x^p (t) - \\overline{x^p(t)}) \\tag{30}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where the subtraction of  $\\overline{x^p(t)}$  is broadcasted over all atoms. We now consider the effect of translating both  $x^{p}(t)$  and  $x^{p}(t + \\tau)$  by the same amount. Let  $a$  be a translation vector in  $\\mathbb{R}^3$  . Then",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {p(x^{p}(t + \\tau) + a,x^{v}(t + \\tau)|x^{p}(t) + a) = q(x^{p}(t + \\tau) + a - (\\overline{x^{p}(t) + a}),x^{v}(t + \\tau)|x^{p}(t) + a - (\\overline{x^{p}(t) + a})}\\\\ & {\\qquad = q(x^{p}(t + \\tau) + a - \\overline{x^{p}(t)} -a,x^{v}(t + \\tau)|x^{p}(t) + a - \\overline{x^{p}(t)} -a)}\\\\ & {\\qquad = q(x^{p}(t + \\tau) - \\overline{x^{p}(t)},x^{v}(t + \\tau)|x^{p}(t) - \\overline{x^{p}(t)})}\\\\ & {\\qquad = p(x^{p}(t + \\tau),x^{v}(t + \\tau)|x^{p}(t)).} \\end{array} \\tag{34}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

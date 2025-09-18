@@ -1,0 +1,81 @@
+[
+    {
+        "type": "text",
+        "text": "where  $T_{\\mathrm{ex}} = 12 \\mathrm{K}$  is the excitation temperature (obtained from the Herschel dust temperature map, see also Sect. 4.1),  $T_{\\mathrm{MB}} = 3.5 \\mathrm{K}$  is the peak main beam temperature, the function  $\\mathbf{J}_{\\nu}$  is the equivalent Rayleigh- Jeans temperature, and  $T_{\\mathrm{bg}} = 2.73 \\mathrm{K}$  is the cosmic background temperature. Therefore, we obtain  $\\tau = 0.66$ . For the  $\\mathrm{DCO^{+}}$  (3- 2) line we obtain  $\\tau = 0.44$  using  $T_{\\mathrm{MB}} = 1.0$  and  $T_{\\mathrm{ex}} = 7 \\mathrm{K}$ . Through a combination of excitation and abundance, distinctive species give complementary information on gas conditions. Due to its relatively high abundance and low critical density  $n_{\\mathrm{cr}}(\\mathrm{C^{18}O}(2 - 1)) \\sim 10^{4} \\mathrm{cm}^{- 3}$ , computed with numbers in the LAMDA database,  ${}^{3} \\mathrm{C^{18}O}(2 - 1)$  is a sensitive tracer of relatively low- density material in the cloud, which traces the more extended gas in the filamentary structure. The  $\\mathrm{DCO^{+}}$  (3- 2) molecule, on the other hand, presents a higher critical density  $n_{\\mathrm{cr}}(\\mathrm{DCO^{+}}(3 - 2)) \\sim 10^{6} \\mathrm{cm}^{- 3}$ , which makes it more selective of dense gas closer to the central protostar.  $\\mathrm{DCO^{+}}$  (3- 2) emission is also known as a remarkably sensitive tracer for gas properties during the early stages of protostellar evolution (e.g., Gerner et al. 2015). In the location of the protostar, we see a decrease in the  $\\mathrm{C^{18}O}(2 - 1)$  integrated intensity, suggesting that the molecule is partially depleted onto the dust grains (Caselli et al. 1999) (Bacmann et al. 2002). Figure 2 shows the channel maps of the  $\\mathrm{C^{18}O}(2 - 1)$  line. The figure presents the signal emission at velocity intervals of  $\\approx 0.2 \\mathrm{km} \\mathrm{s}^{- 1}$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4. Analysis",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.1. Column density maps",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To calculate the column density map of these two molecules we used the same procedure as used in Redaelli et al. (2019b) and Caselli et al. (2002) for an optically thin transition. The  $\\mathrm{DCO^{+}}$  (3- 2) and  $\\mathrm{C^{18}O}(2 - 1)$  lines are both optically thin, as we show in the previous section. The expression of the total column density derived by an optically thin transition is given by",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nN_{\\mathrm{col}} = \\frac{8\\pi W\\nu^3}{c^3A_{\\mathrm{ul}}}\\frac{Q(T_{\\mathrm{ex}})}{J_{\\nu}(T_{\\mathrm{ex}}) - J_{\\nu}(T_{\\mathrm{bg}})}\\frac{e^{\\frac{E_{\\mathrm{pg}}}{k_{\\mathrm{B}}\\mathrm{r}_{\\mathrm{cs}}}}}{g_{\\mathrm{u}}(e^{\\frac{h\\nu}{k_{\\mathrm{B}}\\mathrm{r}_{\\mathrm{cs}}}} - 1)}, \\tag{2}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $T_{\\mathrm{ex}}$  is the excitation temperature, the function  $\\mathbf{J}_{\\nu}$  is the equivalent Rayleigh- Jeans temperature,  $T_{\\mathrm{bg}} = 2.73 \\mathrm{K}$  is cosmic background temperature,  $E_{\\mathrm{u}}$  is the upper state energy,  $g_{\\mathrm{u}}$  is the degeneracy,  $A_{\\mathrm{ul}}$  is the Einstein coefficient,  $Q$  is the partition function,  $\\nu$  is the line frequency,  $h$  is the Planck constant,  $\\mathrm{k_B}$  is the Boltzmann constant (see Table 1 for details), and  $W$  is the integrated intensity of the line. Since the  $\\mathrm{DCO^{+}}$  (3- 2) transition shows only one velocity component, we use the result of the Gaussian fit to compute the integrated intensity of this line (see Sect. 4.2 for more details) by calculating the area under the Gaussian profile. The  $\\mathrm{C^{18}O}(2 - 1)$  emission, instead, shows signs of multiple velocity components along the line of sight. We therefore compute the integrated the intensity from the data cube, integrating emission over the velocity range [4 - 6.5]  $\\mathrm{km} \\mathrm{s}^{- 1}$ , which contains the whole line profile.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We use the dust temperature map to approximate the excitation temperature for the  $\\mathrm{C^{18}O}(2 - 1)$  line, obtained from Herschel data (Benedettini et al. 2018) (Rygl et al. 2013) since we expect this line to be thermally excited. This assumption may induce some small errors as at the volume densities traced by the  $\\mathrm{C^{18}O}(2 - 1)$  line the gas and dust are not thermally coupled (Goldsmith",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/d93f21084334ea2bf6d4325b3d43350125600c33c5c36264f2426880cfef704e.jpg",
+        "table_caption": [
+            "Table 1: Spectroscopic parameters used to derive the molecular column density."
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Transition</td><td>ν\n(GHz)</td><td>gu</td><td>Eu/10-22\n(J)</td><td>Aul/10-3\n(s-1)</td><td>Q(7a)</td></tr><tr><td>C18O (2-1)</td><td>219.56</td><td>5</td><td>2.18</td><td>6.01 10-4</td><td>-</td></tr><tr><td>DCO+ (3-2)</td><td>216.112</td><td>7</td><td>2.86</td><td>7.65</td><td>4.40b</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note: All the data are from the Cologne Database for Molecular Spectroscopy (CDMS) documentation. The excitation temperature of  $\\mathrm{C^{18}O}(2 - 1)$  is 7K. Calculated via interpolation of the Partition function available at CDMS, for different temperatures.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2001). We therefore use the dust temperature as a proxy for the gas kinetic temperature. On the contrary, the  $\\mathrm{DCO^{+}}$  (3- 2) line is the  $3 - > 2$  transition, which has a high critical density; therefore, the dust temperature is not a good approximation for excitation temperature because we expect the line to be subthermally excited, so we use excitation temperature equal to  $7 \\mathrm{K}$  with a variation of  $2 \\mathrm{K}$  for this line. The column density peak for the  $\\mathrm{DCO^{+}}$  and  $\\mathrm{H}_{2}$  is found at the protostar position. For the protostar position, the  $\\mathrm{C^{18}O}$ ,  $\\mathrm{DCO^{+}}$ , and  $\\mathrm{H}_{2}$  column densities are  $(7.8 \\pm 0.1) \\times 10^{14} \\mathrm{cm}^{- 2}$ ,  $1.4_{- 0.5}^{+2.24} \\times 10^{12} \\mathrm{cm}^{- 2}$ , and  $(4.2 \\pm 1.8) \\times 10^{22} \\mathrm{cm}^{- 2}$  (Roy et al. 2014) respectively. The column density for  $\\mathrm{H}_{2}$  is obtained based on the Herschel map.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.2. Spectral line analysis",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In order to derive the kinematics parameter maps (e.g.,  $\\mathrm{V}_{lsr}$ ,  $\\sigma_{\\mathrm{V}}$ ), we perform a Gaussian fitting of the transitions using the PSPEckII package of Python (Ghisburg & Mirochia 2011). For the  $\\mathrm{DCO^{+}}$  (3- 2) data cube, we use a single- Gaussian component fit. The initial guesses are then  $2.5 \\mathrm{K}$ ,  $5.2 \\mathrm{km} \\mathrm{s}^{- 1}$ , and  $0.2 \\mathrm{km} \\mathrm{s}^{- 1}$  for the amplitude, velocity dispersion, and width, respectively.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Instead,  $\\mathrm{C^{18}O}(2 - 1)$  presents more complex kinematics. It often shows two velocity components in its profiles. Since the line is optically thin, as shown in Sect. 3, we are confident that these are multiple velocity components and they are not due to self- absorption. In order to fit two Gaussian profiles on the  $\\mathrm{C^{18}O}(2 - 1)$  data we perform a simple  $\\mathrm{S} / \\mathrm{N}$  cut, we mask those pixels where  $T_{\\mathrm{MB}}^{\\mathrm{peak}} < 20$ , then fit one Gaussian profile to all the unmasked pixels (65% of the pixels). Then we fit two Gaussians for those pixels that had a residual larger than  $2 \\times rms$  and those Gaussian fits with a width broader than  $0.25 \\mathrm{km} \\mathrm{s}^{- 1}$  in the previous step. By visual inspection we find that lines broader than  $0.25 \\mathrm{km} \\mathrm{s}^{- 1}$  show profiles consistent with two velocity components on the line of sight. For the second time we check the Gaussian fit profiles and for those pixels that have residuals bigger than  $2 \\times rms$  we do the fitting one more time with different initial guesses (60% of the pixels with  $\\mathrm{S} / \\mathrm{N}$  cut), which means they always have residuals less than two times the rms. As a final step, if the error on the velocity dispersion or velocity and on the amplitude is larger than  $1 \\mathrm{km} \\mathrm{s}^{- 1}$  and  $1 \\mathrm{K}$ , respectively, we remove the fit. By doing this, we remove fits with unreasonably large uncertainties, which indicates that they have been poorly fitted. Figure 3 shows the fit results overlapped with the data.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The grid of spectra of  $\\mathrm{C^{18}O}(2 - 1)$  and  $\\mathrm{DCO^{+}}$  (3- 2) lines for 40 positions at 18 arcsec intervals from each other around the core is shown in Fig. 3 (for more details about the position of each spectrum, see Appendix A). The red histogram represents the  $\\mathrm{DCO^{+}}$  (3- 2) spectrum and the black histogram is the  $\\mathrm{C^{18}O}$",
+        "page_idx": 0
+    }
+]

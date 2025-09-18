@@ -1,0 +1,68 @@
+[
+    {
+        "type": "text",
+        "text": "respond quickly to change,MFCs have slow dynamics because of the redox reactions and the evolution of the biofilm.When PMFC operating conditions vary， transients must be settled before we can draw conclusions on steady-state characteristics, such as maximum power point (MPP).For example, many commonlyused dc-dc converters integrateFOCVMPPTalgorithms byperiodically detaching the load for somemilliseconds to measure the OCV,and then modulating the cell voltage to a preset fraction of that OCV value [26].While this trivial OCV measurement works very well for fast energy sources,such as photovoltaic cells,PMFCs require tens of minutes to reach OCV after unloading.If this is not accounted for when coupling PMFCs to commercial dc-dcs, it leads to incorrect OCV sampling, which sets the working point far from the actual MPP.To adapt common dc-dcs to the slow dynamics characterizing PMFCs, Alaraj et al. [27] developed an MFC-specific MPPT algorithm, which includes waiting a correct amount of time where the cell is unloaded to capture steady-state OCV. Similarly,in this article, we capture the steady-state OCV after a sufficient unloading time of the PMFC-which we term cell rest-and externally apply a fraction of the measured OCV as MPP reference to the dc-dc. This operation is executed through a simple sample-and-hold circuit,which is briefly powered after cellunloading periods to obtain a new MPP reference (see Section III-C2). The benefits of this method can be appreciated in Fig.4.We do not rely on the OCV fraction found from the polarization curve (MPP at $30 \\%$ ） butchoose the OCV percentage that experimentally resulted in the fastest capacitor charging through the BQ25505,which we foundtobe $50 \\%$ (see Fig. 5). The downside of unloading a cell for some time to measure OCV correctly is that we cannot extract power from that cell during its rest period.If this can initially be seen as a limitation of our method,allowing cells to rest actually benefits the longevity of PMFCs,as continuous current drainage was proven to reduce PMFC performance in the long run [13], [14],[20],[28]. Besides,if multiple PMFCs are available,one can switch between cells to ensure continuous power extraction and cell rest,as shown in Reyes et al.'s[28] work. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Finally,while high internal impedance is one of the major limiting factors in PMFC power output,itcan bea key element in understanding electrobiochemical phenomena ruling the functioning of PMFCs.The development of cell impedance models can come in handy forMPPT,optimizingcell lifetime, and using the cell as a plant health biosensor.Cells are highly complex systems:although a favorite in literature has been the Randlescell, there isa lack of agreed-upon cell mathematical models.PMFCmodelscan be obtained and used in different ways.Forinstance,Maet al. [29] useda data-driven approach for modeling the relationship between temperature,pH,and OCV during startup.As mentioned, literature has often relied on EIS measurements to develop physical-based cell models [11]. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this study,our main interest in EIS measurements lies in enabling online estimation of cell state from electrochemical properties so that appropriate actionscan be taken to reach or maintain the cell's desired power production rate for as long as possible.We are also interested in enabling further studies of the link between EIS measurements and plant state.Unfortunately, Carmalin et al. [3O] stress the lack of studies on the subject but hint that EIS fit parameters such as solution resistance could be influenced by plant factors,such as root exudate type,rate,and present bacterial community.Other projects such as [31] and [32] executed EISon PMFCs,but most interpret results without consideringplant interaction with the cell's electrobiochemical characteristics. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/e5216523640040741357db88aecf8f2d184dc987f18b64452bfd9c19db9e0a8b.jpg",
+        "image_caption": [
+            "Fig.1.On the left,the construction details of the reactor are shown.Figure AandB,respectively,show the dimensions of the anode and cathode carbon brush electrodes,the titanium wire inserted into the electrodes. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "If the link between EIS and plant state is found,our monitoring systemcan be usedasan inexpensiveand portable plant biosensor,assisting researchersin large data collection campaigns. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "III.SYSTEMIMPLEMENTATION ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This section outlines the sensor node's key building blocks and the application scenario.It begins with a review of the construction of our testPMFCs in Section III-A, followed by an analysis of the proposed application scenario in Section III-B and the sensor node's block diagram in Section III-C. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. PMFC Construction and Operation ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We built our test reactors using carbon brush electrodes and soil from the campus ground. Fig.1 showcases the construction details.We designed a single-chamber fuel cell without a polymer electrolyte membrane (PEM) separating anodic and cathodic regions,to keep deployment costs as low as possible, albeit the Coulomb efficiency slightly lower [33]. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To compensate for the absence of a PEM,oxygen diffusion was limited by placing the two electrodes at a $1 0 ~ \\mathrm { { c m } }$ depth difference.The anode was placed at the bottom of the vase, with no openings to maintain the anoxic environment required for the anodic reaction.The cathode was buried $2 \\ \\mathrm { c m }$ below ground to ensure oxygen could reach its surface for the oxygen reduction reaction.The reactor volume was $1 0 4 4 ~ \\mathrm { c m ^ { 3 } }$ The cathode was slightly oversized than the anode(cathode diameter: $1 1 \\mathrm { { c m } }$ ,anodediameter: $8 \\mathrm { c m }$ )to compensate for slowercathodic reaction kinetics [34]. The plant in our MFC cells is common MenthaPiperita:itisa fast-growing,hardy,and easy-to-source plant,supposed to tolerate well a damp environment. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Newly built reactors require a startup time.Naturally present bacteria in the soil need to establish a thriving colony,which ",
+        "page_idx": 0
+    }
+]

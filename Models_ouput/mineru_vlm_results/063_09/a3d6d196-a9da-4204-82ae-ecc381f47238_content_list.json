@@ -1,0 +1,95 @@
+[
+    {
+        "type": "text",
+        "text": "give the following table for each case.",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/26f1fe0c29fef632f0fc41ef87e76dfae2daeb69f27819d2c7bcca1ac077ee64.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>q</td><td>9</td><td>13</td><td>17</td><td>25</td><td>29</td><td>37</td><td>41</td><td>49</td></tr><tr><td>g</td><td>α</td><td>2</td><td>3</td><td>β</td><td>2</td><td>5</td><td>6</td><td>γ</td></tr><tr><td>x</td><td>α</td><td>4</td><td>6</td><td>1</td><td>4</td><td>2</td><td>3</td><td>2</td></tr><tr><td>y</td><td>α</td><td>1</td><td>2</td><td>β²</td><td>4</td><td>2</td><td>3</td><td>2γ⁷</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $\\alpha = 1 + \\sqrt{- 1}$  in  $\\mathbb{F}_9 = \\mathbb{F}_3(\\sqrt{- 1})$ $\\beta = 1 + 2\\sqrt{2}$  in  $\\mathbb{F}_{25} = \\mathbb{F}_5(\\sqrt{2})$  and  $\\gamma = 4 + \\sqrt{- 1}$  in  $\\mathbb{F}_{49} = \\mathbb{F}_7(\\sqrt{- 1})$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This completes the verifications of all cases in which  $N_{g} > 0$  . Moreover, we've exhibited all solutions  $(x,y)$  such that  $xy\\neq 0$  and thus finish the proof.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We would like to point out that it's possible to prove Corollary 2.3 by using the bound (6) without applying the Hasse- Weil bound.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In view of Conjecture  $\\boxed{ \\begin{array}{r l} \\end{array} }$  we only need to find a generator  $g$  of  $\\mathbb{F}_q^\\times$  such that  $\\mathcal{C}_g(\\mathbb{F}_q)$  is non- empty. Instead of computing  $N_{g}$  , our goal is to show that the following sum",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nN(q,\\ell) = \\sum_{\\mathbb{F}_q^\\times = \\langle g'\\rangle}N_{g'} = \\sum_{\\stackrel{1\\leq t\\leq q - 1,}{\\gcd (t,q - 1) = 1}}N_{g'}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "is a positive integer under appropriate conditions.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.KEY INGREDIENTS",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this section, we gather tools and results that are needed for the proof of Theorem  $\\boxed{\\mathbb{A}}$  To simplify the notation, we'll put  $(a_{1},a_{2}) = \\gcd (a_{1},a_{2})$  , the greatest common divisor of integers  $a_1$  and  $a_{\\perp}$  . The following lemma is an elementary fact in algebra which we will use repeatedly. As one can easily find a proof in any algebra text book, we skip the proof here.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 3.1. Let  $n\\in \\mathbb{N}$  and let  $d$  be a divisor of  $n$  . Then the canonical group homomorphism",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\pi :(\\mathbb{Z} / n\\mathbb{Z})^{\\times}\\to (\\mathbb{Z} / d\\mathbb{Z})^{\\times}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "induced by",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rcl}{\\mathbb{Z}_t / n\\mathbb{Z}_t} & \\to & {\\mathbb{Z}_t / d\\mathbb{Z},}\\\\ {k + n\\mathbb{Z}} & \\mapsto & {k + d\\mathbb{Z}} \\end{array}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "is surjective. Furthermore, this homomorphism splits. Namely, there exists a subgroup  $M$  of  $(\\mathbb{Z} / n\\mathbb{Z})^{\\times}$  which is isomorphic to  $(\\mathbb{Z} / d\\mathbb{Z})^{\\times}$  under  $\\pi$  and  $(\\mathbb{Z} / n\\mathbb{Z})^{\\times} = M\\cdot N$  where  $N = \\ker (\\pi)$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For  $n\\in \\mathbb{N}$  and  $m\\in \\mathbb{Z}$  , the Ramanujan's sum  $c_{n}(m)$  ([Ram18] or [HSW00] pp. 179- 199]) is defined by",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nc_{n}(m) = \\sum_{\\stackrel{1\\leq t< n,}{(t,n) = 1}}\\zeta_{n}^{mt}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/f222a333c0034c8c7e23452a70fa7e7891ea8e8ca12cfebcc5e5b14647297ef7.jpg",
+        "image_caption": [
+            "Fig.7Earto (d)Baler site39.(e)Baler site77.(f)Baler site97.(g)Baler site 119.(h)Baler site 135. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/30abdf68491f91310adacbb8d97786b013155661b7b8dd1979df29a7eee15413.jpg",
+        "image_caption": [
+            "Fig8Ea 75.(d)Mower site78.(e)Mower site110.(f) Mower site135.(g)Mower site153.(h)Mower site 165. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "site.This occurs because the operator does not complete a loop of the outer perimeter as seen in Fig. 9(a). The product is a field object that is not fully formed.The remaining steps of Stage II cannot function correctly.The result is several foreground areas that do not meet the minimum area requirement to be considered valid fields,as seen in Fig.9(c). Similarly, the operator does not loop the field perimeter for the single field site shown in Fig.10. However,in this scenario,the job site is detectedasaconjoined field site and over-segmented by the algorithm,and thus labeled asafalsepositive. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Thealgorithm can mislabel coordinates at the field corners as path points;examples can be seen in the bottom right-hand corners ofFig.7(c) and 8(a). This can occur at the field corners when the machinery operator takes a sharp turn. The points are mislabeled due to unrestored boundary pixels introduced by the erosion and dilation operation in Stage II. This problem was identified but not pursued,as it did not affect the core objective of thearticle,which was to solve for conjoined field segmentation casesinmachinery trajectorydata. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Overall, the algorithmperforms robustly on different machinery implementation datasets obtaining $100 \\%$ and $9 8 . 8 4 \\%$ onabaler and mower dataset,respectively.The results have demonstrated that the algorithm presented in this article is suitable to solveboth road-to-feld and field-to-field cases. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C.Field Analysis ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Balerand mower field effciency histogram plots are shown inFig.11 to illustrate the opportunity,offered by the algorithm, to analyze job site machinery operating data at a field-level. ",
+        "page_idx": 0
+    }
+]

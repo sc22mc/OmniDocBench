@@ -1,0 +1,100 @@
+[
+    {
+        "type": "text",
+        "text": "Proof.Let $a , b \\in \\mathbb { Z }$ be two fixed integers and let ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/249f9a877df5a09961ca5ceee0419f8abb02eb82d26bc39a58f4836fdcbc27ea.jpg",
+        "text": "$$\nS ( d , t ) = \\{ ( x , y ) \\in I \\times I \\mid a x + b y \\equiv t d { \\pmod { n } } \\} .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Then the union of $S ( d , t )$ for all such $d$ and $t$ isa subset of $I \\times I$ .This union indeed contains all elements of $I \\times I$ To see this,let $( x , y ) \\in I \\times I$ and let $d = ( a x + b y , n )$ . Pick $1 \\leq t \\leq \\frac { n } { d }$ such that $\\textstyle t \\equiv { \\frac { a x + b y } { d } }$ (mod $\\frac { n } { d }$ ).Then $( t , \\frac { n } { d } ) = 1$ and $a x + b y \\equiv t d { \\pmod { n } }$ Thus, $( x , y ) \\in S ( d , t )$ .Finally, if $S ( d , t ) \\cap S ( d ^ { \\prime } , t ^ { \\prime } ) \\neq \\emptyset$ , then choose one pair $( x , y )$ in this intersection. We obtain $d = ( a x + b y , n ) = d ^ { \\prime }$ Furthermore, $t d \\equiv t ^ { \\prime } d { \\pmod { n } }$ implies that $t \\equiv t ^ { \\prime } { \\pmod { \\frac { n } { d } } }$ .Since $1 \\leq t , t ^ { \\prime } \\leq \\frac { n } { d }$ ,we have $t = t ^ { \\prime }$ □ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.PROOFOFTHEMAINRESULT ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Recall that we aim at showing the following sum ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4108f5a7f474b384d6c638455814101afa2cf8582a2db9fc4423fea1678ea439.jpg",
+        "text": "$$\nN ( q , \\ell ) = \\sum _ { \\stackrel { 1 \\leq t \\leq q - 1 } { ( t , q - 1 ) = 1 } } N _ { g ^ { t } }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "is not equal to zero where $g$ is a fixed generator of $\\mathbb { F } _ { q } ^ { \\times }$ . It's not hard to see that if $g ^ { t } L = g ^ { s } L$ then $N _ { g ^ { t } } = N _ { g ^ { s } }$ . We have the following reduction for $N ( q , \\ell )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proposition 4.1. Let $g$ be generator of $\\mathbb { F } _ { q } ^ { \\times }$ and $\\ell \\mid q - 1$ Then ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4a8fd5ac2e841c218bb68ff6932b62e70168c8c2c33bb4ed43ae12e196393644.jpg",
+        "text": "$$\nN ( q , \\ell ) = \\frac { \\varphi ( q - 1 ) } { \\varphi ( \\ell ) } \\sum _ { 1 \\leq t \\leq \\ell , \\atop ( t , \\ell ) = 1 } N _ { g ^ { t } } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof.By the definition of $N ( q , \\ell )$ ,it is a sum indexed by all elements of $( \\mathbb { Z } / ( q - 1 ) \\mathbb { Z } ) ^ { \\times }$ Recall that $( \\mathbb { Z } / ( q - 1 ) \\mathbb { Z } ) ^ { \\times } = M \\cdot N$ where $M$ and $N$ are given in Lemma $\\boxed { 3 . 1 }$ for $n = q - 1$ and $d = \\ell$ .Note that if $t _ { 1 } \\in N$ ,then $t _ { 1 } \\equiv 1 { \\pmod { \\ell } }$ and $g ^ { t _ { 1 } } L = g L$ . It follows that $N _ { g ^ { t _ { 1 } t _ { 2 } } } =$ $N _ { g ^ { t _ { 2 } } }$ for any integer $t _ { 2 }$ .Hence, ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/3c0e1e5e5f249e7fab7257366f10758fed4156ea6744bb07ab13aecee1d797c8.jpg",
+        "text": "$$\nN ( q , \\ell ) = \\sum _ { t \\in ( \\mathbb { Z } / ( q - 1 ) \\mathbb { Z } ) ^ { \\times } } N _ { g ^ { t } } = \\sum _ { t _ { 1 } \\in N } \\sum _ { t _ { 2 } \\in M } N _ { g ^ { t _ { 1 } t _ { 2 } } } = | N | \\sum _ { t _ { 2 } \\in M } N _ { g ^ { t _ { 2 } } } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The result follows since|N|=@-1) and $M \\simeq ( \\mathbb { Z } / \\ell \\mathbb { Z } ) ^ { \\times }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Recall from $( 5 )$ that ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/20ca9dda90b6f02e5ad6db0fbf1bb8b382cdf06833de8b2e7429f243f6aea197.jpg",
+        "text": "$$\nN _ { g ^ { t } } = q + \\sum _ { 1 \\leq j , k \\leq \\ell - 1 } \\chi ^ { j } ( - g ^ { - 2 t } ) \\chi ^ { k } ( - g ^ { - t } ) J ( \\chi ^ { j } , \\chi ^ { k } )\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\chi$ is a nontrivial character of $\\mathbb { F } _ { q }$ of order $\\ell$ . We can rewrite $N _ { g ^ { t } }$ as follows. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 4.2. For $1 \\leq t \\leq \\ell$ and $( t , \\ell ) = 1$ ，",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/ceb5b1e9589497911849b5fab5c86f9e84858ee1c30b856ca62a3b678ca38df1.jpg",
+        "text": "$$\nN _ { g ^ { t } } = q + 1 + \\sum _ { { 1 \\leq j , k \\leq \\ell - 1 } , \\atop { j + k \\neq \\ell } } \\chi ( - 1 ) ^ { j + k } \\chi ( g ^ { - 1 } ) ^ { ( 2 j + k ) t } J ( \\chi ^ { j } , \\chi ^ { k } ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,95 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/6250ca0969aa078f3b0aa395e9af0503a62c6dac069d932bf61604a6752697e0.jpg",
+        "table_caption": [
+            "Table1: For the evaluation,sequences from surveillance systems, medical applications,and the HEVC test data set are employed. All sequences are used in 4:O:O color sub-sampling format. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td></td><td>Spatial resolution</td><td>Number of frames</td></tr><tr><td rowspan=\"4\">Surv</td><td>AirportNight1</td><td>688×352</td><td>500</td></tr><tr><td>AirportNight2</td><td>688×432</td><td>500</td></tr><tr><td>AirportNight3</td><td>688×372</td><td>500</td></tr><tr><td>AirportDay1</td><td>688×432</td><td>500</td></tr><tr><td rowspan=\"2\">Med</td><td>MedFrontal</td><td>512×512</td><td>29</td></tr><tr><td>MedSagittal</td><td>512×512</td><td>29</td></tr><tr><td rowspan=\"2\">HEVC</td><td>ClassC</td><td>832×480</td><td>300</td></tr><tr><td>ClassD</td><td>416×240</td><td>300</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "functional for a signal $s$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/8aedf33e2dd2e698c2aba5b8a0344016c3b6388a4af14bc64c4968055f50ca1f.jpg",
+        "text": "$$\nC ( s ) = D ( s ) + \\lambda R ( s ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To determine the distortion $D ( s )$ of the resulting LP frame, we calculate the MSE of the corresponding wavelet coefficients compared to the original signal according to $\\bar { \\left| 1 3 \\right| }$ .In thiswork,not only the similarityof theLP frame to the odd-indexed frame,butalso the similarityto the even indexed frameisconsidered,which isavery important aspect for many professional applications. The rate $R ( s )$ is composed of the required rate forlossless coding of theLPand HP framesand, in case ofMC,the file size of the motion vectors.Then, the current decomposition can be evaluated locally by comparing the R-D costs of the children to the costs of the parent node fora given value $\\lambda$ .If theR-D costs of the child nodes exceed the costs of the parent node,thus if the following inequality ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/25cd8d94609d1e9ecc39204706a1491ffc713d53c37ad3477ce01ab3cd7e744a.jpg",
+        "text": "$$\n\\begin{array} { r } { D ( l _ { i , [ 2 t - 1 , 2 t ] } ) + \\lambda R ( l _ { i , [ 2 t - 1 , 2 t ] } ) \\leq \\qquad ( \\lambda + 1 , } \\\\ { ( D ( l _ { i + 1 , 2 t - 1 } ) + D ( h _ { i + 1 , 2 t } ) ) + \\lambda ( R ( l _ { i + 1 , 2 t - 1 } ) + R ( h _ { i + 1 , 2 t } ) ) } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "holds,then a further decomposition is prevented.The Lagrange multiplier $\\lambda$ can be any positive value.By choosing large values for $\\lambda$ ,therate is decreased,while for small values the distortion is decreased. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.2.Handling of the Overhead ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For lossless reconstruction,the decomposition depth for every part of the input sequence has to be transmitted additionally. Therefore, avector $\\boldsymbol { v }$ isgenerated,whose length correspondsto $T$ .Thisvector is initialized with zeros and gets an increment of1at every temporal position of a LP frame after one decomposition level. The position to the corresponding HP frame is set to zero.Consequently, the non-zero entries correspond to the number of applied decomposition levels $i$ forevery temporal position of aLP frame,while the distance $d$ to the corresponding HP frame is given by $d { = } 2 ^ { i - 1 }$ .For the schematic video sequence in Fig.2 vector $_ { v }$ is generated as follows: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/5d56792339248a3e45f27d5738a6bd2f14d7e2ee5671a7d90d7b2b910d7e89a5.jpg",
+        "text": "$$\n\\begin{array} { r l } { \\mathrm { I n i t i a l i z e ~ } v : } & { { } ( 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , } \\\\ { v \\mathrm { ~ a f t e r ~ l e v e l ~ } i = 1 : } &  { } ( 1 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 1 , 0 , 1 , 0 , 2 , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 , , 0 , 0 ,  \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The entire vector $\\pmb { v }$ isencoded using Context Adaptive Binary Arithmetic Coding (CABAC) $\\textcircled { 1 4 }$ and is transmitted to the decoder side. Then,for lossless reconstruction of the previous stage,the decoder can easily determine the decomposition level and the temporal positions of the LP and HP frames regarding the original video sequence. ",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/74dbe96043a21c1da877222d8fdf4faea1ed732c9aff6caeb1ac14beaa1b6245.jpg",
+        "table_caption": [
+            "Table 2:Absolute $\\mathrm { P S N R } _ { \\mathrm { L P } _ { t } }$ [dB] and relative rate $[ \\% ]$ differences ofour proposed CA-WL compared to the U-WL with (bottom) and without (top) block-based MC.Positive numbers denote abetter visual quality and a higher rate of our proposed CA-WL and vice versa. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td></td><td>入</td><td>Surv</td><td>Med</td><td>ClassC</td><td>ClassD</td><td>Total average</td></tr><tr><td rowspan=\"2\">ONON</td><td>△PSNRLPt</td><td>1357</td><td>4.12 1.4 0.65</td><td>5.28 1.1 1.16</td><td>12.83 .3 4.09</td><td>18.07 114 8.27</td><td>8.88 5.7 3.5</td></tr><tr><td>△File size</td><td>1 35 7</td><td>5.99 0.8 0.16</td><td>0.09 -0.96 -1.29</td><td>11.64 2.5 0.25</td><td>9.07 5.77 3.07</td><td>6.56 2.18 0.67</td></tr><tr><td rowspan=\"2\"></td><td>△PSNRLPt</td><td>1 357</td><td>9.3 8.17 7.42 7.27</td><td>15.56 13.89 13.89 13.89</td><td>6.99 9.6 9.21 8.95</td><td>14.15 11.26 9.55 8.42</td><td>10.98 10.28 9.47 9.02</td></tr><tr><td>△File size</td><td>1357</td><td>0.16 -0.52 -0.8</td><td>-5.58 -5.64 -5.64</td><td>1.98 -1.6 -2.18</td><td>6.9 1.35 0.29</td><td>1.34 −1.06 -1.57</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.EXPERIMENTALRESULTS ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Our simulation setup comprises surveillance videos,medical sequences with contrast medium,and natural sequences from the HEVC test data set 15l. The dimensions are summarized in Tablel The bit depth for all sequences constitutes 8 bits per sample. All surveillance sequences are characterized by a static background and some moving objects in the foreground. The medical sequences origin from Digital Subtraction Angiography (DSA),showing the inflow of a contrast medium into a human cranium in frontal and sagittal perspectives. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the following,we will compare our proposed CA-WL to a uniform wavelet lifting (U-WL） with the same number of total decomposition levels.The single frames of each subband are encoded by JPEG 2000,using the OpenJPEG16l implementation with four spatial wavelet decomposition steps in xy-direction. Further,we evaluate the CA-WL and theU-WL withandwithoutablock-based MC,respectively.For block-based MC,theblock size is setto 8, while the search range starts with a size of 8 and is doubled for every decomposition level until a maximum size of 64.The increasing search range is important,since the input frames of higher decomposition levelshavealarger temporal distance,which hasto be covered.To keep the computational effort realistic,we limit the increment of the search range by 64 pixels.The resulting motion vectors are encoded using the QccPack library $\\textcircled { 1 7 }$ .Then,the entire fle size iscomposed of the rate resulting from each subband,the required motion vectors and the coding costs for transmitting vector $\\boldsymbol { v }$ The visual quality of the resultingLP subband is measured by the same metric as already used in Section $\\pmb { \\bigtriangledown }$ but in terms of $\\mathrm { P S N R } _ { \\mathrm { L P } _ { t } }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Table2gives the differences regarding $\\mathrm { P S N R } _ { \\mathrm { L P } _ { t } }$ in [dB] and the entire file size in $[ \\% ]$ of our proposed method compared to the UWL for all data sets with and without the application of MC and for different values of $\\lambda$ .As can be seen in the right column,our method always results in a better visual quality compared to the UWL.By increasing $\\lambda$ ,thefile sizeisreduced,while the $\\mathrm { P S N R } _ { \\mathrm { L P } _ { t } }$ gainsare also decreased. However, for $\\lambda { = } 7 .$ the $\\mathrm { P S N R } _ { \\mathrm { L P } _ { t } }$ gainsare still positive.By including MC into both methods,we are able to get a lower rate than for the U-WL,resulting in positive $\\mathrm { P S N R } _ { \\mathrm { L P } _ { t } }$ gains at the same time. For $\\lambda { = } 3$ ,the file size can be reduced by up ",
+        "page_idx": 0
+    }
+]

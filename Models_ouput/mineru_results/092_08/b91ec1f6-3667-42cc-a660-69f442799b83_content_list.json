@@ -1,0 +1,68 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/8fddac07684f351c5ad5972605fb86ea5dfc8e3e5573f804ff4664a12ed94d30.jpg",
+        "image_caption": [
+            "Fig.6.Bode plots of dead and alive PMFC over three days,obtained with the Autolab PGSTAT302N. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C.Three-Day Impedance Study ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We conducted a three-day study of cell impedance to qualitatively observe the typical time development of these complex electrobiochemical systems. Throughout these three days,we collected measurements from a power-producing (i.e., active) and nonpower-producing (i.e.,inactive） cell to identify similarities and differences between their impedance spectra.The EIS measurementswere obtained at OCV with an Autolab PGSTAT302N,alaboratory-graded potentiostat used as a reference.This instrument automatically measures OCV and triggers ameasurement sweepwhenever OCVis sufficiently stable.EIS measurements were executed with a setup matching the twoelectrode configuration of the MAX30134 upon deployment (see Section II-C). The spanned frequency range starts at $0 . 0 1 4 \\ : \\mathrm { H z }$ and ends at $2 7 \\mathrm { k H z }$ ,tomatch the full range of the MAX30134 IC.Results of the EIS measurements done with the reference potentiostat can be seen in Fig. 6. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The impedance of the inactive PMFC is always greater than that of the active PMFC.Both their phase and their magnitudecurves are similar in shape.In both cases,the impedance magnitude curve is shifted upward as time passes because the soil is gradually drying up,increasing the ohmic resistance component. The phase is shifted to the left as time progresses. Also,alive PMFC shows a higher phase at lower frequencies thaninactive PMFC.Overall, time variations across the three daysand differences between the active and inactive cells are appreciable. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Monitoring impedance response could enable researchers to link these variations in the spectrum to plant/soil health and cell state.For now,we show that these variations across time and across different activity levels of PMFCs are appreciable and thus could be taken advantage of to understand more about plants,soil,and bacteriastate. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D.EISAFE Evaluation ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Having noticed that variations in the spectrum of the monitored plants are observable through the electrochemical workstation,we move on to the characterization of the ultralow power integrated circuit with which we execute EIS measurements,the MAX30134.We evaluated this IC using its evaluation board, theMAX30134EVSYS,and the supplied graphical user interface (GUI),which allowed us to set measurement parameters and obtain results easily. The GUI software was running on a desktop computer,which powered the MCU present on the evaluation board and communicated measurement configuration parameters/received measurement results via a USB interface. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "IntheMAX30134EVSYS,aMAX32630FTHRCortex-M4F MCU provides1.8 or $3 . 3 \\mathrm { ~ V ~ }$ voltage supply to the MAX30134 IC.We powered the IC with the $3 . 3 \\mathrm { ~ V ~ }$ supply from the MCU:we tested the $1 . 8 \\mathrm { ~ \\ V ~ }$ supply,but measurement results were inaccurate, probably due to noisy voltage regulators on the MAX32630FTHR.In our battery-free sensor node，the MAX32630FTHR MCU will be replaced bythe MSP430FR5969,allowing us to operate the MAX30134 intermittently and with a more flexible system in terms of power consumption. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Preliminary tests on known loads showed the importance of calibrating theDACs,whichare used to impose dc offset to the MAX30134 electrodes. Tests on known loads also show that this IC can successfully measure impedance magnitude across the $1 2 5 ~ \\Omega { - } 2 ~ \\mathrm { M } \\Omega$ range.We used the reference potentiostat to evaluate the cell impedance across its test frequency range.MFC reactors’impedance measure is less than $2 5 0 \\Omega$ acrossthe tested frequencies.We thus had to expand the measurement range toward values lower than $1 2 5 ~ \\Omega$ by activating a $R _ { \\mathrm { S E R } } = 1 5 0 ~ \\Omega$ resistor in serieswith the tested load,laterremoving its effects in postprocessing. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Knowledge of the impedance magnitude swing across the tested frequencies was also important for ful-scale range setup, as no autoscale mechanism was present during the EIS sweep. Large impedance magnitude swings could result in ADC converter saturation or low SNR at the edges,which was tricky to manage.Future developments will surely implement an autoscale mechanism to avoid this problem. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We executed a set of five repeated two-terminal measurements with the MAX30134. The measurement sweep consists of 20 logarithmically spaced frequency points (no settle sine cycles, eight measurement sine cycles） ranging from $0 . 0 2 1 ~ \\mathrm { H z }$ upto $2 1 . 8 ~ \\mathrm { k H z }$ ，covering most of the MAX30134 range.Besides showcasing the IC's frequency coverage potential,we highlight the importance of the low-end of the frequency spectrumin the study of slow mass transfer phenomena,which are relevant PMFC characterization [39]. OCV was measured manually before the sweep:cell electrodes were then biased to OCV to ensure no dc offset current was present during the measurement. We activate the $R _ { \\mathrm { S E R } }$ resistor, and we set EISamplitude at its minimum value $( 5 \\mathrm { \\ m V p } )$ ，andFSRat its maximum value $( 4 0 ~ \\mu \\mathrm { A } )$ .The effect of the $R _ { \\mathrm { S E R } }$ isremoved from the measurement results,assuming it only influences the real part of the measured impedance. $R _ { \\mathrm { S E R } }$ corrected Bode plots for the active and inactive PMFC are shown in Figs.7 and 8.The Bode plots show that the mean of the MAX30134 measurements closely matches those of the reference potentiostat,confirming the reliability of the MAX30134 IC at executing ultralow power impedance measurements on PMFCs. ",
+        "page_idx": 0
+    }
+]

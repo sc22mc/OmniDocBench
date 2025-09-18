@@ -1,0 +1,105 @@
+[
+    {
+        "type": "text",
+        "text": "2Preliminary ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.1Two-Player Normal-Form Game ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let us define two-player (of X and Y) $m ( \\in \\mathbb { N } )$ -action games (see illustration of Fig. 1-A). Player X and Y choose their actions from $A = \\{ a 1 , \\cdots , a _ { m } \\}$ and $B = \\{ b _ { 1 } , \\cdots , b _ { m } \\}$ in a single round. After they finish choosing their actions $a \\in { \\mathcal { A } }$ and $b \\in B$ ,each of them gains a payoff $U ( a , b ) \\in \\mathbb { R }$ and $V ( a , b ) \\in \\mathbb { R }$ ,respectively. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.2Two-Player Multi-Memory Repeated Game ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We further consider two-player $n ( \\in \\mathbb { N } )$ -memory repeated games asan iteration of the two-player normalform game (see illustration Fig.1-A).The players are assumed to memorize their actions in the last $n$ rounds. Since each player can take $m$ actions, there are $m ^ { 2 n }$ cases for possible memorized states,described as $\\begin{array} { r } { { \\cal S } = \\prod _ { k = 1 } ^ { n } ( { \\cal A } \\times { \\cal B } ) } \\end{array}$ . Under any memorized state, player X can choose any action stochastically. Such a stochastic choice of an action is described by a parameter $x ^ { a | s }$ ,which means the probability of choosing an action $a \\in { \\mathcal { A } }$ under memorized state $s \\in S$ .Thus,X's strategy is represented by $| S | ( = m ^ { 2 n } )$ -numbers of $( m - 1 )$ -dimension simplexes, $\\begin{array} { r } { \\mathbf { x } \\in \\prod _ { s \\in \\mathcal { S } } \\Delta ^ { m - 1 } } \\end{array}$ ,while Y's is $\\begin{array} { r } { \\mathbf { y } \\in \\prod _ { s \\in \\mathcal { S } } \\Delta ^ { m - 1 } } \\end{array}$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.3Formulation as Markov Games ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In order to handle this multi-memory repeated gameasaMarkov game [28,29],we definea vector notation ofmemorized states; ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/f4505148fd0175380f31a41e1469a6deb3aed664efbf60afe55f212b0c4a111f.jpg",
+        "text": "$$\n\\begin{array} { r } { s = ( \\underbrace { a _ { 1 } b _ { 1 } \\cdots a _ { 1 } b _ { 1 } } _ { \\times n } , \\underbrace { a _ { 1 } b _ { 1 } \\cdots a _ { 1 } b _ { 1 } } _ { \\times ( n - 1 ) } a _ { 1 } b _ { 2 } , \\cdots , \\underbrace { a _ { m } b _ { m } \\cdots a _ { m } b _ { m } } _ { \\times n } ) , } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "which orders all the elements of $\\boldsymbol { S }$ as a vector.We also define a vector notation of utility function as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/0f7e0ee7cbff522b71d1a1d2766f2720dec2c253d4109b66853f824315f38e6c.jpg",
+        "text": "$$\nu = ( \\underbrace { U ( a _ { 1 } , b _ { 1 } ) , \\cdots , U ( a _ { 1 } , b _ { 1 } ) } _ { \\times m ^ { 2 n - 2 } } , \\underbrace { U ( a _ { 1 } , b _ { 2 } ) , \\cdots , U ( a _ { 1 } , b _ { 2 } ) } _ { \\times m ^ { 2 n - 2 } } , \\cdots , \\underbrace { U ( a _ { m } , b _ { m } ) , \\cdots , U ( a _ { m } , b _ { m } ) } _ { \\times m ^ { 2 n - 2 } } ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "which orders all the last-round payoffs for $\\boldsymbol { S }$ as a vector. The utility function for Y,i.e, $_ { v }$ , is defined similarly. In addition,we denote an index for these vectors as $i \\in \\{ 1 , \\ldots , m ^ { 2 n } \\}$ .For example,when player Xis in state $s _ { i }$ ,the last-round payoff for player X was $u _ { i }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $p \\in \\Delta ^ { | S | - 1 }$ be a probability distribution on $s$ in a round. As the name Markov matrix implies,a distribution in the next round $p ^ { \\prime }$ is given by $p ^ { \\prime } = M p$ ，where $^ { M }$ is a Markov transition matrix; ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/202bdbed603ba1f620da48f9e0cb241a9306cd95aab2e3cccae413839840a9c4.jpg",
+        "text": "$$\nM _ { i ^ { \\prime } i } = \\left\\{ \\begin{array} { l l } { { x ^ { a | s _ { i } } y ^ { b | s _ { i } } } } & { { ( s _ { i ^ { \\prime } } = a b s _ { i } ^ { - } ) } } \\\\ { { 0 } } & { { ( \\mathrm { o t h e r w i s e } ) } } \\end{array} \\right. ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "which shows the transition probability from $i$ -th stateto $i ^ { \\prime }$ -th one for $i , i ^ { \\prime } \\in \\{ 1 , \\ldots , m ^ { 2 n } \\}$ . Here,note that $s _ { i } ^ { - }$ shows the state $s _ { i }$ except for the oldest two actions. See Fig.1-B ilustrating an example of Markov transition. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.4Nash Equilibrium ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We now analyze the Nash equilibrium in multi-memory repeated games based on the formulation of Markov games.Let us assume that every agent uses a fixed strategy $\\mathbf { x }$ and $\\mathbf { y }$ or learns slowly enough for the timescale of the Markov transitions.If we further assume that the strategies are within the interiors of simplexes (i.e.,the Markov matrix is ergodic),this stationary distribution is unique and described as $p ^ { \\mathrm { s t } } ( \\mathbf x , \\mathbf y )$ This stationary distribution satisfies $p ^ { \\mathrm { s t } } = M p ^ { \\mathrm { s t } }$ .We also denote each player's expected payoff in the stationary distribution as $u ^ { \\mathrm { s t } } ( { \\bf x } , { \\bf y } ) = p ^ { \\mathrm { s t } } \\cdot u$ and $v ^ { \\mathrm { s t } } ( \\mathbf { x } , \\mathbf { y } ) = p ^ { \\mathrm { s t } } \\cdot v$ . The goal of learning in the multi-memory game is to search for the Nash equilibrium, denoted by $\\left( \\mathbf { x } ^ { * } , \\mathbf { y } ^ { * } \\right)$ ，where their payoffs are maximized as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/220b0094b9ab9b4c4b7525308dd127c10091cc4b642c1f86deccf8ad7c0c3e3a.jpg",
+        "text": "$$\n\\left\\{ \\begin{array} { l l } { \\mathbf { x } ^ { * } \\in \\operatorname { a r g m a x } _ { \\mathbf { x } } { u } ^ { \\mathrm { s t } } ( \\mathbf { x } , \\mathbf { y } ^ { * } ) } \\\\ { \\mathbf { y } ^ { * } \\in \\operatorname { a r g m a x } _ { \\mathbf { y } } { v } ^ { \\mathrm { s t } } ( \\mathbf { x } ^ { * } , \\mathbf { y } ) } \\end{array} \\right. .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here, $u ^ { \\mathrm { s t } }$ and $v ^ { \\mathrm { s t } }$ are complex non-linear functions for high-dimensional variables of $\\left( \\mathbf { x } , \\mathbf { y } \\right)$ .This Nash equilibrium isdifficult to find in general. ",
+        "page_idx": 0
+    }
+]

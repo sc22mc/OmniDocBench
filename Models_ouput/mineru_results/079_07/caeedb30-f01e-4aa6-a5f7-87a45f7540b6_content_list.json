@@ -1,0 +1,80 @@
+[
+    {
+        "type": "text",
+        "text": "b- The octahedron.It has 2n facets,each of them is a regular simplex of volume|Fln-1= (n1· Let $\\Delta _ { k }$ denote a regular $k$ -simplex with edge length $\\sqrt { 2 }$ (so $\\begin{array} { r } { | \\Delta _ { k } | _ { k } = \\frac { \\sqrt { k + 1 } } { k ! } } \\end{array}$ ). Then,if $n \\geq 3$ ： ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b80d14a8b5e5e6a9d1df804fb47fccaf878aba116bbfdd9c738562bf630b513f.jpg",
+        "text": "$$\n\\begin{array} { l } { \\displaystyle \\frac { \\mathrm { I s o p } ( F ) } { \\mathrm { I s o p } ( O _ { n } ) } = \\frac { n | O _ { n } | | \\partial F | } { ( n - 1 ) | \\partial O _ { n } | | F | } = \\frac { n } { n - 1 } \\frac { n | \\Delta _ { n - 2 } | } { n ! | F | ^ { 2 } } } \\\\ { \\displaystyle = \\frac { n } { n - 1 } \\frac { ( n - 1 ) ! ^ { 2 } } { n ! ( n - 2 ) ! } \\sqrt { n - 1 } = \\sqrt { n - 1 } > 1 . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "c- The cylinders. Let $L$ be an $( n - 1 )$ -dimensional convex body. Define $C = C o n v ( L , L ^ { \\prime } )$ where （ $L ^ { \\prime } = L + t e _ { n }$ is a translate of $L$ parallel to it.Then $| C | = t | L |$ ,thus: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/09cc30a9af3d79be0e5a15528ab44991cace82ea9b0441282642e45c8aebec54.jpg",
+        "text": "$$\n{ \\frac { \\mathrm { I s o p } ( L ) } { \\mathrm { I s o p } ( C ) } } = { \\frac { n | C | | \\partial L | } { ( n - 1 ) | \\partial C | | L | } } = { \\frac { t n } { n - 1 } } { \\frac { | \\partial L | } { | \\partial C | } } = { \\frac { t n } { n - 1 } } { \\frac { | \\partial L | } { ( 2 | L | + t | \\partial L | ) } } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This ratio is greater than 1 for large $t$ (as soon as $\\displaystyle t > 2 \\frac { n } { n - 1 } ( \\operatorname { I s o p } ( L ) ) ^ { - 1 } )$ Letting $T$ bean appropriate affine transform,i.e. $T e _ { n } = t _ { 0 } e _ { n }$ ，and $T e _ { i } = e _ { i }$ $( i \\leq n - 1 )$ ，where $t _ { 0 }$ is large enough, one deduces that $b _ { 2 } ( C ) = b _ { 2 } ( T C ) > 1$ ,because $\\frac { \\mathrm { I s o p } ( T L ) } { \\mathrm { I s o p } ( T C ) } = \\frac { \\mathrm { I s o p } ( L ) } { \\mathrm { I s o p } ( T C ) } > 1$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "d- The half-ball. Denote $H _ { + } = \\{ x _ { n } \\geq 0 \\}$ a closed half-space, $B _ { 2 } ^ { n }$ the (unit） Euclidean ball,and $M = H _ { + } \\cap B _ { 2 } ^ { n }$ a half-ball. Then $| M | _ { n } = \\kappa _ { n } / 2$ ， $| \\partial M | _ { n - 1 } = { \\frac { n \\kappa _ { n } } { 2 } } + \\kappa _ { n - 1 }$ and so $\\operatorname { I s o p } ( M ) =$ $\\begin{array} { r } { 1 + \\frac { 2 \\kappa _ { n - 1 } } { n \\kappa _ { n } } } \\end{array}$ . The unique facet of $M$ $F \\approx B _ { 2 } ^ { n - 1 }$ ,and so $\\operatorname { I s o p } ( F ) = 1$ Hence $\\frac { \\mathrm { I s o p } ( F ) } { \\mathrm { I s o p } ( M ) } < 1$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Nonetheless,one can find an affine transform $T$ such that $\\frac { \\mathrm { I s o p } ( T F ) } { \\mathrm { I s o p } ( T M ) } ~ > ~ 1$ ，showing that $b _ { 2 } ( M ) > 1$ .Indeed, let $c > 1$ be large enough and let $T$ be the unique affine transform such that $\\mathit { T e } _ { n } = \\mathit { c e } _ { n }$ ，and $T e _ { i } = e _ { i }$ for $i \\le n - 1$ . Then computations show that $\\mathrm { I s o p } ( T M ) =$ $\\begin{array} { r } { \\frac { | \\partial \\mathcal { E } | } { n | \\mathcal { E } | } + \\frac { 2 \\kappa _ { n - 1 } } { n \\kappa _ { n } c } < \\frac { | \\partial \\mathcal { E } | } { n | \\mathcal { E } | } + \\frac { 1 } { c } < 1 = \\mathrm { I s o p } ( T F ) = \\mathrm { I s o p } ( F ) } \\end{array}$ showing $b _ { 2 } ( M ) = b _ { 2 } ( T M ) < 1$ (see appendix for computational details) ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the above four examples (unit cube,octahedron $O _ { n }$ ,cylinders,half-balls),we used Proposition $1$ (or Proposition 2) to argue that $b _ { 2 } ( K ) > 1$ . For these examples,the fact that $b _ { 2 } ( K ) > 1$ was already known:the cylinder,like the cube,is decomposable,the half-ball has (many） points of positive curvature on its boundary,and it was directly shown in [SZ15] that $b _ { 2 } ( O _ { n } ) = 2$ (by taking well-chosen segments). The half-ballexample suggests that maxF $\\frac { \\mathrm { I s o p } ( F ) } { \\mathrm { I s o p } ( K ) }$ could be minimal when $K$ is in its John's position. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Asa sanity check,one may wish to compute maxF i $\\operatorname* { m a x } _ { F } { \\frac { \\operatorname { I s o p } ( F ) } { \\operatorname { I s o p } ( \\Delta ) } }$ ，when $\\Delta$ is an $n$ simplex, to check this quantity is less than 1. If $\\Delta = T _ { n }$ is a regular simplex with edge length $\\sqrt { 2 }$ ，then $\\textstyle | T _ { n } | = { \\frac { \\sqrt { n + 1 } } { n ! } }$ ， and $\\begin{array} { r } { | \\partial T _ { n } | = ( n + 1 ) | T _ { n - 1 } | = ( n + 1 ) \\frac { \\sqrt { n } } { ( n - 1 ) ! } } \\end{array}$ ,so that $\\operatorname { I s o p } ( T _ { n } ) = { \\sqrt { n ( n + 1 ) } }$ .It results that for a regular $n$ -simplex : ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/f512f4f235501cc1041f14d651d03ed4f9ff4afb0ee80b721a495066344913d1.jpg",
+        "text": "$$\n\\operatorname* { m a x } _ { F } { \\frac { \\operatorname { I s o p } ( F ) } { \\operatorname { I s o p } ( T _ { n } ) } } = { \\frac { \\sqrt { n ( n - 1 ) } } { \\sqrt { n ( n + 1 ) } } } = { \\sqrt { \\frac { n - 1 } { n + 1 } } } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "f $\\Delta _ { n } = C o n v ( 0 , e _ { 1 } , . . . , e _ { n } )$ ，then $\\begin{array} { l } { | \\Delta _ { n } | = { \\frac { 1 } { n ! } } } \\end{array}$ ，and $\\begin{array} { r } { | \\partial \\Delta _ { n } | = \\frac { n } { ( n - 1 ) ! } + \\frac { \\sqrt { n } } { ( n - 1 ) ! } } \\end{array}$ ， hence $\\log ( \\Delta _ { n } ) =$ $n + { \\sqrt { n } }$ . There are two kinds of facets : one is $\\Delta _ { n - 1 }$ ,the other one is $T _ { n - 1 }$ . Their isoperimetric ratios are respectively $\\mathrm { I s o p } ( T _ { n - 1 } ) = { \\sqrt { n ( n - 1 ) } }$ and $\\mathrm { I s o p } ( \\Delta _ { n - 1 } ) = n - 1 + \\sqrt { n - 1 } > \\mathrm { I s o p } ( T _ { n - 1 } )$ .Therefore : ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/207c19a2b7a9d23582667e11f3ec46b5b1f4cec09068fcad31924606c27f2dc6.jpg",
+        "text": "$$\n\\operatorname* { m a x } _ { F } \\frac { \\mathrm { I s o p } ( F ) } { \\mathrm { I s o p } ( \\Delta _ { n } ) } = \\frac { \\mathrm { I s o p } ( \\Delta _ { n - 1 } ) } { \\mathrm { I s o p } ( \\Delta _ { n } ) } = \\frac { n - 1 + \\sqrt { n - 1 } } { n + \\sqrt { n } } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Notethat maxFi $\\begin{array} { r } { \\operatorname* { m a x } _ { F } \\frac { \\mathrm { I s o p } ( F ) } { \\mathrm { I s o p } ( \\Delta _ { n } ) } > \\operatorname* { m a x } _ { F } \\frac { \\mathrm { I s o p } ( F ) } { \\mathrm { I s o p } ( T _ { n } ) } } \\end{array}$ One may conjecture that maxF Isop(T) $\\begin{array} { r } { \\mathrm { { u x } } _ { F } \\frac { \\mathrm { { I s o p } } ( F ) } { \\mathrm { { I s o p } } ( T _ { n } ) } = { \\mathrm { m i n } _ { T } \\mathrm { m a x } _ { F } } \\frac { \\mathrm { { I s o p } } ( T F ) } { \\mathrm { { I s o p } } ( T \\Delta _ { n } ) } } \\end{array}$ i.e.that the (maximal) ratio is minimal when the simplex is in its John's position. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Finally, we remark that Proposition 2 yields a more concise proof of the following result, which states that having infinitely many facets,is an excluding condition. ",
+        "page_idx": 0
+    }
+]

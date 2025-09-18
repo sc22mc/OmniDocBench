@@ -1,0 +1,1150 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        443,
+                        343,
+                        2106,
+                        623
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                343,
+                                2106,
+                                623
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "text",
+                                    "content": "Simple Prompt. For any task, in iteration "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t = 0"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "text",
+                                    "content": " , we create a simple initial prompt "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbb{I}^0 (S,X,Q,\\mathbf{F}^0,\\{G_i\\})"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "text",
+                                    "content": " , where "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "S"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "text",
+                                    "content": " represents task- agnostic descriptions while the terms "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "Q"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "text",
+                                    "content": " respectively denote the task information and the question. The experience part of the prompt is denoted as "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{F}^0"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "text",
+                                    "content": " , which should be empty at the beginning. "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{G_i\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "text",
+                                    "content": " is a placeholder that is waiting to be filled during building thought structures. In other words, when generating the next thought "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z_{i}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{G_i\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "text",
+                                    "content": " will be substituted with the preceding chain of thoughts "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        623
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z_{1\\ldots ,i - 1}"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        443,
+                        643,
+                        2108,
+                        924
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                643,
+                                2108,
+                                924
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        643,
+                                        2108,
+                                        924
+                                    ],
+                                    "type": "text",
+                                    "content": "Thought Structures Generation. After collecting experience "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        643,
+                                        2108,
+                                        924
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{F}^{t - 1}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        643,
+                                        2108,
+                                        924
+                                    ],
+                                    "type": "text",
+                                    "content": ", the prompt in the iteration "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        643,
+                                        2108,
+                                        924
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        643,
+                                        2108,
+                                        924
+                                    ],
+                                    "type": "text",
+                                    "content": " can be "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        643,
+                                        2108,
+                                        924
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbb{I}^t (S, X, Q, \\mathbf{F}^{1, \\ldots , t - 1}, \\{G_i\\})"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        643,
+                                        2108,
+                                        924
+                                    ],
+                                    "type": "text",
+                                    "content": ". Based on this prompt, BoT generates "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        643,
+                                        2108,
+                                        924
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "M"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        643,
+                                        2108,
+                                        924
+                                    ],
+                                    "type": "text",
+                                    "content": " thought structures in parallel. BoT inherently captures a structure of embracing any thought structure, such as the chain [Wei et al. (2022) or tree Yao et al. (2024) structure. Considering the exploration of reasoning steps and experimental results, we investigate the tree thought structure. However, BoT introduces two novel modifications to make it better suited for the boosting framework."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        555,
+                        970,
+                        2108,
+                        1432
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                555,
+                                970,
+                                2108,
+                                1432
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "text",
+                                    "content": "- Weighted Binary Tree. With a simple prompt in each round, BoT builds the weak thoughts structured in low complexity as they can be further revised in the boosting mechanism. Thus, each thought structure of BoT is a shallow weighted binary tree. For simplicity, we retain the notation "
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z_{1 \\ldots a - 1}"
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "text",
+                                    "content": " to represent the thoughts from the root to the parent of node "
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i"
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "text",
+                                    "content": ". In addition to providing each node "
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i"
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "text",
+                                    "content": " with one thought "
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z_i"
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "text",
+                                    "content": " and its thought evaluation score "
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_i \\sim p_\\theta (z_{1 \\ldots i}, \\mathbb{I}_a, X, Q)"
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "text",
+                                    "content": ", we incorporate the edge score "
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{i - 1, i} \\sim p_\\theta (z_{i - 1}, z_i, \\mathbb{I}_e, X, Q)"
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "text",
+                                    "content": " between a child node and its parent node, where "
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbb{I}_a"
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbb{I}_e"
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "text",
+                                    "content": " refer to the instructional descriptions for thought and edge evaluations. "
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{i - 1, i}"
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "text",
+                                    "content": " represents the LLMs' confidence level in generating this reasoning step. Thus, the next thought generation of BoT in this tree structure is formalized as "
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p_\\theta (z_i | (V_{i - 1, i}, V_i, \\mathbb{I}^t, X, Q))"
+                                },
+                                {
+                                    "bbox": [
+                                        555,
+                                        970,
+                                        2108,
+                                        1432
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        558,
+                        1445,
+                        2106,
+                        2003
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                558,
+                                1445,
+                                2106,
+                                2003
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        558,
+                                        1445,
+                                        2106,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": "- Tree Heterogeneity. Unlike ToT Yao et al. (2024), which seeks to search for a solution in one large and complex tree, BoT aims to build highly heterogeneous tree thought structures. As a result, complete reasoning chains with various logical in trees of BoT are subsequently assessed as experience. Therefore, to increase heterogeneity, thought structure generation embraces different tree growth strategies, such as level-wise growth and leaf-wise growth. The former emphasizes exploration but less exploitation [Chen & Guestrin (2016)], while the latter does the opposite [Ke et al. (2017)]. Thus, the leaf-wise strategy tends to continue reasoning from the current best thought to reach a better final thought as compared to level-wise growth, but it also tends to get monotonous reasoning chains. Besides, different temperature and Top_p settings of LLMs are applied. Finally, we use a small max_depth value in BoT and label a node as a leaf when its "
+                                },
+                                {
+                                    "bbox": [
+                                        558,
+                                        1445,
+                                        2106,
+                                        2003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{i - 1, i}"
+                                },
+                                {
+                                    "bbox": [
+                                        558,
+                                        1445,
+                                        2106,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        558,
+                                        1445,
+                                        2106,
+                                        2003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_i"
+                                },
+                                {
+                                    "bbox": [
+                                        558,
+                                        1445,
+                                        2106,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": " values are outside the specified range [0.3, 0.8]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        443,
+                        2046,
+                        2106,
+                        2280
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2046,
+                                2106,
+                                2280
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "text",
+                                    "content": "Thought Structures Aggregation. Upon obtaining "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "M"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "text",
+                                    "content": " thought structures, BoT aggregates them into one thought chain denoted as "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1\\ldots n}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "text",
+                                    "content": " . To achieve this, for each thought structure with index "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "text",
+                                    "content": " BoT first selects the chain with the highest evaluation score as "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\begin{array}{r}z_{1\\dots n_m}^m \\coloneqq \\arg \\max_{z_{1\\dots n}\\in \\mathbb{Z}^m}\\sum_{i = 1}^{n}V_i + V_{i - 1,i} \\end{array}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "text",
+                                    "content": " where "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "Z^{m}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "text",
+                                    "content": " denotes the set of all thought chains of "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "text",
+                                    "content": " - th tree. Subsequently, two strategies exist to obtain "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2046,
+                                        2106,
+                                        2280
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1\\ldots n}"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        550,
+                        2326,
+                        2108,
+                        2775
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                550,
+                                2326,
+                                2108,
+                                2775
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "text",
+                                    "content": "- Best-First Aggregation. BoT relies on "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\arg \\max_{z_{1 \\ldots n} \\in \\{Z^m\\}_{m = 1}^M} \\sum_{i = 1}^{n} V_i + V_{i - 1, i}"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "text",
+                                    "content": " to choose the best one as "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1 \\ldots n}"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "text",
+                                    "content": " from "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "M"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "text",
+                                    "content": " thought structures. This algorithm is fast but may lead to an unreasonable chain that is hard to guide the following refinement. \n- Greedy Aggregation. BoT is allowed to perform a greedy search on "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{Z^m\\}_{m = 1}^M"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "text",
+                                    "content": " to assemble a new thought chain that may not exist and is globally optimal. Starting from the initial thought, generally the root node of the tree, BoT obtains "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1} = \\arg \\max_{z_j \\in \\{z_j\\}_{m = 1}^M} V_j + V_{j - 1, j}"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "text",
+                                    "content": ". Subsequently, to obtain "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_i"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "text",
+                                    "content": " for "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{i - 1}"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "text",
+                                    "content": ", BoT searches all thoughts where the previous step is "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{i - 1}"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "text",
+                                    "content": " in "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{Z^m\\}_{m = 1}^M"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2326,
+                                        2108,
+                                        2775
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        441,
+                        2814,
+                        2106,
+                        3052
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                2814,
+                                2106,
+                                3052
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        2814,
+                                        2106,
+                                        3052
+                                    ],
+                                    "type": "text",
+                                    "content": "Thought Chain Analysis. To gain insights into what should be adjusted to enhance the prompt to generate better thoughts, BoT utilizes the self- evaluation ability [Weng et al. (2023) of LLMs to assess "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2814,
+                                        2106,
+                                        3052
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1 \\ldots n}"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2814,
+                                        2106,
+                                        3052
+                                    ],
+                                    "type": "text",
+                                    "content": ". Specifically, with the prompt "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2814,
+                                        2106,
+                                        3052
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbb{I}_f^t (z_{1 \\ldots n}, X, Q)"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2814,
+                                        2106,
+                                        3052
+                                    ],
+                                    "type": "text",
+                                    "content": " as input, LLM outputs a feedback paragraph containing issues report of this thought chain "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2814,
+                                        2106,
+                                        3052
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1 \\ldots n}"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2814,
+                                        2106,
+                                        3052
+                                    ],
+                                    "type": "text",
+                                    "content": " and detailed advice. This feedback will be added to "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2814,
+                                        2106,
+                                        3052
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{F}^{1, \\ldots , t - 1}"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2814,
+                                        2106,
+                                        3052
+                                    ],
+                                    "type": "text",
+                                    "content": " as a new experience in thought generation, resulting "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2814,
+                                        2106,
+                                        3052
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{F}^{1, \\ldots , t}"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2814,
+                                        2106,
+                                        3052
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

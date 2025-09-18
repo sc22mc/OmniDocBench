@@ -1,0 +1,48 @@
+[
+    {
+        "type": "text",
+        "text": "Assumption 1 (One-memory two-action zero-sum game). We assume a two-action (i.e., $A = \\{ a _ { 1 } , a _ { 2 } \\}$ and $B = \\{ b _ { 1 } , b _ { 2 } \\}$ )，one-memory (i.e.， $\\pmb { \\mathscr { s } } = ( a _ { 1 } b _ { 1 } , a _ { 1 } b _ { 2 } , a _ { 2 } b _ { 1 } , a _ { 2 } b _ { 2 } ) )$ ，and zero-sum game (i.e., $\\mathbf { \\nabla } \\boldsymbol { v } = - \\boldsymbol { u }$ ).In particular，we discuss zero-sum games where both $u _ { 1 }$ and $u _ { 4 }$ are smaller or larger than both $u _ { 2 }$ and $u _ { 3 }$ ， ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Under Assumption 1,we exclude uninteresting zero-sum payoff matrices that the Nash equilibrium exists asaset of pure strategies because the learning dynamics trivially converge to such pure strategies.The conditionthatboth $u _ { 1 }$ and $u _ { 4 }$ aresmallerorlarger thanboth $u _ { 2 }$ and $u _ { 3 }$ isnecessary and sufficient for the existence of no dominant pure strategy. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the rest of this paper，we use a vector notation for strategies of X and Y; $\\pmb { x } : = \\{ x _ { i } \\} _ { i = 1 , . . . , 4 }$ and $\\pmb { y } : = \\{ y _ { i } \\} _ { i = 1 , . . . , 4 }$ as $x _ { i } : = x ^ { a _ { 1 } | s _ { i } }$ and $y _ { i } : = y ^ { b _ { 1 } | s _ { i } }$ .Indeed, $x ^ { a _ { 2 } | s _ { i } } = 1 - x _ { i }$ and $y ^ { b _ { 2 } | s _ { i } } = 1 - y _ { i }$ hold. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Theorem 4 (Uniqueness of Nash equilibrium). Under Assumption $\\mathit { 1 }$ ，the unique Nash equilibrium of this game is $( x _ { i } , y _ { i } ) = ( x ^ { * } , y ^ { * } )$ forall $i$ as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/9e48a5cae95973d09d0b1c63fc7a4d2ea6d61f8d6cc44ca26c1099535659db21.jpg",
+        "text": "$$\nx ^ { * } = { \\frac { - u _ { 3 } + u _ { 4 } } { u _ { 1 } - u _ { 2 } - u _ { 3 } + u _ { 4 } } } , \\ y ^ { * } = { \\frac { - u _ { 2 } + u _ { 4 } } { u _ { 1 } - u _ { 2 } - u _ { 3 } + u _ { 4 } } } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof Sketch.Let us prove that X's strategy in Nash equilibrium is uniquely $x = x ^ { * } 1$ .First,we define $u ^ { * }$ and $v ^ { * }$ as X's and Y's payoffs in the Nash equilibrium in the zero-memory game.If $\\boldsymbol { x } = \\boldsymbol { x } ^ { * } \\mathbf { 1 }$ ,X'sexpected payoff is $\\boldsymbol { u } ^ { \\mathrm { s t } } = \\boldsymbol { u } ^ { * }$ ,regardless of Y's strategy $\\mathbf { \\Delta } _ { \\mathbf { { y } } }$ .Second,we consider that X uses another strategy $\\boldsymbol { x } \\neq \\boldsymbol { x } ^ { * } \\mathbf { 1 }$ ： Then,there is Y's strategy such that $v ^ { \\mathrm { s t } } > v ^ { * } \\Leftrightarrow u ^ { \\mathrm { s t } } < u ^ { * }$ .Thus,X's minimax strategy is uniquely $\\boldsymbol { x } = \\boldsymbol { x } ^ { * } \\mathbf { 1 }$ ， completing the proof. See Appendix A.4 for the full proof. □ ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/b99aa06ec8e9b72d33bce0a114260d4ab048edb66215dc579b42058fa7f81b60.jpg",
+        "image_caption": [
+            "Figure 2:Multi-memory learning dynamics near the Nash equilibrium in the penny-matching game.In the upper six panels,colored lines indicate the time series of $\\delta _ { i }$ (X's strategy).The solid (resp. broken) lines are approximated (resp. experimental)trajectoriesoflearningdynamics.Fromthetop,thetrajectoriesarepredictedbyapproximationsupto thefrst,second,and third orders.The bottom panel shows the errors between theapproximated and experimental trajectories. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Regarding Theorem4,X(Y) chooses each action in the same probability independent of the last state. Here,they do not utilize their memory. Thus,note that in this sense,the Nash equilibrium is the same as ",
+        "page_idx": 0
+    }
+]

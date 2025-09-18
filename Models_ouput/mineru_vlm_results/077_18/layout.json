@@ -1,0 +1,235 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "table",
+                    "bbox": [
+                        884,
+                        356,
+                        1598,
+                        607
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                884,
+                                356,
+                                1598,
+                                607
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        884,
+                                        356,
+                                        1598,
+                                        607
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                884,
+                                                356,
+                                                1598,
+                                                607
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Dataset</td><td>Llik(θ)</td><td>Lacc(θ)</td><td>Lent(θ)</td></tr><tr><td>AD</td><td>0.99</td><td>0.01</td><td>0.1</td></tr><tr><td>2AA</td><td>0.9</td><td>0.1</td><td>0.1</td></tr><tr><td>4AA</td><td>1</td><td>0</td><td>0</td></tr></table>",
+                                            "image_path": "102d9b287a7d57856d043d41d14edfffdc1c638ec90feda1c361be6ee44af621.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                930,
+                                313,
+                                1558,
+                                356
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        930,
+                                        313,
+                                        1558,
+                                        356
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                930,
+                                                313,
+                                                1558,
+                                                356
+                                            ],
+                                            "type": "text",
+                                            "content": "Table 5. Timewarp loss weighting factors"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        599,
+                        729,
+                        1879,
+                        1079
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                599,
+                                729,
+                                1879,
+                                1079
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        599,
+                                        729,
+                                        1879,
+                                        1079
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                599,
+                                                729,
+                                                1879,
+                                                1079
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Dataset + training method</td><td>Batch size</td><td>No. of A-100s</td><td>Training time</td></tr><tr><td>AD — likelihood</td><td>256</td><td>1</td><td>1 week</td></tr><tr><td>AD — acceptance</td><td>64</td><td>1</td><td>2 days</td></tr><tr><td>2AA — likelihood</td><td>256</td><td>4</td><td>2 weeks</td></tr><tr><td>2AA — acceptance</td><td>256</td><td>4</td><td>4 days</td></tr><tr><td>4AA — likelihood</td><td>256</td><td>4</td><td>3 weeks</td></tr></table>",
+                                            "image_path": "16ea88dd5fd3e250d4a66771358c6008079f746dbd248cc58f03d728f5b28acd.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 3,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                951,
+                                686,
+                                1535,
+                                729
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        951,
+                                        686,
+                                        1535,
+                                        729
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                951,
+                                                686,
+                                                1535,
+                                                729
+                                            ],
+                                            "type": "text",
+                                            "content": "Table 6. Timewarp training parameters"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        226,
+                        1155,
+                        838,
+                        1214
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                1155,
+                                838,
+                                1214
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        1155,
+                                        838,
+                                        1214
+                                    ],
+                                    "type": "text",
+                                    "content": "F. Computing infrastructure"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        224,
+                        1244,
+                        2264,
+                        1392
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                1244,
+                                2264,
+                                1392
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        1244,
+                                        2264,
+                                        1392
+                                    ],
+                                    "type": "text",
+                                    "content": "The training was performed on 4 NVIDIA A- 100 GPUs for the 2AA and 4AA datasets and on a single NVIDIA A- 100 GPU for the AD dataset. Inference with the model as well as all MD simulations were conducted on single NVIDIA V- 100 GPUs for AD and 2AA, and on single NVIDIA A- 100 GPUs for 4AA."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

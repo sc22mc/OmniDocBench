@@ -1,0 +1,401 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        217,
+                        267,
+                        2279,
+                        1089
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                217,
+                                267,
+                                2279,
+                                1089
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        217,
+                                        267,
+                                        2279,
+                                        1089
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                217,
+                                                267,
+                                                2279,
+                                                1089
+                                            ],
+                                            "type": "image",
+                                            "image_path": "d949b156a09387d72d9983a0a0642b5a590544e958c226d8ff7bea0eb9038355.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                175,
+                                1128,
+                                2309,
+                                1207
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        1128,
+                                        2309,
+                                        1207
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                175,
+                                                1128,
+                                                2309,
+                                                1207
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig.7. Examples of the algorithm output on the Baler dataset. Segmented fields are denoted by their color. (a) Baler site 22. (b) Baler site 23. (c) Baler site 35. (d) Baler site 39. (e) Baler site 77. (f) Baler site 97. (g) Baler site 119. (h) Baler site 135."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        217,
+                        1313,
+                        2279,
+                        2135
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                217,
+                                1313,
+                                2279,
+                                2135
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        217,
+                                        1313,
+                                        2279,
+                                        2135
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                217,
+                                                1313,
+                                                2279,
+                                                2135
+                                            ],
+                                            "type": "image",
+                                            "image_path": "5aeb5671c25d676930ff3a128dd5358394d73c9850aa43248b30a2391acde1c1.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                175,
+                                2178,
+                                2309,
+                                2257
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        2178,
+                                        2309,
+                                        2257
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                175,
+                                                2178,
+                                                2309,
+                                                2257
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig.8. Examples of the algorithm output on the Mower dataset. Segmented fields are denoted by their color. (a) Mower site 3. (b) Mower site 38. (c) Mower site 75. (d) Mower site 78. (e) Mower site 110. (f) Mower site 135. (g) Mower site 153. (h) Mower site 165."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 3,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        175,
+                        2356,
+                        1225,
+                        2851
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                2356,
+                                1225,
+                                2851
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        2356,
+                                        1225,
+                                        2851
+                                    ],
+                                    "type": "text",
+                                    "content": "site. This occurs because the operator does not complete a loop of the outer perimeter as seen in Fig. 9(a). The product is a field object that is not fully formed. The remaining steps of Stage II cannot function correctly. The result is several foreground areas that do not meet the minimum area requirement to be considered valid fields, as seen in Fig. 9(c). Similarly, the operator does not loop the field perimeter for the single field site shown in Fig. 10. However, in this scenario, the job site is detected as a conjoined field site and over- segmented by the algorithm, and thus labeled as a false positive."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        175,
+                        2854,
+                        1225,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                2854,
+                                1225,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        2854,
+                                        1225,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "The algorithm can mislabel coordinates at the field corners as path points; examples can be seen in the bottom right- hand corners of Fig. 7(c) and 8(a). This can occur at the field corners when the machinery operator takes a sharp turn. The points are mislabeled due to unrestored boundary pixels introduced by the "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1269,
+                                2356,
+                                2319,
+                                2554
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2356,
+                                        2319,
+                                        2554
+                                    ],
+                                    "type": "text",
+                                    "content": "erosion and dilation operation in Stage II. This problem was identified but not pursued, as it did not affect the core objective of the article, which was to solve for conjoined field segmentation cases in machinery trajectory data."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        1269,
+                        2356,
+                        2319,
+                        2554
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 6,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1269,
+                        2557,
+                        2319,
+                        2805
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                2557,
+                                2319,
+                                2805
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2557,
+                                        2319,
+                                        2805
+                                    ],
+                                    "type": "text",
+                                    "content": "Overall, the algorithm performs robustly on different machinery implementation datasets obtaining "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2557,
+                                        2319,
+                                        2805
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "100\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2557,
+                                        2319,
+                                        2805
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2557,
+                                        2319,
+                                        2805
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "98.84\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2557,
+                                        2319,
+                                        2805
+                                    ],
+                                    "type": "text",
+                                    "content": " on a baler and mower dataset, respectively. The results have demonstrated that the algorithm presented in this article is suitable to solve both road- to- field and field- to- field cases."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        1269,
+                        2874,
+                        1569,
+                        2923
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                2874,
+                                1569,
+                                2923
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2874,
+                                        1569,
+                                        2923
+                                    ],
+                                    "type": "text",
+                                    "content": "C. Field Analysis"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1267,
+                        2946,
+                        2319,
+                        3095
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1267,
+                                2946,
+                                2319,
+                                3095
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1267,
+                                        2946,
+                                        2319,
+                                        3095
+                                    ],
+                                    "type": "text",
+                                    "content": "Baler and mower field efficiency histogram plots are shown in Fig. 11 to illustrate the opportunity, offered by the algorithm, to analyze job site machinery operating data at a field- level."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2475,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

@@ -1,0 +1,84 @@
+[
+    {
+        "type": "text",
+        "text": "providing power, with all systems functioning while moving. A job site maycontaina single field ora conjoined field work episode.An example of a conjoined field job site is shown in Fig.2(a).The fields are conjoined by the operator movingbetween the adjacent fields viaa short,off-road pathway. Segmentation is the process of detecting the individual field boundaries in a job site and labeling positional data as belonging to a particular field.The contributions of this article is as follows. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1） The proposed algorithm solves for field geometric boundaries from agricultural machinery data； requiring only GNSS data and a PTO-pulsed digital sensor to detect PTO activation.   \n2）The algorithm hasbeen evaluated over 327 job site locations from a five-month-long measurement campaign with amachinery contractor. The algorithm is evaluated with data from two unique harvesting implements,highlighting how the method may be used with other types of implements.   \n3）The deterministic algorithm is designed to segment agricultural machinery trajectory data without the use of machinelearningmethods.   \n4） The results demonstrate that the algorithm can solve for both road-to-field and field-to-field segmentation cases.   \n5）No additional labor,land traversal,or aerial surveillance is necessary to produce the results shown,offering acosteffective,straightforward solution to existing mechanized practices. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The next section will review existing research related to tackling field segmentation,and illustrate why the solution offered in this article improves on the state of the art. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "II.RELATEDWORK ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Existing field segmentation techniques can be divided into two categories: remote sensing and coordinate-based methods. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A.RemoteSensingMethods ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Remote sensing field segmentation techniques are based on the use of image capture technology to detect field boundaries. Remote sensing imagery can be captured using satellites [24], [25],[26],[27] piloted aircraft [28] or drones [29]. These methodsrely on medium (4and $2 . 8 \\mathrm { ~ m ~ }$ [26]); tohigh ( $0 . 1 5 \\mathrm { ~ m ~ }$ [28]) resolution RGB capture,or on multispectral images [27]. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Field segmentation by remote sensing offers the opportunity to batch segment large areas of land.North et al. [27] demonstrate their method using time-series satellite images covering astudyarea of $4 0 0 0 ~ \\mathrm { k m ^ { 2 } }$ .Provided the images are updated frequently, or the field boundaryis static,remote sensing enables forpreemptive mappingbefore the machinery enters.A situation mayarise wherean operator decides to erecta temporary fence withina field,ordecide to only fertilizea part of the field.In these scenarios,the job parameters have changed,and the historic remote sensing geofence may require alteration to fit the completed job.Furthermore, fine and transitory boundaries,such as an electric fence,would be imperceptible to low-resolution satellite cameras.Satellite images are available to the public through the European Space Agency Sentinel-2 project.Sentinel-2 offers a resolution of up to $1 0 ~ \\mathrm { m }$ ,witharevisit frequency of five days at the Equator [3O].However,to obtain images of sufficient spatial resolution, frequent image acquisition from commercial satellitesmay be required. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/280b9cc17fe8179e4971acbbf1fc4f143063fe3699b85be24b1452ff77a4452c.jpg",
+        "image_caption": [
+            "Fig.2.(a)Example of a conjoined field job site.The fields share acommon boundaryand are connectedbyanoff-road path.Visually,the dividebetween fieldsis clear,but the divide is notapparentin the raw trajectorydata.(b)Example ofahollow,single field job site.Inround silage baling it is not uncommon for the machinery operator to only bale the feld perimeter.The central region of the fieldmaybeleft forhay. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Aerial methodsarevulnerable to cloud cover[5],which canaffect the segmentation accuracy.The trained model in [31] performed well when processing nonobscured images but performance degraded when tested with images containing cloud cover and delineating densely packed farmland of similar color. Aeroplanes and drones are subject to constraints such as flight regulations [32] and are limited by weather conditions and flight time [33]. Operators must conform to these constraints and obtain adequate training,which incurs an additional labor cost in addition to the operating expenses of the aircraft. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The limitations of remote sensing methods for field segmentation have been identified.Theremainder of this section examines the literature on ground, coordinate-based methods for field segmentation and road vehicle trajectory segmentation problems. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B.Coordinate-BasedMethods ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Coordinate-based techniques involve the use of geolocation and/or operational data from ground-based machinery in motion to detect field boundaries.Field segmentation may be performed using coordinate-based trajectory segmentation methods [34], [35],[36],[37], [38].An advantage of segmentation by this method is that it offers a job-specific context to machinery operational data.Changes to field boundaries are accounted for based on the working pattern completed by the machinery operator. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Trajectory segmentation of vehicular data has been made possible by location-aware devices being able to connect to the Internet [39].According to Spaccapietra et al.[13],the degree of segmentation for an object's trajectory should be driven by the semantics behind the object’s goal in that trajectory. Thus,it is not necessary to know the exact goal,but it is enough to know that the object is motivated by such [13]. ",
+        "page_idx": 0
+    }
+]

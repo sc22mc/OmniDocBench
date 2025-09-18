@@ -1,0 +1,44 @@
+[
+    {
+        "type": "text",
+        "text": "IN-CONTEXT AUTOENCODER FOR CONTEXTCOMPRESSION INALARGE LANGUAGE MODEL",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Tao $\\mathbf { G e ^ { * } }$ Jing $\\mathbf { H } \\mathbf { u } ^ { \\dag }$ Lei Wang†Xun WangSi-Qing ChenFuru Wei Microsoft Corporation {tage,v-hjing,v-leiwang7,xunwang,sqchen,fuwei}@microsoft.com ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ABSTRACT ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We propose the In-context Autoencoder (ICAE),leveraging the power of a large language model (LLM) to compress a long context into short compact memory slots that can be directly conditioned on by the LLM for various purposes.ICAE is first pretrained using both autoencoding and language modeling objectives on massive text data, enabling it to generate memory slots thataccurately and comprehensively represent the original context. Then,itis fine-tuned on instruction data for producing desirable responses to various prompts. Experiments demonstrate that our lightweight ICAE,introducing about $1 \\%$ additional parameters, effectively achieves $4 \\times$ context compression based onLlama, offeringadvantagesin both improved latency and GPU memory cost during inference,and showing an interesting insight in memorization as well as potential for scalability. These promising results imply a novel perspective on the connection between working memory in cognitive science and representation learning in LLMs,revealing ICAE's significantimplications in addressing the long context problem and suggesting further research inLLM context management.Our data, code and models are available at https://github.com/getao/icae. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/97e858d37aafe6a155f4b84c5c2d73bdf80e8d49d82cc647224effdaa56fdce4.jpg",
+        "image_caption": [
+            "Figure 1: Compressing a long context into a short span of memory slots. The memory slots can be conditioned onby the target LLMon behalf of the original context to respond to various prompts. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1INTRODUCTION ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Long context modeling is a fundamental challnge for Transformer-based (Vaswani et al., 2017) LLMs due to their inherent self-attention mechanism.Much previous research (Child etal.,2019; Beltagy et al.,2020; Rae et al.,2019; Choromanski et al.,2020; Bulatov et al.,2022; Zheng et al., 2022; Wu et al.,2022; Bulatov et al.,2023; Ding et al.,2023)attempts to tackle the long context issue through architectural innovations of an LLM.While they approach long context with a significant reduction in computation and memory complexity, they often struggle to overcome the notable decline ",
+        "page_idx": 0
+    }
+]

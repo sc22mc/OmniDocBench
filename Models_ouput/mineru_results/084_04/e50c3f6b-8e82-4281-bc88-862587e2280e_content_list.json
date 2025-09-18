@@ -1,0 +1,84 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/5722472a9d816a7bfd6f5fdff063725e6afa9fdb3115107b55593658b101713c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>Feature</td><td>Description</td><td>Statistic</td></tr><tr><td>1</td><td>Current CWND</td><td>Current CWND</td><td>Last</td></tr><tr><td>2</td><td>KBs Sent</td><td>Amount of KB sent *</td><td>Mean</td></tr><tr><td>3</td><td>New KBs sent</td><td>Amount of KB acked *</td><td>STD</td></tr><tr><td>4</td><td>AckedKBs</td><td>Amount of KB acked *</td><td>Min</td></tr><tr><td>5</td><td>Packets sent</td><td>Packets sent *</td><td>Max</td></tr><tr><td>6</td><td>Retransmissions</td><td>Number of packets retransmitted *</td><td>EMA</td></tr><tr><td>7</td><td>Instantaneous Throughput</td><td>Throughput *</td><td>Difference from Previous</td></tr><tr><td>8</td><td>Instantaneous Goodput</td><td>Goodput *</td><td>１２３４５６７</td></tr><tr><td>9</td><td>Unacked KBs</td><td>Amount of KBs in flight</td><td></td></tr><tr><td>10</td><td>LastRTT</td><td>Last RTT detected *</td><td></td></tr><tr><td>12</td><td>MinRTT</td><td>MinRTT*</td><td></td></tr><tr><td>12</td><td>MaxRTT</td><td>MaxRTT*</td><td></td></tr><tr><td>13</td><td>SRTT</td><td>Smoothed RTT *</td><td></td></tr><tr><td>14</td><td>VARRTT</td><td>RTTvariance *</td><td></td></tr><tr><td></td><td></td><td>*During the last RTT timeframe</td><td></td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "LIN takes care of delivering observations and reward pairs to the agent and actions back to the protocol. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Ata given step $t$ ,theagent receives network statistics from the transport protocol via the gRPC middleware. Statistics are then processed and stacked with the previous10 observations to form the state $s _ { t }$ . The agent can take actions that will increase,maintain constant, or decrease the transport protocol CWND by a chosen factor. Ideally, the agent should learn to maximize the volume of data transmitted in the minimum amount of time,while being watchful of growing queueing delays,which would manifest with an increase in the measured RTT. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "MARLIN is implemented on top of the RL Baselines3 Zoo (RL-Z003) $\\lVert 2 0 \\rVert$ framework, which follows best practices for using Stable-Baselines3 (SB3)21], a PyTorch 22]-based library that implements state-of-the-art RL algorithms following the OpenAI gym interface $| | 2 3 | |$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1）State:Table $\\mathbb { I }$ describesthe state encoded in MARLIN. 14 features are gathered during the time frame that follows the action taken at step $t - 1$ .MARLIN then augments the state space with 7 statistics,i.e.,last,mean,standard deviation, minimum,maximum,Exponential Moving Average (EMA), and difference from the previous state $s _ { t - 1 }$ ,that are computed foreach of the 14 features.The previous $N$ states are also stacked together to form a history of the previous observations, attempting to adhere to the Markov property. The final state served to the agent will then have $N \\times | F e a t u r e s | \\times | S t a t s |$ features.This totals up to 98O different features. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "$N$ is considered a hyperparameter of the problem; table1 hasa complete list of all hyperparameters used for MARLIN. For the choice of $N$ ,we followed the empirical considerations made in $\\pmb { \\left. 2 4 \\right. }$ ,and chose 10 as the length of the history after some preliminary trials and evaluations.During the training process,observations are processed and normalized through a moving average by using the VecNormalize environment wrapper present in SB3. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2）Actions:MARLIN takes continuous actions contained in the range $[ - 1 , 1 ]$ ,which represent the percentage gain of the CWND size.For example,if the action chosen by the agent is going to be 1, the CWND is doubled; a value of O means no changein the CWND; $- 0 . 5$ reduces the window size by $50 \\%$ The initial CWND size is set to 4KB at the beginning of the episode,as per the transport protocol implementation default. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For the purpose of this study，we capped the CWND size to $5 0 ~ \\mathrm { K B }$ ，avalue that,if reached,would yield double the throughput that the network can accommodate in the setup weused for training and evaluation. This choice only impacts the very first phases of training,when the agent takes random stepstoprime themodel.After thisphase,which inMARLIN isset to last 1OK steps,our experiments have shown that the agent correctly never fillsthe CWND to $5 0 ~ \\mathrm { K B }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3） Reward: We designed a reward function that gives higher rewards to the agent the closer it gets to fully utilizing the available bandwidth: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b4856bdc224a17135dc861a11e74ec2b4ea09c03f6b8ca2d0fbb68de2c94df7c.jpg",
+        "text": "$$\nr _ { t } = - \\frac { t a r g e t _ { t } } { t a r g e t _ { t } + a c k e d \\_ k i l o b y t e s _ { t } ^ { c u m u l a t i v e } }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where targett represents the amount of bytes the agent should have delivered up to step $t$ since the beginning of the episode in order to fully utilize the link and acked_kilobytescumulative represents the number of kilobytes there were acknowledged by the receiver until step $t$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A strictly negative reward function promotes the agent to accumulate the smallest amount of penalties.The penalty received ismuch smaller the closer the agent itis,at each step,to having utilized the link to the best of its possibilities. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The careful reader might notice that such rewarding system encourages the agent to accumulate acked bytes regardless explicit impact on the RTT,falling into the risk of privileging actions that could produce more acked bytes in the immediate future, with the drawback of causing undesired queuing delays. To prevent such risk,we consider a second formulation of the reward function that introduces a RTT-based penalty coefficient: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b91d6b0cadcf199a6f31ad7c13ca140dc7338d310b7c7ebe1790ceb190a8362f.jpg",
+        "text": "$$\nr _ { t } = - \\frac { t a r g e t _ { t } } { t a r g e t _ { t } + a c k e d \\_ k i l o b y t e s _ { t } ^ { c u m u l a t i v e } * ( 1 - p e n a l t i e s ) }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/bcc824b4b10060845743858ac314f58d7bc63a0ff667b48638e982218dc356f3.jpg",
+        "image_caption": [
+            "Fig. 5. Comparison of normalized model values between control and iron-stressed plants across various circuit parameters of the Cole model. The horizontal axis depicts the Cole model circuit parameters  $\\mathbb{R}^p$ $\\mathbb{R}^s$  CPE-T, CPE-P) while the vertical axis indicates the normalized model values over time. Statistical analysis using ANOVA was performed, with significant statistical differences denoted by the letters \"a\" and b above the box plots. If conditions (control/stress) share the same letter, differences between groups are not statistically significant. Outliers are denoted by the marker  $(^{**} + ^{**})$"
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "difference between training and testing phases, with a respective performance reduction of  $12.6\\%$  and  $13.2\\%$  thus indicating a lack of generalization capability on unseen data. The algorithms that provide the best performance are KNN, as already demonstrated in the impedance measurement classification study [40] and MLP, with training accuracy above  $94\\%$  and  $98\\%$  ,respectively, and a decrease of less than  $5\\%$  in test accuracy. Overall, as observed in a previous study [41], the MLP has been considered to provide the best accuracy and stability, as depicted from the bootstrapping validation  $F_{1}$  scores in Fig. s3 (see Supplementary material). Fig. s4 (see Supplementary material) displays the confusion matrix related to the developed MLP classification algorithm. In the training phase, such a discrimination model achieves  $100\\%$  precision for identifying control plants and an average of  $97.6\\%$  for distinctly identifying early and late stress. The model is able to classify, with high precision, the control plants also in a test phase, with a precision above  $99\\%$  and as expected, the precision decreases for the early and late stress classification, decreasing to  $91\\%$  and  $89\\%$  respectively. The observed high accuracy makes MLP networks the best candidate for an on- field application of this technique for tomato early stress identification.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Future developments would potentially include the analysis of plant response to different nutrient deficiency, as well as the identification of time- dependent patterns, to finely tune the developed stress prediction system. In addition, the integration of such models with stand- alone and low- power measurement systems [42], which shows to have a great potential for a realtime and on- field plant health assessment and stress prediction, would allow us to develop custom- made decision support systems able to timely identify the insurgence of nutrient stress in plants. Such tools have the potential to greatly improve the crop efficiency, in terms of time, yield, and quality of the harvested products, as well as the profit margins of the producers and the sustainability of the crops, finely tuning the application of nutrients to the specific needs of the plants.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "IV. CONCLUSION",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This work focuses on the characterization of electrical changes in eight tomato plants under iron starvation carried out through continuous biimpedance measurements over a period of 38 days. Although a larger sample size could enhance biological diversity capture, this study follows recent trends and considers the technique's early stage of development. In addition, unlike many prior studies, it was conducted in a controlled glasshouse environment, enabling precise environmental monitoring. From an initial examination, it can be seen that through the analysis of the seasonality of impedance measurements, a cyclic pattern can be traced following the circadian cycle of plants. Investigating further, results revealed a noticeable divergence in the trend of impedance magnitude at a magnitude of  $10\\mathrm{kHz}$  shortly after the elimination of iron from the nutrient solution applied to the plant, indicating an effect of iron stress on plant bioimpedance. In addition, this work proved how by employing the Cole model extracted parameters as a discriminating feature; it is possible to both monitor the evolution of the plant health status and to identify stress- induced patterns. First, this was proved by an ANOVA analysis, where the extracted circuit parameters resulted to be statistically different, between iron- stressed and control plants. Second, based on this assumption, the equivalent circuit components were successfully employed for the training of various classification models to discriminate plants in control, early, and late stress conditions. Here, the MLP algorithm resulted to achieve the best training accuracy  $(98\\%)$  and a precision to classify the early and late stress with a precision of  $91\\%$  and  $89\\%$  ,respectively.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The reported results, supported by both the ANOVA and machine learning- based classification results, demonstrate the validity of impedance measurements carried out in the plant stem, as an indicator of the response of tomato plants to the application of iron deficiency. These findings contribute to the development of novel indicators for plant health status monitoring, resulting in benefits for both the optimization of crop nutrient management and the increase in crop yields.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ACKNOWLEDGMENT",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The authors would like to thank Prof. Tanja Mimmo for her generous provision of the nutrient solutions and Dr. Maurizio Ventura for his technical support in the greenhouse. This article reflects only the author's views and opinions, neither the European Union nor the European Commission can be considered responsible for them. The data acquisition system has been developed, and it will remain available within the Programma Operativo Nazionale Ricerca e Innovazione and the PNRR research activities of the consortium iNEST (Interconnected North- Est Innovation Ecosystem) funded by the European Union Next- GenerationEU (Piano Nazionale di Ripresa e Resilienza (PNRR)—Missione 4 Componente 2, Investimento 1.5—D.D. 1058 23/06/2022, ECS 00000043).",
+        "page_idx": 0
+    }
+]

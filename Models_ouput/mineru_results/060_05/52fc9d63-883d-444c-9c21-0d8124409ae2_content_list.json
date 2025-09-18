@@ -1,0 +1,85 @@
+[
+    {
+        "type": "text",
+        "text": "where ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/759b0d699b63819d190c3e38c5df009336fe93dfd419ae09a36460bfb078994a.jpg",
+        "text": "$$\nA : = \\sum _ { j \\geq 0 } { \\binom { 2 n + 1 } { j } } \\deg s _ { j } ( C _ { \\Delta ( X ) } ( X \\times X ) )\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "and ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/6f7d99ee58b30bab3b1b2da035b8b61e58a41e1a7f242da1ac4386de41e87165.jpg",
+        "text": "$$\nB : = \\sum _ { k \\geq 0 } { \\binom { 3 n + 2 } { k } } \\deg s _ { k } ( C _ { \\Delta ( X ) } ( X \\times \\sigma _ { 2 } ( X ) ) ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "by substituting $( \\mathbb { 1 } )$ into $\\textcircled { 7 }$ Theorem8.2.8]. The equation $\\textcircled { \\scriptsize { 1 3 } }$ is just a linear combination of Segre classes of tangent bundle of $X$ .Therefore,itis sufficient tocalculate the term $s ( C _ { \\Delta ( X ) } ( X \\times \\sigma _ { 2 } ( X ) ) )$ in order to determine the degree of the 3-secant variety. However, the normal cone $C _ { \\Delta ( X ) } ( X \\times \\sigma _ { 2 } ( X ) )$ has singularities along the diagonal $\\Delta ( X )$ ， which must be expressed in simpler forms for the calculation to proceed. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3The secant bundle ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this section,we start with introducing the concepts of higher very ampleness and secant bundles to relate information of double point formula with the information of higher secant varieties. It is often necessary to consider higher very ampleness of the projective embedding in order to ensure the desirable properties of the secant bundle and the inverse image of $X$ under the birational morphism from the secant bundle to the secant variety. (cf. $\\boxed { 1 3 }$ and $\\boxed { 1 5 }$ ） ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Definition 3. (cf. $\\bigstar$ and $\\boxed { 4 }$ ）",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A line bundle $\\mathcal { L }$ on a complete algebraic variety $X$ over an algebraically closed field $k$ is $d$ -very ample if, for every zero-dimensional subscheme $Z$ of $X$ with length less than or equal to $d + 1$ ,the restriction map ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/48af25a8a7672d6fd800b5f0281e0890f99f420e24cdbf3cfa08afc5e67bc73e.jpg",
+        "text": "$$\nr _ { Z } : H ^ { 0 } ( X , { \\mathcal { L } } ) \\to H ^ { 0 } ( X , { \\mathcal { L } } \\otimes { \\mathcal { O } } _ { Z } )\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "is surjective. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Remark. Note that for two integers $d _ { 1 } \\geq d _ { 2 }$ , if a line bundle $\\mathcal { L }$ is $d _ { 1 }$ -very ample, $\\mathcal { L }$ is also $d _ { 2 }$ -very ample. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A line bundle $\\mathcal { L }$ is $0$ -very ample if and only if it is spanned by global sections, and it is1-very ample if and only if it is very ample.For instance, the $d$ -uple Veronese embedding of $\\mathbb { P } ^ { n }$ is embedded by the $d$ -very ample line bundle $\\mathcal O ( d )$ ,as shown in $\\lfloor 2 \\rfloor$ Cor 2.1 and Prop 2.2]. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Since information about higher secant varieties is often very complicated and dificult to work with,we define and use the secant bundle as a nonsingular birational model for the secant variety. We compute the required algebraic cycles for the degree formula of the 3-secant variety. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this chapter,we consider the problem of computing the degree of the 3-secant variety of a nonsingular projective variety $X$ thatisembedded bya 5-veryample line bundle $\\mathcal { L }$ . The information about higher secant varieties can be difficult to work with, so we define and use the secant bundle as a nonsingular birational model for the secant variety. We compute the required algebraic cycles for the degree formula of the 3-secant variety. We let $X ^ { \\left[ 2 \\right] }$ be the Hilbert scheme of 2points of $X$ and $\\mathbb P ^ { N }$ be the projective space $\\mathbb { P } H ^ { 0 } ( X , { \\mathcal { L } } )$ . It is known that $X ^ { [ 2 ] }$ is smooth for any dimension of $X ( \\mathrm { c f . } \\ \\bigtriangledown )$ We consider the projections $\\pi _ { 1 } : X \\times X ^ { [ 2 ] } \\to X$ and $\\pi _ { 2 } : X \\times X ^ { [ 2 ] } \\to X ^ { [ 2 ] }$ , and the universal family $Z _ { 2 } \\subset X \\times X ^ { \\left\\lfloor 2 \\right\\rfloor }$ Welet $I _ { Z _ { 2 } }$ be the ideal sheaf of $Z _ { 2 }$ on $X \\times X ^ { \\left[ 2 \\right] }$ and ${ \\mathcal { O } } _ { Z _ { 2 } }$ be the structure sheaf of $Z _ { 2 }$ ： ",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,589 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        443,
+                        343,
+                        2106,
+                        620
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                343,
+                                2106,
+                                620
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        620
+                                    ],
+                                    "type": "text",
+                                    "content": "response- level correlations between model- generated ratings and GPT- 4 ratings. To save cost, we only collect the GPT- 4 ratings on the previous \"best- of- "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        620
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        620
+                                    ],
+                                    "type": "text",
+                                    "content": " responses. The test set for this task is built on the basis of Eval- C by sampling 2 out of 4 queries for each scenario. We ask two different base LLMs (LLaMA- 2- chat- 7B and Vicuna- 7B- v1.5) to generate 32 responses for each query through uniform sampling (temperature set as 1.0). We refer to this test set as Eval- R, with "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        620
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "58 \\times 2 = 116"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        620
+                                    ],
+                                    "type": "text",
+                                    "content": " queries and "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        620
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "116 \\times 32 = 3,712"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        2106,
+                                        620
+                                    ],
+                                    "type": "text",
+                                    "content": " query- response pairs for each base LLM."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        446,
+                        679,
+                        752,
+                        729
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                679,
+                                752,
+                                729
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        679,
+                                        752,
+                                        729
+                                    ],
+                                    "type": "text",
+                                    "content": "5.2 BASELINES"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        762,
+                        2108,
+                        1188
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                762,
+                                2108,
+                                1188
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        762,
+                                        2108,
+                                        1188
+                                    ],
+                                    "type": "text",
+                                    "content": "General- purpose models: We use LLaMA- 2- Chat- 13B (Touvron et al., 2023b), Vicuna- 13B- v1.5 (Chiang et al., 2023), WizardLM- 13B- v1.2 (Xu et al., 2023), and ChatGPT (GPT- 3.5- turbo- 0613). We also use GPT- 4 (GPT- 4- 0613) in the pairwise comparison and critique generation, and Claude- 2 and LLaMA- 2- Chat- 70B in pairwise comparison. These models are used with corresponding prompt for each task: pairwise comparison prompt in Tab. 14 critique generation prompt in Tab. 18 (the same input format for AUTO- J's single- response evaluation), and rating prompt in Tab. 15 Evaluation- specific models: We use SelFee (Ye et al., 2023) in critique generation, SteamSHP (Ethyarajh et al., 2022) in pairwise comparison and overall rating, Open- Assistant's reward model (Kopf et al., 2023) in overall rating, and PandaLM (Wang et al., 2023b) in pairwise comparison."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        446,
+                        1254,
+                        833,
+                        1303
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                1254,
+                                833,
+                                1303
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        1254,
+                                        833,
+                                        1303
+                                    ],
+                                    "type": "text",
+                                    "content": "6 EXPERIMENTS"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        448,
+                        1359,
+                        1170,
+                        1402
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                448,
+                                1359,
+                                1170,
+                                1402
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        448,
+                                        1359,
+                                        1170,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": "6.1 PAIRWISE RESPONSE COMPARISON"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        446,
+                        1448,
+                        1399,
+                        1857
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                1448,
+                                1399,
+                                1857
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        1448,
+                                        1399,
+                                        1857
+                                    ],
+                                    "type": "text",
+                                    "content": "A common problem in pairwise response comparison is positional bias (Wang et al., 2023a), where an LLM may tend to favor specific positions, causing inconsistency in comparison results when response orders are swapped. To pursue stable and reliable results, we conduct two comparisons for each sample by swapping the order of the two responses in the prompt. We consider a model's judgment to agree with human only when the two comparison results are consistent and align with the human judgment."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        443,
+                        1881,
+                        1399,
+                        2204
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1881,
+                                1399,
+                                2204
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1881,
+                                        1399,
+                                        2204
+                                    ],
+                                    "type": "text",
+                                    "content": "The agreement rates for AUTO- J and the baselines on Eval- P are in Tab. 1 AUTO- J achieves a significantly higher agreement rate than all baselines except GPT- 4 on every scenario group. We also plot the prediction consistency for each model in Fig. 4 AUTO- J has a similar consistency rate to GPT- 4 and is far more consistent than all other baselines, which makes it a more reliable and robust judge for pairwise comparison."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1448,
+                        1494,
+                        2116,
+                        1980
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1448,
+                                1494,
+                                2116,
+                                1980
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1448,
+                                        1494,
+                                        2116,
+                                        1980
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1448,
+                                                1494,
+                                                2116,
+                                                1980
+                                            ],
+                                            "type": "image",
+                                            "image_path": "09c105e834753241d6f7b74273943390077a41800a45ec19221e468e4a67a2e3.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 7,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1433,
+                                2026,
+                                2103,
+                                2125
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1433,
+                                        2026,
+                                        2103,
+                                        2125
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1433,
+                                                2026,
+                                                2103,
+                                                2125
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 4: Consistency of prediction when swapping the response order."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 8,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        443,
+                        2263,
+                        1405,
+                        2310
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2263,
+                                1405,
+                                2310
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2263,
+                                        1405,
+                                        2310
+                                    ],
+                                    "type": "text",
+                                    "content": "6.2 CRITIQUE GENERATION FOR SINGLE-RESPONSE"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        2349,
+                        2106,
+                        2715
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2349,
+                                2106,
+                                2715
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2349,
+                                        2106,
+                                        2715
+                                    ],
+                                    "type": "text",
+                                    "content": "The comparison results on Eval- C given by GPT- 4 and human are in Fig. 3 and the complete comparison results for different scenario groups are in Tab. 23. In both evaluation settings, AUTO- J performs significantly than all baselines, including GPT- 4, reflecting the strong ability to criticize other LLMs' outputs. We also observe that GPT- 4 tends to provide judgments with very few ties, whereas humans often give tie judgments in comparisons, sometimes even exceeding "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2349,
+                                        2106,
+                                        2715
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "30\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2349,
+                                        2106,
+                                        2715
+                                    ],
+                                    "type": "text",
+                                    "content": ". One possible explanation is that the critique from AUTO- J exhibit a clearer structure and readability, which leads GPT- 4 to pay less attention to the content when making comparisons, while humans are able to read more attentively and discern subtle differences between two critiques."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        446,
+                        2778,
+                        1297,
+                        2824
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                2778,
+                                1297,
+                                2824
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        2778,
+                                        1297,
+                                        2824
+                                    ],
+                                    "type": "text",
+                                    "content": "6.3 OVERALL RATING FOR SINGLE-RESPONSE"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        2864,
+                        2103,
+                        3049
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2864,
+                                2103,
+                                3049
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2864,
+                                        2103,
+                                        3049
+                                    ],
+                                    "type": "text",
+                                    "content": "We conduct experiments on Eval- R with the "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2864,
+                                        2103,
+                                        3049
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2864,
+                                        2103,
+                                        3049
+                                    ],
+                                    "type": "text",
+                                    "content": " in Best- of- "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2864,
+                                        2103,
+                                        3049
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2864,
+                                        2103,
+                                        3049
+                                    ],
+                                    "type": "text",
+                                    "content": " selection set as 8, 16, and 32. In practice, if two responses share a common model rating, we choose the one with a higher output probability. Results in Tab. 2 show that responses selected by AUTO- J generally get higher GPT- 4 ratings than those selected by baselines on different "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2864,
+                                        2103,
+                                        3049
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2864,
+                                        2103,
+                                        3049
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

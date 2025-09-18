@@ -1,0 +1,513 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        443,
+                        333,
+                        2091,
+                        1263
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                443,
+                                333,
+                                2091,
+                                1263
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        333,
+                                        2091,
+                                        1263
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                443,
+                                                333,
+                                                2091,
+                                                1263
+                                            ],
+                                            "type": "image",
+                                            "image_path": "574aa3f88e259ed535bfcedd79577ed05753a3cbddaa0fee816e8c2452fddc05.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1339,
+                                2106,
+                                1590
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1339,
+                                        2106,
+                                        1590
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                443,
+                                                1339,
+                                                2106,
+                                                1590
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 2: The overview of the pipeline in each iteration of BoT. To show how boosting is achieved in this experience-driven iteration process, we present detailed intermediate results obtained from an experiment on ChapGPT-4 on the Game of 24 dataset. Given "
+                                        },
+                                        {
+                                            "bbox": [
+                                                443,
+                                                1339,
+                                                2106,
+                                                1590
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "Q"
+                                        },
+                                        {
+                                            "bbox": [
+                                                443,
+                                                1339,
+                                                2106,
+                                                1590
+                                            ],
+                                            "type": "text",
+                                            "content": " : \"The given four numbers are: 2, 4, 5, 5\", BoT performs three stages sequentially. With the simple prompt "
+                                        },
+                                        {
+                                            "bbox": [
+                                                443,
+                                                1339,
+                                                2106,
+                                                1590
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "\\mathbb{I}^t"
+                                        },
+                                        {
+                                            "bbox": [
+                                                443,
+                                                1339,
+                                                2106,
+                                                1590
+                                            ],
+                                            "type": "text",
+                                            "content": " as input, The Thought Structures Generation (Stage 1) outputs massive heterogeneous tree thought structures. Thought Structures Aggregation (Stage 2) aggregated them into a thought chain "
+                                        },
+                                        {
+                                            "bbox": [
+                                                443,
+                                                1339,
+                                                2106,
+                                                1590
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "\\overline{z}_{1\\ldots n}"
+                                        },
+                                        {
+                                            "bbox": [
+                                                443,
+                                                1339,
+                                                2106,
+                                                1590
+                                            ],
+                                            "type": "text",
+                                            "content": ", which is analyzed in Stage 3 to produce experience to further enhance the prompt."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        443,
+                        1623,
+                        2106,
+                        1894
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1623,
+                                2106,
+                                1894
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1623,
+                                        2106,
+                                        1894
+                                    ],
+                                    "type": "text",
+                                    "content": "Instead of pre- preparing examples in the prompt, a more adaptive way is to design prompts to guide the LLMs to gradually generate the thought "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1623,
+                                        2106,
+                                        1894
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z_{i}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1623,
+                                        2106,
+                                        1894
+                                    ],
+                                    "type": "text",
+                                    "content": " during the reasoning process. This can be formalized as "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1623,
+                                        2106,
+                                        1894
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z_{i} \\sim p_{0}\\left(z_{i} \\mathbb{I}\\left(z_{1\\ldots i - 1}, X, Q\\right)\\right)"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1623,
+                                        2106,
+                                        1894
+                                    ],
+                                    "type": "text",
+                                    "content": ". Finally, the solution is formalized as "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1623,
+                                        2106,
+                                        1894
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "y \\sim p_{\\theta}\\left(y \\mathbb{I}\\left(z_{1\\ldots n}, X, Q\\right)\\right)"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1623,
+                                        2106,
+                                        1894
+                                    ],
+                                    "type": "text",
+                                    "content": ". The representative approach, ToT Yao et al. (2024), further extends this sequential reasoning steps into a tree structure in which "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1623,
+                                        2106,
+                                        1894
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1623,
+                                        2106,
+                                        1894
+                                    ],
+                                    "type": "text",
+                                    "content": " next- step thoughts can be generated. Thus, the thought structure can be chain or tree."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        446,
+                        1953,
+                        787,
+                        1999
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                1953,
+                                787,
+                                1999
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        1953,
+                                        787,
+                                        1999
+                                    ],
+                                    "type": "text",
+                                    "content": "3.2 FRAMEWORK"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        2039,
+                        2106,
+                        2405
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2039,
+                                2106,
+                                2405
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2039,
+                                        2106,
+                                        2405
+                                    ],
+                                    "type": "text",
+                                    "content": "Existing literature that aims to generate the prompt with correct CoT examples or design delicate thought generation structures has three limitations. First, ineffective thoughts in those approaches are generally ignored or discarded. However, a human, who is not an expert in one field, particularly relies on analyzing previous errors to collect more experience to perform correctly on the next try. Second, they are less scalable because, for each task, an example of generating the next thoughts, such as "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2039,
+                                        2106,
+                                        2405
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbb{I}\\left(z_{1\\ldots n}, X, Q\\right)"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2039,
+                                        2106,
+                                        2405
+                                    ],
+                                    "type": "text",
+                                    "content": ", should be provided in the prompt. Finally, the thought structure, such as the tree Yao et al. (2024), is generated to be overly complex to explore more reasoning steps for a better solution. This is largely due to the obtained solution may not be further revised."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        443,
+                        2432,
+                        2106,
+                        2613
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2432,
+                                2106,
+                                2613
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2432,
+                                        2106,
+                                        2613
+                                    ],
+                                    "type": "text",
+                                    "content": "In this paper, we argue that the prompt can be enhanced by continuously collecting the analysis of LLMs on those ineffective thoughts - wrong reasoning steps in a chain of thought. Therefore, even a simple prompt, such as "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2432,
+                                        2106,
+                                        2613
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbb{I}\\left(X, Q\\right)"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2432,
+                                        2106,
+                                        2613
+                                    ],
+                                    "type": "text",
+                                    "content": ", potentially leading to ineffective thoughts, can be progressively refined by relying on such analysis to gain powerful thoughts toward the solution."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        443,
+                        2636,
+                        2106,
+                        3049
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2636,
+                                2106,
+                                3049
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2636,
+                                        2106,
+                                        3049
+                                    ],
+                                    "type": "text",
+                                    "content": "We propose Boosting of Thoughts (BoT), an automated prompting framework incorporating, which achieves prompt boosting with an experience- driven iteration process commencing with a simple prompt. As summarized in Fig. 2, each iteration "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2636,
+                                        2106,
+                                        3049
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2636,
+                                        2106,
+                                        3049
+                                    ],
+                                    "type": "text",
+                                    "content": " of BoT includes three stages. The Thought Structures Generation stage is able to fully explore reasoning chains generated by LLMs with the input prompt "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2636,
+                                        2106,
+                                        3049
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbb{I}^t"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2636,
+                                        2106,
+                                        3049
+                                    ],
+                                    "type": "text",
+                                    "content": ". In the second stage, these thought structures are aggregated to form a reasoning chain, which is to be analyzed by LLMs in the third stage to produce feedback containing error reports and detailed revision advice. Combining the aggregated reasoning chain with the feedback results in a new experience, denoted as "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2636,
+                                        2106,
+                                        3049
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{F}^t"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2636,
+                                        2106,
+                                        3049
+                                    ],
+                                    "type": "text",
+                                    "content": ". Thus, the prompt is enhanced by accumulating these experiences "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2636,
+                                        2106,
+                                        3049
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{F}^{1\\ldots t}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2636,
+                                        2106,
+                                        3049
+                                    ],
+                                    "type": "text",
+                                    "content": " over iterations."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

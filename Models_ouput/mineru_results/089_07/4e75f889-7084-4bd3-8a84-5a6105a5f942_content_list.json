@@ -1,0 +1,82 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/d35a882fbf8c2dcc92e7e013f003f8d43a189c11e9e863730076e2d31e673e20.jpg",
+        "image_caption": [
+            "Fig.9.Crossvalidation and final test results changing the window size of the STFT features.On theleft using only dataset1and on the right combining dataset 1and dataset 2. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/1d203a294514f32f055e08ca2faf9845e7b03a3798380f62904ec786115fd4ac.jpg",
+        "table_caption": [
+            "TABLEVI ACCURACYANDF1-SCOREWITHNNANDDIFFERENTFEATURES "
+        ],
+        "table_footnote": [
+            "The bold values are the best results obtained for that experiment,and for the two metrics “accuracy”and“fl-score”. "
+        ],
+        "table_body": "<table><tr><td>Featureparameter</td><td>Accuracy</td><td>Accuracy test</td><td>F1-score</td><td>F1-score test</td></tr><tr><td>mfcc10</td><td>0.9429±1.94E-03</td><td>0.9419</td><td>0.9596 ±1.51E-03</td><td>0.9586</td></tr><tr><td>mfcc20</td><td>0.9758±2.73E-03</td><td>0.9751</td><td>0.9828± 1.87E-03</td><td>0.9820</td></tr><tr><td>mfcc30</td><td>0.9862 ± 1.89E-03</td><td>0.9829</td><td>0.9901± 1.35E-03</td><td>0.9877</td></tr><tr><td>mfcc40</td><td>0.9889±1.48E-03</td><td>0.9900</td><td>0.9920±1.09E-03</td><td>0.9928</td></tr><tr><td>mfcc50</td><td>0.9906±1.75E-03</td><td>0.9918</td><td>0.9933±1.27E-03</td><td>0.9941</td></tr><tr><td>stft256</td><td>0.9862±1.72E-03</td><td>0.9862</td><td>0.9902 ± 1.25E-03</td><td>0.9900</td></tr><tr><td>stft512</td><td>0.9885±3.88E-03</td><td>0.9884</td><td>0.9918±2.74E-03</td><td>0.9916</td></tr><tr><td>stft1024</td><td>0.9915±1.64E-03</td><td>0.9910</td><td>0.9939±1.18E-03</td><td>0.9935</td></tr><tr><td>stft 2048</td><td>0.9904±3.59E-03</td><td>0.9913</td><td>0.9932±2.55E-03</td><td>0.9937</td></tr><tr><td>stft4096</td><td>0.9921±1.61E-03</td><td>0.9935</td><td>0.9944±1.14E-03</td><td>0.9953</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/4c5fb0abe2ee401a1301c16a0773ec2b10307e63f898dba7db0e0c66c252a28a.jpg",
+        "table_caption": [
+            "TABLEVII ACCURACYANDF1-SCOREWITHSVMANDDIFFERENTFEATURES "
+        ],
+        "table_footnote": [
+            "The bold values are the best results obtained for that experiment,and for the two metrics “accuracy”and“fl-score”. "
+        ],
+        "table_body": "<table><tr><td>Featureparam</td><td>Accuracy</td><td>Accuracy test</td><td>F1-score</td><td>F1-score test</td></tr><tr><td>mfcc10</td><td>0.9280±1.79E-03</td><td>0.9279</td><td>0.9483 ±1.25E-03</td><td>0.9477</td></tr><tr><td>mfcc20</td><td>0.9680±1.42E-03</td><td>0.9698</td><td>0.9770 ± 1.05E-03</td><td>0.9781</td></tr><tr><td>mfcc 30</td><td>0.9830± 1.13E-03</td><td>0.9835</td><td>0.9878± 8.32E-04</td><td>0.9880</td></tr><tr><td>mfcc40</td><td>0.9879±1.14E-03</td><td>0.9881</td><td>0.9913±8.15E-04</td><td>0.9914</td></tr><tr><td>mfcc50</td><td>0.9908±1.19E-03</td><td>0.9908</td><td>0.9934±8.46E-04</td><td>0.9933</td></tr><tr><td>fft256</td><td>0.9502± 3.17E-03</td><td>0.9534</td><td>0.9641 ±2.38E-03</td><td>0.9661</td></tr><tr><td>fft512</td><td>0.9635±3.26E-03</td><td>0.9652</td><td>0.9737±2.43E-03</td><td>0.9747</td></tr><tr><td>fft1024</td><td>0.9712±2.74E-03</td><td>0.9723</td><td>0.9793±2.03E-03</td><td>0.9799</td></tr><tr><td>fft2048</td><td>0.9760± 2.18E-03</td><td>0.9764</td><td>0.9828 ± 1.60E-03</td><td>0.9829</td></tr><tr><td>fft4096</td><td>0.9775±1.83E-03</td><td>0.9783</td><td>0.9838±1.36E-03</td><td>0.9843</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "the feature extraction that will require more time to be computed and also more memory to store them temporarily during the computation.Soitis important to find a tradeoff between the required accuracy of the predictions and the hardware resources thatcan be very limited in case ofIoT devices that inmost of the cases are microcontrollers powered by a small battery that should last for months or years before the replacement. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "IV. CONCLUSION ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Theresults indicate that larger classifier models exhibit greater accuracy in detecting the presence of the queen bee. However, itisnoteworthy that these models also demand more computational resources making them less practical for IoT applications.In scenarios where edge computing on small batterypowered devices is essential for extended operational periods, smaller classifiers may be more suitable despite a potential decrease in accuracy. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We can notice also the importance of having an extensive number of datasets to generate models that are not specific to aparticular beehive but can adapt to others as well. In this work,we observed that having data from different hives slightly reduces accuracy but enhances generalization capabilities of the classification models.The size of the audio files also has a significant effect on the accuracy of the machine learning models used.Here,it is necessary to findacompromise between prediction accuracy and the memory space used to record the audio,which also leads to an increased number of computations needed to processand extract features. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lastly,information compression into a reduced number of values is essential.This allows for a reduction in the complexity of the classifier model without losing too much information and degrading performance excessively. Overall, the findings demonstrated superior performance when employing STFT compared to MFCC features.However,this improvement comes attheexpense of increased memory demands for storing such data on a potential IoT device.This suggests the necessity for a trade-off,coupled with the implementation of effective feature selection techniques. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In summary, the research emphasizes the efficacy of audiobased methods for detecting the queen bee in beehives.While larger classifiers offer superior accuracy,theirresource-intensive nature poses challenges for IoT applications.Achievinga balance between accuracy and resource efficiency is crucial in these contexts,making smaller classifiers more practical for prolonged operational periods without sacrificing essential detection capabilities. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "REFERENCES ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "[1]N.E.Duffus,A.Echeverri,L.Dempewolf,J.A.Noriega,P.R.Furumo,and J.Morimoto,“The present and future of insect biodiversity conservation in the neotropics: Policy gapsand recommendationsNeotropical Entomol., vol.52,no.3,pp.407-421,2023.   \n[2]J.-P.Faucon etal.,“Honey bee winter mortality in France in 1999 and 2000,BeeWorld,vol.83,no.1,pp.14-23,2002.   \n[3]P.P.Danieli,N.F.Addeo,F.Lazzari,F.Manganello,andF.Bovera, “Precision beekeeping systems: State of the art, pros and cons,and their applicationas tools foradvancing the beekeeping sector,Animals,vol.14, no.1,2023,Art.no.70.   \n[4] T.A. Cecchi Stefania,S.Susanna,and O.Simone,\"A smart sensor-based measurement systemfor advanced bee hivemonitoring,”Sensors,vol.20, no.9,2020,Art.no.2726.   \n[5]M.-T.Ramsey etal.,“Theprediction of swarming in honeybee colonies using vibrational spectraSci.Rep.,vol.10,no.1,2020,Art.no.9798.   \n[6] C.Uthoff,M.N.Homsi,and M.von Bergen,\"Acoustic and vibration monitoring of honeybee colonies for beekeeping-relevant aspects of presence ofqueen bee and swarming,”Comput.Electron.Agriculture,vol.205, 2023,Art. no.107589.   \n[7]A.Qandour,I.Ahmad,D.Habibi,and M.Leppard,“Remote beehive monitoring usingacoustic signals”Acoustics Australia,vol.42,no.3,pp. 204-209,2014.   \n[8] C.Stefania,S.Spinsante,T.Alessandro,andO.Simone,“A smart sensorbased measurement system for advanced bee hive monitoring,”Sensors, vol.20,no.9,p.2726,2020.[Online].Available: https://www.mdpi.com/ 1424-8220/20/9/2726   \n[9]F.Bellino,G.Turvani,U.Garlando,andF.Riente,“Anintegrated multisensor systemforremote bee health monitoring,”in Proc.IEEE Workshop Metrol.AgricultureForestry,2022,pp.334-338.   \n10]P.Catania and M.Vallone,“Application of a precision apiculture systemto monitor honey dailyproduction,Sensors,vol.20,no.7,2020, Art. no.2012.   \n11]A.R.Braga,D.G.Gomes,R.Rogers,E.E.Hassler,B.M.Freitas,and J.A.Cazier,“A method for mining combined data fromin-hive sensors, weather and apiary inspections to forecast the health status of honey bee colonies,Comput.Electron.Agriculture,vol.169,2020,Art.no.105161.   \n12] T.Zhang,S.Zmyslony,S.Nozdrenkov,M.Smith,andB.Hopkins,“Semisupervised audio representation learning for modeling beehive strengths,\" 2021,arXiv:2105.10536.   \n13]T.N.Ngo,K.-C.Wu,E.-C.Yang,andT.-T.Lin,“Areal-timeimaging system for multiple honey bee tracking and activity monitoring,Comput. Electron.Agriculture,vol.163,2019,Art.no.104841.   \n14]C.Yang andJ.Collins,“A model for honey bee tracking on2d video,”in Proc.Int.Conf.Image Vis. Comput.New Zealand,2015, pp.1-6. ",
+        "page_idx": 0
+    }
+]

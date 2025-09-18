@@ -1,0 +1,31 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/603348b3e25a98be8c862b55028fc08b198a03d23d96049ccb5cef1580fa79b9.jpg",
+        "image_caption": [
+            "Figure 4: Comparison of three approaches across varying numbers of approaches follow those in ToT Yao trees and iterations.  Table 2: Results on Game of 24 where the settings of different"
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/3897ad5f2aee0e97fcca2fdaafd626687d36a808d78ff813d46c1553e35ed95b.jpg",
+        "table_caption": [
+            "Table 3: Showing aggregated thought chains and obtained experiences in iterations 1, 5, and 8. The given four numbers are:2,7,8,9."
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>t-th iteration</td><td>Two numbers</td><td>Arithmetic operation</td><td>New number set</td><td>Experience</td><td>Judgement</td></tr><tr><td rowspan=\"3\">F¹</td><td>2,8</td><td>multiplication</td><td>16, 7, 9</td><td rowspan=\"2\">The new set does not bring us closer to the target of 24. Try other numbers and operations. This step does not follow the rules of combining the remaining numbers and the obtained new number into a new set. Adjust the new set.</td><td rowspan=\"3\">Possible but more subsequent steps are required</td></tr><tr><td>9, 7</td><td>addition</td><td>7, 16, 16</td></tr><tr><td>16, 7</td><td>multiplication</td><td>16, 112</td><td>Too many numbers in the new set. More steps are required to reach the target of 24.</td></tr><tr><td rowspan=\"3\">F²</td><td>9, 7</td><td>addition</td><td>16, 2, 8</td><td>The “Evaluation Score: 0.5” is low. Increase the score.</td><td rowspan=\"3\">Possible but should revise some steps</td></tr><tr><td>16, 8</td><td>addition</td><td>2, 24</td><td rowspan=\"2\">It is not possible to further manipulate the numbers to reach 24. Choose different numbers. The new set is not correct. Can choose other two numbers.</td></tr><tr><td>2, 24</td><td>subtraction</td><td>22</td></tr><tr><td rowspan=\"3\">F³</td><td>9, 7</td><td>addition</td><td>16, 2, 8</td><td>-</td><td rowspan=\"3\">Possible</td></tr><tr><td>16, 2</td><td>multiplication</td><td>32, 8</td><td>-</td></tr><tr><td>32, 8</td><td>subtraction</td><td>24</td><td>-</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Due to the hardness of the Game of 24 problem, GPT- 4 and Llama2 both perform badly on this task, even incorporating the CoT, and CoT- SC approaches. The Llama2 model even fails to follow the correct rules of addressing the problem, making the solve rate even lower. Especially when applying BoT, which relies on the experience, to Llama2, all results are lower than  $5\\%$  without significant improvement. Thus, we only report the performance of BoT with GPT- 4. To maintain a fair comparison, we follow the settings proposed by ToT Yao et al. (2024).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "As shown in Table 2, BoT without human annotations is  $9.7\\%$  higher than ToT, which relies on one example showing all possible next steps. Besides,  $\\mathrm{BoT + CoT}$ , which contains 5 CoT shots in the initial prompt, is  $1.2\\%$  higher than BoT. Such a close performance between BoT and  $\\mathrm{BoT + CoT}$  is attributed to the boosting mechanism, which progressively revises weak thoughts, as discussed in subsection 4.1. Adopting an experience- driven iterative process, BoT exhibits enhanced performance as the number of trees  $M$  and the number of iterations  $T$  increment. Also shown by Fig. 4, compared to  $\\mathrm{BoT + CoT}$ , BoT relies more on  $M$  and  $T$  as it requires to collect experience from a better thought chain or longer iterations. Another observation is that when enabling ToT to operate iteratively with the prompt enriched by experience, the problem- solving rate escalates from  $72.5\\%$  in the initial iteration to  $80.2\\%$  by the 10- th iteration. This demonstrates that experience – the analysis of previous reasoning chains can be used by LLMs to significantly improve the solve rate. However, the score obtained by ToT is still  $3.5\\%$  lower than BoT. This is attributed to the fact that the aggregation stage",
+        "page_idx": 0
+    }
+]

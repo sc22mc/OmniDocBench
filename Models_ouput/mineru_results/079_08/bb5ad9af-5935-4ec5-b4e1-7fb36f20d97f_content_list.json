@@ -1,0 +1,92 @@
+[
+    {
+        "type": "text",
+        "text": "Theorem 5 (Theorem 4.2 in [SSZ2]). Let $K$ be a convex body with infinitely many facets. Then $b _ { 2 } ( K ) > 1$ ： ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof.If $K$ has infinitely many facets, then infinitely many of them will satisfy $\\mathrm { I s o p } ( F ) > \\mathrm { I s o p } ( K )$ so that Theorem 5 follows from Proposition 1. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $C$ bea $d$ -dimensional convex body. Then ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d177686fdc664dd173f8be1eaa5d3d6b41cab65ae1f57abf4f11c9a4f7ff962c.jpg",
+        "text": "$$\n\\mathrm { I s o p } ( C ) = \\frac { 1 } { d } \\frac { | \\partial C | _ { d - 1 } } { | C | _ { d } } = \\frac { 1 } { d } \\frac { | \\partial C | _ { d - 1 } } { | C | _ { d } ^ { d - 1 / d } } | C | _ { d } ^ { - 1 / d } \\ge \\frac { 1 } { d } \\frac { | \\partial B _ { 2 } ^ { d } | _ { d - 1 } } { | B _ { 2 } ^ { d } | _ { d } ^ { d - 1 / d } } | C | _ { d } ^ { - 1 / d } = \\frac { \\kappa _ { d } ^ { 1 / d } } { | C | _ { d } ^ { 1 / d } } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where we used the isoperimetric inequality,and where $\\kappa _ { d }$ denotes the volume of the $d$ -dimensional euclidean ball. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "It follows that $\\operatorname { I s o p } ( F ) \\to + \\infty$ when $| F | _ { n - 1 } \\to 0$ . Since a convex body only has finite surface area measure,it follows that if $K$ has infinitely many facets, then all but finitely many of them will satisfy $\\mathrm { I s o p } ( F ) > \\mathrm { I s o p } ( K )$ □ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We conclude this section with the following question. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Question $\\mathit { 1 }$ ：Let $P$ be a polytope,other than a simplex.Denote ${ \\mathcal { F } } _ { n - 1 } ( P )$ the set of its facets.Do we necessarily have maxTeO(n) maXF∈Fn-1(P) Isop(P) ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In words:(if $P$ is not a simplex) does there always exist an affine transform $T$ such that $P ^ { \\prime } = T P$ has at least one facet $F ^ { \\prime }$ satisfying $\\mathrm { I s o p } ( F ^ { \\prime } ) > \\mathrm { I s o p } ( P ^ { \\prime } )$ ？ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "If the answer is positive,then it would yield another proof of Theorem $1$ (by applying Proposition 1). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.APPENDIX ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.1.Wulff Shape Lemma.We recall the statement of Alexandrov's variational lemma for mixed volumes, Lemma 1, and then provide a proof. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 3 (Alexandrov's variational lemma, mixed volume version). Assume $K$ is a convex body, $s u p p ( S _ { K } ) \\subset \\Omega$ ，and $f \\in \\mathcal { C } ( \\Omega , \\mathbb { R } )$ .Denote $W _ { t } = W ( \\Omega , h _ { K } + t f )$ ， $t \\in \\mathbb { R }$ .Denote $V _ { 1 } ( t ) = V _ { n } ( W _ { t } , K \\vert n - 1 \\vert )$ Then ( $t \\mapsto V _ { 1 } ( t )$ ）isdifferentiable $^ { 7 }$ at $0$ ，and: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/19096a65000694ad9a32e92ba3577496fe5f4b74d9afb309159a888e34a87afe.jpg",
+        "text": "$$\n\\frac { \\mathrm { d } V _ { 1 } ( t ) } { \\mathrm { d } t } \\bigg | _ { t = 0 } = \\operatorname* { l i m } _ { t  0 } \\frac { V _ { 1 } ( t ) - V _ { n } ( K ) } { t } = \\frac { 1 } { n } \\int _ { \\mathbb { S } ^ { n - 1 } } f ( u ) d S _ { K } ( u ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $K$ be a convex body, $\\Omega$ a closed subset of $\\mathbb { S } ^ { n - 1 }$ determining8 $K$ , meaning $\\begin{array} { r } { K = \\bigcap _ { u \\in \\Omega } H ^ { - } ( u , h _ { K } ( u ) ) } \\end{array}$ and let $f$ be a continuous 9 function defined on $\\Omega$ .Recall we denote $W _ { t } = W ( \\Omega , h _ { K } + t f )$ the associated Wulff-shape perturbations : $W _ { t }$ is a convex body if $t > t _ { 0 }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Following Alexandrov's notations (see [Al1]), we denote $V _ { k } ( t ) = V _ { n } ( W _ { t } [ k ] , K [ n - k ] )$ (in particular $V _ { 0 } ( t ) = V _ { n } ( K )$ does not depend on $t$ ). We prove $\\begin{array} { r } { \\frac { V _ { 1 } ( t ) - V _ { 0 } ( t ) } { t }  \\frac { 1 } { n } \\int _ { \\Omega } f ( u ) d S _ { K } ( u ) } \\end{array}$ separately for $t \\to 0 ^ { + }$ then for $t  0 ^ { - }$ . For sake of clarity,we may omit some dependence from the notations : $V _ { 1 }$ means $V _ { 1 } ( t )$ ,and similarly $V _ { k }$ stands for $V _ { k } ( t )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In particular Proof. For all $\\begin{array} { r l } & { \\mathrm { ~ l ~ } t , \\mathrm { n o t e ~ t h a t ~ } ( \\mathrm { b y ~ d e f i n i t i o n ~ o f ~ } W _ { t } ) V _ { 1 } - V _ { 0 } = \\frac { 1 } { n } \\int _ { \\Omega } ( h _ { W _ { t } } - h _ { K } ) ( u ) d S _ { K } ( u ) \\leq \\frac { t } { n } \\int _ { \\Omega } f ( u ) d S _ { K } } \\\\ & { \\mathrm { , l i m s u p } _ { t  0 ^ { + } } \\frac { V _ { 1 } ( t ) - V _ { 0 } } { t } \\leq \\frac { 1 } { n } \\int _ { \\Omega } f ( u ) d S _ { K } ( u ) . } \\end{array}$ x(u). ",
+        "page_idx": 0
+    }
+]

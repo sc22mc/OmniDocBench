@@ -1,0 +1,166 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/65a2bf935be542921b92d82e64442dff27104f1adc03a8c1471f3c5ca6554ce0.jpg",
+        "image_caption": [
+            "Fig. 1. Side-channel attacks to the Shannon cipher system."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1) Source Processing: At the node  $X^n$  is encrypted with the key  $K^n$  using the encryption function Enc. The ciphertext  $C^n$  of  $X^n$  is given by  $C^n \\coloneqq \\operatorname {Enc}(X^n) = X^n \\oplus K^n$ .2) Transmission: Next, the ciphertext  $C^n$  is sent to the information processing center D through a public communication channel. Meanwhile, the key  $K^n$  is sent to D through a private communication channel.3) Sink Node Processing: In D, we decrypt the ciphertext  $C^n$  using the key  $K^n$  through the corresponding decryption procedure Dec defined by  $\\operatorname {Dec}(C^n) = C^n \\ominus K^n$ . It is obvious that we can correctly reproduce the source output  $X^n$  from  $C^n$  and  $K^n$  by the decryption function Dec.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Side-Channel Attacks by Eavesdropper Adversary:",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "An (eavesdropper) adversary  $\\mathcal{A}$  eavesdrops the public communication channel in the system. The adversary  $\\mathcal{A}$  also uses a side information obtained by side- channel attacks. Let  $\\mathcal{Z}$  be a finite set and let  $W: \\mathcal{X} \\to \\mathcal{Z}$  be a noisy channel. Let  $\\mathcal{Z}$  be a channel output from  $W$  for the input random variable  $K$ . We consider the discrete memoryless channel specified with  $W$ . Let  $Z^n \\in \\mathcal{Z}^n$  be a random variable obtained as the channel output by connecting  $K^n \\in \\mathcal{X}^n$  to the input of channel. We write a conditional distribution on  $Z^n$  given  $K^n$  as",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nW^{n} = \\{W^{n}(z^{n}|k^{n})\\}_{(k^{n},z^{n})\\in \\mathcal{K}^{n}\\times \\mathcal{Z}^{n}}.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Since the channel is memoryless, we have",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nW^{n}(z^{n}|k^{n}) = \\prod_{t = 1}^{n}W(z_{t}|k_{t}). \\tag{1}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "On the above output  $Z^n$  of  $W^n$  for the input  $K^n$ , we assume the followings.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The three random variables  $X, K$  and  $Z$ , satisfy  $X \\perp (K, Z)$ , which implies that  $X^n \\perp (K^n, Z^n)$ .  $W$  is given in the system and the adversary  $\\mathcal{A}$  can not control  $W$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "By side- channel attacks, the adversary  $\\mathcal{A}$  can access  $Z^n$ . We next formulate side information the adversary  $\\mathcal{A}$  obtains by side- channel attacks. For each  $n = 1, 2, \\dots$ , let  $\\phi_{\\mathcal{A}}^{(n)}: \\mathcal{Z}^n \\to \\mathcal{M}_{\\mathcal{A}}^{(n)}$  be an encoder function. Set  $\\phi_{\\mathcal{A}} \\coloneqq \\{\\phi_{\\mathcal{A}}^{(n)}\\}_{n = 1, 2, \\dots}$ . Let",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nR_{\\mathcal{A}}^{(n)}\\coloneqq \\frac{1}{n}\\log ||\\phi_{\\mathcal{A}}|| = \\frac{1}{n}\\log |\\mathcal{M}_{\\mathcal{A}}^{(n)}|\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "be a rate of the encoder function  $\\phi_{\\mathcal{A}}^{(n)}$ . For  $R_{\\mathcal{A}} > 0$ , we set",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\mathcal{F}_{\\mathcal{A}}^{(n)}(R_{\\mathcal{A}})\\coloneqq \\{\\phi_{\\mathcal{A}}^{(n)}:R_{\\mathcal{A}}^{(n)}\\leq R_{\\mathcal{A}}\\} .\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/4cd0d581c2ad7d893c7e3b67ff4ba026e66780594c68010be520ca739498e320.jpg",
+        "image_caption": [
+            "Fig. 2. Our proposed solution: linear encoders as privacy amplifiers."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "On encoded side information the adversary  $\\mathcal{A}$  obtains we assume the following.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The adversary  $\\mathcal{A}$  having accessed  $Z^n$  obtains the encoded additional information  $\\phi_{\\mathcal{A}}^{(n)}(Z^n)$ . For each  $n = 1, 2, \\dots$ , the adversary  $\\mathcal{A}$  can design  $\\phi_{\\mathcal{A}}^{(n)}$ . The sequence  $\\{R_{\\mathcal{A}}^{(n)}\\}_{n = 1}^{\\infty}$  must be upper bounded by a prescribed value. In other words, the adversary  $\\mathcal{A}$  must use  $\\phi_{\\mathcal{A}}^{(n)}$  such that for some  $R_{\\mathcal{A}}$  and for any sufficiently large  $n$ ,  $\\phi_{\\mathcal{A}}^{(n)} \\in \\mathcal{F}_{\\mathcal{A}}^{(n)}(R_{\\mathcal{A}})$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. Proposed Idea: Affine Encoder as Privacy Amplifier",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For each  $n = 1, 2, \\dots$ , let  $\\phi^{(n)}: \\mathcal{X}^n \\to \\mathcal{X}^m$  be a linear mapping. We define the mapping  $\\phi^{(n)}$  by",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\phi^{(n)}(x^n) = x^n A\\mathrm{~for~}x^n\\in \\mathcal{X}^n, \\tag{2}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $A$  is a matrix with  $n$  rows and  $m$  columns. Entries of  $A$  are from  $\\mathcal{X}$ . We fix  $b^m \\in \\mathcal{X}^m$ . Define the mapping  $\\phi^{(n)}: \\mathcal{X}^n \\to \\mathcal{X}^m$  by",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {\\phi^{(n)}(k^n)\\coloneqq \\phi^{(n)}(k^n)\\oplus b^m}\\\\ & {\\qquad = k^n A\\oplus b^m,\\mathrm{~for~}k^n\\in \\mathcal{X}^n.} \\end{array} \\tag{3}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The mapping  $\\phi^{(n)}$  is called the affine mapping induced by the linear mapping  $\\phi^{(n)}$  and constant vector  $b^m \\in \\mathcal{X}^m$ . By the definition 3 of  $\\phi^{(n)}$ , those satisfy the following affine structure:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {\\phi^{(n)}(y^n\\oplus k^n)(x^n\\oplus k^n)A\\oplus b^m = x^n A\\oplus (k^n A\\oplus b^m)}\\\\ & {= \\phi^{(n)}(x^n)\\oplus \\phi^{(n)}(k^n),\\mathrm{~for~}x^n,k^n\\in \\mathcal{X}^n.} \\end{array} \\tag{4}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Next, let  $\\psi^{(n)}$  be the corresponding decoder for  $\\phi^{(n)}$  such that  $\\psi^{(n)}: \\mathcal{X}^m \\to \\mathcal{X}^n$ . Note that  $\\psi^{(n)}$  does not have a linear structure in general.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Description of Proposed Procedure",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We describe the procedure of our privacy amplified system as follows.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1) Encoding of Ciphertext: First, we use  $\\phi^{(n)}$  to encode the ciphertext  $C^n = X^n \\oplus K^n$ . Let  $\\widetilde{C}^m = \\phi^{(n)}(C^n)$ . Then, instead of sending  $C^n$ , we send  $\\widetilde{C}^m$  to the public communication channel. By the affine structure 4 of encoder we have that",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {\\widetilde{C}^{m} = \\phi^{(n)}(X^{n}\\oplus K^{n})}\\\\ & {= \\phi^{(n)}(X^{n})\\oplus \\phi^{(n)}(K^{n}) = \\widetilde{X}^{m}\\oplus \\widetilde{K}^{m},} \\end{array} \\tag{5}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where we set  $\\widetilde{X}^m \\coloneqq \\phi^{(n)}(X^n)$ .  $\\widetilde{K}^m \\coloneqq \\phi^{(n)}(K^n)$ .",
+        "page_idx": 0
+    }
+]

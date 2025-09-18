@@ -1,0 +1,1928 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        224,
+                        280,
+                        1208,
+                        577
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                280,
+                                1208,
+                                577
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        577
+                                    ],
+                                    "type": "text",
+                                    "content": "malising flows are a family of distributions defined by a base distribution (usually a standard Gaussian), and a diffeomorphism "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        577
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        577
+                                    ],
+                                    "type": "text",
+                                    "content": ", i.e. a differentiable bijection with a differentiable inverse. Specifically, we set "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        577
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p_{\\theta}(x(t + \\tau)|x(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        577
+                                    ],
+                                    "type": "text",
+                                    "content": " as the density of the distribution defined by the following generative process:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        280,
+                        613,
+                        1203,
+                        742
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                280,
+                                613,
+                                1203,
+                                742
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        280,
+                                        613,
+                                        1203,
+                                        742
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\begin{array}{c}{z^p,z^v\\sim \\mathcal{N}(0,I)}\\\\ {x^p (t + \\tau),x^v (t + \\tau)\\coloneqq f_\\theta (z^p,z^v;x^p (t),x^v (t)).} \\end{array} \\tag{3}",
+                                    "image_path": "8e0fde6c86a7da882aa139d8d05409e75e87da6e65230cccfa8412a6ea26428f.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        224,
+                        782,
+                        1208,
+                        1290
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                782,
+                                1208,
+                                1290
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": "Here "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z^{p}\\in \\mathbb{R}^{3N}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z^v\\in \\mathbb{R}^{3N}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " . For all settings of "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\theta"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t),f_{\\theta}(\\cdot ;x(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " is a diffeomorphism that takes the latent variables "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(z^{p},z^{v})\\in \\mathbb{R}^{6N}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " to "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(x^{p}(t + \\tau),x^{v}(t + \\tau))\\in \\mathbb{R}^{6N}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " The conditioning state "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " parameterises a family of diffeomorphisms, defining a conditional normalising flow (Winkler et al., 2019). Note that there are no invertibility constraints on the mapping from the conditioning state "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " to the output "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t + \\tau)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " , only the map from "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathcal{E}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " to "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t + \\tau)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " must be invertible. Using the change of variables formula, we can evaluate "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p_{\\theta}(x(t + \\tau)|x(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        782,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " analytically as:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        221,
+                        1326,
+                        1216,
+                        1415
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                221,
+                                1326,
+                                1216,
+                                1415
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        221,
+                                        1326,
+                                        1216,
+                                        1415
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\begin{array}{r}\\mathcal{N}\\left(f_{\\theta}^{-1}(x(t + \\tau);x(t));0,I\\right)\\left|\\operatorname *{det}\\mathcal{I}_{f_{\\theta}^{-1}(\\cdot ;x(t))}(x(t + \\tau))\\right|, \\end{array}",
+                                    "image_path": "3c18df7f9fe7c81be3f9e380dd2ad7623ca8c64381d70e6856573654a60ebafb.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        224,
+                        1458,
+                        1208,
+                        1630
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                1458,
+                                1208,
+                                1630
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        1458,
+                                        1208,
+                                        1630
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1458,
+                                        1208,
+                                        1630
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_{\\theta}^{- 1}(\\cdot ;x(t)):\\mathbb{R}^{6N}\\to \\mathbb{R}^{6N}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1458,
+                                        1208,
+                                        1630
+                                    ],
+                                    "type": "text",
+                                    "content": " is the inverse of the diffeomorphism "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1458,
+                                        1208,
+                                        1630
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_{\\theta}(\\cdot ;x(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1458,
+                                        1208,
+                                        1630
+                                    ],
+                                    "type": "text",
+                                    "content": " , and "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1458,
+                                        1208,
+                                        1630
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathcal{I}_{f_{\\theta}^{- 1}(\\cdot ;x(t))}(x(t + \\tau))"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1458,
+                                        1208,
+                                        1630
+                                    ],
+                                    "type": "text",
+                                    "content": " denotes the Jacobian of "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1458,
+                                        1208,
+                                        1630
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_{\\theta}^{- 1}(\\cdot ;x(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1458,
+                                        1208,
+                                        1630
+                                    ],
+                                    "type": "text",
+                                    "content": " evaluated at "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1458,
+                                        1208,
+                                        1630
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t + \\tau)"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        226,
+                        1683,
+                        632,
+                        1729
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                1683,
+                                632,
+                                1729
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        1683,
+                                        632,
+                                        1729
+                                    ],
+                                    "type": "text",
+                                    "content": "3.2. Dataset generation"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        224,
+                        1758,
+                        1208,
+                        2607
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                1758,
+                                1208,
+                                2607
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "text",
+                                    "content": "We now describe the dataset used to train the flow. We generate MD trajectories by integrating Equation (2) using the OpenMM library (Eastman et al., 2017). We simulate small proteins (peptides) in implicit water, i.e., without explicitly modelling the degrees of freedom of the water molecules. Specifically, we generate a dataset of trajectories "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathcal{D} = \\{\\mathcal{T}_i\\}_{i = 1}^P"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "text",
+                                    "content": " where "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "P"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "text",
+                                    "content": " is the number of peptides. For each peptide "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "text",
+                                    "content": " we generate an MD trajectory that is temporally sampled with a spacing of "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\tau"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "text",
+                                    "content": " so that "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathcal{T}_i ="
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(x(0),x(\\tau),x(2\\tau),\\ldots)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "text",
+                                    "content": " . During training, we randomly sample pairs "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t),x(t + \\tau)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "text",
+                                    "content": " from "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathcal{D}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "text",
+                                    "content": " .Each pair represents a sample from the conditional distribution "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mu (x(t + \\tau)|x(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "text",
+                                    "content": " These samples are used as examples to train the parameters "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\theta"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1758,
+                                        1208,
+                                        2607
+                                    ],
+                                    "type": "text",
+                                    "content": " of the flow. Additional details are provided in Appendix D. Since the flow is trained on trajectory data from multiple peptides, we can deploy it at test time to generalise to new peptides not seen in the training data."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        229,
+                        2663,
+                        828,
+                        2712
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                229,
+                                2663,
+                                828,
+                                2712
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        229,
+                                        2663,
+                                        828,
+                                        2712
+                                    ],
+                                    "type": "text",
+                                    "content": "3.3. Augmented normalising flows"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        224,
+                        2742,
+                        1208,
+                        2993
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                2742,
+                                1208,
+                                2993
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        2742,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": "Typically in molecular simulations, we are primarily interested in the distribution of the positions "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2742,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{p}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2742,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " , rather than the velocities "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2742,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{v}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2742,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " . Thus, it is not necessary for "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2742,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{v}(t),x^{v}(t + \\tau)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2742,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " to represent the actual velocities of the atoms in Equation (3). We hence simplify the learning problem by treating "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2742,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{v}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2742,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " as "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1277,
+                                280,
+                                2261,
+                                1174
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": "non- physical auxiliary variables within the augmented normalising flow framework (Huang et al., 2020). For each datapoint "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t) = x^{p}(t),x^{v}(t)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " in "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathcal{D}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " , instead of obtaining "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{v}(t)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " by recording the velocities in the MD trajectory, we discard the MD velocity and independently draw "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{v}(t)\\sim \\mathcal{N}(0,I)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " The auxiliary variables "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{v}(t)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " now contain no information about the future state "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{p}(t + \\tau),x^{v}(t + \\tau)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " , since "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{v}(t)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{v}(t + \\tau)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " are drawn independently. Hence we can simplify "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_{\\theta}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " to depend only on "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{p}(t)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " ,with "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{p}(t + \\tau),x^{v}(t + \\tau)\\coloneqq"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_{\\theta}(z^{p},z^{v};x^{p}(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " . This raises the question of why auxiliary variables are necessary: we could instead directly model "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p_{\\theta}(x^{p}(t + \\tau)|x^{p}(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " , without the need for "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{v}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " .We include auxiliary variables for two reasons: First, they increase the expressivity of the distribution for "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{p}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2261,
+                                        1174
+                                    ],
+                                    "type": "text",
+                                    "content": " without a prohibitive increase in computational cost (Huang et al., 2020; Chen et al., 2020). Second, constructing a conditional flow that respects permutation equivariance is simplified with auxiliary variables - we discuss this in more detail in Section 4.1."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1277,
+                        280,
+                        2261,
+                        1174
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 9,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1272,
+                        1234,
+                        2251,
+                        1283
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                1234,
+                                2251,
+                                1283
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1234,
+                                        2251,
+                                        1283
+                                    ],
+                                    "type": "text",
+                                    "content": "3.4. Targeting the Boltzmann distribution with MCMC"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1272,
+                        1306,
+                        2259,
+                        1508
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                1306,
+                                2259,
+                                1508
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1306,
+                                        2259,
+                                        1508
+                                    ],
+                                    "type": "text",
+                                    "content": "Once the flow "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1306,
+                                        2259,
+                                        1508
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p_{\\theta}(x(t + \\tau)|x(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1306,
+                                        2259,
+                                        1508
+                                    ],
+                                    "type": "text",
+                                    "content": " has been trained, we use it as a proposal distribution in an MCMC method to target the joint distribution of the positions "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1306,
+                                        2259,
+                                        1508
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{p}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1306,
+                                        2259,
+                                        1508
+                                    ],
+                                    "type": "text",
+                                    "content": " and the auxiliary variables "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1306,
+                                        2259,
+                                        1508
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x^{v}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1306,
+                                        2259,
+                                        1508
+                                    ],
+                                    "type": "text",
+                                    "content": " , which has density:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1389,
+                        1518,
+                        2254,
+                        1607
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1389,
+                                1518,
+                                2254,
+                                1607
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1389,
+                                        1518,
+                                        2254,
+                                        1607
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\begin{array}{r}\\mu_{\\mathrm{aug}}(x^p,x^v)\\propto \\exp \\left(-\\frac{U(x^p)}{k_BT}\\right)\\mathcal{N}(x^v;0,I). \\end{array} \\tag{4}",
+                                    "image_path": "8a99df465a2dc32dec35dcd460159fc8189d255d757363b831935ed7f8bab4e6.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        1272,
+                        1650,
+                        2259,
+                        1745
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                1650,
+                                2259,
+                                1745
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1650,
+                                        2259,
+                                        1745
+                                    ],
+                                    "type": "text",
+                                    "content": "Let "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1650,
+                                        2259,
+                                        1745
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1650,
+                                        2259,
+                                        1745
+                                    ],
+                                    "type": "text",
+                                    "content": " index the states in the Markov chain. Starting from an initial state "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1650,
+                                        2259,
+                                        1745
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X_0 = (X_0^p,X_0^v)\\in \\mathbb{R}^{6N}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1650,
+                                        2259,
+                                        1745
+                                    ],
+                                    "type": "text",
+                                    "content": " at "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1650,
+                                        2259,
+                                        1745
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m = 0"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1650,
+                                        2259,
+                                        1745
+                                    ],
+                                    "type": "text",
+                                    "content": " , we iterate:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                },
+                {
+                    "bbox": [
+                        1336,
+                        1755,
+                        2254,
+                        1818
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1336,
+                                1755,
+                                2254,
+                                1818
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1336,
+                                        1755,
+                                        2254,
+                                        1818
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\tilde{X}_m\\sim p_\\theta (\\cdot |X_m^p) \\tag{5}",
+                                    "image_path": "14432c2de5bfdb2f52c88bffca47ca6f9780ce34e5817f01a5fbc28dfe705f51.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                },
+                {
+                    "bbox": [
+                        1292,
+                        1824,
+                        2254,
+                        1966
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1292,
+                                1824,
+                                2254,
+                                1966
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1292,
+                                        1824,
+                                        2254,
+                                        1966
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "X_{m + 1}\\coloneqq \\left\\{ \\begin{array}{ll}\\tilde{X}_m & \\mathrm{with~probability~}\\alpha (X_m,\\tilde{X}_m)\\\\ X_m & \\mathrm{with~probability~}1 - \\alpha (X_m,\\tilde{X}_m) \\end{array} \\right. \\tag{6}",
+                                    "image_path": "b8ecb48a0a6820c8371d028fd92c75a5bb6f08bfc507d92198422550befa1c5c.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15
+                },
+                {
+                    "bbox": [
+                        1272,
+                        1983,
+                        2264,
+                        2088
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                1983,
+                                2264,
+                                2088
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1983,
+                                        2264,
+                                        2088
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1983,
+                                        2264,
+                                        2088
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\alpha (X_{m},\\tilde{X}_{m})"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1983,
+                                        2264,
+                                        2088
+                                    ],
+                                    "type": "text",
+                                    "content": " is the Metropolis- Hastings "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1983,
+                                        2264,
+                                        2088
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(MH)"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1983,
+                                        2264,
+                                        2088
+                                    ],
+                                    "type": "text",
+                                    "content": " acceptance ratio (Metropolis et al., 1953) targeting Equation (4):"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "bbox": [
+                        1382,
+                        2095,
+                        2254,
+                        2234
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1382,
+                                2095,
+                                2254,
+                                2234
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1382,
+                                        2095,
+                                        2254,
+                                        2234
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\alpha (X,\\tilde{X}) = \\min \\left(1,\\frac{\\mu_{\\mathrm{aug}}(\\tilde{X})p_{\\theta}(X|\\tilde{X}^{p})}{\\mu_{\\mathrm{aug}}(X)p_{\\theta}(\\tilde{X}|\\tilde{X}^{p})}\\right) \\tag{7}",
+                                    "image_path": "09a0bb8ca31f3e4e8ce0e58336c767dc3939c8b939c23680c4a952a6841f5fed.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 17
+                },
+                {
+                    "bbox": [
+                        1272,
+                        2250,
+                        2261,
+                        2501
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                2250,
+                                2261,
+                                2501
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2250,
+                                        2261,
+                                        2501
+                                    ],
+                                    "type": "text",
+                                    "content": "The flow used for "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2250,
+                                        2261,
+                                        2501
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p_{\\theta}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2250,
+                                        2261,
+                                        2501
+                                    ],
+                                    "type": "text",
+                                    "content": " must allow for efficient sampling and exact likelihood evaluation, which is crucial for fast implementation of Equations (5) and (7). Additionally, after each MH step, we resample the auxiliary variables "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2250,
+                                        2261,
+                                        2501
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X^{v}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2250,
+                                        2261,
+                                        2501
+                                    ],
+                                    "type": "text",
+                                    "content": " using a Gibbs sampling update:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 18
+                },
+                {
+                    "bbox": [
+                        1430,
+                        2508,
+                        2254,
+                        2570
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1430,
+                                2508,
+                                2254,
+                                2570
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1430,
+                                        2508,
+                                        2254,
+                                        2570
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "(X_{m}^{p},X_{m}^{v})\\gets (X_{m}^{p},\\epsilon),\\quad \\epsilon \\sim \\mathcal{N}(0,I). \\tag{8}",
+                                    "image_path": "ec19a39e5824f58fedefc7abf947cf8265dc78682675f63bbf0ba7a90abca3dc.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 19
+                },
+                {
+                    "bbox": [
+                        1272,
+                        2590,
+                        2259,
+                        2993
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                2590,
+                                2259,
+                                2993
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2590,
+                                        2259,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": "Iterating these updates yields a sample "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2590,
+                                        2259,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X_{m}^{p},X_{m}^{v}\\sim \\mu_{\\mathrm{aug}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2590,
+                                        2259,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " as "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2590,
+                                        2259,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m\\to \\infty"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2590,
+                                        2259,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " . To obtain a Boltzmann- distributed sample of the positions "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2590,
+                                        2259,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X_{m}^{p}\\sim \\mu"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2590,
+                                        2259,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " , we simply discard the auxiliary variables "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2590,
+                                        2259,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X_{m}^{v}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2590,
+                                        2259,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " . In practice, sending "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2590,
+                                        2259,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m\\to \\infty"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2590,
+                                        2259,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " is infeasible. Instead, we fix a computational budget and simulate the chain until the budget is reached. Algorithm 1 shows pseudocode for the MCMC procedure, using a batch sampling procedure for the proposals which significantly speeds up sampling."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 20
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

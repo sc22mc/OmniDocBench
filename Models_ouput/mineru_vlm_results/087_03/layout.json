@@ -1,0 +1,623 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        153,
+                        267,
+                        1205,
+                        709
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                267,
+                                1205,
+                                709
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        267,
+                                        1205,
+                                        709
+                                    ],
+                                    "type": "text",
+                                    "content": "providing power, with all systems functioning while moving. A job site may contain a single field or a conjoined field work episode. An example of a conjoined field job site is shown in Fig. 2(a). The fields are conjoined by the operator moving between the adjacent fields via a short, off- road pathway. Segmentation is the process of detecting the individual field boundaries in a job site and labeling positional data as belonging to a particular field. The contributions of this article is as follows."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        195,
+                        716,
+                        1205,
+                        1656
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                195,
+                                716,
+                                1205,
+                                1656
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        195,
+                                        716,
+                                        1205,
+                                        1656
+                                    ],
+                                    "type": "text",
+                                    "content": "1) The proposed algorithm solves for field geometric boundaries from agricultural machinery data; requiring only GNSS data and a PTO-pulsed digital sensor to detect PTO activation. \n2) The algorithm has been evaluated over 327 job site locations from a five-month-long measurement campaign with a machinery contractor. The algorithm is evaluated with data from two unique harvesting implements, highlighting how the method may be used with other types of implements. \n3) The deterministic algorithm is designed to segment agricultural machinery trajectory data without the use of machine learning methods. \n4) The results demonstrate that the algorithm can solve for both road-to-field and field-to-field segmentation cases. \n5) No additional labor, land traversal, or aerial surveillance is necessary to produce the results shown, offering a cost-effective, straightforward solution to existing mechanized practices."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        150,
+                        1659,
+                        1202,
+                        1805
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                150,
+                                1659,
+                                1202,
+                                1805
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        150,
+                                        1659,
+                                        1202,
+                                        1805
+                                    ],
+                                    "type": "text",
+                                    "content": "The next section will review existing research related to tackling field segmentation, and illustrate why the solution offered in this article improves on the state of the art."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        512,
+                        1864,
+                        848,
+                        1910
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                512,
+                                1864,
+                                848,
+                                1910
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        512,
+                                        1864,
+                                        848,
+                                        1910
+                                    ],
+                                    "type": "text",
+                                    "content": "II. RELATED WORK"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        153,
+                        1933,
+                        1202,
+                        2029
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                1933,
+                                1202,
+                                2029
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        1933,
+                                        1202,
+                                        2029
+                                    ],
+                                    "type": "text",
+                                    "content": "Existing field segmentation techniques can be divided into two categories: remote sensing and coordinate- based methods."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        155,
+                        2088,
+                        636,
+                        2135
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                155,
+                                2088,
+                                636,
+                                2135
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        155,
+                                        2088,
+                                        636,
+                                        2135
+                                    ],
+                                    "type": "text",
+                                    "content": "A. Remote Sensing Methods"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        153,
+                        2158,
+                        1202,
+                        2451
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                2158,
+                                1202,
+                                2451
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        2158,
+                                        1202,
+                                        2451
+                                    ],
+                                    "type": "text",
+                                    "content": "Remote sensing field segmentation techniques are based on the use of image capture technology to detect field boundaries. Remote sensing imagery can be captured using satellites [24], [25], [26], [27] piloted aircraft [28] or drones [29]. These methods rely on medium (4 and "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        2158,
+                                        1202,
+                                        2451
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "2.8\\mathrm{m}"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        2158,
+                                        1202,
+                                        2451
+                                    ],
+                                    "type": "text",
+                                    "content": " [26]); to high "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        2158,
+                                        1202,
+                                        2451
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(0.15\\mathrm{m}"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        2158,
+                                        1202,
+                                        2451
+                                    ],
+                                    "type": "text",
+                                    "content": " [28]) resolution RGB capture, or on multispectral images [27]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        153,
+                        2458,
+                        1205,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                2458,
+                                1205,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        2458,
+                                        1205,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "Field segmentation by remote sensing offers the opportunity to batch segment large areas of land. North et al. [27] demonstrate their method using time- series satellite images covering a study area of "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        2458,
+                                        1205,
+                                        3102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "4000\\mathrm{km}^2"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        2458,
+                                        1205,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": ". Provided the images are updated frequently, or the field boundary is static, remote sensing enables for preemptive mapping before the machinery enters. A situation may arise where an operator decides to erect a temporary fence within a field, or decide to only fertilize a part of the field. In these scenarios, the job parameters have changed, and the historic remote sensing geofence may require alteration to fit the completed job. Furthermore, fine and transitory boundaries, such as an electric fence, would be imperceptible to low- resolution satellite cameras. Satellite images are available to the public through "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1249,
+                                1181,
+                                2299,
+                                1428
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1181,
+                                        2299,
+                                        1428
+                                    ],
+                                    "type": "text",
+                                    "content": "the European Space Agency Sentinel- 2 project. Sentinel- 2 offers a resolution of up to "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1181,
+                                        2299,
+                                        1428
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "10\\mathrm{m}"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1181,
+                                        2299,
+                                        1428
+                                    ],
+                                    "type": "text",
+                                    "content": " with a revisit frequency of five days at the Equator [30]. However, to obtain images of sufficient spatial resolution, frequent image acquisition from commercial satellites may be required."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1269,
+                        277,
+                        2284,
+                        838
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1269,
+                                277,
+                                2284,
+                                838
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        277,
+                                        2284,
+                                        838
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1269,
+                                                277,
+                                                2284,
+                                                838
+                                            ],
+                                            "type": "image",
+                                            "image_path": "79b8962b99d2106af98a8addde6532826ddd2a8b62ade0bac0e4f35dbfdc257f.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 8,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1249,
+                                881,
+                                2301,
+                                1108
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1249,
+                                        881,
+                                        2301,
+                                        1108
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1249,
+                                                881,
+                                                2301,
+                                                1108
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 2. (a) Example of a conjoined field job site. The fields share a common boundary and are connected by an off-road path. Visually, the divide between fields is clear, but the divide is not apparent in the raw trajectory data. (b) Example of a hollow, single field job site. In round silage baling it is not uncommon for the machinery operator to only bale the field perimeter. The central region of the field may be left for hay."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 9,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1249,
+                        1181,
+                        2299,
+                        1428
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 10,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1252,
+                        1432,
+                        2301,
+                        1923
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1252,
+                                1432,
+                                2301,
+                                1923
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1252,
+                                        1432,
+                                        2301,
+                                        1923
+                                    ],
+                                    "type": "text",
+                                    "content": "Aerial methods are vulnerable to cloud cover [5], which can affect the segmentation accuracy. The trained model in [31] performed well when processing nonobscured images but performance degraded when tested with images containing cloud cover and delineating densely packed farmland of similar color. Aeroplanes and drones are subject to constraints such as flight regulations [32] and are limited by weather conditions and flight time [33]. Operators must conform to these constraints and obtain adequate training, which incurs an additional labor cost in addition to the operating expenses of the aircraft."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1252,
+                        1930,
+                        2299,
+                        2174
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1252,
+                                1930,
+                                2299,
+                                2174
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1252,
+                                        1930,
+                                        2299,
+                                        2174
+                                    ],
+                                    "type": "text",
+                                    "content": "The limitations of remote sensing methods for field segmentation have been identified. The remainder of this section examines the literature on ground, coordinate- based methods for field segmentation and road vehicle trajectory segmentation problems."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        1252,
+                        2237,
+                        1769,
+                        2283
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1252,
+                                2237,
+                                1769,
+                                2283
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1252,
+                                        2237,
+                                        1769,
+                                        2283
+                                    ],
+                                    "type": "text",
+                                    "content": "B. Coordinate-Based Methods"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1252,
+                        2306,
+                        2301,
+                        2752
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1252,
+                                2306,
+                                2301,
+                                2752
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1252,
+                                        2306,
+                                        2301,
+                                        2752
+                                    ],
+                                    "type": "text",
+                                    "content": "Coordinate- based techniques involve the use of geolocation and/or operational data from ground- based machinery in motion to detect field boundaries. Field segmentation may be performed using coordinate- based trajectory segmentation methods [34], [35], [36], [37], [38]. An advantage of segmentation by this method is that it offers a job- specific context to machinery operational data. Changes to field boundaries are accounted for based on the working pattern completed by the machinery operator."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                },
+                {
+                    "bbox": [
+                        1252,
+                        2758,
+                        2301,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1252,
+                                2758,
+                                2301,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1252,
+                                        2758,
+                                        2301,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "Trajectory segmentation of vehicular data has been made possible by location- aware devices being able to connect to the Internet [39]. According to Spaccapietra et al. [13], the degree of segmentation for an object's trajectory should be driven by the semantics behind the object's goal in that trajectory. Thus, it is not necessary to know the exact goal, but it is enough to know that the object is motivated by such [13]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2475,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

@@ -1,0 +1,1471 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        204,
+                        227,
+                        1249,
+                        782
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                227,
+                                1249,
+                                782
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        227,
+                                        1249,
+                                        782
+                                    ],
+                                    "type": "text",
+                                    "content": "points is a measure of geometrical coherence of the local neighborhood, we estimate the sparsity of the dissimilarity of normals and use it as a feature for geometrical saliency, "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        227,
+                                        1249,
+                                        782
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "s^{(1)}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        227,
+                                        1249,
+                                        782
+                                    ],
+                                    "type": "text",
+                                    "content": ". Low values of the sparse matrix indicate that the normals of the point and its neighbors are similar (low- rank). This means that if all points in a neighborhood have similar geometrical characteristics, the respective patch represents a flat area. On the opposite, high dissimilarity indicates that the surface has an irregular shape. For a point "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        227,
+                                        1249,
+                                        782
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{v}_j"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        227,
+                                        1249,
+                                        782
+                                    ],
+                                    "type": "text",
+                                    "content": " the geometric saliency feature, "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        227,
+                                        1249,
+                                        782
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "s_j^{(1)}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        227,
+                                        1249,
+                                        782
+                                    ],
+                                    "type": "text",
+                                    "content": ", is estimated by the values of the first column of the sparse matrix "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        227,
+                                        1249,
+                                        782
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{S}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        227,
+                                        1249,
+                                        782
+                                    ],
+                                    "type": "text",
+                                    "content": " according to:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        242,
+                        788,
+                        1249,
+                        877
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                242,
+                                788,
+                                1249,
+                                877
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        242,
+                                        788,
+                                        1249,
+                                        877
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "s_j^{(1)} = ||\\hat{\\mathbf{n}}_j||^2 = \\sqrt{\\hat{n}_{j_x}^2 + \\hat{n}_{j_y}^2 + \\hat{n}_{j_z}^2}\\quad \\forall j = 1,\\dots ,m \\tag{4}",
+                                    "image_path": "e6bf4dcbd9c0997eae4840a9a8d642f37290a7b5b37275ef5e3003ab37cf2c60.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        198,
+                        891,
+                        1249,
+                        986
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                891,
+                                1249,
+                                986
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        891,
+                                        1249,
+                                        986
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        891,
+                                        1249,
+                                        986
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\hat{n}_{j_x}"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        891,
+                                        1249,
+                                        986
+                                    ],
+                                    "type": "text",
+                                    "content": " denotes the scalar value of the "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        891,
+                                        1249,
+                                        986
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        891,
+                                        1249,
+                                        986
+                                    ],
+                                    "type": "text",
+                                    "content": " coordinate, of the "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        891,
+                                        1249,
+                                        986
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[3\\cdot (j - 1) + 1]^{th}"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        891,
+                                        1249,
+                                        986
+                                    ],
+                                    "type": "text",
+                                    "content": " row, of the "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        891,
+                                        1249,
+                                        986
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "1^{st}"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        891,
+                                        1249,
+                                        986
+                                    ],
+                                    "type": "text",
+                                    "content": " column of the "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        891,
+                                        1249,
+                                        986
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{S}"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        891,
+                                        1249,
+                                        986
+                                    ],
+                                    "type": "text",
+                                    "content": " matrix."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        196,
+                        990,
+                        1249,
+                        1191
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                196,
+                                990,
+                                1249,
+                                1191
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        196,
+                                        990,
+                                        1249,
+                                        1191
+                                    ],
+                                    "type": "text",
+                                    "content": "2) Estimation of the spectral saliency (local approach): For the estimation of the spectral-based saliency, "
+                                },
+                                {
+                                    "bbox": [
+                                        196,
+                                        990,
+                                        1249,
+                                        1191
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "s_j^{(2)}"
+                                },
+                                {
+                                    "bbox": [
+                                        196,
+                                        990,
+                                        1249,
+                                        1191
+                                    ],
+                                    "type": "text",
+                                    "content": " , for a vertex "
+                                },
+                                {
+                                    "bbox": [
+                                        196,
+                                        990,
+                                        1249,
+                                        1191
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "j"
+                                },
+                                {
+                                    "bbox": [
+                                        196,
+                                        990,
+                                        1249,
+                                        1191
+                                    ],
+                                    "type": "text",
+                                    "content": " of the point cloud, we use the submatrix "
+                                },
+                                {
+                                    "bbox": [
+                                        196,
+                                        990,
+                                        1249,
+                                        1191
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{E}_j\\in \\mathbb{R}^{3\\times (k + 1)}"
+                                },
+                                {
+                                    "bbox": [
+                                        196,
+                                        990,
+                                        1249,
+                                        1191
+                                    ],
+                                    "type": "text",
+                                    "content": " that includes the 3 corresponding rows of the matrix "
+                                },
+                                {
+                                    "bbox": [
+                                        196,
+                                        990,
+                                        1249,
+                                        1191
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{E}"
+                                },
+                                {
+                                    "bbox": [
+                                        196,
+                                        990,
+                                        1249,
+                                        1191
+                                    ],
+                                    "type": "text",
+                                    "content": " .."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        214,
+                        1194,
+                        1249,
+                        1392
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                214,
+                                1194,
+                                1249,
+                                1392
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        214,
+                                        1194,
+                                        1249,
+                                        1392
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\mathbf{E}_j = \\left[ \\begin{array}{llllll}n_{j_x} & n_{j_{x1}} & n_{j_{x2}} & \\ldots & n_{j_{xk}}\\\\ n_{j_y} & n_{j_{y1}} & n_{j_{y2}} & \\ldots & n_{j_{yk}}\\\\ n_{j_z} & n_{j_{z1}} & n_{j_{z2}} & \\ldots & n_{j_{zk}} \\end{array} \\right],\\forall j = 1,\\dots ,m \\tag{5}",
+                                    "image_path": "dd7e7057c7de16809983e80df612aedc09d986268e5c2fd3383ea1ff3b5e7259.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        198,
+                        1399,
+                        1252,
+                        1640
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                1399,
+                                1252,
+                                1640
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        1399,
+                                        1252,
+                                        1640
+                                    ],
+                                    "type": "text",
+                                    "content": "In other words, each submatrix "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1399,
+                                        1252,
+                                        1640
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{E}_j"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1399,
+                                        1252,
+                                        1640
+                                    ],
+                                    "type": "text",
+                                    "content": " which is a subset of the global matrix "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1399,
+                                        1252,
+                                        1640
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{E}_i"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1399,
+                                        1252,
+                                        1640
+                                    ],
+                                    "type": "text",
+                                    "content": " ,corresponds of the point normals of a local neighborhood of the vertex "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1399,
+                                        1252,
+                                        1640
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{v}_j"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1399,
+                                        1252,
+                                        1640
+                                    ],
+                                    "type": "text",
+                                    "content": " .Then, for each one of these local matrices "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1399,
+                                        1252,
+                                        1640
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{E}_j"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1399,
+                                        1252,
+                                        1640
+                                    ],
+                                    "type": "text",
+                                    "content": " , the covariance matrix "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1399,
+                                        1252,
+                                        1640
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{R}_j\\in \\mathbb{R}^{3\\times 3}"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1399,
+                                        1252,
+                                        1640
+                                    ],
+                                    "type": "text",
+                                    "content": " is calculated:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        609,
+                        1636,
+                        1249,
+                        1702
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                609,
+                                1636,
+                                1249,
+                                1702
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        609,
+                                        1636,
+                                        1249,
+                                        1702
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\mathbf{R}_j = \\mathbf{E}_j\\mathbf{E}_j^T \\tag{6}",
+                                    "image_path": "171b20bb86fa0d0d70b5d6afa1ce325eb1d0c5c7053bd0e72dd82b1439f758c4.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        198,
+                        1716,
+                        1249,
+                        1963
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                1716,
+                                1249,
+                                1963
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        1716,
+                                        1249,
+                                        1963
+                                    ],
+                                    "type": "text",
+                                    "content": "Next, the calculated matrix "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1716,
+                                        1249,
+                                        1963
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{R}_j"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1716,
+                                        1249,
+                                        1963
+                                    ],
+                                    "type": "text",
+                                    "content": " is decomposed into a matrix "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1716,
+                                        1249,
+                                        1963
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{U}"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1716,
+                                        1249,
+                                        1963
+                                    ],
+                                    "type": "text",
+                                    "content": " consisting of the eigenvectors and a diagonal matrix "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1716,
+                                        1249,
+                                        1963
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\Lambda = \\mathrm{diag}(\\lambda_{j1},\\lambda_{j2},\\lambda_{j3})"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1716,
+                                        1249,
+                                        1963
+                                    ],
+                                    "type": "text",
+                                    "content": " consisting of the corresponding eigenvalues, i.e., "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1716,
+                                        1249,
+                                        1963
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathbf{U}\\mathbf{\\Lambda}] = \\mathrm{eig}(\\mathbf{R}_j)"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1716,
+                                        1249,
+                                        1963
+                                    ],
+                                    "type": "text",
+                                    "content": " , where eig(.) represents the eigendecomposition operation."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        198,
+                        1966,
+                        1249,
+                        2062
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                1966,
+                                1249,
+                                2062
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        1966,
+                                        1249,
+                                        2062
+                                    ],
+                                    "type": "text",
+                                    "content": "Finally, the spectral saliency of each vertex is calculated by the inverse "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1966,
+                                        1249,
+                                        2062
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "l^2"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        1966,
+                                        1249,
+                                        2062
+                                    ],
+                                    "type": "text",
+                                    "content": " - norm of the corresponding eigenvalues:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        346,
+                        2065,
+                        1249,
+                        2211
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                346,
+                                2065,
+                                1249,
+                                2211
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        346,
+                                        2065,
+                                        1249,
+                                        2211
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "s_j^{(2)} = \\frac{1}{\\sqrt{\\lambda_{j1}^2 + \\lambda_{j2}^2 + \\lambda_{j3}^2}}\\forall j = 1,\\dots ,m \\tag{7}",
+                                    "image_path": "c82f3ab5ae07f17a06f2872783f94d9dc4132ca9e98cdaaeff3dc95b7fac1a53.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        198,
+                        2220,
+                        1249,
+                        2468
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                2220,
+                                1249,
+                                2468
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        2220,
+                                        1249,
+                                        2468
+                                    ],
+                                    "type": "text",
+                                    "content": "Eq. "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2220,
+                                        1249,
+                                        2468
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(\\overline{7})"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2220,
+                                        1249,
+                                        2468
+                                    ],
+                                    "type": "text",
+                                    "content": " indicates that large values of the term "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2220,
+                                        1249,
+                                        2468
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\sqrt{\\lambda_{i1}^2 + \\lambda_{i2}^2 + \\lambda_{i3}^2}"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2220,
+                                        1249,
+                                        2468
+                                    ],
+                                    "type": "text",
+                                    "content": " correspond to small saliency features implying that the centroid lies in a flat area, while small values of the eigenvalues' norm correspond to large saliency, characterizing the specific centroid as a discriminative point."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        198,
+                        2471,
+                        1252,
+                        2818
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                2471,
+                                1252,
+                                2818
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        2471,
+                                        1252,
+                                        2818
+                                    ],
+                                    "type": "text",
+                                    "content": "This can be easily justified by the fact that a point normal lying on a flat area is represented by one dominant eigenvector, the corresponding eigenvalue of which has a very large value (especially, considering that it is squared). On the other hand, the point normal of a vertex lying on a corner is represented by three eigenvectors, that correspond to eigenvalues with small and almost equal amplitude, as shown in Fig. 2"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        198,
+                        2818,
+                        1249,
+                        3012
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                2818,
+                                1249,
+                                3012
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        2818,
+                                        1249,
+                                        3012
+                                    ],
+                                    "type": "text",
+                                    "content": "3) Normalization and fusion of local and global saliency: Finally, we linearly scale the values of the geometric "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2818,
+                                        1249,
+                                        3012
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(s^{(1)})"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2818,
+                                        1249,
+                                        3012
+                                    ],
+                                    "type": "text",
+                                    "content": " and spectral "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2818,
+                                        1249,
+                                        3012
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(s^{(2)})"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2818,
+                                        1249,
+                                        3012
+                                    ],
+                                    "type": "text",
+                                    "content": " saliency in the range of [0-1] and combine them through weighted averaging according to:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        351,
+                        3019,
+                        1249,
+                        3135
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                351,
+                                3019,
+                                1249,
+                                3135
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        351,
+                                        3019,
+                                        1249,
+                                        3135
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "s_j = \\frac{w_1\\bar{s_j^{(1)}} + w_2\\bar{s_j^{(2)}}}{w_1 + w_2}\\forall j = 1,\\dots ,m_i \\tag{8}",
+                                    "image_path": "fac0352db235b58cf577c8186ee0ec82c4e428d0660b6b0a47e3743da5a785c4.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1305,
+                        227,
+                        2333,
+                        458
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1305,
+                                227,
+                                2333,
+                                458
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1305,
+                                        227,
+                                        2333,
+                                        458
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1305,
+                                                227,
+                                                2333,
+                                                458
+                                            ],
+                                            "type": "image",
+                                            "image_path": "26cec5c9b382f7b94de34ff07bbece36f22b036ef00ac0f8402f0737b1164e72.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 14,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1287,
+                                498,
+                                2346,
+                                580
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1287,
+                                        498,
+                                        2346,
+                                        580
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1287,
+                                                498,
+                                                2346,
+                                                580
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig.2.a Cube model,b corner "
+                                        },
+                                        {
+                                            "bbox": [
+                                                1287,
+                                                498,
+                                                2346,
+                                                580
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "(\\lambda_{i1}\\cong \\lambda_{i2}\\cong \\lambda_{i3})"
+                                        },
+                                        {
+                                            "bbox": [
+                                                1287,
+                                                498,
+                                                2346,
+                                                580
+                                            ],
+                                            "type": "text",
+                                            "content": " c edge "
+                                        },
+                                        {
+                                            "bbox": [
+                                                1287,
+                                                498,
+                                                2346,
+                                                580
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "(\\lambda_{i1}\\cong"
+                                        },
+                                        {
+                                            "bbox": [
+                                                1287,
+                                                498,
+                                                2346,
+                                                580
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "\\lambda_{i2} > \\lambda_{i3}"
+                                        },
+                                        {
+                                            "bbox": [
+                                                1287,
+                                                498,
+                                                2346,
+                                                580
+                                            ],
+                                            "type": "text",
+                                            "content": " d flat area "
+                                        },
+                                        {
+                                            "bbox": [
+                                                1287,
+                                                498,
+                                                2346,
+                                                580
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "(\\lambda_{i1} > \\lambda_{i2}\\cong \\lambda_{i3})"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 15,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 14
+                },
+                {
+                    "bbox": [
+                        1295,
+                        683,
+                        2346,
+                        990
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1295,
+                                683,
+                                2346,
+                                990
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1295,
+                                        683,
+                                        2346,
+                                        990
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        1295,
+                                        683,
+                                        2346,
+                                        990
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\bar{s}^{(1)}"
+                                },
+                                {
+                                    "bbox": [
+                                        1295,
+                                        683,
+                                        2346,
+                                        990
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1295,
+                                        683,
+                                        2346,
+                                        990
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\bar{s}^{(2)}"
+                                },
+                                {
+                                    "bbox": [
+                                        1295,
+                                        683,
+                                        2346,
+                                        990
+                                    ],
+                                    "type": "text",
+                                    "content": " denote the normalized geometric and spectral saliency features, and "
+                                },
+                                {
+                                    "bbox": [
+                                        1295,
+                                        683,
+                                        2346,
+                                        990
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "w_{1}"
+                                },
+                                {
+                                    "bbox": [
+                                        1295,
+                                        683,
+                                        2346,
+                                        990
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1295,
+                                        683,
+                                        2346,
+                                        990
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "w_{2}"
+                                },
+                                {
+                                    "bbox": [
+                                        1295,
+                                        683,
+                                        2346,
+                                        990
+                                    ],
+                                    "type": "text",
+                                    "content": " the corresponding weights. We note here that we used equal weights "
+                                },
+                                {
+                                    "bbox": [
+                                        1295,
+                                        683,
+                                        2346,
+                                        990
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(w_{1} ="
+                                },
+                                {
+                                    "bbox": [
+                                        1295,
+                                        683,
+                                        2346,
+                                        990
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "w_{2} = 1)"
+                                },
+                                {
+                                    "bbox": [
+                                        1295,
+                                        683,
+                                        2346,
+                                        990
+                                    ],
+                                    "type": "text",
+                                    "content": " in all of our experiments, however, the weights can be tuned to emphasize the local or global saliency descriptors, respectively."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "bbox": [
+                        1295,
+                        993,
+                        2346,
+                        1399
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1295,
+                                993,
+                                2346,
+                                1399
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1295,
+                                        993,
+                                        2346,
+                                        1399
+                                    ],
+                                    "type": "text",
+                                    "content": "The proposed method has shown to be robust [33], [32], even for complex surfaces with different geometrical characteristics and patterns, since it exploits spectral properties (i.e., sensitivity in the variation of neighboring normals) and geometrical characteristics (i.e., sparsity of intense prominent spatial features). An example of the visualization of the saliency map, as applied to the point cloud of a scene shown in Fig. 3), is presented in Fig. 4"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 17
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1297,
+                        1471,
+                        2371,
+                        2009
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1297,
+                                1471,
+                                2371,
+                                2009
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1471,
+                                        2371,
+                                        2009
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1297,
+                                                1471,
+                                                2371,
+                                                2009
+                                            ],
+                                            "type": "image",
+                                            "image_path": "417191ec3c38258e6c0cc7244026a44fdf6fee49e86cbee132b5cd07c1cdfb65.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 18,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1292,
+                                2052,
+                                2351,
+                                2135
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1292,
+                                        2052,
+                                        2351,
+                                        2135
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1292,
+                                                2052,
+                                                2351,
+                                                2135
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 3. Image from the camera of the vehicle, the texture of a pothole is also apparent."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 19,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 18
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1295,
+                        2257,
+                        2376,
+                        2940
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1295,
+                                2257,
+                                2376,
+                                2940
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1295,
+                                        2257,
+                                        2376,
+                                        2940
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1295,
+                                                2257,
+                                                2376,
+                                                2940
+                                            ],
+                                            "type": "image",
+                                            "image_path": "4ca216d4f5eb958a7d6b0ca850192de3cc323275bcb154d8e81b197a282e1885.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 20,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1292,
+                                2973,
+                                2351,
+                                3055
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1292,
+                                        2973,
+                                        2351,
+                                        3055
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1292,
+                                                2973,
+                                                2351,
+                                                3055
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 4. Example of saliency map extracted from the road scene shown in Fig. 3"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 21,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 20
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

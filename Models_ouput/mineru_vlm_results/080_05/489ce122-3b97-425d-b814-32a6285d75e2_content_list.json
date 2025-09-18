@@ -1,0 +1,37 @@
+[
+    {
+        "type": "text",
+        "text": "$(Q_{i}, \\Sigma , \\delta_{i})$  to be isomorphic to  $\\mathcal{A}$  for any  $i \\in \\mathbb{N}$ . First we describe a construction that is a ciphertext.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Define an automaton  $\\mathcal{P} = (\\{p_1,p_2,..,p_{|u| + 1}\\} ,\\{0,1\\} ,\\gamma)$  where  $\\gamma$  is defined as follows: for  $i\\in \\{1,\\dots,|u| + 1\\}$  set  $\\gamma (p_{i - 1},u_i) = p_i$  , where  $u_{i}$  is  $i$  - th letter of a word  $u$  . In other words we encode our plaintext in the form of a directed path, where consecutive edges correspond to the consecutive letters of the word  $u$  Encryption consists of four steps:",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. Compute  $\\begin{array}{r}\\mathcal{B} = \\bigcup_{i = 1}^{|u| + 1}\\mathcal{A}_i \\end{array}$  and denote  $\\textstyle \\bigcup_{i = 1}^{|u| + 1}\\delta_i = \\rho$ $\\begin{array}{r}P = \\bigcup_{i = 1}^{|u| + 1}Q_i \\end{array}$  \n2. for any transition  $(p_i,p_j)$  in  $\\mathcal{P}$  , labelled with a letter  $x\\in \\{0,1\\}$  choose any pair of states  $q^{i}\\in Q_{i}$  and  $q^{j}\\in Q_{j}$  , and set  $\\rho (q^i,x) = q^j$  \n3. for all  $i\\in \\{1,\\dots,|u| + 1\\}$  and for every letter  $a\\in \\Sigma$  , if  $q^{i}\\in Q_{i}$  and  $\\delta (q^i,a)$  is undefined, then choose any  $j$  and any state  $q^{j}\\in Q_{j}$  and set  $\\rho (q^i,a) = q^j$  \n4. for all  $i\\in \\{1,\\dots,|u| + 1\\}$  choose  $k_{i}\\in \\mathbb{N}$  .Choose  $k_{i}$  pairs  $(q_p^i,q_r^i)$  and a letter  $x\\in \\{0,1\\}$  and define  $\\rho (q_p^i,x) = q_r^i$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Automaton  $\\mathcal{B}$  is our ciphertext. It is straightforward from the construction, that computing such automaton is polynomial in terms of  $Q, \\Sigma$  and length of the plaintext. We also state two obvious observations.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Fact 2. After removing letters  $x \\in \\{0,1\\}$  from automaton  $\\mathcal{B}$  we obtain a DFA over  $\\Sigma$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Fact 3. After removing letters  $a \\in \\Sigma$  from automaton  $\\mathcal{B}$  we obtain a digraph labeled with letters  $x \\in \\{0,1\\}$  with longest path between the vertices of length 1.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Procedure of encrypting the word 01 is depicted on figures 3, 4, 5 and 6. As a public key we take the automaton depicted on Figure 2.",
+        "page_idx": 0
+    }
+]

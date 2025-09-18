@@ -1,0 +1,24 @@
+[
+    {
+        "type": "text",
+        "text": "$(2)$  can be viewed as a rough proxy for the remaining two integrals, when the integrand in both terms is replaced by the arithmetic average of start and end value. In contrast, the integral expressions in formula  $(3)$  take into account the whole path trajectories of  $A$  and  $\\chi$  on the interval  $(t,T]$ , and may thus be considered closer to reality. If one is not willing to assume that  $A$  and  $\\chi$  are independent, which is obviously an assumption that strongly depends on the considered asset  $A$  in concern, an FX decomposition becomes more difficult. For instance, if we assume that there is a positive probability that  $A$  and  $\\chi$  have common jumps and we observe such jump at  $u\\in (t,T]$ , the expression  $[A,\\chi ]_t$  contains  $\\Delta A_u\\Delta \\chi_u$ . Which percentage of this expression should be attributed to the PnL induced by FX rate changes, and which to a change in the asset value? While this consideration based on the stochastic integral formula  $(3)$  might appear quite academic and difficult to implement in practice, it makes very clear in what sense our definition  $(2)$  can only be an approximation to reality.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2 Single assets subject to reinvestment",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We assume that the price  $A_{t}$  is a function of three variables: (i) time  $t$  , (ii) a discounting curve  $r_t$  , (iii) additional market risk factors  $x_{t}$  . This means we have  $A_{t} = A_{t}(r_{t},x_{t})$  . The additional market risk factors  $x_{t}$  depend on the specific asset and applied pricing model. For instance, in case of a bond or credit default swap  $x_{t}$  might be a tuple consisting of a credit spread curve, a recovery rate assumption, and a liquidity spread (e.g. such as the negative basis as introduced in  $\\boxed {\\mathrm{Mai}}(2019)$  ). The sub- index  $t$  at the interest rate object  $r = r_t$  and the market factor  $x = x_{t}$  indicates that the states of these input variables depend on the time point. If we write  $A_{s}(r_{t},x_{s})$  we price the asset at time  $s$  with the discounting curve from time  $t$  and the market factor variables at time  $\\mathcal{U}$  , noticing that this is a theoretical number that has not been observed at some time point (it is in general different from  $A_{s} = A_{s}(r_{s},x_{s})$  ). Given this, we decompose the PnL due to a change in asset values as follows, taking into account the three different driving factors interest rate  $(r)$  , market risk  $(x)$  , as well as carry (due to time  $t$  passing):",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {A_T - A_t = A_T(r_T,x_T) - A_t(r_t,x_t)}\\\\ & {= \\frac{A_T(r_T,x_T) - A_T(r_t,x_T)}{2} +\\frac{A_t(r_T,x_t) - A_t(r_t,x_t)}{2}\\qquad \\mathrm{(intercept~rate~change)}}\\\\ & {+\\frac{A_T(r_T,x_T) - A_T(r_T,x_t)}{2} +\\frac{A_t(r_t,x_T) - A_t(r_t,x_t)}{2}\\qquad \\mathrm{(market~risk~change)}}\\\\ & {+\\frac{A_T(r_T,x_t) - A_t(r_t,x_T)}{2} +\\frac{A_T(r_t,x_T) - A_t(r_T,x_t)}{2}.} \\end{array} \\tag{carry}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

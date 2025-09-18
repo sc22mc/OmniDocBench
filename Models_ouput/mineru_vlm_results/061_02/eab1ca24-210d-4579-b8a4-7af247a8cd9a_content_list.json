@@ -1,0 +1,71 @@
+[
+    {
+        "type": "text",
+        "text": "reached a peak of 2 Crab at  $2 - 20\\mathrm{keV}$  around March 20 (Shidatsu et al. 2018), and then the source stayed in the hard state for roughly three months with slowly decreasing luminosity (Shidatsu et al. 2019). This unusually long and bright hard state makes it an excellent target to study the rich soft and hard X- ray spectral and timing phenomena (e.g. Kara et al. 2019; Ma et al. 2020; Stiele & Kong 2020; You et al. 2021). As optical LFQPOs are observed at frequencies nearly identical to that seen in the X- ray band (Yu et al. 2018b,a), multiwavelength timing observations of the LFQPOs will provide critical clues to the origin of the LFQPOs as well (Mao et al. 2022).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Insight- Hard X- ray Modulation Telescope (HXMT) consists of three payloads: high energy X- ray telescope (HE,  $20 - 250\\mathrm{keV}$ ), medium energy X- ray telescope (ME,  $5 - 30\\mathrm{keV}$ ), and low energy X- ray telescope (LE,  $1 - 15\\mathrm{keV}$ ) (Zhang et al. 2020). The technical details of Insight- HXMT can be seen in data reduction guide<sup>1</sup>. Insight- HXMT has performed high cadence monitoring observations for this outburst. The broad X- ray energy band and the high count rate during the hard state observations provide us an opportunity to explore the energy spectrum evolution on short timescale. In this work, we use the Insight- HXMT data to explore the broadband X- ray spectral variation within the LFQPO timescale.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2 DATA ANALYSIS AND RESULTS",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.1 Data reduction",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We used the observation taken on March 27, 2018 (ObsId P0114661006), when the flux is near its maximum of the hard state (Shidatsu et al. 2019). The exposure time of this observation is about 3400s.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We used the Insight- HXMT data analysis software HXMTDAS v2.05 to extract the data from three payloads. To avoid contamination from nearby sources, we chose the narrow FOVs for all three telescopes. For creating good- time- intervals (GTIs), we used the suggested criteria in the guide. We then generated the energy spectrum and the corresponding background from the screened event, as well as the light curve of 8ms resolution.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.2 Spectral analysis",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We grouped the spectra with minimum of 20 counts per bin. The spectral fitting performed by XSPEC version 12.11.1 with Chi statistics. We apply this model constant  $\\times$  TBabs  $\\times$  (diskbb+ref1kerr) to fit the spectra with energy bands  $2 - 8\\mathrm{keV}$  for LE,  $10 - 30\\mathrm{keV}$  for ME,  $35 - 150\\mathrm{keV}$  for HE. The constant factor is used to account for differences of flux calibration between different payloads. The TBabs accounts for interstellar absorption, with  $N_{H}$  fixed at  $1.5\\times 10^{21}cm^{- 2}$  (Uttley et al. 2018), where abundances and cross sections of the absorption by the Galactic interstellar medium are set according to Wilms et al. (2000) and Verner et al. (1996). The diskbb is a multiple blackbody component. The ref1kerr is a relativistic reflection model which includes a thermal Comptonization continuum as the illuminating source (compps), which is one of the most accurate models of this process, and a hybrid model of rest- frame reflection hreflect (Niedzwiecki et al. 2019). The ionization parameter of the disk log  $\\xi$  is defined as the same way as the xillver (Garcia & Kallman 2010),  $\\xi = 4\\pi F_{\\mathrm{irr}} / n_e$ , where the  $F_{\\mathrm{irr}}$  is the irradiating flux in the  $13.6\\mathrm{eV} - 13.6\\mathrm{keV}$  photon energy range and  $n_e$  is fixed as  $10^{15}cm^{- 3}$ , and without taking into account the ionization gradient. The comparison between the ref1kerr and the other popular relativistic reflection model relxill is extensively shown in Dzietak et al. (2019).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "During the spectral fitting, we fixed the black hole spin at 0.13 (Zhao et al. 2021) and the inclination angle at  $63^{\\circ}$  (Atri et al. 2020). The disk temperature is set as the seed photon temperature for Comptonization. The normalization of the diskbb component  $N_{\\mathrm{disk}}$  is expressed as  $(R_{in} / D_{10})^2\\cos \\theta$ , where  $R_{in}$  is the inner disk radius in  $\\mathrm{km}$ ,  $D_{10}$  is the distance to the source, in units of  $10\\mathrm{kpc}$  and  $\\theta$  is inclination angle. We obtained  $N_{\\mathrm{disk}}\\simeq 816R_{\\mathrm{in}} / R_{\\mathrm{g}})^2$  by taking the distance as  $2.96\\mathrm{kpc}$  (Atri et al. 2020), the black hole mass as  $8.48M_{\\odot}$  (Torres et al. 2020), and the inclination angle as  $63^{\\circ}$  (Atri et al. 2020). Then  $N_{\\mathrm{disk}}$  is tied to the parameter  $R_{\\mathrm{in}}$  (in unit of  $R_{\\mathrm{g}}$ ) in ref1kerr as  $816R_{\\mathrm{in}}^2$ . The best- fitting parameters are shown in the first row of Table 1. The reduced chi- square value indicates that our model is adequate to describe the data. We also noticed that some spectral fittings need an additional unchanged non- relativistic reflection component during the hard state (Buisson et al. 2019; You et al. 2021). However, whether including the non- relativistic reflection component does not affect the estimation of the relativistic reflection component and the Comptonization component (You et al. 2021).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.3 Timing analysis",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We generated the power density spectra(PDS) of different energy bands by using powerspec with frequency resolution  $d\\nu = 1 / 512\\mathrm{Hz}$  and Nyquist frequency  $\\nu_{N} = 256\\mathrm{Hz}$ . We then calculated the rms normalized power by dividing the mean count rate for different energy bands respectively(van der Klis 1995, and references therein) and subtracted the white noise. We rebined the PDS with a geometric index of 1.08 and fitted the broadband noise with three Lorentzians and the QPO and its harmonic frequencies with three narrow Lorentzians in XSPEC v12.11.1. The best- fitted reduced  $\\chi^2$  are all less than 1.0. The PDS data and the best- fitting model are plotted in Figure 1. The LFQPO around  $0.044\\mathrm{Hz}$  is clearly detected as indicated by the curves in black in different energy bands. We show the best- fitting LFQPO results in Table 2. The central frequency of the LFQPO is constant with the same in different energy bands. The RMS of the LFQPO however decreases with photon energy in the energy range above  $\\sim 10\\mathrm{keV}$ , which is different from other black hole transients (e.g. Huang et al. 2018).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Figure 2 shows the light curves of three instruments with time resolution of 5 seconds. There are visible flares on the timescales similar to that of the detected LFQPO. In order to quantitatively identify the peak (high intensity) and trough (low intensity) phases of the flares corresponding to the LFQPO waveform, we used the local maxima/minima method to select the extreme from the beginning to the end of the light curve. The method takes a fixed- width window and moves in order from the light curve without overlapping, picking the extreme values of the curve in the window with each move. Since the central frequency of the detected QPO is  $0.044\\mathrm{Hz}$  with an FWHM is  $0.013\\mathrm{Hz}$  (roughly corresponding to a timescale 20- 30 seconds), we then set the window width as  $25\\mathrm{s}$  in order to match the QPO cycles. We set the minimum intensity  $F_{\\mathrm{min}}$  and the maximum intensity  $F_{\\mathrm{max}}$  of the light curve as two reference flux baselines and their intensity difference is  $\\Delta F$ . In order to ignore the flares with small fluctuations, we exclude peaks below  $F_{\\mathrm{max}} - 0.7\\Delta F$ , and troughs above  $F_{\\mathrm{min}} + 0.18\\Delta F$ . Under the above conditions, we selected 113 peaks and 118 troughs, which 113 pairs of peak and trough phases are adjacent. The selection of the peak phases and the trough phases was only performed in the LE light curve, which is shown in Figure 2.",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,504 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "table",
+                    "bbox": [
+                        217,
+                        376,
+                        1136,
+                        891
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                217,
+                                376,
+                                1136,
+                                891
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        217,
+                                        376,
+                                        1136,
+                                        891
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                217,
+                                                376,
+                                                1136,
+                                                891
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Indicator</td><td>Formula</td><td>Section</td></tr><tr><td rowspan=\"2\">Precision (P)</td><td>TP</td><td>III,IV,V</td></tr><tr><td>TP+FP</td><td>III,IV,V</td></tr><tr><td>Recall-sensitivity (R)</td><td>TP+FN</td><td>III,IV,V</td></tr><tr><td rowspan=\"2\">Specificity</td><td>TN</td><td>IV</td></tr><tr><td>TN+FP</td><td>IV</td></tr><tr><td rowspan=\"2\">Accuracy</td><td>TP+TN</td><td>IV, VII</td></tr><tr><td>TP+TN+FP+FN</td><td>IV</td></tr><tr><td rowspan=\"2\">F1 score</td><td>2×P+R</td><td>IV</td></tr><tr><td>P+R</td><td>IV</td></tr><tr><td>Mean average precision (mAP)</td><td>1/N ∑k=1 APk</td><td>III</td></tr><tr><td rowspan=\"2\">Intersection over union (IoU)</td><td>A∩L</td><td>III</td></tr><tr><td>A∪L</td><td>III</td></tr></table>",
+                                            "image_path": "f53552afc83cd6b37862b079c6d4e0b6dbb28e6a6e86d3fc1480e6e18a78357e.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                450,
+                                264,
+                                910,
+                                339
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        450,
+                                        264,
+                                        910,
+                                        339
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                450,
+                                                264,
+                                                910,
+                                                339
+                                            ],
+                                            "type": "text",
+                                            "content": "TABLEI PERFORMANCE INDICATORS USED"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        153,
+                        1013,
+                        1205,
+                        1306
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                1013,
+                                1205,
+                                1306
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        1013,
+                                        1205,
+                                        1306
+                                    ],
+                                    "type": "text",
+                                    "content": "of objects in images and is more accurate than many other detectors [28], [31], it tends to lose specimens (i.e., high value of FN) and also to have a not negligible number of FP. When testing SSD on ALL and ONLY, its precision score remains stable. The number of FP slightly increases in the ALL experiment, but not dramatically."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        153,
+                        1313,
+                        1205,
+                        2154
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                1313,
+                                1205,
+                                2154
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        1313,
+                                        1205,
+                                        2154
+                                    ],
+                                    "type": "text",
+                                    "content": "The DETR leverages the transformer architecture, originally designed for natural language processing tasks. It has emerged as a novel NN for object detection, comprising four main components: backbone, encoder, decoder, and prediction heads [32]. In our experiments, we employed ResNet- 50 as the backbone, using a CNN to learn a 2- D representation of the input image. The model flattens this representation and supplements it with positional encoding before feeding it into a transformer encoder. Subsequently, the encoded image data pass through an encoderdecoder structure and is then directed to the prediction heads. These prediction heads, based on feed- forward networks, predict either a detection class and bounding box, or a NoOBJECT class (i.e., background). We utilized the PyTorch implementation of DETR in our application, and the testing results are presented in Table II. As indicated, the recall is poor, resulting in a high number of FN. However, since it achieves the same "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1313,
+                                        1205,
+                                        2154
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "P"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1313,
+                                        1205,
+                                        2154
+                                    ],
+                                    "type": "text",
+                                    "content": " for ALL and ONLY, it follows model robust against empty patches."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        153,
+                        2161,
+                        1205,
+                        2752
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                2161,
+                                1205,
+                                2752
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        2161,
+                                        1205,
+                                        2752
+                                    ],
+                                    "type": "text",
+                                    "content": "YOLOv5 stands out for its lightweight and fast computation capabilities, demanding less computational power compared with other current state- of- the- art algorithms while maintaining comparable performance [16]. Although YOLOv5 is offered in several model sizes, in the following, we rely solely on the eXtra- large model (X) since it is the most powerful configuration to find fine- grain objects inside a frame due to its architecture. YOLOv5- X has been trained on our custom dataset by finetuning pretrained weights [33] on an NVIDIA RTX 3060 OC. The YOLOv5- X results are depicted in Table II. In principle, its precision on ONLY is considerably high, while it balances precision and recall on ALL."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        153,
+                        2758,
+                        1205,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                2758,
+                                1205,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        2758,
+                                        1205,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "YOLOv9 [34] introduces some innovation with respect to its predecessor. Specifically, to improve accuracy, it introduces programmable gradient information (PGI) and the generalized efficient layer aggregation network (GELAN). PGI prevents data loss and ensures accurate gradient updates, whereas GELAN optimizes lightweight models with gradient path planning. We trained YOLOv9- T and YOLOv9- E using transfer "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1249,
+                                1610,
+                                2299,
+                                1956
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1610,
+                                        2299,
+                                        1956
+                                    ],
+                                    "type": "text",
+                                    "content": "learning. Table II gives that both models achieve notable performance. YOLOv9- T demonstrates a solid robustness against background- only patches, overcoming YOLOv9- E in all the metrics. Despite the previous observation, YOLOv9- E depicts significant detection ability. Notably, YOLOv9- T showcases simultaneously a high "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1610,
+                                        2299,
+                                        1956
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathrm{mAP_{0.5}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1610,
+                                        2299,
+                                        1956
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1610,
+                                        2299,
+                                        1956
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathrm{mAP_{0.5}^{0.95}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1610,
+                                        2299,
+                                        1956
+                                    ],
+                                    "type": "text",
+                                    "content": ", setting interesting confidences and IoU values, respectively."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        1269,
+                        412,
+                        2279,
+                        1501
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1269,
+                                412,
+                                2279,
+                                1501
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        412,
+                                        2279,
+                                        1501
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1269,
+                                                412,
+                                                2279,
+                                                1501
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td></td><td colspan=\"2\">model</td><td>P</td><td>R</td><td>mAP0.5</td><td>mAP0.95</td></tr><tr><td></td><td rowspan=\"2\">SSD</td><td>ALL</td><td>65.5%</td><td>26.8%</td><td>57.4%</td><td>25.1%</td></tr><tr><td></td><td>ONMY</td><td>73.1%</td><td>26.8%</td><td>59.8%</td><td>26.3%</td></tr><tr><td></td><td rowspan=\"2\">DETR</td><td>ALL</td><td>81.8%</td><td>12.7%</td><td>50.9%</td><td>24.1%</td></tr><tr><td></td><td>ONMY</td><td>81.8%</td><td>12.7%</td><td>54.4%</td><td>25.8%</td></tr><tr><td rowspan=\"2\">0.3</td><td rowspan=\"2\">YOLOV5-X</td><td>ALL</td><td>53.5%</td><td>54.8%</td><td>44.4%</td><td>29.0%</td></tr><tr><td>ONMY</td><td>95.1%</td><td>54.8%</td><td>52.0%</td><td>34.3%</td></tr><tr><td rowspan=\"8\">C</td><td rowspan=\"2\">YOLOV9-T</td><td>ALL</td><td>71.0%</td><td>61.0%</td><td>67.0%</td><td>37.0%</td></tr><tr><td>ONMY</td><td>95.0%</td><td>61.0%</td><td>78.0%</td><td>44.0%</td></tr><tr><td rowspan=\"2\">YOLOV9-E</td><td>ALL</td><td>57.50%</td><td>52.0%</td><td>51.0%</td><td>27.0%</td></tr><tr><td>ONMY</td><td>89.0%</td><td>53.0%</td><td>69.0%</td><td>37.0%</td></tr><tr><td rowspan=\"2\">YOLOV10-N</td><td>ALL</td><td>74.0%</td><td>60.0%</td><td>50.0%</td><td>23.0%</td></tr><tr><td>ONMY</td><td>90.0%</td><td>60.0%</td><td>71.0%</td><td>33.0%</td></tr><tr><td rowspan=\"2\">YOLOV10-X</td><td>ALL</td><td>50.0%</td><td>64.0%</td><td>41.0%</td><td>19.0%</td></tr><tr><td>ONMY</td><td>79.0%</td><td>64.0%</td><td>72.0%</td><td>32.0%</td></tr><tr><td rowspan=\"4\"></td><td rowspan=\"2\">SSD</td><td>ALL</td><td>62.5%</td><td>28.2%</td><td>56.7%</td><td>24.0%</td></tr><tr><td>ONMY</td><td>71.4%</td><td>28.2%</td><td>60.6%</td><td>25.9%</td></tr><tr><td rowspan=\"2\">DETR</td><td>ALL</td><td>73.3%</td><td>14.1%</td><td>54.4%</td><td>25.8%</td></tr><tr><td>ONMY</td><td>73.3%</td><td>14.1%</td><td>57.2%</td><td>26.8%</td></tr><tr><td rowspan=\"2\">0.1</td><td rowspan=\"2\">YOLOV5-X</td><td>ALL</td><td>39.5%</td><td>62.0%</td><td>48.7%</td><td>31.0%</td></tr><tr><td>ONMY</td><td>92.4%</td><td>62.0%</td><td>60.6%</td><td>39.9%</td></tr><tr><td rowspan=\"8\">C</td><td rowspan=\"2\">YOLOV9-T</td><td>ALL</td><td>71.0%</td><td>66.0%</td><td>67.0%</td><td>36.0%</td></tr><tr><td>ONMY</td><td>94.0%</td><td>66.0%</td><td>81.0%</td><td>45.0%</td></tr><tr><td rowspan=\"2\">YOLOV9-E</td><td>ALL</td><td>57.0%</td><td>62.0%</td><td>50.0%</td><td>26.0%</td></tr><tr><td>ONMY</td><td>88.0%</td><td>62.0%</td><td>74.0%</td><td>38.0%</td></tr><tr><td rowspan=\"2\">YOLOV10-N</td><td>ALL</td><td>74.0%</td><td>60.0%</td><td>50.0%</td><td>23.0%</td></tr><tr><td>ONMY</td><td>90.0%</td><td>60.0%</td><td>71.0%.</td><td>33.0%</td></tr><tr><td rowspan=\"2\">YOLOV10-X</td><td>ALL</td><td>50.0%</td><td>64.0%</td><td>41.0%</td><td>19.0%</td></tr><tr><td>ONMY</td><td>79.0%</td><td>64.0%</td><td>52.0%</td><td>32.0%</td></tr></table>",
+                                            "image_path": "a56004c82e294b8365a7df06168fef927755ec99b551337570b9d6ed827c0ae4.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 7,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                1272,
+                                260,
+                                2274,
+                                376
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        260,
+                                        2274,
+                                        376
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1272,
+                                                260,
+                                                2274,
+                                                376
+                                            ],
+                                            "type": "text",
+                                            "content": "TABLE II RESULTS FOR TESTING SSD,DETR,YOLOV5,YOLOV9,AND YOLOV10, WITH "
+                                        },
+                                        {
+                                            "bbox": [
+                                                1272,
+                                                260,
+                                                2274,
+                                                376
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "\\mathrm{I0U} = 0.5"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 6,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        1249,
+                        1610,
+                        2299,
+                        1956
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 8,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1249,
+                        1960,
+                        2301,
+                        2702
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1249,
+                                1960,
+                                2301,
+                                2702
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1960,
+                                        2301,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": "We extend our analysis to the latest release of YOLO family, namely, YOLOv10 [35]. The newest architecture offers a range of model scales, but we decided to rely on YOLOv10- N and YOLOv10- X. One of the main improvements is the introduction of consistent dual assignments, which replaces nonmaximum suppression. Moreover, the developers introduced partial self- attention to boost the detection ability without any burdening on inference speed. As reported in Table II, YOLOv10 confirms its ability to recognize objects also in challenging environments showcasing interesting performance for both the models. Once again, despite YOLOv10- N is the lightest version, it outperforms YOLOv10- X demonstrating also a fair robustness against background- only patches. On the other hand, YOLOv10- X gains limited knowledge on BMSB detection suggesting potential overfitting on training data."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        1249,
+                        2709,
+                        2301,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1249,
+                                2709,
+                                2301,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1249,
+                                        2709,
+                                        2301,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "Comparing all the NNs, SSD and DETR have performed almost the same obtaining a higher precision and a lower recall. SDD tends to miss fewer BMSB inside the frame than DETR, detecting at least the "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        2709,
+                                        2301,
+                                        3102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\approx 27\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        2709,
+                                        2301,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": " of the total occurrences in contrast with the poor "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        2709,
+                                        2301,
+                                        3102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\approx 13\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        2709,
+                                        2301,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": " reached by DETR. Both SSD and DETR revealed a significant robustness against background- only pixels because their performance is almost the same in the two sets, i.e., ALL and ONLY. Moreover, DETR raised less FP than SSD,"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2475,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

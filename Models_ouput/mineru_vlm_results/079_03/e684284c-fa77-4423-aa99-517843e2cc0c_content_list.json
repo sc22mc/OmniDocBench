@@ -1,0 +1,91 @@
+[
+    {
+        "type": "text",
+        "text": "i-  $\\begin{array}{r}V_{n}(K_{1},\\dots,K_{n}) = \\frac{1}{n!}\\sum_{J\\subset [n]}(- 1)^{n - |J|}|K_{J}|_{n} \\end{array}$  where  $\\begin{array}{r}^2 K_J = \\sum_{i\\in J}K_i \\end{array}$  ii-  $V_{n}(K_{1} + x_{1},K_{2},\\dots,K_{n}) = V_{n}(K_{1},\\dots,K_{n})$  (translation invariance) iii-  $V_{n}(K_{1} + \\lambda K_{1},K_{2},\\dots,K_{n}) = V_{n}(K_{1},K_{2},\\dots,K_{n}) + \\lambda V_{n}(K_{1}^{\\prime},K_{2},\\dots,K_{n})$  (multilinearity) iv-  $V_{n}(K_{\\sigma (1)},\\dots,K_{\\sigma (n)}) = V_{n}(K_{1},\\dots,K_{n})$  (symmetry in the arguments) v-  $V_{n}(.)$  is continuous on  $(\\mathcal{K}^n)^n$  , with respect to Hausdorff topology.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Moreover, Minkowski proved  $V_{n}(.)$  also enjoys the following properties :",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "vi-  $V_{n}(K_{1},\\dots,K_{n})\\geq 0$  (non- negativity) vi- if  $K_{1}\\subset K_{1}^{\\prime}$  , then  $V_{n}(K_{1},K_{2},\\dots,K_{n})\\leq V_{n}(K_{1}^{\\prime},K_{2},\\dots,K_{n})$  (monotonicity).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Hence  $V_{n}(.)$  is a (multilinear) functional on  $(\\mathcal{K}^n)^n$  .When the underlying dimension (i.e. the total number of arguments  $V_{n}(.)$  takes) is clear, we may drop the subscript  $n$  , and write  $V(.)$  rather than  $V_{n}(.)$  . It follows directly from the definition of mixed volumes, that  $V_{n}(K[n]) = |K|_{n}$  . Therefore we may slightly abuse notation, and write  $V_{n}(K)$  , or even  $V(K)$  , instead of  $V_{n}(K[n])$  , as this shortcut seems common in the literature. To avoid confusion, we only use this shortcut when  $K$  is indeed  $n$  - dimensional, i.e. when  $K$  is a non- degenerate convex body in  $\\mathbb{R}^n$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let  $u\\in \\mathbb{S}^{n - 1}$  be a unit vector. Denote  $\\pi u$  the orthogonal projection onto  $u^{\\perp}$  . If  $u_{1},\\ldots ,u_{k}$  are  $k$  linearly independent unit vectors in  $\\mathbb{R}^n$  , denote  $\\pi_U$  the orthogonal projection onto  $(u_{1},\\ldots ,u_{k})^{\\perp}$  . We will also need the following well- known property of mixed volumes :",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "viii-",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nV_{n}([0,u],K_{2},\\dots,K_{n}) = \\frac{1}{n} V_{n - 1}(\\pi_{u}K_{2},\\dots,\\pi_{u}K_{n}),\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ix-",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nV_{n}([0,u_{1}],\\dots,[0,u_{k}],K_{k + 1},\\dots,K_{n}) = \\frac{k!V_{k}([0,u_{1}],\\dots,[0,u_{k}])}{n(n - 1)\\dots(n - k + 1)} V_{n - k}(\\pi_{U}K_{k + 1},\\dots,\\pi_{U}K_{n}).\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(identity (ix) is deduced from (viii) by iteration).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let  $K\\subset \\mathbb{R}^n$  be a compact convex set. Its support function  $h_K$  , is defined on  $\\mathbb{R}^n$  by  $h_K(x) =$ $\\max_{y\\in K}\\langle y,x\\rangle$  , where  $\\langle \\cdot ,\\cdot \\rangle$  denotes the usual scalar product on  $\\mathbb{R}^n$  . Since  $h_K(\\lambda x) = \\lambda h_K(x)$  for any  $x\\in \\mathbb{R}^n$ $\\lambda >0$  , we shall more often consider  $h_K$  as a function on  $\\mathbb{S}^{n - 1}$  . Note that  $h_K$  characterizes  $K$  since  $\\begin{array}{r}K = \\bigcap_uH^{- }(u,h_K(u)) \\end{array}$  , where  $H^{- }(u,b) = \\{z\\in \\mathbb{R}^{n}:\\langle z,u\\rangle \\leq b\\}$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "If we fix a convex body  $K\\subset \\mathbb{R}^n$  , then there exists a unique non- negative measure  $S_K$  on  $\\mathbb{S}^{n - 1}$  such that the following holds for any compact convex set  $L$  ..",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nV_{n}(L,K[n - 1]) = \\frac{1}{n}\\int_{S^{n - 1}}h_{L}(u)dS_{K}(u). \\tag{1}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For instance, when  $K = P$  is a polytope, the following integral representation of  $V_{n}(L,P[n - 1])$  is known :",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nV_{n}(L,P[n - 1]) = \\frac{1}{n}\\sum_{u\\in E(P)}h_{L}(u)|P^{u}|_{n - 1} \\tag{2}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $E(P) = \\{\\mathrm{outer~normal~vectors~of~}P\\}$  and  $P^{u} = P\\cap H(u,h_{P}(u)) = \\{y\\in P:\\langle y,u\\rangle = h_{P}(u)\\}$  is the facet whose outer normal vector is  $u$  .This means that  $S_{P}$  is the discrete measure  $S_{P} =$ $\\textstyle \\sum_{u\\in E(P)}|P^u |_{n - 1}\\delta_u$  , where  $\\delta_v$  denotes the Dirac measure at  $v\\in \\mathbb{S}^{n - 1}$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Though the formula 1 could be taken as a definition  $\\mathfrak{z}$  of the surface area measure  $S_K$  , one may alternatively first define  $S_P$  for polytopes, via  $\\begin{array}{r}S_P = \\sum_{u\\in E(P)}|P^u |_{n - 1}\\delta_u \\end{array}$  , and then define  $S_K$  for an",
+        "page_idx": 0
+    }
+]

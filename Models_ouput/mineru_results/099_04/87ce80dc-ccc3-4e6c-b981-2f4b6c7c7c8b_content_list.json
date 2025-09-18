@@ -1,0 +1,48 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/1d3ef363293662048a4dbee652ed7e3ad96f4a25831d026a51464b3f467bfcc1.jpg",
+        "image_caption": [
+            "Figure2:An example of the criteria for the“planning”scenario and a demonstration of the defined scenarios. In (b), Summa. Summarization, Commu. General Communication. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "General Communication,and NLP Tasks,as shown in Fig.[2(b).The detailed description for each scenario is shown in Tab.回 A ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Criteria Besides the definition and description,we also design a set of criteria for each scenario that serves as a reference to guide models on how to do the evaluation.Each criterion has aname and a description.We show a condensed version of the set of criteria for the \"planning\"scenario in Fig.2 (a) (the complete version is in Fig.IO). Generally, criteria for each scenario consists of specific ones and basic ones (more general,shared by multiple scenarios).In total, we craft 332 different criteria. When we use a set of criteria, we put them in the system message for LLMs,as shown in Tab.[ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.2QUERIES AND RESPONSES COLLECTION",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To start with, we frst collect a large collection of data from the following sources: Chatbot Arena Conversations and MTBench (Zheng et al.2023), OpenAI Summary (Stiennon et al.2020), OpenAI WebGPT (Nakano et al.2021), Stanford SHP (Ethayarajh et al.2022), Synthetic GPT-J (Havrilla 2023), and PKU-SafeRLHF (Ji et al.2023) All these datasets are publicly available preference datasets with human preference comparisons containing two model-generated responses (win, lose, or tie) sharing the same query (and previous dialogue).We remove the non-English samples and only keep the first turn for multi-turn dialogues. In short,all samples share a common structure: A query, Response 1&2,and preference label (1/2/Tie). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Thenext step is to classify thecollected data based on the scenarios.Although this is trivial for datasets with relatively homogeneous components (OpenAI Summary, OpenAI WebGPT) or small query size (MTBench),this is quite challnging on larger and more complex ones.Therefore, we train aclassifier to help us with this.The complete training details are in SB Based on the classifier, we are able to classify all the data we have collected. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.3JUDGMENTGENERATION ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Pairwise: This part of the data comes from all datasets of the data source except MTBench.We guide GPT-4 to make pairwise response comparisons, with scenario-specific criteria as the system message in Tab.9and the user message prompt as in Tab. 11 After that, we reformat the raw GPT-4 output with heuristic rules to achieve a unified format in Tab.19 We discard samples where the predictions of GPT-4 are inconsistent with existing human annotations or the predictions cannot be reformated. Foreach scenario,thecollection process continues until either allsamples of this scenario have been ",
+        "page_idx": 0
+    }
+]

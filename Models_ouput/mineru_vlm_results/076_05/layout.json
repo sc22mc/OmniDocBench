@@ -1,0 +1,567 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        224,
+                        204,
+                        2330,
+                        534
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                224,
+                                204,
+                                2330,
+                                534
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        204,
+                                        2330,
+                                        534
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                224,
+                                                204,
+                                                2330,
+                                                534
+                                            ],
+                                            "type": "image",
+                                            "image_path": "ec1e1d12570acc46dea43e0bb558b940c1a0cbc6118f4a6e2101b68c7c16cfbd.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                198,
+                                580,
+                                2343,
+                                623
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        580,
+                                        2343,
+                                        623
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                198,
+                                                580,
+                                                2343,
+                                                623
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 5. Trained with 2k samples of each functional scenario (6k samples overall), VectorNet can predict the Ego's trajectory for all three functional scenarios."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        224,
+                        673,
+                        2330,
+                        999
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                224,
+                                673,
+                                2330,
+                                999
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        673,
+                                        2330,
+                                        999
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                224,
+                                                673,
+                                                2330,
+                                                999
+                                            ],
+                                            "type": "image",
+                                            "image_path": "85b92185fd14aa9975b9b5e3d422bef45698601b23c434066ba31b03b7ab28c5.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                193,
+                                1042,
+                                2351,
+                                1168
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        193,
+                                        1042,
+                                        2351,
+                                        1168
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                193,
+                                                1042,
+                                                2351,
+                                                1168
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 6. Trained on 2k samples of the scenario ACC&LK, VectorNet learns that the Ego follows the Co, which enables predictions for the scenario ACC. However, the prediction for the scenario LK indicates that VectorNet primarily considers the Co's trajectory to predict the lateral behavior of the Ego, not the lanes. VectorNet does not know that the Ego's lateral behavior is determined by the lanes, and only the longitudinal behavior is determined by the Co."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 3,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        224,
+                        1217,
+                        2330,
+                        1541
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                224,
+                                1217,
+                                2330,
+                                1541
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        1217,
+                                        2330,
+                                        1541
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                224,
+                                                1217,
+                                                2330,
+                                                1541
+                                            ],
+                                            "type": "image",
+                                            "image_path": "87b381a567714b86469845373b97eab4055081bb8ad5177faab240edf70b79b8.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 4,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                198,
+                                1587,
+                                2343,
+                                1669
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        1587,
+                                        2343,
+                                        1669
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                198,
+                                                1587,
+                                                2343,
+                                                1669
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 7. Trained on the scenarios ACC and LK (2k samples each), generalization to ACC&LK is not achieved. Here, within the training data, the presence of the Co indicates a straight trajectory of the Ego, curved lanes indicate a constant velocity of the Ego. Accordingly, there is insufficient variance for generalization."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 5,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        198,
+                        1755,
+                        1249,
+                        2003
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                1755,
+                                1249,
+                                2003
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        1755,
+                                        1249,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": "since ACC is a special case of ACC&LK (a straight road). The generalization to LK, however, is poor. Row 4 shows that no generalization from ACC and LK to ACC&LK is achieved. Fig. 6 and Fig. 7 indicate that these results are due to insufficient variance in the training data."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        198,
+                        2009,
+                        1249,
+                        2352
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                2009,
+                                1249,
+                                2352
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        2009,
+                                        1249,
+                                        2352
+                                    ],
+                                    "type": "text",
+                                    "content": "Row 9 shows that generalization from ACC and LK to ACC&LK is achieved if some data from the scenario ACC&LK are added. The resulting ADE is better than what is achieved with the same number of samples of ACC&LK on their own (see row 10). Hence, existing data can improve predictions for new functional scenarios or reduce the amount of data necessary to achieve a certain predictive performance."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        198,
+                        2356,
+                        1249,
+                        2603
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                2356,
+                                1249,
+                                2603
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        2356,
+                                        1249,
+                                        2603
+                                    ],
+                                    "type": "text",
+                                    "content": "Originally, VectorNet uses 211k training and 41k validation samples [23, p. 5]. Our results show that with "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2356,
+                                        1249,
+                                        2603
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\leq 2k"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        2356,
+                                        1249,
+                                        2603
+                                    ],
+                                    "type": "text",
+                                    "content": " samples, reasonable ADEs are achievable. We expect that adjusting the architecture or hyperparameters would allow working with even less data or increasing predictive performance."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        198,
+                        2633,
+                        1139,
+                        2679
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                2633,
+                                1139,
+                                2679
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        2633,
+                                        1139,
+                                        2679
+                                    ],
+                                    "type": "text",
+                                    "content": "B. Assessment Based on Predicted Evaluation Metrics"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        198,
+                        2699,
+                        1249,
+                        2993
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                2699,
+                                1249,
+                                2993
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        2699,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": "Next, we assess the prediction of evaluation metrics derived from VectorNet's predictions (see Fig. 1). The baselines are an extra- tree (ET) and a Bayesian neural network (BNN) with [17]'s hyperparameters. All models are trained with 2k samples. Table III shows that for different evaluation metrics, different models achieve the best mean average errors (MAEs)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1297,
+                        1758,
+                        2343,
+                        2352
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                1758,
+                                2343,
+                                2352
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1758,
+                                        2343,
+                                        2352
+                                    ],
+                                    "type": "text",
+                                    "content": "The regression models' high performance can be attributed to them learning directly on the relevant features (5 to 10 scenario inputs). However, they cannot account for the complex spatial and temporal nuances described in the scenario embeddings (although it would be possible to take these nuances into account, this would result in up to 150 features, which regression models can hardly process). VectorNet, on the other hand, can account for the nuances but must first identify the relevant features influencing the Ego's trajectory (for the ACC scenarios, the feature (FT) matrix has 581 entries). Hence, learning based on vectorized scenario embeddings is more flexible but also more challenging."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1326,
+                        2389,
+                        2338,
+                        2448
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1326,
+                                2389,
+                                2338,
+                                2448
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1326,
+                                        2389,
+                                        2338,
+                                        2448
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\begin{array}{r}{^1 (2\\mathrm{~lanes}\\cdot 24\\frac{\\mathrm{vec.}}{\\mathrm{lan e}} +\\mathrm{Co}\\cdot 25\\frac{\\mathrm{vec.}}{\\mathrm{Co}} +\\mathrm{Ego}\\cdot 1\\frac{\\mathrm{vec.}}{\\mathrm{Ego}})\\cdot 7\\frac{\\mathrm{FT}}{\\mathrm{vec.}} = 518\\mathrm{~FT}} \\end{array}",
+                                    "image_path": "de6c368a351ca1dbb7c45e9e7d565cbe66745940c7652aece14f4cf6d29be8be.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        1318,
+                        2656,
+                        2323,
+                        2963
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1318,
+                                2656,
+                                2323,
+                                2963
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1318,
+                                        2656,
+                                        2323,
+                                        2963
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1318,
+                                                2656,
+                                                2323,
+                                                2963
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Scenario</td><td>Evaluation Metric</td><td>MAE ET</td><td>MAE BNN</td><td>MAE VectorNet</td></tr><tr><td rowspan=\"2\">ACC</td><td>αmin</td><td>0.13 m</td><td>0.07 m</td><td>0.58 m</td></tr><tr><td>dmin</td><td>0.87 m</td><td>0.44 m</td><td>0.26 m</td></tr><tr><td>LK</td><td>Plat max</td><td>0.09 m</td><td>0.08 m</td><td>0.38 m</td></tr><tr><td rowspan=\"3\">ACC&amp;amp;LK</td><td>αmin</td><td>0.19 m</td><td>0.09 m</td><td>0.74 m</td></tr><tr><td>dmin</td><td>1.14 m</td><td>0.55 m</td><td>0.43 m</td></tr><tr><td>Plat max</td><td>0.08 m</td><td>0.08 m</td><td>0.21 m</td></tr></table>",
+                                            "image_path": "9723b359e1c1d884229f8e48971d758bb783c0a16b8ce6b027dd72e3911ee1fd.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 14,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                1303,
+                                2541,
+                                2338,
+                                2623
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1303,
+                                        2541,
+                                        2338,
+                                        2623
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1303,
+                                                2541,
+                                                2338,
+                                                2623
+                                            ],
+                                            "type": "text",
+                                            "content": "TABLE III MEAN AVERAGE ERRORS (MAE) OF PREDICTED EVALUATION METRICS"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 13,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 14
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

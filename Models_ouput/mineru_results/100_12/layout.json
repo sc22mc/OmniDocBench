@@ -1,0 +1,3385 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        337,
+                        1655,
+                        393
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                333,
+                                1662,
+                                398
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        333,
+                                        1662,
+                                        398
+                                    ],
+                                    "score": 0.987,
+                                    "content": "ABASIC PROMPTS AND REASONING PIPELINE OF BOT",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        452,
+                        443,
+                        1225,
+                        491
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                443,
+                                1233,
+                                496
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        443,
+                                        1233,
+                                        496
+                                    ],
+                                    "score": 0.97,
+                                    "content": "A.1THOUGHT GENERATION PART OFBOT",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        529,
+                        2106,
+                        670
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                528,
+                                2108,
+                                583
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        528,
+                                        2108,
+                                        583
+                                    ],
+                                    "score": 0.978,
+                                    "content": "Thissubsection presents the basic prompts used by the reasoning generation of the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                577,
+                                2108,
+                                627
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        577,
+                                        2108,
+                                        627
+                                    ],
+                                    "score": 0.979,
+                                    "content": "proposed Boosting of Thoughts (BoT).For details，one can also access the source code",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                620,
+                                1249,
+                                680
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        620,
+                                        1249,
+                                        680
+                                    ],
+                                    "score": 0.992,
+                                    "content": "examples/BoostingOfThought/BoT_reasoner.py.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        692,
+                        2108,
+                        968
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                688,
+                                2108,
+                                748
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        688,
+                                        732,
+                                        748
+                                    ],
+                                    "score": 0.995,
+                                    "content": "System prompt",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        733,
+                                        694,
+                                        764,
+                                        734
+                                    ],
+                                    "score": 0.64,
+                                    "content": "S",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        765,
+                                        688,
+                                        2108,
+                                        748
+                                    ],
+                                    "score": 0.979,
+                                    "content": ":You are an expert on mathematical problems. Perform step-by-step reasoning",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                736,
+                                2111,
+                                791
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        736,
+                                        2111,
+                                        791
+                                    ],
+                                    "score": 0.983,
+                                    "content": "toward problem solving by first learning from an ensemble of trial-and-error reasoning experiences.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                782,
+                                2112,
+                                839
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        782,
+                                        2112,
+                                        839
+                                    ],
+                                    "score": 0.992,
+                                    "content": "Such trial-and-error reasoning experience specifically contains error reports and detailed advice on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                828,
+                                2111,
+                                884
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        828,
+                                        2111,
+                                        884
+                                    ],
+                                    "score": 0.988,
+                                    "content": "how to revise historical reasoning steps.Always recall these listed experiences before generating a",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                877,
+                                2107,
+                                929
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        877,
+                                        2107,
+                                        929
+                                    ],
+                                    "score": 0.988,
+                                    "content": "new reasoning step,thereby avoiding making the same mistakes and reusing correct steps to generate",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                924,
+                                1103,
+                                970
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        924,
+                                        1103,
+                                        970
+                                    ],
+                                    "score": 0.979,
+                                    "content": "better reasoning steps to solve the task.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        }
+                    ],
+                    "index": 7.5
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        447,
+                        992,
+                        1161,
+                        1040
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                987,
+                                1166,
+                                1049
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        987,
+                                        1166,
+                                        1049
+                                    ],
+                                    "score": 0.994,
+                                    "content": "Prompt for the next thought generation:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        440,
+                        1063,
+                        2081,
+                        1486
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                452,
+                                1060,
+                                1987,
+                                1125
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        452,
+                                        1060,
+                                        1862,
+                                        1125
+                                    ],
+                                    "score": 0.946,
+                                    "content": "f\"\"{task_prompt}:\\n First of all,Recall historical reasoning experience:",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1863,
+                                        1068,
+                                        1987,
+                                        1120
+                                    ],
+                                    "score": 0.88,
+                                    "content": "\\langle \\mathbf { n } \\rangle \\mathbf { n } \\left\\{ \\begin{array} { r l } \\end{array} \\right.",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                525,
+                                1112,
+                                1981,
+                                1166
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        525,
+                                        1112,
+                                        733,
+                                        1166
+                                    ],
+                                    "score": 1.0,
+                                    "content": "experiences",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        734,
+                                        1116,
+                                        861,
+                                        1165
+                                    ],
+                                    "score": 0.87,
+                                    "content": "\\} \\ \\backslash \\ \\mathrm { n } \\backslash \\mathrm { n }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        862,
+                                        1112,
+                                        1981,
+                                        1166
+                                    ],
+                                    "score": 0.987,
+                                    "content": "Please make one step of reasoning to generate only one next",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        },
+                        {
+                            "bbox": [
+                                527,
+                                1160,
+                                2040,
+                                1211
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        527,
+                                        1160,
+                                        2040,
+                                        1211
+                                    ],
+                                    "score": 0.975,
+                                    "content": "possible reasoning step.This next reasoning step is the subsequential step from",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                524,
+                                1202,
+                                2010,
+                                1259
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        524,
+                                        1202,
+                                        2010,
+                                        1259
+                                    ],
+                                    "score": 0.973,
+                                    "content": "the following ordered previous steps，accompanied by their evaluated scores （A",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 15
+                        },
+                        {
+                            "bbox": [
+                                520,
+                                1243,
+                                2067,
+                                1309
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        520,
+                                        1243,
+                                        1931,
+                                        1309
+                                    ],
+                                    "score": 0.978,
+                                    "content": "higher score means the reasoning step is more likely to complete the task .)",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1932,
+                                        1250,
+                                        2067,
+                                        1301
+                                    ],
+                                    "score": 0.69,
+                                    "content": ": ~ | \\boldsymbol { \\mathrm { n } } | \\boldsymbol { \\mathrm { t } }  \\{ \\begin{array} { l l } {  } \\end{array} ",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 16
+                        },
+                        {
+                            "bbox": [
+                                522,
+                                1292,
+                                2038,
+                                1350
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        522,
+                                        1292,
+                                        786,
+                                        1350
+                                    ],
+                                    "score": 0.993,
+                                    "content": "chain_prompt}",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        787,
+                                        1296,
+                                        864,
+                                        1347
+                                    ],
+                                    "score": 0.26,
+                                    "content": "| \\boldsymbol { \\mathrm { n } } | \\boldsymbol { \\mathrm { n } }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        866,
+                                        1292,
+                                        2038,
+                                        1350
+                                    ],
+                                    "score": 0.976,
+                                    "content": "Based on listed previous reasoning steps (ignore them when the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        },
+                        {
+                            "bbox": [
+                                524,
+                                1341,
+                                2038,
+                                1397
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        524,
+                                        1341,
+                                        2038,
+                                        1397
+                                    ],
+                                    "score": 0.974,
+                                    "content": "above space is empty)，generate one single next possible step following the Task",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        },
+                        {
+                            "bbox": [
+                                528,
+                                1387,
+                                2056,
+                                1442
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        528,
+                                        1387,
+                                        2056,
+                                        1442
+                                    ],
+                                    "score": 0.982,
+                                    "content": "rule.(Emphasize:Please generate only one single next possible reasoning step of",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        },
+                        {
+                            "bbox": [
+                                519,
+                                1430,
+                                920,
+                                1488
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        519,
+                                        1430,
+                                        920,
+                                        1488
+                                    ],
+                                    "score": 0.874,
+                                    "content": "the given steps .)\"\"”",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        444,
+                        1544,
+                        2108,
+                        1686
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                1544,
+                                2108,
+                                1595
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1544,
+                                        1147,
+                                        1595
+                                    ],
+                                    "score": 0.986,
+                                    "content": "where the task_prompt contaings the",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1148,
+                                        1546,
+                                        1191,
+                                        1586
+                                    ],
+                                    "score": 0.83,
+                                    "content": "X",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1192,
+                                        1544,
+                                        1273,
+                                        1595
+                                    ],
+                                    "score": 1.0,
+                                    "content": "and",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1274,
+                                        1546,
+                                        1313,
+                                        1593
+                                    ],
+                                    "score": 0.86,
+                                    "content": "Q",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1314,
+                                        1544,
+                                        2108,
+                                        1595
+                                    ],
+                                    "score": 0.97,
+                                    "content": "forthe task,experiencesis the historical",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                1584,
+                                2111,
+                                1646
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        1584,
+                                        800,
+                                        1646
+                                    ],
+                                    "score": 0.977,
+                                    "content": " reasoning experience",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        801,
+                                        1590,
+                                        897,
+                                        1634
+                                    ],
+                                    "score": 0.81,
+                                    "content": "\\mathbf { F } ^ { 1 \\hdots t }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        898,
+                                        1584,
+                                        1381,
+                                        1646
+                                    ],
+                                    "score": 0.946,
+                                    "content": ",and chain_prompt is the",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1383,
+                                        1590,
+                                        1473,
+                                        1640
+                                    ],
+                                    "score": 0.92,
+                                    "content": "\\{ G _ { i } \\}",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1474,
+                                        1584,
+                                        2111,
+                                        1646
+                                    ],
+                                    "score": 0.962,
+                                    "content": ",which is a placeholder to be replaced",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1631,
+                                1572,
+                                1696
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1631,
+                                        1031,
+                                        1696
+                                    ],
+                                    "score": 0.994,
+                                    "content": "by the preceding chain of thoughts",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1032,
+                                        1643,
+                                        1158,
+                                        1687
+                                    ],
+                                    "score": 0.91,
+                                    "content": "z _ { 1 \\ldots , i - 1 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1160,
+                                        1631,
+                                        1535,
+                                        1696
+                                    ],
+                                    "score": 0.982,
+                                    "content": "of the current thought",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1536,
+                                        1644,
+                                        1572,
+                                        1682
+                                    ],
+                                    "score": 0.86,
+                                    "content": "z _ { i }",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 23
+                        }
+                    ],
+                    "index": 22
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        447,
+                        1706,
+                        1067,
+                        1754
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                1702,
+                                1071,
+                                1762
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1702,
+                                        1071,
+                                        1762
+                                    ],
+                                    "score": 0.993,
+                                    "content": "Prompt for the thought evaluation:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        }
+                    ],
+                    "index": 24
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        442,
+                        1776,
+                        2106,
+                        2110
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                1773,
+                                2034,
+                                1839
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1773,
+                                        797,
+                                        1839
+                                    ],
+                                    "score": 0.938,
+                                    "content": "f*{task_prompt}.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        799,
+                                        1782,
+                                        893,
+                                        1834
+                                    ],
+                                    "score": 0.74,
+                                    "content": "\\backslash \\boldsymbol { \\mathrm { n } } \\backslash \\boldsymbol { \\mathrm { n } }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        894,
+                                        1773,
+                                        2034,
+                                        1839
+                                    ],
+                                    "score": 0.956,
+                                    "content": "Below are the generated reasoning steps，presented in order，",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                523,
+                                1827,
+                                2050,
+                                1882
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        523,
+                                        1827,
+                                        2050,
+                                        1882
+                                    ],
+                                    "score": 0.972,
+                                    "content": "accompanied by their evaluated scores (A higher score means the reasoning step is",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        },
+                        {
+                            "bbox": [
+                                524,
+                                1874,
+                                2009,
+                                1928
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        524,
+                                        1874,
+                                        1170,
+                                        1928
+                                    ],
+                                    "score": 0.972,
+                                    "content": "more likely to complete the task .)",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1171,
+                                        1874,
+                                        1852,
+                                        1927
+                                    ],
+                                    "score": 0.29,
+                                    "content": "\\mathrm { : \\backslash n \\{ c h a i n \\_ p r o m p t \\} \\backslash n \\{ t h o u g h t \\} \\backslash n \\backslash n W h }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1853,
+                                        1874,
+                                        2009,
+                                        1928
+                                    ],
+                                    "score": 0.993,
+                                    "content": "atisyour",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                531,
+                                1918,
+                                1949,
+                                1972
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        531,
+                                        1918,
+                                        1949,
+                                        1972
+                                    ],
+                                    "score": 0.974,
+                                    "content": "evaluation score for the logic，correctness，and benefit to reaching a final",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        },
+                        {
+                            "bbox": [
+                                527,
+                                1963,
+                                2030,
+                                2017
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        527,
+                                        1963,
+                                        2030,
+                                        2017
+                                    ],
+                                    "score": 0.946,
+                                    "content": "solution for these reasoning steps ？ Please select one value from [O.1， O.3，0.5,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                531,
+                                2009,
+                                2099,
+                                2063
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        531,
+                                        2009,
+                                        2099,
+                                        2063
+                                    ],
+                                    "score": 0.957,
+                                    "content": "0.7，0.9，1.O] as the score，where a higher score means better reasoning steps．The",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        },
+                        {
+                            "bbox": [
+                                531,
+                                2052,
+                                1861,
+                                2110
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        531,
+                                        2052,
+                                        1861,
+                                        2110
+                                    ],
+                                    "score": 0.949,
+                                    "content": "score should be placed after‘Evaluation score:’for users to read.\"\"",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        }
+                    ],
+                    "index": 28
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        449,
+                        2169,
+                        1216,
+                        2217
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                2163,
+                                1203,
+                                2224
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2163,
+                                        1165,
+                                        2224
+                                    ],
+                                    "score": 0.979,
+                                    "content": "where the thought is the current thought",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1166,
+                                        2177,
+                                        1203,
+                                        2214
+                                    ],
+                                    "score": 0.84,
+                                    "content": "z _ { i }",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 32
+                        }
+                    ],
+                    "index": 32
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        447,
+                        2273,
+                        1278,
+                        2321
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                2272,
+                                1282,
+                                2325
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        2272,
+                                        1282,
+                                        2325
+                                    ],
+                                    "score": 0.974,
+                                    "content": "A.2EXPERIENCE GENERATION PART OFBOT",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 33
+                        }
+                    ],
+                    "index": 33
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        2358,
+                        2106,
+                        2454
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                2357,
+                                2111,
+                                2416
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2357,
+                                        2111,
+                                        2416
+                                    ],
+                                    "score": 0.981,
+                                    "content": "To generate feedback for the aggregated chain, LLMs use the following basic prompts.For details,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 34
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2400,
+                                1875,
+                                2467
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2400,
+                                        1875,
+                                        2467
+                                    ],
+                                    "score": 0.985,
+                                    "content": "one can also access the source code examples/BoostingOfThought/BoT_commenter.py",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 35
+                        }
+                    ],
+                    "index": 34.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        2475,
+                        2108,
+                        2754
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2478,
+                                2107,
+                                2530
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2478,
+                                        736,
+                                        2530
+                                    ],
+                                    "score": 0.964,
+                                    "content": "System prompt",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        737,
+                                        2478,
+                                        770,
+                                        2518
+                                    ],
+                                    "score": 0.7,
+                                    "content": "S",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        772,
+                                        2478,
+                                        2107,
+                                        2530
+                                    ],
+                                    "score": 0.959,
+                                    "content": ":You are an expert AI checker for math answers, dedicated to evaluating the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 36
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2518,
+                                2111,
+                                2579
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2518,
+                                        2111,
+                                        2579
+                                    ],
+                                    "score": 0.993,
+                                    "content": "reasoning chain generated towards addressing the mathematical problem. Judge each reasoning",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 37
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2570,
+                                2110,
+                                2621
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2570,
+                                        2110,
+                                        2621
+                                    ],
+                                    "score": 0.974,
+                                    "content": "step of this reasoning chain by providing detailed analyses on whether the current step is a logical",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 38
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2615,
+                                2111,
+                                2667
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2615,
+                                        2111,
+                                        2667
+                                    ],
+                                    "score": 0.985,
+                                    "content": "inference of the previous step and whether the reasoning step is beneficial to the correct solution.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 39
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2655,
+                                2112,
+                                2716
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2655,
+                                        2112,
+                                        2716
+                                    ],
+                                    "score": 0.99,
+                                    "content": "Provide advice and suggestions for each reasoning step with errors. Provide recommendation or",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 40
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2705,
+                                1341,
+                                2759
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2705,
+                                        1341,
+                                        2759
+                                    ],
+                                    "score": 0.993,
+                                    "content": "rejection descriptions for each correct reasoning step.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 41
+                        }
+                    ],
+                    "index": 38.5
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        447,
+                        2775,
+                        893,
+                        2823
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                2775,
+                                898,
+                                2825
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2775,
+                                        898,
+                                        2825
+                                    ],
+                                    "score": 0.983,
+                                    "content": "Prompt for the feedback:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 42
+                        }
+                    ],
+                    "index": 42
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        444,
+                        2844,
+                        2103,
+                        3046
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                436,
+                                2839,
+                                2062,
+                                2910
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2839,
+                                        2062,
+                                        2910
+                                    ],
+                                    "score": 0.969,
+                                    "content": "fGiven task:{task_prompt}.\\n{chain prompt}\\n\\n Please evaluate this reasoning chain",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43
+                        },
+                        {
+                            "bbox": [
+                                523,
+                                2896,
+                                1785,
+                                2951
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        523,
+                                        2896,
+                                        1662,
+                                        2951
+                                    ],
+                                    "score": 0.971,
+                                    "content": "by giving detailed comments containing the following content.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1664,
+                                        2897,
+                                        1785,
+                                        2949
+                                    ],
+                                    "score": 0.65,
+                                    "content": "\\mathrm { ~ \\backslash ~ n ~ } 1 . \\{",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 44
+                        },
+                        {
+                            "bbox": [
+                                529,
+                                2939,
+                                2089,
+                                2997
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        529,
+                                        2939,
+                                        924,
+                                        2997
+                                    ],
+                                    "score": 0.999,
+                                    "content": "chain_feedback_format",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        925,
+                                        2944,
+                                        951,
+                                        2994
+                                    ],
+                                    "score": 0.61,
+                                    "content": "\\}",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        952,
+                                        2939,
+                                        975,
+                                        2997
+                                    ],
+                                    "score": 0.892,
+                                    "content": "，",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        977,
+                                        2944,
+                                        1037,
+                                        2994
+                                    ],
+                                    "score": 0.33,
+                                    "content": "2 . \\{",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1038,
+                                        2939,
+                                        1410,
+                                        2997
+                                    ],
+                                    "score": 0.999,
+                                    "content": "step_feedback_format",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1411,
+                                        2944,
+                                        1436,
+                                        2994
+                                    ],
+                                    "score": 0.72,
+                                    "content": "\\}",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1437,
+                                        2939,
+                                        1463,
+                                        2997
+                                    ],
+                                    "score": 0.796,
+                                    "content": "，",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1464,
+                                        2944,
+                                        1523,
+                                        2994
+                                    ],
+                                    "score": 0.27,
+                                    "content": "3 . \\left\\{ \\begin{array} { r l } \\end{array} \\right.",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1524,
+                                        2939,
+                                        2008,
+                                        2997
+                                    ],
+                                    "score": 0.999,
+                                    "content": "confidence_feedback_format",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        2009,
+                                        2942,
+                                        2089,
+                                        2994
+                                    ],
+                                    "score": 0.44,
+                                    "content": "\\left. \\right\\} . \\left. \\mathbf { n } \\right.",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 45
+                        },
+                        {
+                            "bbox": [
+                                525,
+                                2982,
+                                892,
+                                3047
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        525,
+                                        2982,
+                                        732,
+                                        3047
+                                    ],
+                                    "score": 0.993,
+                                    "content": "\\nNotice:",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        733,
+                                        2990,
+                                        892,
+                                        3042
+                                    ],
+                                    "score": 0.3,
+                                    "content": "\\left\\{ { \\mathrm { N o t i c e } } \\right\\}",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 46
+                        }
+                    ],
+                    "index": 44.5
+                }
+            ],
+            "page_idx": 0,
+            "page_size": [
+                2550,
+                3300
+            ],
+            "discarded_blocks": [
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        449,
+                        113,
+                        1224,
+                        155
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                108,
+                                1227,
+                                161
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        108,
+                                        1227,
+                                        161
+                                    ],
+                                    "score": 0.977,
+                                    "content": "Published as a conference paper at ICLR 2024",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        1254,
+                        3132,
+                        1296,
+                        3168
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                1245,
+                                3127,
+                                1303,
+                                3187
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1245,
+                                        3127,
+                                        1303,
+                                        3187
+                                    ],
+                                    "score": 1.0,
+                                    "content": "12",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "para_blocks": [
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        337,
+                        1655,
+                        393
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                333,
+                                1662,
+                                398
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        333,
+                                        1662,
+                                        398
+                                    ],
+                                    "score": 0.987,
+                                    "content": "ABASIC PROMPTS AND REASONING PIPELINE OF BOT",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        452,
+                        443,
+                        1225,
+                        491
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                443,
+                                1233,
+                                496
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        443,
+                                        1233,
+                                        496
+                                    ],
+                                    "score": 0.97,
+                                    "content": "A.1THOUGHT GENERATION PART OFBOT",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        }
+                    ],
+                    "index": 1,
+                    "bbox_fs": [
+                        444,
+                        443,
+                        1233,
+                        496
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        529,
+                        2106,
+                        670
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                528,
+                                2108,
+                                583
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        528,
+                                        2108,
+                                        583
+                                    ],
+                                    "score": 0.978,
+                                    "content": "Thissubsection presents the basic prompts used by the reasoning generation of the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                577,
+                                2108,
+                                627
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        577,
+                                        2108,
+                                        627
+                                    ],
+                                    "score": 0.979,
+                                    "content": "proposed Boosting of Thoughts (BoT).For details，one can also access the source code",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                620,
+                                1249,
+                                680
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        620,
+                                        1249,
+                                        680
+                                    ],
+                                    "score": 0.992,
+                                    "content": "examples/BoostingOfThought/BoT_reasoner.py.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        }
+                    ],
+                    "index": 3,
+                    "bbox_fs": [
+                        439,
+                        528,
+                        2108,
+                        680
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        692,
+                        2108,
+                        968
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                688,
+                                2108,
+                                748
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        688,
+                                        732,
+                                        748
+                                    ],
+                                    "score": 0.995,
+                                    "content": "System prompt",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        733,
+                                        694,
+                                        764,
+                                        734
+                                    ],
+                                    "score": 0.64,
+                                    "content": "S",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        765,
+                                        688,
+                                        2108,
+                                        748
+                                    ],
+                                    "score": 0.979,
+                                    "content": ":You are an expert on mathematical problems. Perform step-by-step reasoning",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                736,
+                                2111,
+                                791
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        736,
+                                        2111,
+                                        791
+                                    ],
+                                    "score": 0.983,
+                                    "content": "toward problem solving by first learning from an ensemble of trial-and-error reasoning experiences.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                782,
+                                2112,
+                                839
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        782,
+                                        2112,
+                                        839
+                                    ],
+                                    "score": 0.992,
+                                    "content": "Such trial-and-error reasoning experience specifically contains error reports and detailed advice on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                828,
+                                2111,
+                                884
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        828,
+                                        2111,
+                                        884
+                                    ],
+                                    "score": 0.988,
+                                    "content": "how to revise historical reasoning steps.Always recall these listed experiences before generating a",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                877,
+                                2107,
+                                929
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        877,
+                                        2107,
+                                        929
+                                    ],
+                                    "score": 0.988,
+                                    "content": "new reasoning step,thereby avoiding making the same mistakes and reusing correct steps to generate",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                924,
+                                1103,
+                                970
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        924,
+                                        1103,
+                                        970
+                                    ],
+                                    "score": 0.979,
+                                    "content": "better reasoning steps to solve the task.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        }
+                    ],
+                    "index": 7.5,
+                    "bbox_fs": [
+                        439,
+                        688,
+                        2112,
+                        970
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        447,
+                        992,
+                        1161,
+                        1040
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                987,
+                                1166,
+                                1049
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        987,
+                                        1166,
+                                        1049
+                                    ],
+                                    "score": 0.994,
+                                    "content": "Prompt for the next thought generation:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        440,
+                        1063,
+                        2081,
+                        1486
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                452,
+                                1060,
+                                1987,
+                                1125
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        452,
+                                        1060,
+                                        1862,
+                                        1125
+                                    ],
+                                    "score": 0.946,
+                                    "content": "f\"\"{task_prompt}:\\n First of all,Recall historical reasoning experience:",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1863,
+                                        1068,
+                                        1987,
+                                        1120
+                                    ],
+                                    "score": 0.88,
+                                    "content": "\\langle \\mathbf { n } \\rangle \\mathbf { n } \\left\\{ \\begin{array} { r l } \\end{array} \\right.",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                525,
+                                1112,
+                                1981,
+                                1166
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        525,
+                                        1112,
+                                        733,
+                                        1166
+                                    ],
+                                    "score": 1.0,
+                                    "content": "experiences",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        734,
+                                        1116,
+                                        861,
+                                        1165
+                                    ],
+                                    "score": 0.87,
+                                    "content": "\\} \\ \\backslash \\ \\mathrm { n } \\backslash \\mathrm { n }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        862,
+                                        1112,
+                                        1981,
+                                        1166
+                                    ],
+                                    "score": 0.987,
+                                    "content": "Please make one step of reasoning to generate only one next",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        },
+                        {
+                            "bbox": [
+                                527,
+                                1160,
+                                2040,
+                                1211
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        527,
+                                        1160,
+                                        2040,
+                                        1211
+                                    ],
+                                    "score": 0.975,
+                                    "content": "possible reasoning step.This next reasoning step is the subsequential step from",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                524,
+                                1202,
+                                2010,
+                                1259
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        524,
+                                        1202,
+                                        2010,
+                                        1259
+                                    ],
+                                    "score": 0.973,
+                                    "content": "the following ordered previous steps，accompanied by their evaluated scores （A",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 15
+                        },
+                        {
+                            "bbox": [
+                                520,
+                                1243,
+                                2067,
+                                1309
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        520,
+                                        1243,
+                                        1931,
+                                        1309
+                                    ],
+                                    "score": 0.978,
+                                    "content": "higher score means the reasoning step is more likely to complete the task .)",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1932,
+                                        1250,
+                                        2067,
+                                        1301
+                                    ],
+                                    "score": 0.69,
+                                    "content": ": ~ | \\boldsymbol { \\mathrm { n } } | \\boldsymbol { \\mathrm { t } }  \\{ \\begin{array} { l l } {  } \\end{array} ",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 16
+                        },
+                        {
+                            "bbox": [
+                                522,
+                                1292,
+                                2038,
+                                1350
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        522,
+                                        1292,
+                                        786,
+                                        1350
+                                    ],
+                                    "score": 0.993,
+                                    "content": "chain_prompt}",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        787,
+                                        1296,
+                                        864,
+                                        1347
+                                    ],
+                                    "score": 0.26,
+                                    "content": "| \\boldsymbol { \\mathrm { n } } | \\boldsymbol { \\mathrm { n } }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        866,
+                                        1292,
+                                        2038,
+                                        1350
+                                    ],
+                                    "score": 0.976,
+                                    "content": "Based on listed previous reasoning steps (ignore them when the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        },
+                        {
+                            "bbox": [
+                                524,
+                                1341,
+                                2038,
+                                1397
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        524,
+                                        1341,
+                                        2038,
+                                        1397
+                                    ],
+                                    "score": 0.974,
+                                    "content": "above space is empty)，generate one single next possible step following the Task",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        },
+                        {
+                            "bbox": [
+                                528,
+                                1387,
+                                2056,
+                                1442
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        528,
+                                        1387,
+                                        2056,
+                                        1442
+                                    ],
+                                    "score": 0.982,
+                                    "content": "rule.(Emphasize:Please generate only one single next possible reasoning step of",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        },
+                        {
+                            "bbox": [
+                                519,
+                                1430,
+                                920,
+                                1488
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        519,
+                                        1430,
+                                        920,
+                                        1488
+                                    ],
+                                    "score": 0.874,
+                                    "content": "the given steps .)\"\"”",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        }
+                    ],
+                    "index": 16,
+                    "bbox_fs": [
+                        452,
+                        1060,
+                        2067,
+                        1488
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        444,
+                        1544,
+                        2108,
+                        1686
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                1544,
+                                2108,
+                                1595
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1544,
+                                        1147,
+                                        1595
+                                    ],
+                                    "score": 0.986,
+                                    "content": "where the task_prompt contaings the",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1148,
+                                        1546,
+                                        1191,
+                                        1586
+                                    ],
+                                    "score": 0.83,
+                                    "content": "X",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1192,
+                                        1544,
+                                        1273,
+                                        1595
+                                    ],
+                                    "score": 1.0,
+                                    "content": "and",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1274,
+                                        1546,
+                                        1313,
+                                        1593
+                                    ],
+                                    "score": 0.86,
+                                    "content": "Q",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1314,
+                                        1544,
+                                        2108,
+                                        1595
+                                    ],
+                                    "score": 0.97,
+                                    "content": "forthe task,experiencesis the historical",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                1584,
+                                2111,
+                                1646
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        1584,
+                                        800,
+                                        1646
+                                    ],
+                                    "score": 0.977,
+                                    "content": " reasoning experience",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        801,
+                                        1590,
+                                        897,
+                                        1634
+                                    ],
+                                    "score": 0.81,
+                                    "content": "\\mathbf { F } ^ { 1 \\hdots t }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        898,
+                                        1584,
+                                        1381,
+                                        1646
+                                    ],
+                                    "score": 0.946,
+                                    "content": ",and chain_prompt is the",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1383,
+                                        1590,
+                                        1473,
+                                        1640
+                                    ],
+                                    "score": 0.92,
+                                    "content": "\\{ G _ { i } \\}",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1474,
+                                        1584,
+                                        2111,
+                                        1646
+                                    ],
+                                    "score": 0.962,
+                                    "content": ",which is a placeholder to be replaced",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1631,
+                                1572,
+                                1696
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1631,
+                                        1031,
+                                        1696
+                                    ],
+                                    "score": 0.994,
+                                    "content": "by the preceding chain of thoughts",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1032,
+                                        1643,
+                                        1158,
+                                        1687
+                                    ],
+                                    "score": 0.91,
+                                    "content": "z _ { 1 \\ldots , i - 1 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1160,
+                                        1631,
+                                        1535,
+                                        1696
+                                    ],
+                                    "score": 0.982,
+                                    "content": "of the current thought",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1536,
+                                        1644,
+                                        1572,
+                                        1682
+                                    ],
+                                    "score": 0.86,
+                                    "content": "z _ { i }",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 23
+                        }
+                    ],
+                    "index": 22,
+                    "bbox_fs": [
+                        436,
+                        1544,
+                        2111,
+                        1696
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        447,
+                        1706,
+                        1067,
+                        1754
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                1702,
+                                1071,
+                                1762
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1702,
+                                        1071,
+                                        1762
+                                    ],
+                                    "score": 0.993,
+                                    "content": "Prompt for the thought evaluation:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        }
+                    ],
+                    "index": 24
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        442,
+                        1776,
+                        2106,
+                        2110
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                1773,
+                                2034,
+                                1839
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1773,
+                                        797,
+                                        1839
+                                    ],
+                                    "score": 0.938,
+                                    "content": "f*{task_prompt}.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        799,
+                                        1782,
+                                        893,
+                                        1834
+                                    ],
+                                    "score": 0.74,
+                                    "content": "\\backslash \\boldsymbol { \\mathrm { n } } \\backslash \\boldsymbol { \\mathrm { n } }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        894,
+                                        1773,
+                                        2034,
+                                        1839
+                                    ],
+                                    "score": 0.956,
+                                    "content": "Below are the generated reasoning steps，presented in order，",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                523,
+                                1827,
+                                2050,
+                                1882
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        523,
+                                        1827,
+                                        2050,
+                                        1882
+                                    ],
+                                    "score": 0.972,
+                                    "content": "accompanied by their evaluated scores (A higher score means the reasoning step is",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        },
+                        {
+                            "bbox": [
+                                524,
+                                1874,
+                                2009,
+                                1928
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        524,
+                                        1874,
+                                        1170,
+                                        1928
+                                    ],
+                                    "score": 0.972,
+                                    "content": "more likely to complete the task .)",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1171,
+                                        1874,
+                                        1852,
+                                        1927
+                                    ],
+                                    "score": 0.29,
+                                    "content": "\\mathrm { : \\backslash n \\{ c h a i n \\_ p r o m p t \\} \\backslash n \\{ t h o u g h t \\} \\backslash n \\backslash n W h }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1853,
+                                        1874,
+                                        2009,
+                                        1928
+                                    ],
+                                    "score": 0.993,
+                                    "content": "atisyour",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                531,
+                                1918,
+                                1949,
+                                1972
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        531,
+                                        1918,
+                                        1949,
+                                        1972
+                                    ],
+                                    "score": 0.974,
+                                    "content": "evaluation score for the logic，correctness，and benefit to reaching a final",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        },
+                        {
+                            "bbox": [
+                                527,
+                                1963,
+                                2030,
+                                2017
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        527,
+                                        1963,
+                                        2030,
+                                        2017
+                                    ],
+                                    "score": 0.946,
+                                    "content": "solution for these reasoning steps ？ Please select one value from [O.1， O.3，0.5,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                531,
+                                2009,
+                                2099,
+                                2063
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        531,
+                                        2009,
+                                        2099,
+                                        2063
+                                    ],
+                                    "score": 0.957,
+                                    "content": "0.7，0.9，1.O] as the score，where a higher score means better reasoning steps．The",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        },
+                        {
+                            "bbox": [
+                                531,
+                                2052,
+                                1861,
+                                2110
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        531,
+                                        2052,
+                                        1861,
+                                        2110
+                                    ],
+                                    "score": 0.949,
+                                    "content": "score should be placed after‘Evaluation score:’for users to read.\"\"",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        }
+                    ],
+                    "index": 28,
+                    "bbox_fs": [
+                        442,
+                        1773,
+                        2099,
+                        2110
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        449,
+                        2169,
+                        1216,
+                        2217
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                2163,
+                                1203,
+                                2224
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2163,
+                                        1165,
+                                        2224
+                                    ],
+                                    "score": 0.979,
+                                    "content": "where the thought is the current thought",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1166,
+                                        2177,
+                                        1203,
+                                        2214
+                                    ],
+                                    "score": 0.84,
+                                    "content": "z _ { i }",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 32
+                        }
+                    ],
+                    "index": 32,
+                    "bbox_fs": [
+                        440,
+                        2163,
+                        1203,
+                        2224
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        447,
+                        2273,
+                        1278,
+                        2321
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                2272,
+                                1282,
+                                2325
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        2272,
+                                        1282,
+                                        2325
+                                    ],
+                                    "score": 0.974,
+                                    "content": "A.2EXPERIENCE GENERATION PART OFBOT",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 33
+                        }
+                    ],
+                    "index": 33
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        2358,
+                        2106,
+                        2454
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                2357,
+                                2111,
+                                2416
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2357,
+                                        2111,
+                                        2416
+                                    ],
+                                    "score": 0.981,
+                                    "content": "To generate feedback for the aggregated chain, LLMs use the following basic prompts.For details,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 34
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2400,
+                                1875,
+                                2467
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2400,
+                                        1875,
+                                        2467
+                                    ],
+                                    "score": 0.985,
+                                    "content": "one can also access the source code examples/BoostingOfThought/BoT_commenter.py",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 35
+                        }
+                    ],
+                    "index": 34.5,
+                    "bbox_fs": [
+                        439,
+                        2357,
+                        2111,
+                        2467
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        2475,
+                        2108,
+                        2754
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2478,
+                                2107,
+                                2530
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2478,
+                                        736,
+                                        2530
+                                    ],
+                                    "score": 0.964,
+                                    "content": "System prompt",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        737,
+                                        2478,
+                                        770,
+                                        2518
+                                    ],
+                                    "score": 0.7,
+                                    "content": "S",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        772,
+                                        2478,
+                                        2107,
+                                        2530
+                                    ],
+                                    "score": 0.959,
+                                    "content": ":You are an expert AI checker for math answers, dedicated to evaluating the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 36
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2518,
+                                2111,
+                                2579
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2518,
+                                        2111,
+                                        2579
+                                    ],
+                                    "score": 0.993,
+                                    "content": "reasoning chain generated towards addressing the mathematical problem. Judge each reasoning",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 37
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2570,
+                                2110,
+                                2621
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2570,
+                                        2110,
+                                        2621
+                                    ],
+                                    "score": 0.974,
+                                    "content": "step of this reasoning chain by providing detailed analyses on whether the current step is a logical",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 38
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2615,
+                                2111,
+                                2667
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2615,
+                                        2111,
+                                        2667
+                                    ],
+                                    "score": 0.985,
+                                    "content": "inference of the previous step and whether the reasoning step is beneficial to the correct solution.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 39
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2655,
+                                2112,
+                                2716
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2655,
+                                        2112,
+                                        2716
+                                    ],
+                                    "score": 0.99,
+                                    "content": "Provide advice and suggestions for each reasoning step with errors. Provide recommendation or",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 40
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2705,
+                                1341,
+                                2759
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2705,
+                                        1341,
+                                        2759
+                                    ],
+                                    "score": 0.993,
+                                    "content": "rejection descriptions for each correct reasoning step.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 41
+                        }
+                    ],
+                    "index": 38.5,
+                    "bbox_fs": [
+                        438,
+                        2478,
+                        2112,
+                        2759
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        447,
+                        2775,
+                        893,
+                        2823
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                2775,
+                                898,
+                                2825
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2775,
+                                        898,
+                                        2825
+                                    ],
+                                    "score": 0.983,
+                                    "content": "Prompt for the feedback:",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 42
+                        }
+                    ],
+                    "index": 42
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        444,
+                        2844,
+                        2103,
+                        3046
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                436,
+                                2839,
+                                2062,
+                                2910
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2839,
+                                        2062,
+                                        2910
+                                    ],
+                                    "score": 0.969,
+                                    "content": "fGiven task:{task_prompt}.\\n{chain prompt}\\n\\n Please evaluate this reasoning chain",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43
+                        },
+                        {
+                            "bbox": [
+                                523,
+                                2896,
+                                1785,
+                                2951
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        523,
+                                        2896,
+                                        1662,
+                                        2951
+                                    ],
+                                    "score": 0.971,
+                                    "content": "by giving detailed comments containing the following content.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1664,
+                                        2897,
+                                        1785,
+                                        2949
+                                    ],
+                                    "score": 0.65,
+                                    "content": "\\mathrm { ~ \\backslash ~ n ~ } 1 . \\{",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 44
+                        },
+                        {
+                            "bbox": [
+                                529,
+                                2939,
+                                2089,
+                                2997
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        529,
+                                        2939,
+                                        924,
+                                        2997
+                                    ],
+                                    "score": 0.999,
+                                    "content": "chain_feedback_format",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        925,
+                                        2944,
+                                        951,
+                                        2994
+                                    ],
+                                    "score": 0.61,
+                                    "content": "\\}",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        952,
+                                        2939,
+                                        975,
+                                        2997
+                                    ],
+                                    "score": 0.892,
+                                    "content": "，",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        977,
+                                        2944,
+                                        1037,
+                                        2994
+                                    ],
+                                    "score": 0.33,
+                                    "content": "2 . \\{",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1038,
+                                        2939,
+                                        1410,
+                                        2997
+                                    ],
+                                    "score": 0.999,
+                                    "content": "step_feedback_format",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1411,
+                                        2944,
+                                        1436,
+                                        2994
+                                    ],
+                                    "score": 0.72,
+                                    "content": "\\}",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1437,
+                                        2939,
+                                        1463,
+                                        2997
+                                    ],
+                                    "score": 0.796,
+                                    "content": "，",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1464,
+                                        2944,
+                                        1523,
+                                        2994
+                                    ],
+                                    "score": 0.27,
+                                    "content": "3 . \\left\\{ \\begin{array} { r l } \\end{array} \\right.",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1524,
+                                        2939,
+                                        2008,
+                                        2997
+                                    ],
+                                    "score": 0.999,
+                                    "content": "confidence_feedback_format",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        2009,
+                                        2942,
+                                        2089,
+                                        2994
+                                    ],
+                                    "score": 0.44,
+                                    "content": "\\left. \\right\\} . \\left. \\mathbf { n } \\right.",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 45
+                        },
+                        {
+                            "bbox": [
+                                525,
+                                2982,
+                                892,
+                                3047
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        525,
+                                        2982,
+                                        732,
+                                        3047
+                                    ],
+                                    "score": 0.993,
+                                    "content": "\\nNotice:",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        733,
+                                        2990,
+                                        892,
+                                        3042
+                                    ],
+                                    "score": 0.3,
+                                    "content": "\\left\\{ { \\mathrm { N o t i c e } } \\right\\}",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 46
+                        }
+                    ],
+                    "index": 44.5,
+                    "bbox_fs": [
+                        436,
+                        2839,
+                        2089,
+                        3047
+                    ]
+                }
+            ]
+        }
+    ],
+    "_backend": "pipeline",
+    "_version_name": "2.1.8"
+}

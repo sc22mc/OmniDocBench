@@ -1,0 +1,693 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "table",
+                    "bbox": [
+                        165,
+                        379,
+                        1225,
+                        504
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                165,
+                                379,
+                                1225,
+                                504
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        165,
+                                        379,
+                                        1225,
+                                        504
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                165,
+                                                379,
+                                                1225,
+                                                504
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td></td><td>DETR</td><td>SDD</td><td>YOLOV5-X</td><td>YOLOV9-T</td><td>YOLOV9-E</td><td>YOLOV10-N</td><td>YOLOV10-X</td></tr><tr><td>#parameters [M]</td><td>46</td><td>35</td><td>86.7</td><td>2.0</td><td>57.3</td><td>2.3</td><td>29.5</td></tr><tr><td>GFLOPs</td><td>127</td><td>34.5</td><td>205.7</td><td>7.7</td><td>189.0</td><td>6.7</td><td>160.4</td></tr></table>",
+                                            "image_path": "9ae695af068dce9ece585c242095ba67ee27dcf203a0e29a67707b7a5e7b5373.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                346,
+                                264,
+                                1049,
+                                339
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        346,
+                                        264,
+                                        1049,
+                                        339
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                346,
+                                                264,
+                                                1049,
+                                                339
+                                            ],
+                                            "type": "text",
+                                            "content": "TABLE III COMPARISON OF MODEL'S COMPUTATION DEMANDS"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        175,
+                        613,
+                        1225,
+                        2003
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                613,
+                                1225,
+                                2003
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": "characterizing a more precise detection overall. Conversely, the YOLOV5- X model was able to detect the largest number of BMSB reaching the highest recall. Despite achieving particularly notable metrics scores in the ONLY set, the model has depicted the least robustness against background- only patches, namely, in the ALL set. So, YOLOV5- X was prone to recognize "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\geq 55\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": " of BMSB instances with a particularly promising precision when a BMSB appears inside the frame. However, this latter capability deteriorates dramatically "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(P = 53.5\\%)"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": " when images without BMSB are considered. It is noteworthy that each network tends to achieve a larger "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "P"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": " than "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "R"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": ". This phenomenon is strictly related to the poses experienced during the acquisition, compounded by the noise surrounding the BMSB pixels, such as blur or overexposure. Despite the dataset comprising a diverse range of BMSB samples, certain poses and lighting/blurriness conditions are more frequent than others. Also, since the dataset consists of images captured by a drone operating according to an autonomous protocol, characterizing the entire range of possibilities is extremely challenging. As a result, the networks were able to detect BMSB instances that presented limited variation in pose and color appearance, thereby minimizing FP. However, instances significantly affected by noise were occasionally missed. Both YOLOv9 and YOLOv10- X achieve interesting performance representing a true step ahead of the predecessor, YOLOv5. Although YOLOv10- X obtained the largest "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "R"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": ", YOLOv9- T achieves the best performance overall. Specifically, it reaches a satisfactorily "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "R"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(\\approx 60\\%)"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": " and almost the largest "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "P"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": " with both the thresholds, "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "95.0\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "94.0\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        613,
+                                        1225,
+                                        2003
+                                    ],
+                                    "type": "text",
+                                    "content": ", respectively."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        175,
+                        2009,
+                        1225,
+                        2950
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                2009,
+                                1225,
+                                2950
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        2009,
+                                        1225,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": "Looking at "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2009,
+                                        1225,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathrm{mAP_{0.5}}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2009,
+                                        1225,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": ", all the NNs have achieved "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2009,
+                                        1225,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\geq 45\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2009,
+                                        1225,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": " of BMSB, establishing a satisfactory confidence level overall. On the other hand, the NNs have developed limited abilities in contouring the BMSB according to "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2009,
+                                        1225,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathrm{mAP_{0.5}^{0.95}}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2009,
+                                        1225,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": " because they are less robust when the IoU increases. In other words, the majority of predictions overlap partially with the ground truth. This represents a predictable outcome due to the limited size of the BMSB with respect to the entire image. For monitoring purposes, recognizing all instances inside the frame, i.e., achieving high recall, is more important than accurately contouring a bug, i.e., achieving high IoU. However, it noteworthy that both YOLOv9 and YOLOv10 demonstrate improved IoU values between prediction and ground truth, suggesting a clear enhancement with previous releases. Moreover, in comparison with the results in [20] where entire images are simply resized and fed to the model, the current implementation of the slicing mechanism allows a boost in the performance, specifically in the recall. Indeed, image slicing prevents information losses since it retains every pixel of the original image."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        168,
+                        2956,
+                        1222,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                168,
+                                2956,
+                                1222,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        168,
+                                        2956,
+                                        1222,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "Table III summarizes model's computation demands listing the number of parameters and the number of giga floating point operations per second (GFLOPs), respectively. We can observe "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1269,
+                                264,
+                                2319,
+                                561
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        264,
+                                        2319,
+                                        561
+                                    ],
+                                    "type": "text",
+                                    "content": "that YOLOv5- X,YOLOv9- E,YOLOv10- X,SSD,and DETR are more desktop oriented\" due to their requirements, rather than YOLOv9- T and YOLOv10- N that appear compatible with current state- of- the- art embedding system boards. According to the computation footprint, both YOLOv9- T and YOLOv10- N are, even more so, the best NNs overall."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        1269,
+                        264,
+                        2319,
+                        561
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 5,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1366,
+                        617,
+                        2220,
+                        663
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1366,
+                                617,
+                                2220,
+                                663
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1366,
+                                        617,
+                                        2220,
+                                        663
+                                    ],
+                                    "type": "text",
+                                    "content": "IV. BMSB DETECTION USING SPECTRAL IMAGING"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1269,
+                        689,
+                        2319,
+                        1184
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                689,
+                                2319,
+                                1184
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        689,
+                                        2319,
+                                        1184
+                                    ],
+                                    "type": "text",
+                                    "content": "In the HALy.ID project, alongside a comprehensive analysis of RGB images primarily captured by UAVs, we also conducted an assessment of spectral imaging as a potential method for field monitoring to detect the presence of BMSB. To this purpose, SWIR- HSI and Vis- NIR MSI systems were evaluated both in the laboratory and in the field, respectively. In fact, unlike cameras operating exclusively within the visible spectrum, they may mitigate misclassifications caused by BMSB's resemblance to vegetal backgrounds with similar colors, such as bark or brown leaves."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        1269,
+                        1237,
+                        1742,
+                        1283
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                1237,
+                                1742,
+                                1283
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1237,
+                                        1742,
+                                        1283
+                                    ],
+                                    "type": "text",
+                                    "content": "A. Evaluation of SWIR-HSI"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1269,
+                        1306,
+                        2319,
+                        2204
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                1306,
+                                2319,
+                                2204
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1306,
+                                        2319,
+                                        2204
+                                    ],
+                                    "type": "text",
+                                    "content": "We captured 35 hyperspectral images of BMSB specimens positioned against various vegetal backgrounds (including bark, branches, grass, soil, green/brown leaves) within the 980- 1660 nm spectral range, aiming to replicate real field conditions. We acquired the hyperspectral images using a HSI line- scan system equipped with a desktop NIR Spectral Scanner (DV Optic) incorporating a Specim N17E reflectance imaging spectrometer, coupled with a Xenics XEVA 1.7- 320 camera "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1306,
+                                        2319,
+                                        2204
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(320 \\times 256"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1306,
+                                        2319,
+                                        2204
+                                    ],
+                                    "type": "text",
+                                    "content": " pixels) and a Specim Oles "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1306,
+                                        2319,
+                                        2204
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "31 f / 2.0"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1306,
+                                        2319,
+                                        2204
+                                    ],
+                                    "type": "text",
+                                    "content": " optical lens. The acquisition software conducted an automatic calibration of the images based on the dark current signal and a high- reflectance standard signal. We excluded pixels unrelated to either bugs or vegetal backgrounds based on a reflectance threshold measured at "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1306,
+                                        2319,
+                                        2204
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "1000 \\mathrm{nm}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1306,
+                                        2319,
+                                        2204
+                                    ],
+                                    "type": "text",
+                                    "content": ". In addition, we preprocessed the images using standard normal variate (SNV) and mean center techniques. Subsequently, we applied principal component analysis (PCA) to each image to implement a masking procedure, thereby separating the pixels belonging to the bugs from those belonging to the vegetal backgrounds."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        1269,
+                        2207,
+                        2319,
+                        2946
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                2207,
+                                2319,
+                                2946
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2207,
+                                        2319,
+                                        2946
+                                    ],
+                                    "type": "text",
+                                    "content": "To develop classification models capable of distinguishing between BSBM specimens and vegetal backgrounds based on spectral signatures, we assembled a library comprising 14 000 reference spectra from both classes. We employed the Kennard- Stone algorithm [37] on principal component (PC) scores to select these spectra. Then, we divided the images into training and test sets for model development and validation, respectively. Our classification approach focused on modeling the spectral information contained in the HSI images and identifying the relevant spectral regions to discriminate BMSB from vegetal backgrounds. To do this, we used the soft partial least squares- discriminant analysis (Soft PLS- DA) algorithm, coupled with sparse- based methods for spectral variable selection (s- Soft PLS- DA) [38]. This allowed us to build effective classification models tailored to our dataset."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2475,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

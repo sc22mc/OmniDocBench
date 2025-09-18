@@ -1,0 +1,54 @@
+[
+    {
+        "type": "text",
+        "text": "5.1Extended encryption ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The extension consists of adding two stages between the $^ { 1 }$ and 2 stage of encryption method,defining sets $Q _ { i } ^ { \\prime }$ and substitute them for $Q _ { i }$ in latter stages. Let us state two additional stages: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.add $\\it l$ $a$ -clusters with depth 1 to automaton obtained in stage 1 and define letters $b$ for centers of those clusters to fulfill assumptions of lemma 4 in $\\rho$ function (defined in section 3)   \n2.for each copy $\\mathcal { A } _ { i }$ of public key in automaton obtained in previous stage add $k _ { i }$ states and define transitions as in lemma 3 and note the set of the added states in this stage as $A _ { i }$ foreach $A _ { i }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now let us define sets $Q _ { i } ^ { \\prime }$ .For clusters $\\mathcal { C } _ { 1 } = ( S _ { 1 } , \\{ a \\} , \\gamma _ { 1 } ) , \\ldots , \\mathcal { C } _ { l } = ( S _ { l } , \\{ a \\} , \\gamma _ { l } )$ (from stage 1) with centers $K _ { 1 } , \\ldots , K _ { l }$ respectively we define sets $C _ { 1 } , \\ldots , C _ { | u | + 1 }$ ， such that if for $q \\in K _ { i }$ it holds $\\rho ( q , b ) \\in B _ { j }$ (notation from lemma 4), then $q$ and its branch belong to the set $C _ { j }$ .Then define $Q _ { i } ^ { \\prime } \\ = \\ Q _ { i } \\cup A _ { i } \\cup C _ { i }$ It isa simple exercise to prove that the sets $Q _ { 1 } ^ { \\prime } , \\ldots , Q _ { | u | + 1 } ^ { \\prime }$ form a partition of $P = \\textstyle \\bigcup _ { i = 1 } ^ { | u | + 1 } Q _ { i } \\cup A _ { i } \\cup C _ { i }$ which is thesetof allstesofourciphertexThe latter stages remain as in section 3. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.2Extended decryption ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Algorithm of decipheringis similar to the one described in section 4.We state lemmas being in a strict correspondence with those proven in section 4. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 5.Let $\\boldsymbol { B }$ be a ciphertext computed by extended encryption method using public key $\\boldsymbol { \\mathcal { A } } = ( Q , \\Sigma , \\delta )$ and $Q$ $\\mathbf { \\nabla } \\cdot w = q _ { l }$ . After removing letters $x \\in \\{ 0 , 1 \\}$ from automaton $\\boldsymbol { B }$ we have that $P . w = \\{ q _ { l } ^ { 1 } , q _ { l } ^ { 2 } , \\dots , q _ { l } ^ { | u | + 1 } \\}$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. Observe that after stage $1$ we can apply Lemma 4 and we obtain that $( \\bigcup _ { i = 1 } ^ { | u | + 1 } Q _ { i } \\cup C _ { i } ) . w = \\{ q _ { l } ^ { 1 } , q _ { l } ^ { 2 } , . . , q _ { l } ^ { | u | + 1 } \\}$ qul+1}. Notice that after stage 2 we can apply Lemma 3 to any copy of public key that was modified by that stage and also $P . w = \\{ q _ { l } ^ { 1 } , q _ { l } ^ { 2 } , . . , q _ { l } ^ { | u | + 1 } \\}$ q𝑖+1}. The rest of te proof isimilr to the proo of Lemma 1. □ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 6. There exist an algorithm with polynomial time complexity (depending on $| P |$ and $| w |$ )which computesa partition of $P$ onsets $Q _ { 1 } ^ { \\prime }$ ， $Q _ { 2 } ^ { \\prime }$ ， $Q _ { | u | + 1 } ^ { \\prime }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. Using approach from the proof of Lemma 2 we can compute similar matrix,say $M$ ,intime $O ( | P | | w | )$ . From Lemma 6 we know the last row contains only the states from the set $\\{ q _ { l } ^ { 1 } , q _ { l } ^ { 2 } , \\dots , q _ { l } ^ { | u | + 1 } \\}$ and we can compute sets $\\bar { Q } _ { 1 } , \\ldots , \\bar { Q } _ { | u | + 1 }$ such if column of the first row containing $q$ is the same as the column of the last row containing $q _ { l } ^ { i }$ ,then $q \\in Q _ { i }$ . Notice that there are three cases,when $q \\in Q _ { i }$ ",
+        "page_idx": 0
+    }
+]

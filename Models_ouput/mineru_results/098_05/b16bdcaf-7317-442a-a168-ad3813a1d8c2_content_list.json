@@ -1,0 +1,50 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/b2c8e5af57827680f21377db4d1578f702083ff0bf5e9bf9e761f567d7c0bbe8.jpg",
+        "image_caption": [
+            "Figure 4: Autoencoding results of the ICAE based on the Llama-7b with memory length $k = 1 2 8$ The horizontal axis represents the original context length of test examples.For example,the horizontal axis value of 1O0 refers to the test examples with context lengths ranging from 95 to 105. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/90c65f631cfbe267e750059bd60427ffdf42abe31921daeb8f1403e023e69894.jpg",
+        "image_caption": [
+            "Figure 5: BLEU and loss at different memory slot lengths $k$ "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Comparedto $k = 1 2 8$ where the BLEU score can still reach over $9 5 \\%$ at a context length of 500, the BLEU scores become much lesssatisfactory for $k$ values of 64 and 32, indicating an inability to losslessly retain the original context. This observation is also evident from the losscurve,suggesting that achieving over $4 \\times$ compression is rather challenging. ",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/2b64680f5e9fb5f578e4700afa32cd47102563f33c666d0cb123afab5e7fa7b7.jpg",
+        "table_caption": [
+            "Table 1: Text continuation evaluation for the pretrained ICAE.Similar to the autoencoding evaluation. a higher compression ratio tends to result in more pronounced losses in language modeling. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Context length</td><td colspan=\"2\">PPL</td><td>△</td></tr><tr><td>128→128(1×)</td><td>9.99</td><td>10.15</td><td>+0.16</td></tr><tr><td>256-→128(2x）</td><td>9.45</td><td>9.77</td><td>+0.32</td></tr><tr><td>512-128(4×)</td><td>9.01</td><td>9.50</td><td>+0.49</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Similarly,the text continuation evaluation presented in Table 1 also illustrates that a higher compression ratio tends to result in more pronounced losses in language modeling. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Table2 presents 1 specific example of the ICAE performing text restoration,demonstrating an interesting behavior:“large pretrained language model’is restored as“large pretrained model\" and\"The results prove” is restored as“The experimental evidence proves\".These restoration errors resemble mistakes humans would make when memorizing the same text. This suggests that,like humans,the model selectively emphasizes or neglects certain parts of the information during the memorization based on its own understanding. It is also consistent with Peng et al. (2O23): the stronger theLLM,thefewer it needs to memorize,and thus the smaller the memorization effort.This is similar to human learning: knowledgeable individuals tend to learn more effortlessy,while those with limited knowledge often rely on rote memorization to acquire new information. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To further look into the memorization insight,we test restoration performance for different types of 512-token texts with 128 memory slots produced by ICAE to investigate whether its memorization capability is consistent across different content types. According to Table 3,in contrast to compressing normal texts which can be well restored,compressing and restoring less common texts (i.e.,random texts) becomes very challenging,reflected by much worse loss and BLEU scores. All these results strongly support our intuition that an LLM's memorization pattern is highly similar to humans. ",
+        "page_idx": 0
+    }
+]

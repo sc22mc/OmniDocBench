@@ -1,0 +1,96 @@
+[
+    {
+        "type": "text",
+        "text": "contributions of this study to field segmentation using coordinate- based methods.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "There are a limited number of examples in the literature where field segmentation is performed using machinery coordinate data. This is despite the fact that GPS is a proven, robust, and readily available technology. The review highlights how existing vehicular trajectory segmentation methods do not translate well to the field segmentation problem. Common trajectory segmentation policies either require a priori knowledge of machinery operator behavior and their driving patterns; geo- markers from third party sources; or rely on using established road networks. These concepts and methods do not crossover to an agricultural setting. To the best of the authors' knowledge, challenging conjoined field segmentation cases have not been addressed in the current literature. A cost- effective coordinate- based solution to automatically segment agricultural fields is required.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "III. MATERIALS AND METHOD",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A coordinate- based method is presented to overcome the challenges highlighted in Section II. First, the data acquisition from two harvesting implements is outlined in Section III- A. Then, the proposed algorithm is presented in two stages. In Stage I, measurements are preprocessed to determine whether PTO activation has occurred and if road travel has taken place between activation periods, as described in Section III- B. In Stage II, pathways that may be present between adjacent fields in the sampled image are removed by applying a series of morphological image operations. The algorithm then detects the individual field boundaries from the processed image. Finally, the field boundaries are converted back to Cartesian and the machinery coordinate data are labeled as belonging to a particular field, with details given in Section III- C. The method is fully automated, deterministic, and segments all fields in a job site in one pass.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. Data Capture",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Georeferenced time series implement data were collected on two implements; a 2013,  $540~\\mathrm{r / min}$ , McHale Fusion 3 Plus baler- wrapper [51] and McHale Proglide R3100 mower [52]. A custom electronic control unit (ECU) was programmed to relay data from the implements across a J1939/CAN network [53] to a Deutz- Fahr Agrotron 6180 [54] and a John Deere 6150R [55]. The machinery was owned and operated by a machinery contractor based in Galway, Ireland, as detailed in [56]. For machinery coordinates, a NEO- M8 GNSS positioning receiver with a wideband GNSS antenna was fitted to the implements [57]. The acquisition frequency of the GNSS is  $1\\mathrm{Hz}$ . PTO speed was measured using an NPN digital hall- effect sensor [50] installed on the implement drivetrain sprocket with a protruding notch. Pulse counts were translated to frequency, which are represented as the PTO rotations per minute (rpm). Fuel usage measurements were obtained from the tractor J1939 interface. The data were stored locally in a document- based database operating on an 8th generation Intel Nuc (Intel i3 processor and 4 GB of RAM) running Ubuntu 16.",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/a4b16e0ed89aa1ff83d0ebb2ae70986610fecf347d11ff9cdf2423483fc95fac.jpg",
+        "table_caption": [
+            "TABLEI RESULT FROM STAGE I ON THE BALER TRAJECTORY DATA SHOWING THE NUMBER OF SINGLE AND CONJOINED FIELD SITES IN THE BALER DATASET"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Fields per Site</td><td>Site Count</td></tr><tr><td>1</td><td>134</td></tr><tr><td>2</td><td>19</td></tr><tr><td>3</td><td>2</td></tr><tr><td>4</td><td>0</td></tr><tr><td>Total</td><td>155</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/f172d608ab0cb0f9d571a42afa4fe3aa5f7abe00ceecdcf090151f4b6aab59c8.jpg",
+        "table_caption": [
+            "TABLE II RESULT FROM STAGE I ON THE MOWER TRAJECTORY DATA SHOWING THE NUMBER OF SINGLE AND CONJOINED FIELD SITES IN THE MOWER DATASET"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Fields per Site</td><td>Site Count</td></tr><tr><td>1</td><td>162</td></tr><tr><td>2</td><td>9</td></tr><tr><td>3</td><td>0</td></tr><tr><td>4</td><td>1</td></tr><tr><td>Total</td><td>172</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. Stage I: Data Preprocessing",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In preprocessing, unique job sites are determined from the measurement campaign by coarse filtering the raw machinery trajectory data. At this stage in the process, it is acceptable to label several fields from a single work episode as belonging to one site.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A site is determined by the filtering rules listed below.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1) Periods where the PTO remains active  $(> = 400~\\mathrm{r / min})$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "a) In scenarios where normal machinery operation is interrupted and the operator must stop the PTO, the data are segmented if the Euclidean distance from the PTO stop location is greater than  $40~\\mathrm{m}$  to the PTO restart location. (In the recorded datasets, operators may stop and restart the PTO during harvesting operations in a field. The most common example is to deal with blockages. This may not be representative of all implementers). \n2) Machinery operation continues without stoppages  $(> = 120~\\mathrm{min})$  between operations. \n3) Machinery speeds do not exceed  $8\\mathrm{m / s}$  during in-field operation. (In the recorded datasets, operators do not exceed this speed during harvesting operations in a field, only on the road between job sites. This may not be representative of all implements).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The results of the filtered trajectories based on the policies listed above are shown in Tables I and II.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. Stage II: Path Removal",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Once the raw machinery trajectory data have been filtered into job sites, the algorithm moves to Stage II, Path Removal. Fig. 3 describes the procedure; the process is divided into six steps. Each step is labeled alphabetically and will be referred to throughout this section. The goal of this stage is to remove pathways between fields and isolate field geometric boundaries",
+        "page_idx": 0
+    }
+]

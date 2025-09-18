@@ -1,0 +1,694 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        191,
+                        201,
+                        2343,
+                        719
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                191,
+                                201,
+                                2343,
+                                719
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        191,
+                                        201,
+                                        2343,
+                                        719
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                191,
+                                                201,
+                                                2343,
+                                                719
+                                            ],
+                                            "type": "image",
+                                            "image_path": "ac7c8caeb445c92052be5741d1dfac3e3905743ac99460cee5b481bfa693a5c1.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                191,
+                                745,
+                                2351,
+                                834
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        191,
+                                        745,
+                                        2351,
+                                        834
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                191,
+                                                745,
+                                                2351,
+                                                834
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 2: A dumbbell network is used for training and testing. Background and agent traffic are transmitted from one sub-network to the other over the bottleneck link. Senders and receivers are all connected to a WiFi Access Point."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        204,
+                        927,
+                        1249,
+                        1666
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                927,
+                                1249,
+                                1666
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        927,
+                                        1249,
+                                        1666
+                                    ],
+                                    "type": "text",
+                                    "content": "the action taken can be inferred. These events will take, at the very least, one RTT to complete. This raises a fundamental question for anybody who wants to apply RL to the problem of CC: when should the next action be taken? While other similar approaches, like [16, 17], gather statistics during a fixed amount of time to compute the state and take the next action, MARLIN implements a different heuristic algorithm. Every time the transport protocol makes new network statistics available to MARLIN, if at least the last reported SRTT has elapsed since the time the last action was taken, data collected up to that time is refined, the reward "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        927,
+                                        1249,
+                                        1666
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "r_t"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        927,
+                                        1249,
+                                        1666
+                                    ],
+                                    "type": "text",
+                                    "content": " with regards to action "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        927,
+                                        1249,
+                                        1666
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "a_{t - 1}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        927,
+                                        1249,
+                                        1666
+                                    ],
+                                    "type": "text",
+                                    "content": " is assigned, a new state "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        927,
+                                        1249,
+                                        1666
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "s_t"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        927,
+                                        1249,
+                                        1666
+                                    ],
+                                    "type": "text",
+                                    "content": " is fed to the agent, and a new action "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        927,
+                                        1249,
+                                        1666
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "a_t"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        927,
+                                        1249,
+                                        1666
+                                    ],
+                                    "type": "text",
+                                    "content": " is taken. Waiting for at least one SRTT between actions prevents that a new action is taken before the impact of the previous one can be sensed by the agent."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        204,
+                        1725,
+                        734,
+                        1772
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                1725,
+                                734,
+                                1772
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        1725,
+                                        734,
+                                        1772
+                                    ],
+                                    "type": "text",
+                                    "content": "B. Training Environment Setup"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        204,
+                        1795,
+                        1252,
+                        2290
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                1795,
+                                1252,
+                                2290
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        1795,
+                                        1252,
+                                        2290
+                                    ],
+                                    "type": "text",
+                                    "content": "A key design point of MARLIN is to be trained and evaluated on real networks. Utilizing real components allowed us to understand the challenges that the CC domain brings to RL, avoiding the risk of failing a \"sim- to- real\" transposition, which could be caused, by inaccurate emulated/simulated patterns and weak assumptions, at the cost of a slower training time. Relying on real hardware and protocol implementation intrinsically diversifies training experience thanks to the stochasticity of the environment and it prevents the agent from overfitting on artificial patterns that would not be found in the real world."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        204,
+                        2296,
+                        1249,
+                        2887
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                2296,
+                                1249,
+                                2887
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        2296,
+                                        1249,
+                                        2887
+                                    ],
+                                    "type": "text",
+                                    "content": "To this end, we built the network shown in Fig. 2 which comprises two sources of traffic and two receivers, two WiFi Access Point (AP), two network switches, and one router connected in a dumbbell topology. Traffic sources are connected to the WiFi AP located at one end of the dumbbell, while traffic receivers are connected to the AP at the other end. The \"Background Traffic Source\", on the left, is responsible for generating background and send it to the \"Background Traffic Receiver\" node, on the right. The \"Sender Application\" transmits traffic to the \"Receiver Application\" via a custom transport protocol implementation that uses MARLIN as its CC algorithm."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        198,
+                        2897,
+                        1249,
+                        2993
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                2897,
+                                1249,
+                                2993
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        2897,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": "The need for implementation flexibility led us to integrate MARLIN with Mockets, a protocol originally designed for "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1297,
+                                927,
+                                2351,
+                                1669
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        927,
+                                        2351,
+                                        1669
+                                    ],
+                                    "type": "text",
+                                    "content": "communication environments characterized by limited bandwidth, typically found in tactical and wireless sensor networks. Further details regarding Mockets are presented in Section III. To avoid running into situations where MARLIN could underperform due to the protocol implementation, we shaped the network scenario around the typical Mockets use case for this first iteration. We set a Smart Queue policy on the router to limit the maximum amount of traffic flowing between the two subnetworks to "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        927,
+                                        2351,
+                                        1669
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "250\\mathrm{KB / s}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        927,
+                                        2351,
+                                        1669
+                                    ],
+                                    "type": "text",
+                                    "content": "; we also used TC NetEm - Traffic Control Network Emulator (TC- NETEM) on the \"Sender Application\" node to introduce "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        927,
+                                        2351,
+                                        1669
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "100\\mathrm{ms}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        927,
+                                        2351,
+                                        1669
+                                    ],
+                                    "type": "text",
+                                    "content": " of latency and "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        927,
+                                        2351,
+                                        1669
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "3\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        927,
+                                        2351,
+                                        1669
+                                    ],
+                                    "type": "text",
+                                    "content": " random packet loss that only affect the traffic generated by the application. Note that the router's manual reports that it effectively limits the actual rate to "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        927,
+                                        2351,
+                                        1669
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "95\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        927,
+                                        2351,
+                                        1669
+                                    ],
+                                    "type": "text",
+                                    "content": " of the specified value when Smart Queue is enabled [18]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        1297,
+                        927,
+                        2351,
+                        1669
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 7,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1297,
+                        1676,
+                        2351,
+                        2220
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                1676,
+                                2351,
+                                2220
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1676,
+                                        2351,
+                                        2220
+                                    ],
+                                    "type": "text",
+                                    "content": "The background traffic patterns generated can be divided into elephant flows, i.e., long- lived data transfers that represent a large percentage of the total traffic (imagine large file transfers or video streaming), and mice flows, i.e., short- lived data transfers at low throughput (e- mail or RPC calls). Roughly "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1676,
+                                        2351,
+                                        2220
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "87\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1676,
+                                        2351,
+                                        2220
+                                    ],
+                                    "type": "text",
+                                    "content": " of the background traffic in our testbed is made by elephant flows, consisting of four different flows that alternate each other over the link every two seconds, and two mice flows, which continuously generate very short- lived (in the order of milliseconds) traffic bursts with intervals that follow a Poisson distribution."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1297,
+                        2227,
+                        2351,
+                        2722
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                2227,
+                                2351,
+                                2722
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2227,
+                                        2351,
+                                        2722
+                                    ],
+                                    "type": "text",
+                                    "content": "The Background Traffic Source generates traffic using Multi- Generator Network Test Tool (MGENT) [19]. Elephant flows consist of two UDP communications transferring data at "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2227,
+                                        2351,
+                                        2722
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "100\\mathrm{KB / s}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2227,
+                                        2351,
+                                        2722
+                                    ],
+                                    "type": "text",
+                                    "content": ", one UDP communication transferring data at "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2227,
+                                        2351,
+                                        2722
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "50\\mathrm{KB / s}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2227,
+                                        2351,
+                                        2722
+                                    ],
+                                    "type": "text",
+                                    "content": ", and one TCP connection producing "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2227,
+                                        2351,
+                                        2722
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "200\\mathrm{KB / s}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2227,
+                                        2351,
+                                        2722
+                                    ],
+                                    "type": "text",
+                                    "content": " of traffic. One TCP and one UDP mice flow introduce an extra "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2227,
+                                        2351,
+                                        2722
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "17\\mathrm{KB}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2227,
+                                        2351,
+                                        2722
+                                    ],
+                                    "type": "text",
+                                    "content": " of traffic in average over the link each second. Each elephant flow is assigned to a different temporal slot of a 2 second duration and they repeat every 8 seconds. Mice flows start with the first elephant flow and continue until traffic generation is stopped."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        1297,
+                        2775,
+                        1586,
+                        2821
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                2775,
+                                1586,
+                                2821
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2775,
+                                        1586,
+                                        2821
+                                    ],
+                                    "type": "text",
+                                    "content": "C. Agent Design"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1295,
+                        2847,
+                        2351,
+                        2993
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1295,
+                                2847,
+                                2351,
+                                2993
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1295,
+                                        2847,
+                                        2351,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": "The interface between MARLIN and the transport protocol, shown in Figure 11 is implemented using "
+                                },
+                                {
+                                    "bbox": [
+                                        1295,
+                                        2847,
+                                        2351,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "gRPC"
+                                },
+                                {
+                                    "bbox": [
+                                        1295,
+                                        2847,
+                                        2351,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": ". The gRPC middleware sitting between the transport protocol and MAR"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

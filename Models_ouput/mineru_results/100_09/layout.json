@@ -1,0 +1,2761 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        440,
+                        342,
+                        2102,
+                        438
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                345,
+                                2107,
+                                399
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        345,
+                                        2107,
+                                        399
+                                    ],
+                                    "score": 0.989,
+                                    "content": "of BoT will produce the most representative reasoning chain in the current iteration,thus leading to",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                390,
+                                2053,
+                                446
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        390,
+                                        2053,
+                                        446
+                                    ],
+                                    "score": 0.987,
+                                    "content": "more meaningful experience to enhance the prompt.We verify this in the ablation study section.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        }
+                    ],
+                    "index": 0.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        458,
+                        2108,
+                        919
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                456,
+                                2107,
+                                516
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        460,
+                                        1871,
+                                        516
+                                    ],
+                                    "score": 0.975,
+                                    "content": "To better present how BoT learns from errors and previous advice,we show in Table",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1873,
+                                        456,
+                                        1915,
+                                        516
+                                    ],
+                                    "score": 0.43,
+                                    "content": "\\bigstar",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1916,
+                                        460,
+                                        2107,
+                                        516
+                                    ],
+                                    "score": 1.0,
+                                    "content": "thatGPT-4",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                509,
+                                2107,
+                                556
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        509,
+                                        2107,
+                                        556
+                                    ],
+                                    "score": 0.982,
+                                    "content": "is able to avoid previous errors and produce more specific advice with the increase of iteration and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                553,
+                                2110,
+                                607
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        553,
+                                        2110,
+                                        607
+                                    ],
+                                    "score": 0.977,
+                                    "content": "eventually obtain the correct solution. In the first iteration, with the simple prompt,LLMs even make",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                598,
+                                2110,
+                                652
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        598,
+                                        2110,
+                                        652
+                                    ],
+                                    "score": 0.987,
+                                    "content": "a mistake in following the task rules as the new setis wrong in step 3.After analyzing, it presents",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                643,
+                                2107,
+                                697
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        643,
+                                        2107,
+                                        697
+                                    ],
+                                    "score": 0.972,
+                                    "content": "correct advice onthis mistake.However,the analysis at the initial iteration is vague,such as“try",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                681,
+                                2110,
+                                748
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        681,
+                                        2110,
+                                        748
+                                    ],
+                                    "score": 0.99,
+                                    "content": "other numbers and operations. After five iterations,BoT aggregates multiple such analyses,deriving",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                734,
+                                2110,
+                                788
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        734,
+                                        2110,
+                                        788
+                                    ],
+                                    "score": 0.981,
+                                    "content": "a more potent prompt, making the LLMs select the right numbers 9 and 7. Also,the advice is more",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                781,
+                                2107,
+                                832
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        781,
+                                        2107,
+                                        832
+                                    ],
+                                    "score": 0.98,
+                                    "content": "concrete and useful.The advice for this right selection is to increase the corresponding evaluation",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                825,
+                                2111,
+                                884
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        825,
+                                        2111,
+                                        884
+                                    ],
+                                    "score": 0.99,
+                                    "content": "score.Through the continuous accumulation such experiences,BoT progressively refines the prompt,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                873,
+                                1731,
+                                921
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        873,
+                                        1731,
+                                        921
+                                    ],
+                                    "score": 0.978,
+                                    "content": "culminating in the direct generation of a correct solution in the 8-th iteration.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        }
+                    ],
+                    "index": 6.5
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        448,
+                        980,
+                        872,
+                        1027
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                973,
+                                879,
+                                1033
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        973,
+                                        879,
+                                        1033
+                                    ],
+                                    "score": 0.985,
+                                    "content": "4.3ABLATION STUDY",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        444,
+                        1165,
+                        2101,
+                        1481
+                    ],
+                    "blocks": [
+                        {
+                            "type": "table_caption",
+                            "bbox": [
+                                519,
+                                1082,
+                                2027,
+                                1130
+                            ],
+                            "group_id": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        515,
+                                        1080,
+                                        2032,
+                                        1134
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                515,
+                                                1080,
+                                                2032,
+                                                1134
+                                            ],
+                                            "score": 0.963,
+                                            "content": "Table 4:Comparison of BoTvariations applied to GPT-4on the Game of 24 and AQuA Datasets.",
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "index": 13
+                                }
+                            ],
+                            "index": 13
+                        },
+                        {
+                            "type": "table_body",
+                            "bbox": [
+                                444,
+                                1165,
+                                2101,
+                                1481
+                            ],
+                            "group_id": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1165,
+                                        2101,
+                                        1481
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                444,
+                                                1165,
+                                                2101,
+                                                1481
+                                            ],
+                                            "score": 0.981,
+                                            "html": "<table><tr><td colspan=\"2\">Experience F...t</td><td colspan=\"2\">Accumulation Type</td><td colspan=\"3\">Game of 24</td><td colspan=\"3\">AQuA</td></tr><tr><td>Issues</td><td>Advice</td><td>Replace</td><td>Add</td><td>BoT(Best first）</td><td>BoT(Greedy)</td><td>BoT(No)</td><td>BoT(Best first）</td><td>BoT(Greedy)</td><td>BoT(No)</td></tr><tr><td>√</td><td>√</td><td></td><td>√</td><td>81.2</td><td>83.7</td><td>67.1</td><td>78</td><td>81.4</td><td>56.2</td></tr><tr><td></td><td></td><td></td><td></td><td>74.7</td><td>78.2</td><td>70</td><td>47.3</td><td>56.8</td><td>44.9</td></tr><tr><td></td><td></td><td>√</td><td></td><td>72.8</td><td>74.1</td><td>70.2</td><td>52.4</td><td>62.7</td><td>46.3</td></tr><tr><td></td><td></td><td></td><td>√</td><td>69.2</td><td>70.7</td><td>67.6</td><td>54.1</td><td>60</td><td>40.3</td></tr><tr><td></td><td></td><td>√</td><td></td><td>74.9</td><td>76.9</td><td>72.7</td><td>68.3</td><td>74.2</td><td>71.9</td></tr><tr><td></td><td></td><td></td><td>√</td><td>77.9</td><td>80</td><td>72.4</td><td>73.6</td><td>77</td><td>64.1</td></tr></table>",
+                                            "type": "table",
+                                            "image_path": "627c1c523de9f8286d002e436efff2b5078440e0c52b7fb47df7011ea712eea0.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 15,
+                            "virtual_lines": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1165,
+                                        2101,
+                                        1270.3333333333333
+                                    ],
+                                    "spans": [],
+                                    "index": 14
+                                },
+                                {
+                                    "bbox": [
+                                        444,
+                                        1270.3333333333333,
+                                        2101,
+                                        1375.6666666666665
+                                    ],
+                                    "spans": [],
+                                    "index": 15
+                                },
+                                {
+                                    "bbox": [
+                                        444,
+                                        1375.6666666666665,
+                                        2101,
+                                        1480.9999999999998
+                                    ],
+                                    "spans": [],
+                                    "index": 16
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14.0
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        444,
+                        1541,
+                        2108,
+                        1907
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                438,
+                                1539,
+                                2114,
+                                1593
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1539,
+                                        2114,
+                                        1593
+                                    ],
+                                    "score": 0.972,
+                                    "content": "Experience consistently leads to thought revision,but too much can have the opposite effect.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1582,
+                                2110,
+                                1639
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1582,
+                                        2110,
+                                        1639
+                                    ],
+                                    "score": 0.98,
+                                    "content": "When the prompt accumulates issues and advice by the“adding”type,both aggregation strategies",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                1634,
+                                2110,
+                                1682
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1634,
+                                        2110,
+                                        1682
+                                    ],
+                                    "score": 0.975,
+                                    "content": "can lead to high solve rates.Maintaining a complete experience is important for revising thoughts,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1678,
+                                2114,
+                                1729
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1678,
+                                        2114,
+                                        1729
+                                    ],
+                                    "score": 0.983,
+                                    "content": "especially for the AQuA dataset,which includes wider mathematical reasoning problems.However,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1722,
+                                2110,
+                                1776
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1722,
+                                        2110,
+                                        1776
+                                    ],
+                                    "score": 0.974,
+                                    "content": "BoT(No), which does not perform aggregation but directly uses allreasoning chains from generated",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1771,
+                                2108,
+                                1820
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1771,
+                                        2108,
+                                        1820
+                                    ],
+                                    "score": 0.987,
+                                    "content": "trees,suffers the worst performance in allcases,especially when the experience accumulation type is",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                435,
+                                1809,
+                                2110,
+                                1870
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        1809,
+                                        2110,
+                                        1870
+                                    ],
+                                    "score": 0.976,
+                                    "content": "“adding\".As BoT builds 15 trees each iteration, putting them alltogether into a prompt may cover",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1860,
+                                1835,
+                                1914
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1860,
+                                        1835,
+                                        1914
+                                    ],
+                                    "score": 0.977,
+                                    "content": "core information, not to mention that most such experiences are invalid or harmful.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        }
+                    ],
+                    "index": 20.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        1929,
+                        2110,
+                        2250
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                1928,
+                                2111,
+                                1985
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1928,
+                                        2111,
+                                        1985
+                                    ],
+                                    "score": 0.97,
+                                    "content": "Advice is more important to generate thoughts than others.In all cases of Table4 BoT variations",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1972,
+                                2110,
+                                2031
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1972,
+                                        2110,
+                                        2031
+                                    ],
+                                    "score": 0.984,
+                                    "content": "that embrace advice as experience achieve the top solve rate. For example, with the same“adding”",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2021,
+                                2108,
+                                2074
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2021,
+                                        1947,
+                                        2074
+                                    ],
+                                    "score": 0.992,
+                                    "content": "type,when the experience does not contain advice, the performance drops by more than",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1949,
+                                        2021,
+                                        2031,
+                                        2067
+                                    ],
+                                    "score": 0.88,
+                                    "content": "1 0 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        2032,
+                                        2021,
+                                        2108,
+                                        2074
+                                    ],
+                                    "score": 1.0,
+                                    "content": "and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                2061,
+                                2110,
+                                2123
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        2067,
+                                        527,
+                                        2112
+                                    ],
+                                    "score": 0.88,
+                                    "content": "2 0 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        528,
+                                        2061,
+                                        2110,
+                                        2123
+                                    ],
+                                    "score": 0.978,
+                                    "content": "in Game of 24 and AQuA,respectively. On the contrary, including issues in the experience",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2114,
+                                2106,
+                                2165
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2114,
+                                        2106,
+                                        2165
+                                    ],
+                                    "score": 0.986,
+                                    "content": "serves as an auxiliary mechanism for performance improvement. Only by cooperating issues can the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2156,
+                                2110,
+                                2213
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2156,
+                                        1709,
+                                        2213
+                                    ],
+                                    "score": 0.974,
+                                    "content": "BoT with advice gain the best solve rate; for example, the number grows by",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1710,
+                                        2159,
+                                        1803,
+                                        2204
+                                    ],
+                                    "score": 0.88,
+                                    "content": "4 . 4 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1804,
+                                        2156,
+                                        2110,
+                                        2213
+                                    ],
+                                    "score": 0.999,
+                                    "content": "forBoT(Greedy)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2203,
+                                611,
+                                2257
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2203,
+                                        611,
+                                        2257
+                                    ],
+                                    "score": 0.989,
+                                    "content": "inAQuA.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        }
+                    ],
+                    "index": 28
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        2273,
+                        2110,
+                        2732
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                2275,
+                                2103,
+                                2324
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        2275,
+                                        2103,
+                                        2324
+                                    ],
+                                    "score": 0.987,
+                                    "content": "Greedy aggregation can be the only required choice for performance purposes.As compared",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2317,
+                                2107,
+                                2374
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2317,
+                                        2107,
+                                        2374
+                                    ],
+                                    "score": 0.99,
+                                    "content": "to the Best-first that selects one from existing thought chains and no aggregation that maintains all",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 33
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2366,
+                                2107,
+                                2419
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2366,
+                                        2107,
+                                        2419
+                                    ],
+                                    "score": 0.988,
+                                    "content": "thought chains,greedy aggregation adaptively merges tree structures into one better thought chain",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 34
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2414,
+                                2106,
+                                2463
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2414,
+                                        2106,
+                                        2463
+                                    ],
+                                    "score": 0.957,
+                                    "content": "that may not exist in the current iteration.Bydoing so,LLM isable to performa more meaningful",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 35
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2458,
+                                2110,
+                                2512
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2458,
+                                        2110,
+                                        2512
+                                    ],
+                                    "score": 0.987,
+                                    "content": "analysis on a stronger thought chain,thus producing important experiences to enhance the prompt.As",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 36
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2499,
+                                2115,
+                                2560
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2499,
+                                        699,
+                                        2560
+                                    ],
+                                    "score": 0.991,
+                                    "content": "shown in Table",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        701,
+                                        2499,
+                                        745,
+                                        2558
+                                    ],
+                                    "score": 0.55,
+                                    "content": "\\textcircled { 4 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        746,
+                                        2499,
+                                        1844,
+                                        2560
+                                    ],
+                                    "score": 0.984,
+                                    "content": "once the Greedy aggregation is used, BoT improves by more than",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1845,
+                                        2503,
+                                        1907,
+                                        2547
+                                    ],
+                                    "score": 0.88,
+                                    "content": "2 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1909,
+                                        2499,
+                                        2115,
+                                        2560
+                                    ],
+                                    "score": 0.969,
+                                    "content": "in all cases.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 37
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2545,
+                                2111,
+                                2606
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2545,
+                                        1512,
+                                        2606
+                                    ],
+                                    "score": 0.974,
+                                    "content": "In AQuA,containing more math problems, this number is even",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1513,
+                                        2548,
+                                        1593,
+                                        2593
+                                    ],
+                                    "score": 0.89,
+                                    "content": "1 0 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1594,
+                                        2545,
+                                        2111,
+                                        2606
+                                    ],
+                                    "score": 0.969,
+                                    "content": ".Besides,as our discussion in",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 38
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2591,
+                                2107,
+                                2651
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2591,
+                                        524,
+                                        2651
+                                    ],
+                                    "score": 0.99,
+                                    "content": "Fig.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        510,
+                                        2596,
+                                        562,
+                                        2641
+                                    ],
+                                    "score": 0.984,
+                                    "content": "4",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        553,
+                                        2593,
+                                        1682,
+                                        2649
+                                    ],
+                                    "score": 0.98,
+                                    "content": "ToTwith a similar experience-driven boosting mechanism reaches",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1683,
+                                        2594,
+                                        1766,
+                                        2640
+                                    ],
+                                    "score": 0.89,
+                                    "content": "8 0 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1767,
+                                        2593,
+                                        2107,
+                                        2649
+                                    ],
+                                    "score": 0.976,
+                                    "content": "but still lags behind",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 39
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2640,
+                                2110,
+                                2695
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2640,
+                                        2110,
+                                        2695
+                                    ],
+                                    "score": 0.973,
+                                    "content": "the BoT.This may be attributed to the inability to execute the greedy aggregation within its singular",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 40
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2686,
+                                681,
+                                2735
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2686,
+                                        681,
+                                        2735
+                                    ],
+                                    "score": 0.99,
+                                    "content": "tree structure.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 41
+                        }
+                    ],
+                    "index": 36.5
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        2803,
+                        817,
+                        2857
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                433,
+                                2795,
+                                826,
+                                2874
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        433,
+                                        2795,
+                                        826,
+                                        2874
+                                    ],
+                                    "score": 0.989,
+                                    "content": "5CONCLUSION",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 42
+                        }
+                    ],
+                    "index": 42
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        449,
+                        2911,
+                        2105,
+                        3052
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                2909,
+                                2110,
+                                2966
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2909,
+                                        2110,
+                                        2966
+                                    ],
+                                    "score": 0.993,
+                                    "content": "This paper verified that a simple prompt can be enhanced by gradually accumulating error analysis on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2957,
+                                2110,
+                                3008
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2957,
+                                        2110,
+                                        3008
+                                    ],
+                                    "score": 0.986,
+                                    "content": "its generated thoughts to address complex tasks.We have proposed a novel framework,the Boosting of",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 44
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                3002,
+                                2107,
+                                3056
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        3002,
+                                        2107,
+                                        3056
+                                    ],
+                                    "score": 0.993,
+                                    "content": "Thoughts (BoT),to implement such progressive prompt enhancement for efective thought generation",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 45
+                        }
+                    ],
+                    "index": 44
+                }
+            ],
+            "page_idx": 0,
+            "page_size": [
+                2550,
+                3300
+            ],
+            "discarded_blocks": [
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        451,
+                        113,
+                        1223,
+                        155
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                108,
+                                1227,
+                                161
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        108,
+                                        1227,
+                                        161
+                                    ],
+                                    "score": 0.981,
+                                    "content": "Published as a conference paper at ICLR 2024",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        1261,
+                        3132,
+                        1289,
+                        3165
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                1256,
+                                3129,
+                                1291,
+                                3176
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1256,
+                                        3129,
+                                        1291,
+                                        3176
+                                    ],
+                                    "score": 0.999,
+                                    "content": "9",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "para_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        440,
+                        342,
+                        2102,
+                        438
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                345,
+                                2107,
+                                399
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        345,
+                                        2107,
+                                        399
+                                    ],
+                                    "score": 0.989,
+                                    "content": "of BoT will produce the most representative reasoning chain in the current iteration,thus leading to",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                390,
+                                2053,
+                                446
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        390,
+                                        2053,
+                                        446
+                                    ],
+                                    "score": 0.987,
+                                    "content": "more meaningful experience to enhance the prompt.We verify this in the ablation study section.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        }
+                    ],
+                    "index": 0.5,
+                    "bbox_fs": [
+                        438,
+                        345,
+                        2107,
+                        446
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        458,
+                        2108,
+                        919
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                456,
+                                2107,
+                                516
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        460,
+                                        1871,
+                                        516
+                                    ],
+                                    "score": 0.975,
+                                    "content": "To better present how BoT learns from errors and previous advice,we show in Table",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1873,
+                                        456,
+                                        1915,
+                                        516
+                                    ],
+                                    "score": 0.43,
+                                    "content": "\\bigstar",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1916,
+                                        460,
+                                        2107,
+                                        516
+                                    ],
+                                    "score": 1.0,
+                                    "content": "thatGPT-4",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                509,
+                                2107,
+                                556
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        509,
+                                        2107,
+                                        556
+                                    ],
+                                    "score": 0.982,
+                                    "content": "is able to avoid previous errors and produce more specific advice with the increase of iteration and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                553,
+                                2110,
+                                607
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        553,
+                                        2110,
+                                        607
+                                    ],
+                                    "score": 0.977,
+                                    "content": "eventually obtain the correct solution. In the first iteration, with the simple prompt,LLMs even make",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                598,
+                                2110,
+                                652
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        598,
+                                        2110,
+                                        652
+                                    ],
+                                    "score": 0.987,
+                                    "content": "a mistake in following the task rules as the new setis wrong in step 3.After analyzing, it presents",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                643,
+                                2107,
+                                697
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        643,
+                                        2107,
+                                        697
+                                    ],
+                                    "score": 0.972,
+                                    "content": "correct advice onthis mistake.However,the analysis at the initial iteration is vague,such as“try",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                681,
+                                2110,
+                                748
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        681,
+                                        2110,
+                                        748
+                                    ],
+                                    "score": 0.99,
+                                    "content": "other numbers and operations. After five iterations,BoT aggregates multiple such analyses,deriving",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                734,
+                                2110,
+                                788
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        734,
+                                        2110,
+                                        788
+                                    ],
+                                    "score": 0.981,
+                                    "content": "a more potent prompt, making the LLMs select the right numbers 9 and 7. Also,the advice is more",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                781,
+                                2107,
+                                832
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        781,
+                                        2107,
+                                        832
+                                    ],
+                                    "score": 0.98,
+                                    "content": "concrete and useful.The advice for this right selection is to increase the corresponding evaluation",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                825,
+                                2111,
+                                884
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        825,
+                                        2111,
+                                        884
+                                    ],
+                                    "score": 0.99,
+                                    "content": "score.Through the continuous accumulation such experiences,BoT progressively refines the prompt,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                873,
+                                1731,
+                                921
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        873,
+                                        1731,
+                                        921
+                                    ],
+                                    "score": 0.978,
+                                    "content": "culminating in the direct generation of a correct solution in the 8-th iteration.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        }
+                    ],
+                    "index": 6.5,
+                    "bbox_fs": [
+                        438,
+                        456,
+                        2111,
+                        921
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        448,
+                        980,
+                        872,
+                        1027
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                973,
+                                879,
+                                1033
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        973,
+                                        879,
+                                        1033
+                                    ],
+                                    "score": 0.985,
+                                    "content": "4.3ABLATION STUDY",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        444,
+                        1165,
+                        2101,
+                        1481
+                    ],
+                    "blocks": [
+                        {
+                            "type": "table_caption",
+                            "bbox": [
+                                519,
+                                1082,
+                                2027,
+                                1130
+                            ],
+                            "group_id": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        515,
+                                        1080,
+                                        2032,
+                                        1134
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                515,
+                                                1080,
+                                                2032,
+                                                1134
+                                            ],
+                                            "score": 0.963,
+                                            "content": "Table 4:Comparison of BoTvariations applied to GPT-4on the Game of 24 and AQuA Datasets.",
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "index": 13
+                                }
+                            ],
+                            "index": 13
+                        },
+                        {
+                            "type": "table_body",
+                            "bbox": [
+                                444,
+                                1165,
+                                2101,
+                                1481
+                            ],
+                            "group_id": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1165,
+                                        2101,
+                                        1481
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                444,
+                                                1165,
+                                                2101,
+                                                1481
+                                            ],
+                                            "score": 0.981,
+                                            "html": "<table><tr><td colspan=\"2\">Experience F...t</td><td colspan=\"2\">Accumulation Type</td><td colspan=\"3\">Game of 24</td><td colspan=\"3\">AQuA</td></tr><tr><td>Issues</td><td>Advice</td><td>Replace</td><td>Add</td><td>BoT(Best first）</td><td>BoT(Greedy)</td><td>BoT(No)</td><td>BoT(Best first）</td><td>BoT(Greedy)</td><td>BoT(No)</td></tr><tr><td>√</td><td>√</td><td></td><td>√</td><td>81.2</td><td>83.7</td><td>67.1</td><td>78</td><td>81.4</td><td>56.2</td></tr><tr><td></td><td></td><td></td><td></td><td>74.7</td><td>78.2</td><td>70</td><td>47.3</td><td>56.8</td><td>44.9</td></tr><tr><td></td><td></td><td>√</td><td></td><td>72.8</td><td>74.1</td><td>70.2</td><td>52.4</td><td>62.7</td><td>46.3</td></tr><tr><td></td><td></td><td></td><td>√</td><td>69.2</td><td>70.7</td><td>67.6</td><td>54.1</td><td>60</td><td>40.3</td></tr><tr><td></td><td></td><td>√</td><td></td><td>74.9</td><td>76.9</td><td>72.7</td><td>68.3</td><td>74.2</td><td>71.9</td></tr><tr><td></td><td></td><td></td><td>√</td><td>77.9</td><td>80</td><td>72.4</td><td>73.6</td><td>77</td><td>64.1</td></tr></table>",
+                                            "type": "table",
+                                            "image_path": "627c1c523de9f8286d002e436efff2b5078440e0c52b7fb47df7011ea712eea0.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 15,
+                            "virtual_lines": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1165,
+                                        2101,
+                                        1270.3333333333333
+                                    ],
+                                    "spans": [],
+                                    "index": 14
+                                },
+                                {
+                                    "bbox": [
+                                        444,
+                                        1270.3333333333333,
+                                        2101,
+                                        1375.6666666666665
+                                    ],
+                                    "spans": [],
+                                    "index": 15
+                                },
+                                {
+                                    "bbox": [
+                                        444,
+                                        1375.6666666666665,
+                                        2101,
+                                        1480.9999999999998
+                                    ],
+                                    "spans": [],
+                                    "index": 16
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14.0
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        444,
+                        1541,
+                        2108,
+                        1907
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                438,
+                                1539,
+                                2114,
+                                1593
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1539,
+                                        2114,
+                                        1593
+                                    ],
+                                    "score": 0.972,
+                                    "content": "Experience consistently leads to thought revision,but too much can have the opposite effect.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1582,
+                                2110,
+                                1639
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1582,
+                                        2110,
+                                        1639
+                                    ],
+                                    "score": 0.98,
+                                    "content": "When the prompt accumulates issues and advice by the“adding”type,both aggregation strategies",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                1634,
+                                2110,
+                                1682
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1634,
+                                        2110,
+                                        1682
+                                    ],
+                                    "score": 0.975,
+                                    "content": "can lead to high solve rates.Maintaining a complete experience is important for revising thoughts,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1678,
+                                2114,
+                                1729
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1678,
+                                        2114,
+                                        1729
+                                    ],
+                                    "score": 0.983,
+                                    "content": "especially for the AQuA dataset,which includes wider mathematical reasoning problems.However,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1722,
+                                2110,
+                                1776
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1722,
+                                        2110,
+                                        1776
+                                    ],
+                                    "score": 0.974,
+                                    "content": "BoT(No), which does not perform aggregation but directly uses allreasoning chains from generated",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1771,
+                                2108,
+                                1820
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1771,
+                                        2108,
+                                        1820
+                                    ],
+                                    "score": 0.987,
+                                    "content": "trees,suffers the worst performance in allcases,especially when the experience accumulation type is",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                435,
+                                1809,
+                                2110,
+                                1870
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        1809,
+                                        2110,
+                                        1870
+                                    ],
+                                    "score": 0.976,
+                                    "content": "“adding\".As BoT builds 15 trees each iteration, putting them alltogether into a prompt may cover",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1860,
+                                1835,
+                                1914
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1860,
+                                        1835,
+                                        1914
+                                    ],
+                                    "score": 0.977,
+                                    "content": "core information, not to mention that most such experiences are invalid or harmful.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        }
+                    ],
+                    "index": 20.5,
+                    "bbox_fs": [
+                        435,
+                        1539,
+                        2114,
+                        1914
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        1929,
+                        2110,
+                        2250
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                1928,
+                                2111,
+                                1985
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1928,
+                                        2111,
+                                        1985
+                                    ],
+                                    "score": 0.97,
+                                    "content": "Advice is more important to generate thoughts than others.In all cases of Table4 BoT variations",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1972,
+                                2110,
+                                2031
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1972,
+                                        2110,
+                                        2031
+                                    ],
+                                    "score": 0.984,
+                                    "content": "that embrace advice as experience achieve the top solve rate. For example, with the same“adding”",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2021,
+                                2108,
+                                2074
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2021,
+                                        1947,
+                                        2074
+                                    ],
+                                    "score": 0.992,
+                                    "content": "type,when the experience does not contain advice, the performance drops by more than",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1949,
+                                        2021,
+                                        2031,
+                                        2067
+                                    ],
+                                    "score": 0.88,
+                                    "content": "1 0 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        2032,
+                                        2021,
+                                        2108,
+                                        2074
+                                    ],
+                                    "score": 1.0,
+                                    "content": "and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                2061,
+                                2110,
+                                2123
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        2067,
+                                        527,
+                                        2112
+                                    ],
+                                    "score": 0.88,
+                                    "content": "2 0 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        528,
+                                        2061,
+                                        2110,
+                                        2123
+                                    ],
+                                    "score": 0.978,
+                                    "content": "in Game of 24 and AQuA,respectively. On the contrary, including issues in the experience",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2114,
+                                2106,
+                                2165
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2114,
+                                        2106,
+                                        2165
+                                    ],
+                                    "score": 0.986,
+                                    "content": "serves as an auxiliary mechanism for performance improvement. Only by cooperating issues can the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2156,
+                                2110,
+                                2213
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2156,
+                                        1709,
+                                        2213
+                                    ],
+                                    "score": 0.974,
+                                    "content": "BoT with advice gain the best solve rate; for example, the number grows by",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1710,
+                                        2159,
+                                        1803,
+                                        2204
+                                    ],
+                                    "score": 0.88,
+                                    "content": "4 . 4 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1804,
+                                        2156,
+                                        2110,
+                                        2213
+                                    ],
+                                    "score": 0.999,
+                                    "content": "forBoT(Greedy)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2203,
+                                611,
+                                2257
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2203,
+                                        611,
+                                        2257
+                                    ],
+                                    "score": 0.989,
+                                    "content": "inAQuA.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        }
+                    ],
+                    "index": 28,
+                    "bbox_fs": [
+                        438,
+                        1928,
+                        2111,
+                        2257
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        2273,
+                        2110,
+                        2732
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                2275,
+                                2103,
+                                2324
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        2275,
+                                        2103,
+                                        2324
+                                    ],
+                                    "score": 0.987,
+                                    "content": "Greedy aggregation can be the only required choice for performance purposes.As compared",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2317,
+                                2107,
+                                2374
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2317,
+                                        2107,
+                                        2374
+                                    ],
+                                    "score": 0.99,
+                                    "content": "to the Best-first that selects one from existing thought chains and no aggregation that maintains all",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 33
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2366,
+                                2107,
+                                2419
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2366,
+                                        2107,
+                                        2419
+                                    ],
+                                    "score": 0.988,
+                                    "content": "thought chains,greedy aggregation adaptively merges tree structures into one better thought chain",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 34
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2414,
+                                2106,
+                                2463
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2414,
+                                        2106,
+                                        2463
+                                    ],
+                                    "score": 0.957,
+                                    "content": "that may not exist in the current iteration.Bydoing so,LLM isable to performa more meaningful",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 35
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2458,
+                                2110,
+                                2512
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2458,
+                                        2110,
+                                        2512
+                                    ],
+                                    "score": 0.987,
+                                    "content": "analysis on a stronger thought chain,thus producing important experiences to enhance the prompt.As",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 36
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2499,
+                                2115,
+                                2560
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2499,
+                                        699,
+                                        2560
+                                    ],
+                                    "score": 0.991,
+                                    "content": "shown in Table",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        701,
+                                        2499,
+                                        745,
+                                        2558
+                                    ],
+                                    "score": 0.55,
+                                    "content": "\\textcircled { 4 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        746,
+                                        2499,
+                                        1844,
+                                        2560
+                                    ],
+                                    "score": 0.984,
+                                    "content": "once the Greedy aggregation is used, BoT improves by more than",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1845,
+                                        2503,
+                                        1907,
+                                        2547
+                                    ],
+                                    "score": 0.88,
+                                    "content": "2 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1909,
+                                        2499,
+                                        2115,
+                                        2560
+                                    ],
+                                    "score": 0.969,
+                                    "content": "in all cases.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 37
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2545,
+                                2111,
+                                2606
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2545,
+                                        1512,
+                                        2606
+                                    ],
+                                    "score": 0.974,
+                                    "content": "In AQuA,containing more math problems, this number is even",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1513,
+                                        2548,
+                                        1593,
+                                        2593
+                                    ],
+                                    "score": 0.89,
+                                    "content": "1 0 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1594,
+                                        2545,
+                                        2111,
+                                        2606
+                                    ],
+                                    "score": 0.969,
+                                    "content": ".Besides,as our discussion in",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 38
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2591,
+                                2107,
+                                2651
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2591,
+                                        524,
+                                        2651
+                                    ],
+                                    "score": 0.99,
+                                    "content": "Fig.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        510,
+                                        2596,
+                                        562,
+                                        2641
+                                    ],
+                                    "score": 0.984,
+                                    "content": "4",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        553,
+                                        2593,
+                                        1682,
+                                        2649
+                                    ],
+                                    "score": 0.98,
+                                    "content": "ToTwith a similar experience-driven boosting mechanism reaches",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1683,
+                                        2594,
+                                        1766,
+                                        2640
+                                    ],
+                                    "score": 0.89,
+                                    "content": "8 0 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1767,
+                                        2593,
+                                        2107,
+                                        2649
+                                    ],
+                                    "score": 0.976,
+                                    "content": "but still lags behind",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 39
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2640,
+                                2110,
+                                2695
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2640,
+                                        2110,
+                                        2695
+                                    ],
+                                    "score": 0.973,
+                                    "content": "the BoT.This may be attributed to the inability to execute the greedy aggregation within its singular",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 40
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2686,
+                                681,
+                                2735
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2686,
+                                        681,
+                                        2735
+                                    ],
+                                    "score": 0.99,
+                                    "content": "tree structure.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 41
+                        }
+                    ],
+                    "index": 36.5,
+                    "bbox_fs": [
+                        438,
+                        2275,
+                        2115,
+                        2735
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        2803,
+                        817,
+                        2857
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                433,
+                                2795,
+                                826,
+                                2874
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        433,
+                                        2795,
+                                        826,
+                                        2874
+                                    ],
+                                    "score": 0.989,
+                                    "content": "5CONCLUSION",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 42
+                        }
+                    ],
+                    "index": 42
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        449,
+                        2911,
+                        2105,
+                        3052
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                2909,
+                                2110,
+                                2966
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2909,
+                                        2110,
+                                        2966
+                                    ],
+                                    "score": 0.993,
+                                    "content": "This paper verified that a simple prompt can be enhanced by gradually accumulating error analysis on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2957,
+                                2110,
+                                3008
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2957,
+                                        2110,
+                                        3008
+                                    ],
+                                    "score": 0.986,
+                                    "content": "its generated thoughts to address complex tasks.We have proposed a novel framework,the Boosting of",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 44
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                3002,
+                                2107,
+                                3056
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        3002,
+                                        2107,
+                                        3056
+                                    ],
+                                    "score": 0.993,
+                                    "content": "Thoughts (BoT),to implement such progressive prompt enhancement for efective thought generation",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 45
+                        }
+                    ],
+                    "index": 44,
+                    "bbox_fs": [
+                        440,
+                        2909,
+                        2110,
+                        3056
+                    ]
+                }
+            ]
+        }
+    ],
+    "_backend": "pipeline",
+    "_version_name": "2.1.8"
+}

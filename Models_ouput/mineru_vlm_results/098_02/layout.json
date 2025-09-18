@@ -1,0 +1,272 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        441,
+                        343,
+                        2103,
+                        438
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                343,
+                                2103,
+                                438
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        343,
+                                        2103,
+                                        438
+                                    ],
+                                    "type": "text",
+                                    "content": "in performance on long contexts, as highlighted by Liu et al. (2023). In contrast to these efforts, we approach the long context problem from a novel angle - context compression."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        680,
+                        458,
+                        1869,
+                        1240
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                680,
+                                458,
+                                1869,
+                                1240
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        680,
+                                        458,
+                                        1869,
+                                        1240
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                680,
+                                                458,
+                                                1869,
+                                                1240
+                                            ],
+                                            "type": "image",
+                                            "image_path": "103241509e21c984a98e18d27c02c4ffc1ed0c3a3637b6d2eb3459873b353ffe.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                441,
+                                1263,
+                                2101,
+                                1359
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        1263,
+                                        2101,
+                                        1359
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                441,
+                                                1263,
+                                                2101,
+                                                1359
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 2: Various context lengths (e.g., 2572 chars, 512 words, 128 memory slots) serve the same function when conditioned on by an LLM for responding to the given prompt."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        1395,
+                        2106,
+                        1623
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1395,
+                                2106,
+                                1623
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1395,
+                                        2106,
+                                        1623
+                                    ],
+                                    "type": "text",
+                                    "content": "Context compression is motivated by the fact that a text can be represented in different lengths in an LLM while conveying the same information. As shown in Figure 2, if we use characters to represent the text, it will have a length of 2,572; if we represent it using (sub- )words, we only need a context length of 512 without affecting the response accuracy. So, is there a more compact representation allowing us to achieve the same goal with a shorter context?"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        443,
+                        1643,
+                        2106,
+                        1877
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1643,
+                                2106,
+                                1877
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1643,
+                                        2106,
+                                        1877
+                                    ],
+                                    "type": "text",
+                                    "content": "We explore this problem and propose the ICAE which leverages the power of an LLM to achieve high compression of contexts. The ICAE consists of 2 modules: a learnable encoder adapted from the LLM with LoRA (Hu et al., 2021) for encoding a long context into a small number of memory slots, and a fixed decoder, which is the LLM itself where the memory slots representing the original context are conditioned on to interact with prompts to accomplish various goals, as illustrated in Figure 1."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        441,
+                        1900,
+                        2106,
+                        2270
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                1900,
+                                2106,
+                                2270
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        1900,
+                                        2106,
+                                        2270
+                                    ],
+                                    "type": "text",
+                                    "content": "We first pretrain the ICAE using both autoencoding (AE) and language modeling (LM) objectives so that it can learn to generate memory slots from which the decoder (i.e., the LLM) can recover the original context or perform continuation. The pretraining with massive text data enables the ICAE to be well generalized, allowing the resulting memory slots to represent the original context more accurately and comprehensively. Then, we fine- tune the pretrained ICAE on instruction data for practical scenarios by enhancing its generated memory slots' interaction with various prompts. We show the ICAE (based on Llama) learned with our pretraining and fine- tuning method can effectively produce memory slots with "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1900,
+                                        2106,
+                                        2270
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "4\\times"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1900,
+                                        2106,
+                                        2270
+                                    ],
+                                    "type": "text",
+                                    "content": " context compression. We highlight our contributions as follows:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        438,
+                        2303,
+                        2108,
+                        3052
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                438,
+                                2303,
+                                2108,
+                                3052
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2303,
+                                        2108,
+                                        3052
+                                    ],
+                                    "type": "text",
+                                    "content": "- We propose In-context Autoencoder (ICAE) \n- a novel approach to context compression by leveraging the power of an LLM. The ICAE either enables an LLM to express more information with the same context length or allows it to represent the same content with a shorter context, thereby enhancing the model's ability to handle long contexts with improved latency and memory cost during inference. Its promising results and its scalability may suggest further research efforts in context management for an LLM, which is orthogonal to other long context modeling studies and can be combined with them to further improve the handling of long contexts in an LLM.- In addition to context compression, ICAE provides an access to probe how an LLM performs memorization. We observe that extensive self-supervised learning (e.g., autoencoding) in the pretraining phase is very helpful to enhance the ICAE's capability to encode the original context into compressed memory slots. This pretraining process may share some analogies with humans enhancing their memory capacity through extensive memory training, which improves the brain's memory encoding capabilities (Ericsson et al., 1980; Engle et al., 1999; Maguire et al., 2003). We also show that an LLM's memorization pattern is highly similar to humans (see Table 2 and Table 3). All these results imply a novel perspective on the connection between working memory in cognitive science (Baddeley, 1992) and representation learning in LLMs (i.e., context window)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

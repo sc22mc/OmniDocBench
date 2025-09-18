@@ -1,0 +1,71 @@
+[
+    {
+        "type": "text",
+        "text": "Conjecture C. Let  $p$  be an odd prime. If  $\\ell_0 \\geq 3$ , then there is a generator  $g$  of  $\\mathbb{F}_p^\\times$  such that the diagonal equation",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ng^{2}X^{\\ell_{0}} + gY^{\\ell_{0}} + 1 = 0 \\tag{2}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "is solvable over  $\\mathbb{F}_p$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The formulation in Conjecture  $\\boxed{ \\begin{array}{r l} \\end{array} }$  has the advantage that the number of  $\\mathbb{F}_p$  - rational solutions to Equation  $\\boxed{ \\begin{array}{r l} \\end{array} }$  can be computed in terms of certain character sums which have been well studied in number theory. By establishing valid cases in Conjecture  $\\boxed{ \\begin{array}{r l} \\end{array} }$  we also obtain the cases where Conjecture  $\\boxed{ \\begin{array}{r l} \\end{array} }$  as well as Conjecture  $\\boxed{ \\begin{array}{r l} \\end{array} }$  are true. Therefore, by studying the solvability of Equation  $\\boxed{ \\begin{array}{r l} \\end{array} }$  over  $\\mathbb{F}_p$ , we are able to provide new results to the construction of optimal CACs.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Motivated by Conjecture  $\\boxed{ \\begin{array}{r l} \\end{array} }$  instead of working on the diagonal equations as  $\\boxed{ \\begin{array}{r l} \\end{array} }$  over the prime field  $\\mathbb{F}_p$  and the specific exponent  $\\ell_0$ , we will look at general situations by taking the base field to be a finite extension of  $\\mathbb{F}_p$  and the exponent in the equation is allowed to be more general than  $\\ell_0$ . Let  $q$  be a prime power and  $\\ell$  be a proper divisor of  $q - 1$ . We consider the solvability of the following diagonal equation",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ng^{2}X^{\\ell} + gY^{\\ell} + 1 = 0 \\tag{3}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "over a finite field  $\\mathbb{F}_q$  of  $q$  elements, where  $g$  is a generator of the multiplicative group  $\\mathbb{F}_q^\\times$  of  $\\mathbb{F}_q$ . In view of Conjecture  $\\boxed{ \\begin{array}{r l} \\end{array} }$  we're interested in whether or not there exists a generator  $g$  such that Equation  $\\boxed{ \\begin{array}{r l} \\end{array} }$  has a  $\\mathbb{F}_q$ - rational solution. However, the answer can be false for divisors of  $q - 1$  other than  $\\ell_0$ . For example, in the case where  $(q,\\ell) = (13,6)$ ,  $(23,11)$  there does not exist any generator of  $\\mathbb{F}_q^\\times$  such that  $\\boxed{ \\begin{array}{r l} \\end{array} }$  has a  $\\mathbb{F}_q$ - rational solution. On the other hand, as a consequence of our main result below, Equation  $\\boxed{ \\begin{array}{r l} \\end{array} }$  does have a  $\\mathbb{F}_q$ - rational solution for some generator  $g$  of  $\\mathbb{F}_q^\\times$  provided that  $q \\geq 19$  if  $\\ell = 6$  and  $q \\geq 322$  if  $\\ell = 11$ . Our first main result is to give a lower bound for  $q$  such that Equation  $\\boxed{ \\begin{array}{r l} \\end{array} }$  has a  $\\mathbb{F}_q$ - rational solution for some generator  $g$  of  $\\mathbb{F}_q^\\times$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Theorem A (= Theorem 4.3). Let  $q$  be a prime power and let  $\\ell$  be a proper divisor of  $q - 1$ . If",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nq\\geq (2^{\\omega (\\ell)}(\\ell -3 - \\delta) + 2)^2 -2\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $\\omega (\\ell)$  is the number of distinct prime divisors of  $\\ell$  and",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\delta = \\left\\{ \\begin{array}{ll}1 & if4\\mid \\ell ,\\\\ 0 & otherwise, \\end{array} \\right.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "then there is a generator  $g$  of  $\\mathbb{F}_q^\\times$  such that Equation  $\\boxed{ \\begin{array}{r l} \\end{array} }$  is solvable over  $\\mathbb{F}_q$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Remark 1.2. It follows from the Hasse- Weil bound (see Theorem 1) that the number of  $\\mathbb{F}_q$ - rational solutions to Equation  $\\boxed{ \\begin{array}{r l} \\end{array} }$  is bounded below by  $q + 1 - 2\\mathfrak{g}_{\\ell}\\sqrt{q}$  where  $\\mathfrak{g}_{\\ell} = (\\ell - 1)(\\ell - 2) / 2$  is the genus of the curve defined by  $\\boxed{ \\begin{array}{r l} \\end{array} }$  over  $\\mathbb{F}_q$ . As a result, Equation  $\\boxed{ \\begin{array}{r l} \\end{array} }$  has a  $\\mathbb{F}_q$ - rational solution for any  $g \\in \\mathbb{F}_q^\\times$  provided that  $q > (\\ell - 1)^2 (\\ell - 2)^2$ . It is reasonable to expect that this lower bound can be improved under the weaker condition given in",
+        "page_idx": 0
+    }
+]

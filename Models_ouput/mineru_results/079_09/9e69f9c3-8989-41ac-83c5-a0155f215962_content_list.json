@@ -1,0 +1,118 @@
+[
+    {
+        "type": "text",
+        "text": "Let $\\lambda _ { t } = V _ { 1 } ( t ) / V _ { 0 }$ ,and $\\mu _ { t } = V _ { n - 1 } ( t ) / V _ { n } ( t )$ (which are both well-defined and positive,as long as $t > t _ { 0 }$ ).Then，using Brunn-Minkowski's inequality : ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/7481d2822be560f1cba071ea1d621976a7634cf4718bccf5861f656003966458.jpg",
+        "text": "$$\n( V _ { 1 } - V _ { 0 } ) \\sum _ { r = 0 } ^ { n - 1 } \\lambda _ { t } ^ { r } = { \\frac { V _ { 1 } ^ { n } - V _ { 0 } ^ { n } } { V _ { 0 } ^ { n - 1 } } } \\geq { \\frac { V _ { n } V _ { 0 } ^ { n - 1 } - V _ { 0 } ^ { n } } { V _ { 0 } ^ { n - 1 } } } = V _ { n } - V _ { 0 } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "And symmetrically : ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d439eb532b38c6551efcca801e334f1b78c025afda645fea9c150a00f5d52f8a.jpg",
+        "text": "$$\n( V _ { n - 1 } - V _ { n } ) \\sum _ { r = 0 } ^ { n - 1 } \\mu _ { t } ^ { r } = { \\frac { V _ { n - 1 } ^ { n } - V _ { n } ^ { n } } { V _ { n } ^ { n - 1 } } } \\geq { \\frac { V _ { 0 } V _ { n } ^ { n - 1 } - V _ { n } ^ { n } } { V _ { n } ^ { n - 1 } } } = V _ { 0 } - V _ { n } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Therefore (combining the above two) ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/8d16145ca458dfa973ce371836389d713aa75a8c2ceaee6a2432c1c8fd2aade5.jpg",
+        "text": "$$\nV _ { 1 } - V _ { 0 } \\geq \\alpha _ { t } ( V _ { n } - V _ { n - 1 } ) \\quad { \\mathrm { w h e r e ~ } } \\alpha _ { t } = { \\frac { \\sum _ { r = 0 } ^ { n - 1 } \\mu _ { t } ^ { r } } { \\sum _ { r = 0 } ^ { n - 1 } \\lambda _ { t } ^ { r } } } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Since $W _ { t } \\to K$ as $t \\to 0$ (for the Hausdorff distance),continuity of $V _ { n } ( . )$ implies that $V _ { k } ( t )  V _ { 0 }$ (for all $k \\leq n$ )，while (weak) continuity of ( $L \\mapsto S _ { L }$ ） implies that $S _ { W _ { t } }  S _ { K }$ (for the weak topology on Radon measures on the sphere). Therefore $\\alpha _ { t }  1$ ,while ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/43ba1f5dcdc0d8cdad62896b27a11b61260c8ffa8258abbe755e3f45c8167e68.jpg",
+        "text": "$$\n\\begin{array} { c } { \\displaystyle \\frac { V _ { n } - V _ { n - 1 } } { t } = \\frac { 1 } { n } \\int _ { \\Omega } \\frac { ( h _ { W _ { t } } - h _ { K } ) ( u ) } { t } d S _ { W _ { t } } ( u ) } \\\\ { \\displaystyle \\qquad = \\frac { 1 } { n } \\int _ { \\Omega } f ( u ) d S _ { W _ { t } } ( u ) \\to \\frac { 1 } { n } \\int _ { \\Omega } f ( u ) d S _ { K } ( u ) } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where we used that $h _ { W _ { t } } ( u ) = h _ { K } ( u ) + t f ( u )$ for $S _ { W _ { t } }$ -a.e. $u \\in \\Omega$ .Hence, ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/8269712e2132854525684c95e77dbbad8addd245273a5252a3c910424a942f1d.jpg",
+        "text": "$$\n\\operatorname* { l i m i n f } _ { t \\to 0 ^ { + } } \\frac { V _ { 1 } - V _ { 0 } } { t } \\geq \\left( \\operatorname* { l i m } _ { t \\to 0 ^ { + } } \\alpha _ { t } \\right) \\left( \\operatorname* { l i m } _ { t \\to 0 ^ { + } } \\frac { V _ { n } - V _ { n - 1 } } { t } \\right) = \\frac { 1 } { n } \\int _ { \\Omega } f ( u ) d S _ { K } ( u ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Similarly, for all $\\begin{array} { r } { t _ { 0 } < t < 0 : \\frac { V _ { 1 } - V _ { 0 } } { t } \\geq \\frac { 1 } { n } \\int _ { \\Omega } f ( u ) d S _ { K } ( u ) } \\end{array}$ , while combining BM1 and BM2 yields ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d735a8652c9abc707479a1dd7c0915b07994a2ed4e36d932e48ccf5f96e153d9.jpg",
+        "text": "$$\n\\operatorname* { l i m } _ { t \\to 0 ^ { + } } \\operatorname* { s u p } _ { t } \\frac { V _ { 1 } - V _ { 0 } } { t } \\leq \\left( \\operatorname* { l i m } _ { t \\to 0 ^ { - } } \\alpha _ { t } \\right) \\left( \\operatorname* { l i m } _ { t \\to 0 ^ { - } } \\frac { V _ { n } - V _ { n - 1 } } { t } \\right) = \\frac { 1 } { n } \\int _ { \\Omega } f ( u ) d S _ { K } ( u ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We recallthe statement of the (almost-sure) pointwise convergence Lemma 2 (which we used in the proof of Proposition $1$ ),and provide a simple proof here. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 4. Let $( W _ { t } ) _ { t }$ be Wulff-shape perturbations of a given conver body $K$ ， with respect to $( \\Omega , f )$ Then for $S _ { K }$ -almost every $u \\in \\mathbb { S } ^ { n - 1 }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/0ee5409a49df6f9b49cf14c8261285a1a375b2a55d849d768e35a29cbc5d2d3f.jpg",
+        "text": "$$\n\\frac { \\mathrm { d } h _ { W _ { t } } ( u ) } { \\mathrm { d } t } \\bigg | _ { t = 0 } = \\operatorname* { l i m } _ { t  0 } \\frac { h _ { W _ { t } } ( u ) - h _ { K } ( u ) } { t } = f ( u ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. First, recall that， for all $u \\in \\mathbb { S } ^ { n - 1 }$ ，the map ( $t \\mapsto h _ { W _ { t } } ( u ) ,$ ）is concave on $] t _ { 0 } , + \\infty [$ ，where $t _ { 0 } = t _ { 0 } ( K , \\Omega , f ) = \\operatorname* { i n f } \\{ t \\in \\mathbb { R } : | W _ { t } | _ { n } > 0 \\}$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Indeed, Let $t _ { 0 } < t _ { 1 } < t _ { 2 }$ ，and let $\\lambda \\in ( 0 , 1 )$ Let $x \\in ( 1 - \\lambda ) W _ { t _ { 1 } } + \\lambda W _ { t _ { 2 } }$ ，and let $u \\in \\Omega$ Let $x _ { i } \\in W _ { t _ { i } }$ ， $i = 1 , 2$ ，such that $x = ( 1 - \\lambda ) x _ { 1 } + \\lambda x _ { 2 }$ .Denote $t _ { \\lambda } : = ( 1 - \\lambda ) t _ { 1 } + \\lambda t _ { 2 }$ .Then ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4a4001587adca75855fb99ed465a8d15fd970026046b7f619082693d15559d2b.jpg",
+        "text": "$$\n\\langle x , u \\rangle = ( 1 - \\lambda ) \\langle x _ { 1 } , u \\rangle + \\lambda \\langle x _ { 2 } , u \\rangle \\leq ( 1 - \\lambda ) h _ { W _ { t _ { 1 } } } ( u ) + \\lambda h _ { W _ { t _ { 2 } } } ( u ) \\leq h _ { K } ( u ) + t _ { \\lambda } f ( u ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "As this holds for any $u \\in \\Omega$ , one concludes that $( 1 - \\lambda ) W _ { t _ { 1 } } + \\lambda W _ { t _ { 2 } } \\subset W _ { t _ { \\lambda } }$ ,from which concavity (on the domain $] t _ { 0 } , + \\infty [ )$ of $\\mathbf { \\Omega } ^ { \\prime } t \\mapsto h _ { W _ { t } } ( u )$ ）,for any fixed $u \\in \\mathbb { S } ^ { n - 1 }$ ,readily follows. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In particular, for any $u \\in \\mathbb { S } ^ { n - 1 }$ ,the map $( t \\mapsto h _ { W _ { t } } ( u ) )$ is concave on a neighborhood of $t = 0$ ， implying that $\\begin{array} { r } { \\operatorname* { l i m } _ { t  0 ^ { + } } \\frac { ( h _ { W _ { t } } - h _ { K } ) ( u ) } { t } } \\end{array}$ (w-hk)(）and limt-0- $\\begin{array} { r } { \\operatorname* { l i m } _ { t  0 ^ { - } } \\frac { ( h _ { W _ { t } } - h _ { K } ) ( u ) } { t } } \\end{array}$ (hwt-k)(u),exist for any u ∈ Sn-1. We now explain how to deduce that right and left derivative (at $t = 0$ ）coincide,for $S _ { K }$ -a.e. $u \\in \\mathbb { S } ^ { n - 1 }$ ,from lemma 1. ",
+        "page_idx": 0
+    }
+]

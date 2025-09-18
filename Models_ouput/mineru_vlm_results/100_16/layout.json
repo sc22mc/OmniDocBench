@@ -1,0 +1,687 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        441,
+                        356,
+                        1479,
+                        405
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                356,
+                                1479,
+                                405
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        356,
+                                        1479,
+                                        405
+                                    ],
+                                    "type": "text",
+                                    "content": "Algorithm 2: Best-First Aggregation and Greedy aggregation"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        438,
+                        419,
+                        1930,
+                        518
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                438,
+                                419,
+                                1930,
+                                518
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        419,
+                                        1930,
+                                        518
+                                    ],
+                                    "type": "text",
+                                    "content": "Input: "
+                                },
+                                {
+                                    "bbox": [
+                                        438,
+                                        419,
+                                        1930,
+                                        518
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "M"
+                                },
+                                {
+                                    "bbox": [
+                                        438,
+                                        419,
+                                        1930,
+                                        518
+                                    ],
+                                    "type": "text",
+                                    "content": " reasoning chains where the reasoning steps of "
+                                },
+                                {
+                                    "bbox": [
+                                        438,
+                                        419,
+                                        1930,
+                                        518
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m"
+                                },
+                                {
+                                    "bbox": [
+                                        438,
+                                        419,
+                                        1930,
+                                        518
+                                    ],
+                                    "type": "text",
+                                    "content": " - th chain are denoted as "
+                                },
+                                {
+                                    "bbox": [
+                                        438,
+                                        419,
+                                        1930,
+                                        518
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z_{i = 1}^{n^{m}}"
+                                },
+                                {
+                                    "bbox": [
+                                        438,
+                                        419,
+                                        1930,
+                                        518
+                                    ],
+                                    "type": "text",
+                                    "content": " Output: Aggregated chain "
+                                },
+                                {
+                                    "bbox": [
+                                        438,
+                                        419,
+                                        1930,
+                                        518
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1\\dots n}"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        408,
+                        534,
+                        1744,
+                        1419
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                408,
+                                534,
+                                1744,
+                                1419
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": "1 - Best- First Aggregation 2 for each chain "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m = 1,2,\\dots,M"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " do 3 Compute the sum of edge weights for "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " th chain as "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\begin{array}{r}V^{m} = \\sum_{i = m}^{n^{m}}V_{i - 1,i}. \\end{array}"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " 4 end 5 Get the best chain among "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "M"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " chains by performing "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m^{*} = a r g m a x_{m}\\{V^{m}\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " 6 Assign the aggregated chain as the best chain, "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1\\dots n}\\coloneqq \\left\\{z_{i = 1}^{n^{m}}\\right\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " 7 - Greedy Aggregation 8 "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1}\\coloneqq z_{1}^{m}"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " where "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m^{*} = a r g m a x_{m}\\{V_{1}^{m}\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " 9 for each aggregation step "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i = 2,\\dots,n"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " do 10 for each chain "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m = 1,2,\\dots,M"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " do 11 Collect "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "J^{m} = \\{j,sim(\\overline{z}_{i - 1},z_{j}^{m}) > 0.7;j\\in n^{m}\\} ."
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " 12 Get "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "j^{*,m} = argmax_{j\\in J^{m}}\\left\\{V_{j,j + 1}^{m}\\right\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " 13 end 14 Get the best next reasoning step by performing: "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_i = z_{j + 1}^m"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " where "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "j* = argmax_{j\\in \\{j^{*,m}\\}_{m = 1}^{M}}\\left\\{V_{j,j + 1}^{m}\\right\\} ."
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": " 15 end 16 Obtain the aggregated chain "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        534,
+                                        1744,
+                                        1419
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1\\dots n}"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        443,
+                        1518,
+                        1379,
+                        1574
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1518,
+                                1379,
+                                1574
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1518,
+                                        1379,
+                                        1574
+                                    ],
+                                    "type": "text",
+                                    "content": "D THOUGHT STRUCTURES AGGREGATION"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        1626,
+                        2106,
+                        1811
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1626,
+                                2106,
+                                1811
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1626,
+                                        2106,
+                                        1811
+                                    ],
+                                    "type": "text",
+                                    "content": "After completing the reasoning in Heterogeneous Tree Structures, the aggregation process of BoT first extracts the best reasoning chain from each tree and then combines them using either the Best- First or Greedy aggregation method into a single reasoning chain. More details of these two aggregation methods can be accessed in the source code examples/BoostingOfThought/BoT Aggregation."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        441,
+                        1834,
+                        2108,
+                        2385
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                1834,
+                                2108,
+                                2385
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        1834,
+                                        2108,
+                                        2385
+                                    ],
+                                    "type": "text",
+                                    "content": "As shown in the first block of the algorithm 16 the Best- first aggregation is a straightforward approach for aggregation as it directly extracts the chain with the highest sum of edge weights. This method is fast and stable. It typically guarantees competitive performance as the subsequent experience is able to be generated by analyzing the best chain among obtained reasoning chains. However, it can only select existing chains without making effective adjustments. Greedy aggregation is more advanced as it combines reasoning steps from different chains to produce a new, better reasoning chain with the highest edge weights. The greedy aggregation procedure in algorithm 16 contains two steps. It first collects reasoning steps that are similar to the aggregated reasoning step "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1834,
+                                        2108,
+                                        2385
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{i - 1}"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1834,
+                                        2108,
+                                        2385
+                                    ],
+                                    "type": "text",
+                                    "content": " . Thus, the next aggregated reasoning step is selected from the next reasoning steps of this collected set by maximizing the edge weights. And, sim is the similarity function that uses LLMs to assess the percentage of identical words and mathematical numbers shared between two paragraphs. 0.7 is an empirical threshold obtained from experiments."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        443,
+                        2461,
+                        1282,
+                        2511
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2461,
+                                1282,
+                                2511
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2461,
+                                        1282,
+                                        2511
+                                    ],
+                                    "type": "text",
+                                    "content": "E INFLUENCE OF THE BAD FEEDBACK"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        441,
+                        2567,
+                        2106,
+                        2795
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                2567,
+                                2106,
+                                2795
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        2567,
+                                        2106,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": "The feedback obtained by evaluating the aggregated reasoning chain with LLMs may include analysis of limited usefulness and completely incorrect conclusions and error reports. This issue typically arises due to the nature of LLMs, which are language models and do not inherently verify the accuracy of the generated text. Additionally, the capabilities of LLMs, such as gpt- 3.5- turbo, are constrained when used as validators for mathematical problems."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        441,
+                        2818,
+                        2103,
+                        3052
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                2818,
+                                2103,
+                                3052
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        2818,
+                                        2103,
+                                        3052
+                                    ],
+                                    "type": "text",
+                                    "content": "A direct example is presented in Table 7 The analysis report concludes that \\*The final result obtained in Step 3 is 80, which is mathematically equal to 24. \" Even worse, the experience further contains that \"the reasoning chain is correct' and \"No errors were found in the reasoning steps.\" Using the prompt with this experience as the input in the first iteration, BoT is misled to generate wrong reasoning steps, and the corresponding aggregated chain can be seen at the beginning of Table 8 It is evident"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

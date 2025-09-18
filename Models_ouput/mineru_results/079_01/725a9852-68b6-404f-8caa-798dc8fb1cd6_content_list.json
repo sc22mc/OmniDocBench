@@ -1,0 +1,89 @@
+[
+    {
+        "type": "text",
+        "text": "ANEWEXCLUDING CONDITION TOWARDSTHE SOPRUNOV-ZVAVITCH CONJECTURE ONBEZOUT-TYPEINEQUALITIES ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "MAUDSZUSTERMAN ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ABSTRACT.In 2015,I. Soprunov and A. Zvavitch have shown how to use the Bernstein-KhovanskiiKushnirenko theorem to derive non-negativity of a certain bilinear form $F _ { \\Delta }$ ，defined on (pairs of) convex bodies. Together with C. Saroglou, they proved non-negativity of $F _ { K }$ characterizes simplices, amongall polytopes.It is conjectured the characterization further holds among all convex bodies. Towards this conjecture,several necessary conditions on $K$ (for non-negativity of $F _ { K }$ )，werederived. We give a new necessary condition, expressed with isoperimetric ratios, which provides a further step towards a (conjectural) characterization of simplices among a certain subclass of convex bodies. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. INTRODUCTION ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The isoperimetric ratio of a convex body $K \\subset \\mathbb { R } ^ { n }$ , is usually defined as 1,or asa power of this ratio. Here $| K | _ { n }$ denotes the Lebesgue measure of $K$ (its volume),and $| \\partial K | _ { n - 1 }$ its surface area (the $( n - 1 )$ -Hausdorff measure of its topological boundary). A classcal result in convex geometry, the isoperimetric inequality,states that Euclidean balls minimize this ratio,and are the only minimizers. On the other side,the isoperimetric ratio can bearbitrarily large.However,note this ratio is not affine invariant.Following K.Ball(see [Ba,Theorem 2]),consider instead the affine invariant quantity: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/e2e6eb13fa070824b05d3168e4e93f7bf0042cac31cdf1384d8af631342cef3f.jpg",
+        "text": "$$\nI s o ( K ) = \\operatorname* { m i n } _ { T \\in O ( n ) } \\frac { | \\partial ( T K ) | _ { n - 1 } ^ { n } } { | T K | _ { n } ^ { n - 1 } } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where the minimum runs over the orthogonal group $O ( n )$ .Then $I s o ( K )$ isupper bounded. In fact, denoting by $\\Delta _ { n }$ an $_ { n }$ -simplex,Ball has proved : ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/45a3fc4df0885ccf86daf16ad0d87d79a48de965edc1c93ae360cd83a8902211.jpg",
+        "text": "$$\nI s o ( K ) \\leq I s o ( \\Delta _ { n } ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "yielding a reverse isoperimetric inequality. Additionally, it was proved in [Ba] that $n$ -simplices are tht only maximizers of $I s o ( K )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Denote $V _ { n } ( L _ { 1 } , . . . , L _ { n } )$ the mixed volume of $n$ convex bodies,and denote $V _ { n } ( K ) = V ( K [ n ] )$ the volume of $K$ Since $| \\partial K | _ { n - 1 } = n V _ { n } ( K [ n - 1 ] , B _ { 2 } ^ { n } )$ ，where $B _ { 2 } ^ { n }$ denotes the (unit） $l _ { 2 }$ -ball in $\\mathbb { R } ^ { n }$ ，Ball's result can be reformulated within the language of mixed volumes as folows :for any convex body $K \\subset \\mathbb { R } ^ { n }$ ,there existsan ellipsoid $\\xi$ ，such that ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/0d4383ebe365b237c754d8bc96a8627ccc05209c8f81b97c38e3c43cc1b01355.jpg",
+        "text": "$$\n\\begin{array} { r } { V _ { n } ( K [ n - 1 ] , \\mathcal { E } ) ^ { n } V _ { n } ( \\Delta _ { n } ) ^ { n - 1 } \\leq V _ { n } ( \\Delta _ { n } [ n - 1 ] , \\mathcal { E } ) ^ { n - 1 } V _ { n } ( K ) ^ { n - 1 } . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Another interesting inequality of mixed volumes involving $\\Delta _ { n }$ was derived by I. Soprunov and A. Zvavitch (see [SZ16]), using the Bernstein-Kushnirenko-Khovanskii theorem (see [Ber75],[Kho78], [Kul),and an inequality from real algebraic geometry called Bezout inequality: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/0c312ac3f6d5b770504f9189e90b37b7481663c0c7621b30dae4933cb0e9f13d.jpg",
+        "text": "$$\n\\begin{array} { r } { \\mathcal { H } L _ { 1 } , L _ { 2 } \\in K ^ { n } : \\quad V _ { n } ( L _ { 1 } , L _ { 2 } , \\Delta _ { n } [ n - 2 ] ) V _ { n } ( \\Delta _ { n } ) \\leq V _ { n } ( L _ { 1 } , \\Delta _ { n } [ n - 1 ] ) V _ { n } ( L _ { 2 } , \\Delta _ { n } [ n - 1 ] ) . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This set of inequalities (called Bezout inequalities in [SZ16]) can be thought of as non-negativity of the bilinear form $F _ { \\Delta }$ ,defined as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/9cbbb8f6cb339de5e9df4be605642542ba1f968e63f34318db2999d7f45aa3d7.jpg",
+        "text": "$$\nF _ { \\Delta } ( A , B ) = V _ { n } ( A , \\Delta _ { n } [ n - 1 ] ) V _ { n } ( B , \\Delta _ { n } [ n - 1 ] ) - V _ { n } ( A , B , \\Delta _ { n } [ n - 2 ] ) V _ { n } ( \\Delta _ { n } ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

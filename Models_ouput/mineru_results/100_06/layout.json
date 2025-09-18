@@ -1,0 +1,3385 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        341,
+                        2108,
+                        672
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                339,
+                                2111,
+                                398
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        339,
+                                        1384,
+                                        398
+                                    ],
+                                    "score": 0.997,
+                                    "content": "Iterative Refinement. Through boosting mechanism,",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1385,
+                                        342,
+                                        1501,
+                                        386
+                                    ],
+                                    "score": 0.89,
+                                    "content": "\\mathbf { F } ^ { 1 , \\hdots , t }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1503,
+                                        339,
+                                        2111,
+                                        398
+                                    ],
+                                    "score": 0.992,
+                                    "content": "isemployed to iteratively enhance",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                377,
+                                2112,
+                                449
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        377,
+                                        853,
+                                        449
+                                    ],
+                                    "score": 0.961,
+                                    "content": "the prompt,resulting in",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        855,
+                                        388,
+                                        1341,
+                                        444
+                                    ],
+                                    "score": 0.9,
+                                    "content": "\\mathbb { I } ^ { t + 1 } \\left( \\mathbf { \\bar { \\mathcal { S } } } , X , Q , \\mathbf { F } ^ { \\tilde { 1 } , \\ldots , t } , \\{ G _ { i } \\} \\right)",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1343,
+                                        377,
+                                        1475,
+                                        449
+                                    ],
+                                    "score": 0.885,
+                                    "content": "for the",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1477,
+                                        391,
+                                        1598,
+                                        440
+                                    ],
+                                    "score": 0.92,
+                                    "content": "( t + 1 )",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1599,
+                                        377,
+                                        2112,
+                                        449
+                                    ],
+                                    "score": 0.982,
+                                    "content": "-th iteration. As the iterations",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        },
+                        {
+                            "bbox": [
+                                435,
+                                435,
+                                2112,
+                                498
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        435,
+                                        607,
+                                        498
+                                    ],
+                                    "score": 0.971,
+                                    "content": "progress,",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        608,
+                                        440,
+                                        723,
+                                        485
+                                    ],
+                                    "score": 0.86,
+                                    "content": "\\mathbf { F } ^ { 1 , \\hdots , t }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        724,
+                                        435,
+                                        2112,
+                                        498
+                                    ],
+                                    "score": 0.989,
+                                    "content": "may encompass many typical, unreasonable thought chains alongside those closer",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                488,
+                                2107,
+                                542
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        488,
+                                        2107,
+                                        542
+                                    ],
+                                    "score": 0.984,
+                                    "content": "to a solution,all with well-defined analysis outcomes. Therefore, even when starting with a simple",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                536,
+                                2110,
+                                587
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        536,
+                                        2110,
+                                        587
+                                    ],
+                                    "score": 0.995,
+                                    "content": "prompt,BoT iteratively refines this prompt to produce the correct reasoning steps leading to the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                574,
+                                2110,
+                                635
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        574,
+                                        840,
+                                        635
+                                    ],
+                                    "score": 0.991,
+                                    "content": "accurate solution. After",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        841,
+                                        582,
+                                        877,
+                                        621
+                                    ],
+                                    "score": 0.83,
+                                    "content": "T",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        879,
+                                        574,
+                                        1280,
+                                        635
+                                    ],
+                                    "score": 0.996,
+                                    "content": "iterations,we utilize the",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1281,
+                                        578,
+                                        1359,
+                                        621
+                                    ],
+                                    "score": 0.9,
+                                    "content": "\\mathbb { I } ^ { t + 1 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1361,
+                                        574,
+                                        2110,
+                                        635
+                                    ],
+                                    "score": 0.978,
+                                    "content": "as input prompt for the LLM to gain the final",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                630,
+                                583,
+                                675
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        630,
+                                        583,
+                                        675
+                                    ],
+                                    "score": 1.0,
+                                    "content": "answer.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        746,
+                        837,
+                        800
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                438,
+                                743,
+                                840,
+                                805
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        743,
+                                        840,
+                                        805
+                                    ],
+                                    "score": 0.998,
+                                    "content": "4EXPERIMENTS",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        853,
+                        2108,
+                        1131
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                852,
+                                2112,
+                                903
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        852,
+                                        2112,
+                                        903
+                                    ],
+                                    "score": 0.993,
+                                    "content": "Datasets. Experiments are performed on benchmark datasets with diverse mathematical problems,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                895,
+                                2093,
+                                952
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        895,
+                                        2093,
+                                        952
+                                    ],
+                                    "score": 0.974,
+                                    "content": "including MMLU Hendrycks et al.(2021a), SVAMP Patel et al.(2021), GSM8KCobbe et al.(2021)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                938,
+                                2111,
+                                1004
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        938,
+                                        2111,
+                                        1004
+                                    ],
+                                    "score": 0.954,
+                                    "content": " AQuA Ling et al. (2017) and MATH Hendrycks et alJ(2021b). Besides, we include a challenging",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                991,
+                                2108,
+                                1042
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        991,
+                                        2108,
+                                        1042
+                                    ],
+                                    "score": 0.973,
+                                    "content": "mathematical reasoning task, Game of 24Yao et al.(2024), where the goal is to use four numbers",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1035,
+                                2112,
+                                1086
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1035,
+                                        2112,
+                                        1086
+                                    ],
+                                    "score": 0.984,
+                                    "content": "and basic arithmetic operations (addition,subtraction, multiplication,and division) to obtain 24 in 1",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1081,
+                                1424,
+                                1136
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1081,
+                                        1424,
+                                        1136
+                                    ],
+                                    "score": 0.991,
+                                    "content": "equation. Thus,the solution includes 3 intermediate steps.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        }
+                    ],
+                    "index": 10.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        443,
+                        1153,
+                        2107,
+                        1436
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                1152,
+                                2108,
+                                1203
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1152,
+                                        2108,
+                                        1203
+                                    ],
+                                    "score": 0.986,
+                                    "content": "Competitors. Apart from the benchmark approach, standard Input-output (IO), the comparison",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1196,
+                                2112,
+                                1254
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1196,
+                                        1402,
+                                        1251
+                                    ],
+                                    "score": 0.986,
+                                    "content": "approaches include Chain-of-thought (CoT)Wei et al.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1403,
+                                        1197,
+                                        1519,
+                                        1254
+                                    ],
+                                    "score": 0.32,
+                                    "content": "\\textcircled { 2 0 2 2 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1530,
+                                        1200,
+                                        1898,
+                                        1247
+                                    ],
+                                    "score": 0.997,
+                                    "content": "CoT-SCWang et al.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1915,
+                                        1197,
+                                        2019,
+                                        1247
+                                    ],
+                                    "score": 0.999,
+                                    "content": "2022",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        2027,
+                                        1196,
+                                        2112,
+                                        1247
+                                    ],
+                                    "score": 1.0,
+                                    "content": "and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 15
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1240,
+                                2114,
+                                1303
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1240,
+                                        616,
+                                        1303
+                                    ],
+                                    "score": 0.998,
+                                    "content": "Complex",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        617,
+                                        1242,
+                                        970,
+                                        1299
+                                    ],
+                                    "score": 0.57,
+                                    "content": "\\mathrm { C o T } [ \\mathrm { F u \\ e t \\ a l . } ] ( 2 0 2 2 )",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        971,
+                                        1240,
+                                        2114,
+                                        1303
+                                    ],
+                                    "score": 0.985,
+                                    "content": ", in which the input prompt contains a few-shot examples (8) with",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 16
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1286,
+                                2112,
+                                1343
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1286,
+                                        2112,
+                                        1343
+                                    ],
+                                    "score": 0.989,
+                                    "content": "human annotations. Also, BoT is also compared with related works, such as Tree of thoughts (ToT)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        },
+                        {
+                            "bbox": [
+                                435,
+                                1332,
+                                2112,
+                                1390
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        1332,
+                                        2112,
+                                        1390
+                                    ],
+                                    "score": 0.975,
+                                    "content": "Yao et al.(2024 with the breadth limit 5, Progressive-Hint Prompting (PHP) Zheng et al.(2023),and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1376,
+                                1180,
+                                1436
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1376,
+                                        1180,
+                                        1436
+                                    ],
+                                    "score": 0.954,
+                                    "content": "the state-of-the-art CSVZhou et al. (2023a)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        }
+                    ],
+                    "index": 16.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        1452,
+                        2110,
+                        1686
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1450,
+                                2111,
+                                1506
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1450,
+                                        2111,
+                                        1506
+                                    ],
+                                    "score": 0.993,
+                                    "content": "Large Language Models. We conduct experiments on the two most recent models: GPT-4OpenAl",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                1494,
+                                2114,
+                                1553
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1496,
+                                        562,
+                                        1549
+                                    ],
+                                    "score": 0.55,
+                                    "content": "\\boxed { 2 0 2 3 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        563,
+                                        1499,
+                                        1037,
+                                        1548
+                                    ],
+                                    "score": 0.971,
+                                    "content": " and Llama2 Touvron et al.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1038,
+                                        1494,
+                                        2114,
+                                        1553
+                                    ],
+                                    "score": 0.976,
+                                    "content": "(2023). GPT-4 is accessed via OpenAI APIs,while the llama-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1545,
+                                2107,
+                                1593
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1545,
+                                        2107,
+                                        1593
+                                    ],
+                                    "score": 0.991,
+                                    "content": "2-13b-chat model is downloaded from MetaAI to perform experiments locally.To construct the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1591,
+                                2110,
+                                1639
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1591,
+                                        2110,
+                                        1639
+                                    ],
+                                    "score": 0.993,
+                                    "content": "heterogeneous tree thought structures,BoT randomly chooses the temperature from the range of",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1635,
+                                1875,
+                                1689
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1635,
+                                        1875,
+                                        1689
+                                    ],
+                                    "score": 0.969,
+                                    "content": "[0.2,0.4,0.6,0.7,0.9,1.1,1.5]and the top-p from the range of [0.1,0.3,0.5,0.7,0.9].",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        }
+                    ],
+                    "index": 22
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        1704,
+                        2108,
+                        1983
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1705,
+                                2110,
+                                1756
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1705,
+                                        1553,
+                                        1756
+                                    ],
+                                    "score": 0.989,
+                                    "content": "Settings.If not explicitly stated,BoT,inall experiments,performs",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1554,
+                                        1708,
+                                        1687,
+                                        1749
+                                    ],
+                                    "score": 0.9,
+                                    "content": "T = 1 0",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1688,
+                                        1705,
+                                        2110,
+                                        1756
+                                    ],
+                                    "score": 0.958,
+                                    "content": "iterations of running and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1747,
+                                2110,
+                                1803
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1747,
+                                        558,
+                                        1803
+                                    ],
+                                    "score": 1.0,
+                                    "content": "builds",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        559,
+                                        1753,
+                                        706,
+                                        1795
+                                    ],
+                                    "score": 0.89,
+                                    "content": "M = 1 5",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        707,
+                                        1747,
+                                        2110,
+                                        1803
+                                    ],
+                                    "score": 0.987,
+                                    "content": "thought structures,each being a weighted binary tree because this tends to achieve",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1798,
+                                2107,
+                                1847
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1798,
+                                        2107,
+                                        1847
+                                    ],
+                                    "score": 0.981,
+                                    "content": "optimal results.Besides,for those benchmark datasets,we set the depth of the tree to be 5 while the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1842,
+                                2107,
+                                1893
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1842,
+                                        2107,
+                                        1893
+                                    ],
+                                    "score": 0.982,
+                                    "content": "corresponding depth in Game of 24 is 3. BoT+CoT means our simple prompt includes 5 examples",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        },
+                        {
+                            "bbox": [
+                                447,
+                                1885,
+                                2112,
+                                1941
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        447,
+                                        1888,
+                                        538,
+                                        1940
+                                    ],
+                                    "score": 1.0,
+                                    "content": "from",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        540,
+                                        1885,
+                                        921,
+                                        1941
+                                    ],
+                                    "score": 0.47,
+                                    "content": "\\mathsf { \\tilde { C } o T } [ \\overrightarrow { \\mathrm { W e i \\ e t \\ a l . } } ] ( \\overrightarrow { 2 0 2 2 } )",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        922,
+                                        1888,
+                                        2112,
+                                        1940
+                                    ],
+                                    "score": 0.955,
+                                    "content": ".In the ablation study,when no experienceis accumulated in BoT, 8",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1937,
+                                1268,
+                                1989
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1937,
+                                        1268,
+                                        1989
+                                    ],
+                                    "score": 0.984,
+                                    "content": "examples of CoT will be provided in the prompt.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        }
+                    ],
+                    "index": 27.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        2003,
+                        2108,
+                        2326
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                2001,
+                                2111,
+                                2056
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2001,
+                                        1251,
+                                        2056
+                                    ],
+                                    "score": 0.988,
+                                    "content": "Metrics. All experiments report the Solve Rate",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1252,
+                                        2007,
+                                        1316,
+                                        2050
+                                    ],
+                                    "score": 0.7,
+                                    "content": "( \\% )",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1317,
+                                        2001,
+                                        2111,
+                                        2056
+                                    ],
+                                    "score": 0.992,
+                                    "content": "of the task as the evaluation results.To extract",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        },
+                        {
+                            "bbox": [
+                                433,
+                                2040,
+                                2115,
+                                2119
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        433,
+                                        2040,
+                                        980,
+                                        2119
+                                    ],
+                                    "score": 0.982,
+                                    "content": "target answers fromtheoutput",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        982,
+                                        2047,
+                                        1077,
+                                        2102
+                                    ],
+                                    "score": 0.92,
+                                    "content": "\\overline { { z } } _ { 1 \\dots n } ^ { T }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1078,
+                                        2040,
+                                        2115,
+                                        2119
+                                    ],
+                                    "score": 0.961,
+                                    "content": "of BoT, we specificallyset the formatted description of the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2094,
+                                2110,
+                                2145
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2094,
+                                        2110,
+                                        2145
+                                    ],
+                                    "score": 0.974,
+                                    "content": "answer forLLMs.For commonly used datasets,the desired answer format is“The answer is:”For",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 33
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2141,
+                                2107,
+                                2191
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2141,
+                                        2107,
+                                        2191
+                                    ],
+                                    "score": 0.975,
+                                    "content": "the Game of 24, we utilize“Step idx,Current set:,Selected two numbers:, Operation:,Computed",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 34
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2183,
+                                2110,
+                                2240
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2183,
+                                        2110,
+                                        2240
+                                    ],
+                                    "score": 0.977,
+                                    "content": "new number:,Remaining numbers:,New set: \". Thus, we directly compare the ground truth with",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 35
+                        },
+                        {
+                            "bbox": [
+                                446,
+                                2226,
+                                2107,
+                                2291
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        2226,
+                                        2107,
+                                        2291
+                                    ],
+                                    "score": 0.994,
+                                    "content": "the number presented in the new set. Following ToTYao et al.(2024), we report the Solving Rate",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 36
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2279,
+                                1066,
+                                2329
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2279,
+                                        1066,
+                                        2329
+                                    ],
+                                    "score": 0.949,
+                                    "content": "across 1OO hard games as the metric.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 37
+                        }
+                    ],
+                    "index": 34
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        447,
+                        2342,
+                        827,
+                        2388
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                2338,
+                                831,
+                                2395
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2338,
+                                        831,
+                                        2395
+                                    ],
+                                    "score": 0.985,
+                                    "content": "4.1MAIN RESULTS",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 38
+                        }
+                    ],
+                    "index": 38
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        2427,
+                        2108,
+                        2707
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                438,
+                                2427,
+                                2107,
+                                2490
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2427,
+                                        2107,
+                                        2490
+                                    ],
+                                    "score": 0.979,
+                                    "content": "The primary experimental results are summarized in Table.and Fig.3 where we present insights",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 39
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2471,
+                                2110,
+                                2531
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2471,
+                                        2110,
+                                        2531
+                                    ],
+                                    "score": 0.981,
+                                    "content": "into the overall performance of BoT. Our findings indicate that the proposed BoT with Boosting",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 40
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2521,
+                                2110,
+                                2572
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2521,
+                                        2110,
+                                        2572
+                                    ],
+                                    "score": 0.985,
+                                    "content": "mechanism 1). obtains competitive problem-solving rates in most datasets without human annotations;",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 41
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2567,
+                                2110,
+                                2619
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2567,
+                                        2110,
+                                        2619
+                                    ],
+                                    "score": 0.987,
+                                    "content": "2). is capable of reaching a new state-of-the-art on GSM8K and AQuA when provided with CoT",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 42
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2607,
+                                2115,
+                                2670
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2607,
+                                        2115,
+                                        2670
+                                    ],
+                                    "score": 0.974,
+                                    "content": "examples. However, experimental results also demonstrate that BoT heavily relies on experience,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2659,
+                                1106,
+                                2710
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2659,
+                                        1106,
+                                        2710
+                                    ],
+                                    "score": 0.966,
+                                    "content": "thus is sensitive to the ability of LLMs.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 44
+                        }
+                    ],
+                    "index": 41.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        444,
+                        2727,
+                        2107,
+                        3053
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                2722,
+                                2114,
+                                2789
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        2722,
+                                        2114,
+                                        2789
+                                    ],
+                                    "score": 0.97,
+                                    "content": "Specificaly,in Table.1 BoT, starting from a simple initial prompt and performing basic chatting,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 45
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2775,
+                                2106,
+                                2823
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2775,
+                                        1107,
+                                        2823
+                                    ],
+                                    "score": 0.966,
+                                    "content": "eventually obtains a GSM8K solve rate",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1108,
+                                        2775,
+                                        1202,
+                                        2820
+                                    ],
+                                    "score": 0.88,
+                                    "content": "0 . 1 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1203,
+                                        2775,
+                                        2106,
+                                        2823
+                                    ],
+                                    "score": 0.981,
+                                    "content": "higher than the current state-of-the-art (SOTA) CSV",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 46
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2817,
+                                2108,
+                                2874
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2817,
+                                        2108,
+                                        2874
+                                    ],
+                                    "score": 0.985,
+                                    "content": "Zhou et al.(2023a), which heavily relies on code interpreter of GPT-4. Considering AQuA, BoT is",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 47
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2860,
+                                2112,
+                                2924
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2864,
+                                        538,
+                                        2911
+                                    ],
+                                    "score": 0.86,
+                                    "content": "\\overline { { 2 . 5 \\% } }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        540,
+                                        2860,
+                                        2112,
+                                        2924
+                                    ],
+                                    "score": 0.989,
+                                    "content": "higher than SOTA. This demonstrates that by adding error analysis and advice to the prompt",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 48
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2914,
+                                2108,
+                                2962
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2914,
+                                        2108,
+                                        2962
+                                    ],
+                                    "score": 0.985,
+                                    "content": "without human annotations,LLMs are able to perform wel on complex reasoning. The main reason",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 49
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2954,
+                                2110,
+                                3011
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2954,
+                                        2110,
+                                        3011
+                                    ],
+                                    "score": 0.992,
+                                    "content": " is that a simple prompt can be iteratively refined by accumulating prior experience towards accurate",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 50
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2999,
+                                2110,
+                                3061
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2999,
+                                        2110,
+                                        3061
+                                    ],
+                                    "score": 0.98,
+                                    "content": "problem-solving.After including CoT examples in the prompt, BoT+CoT outperforms SOTA by",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 51
+                        }
+                    ],
+                    "index": 48
+                }
+            ],
+            "page_idx": 0,
+            "page_size": [
+                2550,
+                3300
+            ],
+            "discarded_blocks": [
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        449,
+                        113,
+                        1223,
+                        155
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                108,
+                                1227,
+                                161
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        108,
+                                        1227,
+                                        161
+                                    ],
+                                    "score": 0.987,
+                                    "content": "Published as a conference paper at ICLR 2024",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        1260,
+                        3132,
+                        1289,
+                        3168
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                1259,
+                                3128,
+                                1292,
+                                3173
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1259,
+                                        3128,
+                                        1292,
+                                        3173
+                                    ],
+                                    "score": 1.0,
+                                    "content": "6",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "para_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        341,
+                        2108,
+                        672
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                339,
+                                2111,
+                                398
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        339,
+                                        1384,
+                                        398
+                                    ],
+                                    "score": 0.997,
+                                    "content": "Iterative Refinement. Through boosting mechanism,",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1385,
+                                        342,
+                                        1501,
+                                        386
+                                    ],
+                                    "score": 0.89,
+                                    "content": "\\mathbf { F } ^ { 1 , \\hdots , t }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1503,
+                                        339,
+                                        2111,
+                                        398
+                                    ],
+                                    "score": 0.992,
+                                    "content": "isemployed to iteratively enhance",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                377,
+                                2112,
+                                449
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        377,
+                                        853,
+                                        449
+                                    ],
+                                    "score": 0.961,
+                                    "content": "the prompt,resulting in",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        855,
+                                        388,
+                                        1341,
+                                        444
+                                    ],
+                                    "score": 0.9,
+                                    "content": "\\mathbb { I } ^ { t + 1 } \\left( \\mathbf { \\bar { \\mathcal { S } } } , X , Q , \\mathbf { F } ^ { \\tilde { 1 } , \\ldots , t } , \\{ G _ { i } \\} \\right)",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1343,
+                                        377,
+                                        1475,
+                                        449
+                                    ],
+                                    "score": 0.885,
+                                    "content": "for the",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1477,
+                                        391,
+                                        1598,
+                                        440
+                                    ],
+                                    "score": 0.92,
+                                    "content": "( t + 1 )",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1599,
+                                        377,
+                                        2112,
+                                        449
+                                    ],
+                                    "score": 0.982,
+                                    "content": "-th iteration. As the iterations",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        },
+                        {
+                            "bbox": [
+                                435,
+                                435,
+                                2112,
+                                498
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        435,
+                                        607,
+                                        498
+                                    ],
+                                    "score": 0.971,
+                                    "content": "progress,",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        608,
+                                        440,
+                                        723,
+                                        485
+                                    ],
+                                    "score": 0.86,
+                                    "content": "\\mathbf { F } ^ { 1 , \\hdots , t }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        724,
+                                        435,
+                                        2112,
+                                        498
+                                    ],
+                                    "score": 0.989,
+                                    "content": "may encompass many typical, unreasonable thought chains alongside those closer",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                488,
+                                2107,
+                                542
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        488,
+                                        2107,
+                                        542
+                                    ],
+                                    "score": 0.984,
+                                    "content": "to a solution,all with well-defined analysis outcomes. Therefore, even when starting with a simple",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                536,
+                                2110,
+                                587
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        536,
+                                        2110,
+                                        587
+                                    ],
+                                    "score": 0.995,
+                                    "content": "prompt,BoT iteratively refines this prompt to produce the correct reasoning steps leading to the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                574,
+                                2110,
+                                635
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        574,
+                                        840,
+                                        635
+                                    ],
+                                    "score": 0.991,
+                                    "content": "accurate solution. After",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        841,
+                                        582,
+                                        877,
+                                        621
+                                    ],
+                                    "score": 0.83,
+                                    "content": "T",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        879,
+                                        574,
+                                        1280,
+                                        635
+                                    ],
+                                    "score": 0.996,
+                                    "content": "iterations,we utilize the",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1281,
+                                        578,
+                                        1359,
+                                        621
+                                    ],
+                                    "score": 0.9,
+                                    "content": "\\mathbb { I } ^ { t + 1 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1361,
+                                        574,
+                                        2110,
+                                        635
+                                    ],
+                                    "score": 0.978,
+                                    "content": "as input prompt for the LLM to gain the final",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                630,
+                                583,
+                                675
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        630,
+                                        583,
+                                        675
+                                    ],
+                                    "score": 1.0,
+                                    "content": "answer.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        }
+                    ],
+                    "index": 3,
+                    "bbox_fs": [
+                        435,
+                        339,
+                        2112,
+                        675
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        746,
+                        837,
+                        800
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                438,
+                                743,
+                                840,
+                                805
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        743,
+                                        840,
+                                        805
+                                    ],
+                                    "score": 0.998,
+                                    "content": "4EXPERIMENTS",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        853,
+                        2108,
+                        1131
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                852,
+                                2112,
+                                903
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        852,
+                                        2112,
+                                        903
+                                    ],
+                                    "score": 0.993,
+                                    "content": "Datasets. Experiments are performed on benchmark datasets with diverse mathematical problems,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                895,
+                                2093,
+                                952
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        895,
+                                        2093,
+                                        952
+                                    ],
+                                    "score": 0.974,
+                                    "content": "including MMLU Hendrycks et al.(2021a), SVAMP Patel et al.(2021), GSM8KCobbe et al.(2021)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                938,
+                                2111,
+                                1004
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        938,
+                                        2111,
+                                        1004
+                                    ],
+                                    "score": 0.954,
+                                    "content": " AQuA Ling et al. (2017) and MATH Hendrycks et alJ(2021b). Besides, we include a challenging",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                991,
+                                2108,
+                                1042
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        991,
+                                        2108,
+                                        1042
+                                    ],
+                                    "score": 0.973,
+                                    "content": "mathematical reasoning task, Game of 24Yao et al.(2024), where the goal is to use four numbers",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1035,
+                                2112,
+                                1086
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1035,
+                                        2112,
+                                        1086
+                                    ],
+                                    "score": 0.984,
+                                    "content": "and basic arithmetic operations (addition,subtraction, multiplication,and division) to obtain 24 in 1",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1081,
+                                1424,
+                                1136
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1081,
+                                        1424,
+                                        1136
+                                    ],
+                                    "score": 0.991,
+                                    "content": "equation. Thus,the solution includes 3 intermediate steps.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        }
+                    ],
+                    "index": 10.5,
+                    "bbox_fs": [
+                        440,
+                        852,
+                        2112,
+                        1136
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        443,
+                        1153,
+                        2107,
+                        1436
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                1152,
+                                2108,
+                                1203
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1152,
+                                        2108,
+                                        1203
+                                    ],
+                                    "score": 0.986,
+                                    "content": "Competitors. Apart from the benchmark approach, standard Input-output (IO), the comparison",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1196,
+                                2112,
+                                1254
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1196,
+                                        1402,
+                                        1251
+                                    ],
+                                    "score": 0.986,
+                                    "content": "approaches include Chain-of-thought (CoT)Wei et al.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1403,
+                                        1197,
+                                        1519,
+                                        1254
+                                    ],
+                                    "score": 0.32,
+                                    "content": "\\textcircled { 2 0 2 2 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1530,
+                                        1200,
+                                        1898,
+                                        1247
+                                    ],
+                                    "score": 0.997,
+                                    "content": "CoT-SCWang et al.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1915,
+                                        1197,
+                                        2019,
+                                        1247
+                                    ],
+                                    "score": 0.999,
+                                    "content": "2022",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        2027,
+                                        1196,
+                                        2112,
+                                        1247
+                                    ],
+                                    "score": 1.0,
+                                    "content": "and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 15
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1240,
+                                2114,
+                                1303
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1240,
+                                        616,
+                                        1303
+                                    ],
+                                    "score": 0.998,
+                                    "content": "Complex",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        617,
+                                        1242,
+                                        970,
+                                        1299
+                                    ],
+                                    "score": 0.57,
+                                    "content": "\\mathrm { C o T } [ \\mathrm { F u \\ e t \\ a l . } ] ( 2 0 2 2 )",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        971,
+                                        1240,
+                                        2114,
+                                        1303
+                                    ],
+                                    "score": 0.985,
+                                    "content": ", in which the input prompt contains a few-shot examples (8) with",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 16
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1286,
+                                2112,
+                                1343
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1286,
+                                        2112,
+                                        1343
+                                    ],
+                                    "score": 0.989,
+                                    "content": "human annotations. Also, BoT is also compared with related works, such as Tree of thoughts (ToT)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        },
+                        {
+                            "bbox": [
+                                435,
+                                1332,
+                                2112,
+                                1390
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        1332,
+                                        2112,
+                                        1390
+                                    ],
+                                    "score": 0.975,
+                                    "content": "Yao et al.(2024 with the breadth limit 5, Progressive-Hint Prompting (PHP) Zheng et al.(2023),and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1376,
+                                1180,
+                                1436
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1376,
+                                        1180,
+                                        1436
+                                    ],
+                                    "score": 0.954,
+                                    "content": "the state-of-the-art CSVZhou et al. (2023a)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        }
+                    ],
+                    "index": 16.5,
+                    "bbox_fs": [
+                        435,
+                        1152,
+                        2114,
+                        1436
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        1452,
+                        2110,
+                        1686
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1450,
+                                2111,
+                                1506
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1450,
+                                        2111,
+                                        1506
+                                    ],
+                                    "score": 0.993,
+                                    "content": "Large Language Models. We conduct experiments on the two most recent models: GPT-4OpenAl",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                1494,
+                                2114,
+                                1553
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1496,
+                                        562,
+                                        1549
+                                    ],
+                                    "score": 0.55,
+                                    "content": "\\boxed { 2 0 2 3 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        563,
+                                        1499,
+                                        1037,
+                                        1548
+                                    ],
+                                    "score": 0.971,
+                                    "content": " and Llama2 Touvron et al.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1038,
+                                        1494,
+                                        2114,
+                                        1553
+                                    ],
+                                    "score": 0.976,
+                                    "content": "(2023). GPT-4 is accessed via OpenAI APIs,while the llama-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1545,
+                                2107,
+                                1593
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1545,
+                                        2107,
+                                        1593
+                                    ],
+                                    "score": 0.991,
+                                    "content": "2-13b-chat model is downloaded from MetaAI to perform experiments locally.To construct the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1591,
+                                2110,
+                                1639
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1591,
+                                        2110,
+                                        1639
+                                    ],
+                                    "score": 0.993,
+                                    "content": "heterogeneous tree thought structures,BoT randomly chooses the temperature from the range of",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1635,
+                                1875,
+                                1689
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1635,
+                                        1875,
+                                        1689
+                                    ],
+                                    "score": 0.969,
+                                    "content": "[0.2,0.4,0.6,0.7,0.9,1.1,1.5]and the top-p from the range of [0.1,0.3,0.5,0.7,0.9].",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        }
+                    ],
+                    "index": 22,
+                    "bbox_fs": [
+                        442,
+                        1450,
+                        2114,
+                        1689
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        1704,
+                        2108,
+                        1983
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1705,
+                                2110,
+                                1756
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1705,
+                                        1553,
+                                        1756
+                                    ],
+                                    "score": 0.989,
+                                    "content": "Settings.If not explicitly stated,BoT,inall experiments,performs",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1554,
+                                        1708,
+                                        1687,
+                                        1749
+                                    ],
+                                    "score": 0.9,
+                                    "content": "T = 1 0",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1688,
+                                        1705,
+                                        2110,
+                                        1756
+                                    ],
+                                    "score": 0.958,
+                                    "content": "iterations of running and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1747,
+                                2110,
+                                1803
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1747,
+                                        558,
+                                        1803
+                                    ],
+                                    "score": 1.0,
+                                    "content": "builds",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        559,
+                                        1753,
+                                        706,
+                                        1795
+                                    ],
+                                    "score": 0.89,
+                                    "content": "M = 1 5",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        707,
+                                        1747,
+                                        2110,
+                                        1803
+                                    ],
+                                    "score": 0.987,
+                                    "content": "thought structures,each being a weighted binary tree because this tends to achieve",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1798,
+                                2107,
+                                1847
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1798,
+                                        2107,
+                                        1847
+                                    ],
+                                    "score": 0.981,
+                                    "content": "optimal results.Besides,for those benchmark datasets,we set the depth of the tree to be 5 while the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1842,
+                                2107,
+                                1893
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1842,
+                                        2107,
+                                        1893
+                                    ],
+                                    "score": 0.982,
+                                    "content": "corresponding depth in Game of 24 is 3. BoT+CoT means our simple prompt includes 5 examples",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        },
+                        {
+                            "bbox": [
+                                447,
+                                1885,
+                                2112,
+                                1941
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        447,
+                                        1888,
+                                        538,
+                                        1940
+                                    ],
+                                    "score": 1.0,
+                                    "content": "from",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        540,
+                                        1885,
+                                        921,
+                                        1941
+                                    ],
+                                    "score": 0.47,
+                                    "content": "\\mathsf { \\tilde { C } o T } [ \\overrightarrow { \\mathrm { W e i \\ e t \\ a l . } } ] ( \\overrightarrow { 2 0 2 2 } )",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        922,
+                                        1888,
+                                        2112,
+                                        1940
+                                    ],
+                                    "score": 0.955,
+                                    "content": ".In the ablation study,when no experienceis accumulated in BoT, 8",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1937,
+                                1268,
+                                1989
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1937,
+                                        1268,
+                                        1989
+                                    ],
+                                    "score": 0.984,
+                                    "content": "examples of CoT will be provided in the prompt.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        }
+                    ],
+                    "index": 27.5,
+                    "bbox_fs": [
+                        439,
+                        1705,
+                        2112,
+                        1989
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        2003,
+                        2108,
+                        2326
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                2001,
+                                2111,
+                                2056
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2001,
+                                        1251,
+                                        2056
+                                    ],
+                                    "score": 0.988,
+                                    "content": "Metrics. All experiments report the Solve Rate",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1252,
+                                        2007,
+                                        1316,
+                                        2050
+                                    ],
+                                    "score": 0.7,
+                                    "content": "( \\% )",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1317,
+                                        2001,
+                                        2111,
+                                        2056
+                                    ],
+                                    "score": 0.992,
+                                    "content": "of the task as the evaluation results.To extract",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        },
+                        {
+                            "bbox": [
+                                433,
+                                2040,
+                                2115,
+                                2119
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        433,
+                                        2040,
+                                        980,
+                                        2119
+                                    ],
+                                    "score": 0.982,
+                                    "content": "target answers fromtheoutput",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        982,
+                                        2047,
+                                        1077,
+                                        2102
+                                    ],
+                                    "score": 0.92,
+                                    "content": "\\overline { { z } } _ { 1 \\dots n } ^ { T }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1078,
+                                        2040,
+                                        2115,
+                                        2119
+                                    ],
+                                    "score": 0.961,
+                                    "content": "of BoT, we specificallyset the formatted description of the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2094,
+                                2110,
+                                2145
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2094,
+                                        2110,
+                                        2145
+                                    ],
+                                    "score": 0.974,
+                                    "content": "answer forLLMs.For commonly used datasets,the desired answer format is“The answer is:”For",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 33
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2141,
+                                2107,
+                                2191
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2141,
+                                        2107,
+                                        2191
+                                    ],
+                                    "score": 0.975,
+                                    "content": "the Game of 24, we utilize“Step idx,Current set:,Selected two numbers:, Operation:,Computed",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 34
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2183,
+                                2110,
+                                2240
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2183,
+                                        2110,
+                                        2240
+                                    ],
+                                    "score": 0.977,
+                                    "content": "new number:,Remaining numbers:,New set: \". Thus, we directly compare the ground truth with",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 35
+                        },
+                        {
+                            "bbox": [
+                                446,
+                                2226,
+                                2107,
+                                2291
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        2226,
+                                        2107,
+                                        2291
+                                    ],
+                                    "score": 0.994,
+                                    "content": "the number presented in the new set. Following ToTYao et al.(2024), we report the Solving Rate",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 36
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2279,
+                                1066,
+                                2329
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2279,
+                                        1066,
+                                        2329
+                                    ],
+                                    "score": 0.949,
+                                    "content": "across 1OO hard games as the metric.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 37
+                        }
+                    ],
+                    "index": 34,
+                    "bbox_fs": [
+                        433,
+                        2001,
+                        2115,
+                        2329
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        447,
+                        2342,
+                        827,
+                        2388
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                2338,
+                                831,
+                                2395
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2338,
+                                        831,
+                                        2395
+                                    ],
+                                    "score": 0.985,
+                                    "content": "4.1MAIN RESULTS",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 38
+                        }
+                    ],
+                    "index": 38
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        446,
+                        2427,
+                        2108,
+                        2707
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                438,
+                                2427,
+                                2107,
+                                2490
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2427,
+                                        2107,
+                                        2490
+                                    ],
+                                    "score": 0.979,
+                                    "content": "The primary experimental results are summarized in Table.and Fig.3 where we present insights",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 39
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2471,
+                                2110,
+                                2531
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2471,
+                                        2110,
+                                        2531
+                                    ],
+                                    "score": 0.981,
+                                    "content": "into the overall performance of BoT. Our findings indicate that the proposed BoT with Boosting",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 40
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2521,
+                                2110,
+                                2572
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2521,
+                                        2110,
+                                        2572
+                                    ],
+                                    "score": 0.985,
+                                    "content": "mechanism 1). obtains competitive problem-solving rates in most datasets without human annotations;",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 41
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2567,
+                                2110,
+                                2619
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2567,
+                                        2110,
+                                        2619
+                                    ],
+                                    "score": 0.987,
+                                    "content": "2). is capable of reaching a new state-of-the-art on GSM8K and AQuA when provided with CoT",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 42
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2607,
+                                2115,
+                                2670
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2607,
+                                        2115,
+                                        2670
+                                    ],
+                                    "score": 0.974,
+                                    "content": "examples. However, experimental results also demonstrate that BoT heavily relies on experience,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2659,
+                                1106,
+                                2710
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2659,
+                                        1106,
+                                        2710
+                                    ],
+                                    "score": 0.966,
+                                    "content": "thus is sensitive to the ability of LLMs.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 44
+                        }
+                    ],
+                    "index": 41.5,
+                    "bbox_fs": [
+                        438,
+                        2427,
+                        2115,
+                        2710
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        444,
+                        2727,
+                        2107,
+                        3053
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                2722,
+                                2114,
+                                2789
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        2722,
+                                        2114,
+                                        2789
+                                    ],
+                                    "score": 0.97,
+                                    "content": "Specificaly,in Table.1 BoT, starting from a simple initial prompt and performing basic chatting,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 45
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2775,
+                                2106,
+                                2823
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2775,
+                                        1107,
+                                        2823
+                                    ],
+                                    "score": 0.966,
+                                    "content": "eventually obtains a GSM8K solve rate",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1108,
+                                        2775,
+                                        1202,
+                                        2820
+                                    ],
+                                    "score": 0.88,
+                                    "content": "0 . 1 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1203,
+                                        2775,
+                                        2106,
+                                        2823
+                                    ],
+                                    "score": 0.981,
+                                    "content": "higher than the current state-of-the-art (SOTA) CSV",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 46
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2817,
+                                2108,
+                                2874
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2817,
+                                        2108,
+                                        2874
+                                    ],
+                                    "score": 0.985,
+                                    "content": "Zhou et al.(2023a), which heavily relies on code interpreter of GPT-4. Considering AQuA, BoT is",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 47
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2860,
+                                2112,
+                                2924
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2864,
+                                        538,
+                                        2911
+                                    ],
+                                    "score": 0.86,
+                                    "content": "\\overline { { 2 . 5 \\% } }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        540,
+                                        2860,
+                                        2112,
+                                        2924
+                                    ],
+                                    "score": 0.989,
+                                    "content": "higher than SOTA. This demonstrates that by adding error analysis and advice to the prompt",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 48
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2914,
+                                2108,
+                                2962
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2914,
+                                        2108,
+                                        2962
+                                    ],
+                                    "score": 0.985,
+                                    "content": "without human annotations,LLMs are able to perform wel on complex reasoning. The main reason",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 49
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2954,
+                                2110,
+                                3011
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2954,
+                                        2110,
+                                        3011
+                                    ],
+                                    "score": 0.992,
+                                    "content": " is that a simple prompt can be iteratively refined by accumulating prior experience towards accurate",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 50
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2999,
+                                2110,
+                                3061
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2999,
+                                        2110,
+                                        3061
+                                    ],
+                                    "score": 0.98,
+                                    "content": "problem-solving.After including CoT examples in the prompt, BoT+CoT outperforms SOTA by",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 51
+                        }
+                    ],
+                    "index": 48,
+                    "bbox_fs": [
+                        438,
+                        2722,
+                        2114,
+                        3061
+                    ]
+                }
+            ]
+        }
+    ],
+    "_backend": "pipeline",
+    "_version_name": "2.1.8"
+}

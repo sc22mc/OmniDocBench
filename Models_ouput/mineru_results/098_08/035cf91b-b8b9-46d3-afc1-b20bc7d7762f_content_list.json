@@ -1,0 +1,59 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/5154e574a33e3dc228651e270fad3019f22139bc2396e6d6a77f17e2eabf5001.jpg",
+        "table_caption": [
+            "Table 6: The results of pretrained ICAE ( $5 1 2  1 2 8$ based on different targetLLMs "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\">Target LLM</td><td colspan=\"2\"></td><td colspan=\"2\">PP</td><td></td></tr><tr><td>BLEU()</td><td>Loss</td><td></td><td></td><td>△</td></tr><tr><td>Llama-7b</td><td>99.1</td><td>0.017</td><td>9.01</td><td>9.50</td><td>+0.49</td></tr><tr><td>Llama-2-7b</td><td>99.5</td><td>0.009</td><td>8.81</td><td>9.18</td><td>+0.37</td></tr><tr><td>Llama-2-13b</td><td>99.8</td><td>0.004</td><td>8.15</td><td>8.45</td><td>+0.30</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/ef2dc2a48a1b42af256b1bb43b04953a1461d50eae589523cf69a3c3a7e11988.jpg",
+        "table_caption": [
+            "Table 7: Latency comparison of LLM (generation) and LLM+ICAE (compression then generation) "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Input (Batch×Length)</td><td>Method</td><td>Compression Time (Cachable)</td><td>Decoding Time</td><td>Total Time</td></tr><tr><td>8*2048</td><td>LLM4MCAE</td><td>3.4</td><td>240</td><td>7.324.3x)</td></tr><tr><td>8*512</td><td>LLM+MCAE</td><td>0.6</td><td>9.3</td><td>4.3(2.2x)</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td>32*512</td><td>LLM+ICAE</td><td>2.6</td><td>24.3</td><td>6.824.6x)</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "even more significant- around $3 . 5 \\times$ - in compute-intensive scenarios (e.g., $8 \\times 2 0 4 8$ and $3 2 \\times 5 1 2$ ） Given that the compressed memory slots can be cached in advance (for frequently used texts like textbooks, government reports or articles of law), ICAE may introduce over $7 \\times$ inference speedup in these cases.Details of the profiling are presented in Appendix B. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.3.3MULTIPLE SPANS OF MEMORY SLOTS ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Thus far,we have mainly discussed a single span of memory slots.In this section,we shall discuss multiple spans of memory slots. As illustrated in Figure 6(Left), we can segment a long context into $N$ chunks,compress them individually,and then concatenate them to represent the original long context.However,this did not work initially,because the model had never seen multiple span concatenation patterns during training. Fortunately, we can incorporate a small number of multiple span concatenation samples during training,enabling the model to work with concatenated spans of memory slots,as OpenAI's work (Bavarian et al.,2022)on introducing the “fillin the middle”ability for the GPT.The results in Figure 6(Right) indicate that,using an equivalent length context,ICAE's memory achieves better performance-because memory can represent $4 \\times$ the original contextlength. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The ability of ICAE demonstrates great promise to handle long contexts,as it can save a significant amount of GPU memory when addressing long contexts without touching the existing LLM.As illustrated in Figure 6(Right),2048-length memory slots can perform on par with 4096-token contexts. This means that conditioning on 2048 memory slots instead of the original 4096 context tokens can save about 20GB of GPU memory5with minimal quality degradation. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4RELATEDWORK ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prompt compression and context distillation (Askell et al.,2O21; Snell et al.,2022) are closely related areas to this work: Wingate et al. (2O22) proposed a method to learn compact soft prompts to simulate the original natural language prompt by optimizing the KL divergence.However, this approach has a very high computational cost, as it requires performing back-propagation for each new incoming prompt to learn and obtain the compressed prompt, which severely limits its application. Qin & Van Durme (2023) propose Neural Agglomerative Embeddings named NUGGET, which encodes language into a compact representation for an encoder-decoder model. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The most closely related studies to our research are GIST (Mu et al., 2023) and AutoCompressors (Chevalier et al., 2023). GIST achieves prompt compression by fine-tuning an LLM in a similar way to ours. The resulting model can produce gist tokens as the compression of a prompt, which are similar to our memory slots.Nonetheless,this approach is limited to compressing short prompts and ",
+        "page_idx": 0
+    }
+]

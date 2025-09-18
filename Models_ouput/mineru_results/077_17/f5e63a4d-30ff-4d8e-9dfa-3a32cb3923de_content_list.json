@@ -1,0 +1,74 @@
+[
+    {
+        "type": "text",
+        "text": "we can generate $B$ chains in parallel,allstarting from the same initial state.This batched sampling procedure leads to even further speedups. For all exploration experiments we use a batch size of 1OO,and run $M = 1 0 0 0 0$ exploration steps. The maximum allowed energy change cutoff is set at $\\Delta U _ { \\mathrm { m a x } } = 3 0 0 \\mathrm { k J / m o l }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. Dataset details ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We evaluateourmodelontreedierentdatasets,AD,2AA,and4AA,asintroducedinection6.Alldatasetsareulated inimplicit solventusing theopenMMlibrary(Eastmanetal.,2017).ForallMDsimulations weuse theparametersshown inTable2. ",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/9972c909e3cb7367f677cee5ac442ba1fade8caf999d7fafbb0e05816b844a8d.jpg",
+        "table_caption": [
+            "Table 2. OpenMM MD simulation parameters "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>ForceField</td><td>amber-14</td></tr><tr><td>Time step</td><td>0.5fs</td></tr><tr><td>Friction coefficient</td><td>ps 0.3</td></tr><tr><td>Temperature</td><td>310K</td></tr><tr><td>Integrator</td><td>LangevinMiddleIntegrator</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "E.Hyperparameters ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Depending onthedataset,differentTimewarp modelsizes wereused,asshowninTable3.ForalldatasetstheMultihead kernel self-attention layer consists of 6 heads with lengthscales $\\ell _ { i } = \\{ 0 . 1 , 0 . 2 , 0 . 5 , 0 . 7 , 1 . 0 , 1 . 2 \\}$ ,givenin nanometers. ",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/d4f1be5c48f2ae98e9fe551e572a0a59b385ff15f9f0e0b7e51c6fcf633ba167.jpg",
+        "table_caption": [
+            "Table 3.Timewarp model hyperparameters "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Dataset</td><td>RealNVP layers</td><td>Transformer layers</td><td>Parameters</td><td></td><td>Atom-embedding dim HTransformer feature dimension D</td></tr><tr><td>AD</td><td>12</td><td>6</td><td>1×108</td><td>64</td><td>128</td></tr><tr><td>2AA</td><td>12</td><td>6</td><td>1×108</td><td>64</td><td>128</td></tr><tr><td>4AA</td><td>16</td><td>16</td><td>4×108</td><td>128</td><td>128</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The $\\phi _ { \\mathrm { i n } }$ and $\\phi _ { \\mathrm { o u t } }$ MLPs use SiLUs as activation functions, while the Transformer MLPs use ReLUs. Note the transformer MLPrefers tothe atom-wise MLPshownin Figure2,Middleinside the transformer block.Theshapes ofthese MLPs vary for the different datasets as shown in Table4. ",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/d56154e9d63d7d6296bb37f09ee738a64e7b92b8252490d84bb15530eb3998f0.jpg",
+        "table_caption": [
+            "Table4. Timewarp MLP layer sizes "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Dataset</td><td>inMLP</td><td>outMLP</td><td>Transformer MLP</td></tr><tr><td>AD</td><td>[70,256,128]</td><td>[128,256,3]</td><td>[128,256,128]</td></tr><tr><td>2AA</td><td>[70,256,128]</td><td>[128,256,3]</td><td>[128,256,128]</td></tr><tr><td>4AA</td><td>[134,2048,128]</td><td>[128,2048,3]</td><td>[128,2048,128]</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Che first linear layers in the kernel self-attention module always has the shape [128,768] (in Section 4 denoted as $V$ ,and he second (after concatenating the output of head head) has the shape [768,128]. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Afterlikelioodtraining,wefine-tune the modelfortheADand2AAdataset withacombinationofallthreelosss discussed in Section5.Wedidnotperformfine tuning forthe modeltrainedonthe4AA dataset.Weuseaweightedsumofthe losses with weights detailedinTable5.Weuse theFusedLamboptimizerandthe DeepSpeedlibrary(Rasleyetal.,2020)forall experiments.Thebatchsizeaswellaste training timesarereported inTable6.Allsimulationsare startedwithalearning rateof $5 \\times 1 0 ^ { - 4 }$ ,the learning rate is then consecutively decreased by a factor of 2 upon hiting training loss plateaus. ",
+        "page_idx": 0
+    }
+]

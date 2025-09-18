@@ -1,0 +1,1051 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        305,
+                        287,
+                        1143,
+                        971
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                305,
+                                287,
+                                1143,
+                                971
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        305,
+                                        287,
+                                        1143,
+                                        971
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                305,
+                                                287,
+                                                1143,
+                                                971
+                                            ],
+                                            "type": "image",
+                                            "image_path": "be3c871df339137fc5da708da1d4f6e0c7f13da65ff7a60e1cfb3d875cf82f7a.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                287,
+                                1010,
+                                1210,
+                                1262
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        287,
+                                        1010,
+                                        1210,
+                                        1262
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                287,
+                                                1010,
+                                                1210,
+                                                1262
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 2: The overall structure of the proposed HAHT model, which contains 1) hierarchical history conversation encoder, 2) history-aware context encoder, and 3) history-aware response generator. The details of each component are shown in Figure 3, 4, 5, respectively."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        292,
+                        1350,
+                        1208,
+                        1911
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                292,
+                                1350,
+                                1208,
+                                1911
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        292,
+                                        1350,
+                                        1208,
+                                        1911
+                                    ],
+                                    "type": "text",
+                                    "content": "their methods need to retrieve a very large portion of history conversations to achieve better results than the standard Transformer. In addition, these models still need to concatenate the retrieved raw history conversation text with the current conversation context, yielding concatenations that are still much longer than the 128 token truncation lengths. Therefore, the incorporation of historical contexts in these methods is still limited by the short token truncation lengths of pre- trained models."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        295,
+                        1950,
+                        843,
+                        2006
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                295,
+                                1950,
+                                843,
+                                2006
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        295,
+                                        1950,
+                                        843,
+                                        2006
+                                    ],
+                                    "type": "text",
+                                    "content": "3 The Proposed Method"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        292,
+                        2041,
+                        1210,
+                        2543
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                292,
+                                2041,
+                                1210,
+                                2543
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        292,
+                                        2041,
+                                        1210,
+                                        2543
+                                    ],
+                                    "type": "text",
+                                    "content": "In general, a Multi- Session Conversation (MSC) consists of a current conversation session and several history conversation sessions that happen before the current one, all between the same two interlocutors. A multi- session open- domain dialogue system aims to generate natural, well- informed, and context- relevant responses to the user's utterances based on all history conversation sessions and the current conversation context."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        292,
+                        2550,
+                        1210,
+                        3223
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                292,
+                                2550,
+                                1210,
+                                3223
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": "Formally, we denote the MSC dataset "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "D"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " by a list of "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " conversations in the format of "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(H,X,y)"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " Here, "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X = \\{x_{1},x_{2},\\dots ,x_{n_{x}}\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " denotes "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "n_x"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " context utterances of the current conversation session. "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "H = \\{H^{1},H^{2},\\dots ,H^{M}\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " denotes "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "M"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " history conversation sessions, where "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "H^{i} = \\{h_{1}^{i},h_{2}^{i},\\dots ,h_{n_{i}}^{i}\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " denotes "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "n_i"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " chronologically ordered utterances of the "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " - th history conversation session. "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "y"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " is the ground truth response to "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " under the background of "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "H"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " . The MSC task can be formulated as learning a function "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f(H,X)"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " to predict the next utterance "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x_{n_x + 1}"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " based on "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "H"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        2550,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1270,
+                        294,
+                        2190,
+                        940
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1270,
+                                294,
+                                2190,
+                                940
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1270,
+                                        294,
+                                        2190,
+                                        940
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1270,
+                                                294,
+                                                2190,
+                                                940
+                                            ],
+                                            "type": "image",
+                                            "image_path": "0c6bc706be72f1096b88d6c2cb65cd0a07fb55c1f20647a31273401053829cbf.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 6,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1270,
+                                989,
+                                2198,
+                                1087
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1270,
+                                        989,
+                                        2198,
+                                        1087
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1270,
+                                                989,
+                                                2198,
+                                                1087
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 3: The structure of the hierarchical history conversation encoder in HAHT."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 7,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        1272,
+                        1185,
+                        2190,
+                        1578
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                1185,
+                                2190,
+                                1578
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1185,
+                                        2190,
+                                        1578
+                                    ],
+                                    "type": "text",
+                                    "content": "In this work, we propose a novel model, namely HAHT, for the MSC task. Figure 2 shows the overall structure of HAHT, which consists of three main components: 1) hierarchical history conversation encoder, 2) history- aware context encoder, and 3) history- aware response generator. We present the details of each component of HAHT as follows."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1272,
+                        1624,
+                        2051,
+                        1732
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                1624,
+                                2051,
+                                1732
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1624,
+                                        2051,
+                                        1732
+                                    ],
+                                    "type": "text",
+                                    "content": "3.1 Hierarchical History Conversation Encoder"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1272,
+                        1757,
+                        2193,
+                        2318
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                1757,
+                                2193,
+                                2318
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1757,
+                                        2193,
+                                        2318
+                                    ],
+                                    "type": "text",
+                                    "content": "The main challenge in encoding history conversation sessions is the limited maximum input length imposed by pre- trained dialogue systems. If all history conversations are simply concatenated and fed into the pre- trained dialogue system, the length of the concatenation will exceed the maximum input length. Thus, most parts of the input will be truncated. To preserve more information in the history conversation, we encode each history conversation session separately in a hierarchical fashion."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1272,
+                        2325,
+                        2190,
+                        2830
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                2325,
+                                2190,
+                                2830
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "text",
+                                    "content": "Specifically, for a history conversation session "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "H^{i} = \\{h_{1}^{i},h_{2}^{i},\\dots ,h_{n_{i}}^{i}\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "text",
+                                    "content": " , we first prepend a special token \"User: or \"Assistant:\" to each utterance "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "h_j^i"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "text",
+                                    "content": " in "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "H^{i}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "text",
+                                    "content": " depending on the role of the utterance speaker, and then pad all utterances to the same length "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "l_{utter}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "text",
+                                    "content": " . For each utterance "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "h_j^i"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "text",
+                                    "content": " , we apply an embedding layer "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "E_{m}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "n_{enc}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2325,
+                                        2190,
+                                        2830
+                                    ],
+                                    "type": "text",
+                                    "content": " Transformer encoder layers, and a Max- pooling layer to obtain its dense representation as follows,"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1282,
+                        2876,
+                        2185,
+                        2995
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1282,
+                                2876,
+                                2185,
+                                2995
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2876,
+                                        2185,
+                                        2995
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\mathbf{u}_j^i = \\mathbf{Max - pooling}\\big(\\mathrm{Transformer}_{n_{enc}}(E_m(h_j^i))\\big),",
+                                    "image_path": "dda5376202249fe7d6187bca9bc0b58e6fb4db70b9322af5fcd97712f73c474c.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        1272,
+                        2999,
+                        2190,
+                        3223
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                2999,
+                                2190,
+                                3223
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2999,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2999,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{u}_j^i\\in \\mathbb{R}^d"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2999,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " . Moreover, we denote all the utterance representations in the history conversation "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2999,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "H^{i}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2999,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " by "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2999,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{U}^i = \\{\\mathbf{u}_1^i,\\mathbf{u}_2^i,\\dots ,\\mathbf{u}_{n_i}^i\\} \\in \\mathbb{R}^{n_i\\times d}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2999,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " , where "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2999,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "n_i"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2999,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " is the turn number of "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2999,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "H^{i}"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2999,
+                                        2190,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": " .Next, we apply a"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2481,
+                3508
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

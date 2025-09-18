@@ -1,0 +1,62 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/bb21285207c008fcedf58c854a56d462349065d51d1f1fb6d49750f61908f44b.jpg",
+        "table_caption": [
+            "TABLEV NUMBER OFANALYZED IMAGES OFCONTROL AND PUNCTURED SAMPLES, GROUPED BY VARIETYAND VINTAGE "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td></td><td>cv.Williams</td><td></td><td>cv.Abate Fetel</td></tr><tr><td rowspan=\"2\">2022</td><td></td><td>250</td><td>304</td><td>403</td></tr><tr><td>Controled</td><td></td><td></td><td>624</td></tr><tr><td rowspan=\"2\">2023</td><td></td><td>35</td><td>651</td><td>251</td></tr><tr><td>Puntraed</td><td></td><td></td><td>352</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "As detailed in [5O],we covered tree branches with exclusion cages on fruit set to safeguard the flowers and ripening fruits from uncontrolledbiotic and abiotic adversities.These exclusion cages consist of a semirigid black plastic mesh covered by a sleeve made of fabric mesh.Approximately one week prior to harvesting,we placed BMSB specimens inside half of the exclusion cages,while we used the fruits in the remaining exclusion cages as control samples. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The monitoring of fruit damages occurred at eight subsequent acquisition times,from harvesting(T1） until five weeks later (T2-T8).After harvesting,we stored the fruits at $6 { - } 8 ^ { \\circ } \\mathrm { C }$ for 1-2 days to avoid chilling damages,then we gradually lowered the temperature to $0 { - } 4 ^ { \\circ } \\mathrm { C }$ to simulate postharvest refrigeration conditions. Then，we acquired hyperspectral images using a SNAPSCAN SWIR camera (IMEC, One Planet),covering the 1156-1674 nm spectral range.Before imaging each fruit, the acquisition software performed an automatic calibration based on the dark current signal and a high-reflectance standard.For each pear, we acquired four hyperspectral images to consider the whole fruit surface.Following the same procedure, we acquired RGB images of the pear as visual reference both before and after peeling the fruits. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Based on experimental conditions,the collected pear samples can be divided in two groups: samples exposed to BMSB and control samples.However,after peeling the fruits,we observed that not all the exposed samples had been punctured,and that somecontrol fruits presented damages.In addition,some damages found on exposed fruits were not due to BSBMbut to other adversities (e.g.,moulds).For these reasons,we used the RGB images of unpeeled and peeled samples to visually classify the fruits based on damage type and intensity. This labeling process allowed a better identification of the actual sound and punctured samples,and thus we only considered the images belonging to these two classes for further elaborations.TableV reports the number ofimages belonging to sound control pears and damaged fruits exposed to BMSB,subdivided by fruit varietyand harvest year. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We separately analyzed the hyperspectralimages belonging to Abate FetelandWilliams varieties,and before theirelaboration, we used SNVand linear detrend asspectra preprocessing methods,respectively.Then,weused anautomated procedure based on PCA to mask the fruit area by removing pixels belonging to the background setting,fruit peduncle,and plastic label present in the image scene. Then,we improved the segmentation by applying an erosion morphological operator,usinga disk structuring element with a 2-pixel radius. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/cc2cbd28eeb42bb83a500f883bac773c8fb82f93de71dc86ff1eb6ae51e7d56f.jpg",
+        "image_caption": [
+            "Fig.8．Schematic representation of the procedure followed for the supervised annotation of BMSB punctures:in (a),data dimensionality reduction of the hyperspectral imagesusingthe CSHmethod,in (b),application of iPLS-DA classification and variable selection algorithm to select the CSH features (i.e., image pixels) related to the punctures,and in (c),image reconstruction of the selected featuresascribabletopunctures. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. Supervised Annotation of Punctures ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A preliminary exploratory analysis using PCA allowed to distinguish between sound and punctured areas based on slight spectral differences,but at the same time highlighted the difficulty of correctly identifying the regions of interest (ROIs) ascribable to the punctured areas, due to their irregular shapes and the blurred edges between sound and damaged regions.The identification of ROIs belonging to punctured areas is important to extract representative spectra to be used for the development of pixel-level classification models.To overcome this issue,we developed a supervised annotation method to automatically select pixels belonging to punctured areas. The proposed approach is based on data dimensionality reduction of the hyperspectral images using the common space hyperspectrograms (CSH) [51] followed by image-level classification,coupled with feature selection and visualization of the selected features back into the original image domain.More in detail,each image was converted into the corresponding CSH,a 1-D signal obtained by merging in sequence the frequency distribution curves of quantities obtained from a global PCA model² (i.e.,PC score vectors,Q residuals,and Hotelling T2 values). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Starting from the CSHdataset,weapplied the interval PLSDA (iPLS-DA) algorithm [52] to calculate image-level classification models and select relevant spatial features ascribable to the presence of punctures.Then，we visualized back the selected features of interest into the original image domain, allowing to automatically select ROIs ascribable to punctured areas; this procedure will be referred to as image reconstruction. Fig.8 shows a schematic representation of such a supervised annotationmethod. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For both pear varieties,we split the images acquired in 2022 into atraining set,used to calculate the common PC space of CSHand calibrate theclassificationmodels,and a test set of images used for external validation.We randomly assigned about ",
+        "page_idx": 0
+    }
+]

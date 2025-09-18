@@ -1,0 +1,58 @@
+[
+    {
+        "type": "text",
+        "text": "measurements  $(3)$ . Electrochemical impedance spectroscopy (EIS) is typically used in laboratory settings to gain insight indirectly on PMFCs' state through their impedance spectra. EIS consists of a nondestructive impedance measurement as a function of frequency in electrochemical cells and half- cells. Fitting EIS data to physical- based circuit models allows us to assess underlying electrobiochemical phenomena, find factors that limit power production, and track the MPP. Previous works have linked specific EIS features to the cell state and properties [11], particularly biofilm formation, anode and cathode electrochemical reactions, electrode coating, and material performance. EIS has also been used directly on plants to gather information on plant health, root growth, frost hardening, sensitivity to salinity, crop production, and plant stress [12]. Coupling these two ideas by factoring a cell's reactor plant into classical physical- based cell models, we believe that EIS measurements can provide information on plant health status and increase PMFC life expectancy, power production, cell stability, and reduced startup time. Previous literature has found a link between plant health and open circuit voltage (OCV) [13], but has not attempted to tie PMFC plant health and EIS. Unfortunately, EIS workstations are hard to deploy in an outdoors, distributed sensor network due to their cost and power requirements, which are not compatible with battery- free sensor nodes.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This article presents a PMFC- powered battery- free IoT architecture for remote EIS measurement. The proposed architecture employs a PMFC both as an energy source and as an EIS biosensor for measuring cell state, using the same electrodes. To the best of our knowledge, no other work has coupled low- power EIS measurements to energy extraction on the same cell. Battery- free, PMFC- powered EIS can close the control loop on cell state and provide valuable feedback on optimal PMFC operation, paving the way toward dependable PMFC power in wireless sensor networks. This can also lead to interesting developments in the plants residing in the PMFC, as cell/bacteria state is a promising indirect measurement of plant state. We executed EIS measurements with Maxim's ultralow- power EIS analog frontend (AFE), the MAX30134, and then validated them through a reference potentiostat. Preliminary results obtained through a bench implementation confirmed that the chosen AFE is sensible enough to track time and power yield capability variations across different PMFCs, and also that a full frequency range EIS sweep (19 points,  $21.3\\mathrm{mHz} - 21.8\\mathrm{kHz}$ ) consumes  $3.64\\mathrm{J}$ , which is an energy level compatible with PMFC technology. This article also presents an energy- aware, intermittent computing application scheme based on intermittent harvesting, which makes room for periodic cell unloading periods needed to extend a PMFC's power production period [13], [14].",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The rest of this article is organized as follows. Section II presents relevant related works, while system implementation is explained in Section III. The methodology is addressed in Section IV, showcasing our experimental results. Finally, Section V concludes this article.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "II. RELATED WORKS",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The technology at the base of microbial fuel cells has been investigated for several years, and MFs have already been demonstrated as fundamental components for various applications. MFC reactors are commonly used for powering selfsustainable IoT systems [15], bioremediation [16], and biosensing, of which we will mention some notable examples.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Green rooftops consisting of large PMFCs are used both as power sources and biosensors, besides providing both increased thermal insulation and  $\\mathrm{CO_2}$  urban heat reduction. PFMC- roofs achieve optimal output power in warm and humid environments, where round- the- clock power generation reaches hundreds of  $\\mathrm{mW / m^2}$  [17]. In arid environments, PMFCs yield lower power densities (e.g., Tapia et al. [18] reported a mere  $92\\mu \\mathrm{W} / \\mathrm{m}^2$ ), therefore in these environments, they are better used as biosensors rather than power suppliers: for example, Tapia et al. [19] were able to link PMFC power density to soil water content.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Several PMFC- enabled IoT monitoring applications have proven that these energy- harvesting sources can power remote sensor nodes successfully. For example, both Osorio- de- laRosa [10] and Brunelli et al. [15], [20], [21] developed monitoring applications powered by PMFCs. Osorio- de- la- Rosa used the power of multiple PMFCs to collect barometric and temperature data and transmit it with LoRa radios. Brunelli et al. used a single PMFC as an energy source and as a biosensor because the PMFC's OCV is correlated to the reactor plants' health.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Although particularly interesting for their sustainability and maintenance- free operation, PMFCs must face numerous technological challenges before being ready for industrialization. First, PMFCs's low voltage and power output needs to be optimized for efficient use of these energy sources. This can be done following two separate but parallel strategies. The first is to scaleup the cell's power output. This is typically done by increasing reactor size and/or stacking the cells together. While the former approach comes at the acceptable cost of reduced power density and higher internal impedance, the latter brings additional challenges, such as the harmful phenomena of voltage overshoots [22] and VR [9]. Although scaling up is also possible through electrobiochemical optimization of cell materials and working conditions, these approaches are beyond the scope of this article. Another strategy to increase energy extraction does not focus on the cell itself, but on the energy harvesting and conversion systems (EHSs) used to boost the PMFC's low voltage up to operative levels. Self- powered EHS have a cold- start threshold, which is the power step needed to self- start the system and begin energy extraction. If a PMFC fails to provide sufficient power to complete the cold- start, energy cannot be extracted from the cell. The commercialization of low- threshold harvesters, such as the one presented in Yamashita et al.'s [23] work, which starts from just  $2\\mu \\mathrm{W}$ , will enable harvesting from lower power levels.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Another challenge linked to PMFCs is that they require a startup phase, which can range from days to weeks. During this period, cells cannot provide power, as the microbial colony needs time to form a mature biofilm capable of sustaining current production. The startup also influences PMFC power production and its time evolution [24], [25].",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "How energy is extracted from PMFCs is also a matter of study. Harvesting schemes specific to PMFCs will open new possibilities for the commercial use of these peculiar energy sources. Unlike other sources, such as solar panels, which",
+        "page_idx": 0
+    }
+]

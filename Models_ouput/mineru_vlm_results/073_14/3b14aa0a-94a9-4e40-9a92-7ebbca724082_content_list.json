@@ -1,0 +1,68 @@
+[
+    {
+        "type": "text",
+        "text": "for all  $i^{\\prime},i^{\\prime \\prime}\\in \\{1,\\ldots ,|S|\\}$  . Then, the equilibrium state  $\\pmb{p}^{\\mathrm{st}}(\\mathbf{x},\\mathbf{y})$  changes into  $\\pmb{p}^{\\mathrm{st}}(\\mathbf{x},\\mathbf{y}) + \\mathrm{d}\\pmb{p}^{\\mathrm{st}}(\\mathbf{x},\\mathbf{y},\\mathrm{d}x^{a|s})$  Here, note that  $\\mathrm{d}M$  and  $\\mathrm{d}p^{\\mathrm{st}}$  are a matrix and a vector of order  $O(\\mathrm{dx}^{a|s})$  , respectively. From the stationary state condition, both  $(E - M)p^{\\mathrm{st}} = 0$  and  $(E - (M + \\mathrm{d}M))(\\pmb{p}^{\\mathrm{st}} + \\mathrm{d}\\pmb{p}^{\\mathrm{st}}) = 0$  hold.",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {(\\pmb {E} - (\\pmb {M} + \\mathrm{d}\\pmb {M}))(\\pmb{p}^{\\mathrm{st}} + \\mathrm{d}\\pmb{p}^{\\mathrm{st}}) - (\\pmb {E} - \\pmb {M})\\pmb{p}^{\\mathrm{st}} = 0}\\\\ & {\\Leftrightarrow (\\pmb {E} - \\pmb {M})\\mathrm{d}\\pmb{p}^{\\mathrm{st}} = \\mathrm{d}\\pmb {M}\\pmb{p}^{\\mathrm{st}} + \\mathbf{1}\\times O((\\mathrm{d}x^{a|s})^2).} \\end{array} \\tag{A10}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here, the term of  $O((\\mathrm{d}x^{a|s})^2)$  is small enough to be ignored. Then, the rest term  $\\delta M p^{\\mathrm{st}}$  is calculated as",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {(\\mathrm{d}M\\pmb {p}^{\\mathrm{st}})_{i^{\\prime}} = \\sum_{i^{\\prime \\prime}}\\mathrm{d}M_{i^{\\prime}i^{\\prime \\prime}}p_{i^{\\prime \\prime}}^{\\mathrm{st}} = \\mathrm{d}M_{i^{\\prime}i}p_{i}^{\\mathrm{st}}}\\\\ & {\\qquad = \\mathrm{d}x^{a|s_{i}}p_{i}^{\\mathrm{st}}y^{b|s_{i}}\\times \\left\\{ \\begin{array}{ll}1 - x^{a|s_{i}} & (s_{i^{\\prime}} = ab s_{i}^{-})\\\\ -x^{a^{\\prime}|s_{i}} & (s_{i^{\\prime}} = a^{\\prime}b s_{i}^{-},a^{\\prime}\\neq a)\\\\ 0 & (\\mathrm{otherwise}) \\end{array} \\right..}\\\\ & {\\qquad = \\mathrm{d}x^{a|s_{i}}p_{i}^{\\mathrm{st}}\\left(p_{i^{\\prime}}^{a|s_{i}} - \\sum_{a^{\\prime}}x^{a^{\\prime}|s_{i}}p_{i^{\\prime}}^{a^{\\prime}|s_{i}}\\right).} \\end{array} \\tag{A14}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Thus,",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {(\\pmb {E} - \\pmb {M})\\mathrm{d}\\pmb{p}^{\\mathrm{st}} = \\mathrm{d}x^{a|s_i}s_i^{\\mathrm{st}}\\left(\\pmb{p}^{a|s_i} - \\sum_{a'}x^{a'|s_i}\\pmb{p}^{a'|s_i}\\right)}\\\\ & {\\mathrm{d}\\pmb{p}^{\\mathrm{st}} = \\mathrm{d}x^{a|s_i}s_i^{\\mathrm{st}}(\\pmb {E} - \\pmb {M})^{-1}\\left(\\pmb{p}^{a|s_i} - \\sum_{a'}x^{a'|s_i}\\pmb{p}^{a'|s_i}\\right)}\\\\ & {\\Leftrightarrow \\frac{\\mathrm{d}\\pmb{p}^{\\mathrm{st}}}{\\mathrm{d}x^{a|s_i}} = \\frac{\\partial}{\\partial x^{a|s_i}}\\pmb{p}^{\\mathrm{st}}(\\mathrm{Norm}(\\mathbf{x}),\\mathbf{y}) = p_{s_i}^{\\mathrm{st}}(\\pmb {E} - \\pmb {M})^{-1}\\left(\\pmb{p}^{a|s_i} - \\sum_{a'}x^{a'|s_i}\\pmb{p}^{a'|s_i}\\right)}\\\\ & {\\Leftrightarrow \\frac{\\partial}{\\partial x^{a|s_i}}\\pmb{p}^{\\mathrm{st}}(\\mathrm{Norm}(\\mathbf{x}),\\mathbf{y})\\cdot \\pmb {u} = p_i^{\\mathrm{st}}(\\pmb {E} - \\pmb {M})^{-1}\\left(\\pmb{p}^{a|s_i} - \\sum_{a'}x^{a'|s_i}\\pmb{p}^{a'|s_i}\\right)\\cdot \\pmb {u}}\\\\ & {\\Leftrightarrow \\frac{\\partial}{\\partial x^{a|s_i}} u^{\\mathrm{st}}(\\mathrm{Norm}(\\mathbf{x}),\\mathbf{y}) = p_i^{\\mathrm{st}}\\left(\\pi (\\pmb{p}^{a|s_i},\\mathbf{x},\\mathbf{y}) - \\sum_{a'}x^{a'|s_i}\\pi (\\pmb{p}^{a'|s_i},\\mathbf{x},\\mathbf{y})\\right).} \\end{array} \\tag{A16}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The left- hand (resp. right- hand) side of Eq. (A19) corresponds to continualized MMGA (resp. MMRD).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A.4 Proof of Theorem 4",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let us prove that X's strategy in Nash equilibrium is uniquely  $\\mathbf{x} = x^{*}\\mathbf{1}$  . First, we define  $u^{*}$  and  $v^{*}$  .",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & u^{*} = x^{*}y^{*}u_{1} + x^{*}(1 - y^{*})u_{2} + (1 - x^{*})y^{*}u_{3} + (1 - x^{*})(1 - y^{*})u_{4}\\\\ & \\quad = \\frac{u_{1}u_{4} - u_{2}u_{3}}{u_{1} - u_{2} - u_{3} + u_{4}}\\\\ & \\quad (= -v^{*}) \\end{array} \\tag{A22}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "as X's and Y's payoffs in the Nash equilibrium in the zero- memory game. If X uses the Nash equilibrium strategy  $\\mathbf{x} = x^{*}\\mathbf{1}$  , the stationary state condition  $\\pmb{p}^{\\mathrm{st}} = M\\pmb{p}^{\\mathrm{st}}$  satisfies",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {\\pmb{p}^{\\mathrm{st}} = \\left( \\begin{array}{llll}x^{*}y_{1} & x^{*}y_{2} & x^{*}y_{3} & x^{*}y_{4}\\\\ x^{*}\\tilde{y}_{1} & x^{*}\\tilde{y}_{2} & x^{*}\\tilde{y}_{3} & x^{*}\\tilde{y}_{4}\\\\ \\tilde{x}^{*}y_{1} & \\tilde{x}^{*}y_{2} & \\tilde{x}^{*}y_{3} & \\tilde{x}^{*}y_{4}\\\\ \\tilde{x}^{*}\\tilde{y}_{1} & \\tilde{x}^{*}\\tilde{y}_{2} & \\tilde{x}^{*}\\tilde{y}_{3} & \\tilde{x}^{*}\\tilde{y}_{4} \\end{array} \\right)\\pmb{p}^{\\mathrm{st}}}\\\\ & {\\Rightarrow \\pmb{p}^{\\mathrm{st}} = (x^{*}\\pmb{p}^{\\mathrm{st}}\\cdot \\pmb {y},x^{*}(1 - \\pmb{p}^{\\mathrm{st}}\\cdot \\pmb {y}),\\tilde{x}^{*}\\pmb{p}^{\\mathrm{st}}\\cdot \\pmb {y},\\tilde{x}^{*}(1 - \\pmb{p}^{\\mathrm{st}}\\cdot \\pmb {y}))^{\\mathrm{T}}}\\\\ & {\\Rightarrow \\pmb{p}^{\\mathrm{st}}\\cdot \\pmb {u} = u^{*}}\\\\ & {\\Leftrightarrow u^{\\mathrm{st}} = u^{*}.} \\end{array} \\tag{A26}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

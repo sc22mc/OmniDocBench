@@ -1,0 +1,86 @@
+[
+    {
+        "type": "text",
+        "text": "where the chain_prompt is the aggregated thought chain $\\overline { { z } } _ { 1 \\dots n }$ chain feedback format: Can this reasoning chain complete the task and reach the target correctly by executing its reasoning steps?why?Write aanalysis report with conclusion under‘Anlysis Report:'. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "step feedback format:For each reasoning step,please providea detailed analysis of whether the current step is a logical inference of the previous stepand whether the reasoning step is beneficial to the correct solution.For each reasoning step with errors,please provide an error report and the corresponding advice on revision. For each reasoning step, please provide recommendation or rejection descriptions. Comments should be brief and follow the format: Reasoning step $\\langle i d x \\rangle$ Analysis report: .Advice:.Recommendation or Reject description: . ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "confidence feedback format: What is your confidence score on these your evaluations and comments?Please select one value from [0.1,0.3,0.5,0.7,0.9,1.0]. The score should be placed after‘Confidence score:’ for users to read.\" ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "With the feedback prompt,LLMs generate reasoning experience $\\mathbf { F } ^ { t }$ containing conclusion and analysis on the reasoning chain and each reasoning step. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A.3REASONING PIPELINE ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To facilitate the understanding of the proposed Boosting of Thoughts,we summarize the reasoning pipeline in Algorithm Table $\\bigstar$ The source code for this pipeline can be found in the file examples/BoostingOfThought/BoT_core.py. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Algorithm 1: Main reasoning pipeline of BoT ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Input: Number of iterations $T$ ,Number of tree structures $M$ ,Question $Q$ Output: Aggregated chain zT..· ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1 Initialize a simple prompt $\\mathbb { I } ^ { 0 } \\left( S , X , Q , \\mathbf { F } ^ { 0 } , \\{ G _ { i } \\} \\right)$ where $\\mathbf { F } ^ { 0 }$ will be an empty string. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2foreach iteration $t = 1 , 2 , . . . , T$ do ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3 Use LLMs with the prompt $\\mathbb { I } ^ { t - 1 } \\left( S , X , Q , \\mathbf { F } ^ { t - 1 } , \\{ G _ { i } \\} \\right)$ to create $M$ heterogeneous tree   \n4 Extract thought chains $\\left\\{ z _ { i = 1 } ^ { n ^ { m } } \\right\\} _ { m = 1 } ^ { M }$ $M$ $z _ { i = 1 } ^ { n ^ { m } }$ is the Agrt $m$ by usingsie ses fsts   \n5 $\\left\\{ z _ { i = 1 } ^ { n ^ { m } } \\right\\} _ { m = 1 } ^ { M }$ $\\overline { { z } } _ { 1 \\ldots n } ^ { t }$ Aggregation or Greedy aggregation.   \n6 Perform Thought Chain Analysis on $\\smash { \\overline { { z } } _ { 1 , . . , n } ^ { t } }$ with LLMs to obtain the feedback, which is combined with $\\overline { { z } } _ { 1 \\ldots n } ^ { t }$ to obtain experience $\\mathbf { F } ^ { t }$   \n7 Update the prompt by accumulating $\\mathbf { F } ^ { t }$ ,leading to $\\mathbb { I } ^ { t } \\left( S , X , Q , \\mathbf { F } ^ { t - 1 , t } , \\{ G _ { i } \\} \\right)$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "8end ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "$\\overline { { z } } _ { 1 \\dots n } ^ { T }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "BINSIGHTS FOR BOOSTING OF THOUGHTS",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Boosting of Thoughts derives from our insights that the reasoning ability of large language models (LLMs)for addressing mathematical problems comes directly from experience,which contains the accumulation of the analysis and advice on previous mistakes.Once the prompt embraces valid historical reasoning experience to be recalled by LLMs before performing reasoning,the produced reasoning steps are generally more logical and reasonable, as shown in the comparison between Table $\\textcircled { 5 }$ and Such insights also made us consider that LLMs do not need to rely heavily on a well-prepared prompt with human annotations (a few chains of thought demonstrations as exemplars in prompts) for each task.Yet,as LLMs are able to learn from experience,we can start froma simple prompt without examples or manually designed content to gradually collect experience during the reasoning process. Eventually, by accumulating experiences in the prompt, LLMs achieve strong reasoning toward addressing complex problems.With these insights,the Boosting of Thoughts is designed as an automated prompting framework,which iteratively colects an ensemble of trial-anderror reasoning experiences for problem-solving with LLMs.We argue that the proposed BoT is not ",
+        "page_idx": 0
+    }
+]

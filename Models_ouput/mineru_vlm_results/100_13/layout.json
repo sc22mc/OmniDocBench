@@ -1,0 +1,883 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        443,
+                        343,
+                        1547,
+                        392
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                343,
+                                1547,
+                                392
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        1547,
+                                        392
+                                    ],
+                                    "type": "text",
+                                    "content": "where the chain_prompt is the aggregated thought chain "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        1547,
+                                        392
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1\\ldots n}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        343,
+                                        1547,
+                                        392
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        441,
+                        415,
+                        2103,
+                        508
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                415,
+                                2103,
+                                508
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        415,
+                                        2103,
+                                        508
+                                    ],
+                                    "type": "text",
+                                    "content": "chain feedback format: Can this reasoning chain complete the task and reach the target correctly by executing its reasoning steps? why? Write a analysis report with conclusion under 'Analysis Report:'."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        531,
+                        2106,
+                        805
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                531,
+                                2106,
+                                805
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        531,
+                                        2106,
+                                        805
+                                    ],
+                                    "type": "text",
+                                    "content": "step feedback format: For each reasoning step, please provide a detailed analysis of whether the current step is a logical inference of the previous step and whether the reasoning step is beneficial to the correct solution. For each reasoning step with errors, please provide an error report and the corresponding advice on revision. For each reasoning step, please provide recommendation or rejection descriptions. Comments should be brief and follow the format: Reasoning step "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        531,
+                                        2106,
+                                        805
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\langle idx\\rangle"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        531,
+                                        2106,
+                                        805
+                                    ],
+                                    "type": "text",
+                                    "content": ". Analysis report: . Advice: . Recommendation or Reject description: ."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        443,
+                        831,
+                        2106,
+                        966
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                831,
+                                2106,
+                                966
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        831,
+                                        2106,
+                                        966
+                                    ],
+                                    "type": "text",
+                                    "content": "confidence feedback format: What is your confidence score on these your evaluations and comments? Please select one value from [0.1, 0.3, 0.5, 0.7, 0.9, 1.0]. The score should be placed after 'Confidence score:' for users to read."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        441,
+                        993,
+                        2101,
+                        1085
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                993,
+                                2101,
+                                1085
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        993,
+                                        2101,
+                                        1085
+                                    ],
+                                    "type": "text",
+                                    "content": "With the feedback prompt, LLMs generate reasoning experience "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        993,
+                                        2101,
+                                        1085
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{F}^t"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        993,
+                                        2101,
+                                        1085
+                                    ],
+                                    "type": "text",
+                                    "content": " containing conclusion and analysis on the reasoning chain and each reasoning step."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        448,
+                        1138,
+                        953,
+                        1184
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                448,
+                                1138,
+                                953,
+                                1184
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        448,
+                                        1138,
+                                        953,
+                                        1184
+                                    ],
+                                    "type": "text",
+                                    "content": "A.3 REASONING PIPELINE"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        1224,
+                        2106,
+                        1366
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1224,
+                                2106,
+                                1366
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1224,
+                                        2106,
+                                        1366
+                                    ],
+                                    "type": "text",
+                                    "content": "To facilitate the understanding of the proposed Boosting of Thoughts, we summarize the reasoning pipeline in Algorithm Table 1. The source code for this pipeline can be found in the file examples/BoostingOfThought/BoT_core.py."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        448,
+                        1425,
+                        1218,
+                        1468
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                448,
+                                1425,
+                                1218,
+                                1468
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        448,
+                                        1425,
+                                        1218,
+                                        1468
+                                    ],
+                                    "type": "text",
+                                    "content": "Algorithm 1: Main reasoning pipeline of BoT"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        441,
+                        1481,
+                        1688,
+                        1574
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                1481,
+                                1688,
+                                1574
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        1481,
+                                        1688,
+                                        1574
+                                    ],
+                                    "type": "text",
+                                    "content": "Input: Number of iterations "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1481,
+                                        1688,
+                                        1574
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "T"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1481,
+                                        1688,
+                                        1574
+                                    ],
+                                    "type": "text",
+                                    "content": ", Number of tree structures "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1481,
+                                        1688,
+                                        1574
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "M"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1481,
+                                        1688,
+                                        1574
+                                    ],
+                                    "type": "text",
+                                    "content": ", Question "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1481,
+                                        1688,
+                                        1574
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "Q"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1481,
+                                        1688,
+                                        1574
+                                    ],
+                                    "type": "text",
+                                    "content": ". Output: Aggregated chain "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1481,
+                                        1688,
+                                        1574
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1\\ldots n}^T"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        1481,
+                                        1688,
+                                        1574
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        408,
+                        1587,
+                        2004,
+                        2250
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                408,
+                                1587,
+                                2004,
+                                2250
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": "1 Initialize a simple prompt "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbb{I}^0 (S,X,Q,\\mathbf{F}^0,\\{G_i\\})"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " where "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{F}^0"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " will be an empty string. 2 for each iteration "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t = 1,2,\\dots,T"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " do 3 Use LLMs with the prompt "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbb{I}^{t - 1}(S,X,Q,\\mathbf{F}^{t - 1},\\{G_i\\})"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " to create "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "M"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " heterogeneous tree thought structures through Thought Structure Generation. 4 Extract thought chains "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{z_{i = 1}^{n^m}\\}_{m = 1}^M"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " from the "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "M"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " thought structures where each "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z_{i = 1}^{n^m}"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " is the best thought chain of "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " - th tree structure. 5 Aggregate "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{z_{i = 1}^{n^m}\\}_{m = 1}^M"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " into a single thought chain "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1\\ldots n}^t"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " by using either Best- First Aggregation or Greedy aggregation. 6 Perform Thought Chain Analysis on "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1\\ldots n}^t"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " with LLMs to obtain the feedback, which is combined with "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1\\ldots n}^t"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " to obtain experience "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{F}^t"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": ". 7 Update the prompt by accumulating "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{F}^t"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": ", leading to "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbb{I}^t (S,X,Q,\\mathbf{F}^{t - 1,t},\\{G_i\\})"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": ". 8 end 9 Obtain the solution "
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{z}_{1\\ldots n}^T"
+                                },
+                                {
+                                    "bbox": [
+                                        408,
+                                        1587,
+                                        2004,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        443,
+                        2352,
+                        1399,
+                        2405
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2352,
+                                1399,
+                                2405
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2352,
+                                        1399,
+                                        2405
+                                    ],
+                                    "type": "text",
+                                    "content": "B INSIGHTS FOR BOOSTING OF THOUGHTS"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        2451,
+                        2106,
+                        3049
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2451,
+                                2106,
+                                3049
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2451,
+                                        2106,
+                                        3049
+                                    ],
+                                    "type": "text",
+                                    "content": "Boosting of Thoughts derives from our insights that the reasoning ability of large language models (LLMs) for addressing mathematical problems comes directly from experience, which contains the accumulation of the analysis and advice on previous mistakes. Once the prompt embraces valid historical reasoning experience to be recalled by LLMs before performing reasoning, the produced reasoning steps are generally more logical and reasonable, as shown in the comparison between Table 5 and 6. Such insights also made us consider that LLMs do not need to rely heavily on a well- prepared prompt with human annotations (a few chains of thought demonstrations as exemplars in prompts) for each task. Yet, as LLMs are able to learn from experience, we can start from a simple prompt without examples or manually designed content to gradually collect experience during the reasoning process. Eventually, by accumulating experiences in the prompt, LLMs achieve strong reasoning toward addressing complex problems. With these insights, the Boosting of Thoughts is designed as an automated prompting framework, which iteratively collects an ensemble of trial- and- error reasoning experiences for problem- solving with LLMs. We argue that the proposed BoT is not"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

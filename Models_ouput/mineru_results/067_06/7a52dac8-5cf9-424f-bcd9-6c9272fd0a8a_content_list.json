@@ -1,0 +1,35 @@
+[
+    {
+        "type": "text",
+        "text": "the PnL on that cash account,but this is not done here in our formula,because it is dedicated to the asset under concern only. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Remark 3.1 (An alternative definition implenqnted in SOPHIS) ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Onepotential alternative to the presented formula (4) could be to replace each occurrence of $\\chi _ { u _ { i } }$ in the last term with $\\chi _ { T }$ .Intuitively, thisalternative has theappeal that $\\chi _ { T }$ can be factored out of the sum,and the remaining formula is totally FX-free within the asset's currency. Since this is what the front office system SOPHIS does in its column“Result curr. global”,when the global currency is EUR,let us briefly comment on the implied change of meaning. When using $\\chi _ { T }$ always,the obtained PnL intuitively assumes that each received coupon amount $c _ { u }$ at some time $u$ is held in cash (not on a bank account,and also not invested in some other asset） between $u$ and $T$ .Changes in the FX rate at later time points then induce significant PnL movements to cash amounts that have long left the position under consideration. For example, consider a bond that pays a high coupon rate, so a lot of cash leaves the asset over time. But if the FX rate $\\chi$ sharply increases at time $T$ ,all these past cash amounts induce PnL,even though they might have been consumed or spent elsewhere already and should not induce PnL at $T$ anymore. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The change of the carry PnL part is especially important, if one aggregates several assets to a portfolio and wishes to decompose the PnL of the whole portfolio.It is then well possible that an asset is bought or sold at some time point $u$ in $( t , T ]$ .For instance,it could be that at time $u$ one receives a coupon payment from one asset and uses it to purchase another asset,or it could be that additional money fows into (out of) the asset to increase (reduce) the holdings.In qualitative terms,this is similar to the aforementioned coupon cash outflows,because we have to deal with in- and outflows in our PnL measurement.In order to take such dynamic rebalancings of a whole portfolio $P$ into account in the PnL decomposition,we recommend to split the time period $( t , T ]$ into several parts $t = : t _ { 0 } < t _ { 1 } < . . . \\leq t _ { n } = T ^ { \\prime }$ ,where the $t _ { i }$ include all transaction dates of the portfolio,i.e.alldates at which an asset is either sold or bought.Then finally, we obtain the decomposition ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/1faf9ec36b1feab1e3ef6330ac2a71af911097c2544f292d22bbf803d6383ada.jpg",
+        "text": "$$\n\\begin{array} { r l r } { P _ { ( t , T ] } ^ { ( P ) } = \\underbrace { \\sum _ { k \\in P } \\displaystyle \\sum _ { i = 1 } ^ { n - 1 } P _ { ( t _ { i - 1 } , t _ { i } ] } ^ { ( A ) } ( \\chi ) } _ { = P _ { ( t , T ] } ^ { ( P ) } ( \\chi ) } + \\underbrace { \\sum _ { A \\in P } \\displaystyle \\sum _ { i = 1 } ^ { n - 1 } P _ { ( t _ { i - 1 } , t _ { i } ] } ^ { ( A ) } ( r ) } _ { = P _ { ( t , T ] } ^ { ( P ) } ( r ) } } & \\\\ { + \\underbrace { \\sum _ { A \\in P } \\displaystyle \\sum _ { i = 1 } ^ { n - 1 } P _ { ( t _ { i - 1 } , t _ { i } ] } ^ { ( A ) } ( x ) } _ { = P _ { ( t , T ] } ^ { ( P ) } ( x ) } + \\underbrace { \\sum _ { A \\in P } \\displaystyle \\sum _ { i = 1 } ^ { n - 1 } P _ { ( t _ { i - 1 } , t _ { i } ] } ^ { ( A ) } ( \\mathrm { c a r r y } ) } _ { = P _ { ( t , T ] } ^ { ( P ) } ( \\mathrm { c a r r y } ) } . } & \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For the computation of this decomposition,required is availability of $\\chi _ { t }$ ， $A _ { t } = A _ { t } ( r _ { t } , \\lambda _ { t } , x _ { t } )$ ， $r _ { t }$ ，and $x _ { t }$ at all time points $t _ { 0 } , \\ldots , t _ { n }$ ,and for all assets $A$ in the portfolio $P$ , as well as pricing routines that implement the asset prices in dependence on given parameters $r$ ， and $x$ ： ",
+        "page_idx": 0
+    }
+]

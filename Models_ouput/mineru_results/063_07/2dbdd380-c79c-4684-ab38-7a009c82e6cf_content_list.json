@@ -1,0 +1,109 @@
+[
+    {
+        "type": "text",
+        "text": "danger of confusion. We fix a character $\\chi$ of order $\\ell$ .Then we have ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/bf4d84b173d9263de1bd8e09f8ae43097d00a50bab521e8d3231b23c1791f90f.jpg",
+        "text": "$$\nN _ { g } = q + \\sum _ { 1 \\leq j , k \\leq \\ell - 1 } \\chi ^ { j } ( - g ^ { - 2 } ) \\chi ^ { k } ( - g ^ { - 1 } ) J ( \\chi ^ { j } , \\chi ^ { k } )\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/3e50170cca46f26d17198dc00b6a65e3763b7776e238788363dbaa802eba8a0b.jpg",
+        "text": "$$\nJ ( \\chi ^ { j } , \\chi ^ { k } ) = \\sum _ { a \\in \\mathbb { F } _ { q } } \\chi ^ { j } ( a ) \\chi ^ { k } ( 1 - a )\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "is a Jacobi sum with respect to $\\chi ^ { j }$ and $\\chi ^ { k }$ . The following properties of Jacobi sums are useful. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 2.2 ([LN97 Theorem 5.19, 5.21, 5.22]). Let $\\lambda$ ,y be two extended characters of $\\mathbb { F } _ { q }$ ， ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(i) $J ( \\lambda , \\psi ) = J ( \\psi , \\lambda )$   \n(ii) $J ( \\varepsilon , \\varepsilon ) = q$   \n(iii) $J ( \\lambda , \\varepsilon ) = 0$ d $\\lambda \\neq \\varepsilon$ ，   \n(iv) $J ( \\lambda , \\lambda ^ { - 1 } ) = - \\lambda ( - 1 ) i f \\lambda \\neq \\varepsilon$   \n(v） $| J ( \\lambda , \\psi ) | = { \\sqrt { q } } i f \\lambda , \\psi$ and $\\lambda \\psi$ are all nontrivial. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note that $| \\chi ^ { i } ( a ) | = 1$ for all $a \\in \\mathbb { F } _ { q } ^ { \\times }$ . By (iv) and (v) of Lemma $| 2 . 2 \\rrangle$ one has the following estimate of $N _ { g }$ from $( 5 )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/925b4ab93758daa46ec78d61f27622534c5dd6a046ab2205a9df60728f5fe635.jpg",
+        "text": "$$\n| N _ { g } - q | \\leq M _ { 0 } + M _ { 1 } \\sqrt { q }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $M _ { 0 }$ (resp. $M _ { 1 }$ ）is the number of pairs $( j , k )$ with $\\chi ^ { j } \\chi ^ { k } = \\varepsilon$ (resp. $\\chi ^ { j } \\chi ^ { k } \\neq \\varepsilon$ ） Observe that $M _ { 0 } = \\ell - 1$ and $M _ { 1 } = ( \\ell - 1 ) ( \\ell - 2 )$ .Thus,if ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/cd8b80a981bde0238cfe6e621575c88d6d98743ed44c1d5709abb3dd125be3cd.jpg",
+        "text": "$$\nq > ( \\ell - 1 ) + ( \\ell - 1 ) ( \\ell - 2 ) { \\sqrt { q } } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "then $N _ { g } > 0$ . Consequently, for $q$ large enough (for example $q > ( \\ell - 1 ) ^ { 4 } )$ , one has $N _ { g } > 0$ for any $g \\in \\mathbb { F } _ { q } ^ { \\times }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For the numbers of rational solutions to equations over finite fields,the Hasse-Weil bound [Wei48] provides more precise information than the crude estimate given above. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Theorem 1 (Hasse-Weil bound). Let $\\mathcal { C }$ be a non-singular, absolutely irreducible projective curve over $\\mathbb { F } _ { q }$ and let $N _ { \\mathcal { C } } = | \\mathcal { C } ( \\mathbb { F } _ { q } ) |$ be the number of $\\mathbb { F } _ { q }$ -rational points of $\\mathcal { C }$ Then, ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/aa8b7fee1aacc70804278b4253ce8dda92953d22d7f8ca291f7c71a5e5e32bb5.jpg",
+        "text": "$$\n| N _ { \\mathcal { C } } - ( q + 1 ) | \\leq 2 \\mathfrak { g } \\sqrt { q }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $ { \\mathfrak { g } }$ is the genus of $\\mathcal { C }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Applying the Hasse-Weil bound to $\\widetilde { \\mathcal { C } _ { g } }$ , we see that ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/2f8c7928afbd53c79f339921e33513a3ad8d465fb446cc5738f263fae1ffbb8b.jpg",
+        "text": "$$\n| \\widetilde { N _ { g } } - ( q + 1 ) | \\le ( \\ell - 1 ) ( \\ell - 2 ) \\sqrt { q }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "since the genus of $\\widetilde { \\mathcal { C } _ { g } }$ is ${ \\mathfrak { g } } _ { \\ell } = ( \\ell - 1 ) ( \\ell - 2 ) / 2$ by the degree-genus formula $\\mathbb { H } { \\mathrm { a r } } 7 7 \\mathbb { I }$ Consequently, $\\widetilde { N _ { g } } > 0$ for any generator $g$ of $\\mathbb { F } _ { q } ^ { \\times }$ provided that $q + 1 > ( \\ell - 1 ) ( \\ell - 2 ) \\sqrt { q }$ （ and therefore $\\widetilde { \\mathcal { C } _ { g } } ( \\mathbb { F } _ { q } )$ is non-empty if $q \\geq ( \\ell - 1 ) ^ { 2 } ( \\ell - 2 ) ^ { 2 }$ ",
+        "page_idx": 0
+    }
+]

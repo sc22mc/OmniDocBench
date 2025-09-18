@@ -1,0 +1,71 @@
+[
+    {
+        "type": "text",
+        "text": "In order to measure the part of P() that is induced by changes in the FX rate $\\chi$ ，we decompose $P _ { ( t , T ] } ^ { ( A ) }$ as follows: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/6cbe4d4189690f2df43762dfa739c6c7e86f1efa46668918a5680bf9e24d9d59.jpg",
+        "text": "$$\nP _ { ( t , T ] } ^ { ( A ) } = \\underbrace { \\frac { A _ { t } + A _ { T } } { 2 } \\left( \\chi _ { T } - \\chi _ { t } \\right) } _ { = : P _ { ( t , T ] } ^ { ( A ) } ( \\chi ) } + \\frac { \\chi _ { t } + \\chi _ { T } } { 2 } \\left( A _ { T } - A _ { t } \\right) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the following paragraph,we further decompose $A _ { T } - A _ { t }$ into different parts. Section2 first treats the case of assets subject to reinvestment,while Section3treats the general case and shows how to apply the methodology for whole portfolios of assets. Finally, Section4demonstrates our decomposition by an example and applies the methodology to a performance attribution for our fund XAIA Credit Debt Capital. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Remark 1.1 (Alternative FX performance decompositions) ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The decomposition of the PnL into FX-induced part and non-FX-induced part (2) intuitively assumes that (i) the whole FX rate difference $\\chi _ { T } - \\chi _ { t }$ is earned on the arithmetic average of the asset values $A _ { t }$ and $A _ { T }$ at the beginning and at the end of the period,and (ii) the performance due to asset value change $A _ { T } - A _ { t }$ is converted into EUR according to the arithmetic average of the initial and latest FX rates $\\chi _ { t }$ and $\\chi _ { T }$ . Analternative could be to only use $A _ { t }$ in (i）and $\\chi _ { T }$ in (ii),by replacing the decomposition $( \\ k _ { 2 } )$ with the alternative definition ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/e64f245570cc3c7d237c2071b75996bdc440177f4de242507972d30dc77dfd98.jpg",
+        "text": "$$\nP _ { ( t , T ] } ^ { ( A ) } = \\underbrace { A _ { t } \\left( \\chi _ { T } - \\chi _ { t } \\right) } _ { = : \\tilde { P } _ { ( t , T ] } ^ { ( A ) } ( \\chi ) } + \\chi _ { T } \\left( A _ { T } - A _ { t } \\right) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "While both definitions $\\underset { \\ r { \\infty } } { P _ { ( t , T ] } ^ { ( A ) } ( \\chi ) }$ and $\\tilde { P } _ { ( t , T ] } ^ { ( A ) } ( \\chi )$ appear to be reasonable, we prefer ( 2 We notice that this is different to the practice of using the column “Result curr. global” in the front ofice system SOPHIS for FX-hedged performance monitoring,because the latter essentially corresponds to the expression $\\chi _ { T } \\left( A _ { T } - A _ { t } \\right)$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Yet another,more theoretical,decompositionisobtainedbyassumingthat both $\\{ A _ { u } \\} _ { u \\in ( t , T ] }$ and $\\{ \\chi _ { u } \\} _ { u \\in ( t , T ] }$ are realizations of semi-martingales. The product formula then gives the identity ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4f7804f7426654273d17dbcfaba699f7e486fb4dc273cc1106397eecaa716579.jpg",
+        "text": "$$\nP _ { ( t , T ] } ^ { ( A ) } = \\int _ { ( t , T ] } A _ { u } \\mathrm { d } \\chi _ { u } + \\int _ { ( t , T ] } \\chi _ { u } \\mathrm { d } A _ { u } + [ A , \\chi ] _ { t } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In intuitive terms,the right-hand side of $( 3 )$ is a limit expression as $n \\to \\infty$ of ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/e51fbef8f5b8551df2d4ca028a97147b583de7ed4c45692ad0acbd24acc05040.jpg",
+        "text": "$$\n\\sum _ { i = 1 } ^ { n } A _ { u _ { i - 1 } } \\left( \\chi _ { u _ { i } } - \\chi _ { u _ { i - 1 } } \\right) + \\sum _ { i = 1 } ^ { n } \\chi _ { u _ { i - 1 } } \\left( A _ { u _ { i } } - A _ { u _ { i - 1 } } \\right) + \\sum _ { i = 1 } ^ { n } ( A _ { u _ { i } } - A _ { u _ { i - 1 } } ) \\left( \\chi _ { u _ { i } } - \\chi _ { u _ { i - 1 } } \\right) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where the partition $t = u _ { 0 } < u _ { 1 } < . . . < u _ { n } = T$ of the interval $( t , T ]$ becomes finer and finer with increasing $n$ . Under the assumption that $A$ and $\\chi$ are independent (or of finitevariation） the co-variation term $[ A , \\chi ] _ { t }$ vanishes and we observe that our decomposition ",
+        "page_idx": 0
+    }
+]

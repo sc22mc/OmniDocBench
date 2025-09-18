@@ -1,0 +1,96 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/7ff864712624bf38a6b53bfa731406b913eb6a2e0cf216ccc20bfd316352904f.jpg",
+        "image_caption": [
+            "Figure 4: The structure of the history-aware context encoder in HAHT. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "conversation aggregator $F _ { c }$ to aggregate all utterance representations $\\mathbf { U } ^ { i }$ into the condensed history memory $\\mathbf { c } ^ { i }$ ， ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/5c6e4d0ccc0b17f581d222473ad17a526899a096afab7616c68c497f09269526.jpg",
+        "text": "$$\n\\begin{array} { r } { \\mathbf { c } ^ { i } = F _ { c } ( \\mathbf { U } ^ { i } ) . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The conversation aggregator is developed based on the following self-attentive mechanism (Lin et al., 2017), ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/f06290a73fa3ef29c0c39e6a42fd30138fb2e9f48364187058576346aff17807.jpg",
+        "text": "$$\n\\begin{array} { r l } & { F _ { c } ( \\mathbf { U } ^ { i } ) = \\alpha \\mathbf { U } ^ { i } , } \\\\ & { \\alpha = \\mathrm { s o f t m a x } \\big ( \\mathbf { W } _ { k } \\mathrm { t a n h } ( \\mathbf { W } _ { q } \\mathbf { U } ^ { i \\top } ) \\big ) , } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\mathbf { W } _ { q }$ and $\\mathbf { W } _ { k }$ are learnable parameters. $\\alpha \\in$ $\\mathbb { R } ^ { n _ { i } }$ is the importance vector of the history conversation utterances in $H ^ { i }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "After applying previous steps to all history conversations $H$ ,we will finally obtain a history memory matrix $\\mathbf { C } \\in \\mathbb { R } ^ { M \\times d }$ containing a history memory for each history conversation,where $M$ is the number of history conversation sessions. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.2History-aware Context Encoder ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "History conversation sessions usually contain the background stories (e.g.,interlocutors’profiles or previous discussions between them) that bring out the current conversation session. Leveraging the history conversations will help the model to better understand the current conversation context and respond properly. On the other hand, the current conversation context can help the model update the history memories.Thus,we encode the history memory $\\mathbf { C }$ together with the current conversation context by adopting the transformer attention between them. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For the current conversation context $X$ ,we also prepend a special token“User:”or“Assistant:\" to each utterance depending on the role of the utterance speaker and concatenate all utterances into a single sentence. Then,we adopt the embedding layer $E _ { m }$ to obtain a sequence of context token embeddings $\\mathbf { S } = \\{ \\mathbf { s } ^ { 1 } , \\mathbf { s } ^ { 2 } , \\cdots , \\mathbf { s } ^ { n _ { x } } \\}$ where $n _ { x }$ is the length of the context sequence.Next, we concatenate the history memory matrix $\\mathbf { C } \\in \\mathbb { R } ^ { M \\times d }$ with $\\mathbf { S } \\in \\mathbb { R } ^ { n _ { x } \\times d }$ over the first dimension and apply $n _ { e n c }$ Transformer encoder layers. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/d879f708b8f6546ed582663aeeb8cad3fd2febffd2fcdcbd06504210c1fae1c2.jpg",
+        "image_caption": [
+            "Figure 5: The structure of the history-aware response generatorin HAHT. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "By employing attention in the transformer encoderlayers,our model can understand the conversation context by attending to all context token embeddings and history conversation memories. We denote this history-aware context encoding by $\\mathbf { S } _ { c } \\in \\mathbb { R } ^ { n _ { x } \\times d }$ After context encoding, history conversation memories are updated based on the latest information from the current conversation context. We denote this context-updated history memory as $\\mathbf { C } _ { s } \\in \\mathbb { R } ^ { M \\times d }$ ，The concatenation of $\\mathbf { C } _ { s }$ and $\\mathbf { S } _ { c }$ over the first dimension will become the input of the response generator. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.3History-aware Response Generator ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Inspired by CopyNet (Gu et al.,2016),we construct two vocabularies,i.e., generic vocabulary $V _ { g }$ and history-aware vocabulary $V _ { h }$ ,to better generate history-aware responses.The generic vocabulary $V _ { g }$ contains the words that appear in all the training dataset, and the history-aware vocabulary $V _ { h }$ only contain the words that appear in the history conversations $H$ . To generate a word of the response, the response generator will choose to generate a generic word from $V _ { g }$ or directly copy a word from $V _ { h }$ based on the switching mechanism (Gulcehre et al., 2016). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Specifically, at each decoding time step $t$ we feed $\\mathbf { C } _ { s }$ ， $\\mathbf { S } _ { c }$ and the ground truth word sequence before $t$ into $n _ { d e c }$ Transformer decoder layers and obtain a hidden representation vector $\\mathbf { o } _ { t } \\in \\mathbb { R } ^ { d }$ The ",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,75 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/46c59c8755807df0045aee30e78d55a0d340e2adc550de07f6f5e865d8ddaedf.jpg",
+        "image_caption": [
+            "Fig. 8. Perspective projection of the point cloud vertices to the AR interface and image filling (in the view of ego1)."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/541bd903141da42147f6b133da902d20dc92c7ad17b9041697a8a4c712432285.jpg",
+        "image_caption": [
+            "Fig. 9. Pothole recognition (highlighted in red color) and AR visualization of the corresponding information (in the view of ego1)."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "we subsequently introduced simulated obstacles. Specifically, we designed obstacles as curved point cloud surfaces using the open- source software Blender and used them to substitute parts of the road. To avoid modeling the obstacles by hand, we followed an automated procedure to generate a plethora of different obstacles based on several parameters, such as depth, ellipticity and size. An example of a frame in the CARLA simulator with a simulated pothole is presented in Fig. 3 (texture) and in Fig. 4 (geometry).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "IV. INTERFACES AND COMMUNICATION",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Context- awareness is a critical factor for successful takeover requests and a lot of effort has been devoted to determining the type of stimulus (e.g. visual, auditory, vibrotactile) [59] and the required time- window [60], [61], [62]. In the case of partial or conditional driving automation, our framework could be used to prepare the driver to quickly take the control of the vehicle, if requested. In order to ensure that the driver is able to swiftly take over the control of the vehicle in an efficient way, we developed a notification system that presents relevant information about the condition of the environment. Our notification system is based on non- intrusive visual cues to prevent tunnel visioning, alerting the driver of potential risks and also directing his/her attention to the objects of interest that sparked the take- over request. In that way, in addition to assisting the human operator during manual driving, the system can, in times of automated driving, trigger the attention of the operator to possible external hazards and preparing him/her to resume control. The visualization technique presented in this section is designed as an AR windshield interface, although this is not restrictive, i.e. the method can be implemented in any AR interface.",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/fd0d48e6c3a13085ebcdb2b483e497201290849a5f75eb576147085f65cd6b0c.jpg",
+        "image_caption": [
+            "Fig. 10. AR projection of the point cloud vertices to the scene image that depicts the starting point of view of the ego2 vehicle."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/763cba0977b8184a99344885e2d52428305f833424840c35169b29424c2eae42.jpg",
+        "image_caption": [
+            "Fig. 11. Early warning of upcoming pothole to inform ego2."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. AR Visualization",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The visualization of obstacles is performed by projection. Assuming the position is known for the AR interface and the LiDAR relative to the world, we construct a transformation matrix to map the points of the point cloud from the LiDAR relative coordinate system to the AR interface's coordinate system. The transformation between two different coordinate systems is typically performed by applying serially a scale, a rotation and then a translation transformation. Since both coordinate systems are orthonormal, the scaling can be omitted. Also, by taking advantage of the rigid body nature of the vehicle where the LiDAR and AR interface is located, we also omit the rotation matrix given that, without loss of generality, we can assume that the two coordinate systems are aligned. According to these assumptions, the LiDAR coordinates are transformed into the AR interface's coordinates by a simple translation.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For projecting the points of the point cloud to the AR interface, we assume a simple pinhole camera model. If the AR interface is, for example, an AR windshield, then the windshield represents the image plane and the head of the driver the principal point with coordinates  $(x_0, y_0)$ . That way,",
+        "page_idx": 0
+    }
+]

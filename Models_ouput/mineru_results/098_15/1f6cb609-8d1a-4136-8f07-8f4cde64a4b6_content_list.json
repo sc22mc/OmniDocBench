@@ -1,0 +1,61 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/81026ca61ca93625f12f437e8c700bb4bd5daff222f7c678f29fe9fc376dcbd6.jpg",
+        "image_caption": [
+            "Figure 10: The context length distribution of test samples: Most samples are longer than 5O0 tokens. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "whether the response (l） follows the given instruction and (2）is correct.If both answers correctly respond to the prompt，you should judge it as a tie. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Example1: 1 ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Text:We report the development of GPT-4，a large-scale，multimodal model which can accept image and text inputs and produce text outputs. While less capable than humans in many real-world scenarios,GPT-4 exhibits human-level performance on various professional and academic benchmarks,including passing a simulated bar exam with a score around thetop $10 \\%$ oftest takers.GPT-4 is a Transformerbased model pre-trained to predict the next token in a document. The post-training alignment process results in improved performance on measures of factuality and adherence to desired behavior.A core component of this project was developing infrastructure and optimization methods that behave predictably across a wide range of scales.This allowed us to accurately predict some aspects of GPT-4's performance based on models trained with no more than 1/1,0ooth the compute of GPT-4. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prompt:What is GPT4? ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Assistant A:GPT4 is a large-scale language-trained transformer-based model. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Assistant B:GPT4 can produce outputs. 1 ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Your output should be: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "{\"reason\":\"The instruction asks what GPT4 is，and from the original   \ntext，we know that GPT4 is a multimodal，large-scale model that can   \ngenerate text.Therefore，Assistant A is the closer answer,while   \nAssistant B did not follow the instruction well in providing a   \nresponse.\"，\"choice\":\"A\"}   \n： ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Example2: 1 ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Text:Making language models bigger does not inherently make them better at following a user's intent.For example，large language models can generate outputs that are untruthful,toxic，or simply not helpful to the user.In other words，these models are not aligned with their users. ",
+        "page_idx": 0
+    }
+]

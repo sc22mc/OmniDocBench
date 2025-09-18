@@ -1,0 +1,369 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        257,
+                        306,
+                        2213,
+                        957
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                257,
+                                306,
+                                2213,
+                                957
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        257,
+                                        306,
+                                        2213,
+                                        957
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                257,
+                                                306,
+                                                2213,
+                                                957
+                                            ],
+                                            "type": "image",
+                                            "image_path": "8dc9eff63fc0abeb156eed6d9e6744833726da176f5185a9e52db4aa1a2faa08.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                204,
+                                1019,
+                                2269,
+                                1108
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        1019,
+                                        2269,
+                                        1108
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                204,
+                                                1019,
+                                                2269,
+                                                1108
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 1. Overview of our method. Four coding patterns are applied to aperture plane during single exposure of image frame. Image and events are jointly used to reconstruct light field through convolutional neural network (CNN)."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        206,
+                        1201,
+                        1190,
+                        1445
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                206,
+                                1201,
+                                1190,
+                                1445
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        1201,
+                                        1190,
+                                        1445
+                                    ],
+                                    "type": "text",
+                                    "content": "show that our method can reconstruct light fields more accurately than several other imaging methods with a single exposure, and our method works successfully with our prototype camera in capturing real 3- D scenes with convincing visual quality."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        206,
+                        1448,
+                        1190,
+                        2042
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                206,
+                                1448,
+                                1190,
+                                2042
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        1448,
+                                        1190,
+                                        2042
+                                    ],
+                                    "type": "text",
+                                    "content": "To the best of our knowledge, we are the first to investigate the combination of coded- aperture imaging and events in the context of computational light- field imaging. Our contribution is not limited to shortening the measurement time for a light field, but it enables us to go beyond the limitation of the frame- rate of image sensors; Our method can better utilize the time resource during a single exposure, and obtain more information per unit time (i.e., being time- efficient) than the baseline coded- aperture imaging method. Our method is also distinctive in the sense that events are induced actively by the camera's optics rather than the moving objects or ego- motion of the camera."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        206,
+                        2092,
+                        568,
+                        2145
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                206,
+                                2092,
+                                568,
+                                2145
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        2092,
+                                        568,
+                                        2145
+                                    ],
+                                    "type": "text",
+                                    "content": "2. Related Works"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        206,
+                        2178,
+                        1190,
+                        2970
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                206,
+                                2178,
+                                1190,
+                                2970
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        2178,
+                                        1190,
+                                        2970
+                                    ],
+                                    "type": "text",
+                                    "content": "The most straight- forward approach to light- field acquisition is to construct an array of cameras [8, 40, 51], which involves costly and bulky hardware. Lens- array- based cameras [1, 2, 31, 32] gained popularity because a light field can be captured in a single shot. However, this type of camera has an intrinsic trade- off between the number of views and the spatial resolution of each view. Mask- based coded- imaging methods [10, 14, 22, 26, 29, 30, 45, 47] have been developed to increase the efficiency of light- field acquisition. With coded- aperture imaging, two to four images, taken from a stationary camera with different aperture- coding patterns, are sufficient to computationally reconstruct a light field with "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        2178,
+                                        1190,
+                                        2970
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "8 \\times 8"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        2178,
+                                        1190,
+                                        2970
+                                    ],
+                                    "type": "text",
+                                    "content": " views in full- sensor resolution [10, 14, 42]. However, since several coded images need to be acquired in sequence, the lengthy measurement time remains an issue. Joint aperture- exposure "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1282,
+                                1201,
+                                2272,
+                                1643
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1201,
+                                        2272,
+                                        1643
+                                    ],
+                                    "type": "text",
+                                    "content": "coding [28, 41, 42, 46] enables more flexible coding patterns during a single exposure but comes with complicated hardware implementation; as far as we know, only Mizuno et al. [28] reported a working prototype for this method but with awkward hardware restrictions for the noncommercialized image sensor. Our method also applies several aperture- coding patterns during a single exposure, but we combine them with an off- the- shelf event camera to achieve time- efficient and accurate light- field acquisition."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        1282,
+                        1201,
+                        2272,
+                        1643
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 6,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1282,
+                        1659,
+                        2272,
+                        2352
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1282,
+                                1659,
+                                2272,
+                                2352
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1659,
+                                        2272,
+                                        2352
+                                    ],
+                                    "type": "text",
+                                    "content": "Event cameras [3, 9] are bio- inspired sensors that can record intensity changes asynchronously at each pixel with a very low latency. Compared with ordinary frame- based cameras, event cameras can capture more fine- grained temporal information in a higher dynamic range, which opens up many applications such as optical- flow estimation, deblurring, video interpolation, and camera pose estimation. Event cameras have also been used extensively for 3- D reconstruction [17, 24, 35, 37, 56, 57]. In these studies, however, the events were usually caused either by the moving objects or ego- motion of the camera. Our method can be regarded as a new application of an event camera; the events are induced actively by the camera's optics in the framework of computational imaging."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        1282,
+                        2366,
+                        2272,
+                        2861
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1282,
+                                2366,
+                                2272,
+                                2861
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2366,
+                                        2272,
+                                        2861
+                                    ],
+                                    "type": "text",
+                                    "content": "Single- view view synthesis (SVVS) [5- 7, 19, 20, 34, 43, 44, 53, 55] is used to reconstruct a 3- D scene from a single image. Since this is geometrically an ill- posed problem, SVVS methods rely on implicit prior knowledge learned from the training dataset rather than physical cues. These methods are not necessarily designed to be physically accurate but to hallucinate a visually- plausible 3- D scene. Our method takes an orthogonal approach to SVVS; we use not only a single image but also a coded aperture and events to obtain solid physical cues from the target 3D scene."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1282,
+                        2874,
+                        2272,
+                        2973
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1282,
+                                2874,
+                                2272,
+                                2973
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2874,
+                                        2272,
+                                        2973
+                                    ],
+                                    "type": "text",
+                                    "content": "Various computational imaging methods have been developed on the basis of deep- optics [13, 14, 21, 28, 33,"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

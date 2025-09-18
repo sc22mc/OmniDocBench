@@ -1,0 +1,661 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        553,
+                        518,
+                        1994,
+                        920
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                553,
+                                518,
+                                1994,
+                                920
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        553,
+                                        518,
+                                        1994,
+                                        920
+                                    ],
+                                    "type": "text",
+                                    "content": "finite automata [7, 14]. One of the most famous longstanding open problems in automata theory, known as Cerný Conjecture, states that for a given synchronizing DFA with "
+                                },
+                                {
+                                    "bbox": [
+                                        553,
+                                        518,
+                                        1994,
+                                        920
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "n"
+                                },
+                                {
+                                    "bbox": [
+                                        553,
+                                        518,
+                                        1994,
+                                        920
+                                    ],
+                                    "type": "text",
+                                    "content": " states one can always find a synchronizing word of length at most "
+                                },
+                                {
+                                    "bbox": [
+                                        553,
+                                        518,
+                                        1994,
+                                        920
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(n - 1)^2"
+                                },
+                                {
+                                    "bbox": [
+                                        553,
+                                        518,
+                                        1994,
+                                        920
+                                    ],
+                                    "type": "text",
+                                    "content": ". This conjecture was proven for numerous classes of automata, but the problem is still not solved in general case. The concept of synchronization has been also considered in coding theory [3, 8], parts orienting in manufacturing [5, 15], testing of reactive systems [19] and Markov Decision Processes [11, 12]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        553,
+                        920,
+                        1994,
+                        1415
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                553,
+                                920,
+                                1994,
+                                1415
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        553,
+                                        920,
+                                        1994,
+                                        1415
+                                    ],
+                                    "type": "text",
+                                    "content": "Allowing no outgoing transitions from some states for certain letters helps us to model a system for which certain actions cannot be accomplished while being in a specified state. This leads to the problem of finding a synchronizing word for a finite automaton, where transition function is not defined for all states. Notice that this is the most frequent case, if we use automata to model real- world systems. In practice, it rarely happens that a real system can be modeled with a DFA where transition function is total. The transition function is usually a partial one. This fact motivated many researchers to investigate the properties of partial finite automata relevant to practical problems of synchronization."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        553,
+                        1419,
+                        1991,
+                        1567
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                553,
+                                1419,
+                                1991,
+                                1567
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        553,
+                                        1419,
+                                        1991,
+                                        1567
+                                    ],
+                                    "type": "text",
+                                    "content": "We know that, in general case, checking if a partial automaton can be synchronized is PSPACE- complete [13] even for binary alphabet [26] and those facts are essential in our latter considerations."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        553,
+                        1570,
+                        1994,
+                        1867
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                553,
+                                1570,
+                                1994,
+                                1867
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        553,
+                                        1570,
+                                        1994,
+                                        1867
+                                    ],
+                                    "type": "text",
+                                    "content": "In this paper we present a public key cryptosystem utilizing fact, that checking if the PFA is carefully synchronizing is PSPACE- complete. This is however not the first attempt of trying to develop asymmetric cryptosystems with the notion of finite automata. Public key cryptography on finite automata with output is discussed in [21] and uses the notion of invertible automata to provide the hard computational problem, inevitable to design such cryptosystem."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        553,
+                        1867,
+                        1994,
+                        2164
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                553,
+                                1867,
+                                1994,
+                                2164
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        553,
+                                        1867,
+                                        1994,
+                                        2164
+                                    ],
+                                    "type": "text",
+                                    "content": "The paper is organized as follows. In the section 2 we provide with the basic notions and facts about synchronization of automata. In the sections 3 and 4 we present basic method of encryption and decryption using our cryptosystem. In the section 5 we state couple of additional improvements to ensure better security. Finally we conclude the paper in the section 6 along with possible further research to the topic."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        553,
+                        2237,
+                        1050,
+                        2306
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                553,
+                                2237,
+                                1050,
+                                2306
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        553,
+                                        2237,
+                                        1050,
+                                        2306
+                                    ],
+                                    "type": "text",
+                                    "content": "2 Preliminaries"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        550,
+                        2343,
+                        1994,
+                        2795
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                550,
+                                2343,
+                                1994,
+                                2795
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": "Partial finite automaton (PFA) is an ordered tuple "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathcal{A} = (Q,\\Sigma ,\\delta)"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": ", where "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\Sigma"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " is a finite set of letters, "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "Q"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " is a finite set of states and "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\delta :Q\\times \\Sigma^{*}\\to Q"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " is a transition function, possibly not everywhere defined. In this definition we omit initial and final states, since they are not relevant to the problem of synchronization. For "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "w\\in \\Sigma^{*}"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "q\\in Q"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " we define "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\delta (q,w)"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " inductively: "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\delta (q,\\epsilon) = q"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\delta (q,w) = \\delta (\\delta (q,a),w)"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " for "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "a\\in \\Sigma"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": ", where "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\epsilon"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " is the empty word and "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\delta (q,a)"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " is defined. A word "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "w\\in \\Sigma^{*}"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " is called carefully synchronizing if there exists "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\overline{q}\\in Q"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " such that for every "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "q\\in Q"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": ", "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\delta (q,w) = \\overline{q}"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " and all transitions "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\delta (q,w^{\\prime})"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": ", where "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "w^{\\prime}"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": " is any prefix of "
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "w"
+                                },
+                                {
+                                    "bbox": [
+                                        550,
+                                        2343,
+                                        1994,
+                                        2795
+                                    ],
+                                    "type": "text",
+                                    "content": ", are defined. A PFA is called carefully synchronizing if it"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

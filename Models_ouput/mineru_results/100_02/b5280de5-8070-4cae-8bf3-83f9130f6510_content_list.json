@@ -1,0 +1,37 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/6d1de6ffe5118e3381addb8e33f2c836335e7a067027ea9e3321d5b1817acd1a.jpg",
+        "image_caption": [
+            "Figure1:Boosting of thoughts iteratively enhances the prompt by adding experience,which comprises the analysis conducted by large language models (LLMorLM) on the generated thought chain. The experience specifically contains the thought chain itself,the corresponding error reports,and detailed advice onrevising each reasoning step.Thus,those inefective thoughts marked with ared crosscanalso contribute to prompt refinement.By accumulating experiences over iterations in the prompt,BoTcan eventually yield acorrect thought chain starting froma simple prompt.The examples presented here are extracted from results obtained byapplyingGPT-4withBoTon the Game of 24 task. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "forLLMs,BoTmay get weak thoughts.With aggregation,BoTis capable of derivinga more logical and effective thought chain from them,thereby guiding the subsequent refinement.This guidance in our framework is achieved by tuning the prompt with experience,which is the detailed error reports,advice,and instructions of each reasoning step obtained by exploiting LLMs to analyze the aggregated chain. When such experienceaccumulates in the prompt,it gradually leads to stronger thoughts. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Specifically,BoT implements such a Boosting mechanism as an experience-driven iteration process, as shown in Fig. In each iteration,fora given prompt,BoTbuilds massive simplistic thought structures in parallel with the LLM. We select the tree structure as in ToT $\\boxed { \\mathrm { Y a o ~ e t ~ a l . } } \\textcircled { 2 0 2 4 }$ but significantly modify it to weighted binary trees with various growth strategies for our boosting purposes. After extracting the root-to-leaf branch with the highest score per tree,the aggregation component of BoT is performed to aggregate them into one single thought chain. Subsequently,this chain is evaluated by the sameLLM to gain the experience,which is added to the prompt as guidance for the thought generation in the next iteration. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Our contributions can be summarized in three folds. First, instead of generating more complicated structures for thoughts with well-designed prompts,this paper shows that it is possible to rely solely on a simple initial prompt,as weak thoughts can be refined progressively based on previous experience toward solving problems. Second,to achieve such a boosting mechanism, we propose Boosting of Thoughts (BoT),a novel framework that performs an experience-driven iterative process. Due to starting from a simple prompt,BoT is scalable across various tasks.While guaranteeing effectiveness,BoT is fast as it builds simplistic thought structures in parallel and converges to a solution afterafew iterations.Finally,with GPT-4 and LlamaV2,we evaluate the performance of BoT on complex mathematical problems. Finally, relying on $\\mathrm { G P T - 4 } { \\overline { { \\mathrm { O p e n A I } } } } | { \\overline { { \\mathbb { 2 0 2 3 } } } } { \\Big ) }$ and LlamaV2 $\\overline { { \\mathrm { T o u v r o n ~ e t ~ a l . } } } \\overline { { \\langle 2 0 2 3 \\rangle } }$ , we evaluate the performance of BoT on complex mathematical problems. The problem-solving rates indicate that BoT,employing binary tree thought structures, significantly surpasses the current state-of-the-art on the GSM8K and AQuA while achieving the second-best results on other datasets.Especially on the new challenging task,Gameof $2 4 [ \\overline { { \\mathrm { Y a o ~ e t ~ a l . } } } | ( \\overline { { 2 0 2 4 } } )$ BoTis $9 . 7 \\%$ higher than the leading approach ToT. Our BoT thus demonstrates that, through enhancing the prompt by accumulating error analysis of ineffective thought chains and the corresponding advice,even without human annotation,LLMs are scalable across various tasks while sustaining high performance. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2RELATEDWORK ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Multi-Step Reasoning. The prominent work Chain-of-thought (CoT) promptingWei et al.(2022) shows that step-by-step reasoning behaviors from LLMs can be elicited by providing intermediate reasoning steps,termed thoughts, within the prompt for each question,as also supported by SelfConsistency $\\boxed { \\mathrm { W a n g ~ e t ~ a l . } } \\textcircled { 2 0 2 2 }$ and a series of CoT-based workZhou et al.(2023b);Fu et al.(2022 The recent work, Tree of Thoughts $( \\mathrm { T o T } ) \\mathrm { \\underline { { { Y a o \\ e t \\ a l . } } } } | ( 2 0 2 4 )$ ,converts the sequential reasoning process into a tree structure,in which each thought (node) may consider previous reasoning paths to produce multiple next-step thoughts.With such backtracking and expanded exploration during reasoning, ",
+        "page_idx": 0
+    }
+]

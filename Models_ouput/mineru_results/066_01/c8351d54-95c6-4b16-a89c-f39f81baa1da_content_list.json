@@ -1,0 +1,75 @@
+[
+    {
+        "type": "text",
+        "text": "CONTENT ADAPTIVE WAVELET LIFTING FOR SCALABLE LOSSLESS VIDEO CODING ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Daniela Lanz, Christian Herbert,and André Kaup ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Multimedia Communications and Signal Processing Friedrich-Alexander-University Erlangen-Nuirnberg (FAU) Cauerstr. 7, 91058 Erlangen, Germany Email: {Daniela.Lanz,Christian.Herbert,Andre.Kaup} @FAU.de ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ABSTRACT ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Scalable lossless video coding isan important aspect for many professional applications.Wavelet-based video coding decomposes an input sequence into a lowpass and a highpass subband by filtering along the temporal axis. The lowpass subband can be used for previewing purposes,while the highpass subband provides the residual content for lossless reconstruction of the original sequence. The recursive application of the wavelet transform to the lowpass subband ofthe previous stage yields coarser temporal resolutions of the input sequence.Thisallows for lower bit rates,but also affects the visual quality of the lowpass subband. So far, the number of total decomposition levels is determined for the entire input sequence in advance. However, if the motion in the video sequence is strong or if abrupt scene changes occur,a further decomposition leads to alow-quality lowpass subband.Therefore,we propose a content adaptive wavelet transform,which locally adapts the depth of the decomposition to the content of the input sequence. Thereby,the visual quality of the lowpass subband is increased by up to $1 0 . 2 8 \\mathrm { d B }$ compared to auniform wavelet transform with the same number of total decomposition levels,while therequired rate isreduced by $1 . 0 6 \\%$ additionally. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Index Terms-LosslessCoding,Scalability,DiscreteWavelet Transform,Motion Compensation ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.INTRODUCTION ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Many professional tasks like surveillance systems and telemedicine applications require lossless compression due to their sensitive content.However,lossless compression naturally leads to high bit rates. Considering any wireless network with limited channel capacity, a fast transmission of the entire data is challenging. Therefore, scalable lossless video coding is desirable,which allows for transmittingabase layer(BL）with coarser qualityinthe first instance andafterwards one or more enhancement layers (ELs), comprising the residual video data,to reconstruct the original sequence without anyloss.Basically,threedifferent typesof video scalability canbe distinguished. Temporal scalability affects the frame rate,spatial scalability controls the spatial resolution，and quality scalability manipulates the fidelity of the video.Beside DCT-based coding schemes like Scalable High Efficiency Video Coding (SHVC) and Sample-Based Weighted Prediction for Enhancement Layer Coding (SELC) 2,also 3-D subband coding (SBC) $\\textcircled { 1 3 }$ can be applied.3-D SBCis based onWavelet Transforms (WT),which naturally provide scalability features without additional overhead 4. Asshown in Fig. by a transformationin temporal direction,the signal is decomposed intoa lowpass (LP) and a highpass (HP) subband.Both subbands offer only half the frame rate compared to the original sequence.While the LP subband is very similar to the original signal, the HP subband contains the structural information of the video sequence.Afterwards,every frame of each subband is coded by thewavelet-based coder JPEG 2Ooo [5l,resulting ina fully scalable BL-EL-representation. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/76bfbdb17e16bbad0838701c1b7673e84f0e527bf5811d5889760532121afebb.jpg",
+        "image_caption": [
+            "Fig.1: Considered scenario to achieve a fully scalable representation ofa video sequence.The dashed box shows the lifting structure of the wavelet transform for one decomposition level. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this work,we focus on the optimization of the temporal scalability,which iscontrolledby the temporal WT highlightedby the dashedbox inFig. The recursive application of the WTto theLP subband of the previous stage halves the frame rate for every decomposition level.Thisisadvantageous for similar frames of thevideo sequence.In contrast,if huge changes occur among subsequent frames,the visual quality suffers significantly from multiple decomposition levels.Thisiswhy motion compensation(MC) should be included into theWT.However,MCalwaysleads toa higher entire rate,mainly causedby the motion information,which has to be transmitted as additional overhead $\\pmb { \\left\\| 6 \\right\\| }$ Further,there exists no practical approach for perfect MC.Hence, the error propagation will increase fora higher number of decomposition levels,leading toan inferior visual quality of the LP subband. Therefore,the temporal scaling should be adapted to the video sequence.This can be reached by our proposed content adaptive wavelet lifting (CA-WL),which provides fine temporal resolution for high dynamic parts of a video sequence, while parts with few changes among subsequent frames are resolved coarser.Aftera brief overview of 3-D SBC,the proposed CA-WL is described in detail.Simulation results are given in the next section, followed by a short conclusion and outlook at the end of the paper. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.3-D SUBBAND CODING ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "An efficient implementation of the discrete WT was proposed by Sweldens $\\pmb { \\bigtriangledown }$ .The so-called lifting structure consists of three steps: split,predict,and update. The block diagram of the lifting structure fora decomposition in temporal direction is depicted in the dashed ",
+        "page_idx": 0
+    }
+]

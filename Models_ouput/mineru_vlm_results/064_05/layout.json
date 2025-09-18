@@ -1,0 +1,798 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "table",
+                    "bbox": [
+                        226,
+                        270,
+                        2261,
+                        1089
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                226,
+                                270,
+                                2261,
+                                1089
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        270,
+                                        2261,
+                                        1089
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                226,
+                                                270,
+                                                2261,
+                                                1089
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>ID</td><td>Method</td><td>Training Mode</td><td>Accuracy (≈ Rank@1)</td><td>Rank@5</td><td>Example-F1</td><td>F1-Score</td></tr><tr><td colspan=\"7\">Location Reasoning</td></tr><tr><td>1</td><td>ResNet-50 (He et al., 2016)</td><td>Supervised</td><td>3.18%</td><td>9.82%</td><td>22.19%</td><td>2.27%</td></tr><tr><td>2</td><td>Swin-T (Liu et al., 2021)</td><td>Supervised</td><td>6.70%</td><td>17.07%</td><td>33.56%</td><td>5.02%</td></tr><tr><td>3</td><td>CLIP (Radford et al., 2021)</td><td>Zero-Shot</td><td>11.11%</td><td>27.85%</td><td>44.96%</td><td>9.74%</td></tr><tr><td>4</td><td>CLIP+ (Fu et al., 2022)</td><td>Fine-tune</td><td>15.72%</td><td>37.13%</td><td>49.74%</td><td>13.82%</td></tr><tr><td>5</td><td>CLIP+Seg (Fu et al., 2022)</td><td>Fine-tune</td><td>16.46%</td><td>37.48%</td><td>50.52%</td><td>14.63%</td></tr><tr><td>6</td><td>QR-CLIP (Ours)</td><td>Fine-tune</td><td>19.31%</td><td>38.78%</td><td>50.96%</td><td>17.70%</td></tr><tr><td colspan=\"3\">Improvements (AVG: 10.66%)</td><td>+17.31%</td><td>+3.47%</td><td>+0.87%</td><td>+20.98%</td></tr><tr><td colspan=\"7\">Time Reasoning</td></tr><tr><td>7</td><td>ResNet-50 (He et al., 2016)</td><td>Supervised</td><td>0.84%</td><td>5.14%</td><td>39.99%</td><td>0.46%</td></tr><tr><td>8</td><td>Swin-T (Liu et al., 2021)</td><td>Supervised</td><td>0.97%</td><td>5.53%</td><td>43.95%</td><td>0.72%</td></tr><tr><td>9</td><td>CLIP (Radford et al., 2021)</td><td>Zero-Shot</td><td>0.46%</td><td>2.42%</td><td>39.90%</td><td>0.25%</td></tr><tr><td>10</td><td>CLIP+ (Fu et al., 2022)</td><td>Fine-tune</td><td>1.00%</td><td>3.07%</td><td>43.09%</td><td>0.54%</td></tr><tr><td>11</td><td>CLIP+Seg (Fu et al., 2022)</td><td>Fine-tune</td><td>0.92%</td><td>3.15%</td><td>42.89%</td><td>0.71%</td></tr><tr><td>12</td><td>QR-CLIP (Ours)</td><td>Fine-tune</td><td>3.53%</td><td>10.90%</td><td>47.89%</td><td>2.01%</td></tr><tr><td colspan=\"3\">Improvements (AVG: 134.38%)</td><td>+253%</td><td>+97.11%</td><td>+8.23%</td><td>+179.17%</td></tr></table>",
+                                            "image_path": "049dcbb87188e5ad0a342342b487bb08707666860e4d5a69fb8705ae874d254f.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                224,
+                                1105,
+                                2264,
+                                1197
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        1105,
+                                        2264,
+                                        1197
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                224,
+                                                1105,
+                                                2264,
+                                                1197
+                                            ],
+                                            "type": "text",
+                                            "content": "Table 1. Summary of the performance for different baselines on the image location and time prediction. "
+                                        },
+                                        {
+                                            "bbox": [
+                                                224,
+                                                1105,
+                                                2264,
+                                                1197
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "\\dagger"
+                                        },
+                                        {
+                                            "bbox": [
+                                                224,
+                                                1105,
+                                                2264,
+                                                1197
+                                            ],
+                                            "type": "text",
+                                            "content": " means fine-tune the original CLIP (Radford et al., 2021). "
+                                        },
+                                        {
+                                            "bbox": [
+                                                224,
+                                                1105,
+                                                2264,
+                                                1197
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "\\mathrm{AVG}^*"
+                                        },
+                                        {
+                                            "bbox": [
+                                                224,
+                                                1105,
+                                                2264,
+                                                1197
+                                            ],
+                                            "type": "text",
+                                            "content": " : average relative lift."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "table_footnote"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        224,
+                        1277,
+                        1208,
+                        1481
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                1277,
+                                1208,
+                                1481
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        1277,
+                                        1208,
+                                        1481
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "W_{i}^{owk}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1277,
+                                        1208,
+                                        1481
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1277,
+                                        1208,
+                                        1481
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "W_{i}^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1277,
+                                        1208,
+                                        1481
+                                    ],
+                                    "type": "text",
+                                    "content": " are the weights of the "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1277,
+                                        1208,
+                                        1481
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathsf{CLS}]_i^{owk}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1277,
+                                        1208,
+                                        1481
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1277,
+                                        1208,
+                                        1481
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]_i^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1277,
+                                        1208,
+                                        1481
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "q"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1277,
+                                        1208,
+                                        1481
+                                    ],
+                                    "type": "text",
+                                    "content": " in this place is the addition of weight vision- language features "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1277,
+                                        1208,
+                                        1481
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "W_{i}^{owk}\\times [\\mathsf{CLS}]_{i}^{owk} + W_{i}^{\\nu}\\times [\\mathsf{CLS}]_{i}^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1277,
+                                        1208,
+                                        1481
+                                    ],
+                                    "type": "text",
+                                    "content": " q is the groundtruth features generated by "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1277,
+                                        1208,
+                                        1481
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "F^{GT} = \\mathrm{Enc}_t(GT)"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        226,
+                        1504,
+                        1208,
+                        1752
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                1504,
+                                1208,
+                                1752
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        1504,
+                                        1208,
+                                        1752
+                                    ],
+                                    "type": "text",
+                                    "content": "Location and Time Reasoning. We use the fused features "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1504,
+                                        1208,
+                                        1752
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\begin{array}{r}F^{fused} = \\sum_{1}^{6}(W_{i}^{owk}\\times [\\mathsf{CLS}]_{i}^{owk} + W_{i}^{\\nu}\\times [\\mathsf{CLS}]_{i}^{\\nu}) \\end{array}"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1504,
+                                        1208,
+                                        1752
+                                    ],
+                                    "type": "text",
+                                    "content": " as our final features to predict the location and time. The prediction is completed by calculating the similarity between "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1504,
+                                        1208,
+                                        1752
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "F^{fused}"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1504,
+                                        1208,
+                                        1752
+                                    ],
+                                    "type": "text",
+                                    "content": " and the candidate location/time embeddings."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        226,
+                        1778,
+                        1208,
+                        2475
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                1778,
+                                1208,
+                                2475
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        1778,
+                                        1208,
+                                        2475
+                                    ],
+                                    "type": "text",
+                                    "content": "We believe that by using the CLIP pre- trained 400M open- world corpus and then fine- tuning it by adding additional [CLS] with location- and- time- specific data, it can basically reason about meta information. QR- CLIP will then improve its performance by retrieving valuable open- world knowledge and using it as auxiliary cues. Finally, the model balances vision and language embeddings, and by incorporating them into prediction, the model achieves its peak performance. The process is related to Horn's QR rule (Horn, 1984). Also, it mimics a procedure of information spreading (Wang et al., 2011): diverse individuals have diverse perspectives and attitudes regarding the same thing (sec 3.2), but combining them effectively fosters a more profound comprehension (sec 3.3)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        226,
+                        2541,
+                        550,
+                        2593
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                2541,
+                                550,
+                                2593
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        2541,
+                                        550,
+                                        2593
+                                    ],
+                                    "type": "text",
+                                    "content": "4. Experiments"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        226,
+                        2626,
+                        604,
+                        2676
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                2626,
+                                604,
+                                2676
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        2626,
+                                        604,
+                                        2676
+                                    ],
+                                    "type": "text",
+                                    "content": "4.1. Training Settings"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        226,
+                        2706,
+                        1208,
+                        2953
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                2706,
+                                1208,
+                                2953
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        2706,
+                                        1208,
+                                        2953
+                                    ],
+                                    "type": "text",
+                                    "content": "Dataset. We used two datasets: TARA dataset (Fu et al., 2022) and our collected OWK dataset. TARA dataset includes 15,429 samples. Each sample contains a news picture and the corresponding location, time description. Following the original setup, we train QR- CLIP on a train set contain "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1277,
+                                1280,
+                                2259,
+                                1630
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1280,
+                                        2259,
+                                        1630
+                                    ],
+                                    "type": "text",
+                                    "content": "ing 12,306 instances and evaluate our method using a test set containing 1,644 instances. The OwK dataset is derived from the WIT dataset (Srinivasan et al., 2021). Consider- . in the limited computation resource, we only use 122,408 texts from the 37.5 million entity- rich image- text examples in English Wikipedia that correspond to the countries and years as our open- world knowledge."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1280,
+                        2259,
+                        1630
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 8,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1656,
+                        2259,
+                        1953
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                1656,
+                                2259,
+                                1953
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1656,
+                                        2259,
+                                        1953
+                                    ],
+                                    "type": "text",
+                                    "content": "Evaluation Metrics. For a fair comparison, we first follow the same evaluation metrics on the TARA benchmark (Fu et al., 2022): Accuracy and Example- F1. Accuracy is calculated by comparing the predicted results with the entire labels. Example- F1 is calculated by comparing predictions with hierarchical labels:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        1445,
+                        2019,
+                        2254,
+                        2138
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1445,
+                                2019,
+                                2254,
+                                2138
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1445,
+                                        2019,
+                                        2254,
+                                        2138
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\mathrm{Example - F1} = \\frac{1}{N}\\sum_{i = 1}^{N}\\frac{2|\\mathrm{GT}_i\\cap\\mathrm{Pred}_i|}{|\\mathrm{GT}_i| + |\\mathrm{Pred}_i|}, \\tag{8}",
+                                    "image_path": "f1e6547270f74e8eda3698ab5f929f0b29108d2456533b2f8348f8ab914b85d3.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1277,
+                        2168,
+                        2261,
+                        2567
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                2168,
+                                2261,
+                                2567
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2168,
+                                        2261,
+                                        2567
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2168,
+                                        2261,
+                                        2567
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathrm{GT}_i"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2168,
+                                        2261,
+                                        2567
+                                    ],
+                                    "type": "text",
+                                    "content": " represents the hierarchical label, and "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2168,
+                                        2261,
+                                        2567
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathrm{Pred}_i"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2168,
+                                        2261,
+                                        2567
+                                    ],
+                                    "type": "text",
+                                    "content": " represents the hierarchical prediction. If the entire label is "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2168,
+                                        2261,
+                                        2567
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{Zurich, Switzerland, Europe\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2168,
+                                        2261,
+                                        2567
+                                    ],
+                                    "type": "text",
+                                    "content": ", the progressive hierarchical labels are the three combinations of true label as "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2168,
+                                        2261,
+                                        2567
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{Zurich, Switzerland, Europe\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2168,
+                                        2261,
+                                        2567
+                                    ],
+                                    "type": "text",
+                                    "content": ", "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2168,
+                                        2261,
+                                        2567
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{Switzerland, Europe'5948\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2168,
+                                        2261,
+                                        2567
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2168,
+                                        2261,
+                                        2567
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{Europe'\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2168,
+                                        2261,
+                                        2567
+                                    ],
+                                    "type": "text",
+                                    "content": ". In addition, Rank@5 and F1- Score are utilized to evaluate the performance of the proposed method."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1277,
+                        2590,
+                        2261,
+                        2989
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                2590,
+                                2261,
+                                2989
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2590,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": "Implementation Details. QR- CLIP is based on CLIP+VIT- B/32 model with an input size of "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2590,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "224 \\times 224"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2590,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": ", and it is implemented on the PyTorch 1.10.1 platform with the Adam optimizer to update the neural network's weights and biases. The training batch size is 32, and the initial learning rate is "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2590,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "1e - 6"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2590,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": ". Our model utilizes a pre- trained model and takes hours in the fine- tune process on an NVIDIA RTX 3090 GPU running CUDA 11.7.1."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

@@ -1,0 +1,102 @@
+[
+    {
+        "type": "text",
+        "text": "where $\\epsilon$ represents the energy density of the wind,excluding rest mass.Once the condition in equation (13) is met,the waves will deposit energy into the wind atarate ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/0ad20a2f50f322e82110f4b818caaa31cb716ddf015e87f0ea2a13349602d2be.jpg",
+        "text": "$$\n\\dot { q } _ { w } = \\frac { L _ { w } } { 4 \\pi r ^ { 2 } \\rho l _ { d } } = \\frac { c _ { s } } { \\rho l _ { d } } \\omega S .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.3 Reverse Shock ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "As the wind expands outward,itwill eventually collide with slowmoving material behind the primary supernova shock,causing a reverse shock in the wind (Arcones etal.2Oo7). The radius at which this happens will depend on the dynamics of the explosion,and we treat itasa freeparameterwith thevalue $5 \\times 1 0 ^ { 8 } \\mathrm { c m }$ Therelativistic Rankine-Hugoniot shock conditions then determine the conditions of the post-shock wind: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/f2073fdf5a8536c10bf6554e237f5cb636e63e88d3010b17f6d0360af3cec210.jpg",
+        "text": "$$\n\\begin{array} { r c l } { \\nu _ { 1 } \\rho _ { 1 } W _ { 1 } } & { = } & { \\nu _ { 2 } \\rho _ { 2 } W _ { 2 } } \\\\ { W _ { 1 } ^ { 2 } h _ { 1 } \\rho _ { 1 } \\nu _ { 1 } ^ { 2 } + P _ { 1 } } & { = } & { W _ { 2 } ^ { 2 } h _ { 2 } \\rho _ { 2 } \\nu _ { 2 } ^ { 2 } + P _ { 2 } } \\\\ { W _ { 1 } h _ { 1 } } & { = } & { W _ { 2 } h _ { 2 } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "with all quantities defined as previously,and the subscripts 1 and 2 denoting pre- and post- shock conditions respectively.We treat the post-shock outflow behavior following Arcones & Thielemann (2012): for the first second post-shock,density is held constant, with velocity droppingas $r ^ { 2 }$ .After the first second,velocity isheld constant with density dropping as $r ^ { 2 }$ for the rest of the outflow. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4COMPUTATIONALMETHOD ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In order to circumvent the critical point singularity in equation (3), we introduce a dimensionless integration variable $\\psi$ such that ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/5c0f2b5874c8d3a66c8dd32a041bf1c3e2515048f167a4824413921b8534c3d0.jpg",
+        "text": "$$\n\\begin{array} { r l } & { \\frac { d \\ln r } { d \\psi } = f _ { 1 } } \\\\ & { \\frac { d \\ln v } { d \\psi } = f _ { 2 } } \\\\ & { \\frac { d \\ln r } { d \\phi } = \\frac { f _ { 1 } r } { T } \\left[ \\left( \\frac { \\partial T } { \\partial s } \\right) _ { \\rho } \\frac { d s } { d r } + \\left( \\frac { \\partial T } { \\partial \\rho } \\right) _ { s } \\frac { d \\rho } { d r } \\right] } \\\\ & { \\frac { d \\ln r } { d \\psi } = f _ { 1 } \\xi \\varepsilon _ { r } } \\\\ & { \\frac { d \\ln S } { d \\phi } = - f _ { 1 } r \\left[ \\frac { 2 } { r } + \\frac { 1 } { l _ { d } } + \\frac { 1 } { \\nu + c _ { s } } \\left( \\frac { d \\nu } { d r } + \\frac { d c _ { s } } { d r } \\right) \\right] } \\\\ & { \\frac { d I } { d \\phi } = \\sqrt { \\frac { \\omega } { \\rho } } f _ { 1 } r } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "with $f _ { 1 }$ and $f _ { 2 }$ defined as previously.We recast the entropy evolution into atemperature evolution equation,as our EOSis formulated in terms of the Helmholtz free energy. The integral in equation (13) is converted toasimilarform, with $\\begin{array} { r } { I = \\int _ { 0 } ^ { r } \\sqrt { \\frac { \\omega S } { \\rho } } d r ^ { \\prime } } \\end{array}$ . Because our system of equations is relatively stiff, we use an interpolation function between an infinite dissipation length (i.e.no shock heating) and the physical value in equation (16) to control the activation of shock heating in the wind. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The six differential equations in equation (19) are integrated with respect to $\\psi$ using a 4th order SDIRK method (Kennedy & Carpenter 2016), with the wind dynamics adjusted at the appropriate points for thereverse shock and subsequent outflow. The starting radius is set tobe the surface of the neutron star (fixed at $r _ { 0 } = 1 \\times 1 0 ^ { 6 } \\mathrm { c m } )$ ,and the starting density is set to be the surface density of the neutron star (fixed at $\\rho _ { 0 } = 1 \\times 1 0 ^ { 1 2 } \\mathrm { g } / \\mathrm { c m } ^ { 3 } )$ . We assume the wind begins in heating-cooling equilibrium,which fixes the starting temperature and electron fraction (see Qian & Woosley 1996). The starting value for the wave action is determined by the wave luminosity per equation (5),which we treat as a fraction of neutrino luminosity and a free parameter. The initial wind velocityis also treated as afree parameter, and maps directly to the PNS massloss rate $\\dot { M _ { \\mathrm { N S } } } = 4 \\pi r _ { 0 } ^ { 2 } \\bar { W } e ^ { \\Lambda } \\nu _ { 0 } \\rho _ { 0 }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In order to find the critical (or transonic） solution of the wind equations, $f _ { 1 }$ and $f _ { 2 }$ must pass through zero at the same radius. We use a shooting method to determine the critical mass loss rate (i.e. $\\nu _ { 0 }$ )fora given parameter set viaa one-dimensional rootfinder. We mapa given $\\nu _ { 0 }$ to the value of $\\operatorname* { m a x } \\{ f _ { 1 } , 0 \\} - \\operatorname* { m a x } \\{ f _ { 2 } , 0 \\}$ atthe minimumradius forwhich $f _ { 1 }$ passes through zero,for the profle that isgenerated by that specific $\\nu _ { 0 }$ .Theroot of this function is thecritical velocity,forwhich $f _ { 1 }$ and $f _ { 2 }$ pass through zero simultaneously. Once thecritical velocity (or mass loss rate) is found, the full integration is run to a maximum radius of $1 0 ^ { 1 0 } \\mathrm { c m }$ .The sensitivity of the evolution equations makes it numerically impossible to actually generate the critical solution,as every solution appearsas eithera breeze solution or an unphysical one that returns to the initial radius,even when $\\nu _ { 0 }$ is obtained to machine precision. To circumnavigate this issue,we assign $f _ { 1 }$ and $f _ { 2 }$ to their absolute values for the full integration. This produces the correct behaviorto machine precision for the transonic solution. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The temperature and density versus time foraLagrangian observer are then extracted from the resulting steady state wind profile (and extended to late times with a $t ^ { - 3 }$ power law).These profiles are then used to perform calculations of nucleosynthesis using the nuclear reaction network code SkyNet (Lippuner& Roberts 2017). The reaction network calculations include strong,weak,symmetric fission, and spontaneous fission reactions,with inverse reactions calculated via detailed balance. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The input parameters for our models are the PNS mass $( M _ { \\mathrm { N S } } / M _ { \\odot } ~ \\in ~ [ 1 . 4 , 2 . 1 ] )$ ，the total neutrino luminosity $( L _ { \\nu } \\in$ $[ 3 \\times 1 0 ^ { 5 2 } , 1 . 2 \\times 1 0 ^ { 5 3 } ] \\mathrm { e r g \\ s ^ { - 1 } }$ ),and the wave luminosity asa fraction of total neutrino luminosity $( L _ { w } / L _ { \\nu } \\in [ 1 0 ^ { - 5 } , 1 0 ^ { - 2 } ] )$ .We also examine the impact of different wave frequencies in the range of $1 0 ^ { 2 }$ to $1 0 ^ { 4 } \\ s ^ { - 1 }$ .We assume that the neutrinos have equal luminosities in all flavors,a zero chemical potential Fermi-Dirac spectrum,and theaverage electron neutrino energy is fixedat $1 2 \\mathrm { M e V }$ asmeasured at the surface of the PNS.The average electron antineutrino energy is chosen such that the equilibrium electron fraction of the wind, $Y _ { e , \\mathrm { { e q } } } = \\lambda _ { \\nu _ { e } } / ( \\lambda _ { \\nu _ { e } } + \\lambda _ { \\bar { \\nu } _ { e } } )$ ,takes a target value (see Qian & Woosley 1996),where $\\lambda _ { \\nu _ { e } }$ and $\\lambda _ { \\bar { \\nu } _ { e } }$ are the electron neutrino and antineutrino capture rates,respectively.We primarily consider $Y _ { e , \\mathrm { e q } } = 0 . 4 8$ ， unless otherwise noted.Relativistic corrections are included in the neutrino capture rates as in Thompson et al. (2001). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5RESULTS ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.1 Models without Wave Heating ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the absence of wave contributions (i.e. $L _ { w } = 0$ ),we find general agreementwith prior work regarding the hydrodynamic structure of the wind (e.g. Thompson et al. 2001; Wanajo 2013). These models serveas abaseline for comparison with the wave heating models shown in subsequent sections.Figure 2 shows a set of radial entropy profiles for varied PNS masses with a fixed neutrino luminosity of $\\mathsf { \\bar { 6 } } \\times 1 0 ^ { 5 1 }$ erg $\\mathrm { s } ^ { - 1 }$ .Increased PNS mass leads to overall higher entropies throughout the wind (Qian & Woosley 1996),which decreases the efficiency of seed formation and brings conditions closer to those ",
+        "page_idx": 0
+    }
+]

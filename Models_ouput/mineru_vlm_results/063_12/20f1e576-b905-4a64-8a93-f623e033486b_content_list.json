@@ -1,0 +1,105 @@
+[
+    {
+        "type": "text",
+        "text": "Proof. If  $j + k = \\ell$ , then  $J(\\chi^j,\\chi^k) = - \\chi (- 1)^j$  by (iv) of Lemma 2.2. It follows that",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\sum_{\\stackrel{1\\leq j,k\\leq \\ell -1,}{j + k = \\ell}}\\chi (-1)^{j + k}\\chi (g^{-1})^{(2j + k)t}J(\\chi^j,\\chi^k) = -\\sum_{j = 1}^{\\ell -1}\\chi (-g^{-t})^j.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note that the kernel of  $\\chi$  is  $L$  . If  $- g^{- t}\\in L$  , then  $g^{- t}L = - L$  . This gives  $\\ell = |\\mathbb{F}_q^\\times /L|\\leq 2$  since  $g^{- t}L$  also generates  $\\mathbb{F}_q^\\times /L$  as  $1\\leq t\\leq \\ell$  and  $(t,\\ell) = 1$  . This is not our case and thus  $\\chi (- g^{- t})\\neq 1$  . Hence,  $\\begin{array}{r}\\sum_{j = 1}^{\\ell - 1}\\chi (- g^{- t})^j = - 1 \\end{array}$  and the result follows.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now, we are ready to prove our main theorem.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Theorem 4.3. Let  $q$  be a power of a prime and let  $\\ell$  be a proper divisor of  $q - 1$ . If",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nq\\geq (2^{\\omega (\\ell)}(\\ell -3 - \\delta) + 2)^2 -2\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $\\omega (\\ell)$  is the number of distinct prime divisors of  $\\ell$  and",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\delta = \\left\\{ \\begin{array}{ll}1 & if4\\mid \\ell ,\\\\ 0 & otherwise, \\end{array} \\right.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "then there is a generator  $g$  of  $\\mathbb{F}_q^\\times$  such that  $N_g > 0$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. By Proposition 4.1 it is enough to consider the subsum",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nN = \\sum_{\\stackrel{1\\leq t\\leq \\ell}{(t,\\ell) = 1}}N_{g^t}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $g$  is a fixed generator of  $\\mathbb{F}_q^\\times$ . Lemma 4.2 gives that",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & N = \\phi (\\ell)(q + 1) + \\sum_{1\\leq j,k\\leq \\ell -1,\\atop j + k\\neq \\ell}\\chi (-1)^{j + k}J(\\chi^j,\\chi^k)z(j,k)\\quad \\mathrm{where}\\\\ & z(j,k) = \\sum_{\\stackrel{1\\leq t\\leq \\ell}{(t,\\ell) = 1}}\\chi (g^{-1})^{(2j + k)t}. \\end{array}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note that  $\\chi (g^{- 1}) = \\zeta_{\\ell}$  is a primitive  $\\ell$ - th root of 1. Therefore,",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nz(j,k) = \\sum_{\\stackrel{1\\leq t\\leq \\ell}{(t,\\ell) = 1}}\\zeta_{\\ell}^{2(j + k)t} = c_{\\ell}(2j + k),\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "is a Ramanujan's sum and",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nN = \\phi (\\ell)(q + 1) + \\sum_{\\stackrel{1\\leq j,k\\leq \\ell -1,}{j + k\\neq \\ell}}\\chi (-1)^{j + k}J(\\chi^j,\\chi^k)c_1(2j + k).\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let  $I = \\{1,2,\\ldots ,\\ell - 1\\}$  and for positive integer  $d\\mid \\ell$  and integer  $t$  with  $1\\leq t\\leq \\ell /d$  such that  $(t,d / \\ell) = 1$ , we set",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nS^{\\prime}(d,t) = \\{(j,k)\\in I\\times I\\mid 2j + k\\equiv td\\pmod {\\ell}\\mathrm{and}j + k\\neq \\ell \\} .\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

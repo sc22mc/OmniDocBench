@@ -1,0 +1,111 @@
+[
+    {
+        "type": "text",
+        "text": "between an event stack (Eq. (4)) and the two consecutive coded-aperture images (Eq. (1)) as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/e32832abedcaf2af53dd2d1f7d719565aa8f85d3ee9000bdf1c9218a36e41e0a.jpg",
+        "text": "$$\nE _ { x , y } ^ { ( n , n + 1 ) } \\approx \\frac { \\log \\left( I _ { x , y } ^ { ( n + 1 ) } \\right) - \\log \\left( I _ { x , y } ^ { ( n ) } \\right) } { \\tau } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Assuming that equality holds for Eq. (6) and combining it with Eq. (3),we can obtain $I ^ { ( 1 ) } , \\ldots , I ^ { ( N ) }$ as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/3a8b0ca01f1151bf9bb671b4d3965f4cd50d088bade4d30da1f2a95e5ca0592d.jpg",
+        "text": "$$\n\\begin{array} { l c r } { { I _ { x , y } ^ { ( n ) } = I _ { x , y } ^ { ( 1 ) } \\exp \\left( \\tau \\sum _ { 2 \\leq k \\leq n } E _ { x , y } ^ { ( k - 1 , k ) } \\right) ( n \\geq 2 ) } } \\\\ { { I _ { x , y } ^ { ( 1 ) } = \\displaystyle \\frac { \\bar { I } _ { x , y } } { 1 + \\sum _ { 2 \\leq n \\leq N } \\exp \\left( \\tau \\sum _ { 2 \\leq k \\leq n } E _ { x , y } ^ { ( k - 1 , k ) } \\right) } . } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This means that under the equality assumption for Eq. (6), $N$ coded-aperture images $( \\hat { I } ^ { ( 1 ) } , \\dots , { I ^ { ( N ) } } )$ can be derived analytically from the data observed with our imaging method ( $\\bar { I }$ and $E ^ { ( 1 , 2 ) } , \\dots , E ^ { ( N - 1 , N ) } )$ .Therefore, we can state that our imaging method is quasi-equivalent to the baseline coded-aperture imaging method. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Interestingly, this type of quasi-equivalence does not hold for joint aperture-exposure coding.By using Eq. (1), the imaging process of Eq. (2) is rewritten as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d68ac7430b3fb0cb927a71fda11293563ba0e128593228feb19391c4d04e3be2.jpg",
+        "text": "$$\nI _ { x , y } = \\sum _ { n } p _ { x , y } ^ { \\left( n \\right) } I _ { x , y } ^ { \\left( n \\right) } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Obviously,it is impossible to analytically obtain $N$ codedaperture images $( \\bar { I ^ { ( 1 ) } } , \\dots , \\bar { I ^ { ( N ) } } )$ from a single observed image $I$ alone. Therefore,our imaging method hasa theoretical advantage over joint aperture-exposure coding. However,this theory alone is insuffcient to ensure the practicality of our method. The actual event data are very noisy and harshly quantized (by the contrast threshold $\\tau$ ),which breaks the equality assumption for Eq. (6). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.3. Algorithm ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We developed an end-to-end trainable algorithm on the basis of deep-optics[13,14,21,28,33,48,52,54], in which the camera-side optical-coding patterns and the light-field reconstruction algorithm were jointly optimized in a deeplearning-based framework.We carefully designed each part of our algorithm to ensure the compatibility with real camera hardware. Although we specifically mention the hardware setup that isavailable to us,the ideas behind our design would be useful for other possible hardware setups.We set $N = 4$ unless otherwise mentioned. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Our algorithm consists of two parts: AcqNet and RecNet. AcqNet describes the data-acquisition process using a coded aperture and an event camera as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/238fd89186db432b5202798eec4b3ec7cff552eb0aa123a2b954edda32cd92ca.jpg",
+        "text": "$$\n\\bar { I } , E ^ { ( 1 , 2 ) } , E ^ { ( 2 , 3 ) } , E ^ { ( 3 , 4 ) } = \\mathrm { A c q N e t } ( L ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The trainable parameters of AcqNet are related to the aperture's coding patterns. RecNet receives the observed data as ",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/53c04d568d08e096d3dc57b3bfc9f423f2983b7044a99787e86a853e8fc68e94.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1:trainable tensors:α,β∈R8×8 2:forward(L):</td><td></td></tr><tr><td>3:</td><td>sets</td></tr><tr><td>4:</td><td>a(1）)，a(3) = sigmoid(sα),sigmoid(sβ)</td></tr><tr><td>5:</td><td>a（2），a（4）=1-a(1），1-a(3）</td></tr><tr><td>6:</td><td>for nin[1,2,3,4]:</td></tr><tr><td>7:</td><td>compute I(n) by Eq. (1)</td></tr><tr><td>8:</td><td>ifn&gt;1:</td></tr><tr><td>9:</td><td>compute E(n-1,n) by Eq. (12)</td></tr><tr><td>10:</td><td>end</td></tr><tr><td>11:</td><td>end</td></tr><tr><td>12:</td><td>compute IbyEq. (3)</td></tr><tr><td>13:</td><td>returnI,E(1,2),E(2,3），E(3,4)</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "the input and reconstructs the original light field as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/592eded5aeddf3aeebe65602ce7e63c31c6f8d831c2f05f987101bab37d162a8.jpg",
+        "text": "$$\n\\hat { L } = \\mathrm { R e c N e t } ( \\bar { I } , E ^ { ( 1 , 2 ) } , E ^ { ( 2 , 3 ) } , E ^ { ( 3 , 4 ) } ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AcqNet and RecNet are jointly trained to minimize the reconstruction (MSE) loss between $L$ and $\\hat { L }$ Once the training is finished,AcqNet is replaced with the physical imaging process of the camera hardware,in which the coding patterns are adjusted to the learned parameters of AcqNet. The data acquired from the camera are fed to RecNet to reconstruct the light field of a real 3-D scene. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Hardware-driven constraints for coded aperture. Similar to some previous studies [14,26,30],we used aliquid-crystal-on-silicon (LCoS） display (Forth Dimension Displays,SXGA-3DM) to implement acoded aperture. This display can output a sequence of semi-transparent coding patterns repeatedly. We need to consider the following two constraints. Binary constraint. Although our LCoS display can support both binary and grayscale patterns,a grayscale pattern is actually represented as a temporal series of multiple binary patterns; a grayscale transmittance is represented as the ratio of O/1 periods.To avoid unintended O/1 flips,we choose to use only binary patterns for aperture coding. Complementary constraint. Our LCoS display requiresa“DC balance\";acertain pattern $a$ and its complement $a ^ { * } = 1 - a$ should be included in the sequence. Since the events are recorded continuously over time,we use both $a$ and $a ^ { * }$ as the coding patterns. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AcqNet. A pseudo-code of AcqNet is presented in Algorithm 1. In lines 4 and 5,we make the coding patterns compatible with the binary and complementary constraints. More specifically,we prepare two sets of trainable tensors, each with $8 \\times 8$ elements, denoted as $\\alpha$ and $\\beta$ Theyare multiplied by the scale parameter $s$ then fed to the sigmoid function to produce the coding patterns $a ^ { ( 1 ) }$ and $a ^ { ( 3 ) }$ .Asthe training proceeds, $s$ gradually increases,which forces $a ^ { ( 1 ) }$ and $a ^ { ( 3 ) }$ to gradually converge to binary paterns.Moreover, $a ^ { ( 2 ) }$ and $a ^ { ( 4 ) }$ are made to be complementary to $a ^ { ( 1 ) }$ ",
+        "page_idx": 0
+    }
+]

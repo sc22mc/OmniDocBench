@@ -1,0 +1,96 @@
+[
+    {
+        "type": "text",
+        "text": "Convergence to the Equilibrium State in an Outbreak: When Can Growth Rates Accurately be Measured? ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Adam Mielkd Dynamical Systems,Technical University of Denmark, AsmussensAlle,303B，2800Kgs.Lyngby，Denmark ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lasse Engbo Christianser Statens Serum Institut，Artillerivej 5， 230o Copenhagen S,Denmark (Dated:February3,2023) ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We investigate sub-leading orders of the classic SEIR-model using contact matrices from modeling of the Omicron and Delta variants of COVID-19 in Denmark.The goal of this is to illustrate when thegrowth rate,and byextension the infectiousness,can be accurately measured inanew outbreak， e.g.after introduction of a new variant of a virus.We find that as long as susceptible depletion is aminor effect,the transients are gone within around 4 generations. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "I.INTRODUCTION ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "the following system of differential equations ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The exponential growth regime of a stratified SEIR-model iswell-described $\\boxed { 1 } \\boxed { 3 }$ where the growth rate is equal to the largest eigenvalue of the generator matrix. However,this requires the system to bein the corresponding eigenstate,which is rarely the case,as the introduction of a disease often comes froma fewsingle individuals. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The non-exponential growth has significant consequences for estimate of infectiousness at the introduction of a new disease or variant,because the growth rate is commonly used here.It is thereforeessential to understand when an outbreak actually follows the largest eigenvalue，and，by extension，when the Corrections to the exponential growth from other effects such as spatial spread have already been investigated $\\boxed { 4 } \\boxed { 1 4 }$ ,whereas this paper will focus on the convergence to the eigenstate. This is of particular interest when comparing the relative infectiousness of a emerging new variant versus existing variants,see forinstance $\\boxed { 1 5 }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Wewill be working in a stratified SEIR-model framework,which hasbeenthebasisofmultiple efforts to predict the real-world spread of disease, especially in recent years 4 l3]. That is,we start with ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/ed2c7da4defe6ede71b3b056c1fa25f908f102684b6669fa6b542389f6cc331c.jpg",
+        "text": "$$\n\\begin{array} { r l } & { \\dot { S } = - \\mathrm { d i a g } ( S ) \\beta I } \\\\ & { \\dot { E } = \\mathrm { d i a g } ( S ) \\beta I - \\eta E } \\\\ & { \\dot { I } = \\eta E - \\gamma I } \\\\ & { \\dot { R } = \\gamma I + \\sigma H } \\end{array} .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The states $S$ ， $E$ ， $I$ ，and $R$ represent the fraction ofthe population that are susceptible,exposed, infectious,and recovered respectively, and the parameters $\\eta$ and $\\gamma$ are rates for the incubation and infection states respectively. The matrix $\\beta$ contains the contacts between each group,e.g. between age groups. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We will start with some theoretical observations about time scales,and then we will illustrate the convergence with numerical solution of Equation $\\underline { { \\| } } \\bigstar \\|$ while comparing to the theoretical time scale. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "II. TIME SCALE OF SOLUTION CONVERGENCE ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Given some initial condition $\\phi ( 0 )$ ，where $\\phi ( t ) = $ ((t)）: we make the decomposition ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/7fe078f8bcb5e2d2e9107fe9f99f214e246467c4259c97c84ce854b371b7f42f.jpg",
+        "text": "$$\n\\phi ( t ) = \\sum _ { j } \\alpha _ { j } \\hat { e } _ { j } e ^ { r _ { j } t }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "for small $t$ ，where $\\hat { \\boldsymbol { e } } _ { j }$ isthe $j ^ { \\prime } t h$ eigenvector of the generatormatrix ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/027c3a98833de5649cfc13e314afe4a4c60083a0b5c76fd027f91b7ed5214774.jpg",
+        "text": "$$\nG = \\left( \\begin{array} { c c } { { - \\eta { \\bf 1 } } } & { { \\mathrm { d i a g } ( S ) \\beta } } \\\\ { { \\eta { \\bf 1 } } } & { { - \\gamma { \\bf 1 } } } \\end{array} \\right) \\ .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

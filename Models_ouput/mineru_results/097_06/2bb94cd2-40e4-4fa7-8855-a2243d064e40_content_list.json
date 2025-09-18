@@ -1,0 +1,71 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/39b9b3dfba7acd0a05baa9774a76f169d13fb3867b7c3ef5b6f9212a2c51541f.jpg",
+        "image_caption": [
+            "Figure 3. Hardware setup of our prototype camera. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/0e30c984f8413055c308d2702881c1c7c1b85830e8fad82fa27263a91fb984ee.jpg",
+        "image_caption": [
+            "Figure 4. Timing chart. From top to bottom, exposure for image frames,aperture-coding patterns,and event stream are shown. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "single cycle of the four coding patterns；See Fig.4 for a timing chart. Although the aperture coding is not electricallysynchronized with the event camera,we can identify the event stacks in the event stream because the cyclic bursts of events correspond to the changes of the coding patterns. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.Experiments ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.1. Quantitative Evaluation ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The evaluation was conducted on the test data of the BasicLFSR dataset[23],which includes 23 light fields categorized into five groups,all ofwhich were reserved for evaluation. For each light field, we computationally carried out image/event acquisition (AcqNet) and reconstruction (RecNet) processes,and quantitatively evaluated the reconstruction accuracy. Tables 1 and 2 summarize the quantitative scores(PSNR and SSIM,where larger is the better for both) averaged for each group and over all the groups. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Asshown in Table 1,we configured four models of our method that are different with respect to the contrast threshold $\\tau$ .Duringtraining, $\\tau$ was fixed to $0 . 0 7 5 / 0 . 1 5 / 0 . 3$ for the fixed- $\\tau$ -low/mid/high models,respectively，while it was randomly (uniformly) drawn from [0.075,O.3] for the flexible- $\\tau$ model. At test time, $\\tau$ was set to 0.075/0.15/0.3. Whena fixed- $\\tau$ modelwas trained and tested withan identical $\\tau$ ,asmaller $\\tau$ resulted in better reconstruction scores. This is reasonable because with a smaller $\\tau$ ,a larger number of events were observed; thus,more abundant informationwas obtained from the target scenes.The flexible- $\\tau$ model resulted in slightly inferior accuracy to the fixed$\\tau$ models tested with the corresponding $\\tau \\mathbf { S }$ However,the flexible- $\\tau$ model was adaptive to various $\\tau \\mathbf { S }$ To make this point clearer,Fig.5 shows the reconstruction quality of each model (the average PSNR over all the groups） against a wide range of the test-time $\\tau$ Thefixed- $\\tau$ modelswere sensitive to the test time $\\tau$ ；each of themhadanarrowpeak around the $\\tau$ with which the model was trained.In contrast, the flexible- $\\tau$ model maintained fine reconstruction quality overawider range of $\\tau$ ，which is important to ensure the compatibility with real event cameras. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/6df0e4c147fd9b387e4bc6ad67f72fcffd25d558389238005d1d696cdd87a287.jpg",
+        "image_caption": [
+            "Figure 5.Reconstruction quality of our method (flexible- $\\tau$ ,fixed$\\tau$ -low/mid/high) against test-time $\\tau$ "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Table1 also includes ablation models with which the measurement was limited to either the image frame (imageonly）or the event stacks (event-only)；for each ablation model, the same algorithm pipeline as ours was trained from scratch. The second term of the loss function (Eq.(13),with $\\lambda = 0 . 0 0 0 0 1$ and $\\theta = 1 3 1 , 1 3 0 ^ { \\circ }$ ）wasenabledonlyfor the event-only model,which is indicated as“t”.Without this term,the learned coding patterns of the event-only model had significant brightness differences and caused too many events.The poor reconstruction quality obtained with the ablation models indicates that both the image frame and events are necessary for accurate light-field reconstruction. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "As summarized in Table 2, we also tested other imaging methods for comparison. As the baseline of our method, coded-aperture imaging(CA） [10,14,22,30,38] takes several $( N )$ images following Eq. (1)，which requires a longer measurement time than a single exposure. Joint aperture-exposure coding (JAEC) [28, 41, 42, 46] capturesa single coded image following Eq. (2) with $N = 4$ ",
+        "page_idx": 0
+    }
+]

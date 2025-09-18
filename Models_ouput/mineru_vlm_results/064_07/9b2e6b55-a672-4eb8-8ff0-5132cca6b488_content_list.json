@@ -1,0 +1,63 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/f8dab74b0e0e9a28708ab489354d0120e741b90500c28a469be9382d4b195946.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "Table 3. The impact of various loss functions and components on performance.  $LL$ $GL$  indicate the local loss and global loss, respectively. QR-CLIP means the model contains entirely Quantity module (QM: Sec. 3.2) and Relevance module (RM: Sec. 3.3)."
+        ],
+        "table_body": "<table><tr><td>ID Method</td><td>Accuracy (≈ Rank@1)</td><td>Rank@5</td><td>Example-F1</td></tr><tr><td colspan=\"4\">Location Reasoning (Only QM)</td></tr><tr><td>27 CLIP+ [CLS] (n=6)+LL</td><td>16.77%</td><td>36.89%</td><td>49.63%</td></tr><tr><td>28 CLIP+ [CLS] (n=6)+GL</td><td>17.13%</td><td>37.75%</td><td>49.87%</td></tr><tr><td>29 CLIP+ [CLS] (n=6)+LL+GL</td><td>17.25%</td><td>37.80%</td><td>49.98%</td></tr><tr><td colspan=\"4\">Time Reasoning (Only QM)</td></tr><tr><td>30 CLIP+ [CLS] (n=6)+LL</td><td>1.23%</td><td>5.33%</td><td>43.59%</td></tr><tr><td>31 CLIP+ [CLS] (n=6)+GL</td><td>1.92%</td><td>5.60%</td><td>44.62%</td></tr><tr><td>32 CLIP+ [CLS] (n=6)+LL+GL</td><td>2.00%</td><td>5.37%</td><td>45.60%</td></tr><tr><td colspan=\"4\">Location Reasoning (QR-CLIP: QM+RM)</td></tr><tr><td>33 CLIP+ [CLS] (n=6)+LL</td><td>19.11%</td><td>37.74%</td><td>50.51%</td></tr><tr><td>34 CLIP+ [CLS] (n=6)+GL</td><td>18.36%</td><td>37.87%</td><td>50.03%</td></tr><tr><td>35 CLIP+ [CLS] (n=6)+LL+GL</td><td>19.31%</td><td>38.78%</td><td>50.96%</td></tr><tr><td colspan=\"4\">Time Reasoning (QR-CLIP: QM+RM)</td></tr><tr><td>36 CLIP+ [CLS] (n=6)+LL</td><td>3.22%</td><td>11.57%</td><td>47.80%</td></tr><tr><td>37 CLIP+ [CLS] (n=6)+GL</td><td>2.98%</td><td>9.60%</td><td>46.32%</td></tr><tr><td>38 CLIP+ [CLS] (n=6)+LL+GL</td><td>3.53%</td><td>10.90%</td><td>47.89%</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/90654996681cc3e874c306264c47e0385c199e33d151e23da066dbb504b702e3.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "Table 4. The results of the effect of increasing the candidate numbers of Open-world Knowledge (OWK)."
+        ],
+        "table_body": "<table><tr><td>ID</td><td>Candidate OWks</td><td>Accuracy (≈ Rank@1)</td><td>Rank@5</td><td>Example-F1</td></tr><tr><td colspan=\"5\">Location Reasoning</td></tr><tr><td>39</td><td>29,243</td><td>17.75%</td><td>37.75%</td><td>50.32%</td></tr><tr><td>40</td><td>52,159</td><td>18.90%</td><td>37.94%</td><td>50.84%</td></tr><tr><td>41</td><td>122,408</td><td>19.31%</td><td>38.78%</td><td>50.96%</td></tr><tr><td colspan=\"5\">Time Reasoning</td></tr><tr><td>42</td><td>29,243</td><td>59%</td><td>5.87%</td><td>45.64%</td></tr><tr><td>43</td><td>52,159</td><td>2.96%</td><td>10.65%</td><td>47.77%</td></tr><tr><td>44</td><td>122,408</td><td>3.53%</td><td>10.90%</td><td>47.89%</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/be40a2aa657ca70f5cd177b83bd9ce1e5877f6f74991f6976b8a9152b4196a68.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "Table 5. The effect of different scoring mechanisms on network performance, where Score's indicates that only images are scored and Score means scoring open-world knowledge only."
+        ],
+        "table_body": "<table><tr><td>ID</td><td>Method</td><td>Accuracy (≈ Rank@1)</td><td>Rank@5</td><td>Example-F1</td></tr><tr><td colspan=\"5\">Location Reasoning</td></tr><tr><td>45</td><td>Scorev</td><td>16.43%</td><td>36.74%</td><td>49.97%</td></tr><tr><td>46</td><td>Scorev</td><td>18.38%</td><td>37.53%</td><td>50.19%</td></tr><tr><td>47</td><td>Proposed</td><td>19.31%</td><td>38.78%</td><td>50.96%</td></tr><tr><td colspan=\"5\">Time Reasoning</td></tr><tr><td>48</td><td>Scorev</td><td>2.76%</td><td>10.59%</td><td>47.53%</td></tr><tr><td>49</td><td>Scorev</td><td>2.92%</td><td>10.37%</td><td>47.60%</td></tr><tr><td>50</td><td>Proposed</td><td>3.53%</td><td>10.90%</td><td>47.89%</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "increases image cues by constructing multiple perspectives and has a promising benefit.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Effectiveness of Losses and Modules. We further analyze the impact of losses, the Quantity Module (Sec 3.2) and Relevance Module (Sec 3.3). As shown in Tab. 3, adding both the local and global losses will increase model performance, which first indicates the effectiveness of these two losses (ID: 27- 38). When we compare the Quantity module to the entire QR- CLIP, we can see that the Relevance module significantly improved the reasoning abilities (ID: 29,32,35,38), which verifies that the whole designs of the two modules are reasonable.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Impact of Open- World Knowledge. To validate the performance of different amounts of open- world knowledge, we conduct an experiment to vilify whether increasing the number of OWKs is beneficial. As shown in Tab. 4, when 122,408 OWKs were added, compared to the method without open- world knowledge, the network was able to make more accurate predictions (absolute lift by 2.06% and 1.53%) about location and time (ID: 19,25,41,44). These results show that our method can effectively use open- world knowledge to improve the model's accuracy for image location and time. Besides, the performance gradually improves as the number of OWKs increases (ID: 39- 44). It also shows that our method can further explore a more extensive range of open- world knowledge. Nonetheless, comparing each [CLS] with 122,408 OWKs is already time- consuming and limits our ability to increase the amount; in the future, we will find a more efficient way to overcome this challenge.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Performance of Scoring Mechanism. This part analyzes the performance of different scoring mechanisms in the Relevance module (Sec 3.3), and the experimental results are shown in Tab. 5. When we used the Score, some image features were even weakened, and the time and location prediction accuracy decreased after fusing open- world knowledge (ID: 45,47,48,50). When use the scoring mechanism on text (Score) only the open world knowledge was weighted during the fusion process—the accuracy of location and time prediction was improved by 1.13% and 0.92%, respectively (ID: 45,46,48,49). This indicates that the weights have a significant influence on the final predictions. When both image and open- world knowledge embeddings are scored, the accuracy of location and time predictions increases by 2.06% and 1.50%, respectively (ID: 45,47,48,50). This implies that providing only the information required for the final prediction helps our QR- CLIP better understand abstract information and caters to the idea of the QR rule.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.4. Visualization",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We provide a visual demonstration for QR- CLIP in Fig. 3. Taking the fourth picture as an example, when we use vanilla CLIP (Radford et al., 2021) as the baseline, as can be seen, it performs worse in this case, achieving lower Example- F1 scores (22.22%). After using additional [CLS] and fine- tuned them using global and local losses, our QR- CLIP detects an image from different perspectives and get higher scores (28.57%). After that, QR- model retrieves six OWKs used as language input; the six OWKs all describe the abstract information expressed in the image content: an election meeting. In addition, each piece of knowledge contains much information about the time associated with the meeting. The scoring mechanism then assigns different weights to each OWK, with the OWK that lacks valuable time information receiving a lower weight, guiding the model to pay attention to the correct time information.",
+        "page_idx": 0
+    }
+]

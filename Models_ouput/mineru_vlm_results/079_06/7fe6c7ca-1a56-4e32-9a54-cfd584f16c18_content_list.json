@@ -1,0 +1,103 @@
+[
+    {
+        "type": "text",
+        "text": "It follows from Lemma 2 that  $h_{L_t}(u_0) - h_K(u_0) > t(1 - \\epsilon)f(u_0) = t(1 - \\epsilon)$ , for  $0 < t < t_0(\\epsilon)$ . Also,  $\\sigma (\\{u_0\\}) = S(M, K[n - 2], u_0) = V_{n - 1}(M^{u_0}, K^{u_0}[n - 2]) = V_{n - 1}(B_2^{n - 1}, F[n - 2]) = \\frac{|\\partial F|_{n - 2}}{n - 1}$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Therefore, when  $0 < t < t_0(\\epsilon)$ :",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nV_{n}(L_{t},M,K[n - 2]) - V_{n}(M,K[n - 1])\\geq (1 - \\epsilon)\\frac{t}{n(n - 1)} |\\partial F|_{n - 2}.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "On the other hand, for any  $t > 0$ :",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{l}{V_n(L_t,K[n - 1]) - V_n(K) = \\frac{1}{n}\\int (h_{L_t} - h_K)(u)dS_K(u)}\\\\ {\\qquad \\leq \\frac{t}{n}\\int f(u)dS_K(u)< (1 + \\epsilon)\\frac{t}{n} |F|_{n - 1}.} \\end{array}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where the last inequality is by the choice of  $f$ . Also, by monotonicity of mixed volumes:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nV_{n}(M,K[n - 1])\\leq V_{n}(B_{2}^{n},K[n - 1]) = \\frac{1}{n} |\\partial K|_{n - 1}.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We may now conclude by simple computations. For ease of notations, set  $a_2 = V_n(L_t, M, K[n - 2])$ ,  $a_0 = V_n(K)$ ,  $a_t = V_n(L_t, L[n - 1])$  and  $a_m = V_n(M, K[n - 1])$ . We shall show that  $F_K(L_t, M) < 0$  which rewrites as  $(a_t - a_0)a_m - (a_2 - a_m)a_0 < 0$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Denote  $b_{1} = (a_{2} - a_{m})a_{0}$  and  $b_{2} = (a_{t} - a_{0})a_{m}$ , so that  $F_{K}(L_{t}, M) = b_{2} - b_{1}$ . The above lower and upper bounds give us:  $b_{1} \\geq (1 - \\epsilon)\\frac{t}{n(n - 1)} |\\partial F|_{n - 2}|K|_{n}$  and  $b_{2} \\leq (1 + \\epsilon)\\frac{t}{n^2} |\\partial K|_{n - 1}|F|_{n - 1}$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "It follows that:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{l}{\\mathbf{\\Phi}_{t},M)\\leq \\epsilon \\frac{t}{n}\\left(\\frac{|\\partial F|_{n - 2}|K|_{n}}{n - 1} +\\frac{|F|_{n - 1}|\\partial K|_{n - 1}}{n}\\right) - \\frac{t}{n}\\left(\\frac{|\\partial F|_{n - 2}|K|_{n}}{n - 1} -\\frac{|F|_{n - 1}|\\partial K|_{n - 1}}{n}\\right)}\\\\ {\\leq \\frac{t}{n} (\\epsilon c - c_{0})< 0.} \\end{array}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Recall that  $F_K \\geq 0$  is an affine- invariant property. On the other hand, the quantity",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\sup_F\\frac{\\mathrm{Isop}(F)}{\\mathrm{Isop}(K)} = \\sup_F\\frac{n|\\partial F|_{n - 2}|K|_n}{(n - 1)|F|_{n - 1}|\\partial K|_{n - 1}},\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where the supremum is over the facets, is not affine- invariant. Thus, the above proposition immediately implies the following one.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proposition 2. Let  $K$  be a convex body such that one of its affine pairs  $K' = TK$  has a facet  $F'$  satisfying:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\frac{|\\partial F'|_{n - 2}}{(n - 1)|F'|_{n - 1}} >\\frac{|\\partial K'|_{n - 1}}{n|K'|_n}.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Then  $b_{2}(K) > 1$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This yields that, if  $\\max_T \\sup_F \\frac{\\mathrm{Isop}(TF)}{\\mathrm{Isop}(TK)} > 1$ , where the max is over  $T \\in O(n)$ , then  $b_{2}(K) > 1$ . Let us list specific examples. Throughout, we will denote  $|\\cdot |$  for the Lebesgue measure (either of dimension  $n$ ,  $n - 1$ , or  $n - 2$ ).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "a- The unit cube has volume 1, and so does any of its facet. Thus  $|\\partial C_n| = 2n$  , and  $\\operatorname {Isop}(C_n) =$ $\\begin{array}{r}\\frac{|\\partial C_n|}{n|C_n|} = 2 \\end{array}$  . Since each of its facets is a unit cube itself (of dimension  $n - 1$  ), they also satisfy  $\\operatorname {Isop}(F) = 2$  . Therefore  $\\max_F\\frac{\\mathrm{Isop}(F)}{\\mathrm{Isop}(C)} = 1$  . But choose for  $T$  the affine transform such that  $T e_{i} = e_{i}$  for all  $i\\neq 1$  , and  $T e_{1} = 2e_{1}$  . Let  $C^\\prime = TC$  be the resulting box. Then,  $\\begin{array}{r}\\frac{|\\partial F|}{(n - 1)|F|} = 2 \\end{array}$  for the facet with outer normal  $e_1$  , while  $\\begin{array}{r}\\operatorname {Isop}(C^{\\prime}) = 2 - \\frac{1}{n} \\end{array}$  . It follows that  $\\begin{array}{r}\\frac{\\operatorname{Isop}(F)}{\\operatorname{Isop}(C^{\\prime})} >1 \\end{array}$  , and hence  $b_{2}(C) = b_{2}(C^{\\prime}) > 1$",
+        "page_idx": 0
+    }
+]

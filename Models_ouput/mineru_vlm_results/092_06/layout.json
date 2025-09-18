@@ -1,0 +1,766 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        155,
+                        267,
+                        1202,
+                        808
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                155,
+                                267,
+                                1202,
+                                808
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        155,
+                                        267,
+                                        1202,
+                                        808
+                                    ],
+                                    "type": "text",
+                                    "content": "highest possible accuracy but rather to design the most portable, practical, and inexpensive setup to execute self- powered EIS on the field. If a higher accuracy was ever to be required, printable reference electrodes [37] can easily be added to the sensor, without any additional energy expenditure. The two EIS terminals consist of two electrodes, which are also used for collecting the energy required to execute the EIS measurements. Our novel approach ensures that the PMFC acts both as an energy source and a biosensor for our application: in the first case, the PMFC electrodes are connected to the dc/dc, in the second to the EIS AFE."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        153,
+                        815,
+                        1202,
+                        1504
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                815,
+                                1202,
+                                1504
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        815,
+                                        1202,
+                                        1504
+                                    ],
+                                    "type": "text",
+                                    "content": "2) Service Circuitry: We can distinguish two different sections of the SC: OCV sampling and the IPSP. The OCV sampling circuit is a high-impedance resistive divider that samples "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        815,
+                                        1202,
+                                        1504
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "50\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        815,
+                                        1202,
+                                        1504
+                                    ],
+                                    "type": "text",
+                                    "content": " of the steady-state (i.e., after cell rest) OCV into the dc/dc's MPP reference voltage capacitor. The resistive divider is briefly connected to the circuit thanks to the wakeup signal, and then it is unconnected through two switches. The IPSP acts as the interface between the PMFC and the sensor node and has a twofold purpose. First, it turns the power flow on/off from the PMFC to the dc/dc input, to either harvest energy from the cell or to unload it to ensure cell recovery. Second, the IPSP also controls whether the PMFC is being used as a power source (i.e., PMFC connected to the DC/DC), or if it is being used as EIS biosensor (i.e., PMFC connected to the EIS AFE)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        153,
+                        1518,
+                        1202,
+                        2699
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                1518,
+                                1202,
+                                2699
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "text",
+                                    "content": "During wakeup, the power supplies of the IPSP and OCV sampling control and synchronize their activity. Fig. 2 shows the time development of the supply voltages of the IPSP, the sampling, and the storage capacitor during an entire application cycle. The OCV sampling section is powered only at the start of the wakeup period. On the other hand, the IPSP is activated only once OCV has been successfully sampled so as not to disrupt its measurement by loading the PMFC before time. To grant the synchronization between these two phases, the wakeup harvesting circuitry charges two separate capacitors, one responsible for OCV sampling "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(C_{\\mathrm{SMP}})"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "text",
+                                    "content": " and one for the IPSP's supply "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(C_{\\mathrm{WK}})"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "text",
+                                    "content": ". "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{\\mathrm{SMP}}"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "text",
+                                    "content": " must activate and deactivate OCV sampling strictly before "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{\\mathrm{WK}}"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "text",
+                                    "content": " activates IPSP, so that sampling ends before harvesting begins [see Fig. 2(A)]. This can be done by properly sizing "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{\\mathrm{SMP}}"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{\\mathrm{WK}}"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "text",
+                                    "content": ", with "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{\\mathrm{WK}} > C_{\\mathrm{SMP}}"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "text",
+                                    "content": ". The IPSP also taps into the storage capacitor when "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{\\mathrm{WK}}"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "text",
+                                    "content": " is depleted to sustain harvesting beyond the wakeup period. In particular, to ensure correct supply handoff, "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{\\mathrm{WK}}"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "text",
+                                    "content": " must be able to hold the IPSP's supply above its operative voltage (1.65 V) as the storage capacitor charges above its load- enable threshold, "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{\\mathrm{MIN}} = 2 \\mathrm{~V}"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "text",
+                                    "content": " [see Fig. 2(B)]. If the PMFC cannot charge the storage capacitor above "
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{\\mathrm{MIN}}"
+                                },
+                                {
+                                    "bbox": [
+                                        153,
+                                        1518,
+                                        1202,
+                                        2699
+                                    ],
+                                    "type": "text",
+                                    "content": " in time, harvesting cannot continue as the IPSP is unpowered. The cell is deemed inactive, and a new wakeup tentative will be done at the next wakeup message reception."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        155,
+                        2709,
+                        1202,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                155,
+                                2709,
+                                1202,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "Below "
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{\\mathrm{MIN}}"
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": ", the storage loads are detached through a digital signal generated by the BQ25505, the "
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{\\mathrm{BAT,OK}}"
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": " signal, to reduce the minimum power required for cold start (see Section IV- B). Right after wakeup, when the storage crosses "
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{\\mathrm{MIN}}"
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": ", "
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{\\mathrm{BAT,OK}}"
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": " activates the loads on "
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{\\mathrm{CAP}}"
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": " (MCU, voltage monitors). The MCU boots up in ultralow power mode LPM 4.5, waiting for an interrupt. When "
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{\\mathrm{STOR}}"
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": " charges up to "
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{\\mathrm{EIS}}"
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        2709,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": ", a voltage monitor interrupts the MCU, which then launches an EIS measurement "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1249,
+                                267,
+                                2301,
+                                1207
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1249,
+                                        267,
+                                        2301,
+                                        1207
+                                    ],
+                                    "type": "text",
+                                    "content": "cycle by toggling the M signal, which powers the EIS AFE and controls the IPSP to connect the electrodes to the AFE. Once the measurement is finished, EIS circuitry is power- gated, and the MCU enters LPM 4.5 again, waiting until "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        267,
+                                        2301,
+                                        1207
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{\\mathrm{TX}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        267,
+                                        2301,
+                                        1207
+                                    ],
+                                    "type": "text",
+                                    "content": " is reached. At that point, transmission is issued by powering the LoRa modem through the S signal. After the transmission, the MCU remains active until the storage element drops below "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        267,
+                                        2301,
+                                        1207
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{\\mathrm{MIN}} - 5 \\mathrm{mV}"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        267,
+                                        2301,
+                                        1207
+                                    ],
+                                    "type": "text",
+                                    "content": ". The BQ25505's internal PFET disconnects the storage element from the sensor node supply line at that voltage. This interrupts the power supply to the IPSP and all components, sending the node into rest mode until a new wakeup signal is received. To save precious leftover storage energy during cell rest, the BQ25505 is held in a reset state, only consuming "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        267,
+                                        2301,
+                                        1207
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "5 \\mathrm{nA}"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        267,
+                                        2301,
+                                        1207
+                                    ],
+                                    "type": "text",
+                                    "content": ". If rest lasts a long time and the storage is discharged below the cold- start voltage "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        267,
+                                        2301,
+                                        1207
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(V_{\\mathrm{CS}} = 1.8 \\mathrm{~V})"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        267,
+                                        2301,
+                                        1207
+                                    ],
+                                    "type": "text",
+                                    "content": ", we will incur in cold start of the DC/DC converter upon wakeup. Power distribution and component power- gating are done through SPST (Vishay Siliconix, SiP32431DN) and SPDT (Vishay Siliconix, DG4157E) switches."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        1249,
+                        267,
+                        2301,
+                        1207
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 4,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1532,
+                        1267,
+                        2019,
+                        1310
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1532,
+                                1267,
+                                2019,
+                                1310
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1532,
+                                        1267,
+                                        2019,
+                                        1310
+                                    ],
+                                    "type": "text",
+                                    "content": "IV. EXPERIMENTAL RESULTS"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1249,
+                        1339,
+                        2301,
+                        2527
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1249,
+                                1339,
+                                2301,
+                                2527
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1339,
+                                        2301,
+                                        2527
+                                    ],
+                                    "type": "text",
+                                    "content": "The initial test phase concerned PMFC reactor characterization: first, we focused on their construction, startup, and operation, and then we assessed their performance in cold- starting storage capacitors through the BQ25505. After that, we moved on to analyzing the time development of the impedance spectra of active and inactive PMFCs: with this experiment, we confirm that the impedance spectrum of a PMFC varies significantly both from day to day and from active and inactive plants. These significant changes in EIS results can be tracked to more than just common MFC parameters, such as biofilm formation, but also to plant health and status. We executed this first set of EIS measurements with a reference potentiostat (Autolab PGSTAT302 N) for three consecutive days. These first EIS measurements also allowed us to set up the MAX30134's measurement range for PMFCs. We then validated the MAX30134's capabilities in measuring a PMFC's impedance spectrum by comparing its measurements to the reference potentiostat and in terms of low- power energy consumption by measuring its energy consumption during a prototype EIS sweep. As a last step, we estimated the energy consumption of the atomic tasks of the application scenario we considered: message transmission and EIS measurement. This allowed us to dimension the energy storage element required for this test case and confirm the feasibility of a simple monitoring application based on this node."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        1252,
+                        2587,
+                        1829,
+                        2633
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1252,
+                                2587,
+                                1829,
+                                2633
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1252,
+                                        2587,
+                                        1829,
+                                        2633
+                                    ],
+                                    "type": "text",
+                                    "content": "A. Reactor Startup and Operation"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1252,
+                        2656,
+                        2301,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1252,
+                                2656,
+                                2301,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1252,
+                                        2656,
+                                        2301,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "As a preliminary study, we built an MFC and confirmed through experiments that the cell's durability and power production capabilities are comparable to the expected results in the literature [38]. We analyzed the PMFC's performance by adding the plant to a cell of the same volume. We verified that drawing current from the cell during startup or adding water to it delayed cell stabilization, as the bacteria colony still had to get acclimatized. This led us to start new cells up by waterlogging them and leaving them unloaded until OCV stabilized above"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2475,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

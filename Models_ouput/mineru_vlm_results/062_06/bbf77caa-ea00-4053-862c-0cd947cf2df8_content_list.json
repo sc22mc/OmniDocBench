@@ -1,0 +1,114 @@
+[
+    {
+        "type": "text",
+        "text": "points is a measure of geometrical coherence of the local neighborhood, we estimate the sparsity of the dissimilarity of normals and use it as a feature for geometrical saliency,  $s^{(1)}$ . Low values of the sparse matrix indicate that the normals of the point and its neighbors are similar (low- rank). This means that if all points in a neighborhood have similar geometrical characteristics, the respective patch represents a flat area. On the opposite, high dissimilarity indicates that the surface has an irregular shape. For a point  $\\mathbf{v}_j$  the geometric saliency feature,  $s_j^{(1)}$ , is estimated by the values of the first column of the sparse matrix  $\\mathbf{S}$  according to:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ns_j^{(1)} = ||\\hat{\\mathbf{n}}_j||^2 = \\sqrt{\\hat{n}_{j_x}^2 + \\hat{n}_{j_y}^2 + \\hat{n}_{j_z}^2}\\quad \\forall j = 1,\\dots ,m \\tag{4}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $\\hat{n}_{j_x}$  denotes the scalar value of the  $x$  coordinate, of the  $[3\\cdot (j - 1) + 1]^{th}$  row, of the  $1^{st}$  column of the  $\\mathbf{S}$  matrix.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2) Estimation of the spectral saliency (local approach): For the estimation of the spectral-based saliency,  $s_j^{(2)}$  , for a vertex  $j$  of the point cloud, we use the submatrix  $\\mathbf{E}_j\\in \\mathbb{R}^{3\\times (k + 1)}$  that includes the 3 corresponding rows of the matrix  $\\mathbf{E}$  ..",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\mathbf{E}_j = \\left[ \\begin{array}{llllll}n_{j_x} & n_{j_{x1}} & n_{j_{x2}} & \\ldots & n_{j_{xk}}\\\\ n_{j_y} & n_{j_{y1}} & n_{j_{y2}} & \\ldots & n_{j_{yk}}\\\\ n_{j_z} & n_{j_{z1}} & n_{j_{z2}} & \\ldots & n_{j_{zk}} \\end{array} \\right],\\forall j = 1,\\dots ,m \\tag{5}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In other words, each submatrix  $\\mathbf{E}_j$  which is a subset of the global matrix  $\\mathbf{E}_i$  ,corresponds of the point normals of a local neighborhood of the vertex  $\\mathbf{v}_j$  .Then, for each one of these local matrices  $\\mathbf{E}_j$  , the covariance matrix  $\\mathbf{R}_j\\in \\mathbb{R}^{3\\times 3}$  is calculated:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\mathbf{R}_j = \\mathbf{E}_j\\mathbf{E}_j^T \\tag{6}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Next, the calculated matrix  $\\mathbf{R}_j$  is decomposed into a matrix  $\\mathbf{U}$  consisting of the eigenvectors and a diagonal matrix  $\\Lambda = \\mathrm{diag}(\\lambda_{j1},\\lambda_{j2},\\lambda_{j3})$  consisting of the corresponding eigenvalues, i.e.,  $[\\mathbf{U}\\mathbf{\\Lambda}] = \\mathrm{eig}(\\mathbf{R}_j)$  , where eig(.) represents the eigendecomposition operation.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Finally, the spectral saliency of each vertex is calculated by the inverse  $l^2$  - norm of the corresponding eigenvalues:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ns_j^{(2)} = \\frac{1}{\\sqrt{\\lambda_{j1}^2 + \\lambda_{j2}^2 + \\lambda_{j3}^2}}\\forall j = 1,\\dots ,m \\tag{7}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Eq.  $(\\overline{7})$  indicates that large values of the term  $\\sqrt{\\lambda_{i1}^2 + \\lambda_{i2}^2 + \\lambda_{i3}^2}$  correspond to small saliency features implying that the centroid lies in a flat area, while small values of the eigenvalues' norm correspond to large saliency, characterizing the specific centroid as a discriminative point.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This can be easily justified by the fact that a point normal lying on a flat area is represented by one dominant eigenvector, the corresponding eigenvalue of which has a very large value (especially, considering that it is squared). On the other hand, the point normal of a vertex lying on a corner is represented by three eigenvectors, that correspond to eigenvalues with small and almost equal amplitude, as shown in Fig. 2",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3) Normalization and fusion of local and global saliency: Finally, we linearly scale the values of the geometric  $(s^{(1)})$  and spectral  $(s^{(2)})$  saliency in the range of [0-1] and combine them through weighted averaging according to:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ns_j = \\frac{w_1\\bar{s_j^{(1)}} + w_2\\bar{s_j^{(2)}}}{w_1 + w_2}\\forall j = 1,\\dots ,m_i \\tag{8}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/26cec5c9b382f7b94de34ff07bbece36f22b036ef00ac0f8402f0737b1164e72.jpg",
+        "image_caption": [
+            "Fig.2.a Cube model,b corner  $(\\lambda_{i1}\\cong \\lambda_{i2}\\cong \\lambda_{i3})$  c edge  $(\\lambda_{i1}\\cong$ $\\lambda_{i2} > \\lambda_{i3}$  d flat area  $(\\lambda_{i1} > \\lambda_{i2}\\cong \\lambda_{i3})$"
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $\\bar{s}^{(1)}$  and  $\\bar{s}^{(2)}$  denote the normalized geometric and spectral saliency features, and  $w_{1}$  and  $w_{2}$  the corresponding weights. We note here that we used equal weights  $(w_{1} =$ $w_{2} = 1)$  in all of our experiments, however, the weights can be tuned to emphasize the local or global saliency descriptors, respectively.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The proposed method has shown to be robust [33], [32], even for complex surfaces with different geometrical characteristics and patterns, since it exploits spectral properties (i.e., sensitivity in the variation of neighboring normals) and geometrical characteristics (i.e., sparsity of intense prominent spatial features). An example of the visualization of the saliency map, as applied to the point cloud of a scene shown in Fig. 3), is presented in Fig. 4",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/417191ec3c38258e6c0cc7244026a44fdf6fee49e86cbee132b5cd07c1cdfb65.jpg",
+        "image_caption": [
+            "Fig. 3. Image from the camera of the vehicle, the texture of a pothole is also apparent."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/4ca216d4f5eb958a7d6b0ca850192de3cc323275bcb154d8e81b197a282e1885.jpg",
+        "image_caption": [
+            "Fig. 4. Example of saliency map extracted from the road scene shown in Fig. 3"
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    }
+]

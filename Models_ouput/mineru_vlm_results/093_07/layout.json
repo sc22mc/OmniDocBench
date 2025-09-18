@@ -1,0 +1,711 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        237,
+                        273,
+                        1160,
+                        815
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                237,
+                                273,
+                                1160,
+                                815
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        237,
+                                        273,
+                                        1160,
+                                        815
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                237,
+                                                273,
+                                                1160,
+                                                815
+                                            ],
+                                            "type": "image",
+                                            "image_path": "4e002d46f770b6c1eddaea044e0450e4cfda6bf69698e17ff3adb91548436a0f.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                168,
+                                851,
+                                1222,
+                                930
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        168,
+                                        851,
+                                        1222,
+                                        930
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                168,
+                                                851,
+                                                1222,
+                                                930
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 4. Smart sticky trap (upper) and the steps followed for the detection and classification approach (lower)."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        175,
+                        1039,
+                        1222,
+                        1683
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                1039,
+                                1222,
+                                1683
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        1039,
+                                        1222,
+                                        1683
+                                    ],
+                                    "type": "text",
+                                    "content": "develop datasets has been described in [43] and [44]. Recent studies have proposed edge- based systems, such as [11] for precision agriculture, most of which suggested power- hungry hardware, such as Raspberry Pi for computation. This research utilized a microcontroller (MCU)- based system to minimize power consumption, which is a crucial factor for edge- based systems, particularly in agricultural settings where devices must operate on batteries due to the absence of power lines in orchards. The image processing solution is here compared to other commonly used approaches, this time using real image data captured in the field throughout the deployment of the IoT device in orchards for several months in 2023. In addition, the impact of considering past data on the system's accuracy is examined."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        175,
+                        1739,
+                        524,
+                        1788
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                1739,
+                                524,
+                                1788
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        1739,
+                                        524,
+                                        1788
+                                    ],
+                                    "type": "text",
+                                    "content": "A. Trap Architecture"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        175,
+                        1815,
+                        1225,
+                        2702
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                1815,
+                                1225,
+                                2702
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        1815,
+                                        1225,
+                                        2702
+                                    ],
+                                    "type": "text",
+                                    "content": "We designed and developed an edge- based smart trap to make the identification and insect counting procedure automated and more accurate. The system is an ultra low- cost and low- power device able to detect and count insects on the device itself in the orchard without relying on expensive and power- hungry equipment. Fig. 4 depicts the second version of the proposed device. As described in [44] in detail, the camera unit is an OpenMV board based on an MCU with an embedded camera capable of running lightweight image processing and deep learning methods. In addition, this device supports two- sided traps and a servo motor is used to rotate the trap, so the camera can capture images of the trap on both sides. The purpose of the mechanism is to increase the probability of capturing insects (as the captured area is doubled) and, at the same time, make it more approachable to insects since the sticky area is not shadowed by the camera. The image processing pipeline is shown in Fig. 4. This is a modified version of the image processing pipeline proposed in [44]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        175,
+                        2709,
+                        1225,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                2709,
+                                1225,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        2709,
+                                        1225,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "The analysis of real- world data captured in 2023 revealed that the detection phase was unable to properly detect insects. Consequently, we modified and enhanced this aspect by implementing a histogram equalization technique on the captured images to normalize the contrast and brightness. This adjustment, denoted as the first step in Fig. 4, resulted in a significant improvement in the output of the detection phase, reducing both the mean squared error (mse) from 50.8 to 13.6 and mean absolute error"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        1291,
+                        412,
+                        2299,
+                        719
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1291,
+                                412,
+                                2299,
+                                719
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1291,
+                                        412,
+                                        2299,
+                                        719
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1291,
+                                                412,
+                                                2299,
+                                                719
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Model</td><td>MAE</td><td>MSE</td><td>P</td><td>R</td><td>MCU Comp.</td></tr><tr><td>YOLOV8-N</td><td>0.71</td><td>1.33</td><td>86.6%</td><td>98.5%</td><td>No</td></tr><tr><td>YOLOV5-N</td><td>0.88</td><td>0.55</td><td>85.1%</td><td>97.6%</td><td>No</td></tr><tr><td>YOLOV3-N</td><td>0.5</td><td>0.40</td><td>88.9%</td><td>98.8%</td><td>No</td></tr><tr><td>Ours in [44]</td><td>5.07</td><td>10.79</td><td>88.5%</td><td>36.7%</td><td>Yes</td></tr><tr><td>This study</td><td>2.07</td><td>13.55</td><td>84.0%</td><td>70.6%</td><td>Yes</td></tr><tr><td>This study (7-day)</td><td>1.05</td><td>1.81</td><td>83.0%</td><td>80.2%</td><td>Yes</td></tr></table>",
+                                            "image_path": "6394c5ffcdf5c02e56c829c89de51379f0a241eb7a7a7516df33472eeb0a0940.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 7,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                1299,
+                                264,
+                                2286,
+                                376
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1299,
+                                        264,
+                                        2286,
+                                        376
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1299,
+                                                264,
+                                                2286,
+                                                376
+                                            ],
+                                            "type": "text",
+                                            "content": "TABLE IV COMPARISON OF DIFFERENT MODELS ON THE NEW DATASET COLLECTED FROM THE REAL WORLD FOR BMSBS COUNTING"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 6,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        1269,
+                        792,
+                        2321,
+                        1039
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                792,
+                                2321,
+                                1039
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        792,
+                                        2321,
+                                        1039
+                                    ],
+                                    "type": "text",
+                                    "content": "MAE) from 5.1 to 2.1, indicating a reduction by a factor of approximately 3.7 in mse and approximately 2.5 in MAE. This highlights how important it is to incorporate a wide range of real- world images into the algorithm development and help the algorithm adapt to the complexities of real- world situations."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1269,
+                        1042,
+                        2321,
+                        1834
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                1042,
+                                2321,
+                                1834
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "text",
+                                    "content": "As shown in Fig. 4, in the detection phase, the process begins with the application of histogram equalization to the raw captured image "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(1)"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "text",
+                                    "content": ", followed by conversion to gray scale "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(2)"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "text",
+                                    "content": ". Then, a smoothing filter is applied to eliminate small objects, such as windblown dust, leaves, or tiny insects "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(3)"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "text",
+                                    "content": ". Then, the image is converted to black- and- white using Otsu's method "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(4)"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "text",
+                                    "content": " and finally the suspected area that might be filled by the target insect is detected using a blob detection algorithm "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(5)"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "text",
+                                    "content": ". It should be noted that the detected blobs are filtered based on their size and only those with a size approximating that of a BMSB are considered as suspected areas. So, these suspected areas are cropped and fed to the classification phase "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(6)"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "text",
+                                    "content": ", where a lightweight CNN- based image classification model is used to classify the images "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(7)"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "text",
+                                    "content": ". Finally, the number of the target insects on the trap along with the cropped images (as an option) is sent to the growers "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(8)"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1042,
+                                        2321,
+                                        1834
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        1269,
+                        1841,
+                        2321,
+                        2085
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                1841,
+                                2321,
+                                2085
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1841,
+                                        2321,
+                                        2085
+                                    ],
+                                    "type": "text",
+                                    "content": "Our CNN- based model has a program size of only "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1841,
+                                        2321,
+                                        2085
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "80\\mathrm{kB}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1841,
+                                        2321,
+                                        2085
+                                    ],
+                                    "type": "text",
+                                    "content": " with a peak memory usage of "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1841,
+                                        2321,
+                                        2085
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "75\\mathrm{kB}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1841,
+                                        2321,
+                                        2085
+                                    ],
+                                    "type": "text",
+                                    "content": " and an inference time of "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1841,
+                                        2321,
+                                        2085
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "0.07\\mathrm{s}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1841,
+                                        2321,
+                                        2085
+                                    ],
+                                    "type": "text",
+                                    "content": " (on the OpenMV board), making it suitable for running on memory- constrained MCUs. In designing the model, as detailed in [44], the main considerations are itemized as follows."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1309,
+                        2092,
+                        2321,
+                        2781
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1309,
+                                2092,
+                                2321,
+                                2781
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1309,
+                                        2092,
+                                        2321,
+                                        2781
+                                    ],
+                                    "type": "text",
+                                    "content": "1) Utilizing depthwise separable convolution instead of standard convolution: This reduces computations by factorizing the process, significantly decreasing computational cost. \n2) Using global average pooling instead of flatten layer: This decreases parameter numbers, leading to a substantial reduction in computation and model size. \n3) Quantizing: The model weights were quantized to 8-bit integers from the original 32-bit float data, which is critical for deploying the model on memory-constrained MCUs. \n4) Utilizing skip connections: Skip connections enhance performance by facilitating data flow, combining features from different layers, and addressing vanishing gradient issues during training."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1269,
+                        2834,
+                        1687,
+                        2884
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                2834,
+                                1687,
+                                2884
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2834,
+                                        1687,
+                                        2884
+                                    ],
+                                    "type": "text",
+                                    "content": "B. Experimental Results"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1267,
+                        2907,
+                        2319,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1267,
+                                2907,
+                                2319,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1267,
+                                        2907,
+                                        2319,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "Table IV reports the accuracy of the proposed BMSB identification and quantification based on images from the new dataset gathered from the real world as compared to that proposed in [44] using known YOLO methods that are widely used in"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2475,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

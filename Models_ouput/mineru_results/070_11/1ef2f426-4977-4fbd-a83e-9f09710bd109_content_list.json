@@ -1,0 +1,79 @@
+[
+    {
+        "type": "text",
+        "text": "sample plates and mounted on the cold finger of a helium flowcryostat. Prior to the measurements,each sample was mechanically cleaved in the fast-entry chamber at a pressure of $\\mathord { \\sim } 1 0 ^ { - 9 }$ mbar to exposea pristine surface. The sample was then transferred into the spectroscopy chamber with a pressure in the $1 0 ^ { - 1 1 } - 1 0 ^ { - 1 0 }$ mbar range. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The measurements were carried out in the TEY or FY mode at magnetic fields of up to $6 \\mathrm { T }$ and at various temperatures in the 3.5-35 K range. The temperature was calibrated with a thermal sensor mounted at the sample position before the experiment.Especially below about $5 \\mathrm { K }$ ,the actual sample temperature crucially depends on the thermal contact,increasing its error as compared to higher temperatures.The spectral intensity was normalized by the incoming photon intensity ( $I _ { 0 }$ ).Weused circularly polarized light at both beamlines.Thearea probed bythe beamat both facilities (about $1 2 0 \\times 8 0 \\mu \\mathrm { { m } ^ { 2 } }$ ） wasmuch smaller than the sample size. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The raw XAS spectra were scaled with respect to each other to have the same intensity at energies far from the resonances to obtain $I _ { \\mathrm { l e f t } }$ and $I _ { \\mathrm { r i g h t } }$ We define the XMCD signal as $I _ { \\mathrm { X M C D } } = I _ { \\mathrm { l e f t } } - I _ { \\mathrm { r i g h t } }$ .The average, not background corrected XAS is $I = ( I _ { \\mathrm { l e f t } } + I _ { \\mathrm { r i g h t } } ) / 2$ To cancel out any experimental drifts,for each data set we measured eight spectra in a row byaltering theX-ray polarization.Finally,the magneticmoments measured with XMCD aremarked with thesubseript X,e.g. $m _ { \\mathrm { X M } } ^ { \\mathrm { t o t } }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "E.MLFT calculations ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "As a starting point to obtain input parameters for the MLFT modeling, self-consistent DFT in the linear densityapproximation is sufficient,which we performed using the FPLO package [81]. The Brillouin zone was sampled by a $2 \\times 2 \\times 2$ $k$ -point mesh. The exchangecorrelationpotential was treated inLDA,with the scalar relativistic functional according to Ref. 82. We have used the experimental crystal structure from Ref. 31: rhombohedral space group $R 3 m$ (166)， $a = 4 . 3 7$ Aand $c = 1 0 1 . 8 3 \\ .$ $\\mathrm { \\AA }$ ，slightly distorted octahedral Mn coordination with Mn-Te bond length of 3.00 A( ${ C } _ { 3 v }$ crystal fieldsymmetry).Weobtained Wannier orbitalsas input for MLFT by downfolding toa basis set of Mn $3 d$ ,Te $5 p$ and $\\mathrm { B i } ~ 6 p$ orbitals in an energy window from $^ { - 6 }$ to $3 \\mathrm { e V }$ including an exponential decaying tail with a decay of $1$ eV at the boundaries of the selected energy range. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The MLFT calculations were performed using the Quanty package [44,83,84] within the CI scheme considering the nominal $2 p ^ { 6 } 3 d ^ { 5 }$ $\\mathrm { M n ^ { 2 + } }$ ）configuration and two further charge-transfer states $d ^ { 6 } \\underline { { L } }$ and $d ^ { 7 } \\underline { { L } } ^ { 2 }$ The spectral contributions from the split ground-state terms were weighted bya Boltzmann factor for $T = 2 \\mathrm { { K } }$ .The meanfield effective potential was modeled by an exchange field estimated from the $T _ { \\mathrm { c } }$ of $1 2 \\mathrm { K }$ .Instrumental and lifetime effects were taken into account by a Gaussian broadening of 0.35eV (FWHM) and an $E$ -dependent Lorentzian profile of $\\mathrm { 0 . 1 5 - 0 . 3 5 e V }$ (FWHM). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The Slater integrals for the MLFT calculations were obtained by DFT, where $F _ { d d } ^ { ( 2 ) }$ andF were scaled up by $8 \\%$ for the final state,improving the agreement to experiment.SO coupling constants were kept to the HartreeFock values [47]. $\\Delta = E ( d ^ { n + 1 } \\underline { { { L } } } ) - E ( d ^ { n } )$ ， $U _ { d d }$ and $U _ { p d }$ were directly fitted to the experimental spectra,keeping $U _ { d d } / U _ { p d } = 0 . 8$ [85-88]. Experiments involving chargeneutral excitations suchasXASare only weakly sensitive to $\\Delta$ ， $U _ { d d }$ and $U _ { p d }$ . In our particular case we were fitting simultaneously XAS and XMCD spectra,which substantiallymitigates these kind of problems.Our results are in good agreement with valuesreported for (Ga,Mn)As [89-93] and Mn-doped Bi $_ 2$ Se $^ 3$ [55] and Bi2Te $3$ [94].The otherMLFT input parameters were estimated fromDFT, and their values were subsequently adjusted to reproduce the experimental spectra.To simplify the calculation,instead of the trigonal ${ C } _ { 3 v }$ we work in $O _ { h }$ symmetry,with the $C _ { 4 }$ octahedral axes along the Mn-Te bonds,which has a negligible impact:Our simplification neglects the splitting of the $t _ { 2 g }$ orbitals,which is tiny compared to $1 0 D q < 1 0 0 \\mathrm { m e V }$ ,which in turn is smaller than the experimental resolution. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "F.XMCD Sum Rule and Peak Asymmetry Analysis ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The XMCD sum rules yield: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/f5b3946e115e312014fc83a5b005aaf36b437dcde29db438a06f766fd52bb0e4.jpg",
+        "text": "$$\nm _ { \\mathrm { X M } } ^ { \\mathrm { o r b } } = - \\frac { 4 } { 3 } \\frac { q } { r } ( 1 0 - n _ { d } ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b3db56b9b92e4abdca9af6b960af5858809cde3dcf1f1d2465254ce89e6a9fdc.jpg",
+        "text": "$$\nm _ { \\mathrm { X M } } ^ { \\mathrm { s p i n } } = - \\frac { 6 p - 4 q } { r } ( 1 0 - n _ { d } ) C + 7 \\langle T _ { z } \\rangle ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $p$ and $q$ are the XAS intensity differences $( I _ { \\mathrm { l e f t } } - I _ { \\mathrm { r i g h t } } )$ integrated over the $L _ { 3 }$ edge and the entire $L _ { 2 , 3 }$ region,respectively (Fig.6). The XAS intensity $I$ ， after background correction (sec.S.V-A)，is integrated over $L _ { 2 , 3 }$ toyield $r$ ： $\\left. T _ { z } \\right.$ is the expectation value of the intra-atomic magnetic dipole operator which is $- 0 . 0 0 0 2 \\hbar$ and hence negligible (sec. S.V-A).For $n _ { d }$ we use the MLFT value of 5.31 (sec.IIE).Finally, $C$ is a correction factor,which takes into account the considerable overlap ofthe $L _ { 3 }$ and $L _ { 2 }$ contributions for light transition metals.We use a value of $C = 1 . 4$ (sec.S.V-A). To circumvent the.difficulties related to this overlap,one can obtain mXM by a comparison of the experimental XMCDasymmetry at the $L _ { 3 }$ peak to the theoretical one calculated from MLFT spectra of comparable line width [52-54]. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "V.AUTHORS CONTRIBUTIONS ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "L.F.,E.K. and A.I. conducted and analyzed the experimental work related to crystal growth，XRD and ",
+        "page_idx": 0
+    }
+]

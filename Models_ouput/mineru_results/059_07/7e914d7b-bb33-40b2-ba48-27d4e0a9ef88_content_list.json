@@ -1,0 +1,75 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/9fe386b27271adbda40a51d5eaee9d84277d6b79731cc7b967573fe4fa14fef8.jpg",
+        "table_caption": [
+            "Table 4: Automatic evaluation results of diferent models on session-opening data. Session $i$ indicates there are i-1 history conversationseions.B-2,B-3,andR-Ldenote BLEU-2,BLEU-3,andRouge-Lrespectively.The best results are in boldface. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\">Model</td><td colspan=\"3\">Session 2</td><td colspan=\"3\">Session 3</td><td colspan=\"3\">Session 4</td><td colspan=\"3\">Session 5</td></tr><tr><td>B-2</td><td>B-3</td><td>R-L</td><td>B-2</td><td>B-3</td><td>R-L</td><td>B-2</td><td>B-3</td><td>R-L</td><td>B-2</td><td>B-3</td><td>R-L</td></tr><tr><td>BlenderBot</td><td>4.71</td><td>1.47</td><td>18.20</td><td>3.85</td><td>0.93</td><td>17.10</td><td>3.69</td><td>0.83</td><td>16.78</td><td>4.00</td><td>1.19</td><td>17.19</td></tr><tr><td>BlenderBotmsc</td><td>6.39</td><td>2.56</td><td>19.30</td><td>5.82</td><td>1.93</td><td>18.67</td><td>5.30</td><td>1.76</td><td>17.9</td><td>6.10</td><td>2.30</td><td>18.65</td></tr><tr><td>FID-RAG</td><td>6.41</td><td>2.51</td><td>19.82</td><td>5.83</td><td>1.95</td><td>18.38</td><td>5.81</td><td>1.85</td><td>18.44</td><td>6.02</td><td>2.27</td><td>18.52</td></tr><tr><td>HAHT (ours)</td><td>6.69</td><td>2.73</td><td>20.02</td><td>6.03</td><td>2.20</td><td>18.70</td><td>5.48</td><td>1.95</td><td>18.00</td><td>6.38</td><td>2.51</td><td>19.18</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/edcc5a7ff0586df1351997a9425cef84988d209b89b5cf90fae915545ef60267.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "Table 5: The performance achieved by HAHT and different HAHT variants. Session $i$ indicates there are i-1 history conversationsessions.B-2,B-3,andR-LdenoteBLEU-2,BLEU-3,andRouge-Lrespectively.The best results are in boldface. "
+        ],
+        "table_body": "<table><tr><td rowspan=\"2\">Model</td><td colspan=\"3\">Session 2</td><td colspan=\"3\">Session 3</td><td colspan=\"3\">Session 4</td><td colspan=\"3\">Session 5</td></tr><tr><td>B-2</td><td>B-3</td><td>R-L</td><td>B-2</td><td>B-3</td><td>R-L</td><td>B-2</td><td>B-3</td><td>R-L</td><td>B-2</td><td>B-3</td><td>R-L</td></tr><tr><td>HAHT</td><td>5.07</td><td>1.57</td><td>16.90</td><td>5.27</td><td>1.67</td><td>16.72</td><td>5.00</td><td>1.55</td><td>15.97</td><td>5.16</td><td>1.60</td><td>16.42</td></tr><tr><td>HAHTW/o HIER</td><td>5.00</td><td>1.57</td><td>16.72</td><td>5.19</td><td>1.63</td><td>16.61</td><td>4.86</td><td>1.49</td><td>15.90</td><td>5.10</td><td>1.57</td><td>16.21</td></tr><tr><td>HAHTw/o HIST</td><td>4.98</td><td>1.50</td><td>16.81</td><td>5.09</td><td>1.58</td><td>16.51</td><td>4.75</td><td>1.45</td><td>15.51</td><td>5.10</td><td>1.49</td><td>16.24</td></tr><tr><td>HAHTw/oSW</td><td>5.01</td><td>1.56</td><td>16.86</td><td>5.19</td><td>1.61</td><td>16.46</td><td>4.87</td><td>1.55</td><td>15.88</td><td>5.07</td><td>1.55</td><td>16.17</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.2Human Evaluation ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Table3 summarizes the human evaluation results on the FacebookMSCdataset.Generally,HAHT outperformsall thebaseline methodsintermsofall perspectives.This observationisconsistentwith theautomatic evaluation results shownin Table 2. In particular,we find thatHAHT performs much better than other baselinesin terms ofhistoryrelevancy. ThisdemonstratesthatHAHTcanbetter leverage the history conversation sessions and engage the user more in the on-going session with the historymemory.HAHT also performsbetter than other baselines in terms of readability and context relevancy. This indicates thatHAHT can better understand the current conversation context with the help of the history memory. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.3Evaluation on Session Openings ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the MSC task,the session opening is the first conversation turn of the current conversation. Accordingto our observationand the similarobservation in (Xu et al., 2022), the opening conversation turn iscategorically different from other conversation turns.It typically involves a statement or question that aims to reengage the other speaker based on the known information that has been exchanged in history conversations.Therefore,the performance on the session opening data can further demonstrate the model's capability in understandingand leveraginghistoryconversations. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We compare all models on these opening responsesand show the resultsin Table 4. We observe that the proposed HAHT model achieves the best performance in terms of most metrics. Especially,when there are 4history conversations, HAHToutperforms FID-RAG and BlenderB $\\mathrm { \\bf o t } _ { \\mathrm { m s c } }$ by $1 0 . 6 \\%$ and $9 . 1 \\%$ in termsofBLUE-3. This indicates that the proposed HAHT can better leverage conversation history to reengage the userinto anew conversation session. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.4Ablation study ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To better understand the effectiveness of each main component ofHAHT,we conduct ablation study for HAHT. Specifically, we consider the following variants ofHAHT. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "·HAHTw/o HIER: In this variant,we do not encode the history conversations hierarchically. Instead,we concatenate all the utterances of history conversations into a long sentence and directly encode it using the transformer encoder.   \n· $\\mathbf { H A H T _ { w / o } }$ HIST: In this variant, we remove the history encoder fromHAHT.   \n· $\\mathbf { H A H T _ { w / o S W } }$ : In this variant, we remove the switching mechanism from the response generator of HAHT. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Table5 summarizes the resultsachieved by differentHAHT variants, in terms ofBLEU-2,BLEU3,and Rouge-L.We note that HAHT outperforms HAHTw/o HIER,which indicates that hierarchically ",
+        "page_idx": 0
+    }
+]

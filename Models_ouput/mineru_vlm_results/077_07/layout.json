@@ -1,0 +1,696 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        226,
+                        264,
+                        1206,
+                        742
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                226,
+                                264,
+                                1206,
+                                742
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        264,
+                                        1206,
+                                        742
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                226,
+                                                264,
+                                                1206,
+                                                742
+                                            ],
+                                            "type": "image",
+                                            "image_path": "1da1d100de9bda3dd7045ab7800103d64739d7386d321d6b3850c4ac527dedb3.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                224,
+                                838,
+                                1208,
+                                1065
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        838,
+                                        1208,
+                                        1065
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                224,
+                                                838,
+                                                1208,
+                                                1065
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 4. Experiments on 2AA test dipeptides QW (top row) and HT (bottom row). (a) TICA plots for a long MD chain and samples generated with the Timewarp MCMC algorithm (Algorithm 1). (b) Free energy comparison for the MD trajectory, Timewarp MCMC (Algorithm 1), and Timewarp exploration (Algorithm 2)."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        226,
+                        1174,
+                        1208,
+                        1867
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                1174,
+                                1208,
+                                1867
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        1174,
+                                        1208,
+                                        1867
+                                    ],
+                                    "type": "text",
+                                    "content": "experiments and results can be found in Appendix B. We train three flow models on three datasets: (i) "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1174,
+                                        1208,
+                                        1867
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "AD"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1174,
+                                        1208,
+                                        1867
+                                    ],
+                                    "type": "text",
+                                    "content": ", consisting of simulations of alanine dipeptide, (ii) "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1174,
+                                        1208,
+                                        1867
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "2AA"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1174,
+                                        1208,
+                                        1867
+                                    ],
+                                    "type": "text",
+                                    "content": ", with peptides with 2 amino acids, and (iii) "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1174,
+                                        1208,
+                                        1867
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "4AA"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1174,
+                                        1208,
+                                        1867
+                                    ],
+                                    "type": "text",
+                                    "content": ", with peptides with 4 amino acids. All datasets are created with MD simulations performed with the same parameters (see Table 1 and Appendix D). For AD, we do not test transferability as there is only a single molecule. For 2AA and 4AA, we train on a randomly selected trainset of peptides, and evaluate on unseen test peptides. The relative frequencies of the amino acids in 2AA and 4AA are similar across the splits. For 4AA, the training set consists of about "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1174,
+                                        1208,
+                                        1867
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "1\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1174,
+                                        1208,
+                                        1867
+                                    ],
+                                    "type": "text",
+                                    "content": " of the total number of possible tetrapeptides "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1174,
+                                        1208,
+                                        1867
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(20^{4})"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1174,
+                                        1208,
+                                        1867
+                                    ],
+                                    "type": "text",
+                                    "content": ", making the generalisation task significantly more difficult than for 2AA."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        226,
+                        1940,
+                        1208,
+                        2989
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                1940,
+                                1208,
+                                2989
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": "Alanine dipeptide (AD) We first investigate alanine dipeptide, a small (22 atoms) single peptide molecule commonly used to benchmark MD software. We train Timewarp on AD as described in Section 5 and sample new states using Algorithm 1 for a chain length of 10 million, accepting roughly "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "2\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " of the proposals. In Figure 3a we visualise the samples using a Ramachandran plot (Ramachandran et al., 1963), which shows the distribution of the backbone dihedral angles "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\phi"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\psi"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": ". Each mode in the plot represents a metastable state. We see that the Timewarp samples closely match MD, visiting all the metastable states with the correct relative weights. In Figure 3b we plot the free energy (i.e., the relative log probability) of the "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\phi"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\psi"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " angles, again showing close agreement. The roughness in the plot is due to some regions of state space having very few samples. In Figure 3c we show, for an initial state "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t)"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": ", the conditional distribution of MD obtained by integrating Equation (2), "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mu (x(t + \\tau)|x(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": ", compared with the model "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p_{\\theta}(x(t + \\tau)|x(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": ", demonstrating close agreement. Finally, Figure 3d shows the time- evolution of the "
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\phi"
+                                },
+                                {
+                                    "bbox": [
+                                        226,
+                                        1940,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " angle for MD and Timewarp. Timewarp exhibits significantly more tran "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1277,
+                                1481,
+                                2259,
+                                1676
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1481,
+                                        2259,
+                                        1676
+                                    ],
+                                    "type": "text",
+                                    "content": "sitions between the metastable states than MD. As a result, the autocorrelation along the "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1481,
+                                        2259,
+                                        1676
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\phi"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1481,
+                                        2259,
+                                        1676
+                                    ],
+                                    "type": "text",
+                                    "content": " angle decays much faster in terms of wall- clock time, resulting in a "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1481,
+                                        2259,
+                                        1676
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\approx 7\\times"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1481,
+                                        2259,
+                                        1676
+                                    ],
+                                    "type": "text",
+                                    "content": " speed- up in terms of ESS/s compared to MD (see Appendix B.4)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1280,
+                        264,
+                        2251,
+                        788
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1280,
+                                264,
+                                2251,
+                                788
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1280,
+                                        264,
+                                        2251,
+                                        788
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1280,
+                                                264,
+                                                2251,
+                                                788
+                                            ],
+                                            "type": "image",
+                                            "image_path": "9421659c55c024ef026d9f05ed0d698fde33ac003f29fbe738ba13bcfcc6710b.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 4,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1277,
+                                887,
+                                2261,
+                                1389
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        887,
+                                        2261,
+                                        1389
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1277,
+                                                887,
+                                                2261,
+                                                1389
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 5. Speed-up factors in terms of ESS/s ratios for the slowest TICA component for the Timewarp MCMC and exploration algorithms, compared to MD. The dashed red line shows a speed-up factor of one. Gray areas depict peptides where Timewarp fails to explore all meta-stable states within 20 million steps, but MD does. Green areas depict peptides where MD fails to find all metastable states, but Timewarp does. (a), (b) Speed-up for the Timewarp MCMC algorithm (Algorithm 1) on test dipeptides (2AA) and tetrapeptides (4AA), respectively. (c), (d) Speed-up for the Timewarp exploration algorithm (Algorithm 2) on test dipeptides (2AA) and tetrapeptides (4AA), respectively."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 5,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1481,
+                        2259,
+                        1676
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 6,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1745,
+                        2261,
+                        2989
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                1745,
+                                2261,
+                                2989
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1745,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": "Dipeptides (2AA) Next, we demonstrate transferability on dipeptides in 2AA. After training on the train dipeptides, we deploy Timewarp with Algorithm 1 on the test dipeptides for a chain length of 20 million. Timewarp achieves acceptance probabilities between "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1745,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "0.03\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1745,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1745,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "2\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1745,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " and explores all metastable states (Appendix B.1). The results are shown for the dipeptides QW and HT in Figure 4, showing close agreement between Timewarp and long MD chains "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1745,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(1\\mu \\mathrm{s} = 2\\times 10^{9}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1745,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " timesteps). For these dipeptides, Timewarp achieves ESS/s speed- up factors over MD of 5 and 33 respectively (Appendix B.4). In Figure 5, Left, we show the speed- up factors for Timewarp verses MD for each of the 100 test dipeptides. Timewarp provides a median speed- up factor of about five across these peptides. In addition, we generate samples with the Timewarp model without the MH correction as detailed in Section 3.5. We sample 100 parallel chains for only 10000 steps starting from the same initial state for each test peptide. For each peptide we select only one of these chains that finds all metastable states for evaluations. As before, we compute the ESS/s to compare with MD, showing a median speedup factor of "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1745,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\approx 600"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1745,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " (Figure 5c). Note that the actual speedup when using all the chains sampled in parallel will be much larger. Timewarp exploration leads to free energy estimates that are qualitatively similar to MD, but less accurate than Timewarp MCMC (Figure 4b)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

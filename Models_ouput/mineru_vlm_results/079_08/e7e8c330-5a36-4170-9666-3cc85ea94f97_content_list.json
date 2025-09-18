@@ -1,0 +1,90 @@
+[
+    {
+        "type": "text",
+        "text": "Theorem 5 (Theorem 4.2 in [SSZ2]). Let  $K$  be a convex body with infinitely many facets. Then  $b_{2}(K) > 1$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. If  $K$  has infinitely many facets, then infinitely many of them will satisfy  $\\operatorname {Isop}(F) > \\operatorname {Isop}(K)$ , so that Theorem 5 follows from Proposition 1.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let  $C$  be a  $d$ - dimensional convex body. Then",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\operatorname {Isop}(C) = \\frac{1}{d}\\frac{|\\partial C|_{d - 1}}{|C|_d} = \\frac{1}{d}\\frac{|\\partial C|_{d - 1}}{|C|_d^{d - 1 / d}} |C|_{d^{-1}}^{1 / d}\\geq \\frac{1}{d}\\frac{|\\partial B_2^d|_{d - 1}}{|B_2^d|_d^{d - 1 / d}} |C|_d^{-1 / d} = \\frac{\\kappa_d^{1 / d}}{|C|_d^{1 / d}},\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where we used the isoperimetric inequality, and where  $\\kappa_{d}$  denotes the volume of the  $d$ - dimensional euclidean ball.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "It follows that  $\\operatorname {Isop}(F)\\to +\\infty$  when  $|F|_{n - 1}\\to 0$ . Since a convex body only has finite surface area measure, it follows that if  $K$  has infinitely many facets, then all but finitely many of them will satisfy  $\\operatorname {Isop}(F) > \\operatorname {Isop}(K)$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We conclude this section with the following question.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Quesion 1: Let  $P$  be a polytope, other than a simplex. Denote  $\\mathcal{F}_{n - 1}(P)$  the set of its facets. Do we necessarily have  $\\begin{array}{r}\\max_{T\\in \\mathcal{D}(n)}\\max_{F\\in \\mathcal{F}_{n - 1}(P)}\\frac{\\operatorname{Isop}(F)}{\\operatorname{Isop}(P)} >1 \\end{array}$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In words : (if  $P$  is not a simplex) does there always exist an affine transform  $T$  such that  $P' = TP$  has at least one facet  $F'$  satisfying  $\\operatorname {Isop}(F') > \\operatorname {Isop}(P')$  ?",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "If the answer is positive, then it would yield another proof of Theorem 1 (by applying Proposition 1).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4. APPENDIX",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.1. Wulff Shape Lemma. We recall the statement of Alexandrov's variational lemma for mixed volumes, Lemma 1, and then provide a proof.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 3 (Alexandrov's variational lemma, mixed volume version). Assume  $K$  is a convex body,  $\\operatorname {supp}(S_K)\\subset \\Omega$  ,and  $f\\in \\mathcal{C}(\\Omega ,\\mathbb{R})$  . Denote  $W_{t} = W(\\Omega ,h_{K} + tf)$ $t\\in \\mathbb{R}$  . Denote  $V_{1}(t) = V_{n}(W_{t},K[n - 1])$  Then  $(t\\mapsto V_{1}(t))$  is differentiable' at  $\\mathrm{0}$  ,and :",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\left.\\frac{\\mathrm{d}V_1(t)}{\\mathrm{d}t}\\right|_{t = 0} = \\lim_{t\\to 0}\\frac{V_1(t) - V_n(K)}{t} = \\frac{1}{n}\\int_{\\mathbb{S}^{n - 1}}f(u)dS_K(u),\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let  $K$  be a convex body,  $\\Omega$  a closed subset of  $\\mathbb{S}^{n - 1}$  determining  $K$ , meaning  $K = \\bigcap_{u\\in \\Omega}H^{- }(u,h_{K}(u))$  and let  $f$  be a continuous  $^9$  function defined on  $\\Omega$ . Recall we denote  $W_{t} = W(\\Omega ,h_{K} + tf)$  the associated Wulff- shape perturbations :  $W_{t}$  is a convex body if  $t > t_0$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Following Alexandrov's notations (see [Al1]), we denote  $V_{k}(t) = V_{n}(W_{t}[k],K[n - k])$  (in particular  $V_{0}(t) = V_{n}(K)$  does not depend on  $t$ ). We prove  $\\frac{V_{1}(t) - V_{0}(t)}{t}\\to \\frac{1}{n}\\int_{\\Omega}f(u)dS_{K}(u)$  separately for  $t\\to 0^+$  then for  $t\\to 0^-$ . For sake of clarity, we may omit some dependence from the notations :  $V_{1}$  means  $V_{1}(t)$ , and similarly  $V_{k}$  stands for  $V_{k}(t)$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. For all  $t$  , note that (by definition of  $W_{t}$ $\\begin{array}{r}V_{t})V_{1} - V_{0} = \\frac{1}{n}\\int_{\\Omega}(h_{W_{t}} - h_{K})(u)dS_{K}(u)\\leq \\frac{t}{n}\\int_{\\Omega}f(u)dS_{K}(u) \\end{array}$  In particular, lim supt- 0+  $\\begin{array}{r}\\lim \\sup_{t\\to 0^{+}}\\frac{V_{1}(t) - V_{0}}{t}\\leq \\frac{1}{n}\\int_{\\Omega}f(u)dS_{K}(u) \\end{array}$",
+        "page_idx": 0
+    }
+]

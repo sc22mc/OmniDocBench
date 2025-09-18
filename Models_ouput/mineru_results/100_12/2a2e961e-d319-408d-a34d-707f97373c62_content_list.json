@@ -1,0 +1,82 @@
+[
+    {
+        "type": "text",
+        "text": "ABASIC PROMPTS AND REASONING PIPELINE OF BOT ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A.1THOUGHT GENERATION PART OFBOT ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Thissubsection presents the basic prompts used by the reasoning generation of the proposed Boosting of Thoughts (BoT).For details，one can also access the source code examples/BoostingOfThought/BoT_reasoner.py. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "System prompt $S$ :You are an expert on mathematical problems. Perform step-by-step reasoning toward problem solving by first learning from an ensemble of trial-and-error reasoning experiences. Such trial-and-error reasoning experience specifically contains error reports and detailed advice on how to revise historical reasoning steps.Always recall these listed experiences before generating a new reasoning step,thereby avoiding making the same mistakes and reusing correct steps to generate better reasoning steps to solve the task. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prompt for the next thought generation: ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "f\"\"{task_prompt}:\\n First of all,Recall historical reasoning experience: $\\langle \\mathbf { n } \\rangle \\mathbf { n } \\left\\{ \\begin{array} { r l } \\end{array} \\right.$ experiences $\\} \\ \\backslash \\ \\mathrm { n } \\backslash \\mathrm { n }$ Please make one step of reasoning to generate only one next possible reasoning step.This next reasoning step is the subsequential step from the following ordered previous steps，accompanied by their evaluated scores （A higher score means the reasoning step is more likely to complete the task .) $: ~ | \\boldsymbol { \\mathrm { n } } | \\boldsymbol { \\mathrm { t } }  \\{ \\begin{array} { l l } {  } \\end{array} $ chain_prompt} $| \\boldsymbol { \\mathrm { n } } | \\boldsymbol { \\mathrm { n } }$ Based on listed previous reasoning steps (ignore them when the above space is empty)，generate one single next possible step following the Task rule.(Emphasize:Please generate only one single next possible reasoning step of the given steps .)\"\"” ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where the task_prompt contaings the $X$ and $Q$ forthe task,experiencesis the historical reasoning experience $\\mathbf { F } ^ { 1 \\hdots t }$ ,and chain_prompt is the $\\{ G _ { i } \\}$ ,which is a placeholder to be replaced by the preceding chain of thoughts $z _ { 1 \\ldots , i - 1 }$ of the current thought $z _ { i }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prompt for the thought evaluation: ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "f\\*{task_prompt}. $\\backslash \\boldsymbol { \\mathrm { n } } \\backslash \\boldsymbol { \\mathrm { n } }$ Below are the generated reasoning steps，presented in order， accompanied by their evaluated scores (A higher score means the reasoning step is more likely to complete the task .) $\\mathrm { : \\backslash n \\{ c h a i n \\_ p r o m p t \\} \\backslash n \\{ t h o u g h t \\} \\backslash n \\backslash n W h }$ atisyour evaluation score for the logic，correctness，and benefit to reaching a final solution for these reasoning steps ？ Please select one value from [O.1， O.3，0.5, 0.7，0.9，1.O] as the score，where a higher score means better reasoning steps．The score should be placed after‘Evaluation score:’for users to read.\"\" ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where the thought is the current thought $z _ { i }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A.2EXPERIENCE GENERATION PART OFBOT ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To generate feedback for the aggregated chain, LLMs use the following basic prompts.For details, one can also access the source code examples/BoostingOfThought/BoT_commenter.py ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "System prompt $S$ :You are an expert AI checker for math answers, dedicated to evaluating the reasoning chain generated towards addressing the mathematical problem. Judge each reasoning step of this reasoning chain by providing detailed analyses on whether the current step is a logical inference of the previous step and whether the reasoning step is beneficial to the correct solution. Provide advice and suggestions for each reasoning step with errors. Provide recommendation or rejection descriptions for each correct reasoning step. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prompt for the feedback: ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "fGiven task:{task_prompt}.\\n{chain prompt}\\n\\n Please evaluate this reasoning chain by giving detailed comments containing the following content. $\\mathrm { ~ \\backslash ~ n ~ } 1 . \\{$ chain_feedback_format $\\}$ ， $2 . \\{$ step_feedback_format $\\}$ ， $3 . \\left\\{ \\begin{array} { r l } \\end{array} \\right.$ confidence_feedback_format $\\left. \\right\\} . \\left. \\mathbf { n } \\right.$ \\nNotice: $\\left\\{ { \\mathrm { N o t i c e } } \\right\\}$ ",
+        "page_idx": 0
+    }
+]

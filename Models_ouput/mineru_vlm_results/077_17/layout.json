@@ -1,0 +1,665 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        224,
+                        277,
+                        2261,
+                        429
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                277,
+                                2261,
+                                429
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        277,
+                                        2261,
+                                        429
+                                    ],
+                                    "type": "text",
+                                    "content": "we can generate "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        277,
+                                        2261,
+                                        429
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "B"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        277,
+                                        2261,
+                                        429
+                                    ],
+                                    "type": "text",
+                                    "content": " chains in parallel, all starting from the same initial state. This batched sampling procedure leads to even further speedups. For all exploration experiments we use a batch size of 100, and run "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        277,
+                                        2261,
+                                        429
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "M = 10000"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        277,
+                                        2261,
+                                        429
+                                    ],
+                                    "type": "text",
+                                    "content": " exploration steps. The maximum allowed energy change cutoff is set at "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        277,
+                                        2261,
+                                        429
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\Delta U_{\\mathrm{max}} = 300\\mathrm{kJ / mol}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        277,
+                                        2261,
+                                        429
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        224,
+                        491,
+                        604,
+                        551
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                491,
+                                604,
+                                551
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        491,
+                                        604,
+                                        551
+                                    ],
+                                    "type": "text",
+                                    "content": "D. Dataset details"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        224,
+                        580,
+                        2264,
+                        729
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                580,
+                                2264,
+                                729
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        580,
+                                        2264,
+                                        729
+                                    ],
+                                    "type": "text",
+                                    "content": "We evaluate our model on three different datasets, AD, 2AA, and 4AA, as introduced in Section 6. All datasets are simulated in implicit solvent using the OpenMM library (Eastman et al., 2017). For all MD simulations we use the parameters shown in Table 2."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        808,
+                        874,
+                        1670,
+                        1164
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                808,
+                                874,
+                                1670,
+                                1164
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        808,
+                                        874,
+                                        1670,
+                                        1164
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                808,
+                                                874,
+                                                1670,
+                                                1164
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Force Field</td><td>amber-14</td></tr><tr><td>Time step</td><td>0.5fs</td></tr><tr><td>Friction coefficient</td><td>0.3 1/ps</td></tr><tr><td>Temperature</td><td>310K</td></tr><tr><td>Integrator</td><td>LangevinMiddleIntegrator</td></tr></table>",
+                                            "image_path": "7505e93f693bea06d17ab66f752efbce37fe84f2402271b10e42da5a309d0f29.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 4,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                895,
+                                831,
+                                1593,
+                                874
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        895,
+                                        831,
+                                        1593,
+                                        874
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                895,
+                                                831,
+                                                1593,
+                                                874
+                                            ],
+                                            "type": "text",
+                                            "content": "Table 2.OpenMM MD simulation parameters"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 3,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        226,
+                        1310,
+                        670,
+                        1369
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                1310,
+                                670,
+                                1369
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        1310,
+                                        670,
+                                        1369
+                                    ],
+                                    "type": "text",
+                                    "content": "E. Hyperparameters"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        234,
+                        1395,
+                        2264,
+                        1501
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                234,
+                                1395,
+                                2264,
+                                1501
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        234,
+                                        1395,
+                                        2264,
+                                        1501
+                                    ],
+                                    "type": "text",
+                                    "content": "Depending on the dataset, different Timewarp model sizes were used, as shown in Table 3. For all datasets the Multihead kernel self- attention layer consists of 6 heads with lengthscales "
+                                },
+                                {
+                                    "bbox": [
+                                        234,
+                                        1395,
+                                        2264,
+                                        1501
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\ell_{i} = \\{0.1,0.2,0.5,0.7,1.0,1.2\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        234,
+                                        1395,
+                                        2264,
+                                        1501
+                                    ],
+                                    "type": "text",
+                                    "content": ", given in nanometers."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        224,
+                        1656,
+                        2394,
+                        1904
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                224,
+                                1656,
+                                2394,
+                                1904
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        1656,
+                                        2394,
+                                        1904
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                224,
+                                                1656,
+                                                2394,
+                                                1904
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Dataset</td><td>RealNVP layers</td><td>Transformer layers</td><td>Parameters</td><td>Atom-embedding dim H</td><td>Transformer feature dimension D</td></tr><tr><td>AD</td><td>12</td><td>6</td><td>1 × 108</td><td>64</td><td>128</td></tr><tr><td>2AA</td><td>12</td><td>6</td><td>1 × 108</td><td>64</td><td>128</td></tr><tr><td>4AA</td><td>16</td><td>16</td><td>4 × 108</td><td>128</td><td>128</td></tr></table>",
+                                            "image_path": "d14d9a73059bd197bf8f6e2dd9cbb1a5a2313232ba4319041334f95427520d8e.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 8,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                925,
+                                1610,
+                                1573,
+                                1656
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        925,
+                                        1610,
+                                        1573,
+                                        1656
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                925,
+                                                1610,
+                                                1573,
+                                                1656
+                                            ],
+                                            "type": "text",
+                                            "content": "Table 3. Timewarp model hyperparameters"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 7,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        224,
+                        1980,
+                        2266,
+                        2131
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                1980,
+                                2266,
+                                2131
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        1980,
+                                        2266,
+                                        2131
+                                    ],
+                                    "type": "text",
+                                    "content": "The "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1980,
+                                        2266,
+                                        2131
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\phi_{\\mathrm{in}}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1980,
+                                        2266,
+                                        2131
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1980,
+                                        2266,
+                                        2131
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\phi_{\\mathrm{out}}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1980,
+                                        2266,
+                                        2131
+                                    ],
+                                    "type": "text",
+                                    "content": " MLPs use SiLUs as activation functions, while the Transformer MLPs use ReLUs. Note the transformer MLP refers to the atom- wise MLP shown in Figure 2, Middle inside the transformer block. The shapes of these MLPs vary for the different datasets as shown in Table 4."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        670,
+                        2273,
+                        1807,
+                        2531
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                670,
+                                2273,
+                                1807,
+                                2531
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        670,
+                                        2273,
+                                        1807,
+                                        2531
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                670,
+                                                2273,
+                                                1807,
+                                                2531
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Dataset</td><td>φin MLP</td><td>φout MLP</td><td>Transformer MLP</td></tr><tr><td>AD</td><td>[70, 256, 128]</td><td>[128, 256, 3]</td><td>[128, 256, 128]</td></tr><tr><td>2AA</td><td>[70, 256, 128]</td><td>[128, 256, 3]</td><td>[128, 256, 128]</td></tr><tr><td>4AA</td><td>[134, 2048, 128]</td><td>[128, 2048, 3]</td><td>[128, 2048, 128]</td></tr></table>",
+                                            "image_path": "37c6ad9b245cd5294f621bb1170ab70c8773081884543a8c8d40dc38428483ea.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 11,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                974,
+                                2230,
+                                1514,
+                                2273
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        974,
+                                        2230,
+                                        1514,
+                                        2273
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                974,
+                                                2230,
+                                                1514,
+                                                2273
+                                            ],
+                                            "type": "text",
+                                            "content": "Table 4. Timewarp MLP layer sizes"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 10,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        229,
+                        2613,
+                        2264,
+                        2715
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                229,
+                                2613,
+                                2264,
+                                2715
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        229,
+                                        2613,
+                                        2264,
+                                        2715
+                                    ],
+                                    "type": "text",
+                                    "content": "The first linear layers in the kernel self- attention module always has the shape [128, 768] (in Section 4 denoted as "
+                                },
+                                {
+                                    "bbox": [
+                                        229,
+                                        2613,
+                                        2264,
+                                        2715
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V"
+                                },
+                                {
+                                    "bbox": [
+                                        229,
+                                        2613,
+                                        2264,
+                                        2715
+                                    ],
+                                    "type": "text",
+                                    "content": "), and the second (after concatenating the output of head head) has the shape [768, 128]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        224,
+                        2739,
+                        2261,
+                        2993
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                2739,
+                                2261,
+                                2993
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        2739,
+                                        2261,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": "After likelihood training, we fine- tune the model for the AD and 2AA dataset with a combination of all three losses discussed in Section 5. We did not perform fine tuning for the model trained on the 4AA dataset. We use a weighted sum of the losses with weights detailed in Table 5. We use the FusedLamb optimizer and the DeepSpeed library (Rasley et al., 2020) for all experiments. The batch size as well as the training times are reported in Table 6. All simulations are started with a learning rate of "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2739,
+                                        2261,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "5 \\times 10^{- 4}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2739,
+                                        2261,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": ", the learning rate is then consecutively decreased by a factor of 2 upon hitting training loss plateaus."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

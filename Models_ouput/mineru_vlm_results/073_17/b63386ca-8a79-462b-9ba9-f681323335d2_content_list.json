@@ -1,0 +1,46 @@
+[
+    {
+        "type": "text",
+        "text": "We also get  $\\pmb{p}^{\\mathrm{st}(k)} = \\pmb{M}^{(2)}\\pmb{p}^{\\mathrm{st}(k - 2)} + \\pmb{M}^{(1)}\\pmb{p}^{\\mathrm{st}(k - 1)}$  for further orders of  $k \\geq 2$ . Then, the equilibrium payoff is given by",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & u^{\\mathrm{st}(0)} = \\pmb{p}^{\\mathrm{st}(0)}\\cdot \\pmb {u} = u^{\\mathrm{st}},\\\\ & u^{\\mathrm{st}(1)} = \\pmb{p}^{\\mathrm{st}(1)}\\cdot \\pmb {u} = 0,\\\\ & u^{\\mathrm{st}(2)} = \\pmb{p}^{\\mathrm{st}(2)}\\cdot \\pmb {u} = (\\pmb {u}\\cdot \\pmb {1}_z)(\\pmb {\\delta}\\circ \\pmb {\\epsilon}\\cdot \\pmb{p}^*),\\\\ & u^{\\mathrm{st}(3)} = \\pmb{p}^{\\mathrm{st}(3)}\\cdot \\pmb {u} = (\\pmb{M}^{(2)}\\pmb{p}^{\\mathrm{st}(1)} + \\pmb{M}^{(1)}\\pmb{p}^{\\mathrm{st}(2)})\\cdot \\pmb {u} = (\\pmb {u}\\cdot \\pmb {1}_z)(\\pmb {\\delta}\\circ \\pmb {\\epsilon}\\cdot \\pmb{p}^{\\mathrm{st}(1)})\\\\ & \\qquad = (\\pmb {u}\\cdot \\pmb {1}_z)\\{(\\pmb {\\delta}\\cdot \\pmb{p}^*)(\\pmb {\\delta}\\circ \\pmb {\\epsilon}\\circ \\pmb{y}^*\\cdot \\pmb {1}_x) + (\\pmb {\\epsilon}\\cdot \\pmb{p}^*)(\\pmb {\\delta}\\circ \\pmb {\\epsilon}\\circ \\pmb{x}^*\\cdot \\pmb {1}_y)\\} ,\\\\ & u^{\\mathrm{st}(4)} = \\pmb{p}^{\\mathrm{st}(4)}\\cdot \\pmb {u} = (\\pmb{M}^{(2)}\\pmb{p}^{\\mathrm{st}(2)} + \\pmb{M}^{(1)}\\pmb{p}^{\\mathrm{st}(3)})\\cdot \\pmb {u} = (\\pmb {u}\\cdot \\pmb {1}_z)(\\pmb {\\delta}\\circ \\pmb {\\epsilon}\\cdot \\pmb{p}^{\\mathrm{st}(2)})\\\\ & \\qquad = (\\pmb {u}\\cdot \\pmb {1}_z)[(\\pmb {\\delta}\\circ \\pmb {\\epsilon}\\cdot \\pmb{p}^*)(\\pmb {\\delta}\\circ \\pmb {\\epsilon}\\cdot \\pmb {1}_z)\\\\ & \\qquad +\\{(\\pmb {\\delta}\\cdot \\pmb{p}^*)(\\pmb {\\delta}\\circ \\pmb{y}^*\\cdot \\pmb {1}_x) + (\\pmb {\\epsilon}\\cdot \\pmb{p}^*)(\\pmb {\\delta}\\circ \\pmb{x}^*\\cdot \\pmb {1}_y)\\} (\\pmb {\\delta}\\circ \\pmb {\\epsilon}\\circ \\pmb{y}^*\\cdot \\pmb {1}_x)\\\\ & \\qquad +\\{(\\pmb {\\delta}\\cdot \\pmb{p}^*)(\\pmb {\\epsilon}\\circ \\pmb{y}^*\\cdot \\pmb {1}_x) + (\\pmb {\\epsilon}\\cdot \\pmb{p}^*)(\\pmb {\\epsilon}\\circ \\pmb{x}^*\\cdot \\pmb {1}_y)\\} (\\pmb {\\delta}\\circ \\pmb {\\epsilon}\\circ \\pmb{x}^*\\cdot \\pmb {1}_y)]. \\end{array} \\tag{A44}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here, we used",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & M^{(1)\\mathrm{T}}\\pmb {u} = \\underbrace{(\\pmb{y}^{*}\\circ\\mathbf{1}_{x}\\cdot\\pmb{u})}_{= 0}\\delta +\\underbrace{(\\pmb{x}^{*}\\circ\\mathbf{1}_{y}\\cdot\\pmb{u})}_{= 0}\\epsilon = \\mathbf{0},\\\\ & M^{(2)\\mathrm{T}}\\pmb {u} = (\\pmb {u}\\cdot \\mathbf{1}_{z})\\delta \\circ \\pmb {\\epsilon}. \\end{array} \\tag{A52}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Then, the gradient of this payoff is given by",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {\\frac{\\partial u^{\\mathrm{st}(1)}}{\\partial\\delta} = 0,}\\\\ & {\\frac{\\partial u^{\\mathrm{st}(2)}}{\\partial\\delta} = (\\pmb {u}\\cdot \\mathbf{1}_x)\\epsilon \\circ \\pmb{p}^*,}\\\\ & {\\frac{\\partial u^{\\mathrm{st}(3)}}{\\partial\\delta} = (\\pmb {u}\\cdot \\mathbf{1}_z)\\{(\\delta \\cdot \\pmb{p}^*)\\epsilon \\circ \\pmb{y}^*\\circ \\mathbf{1}_x + (\\epsilon \\cdot \\pmb{p}^*)\\epsilon \\circ \\pmb{x}^*\\circ \\mathbf{1}_y + (\\delta \\circ \\epsilon \\circ \\pmb{y}^*\\cdot \\mathbf{1}_x)\\pmb{p}^*\\} ,}\\\\ & {\\frac{\\partial u^{\\mathrm{st}(4)}}{\\partial\\delta} = (\\pmb {u}\\cdot \\mathbf{1}_z)[(\\delta \\circ \\epsilon \\cdot \\pmb{p}^*)(\\epsilon \\circ \\mathbf{1}_z) + (\\delta \\circ \\epsilon \\cdot \\mathbf{1}_z)(\\epsilon \\circ \\pmb{p}^*)}\\\\ & {\\qquad +\\{(\\delta \\cdot \\pmb{p}^*)(\\delta \\circ \\pmb{y}^*\\cdot \\mathbf{1}_x) + (\\epsilon \\cdot \\pmb{p}^*)(\\delta \\circ \\pmb{x}^*\\cdot \\mathbf{1}_y)\\} (\\epsilon \\circ \\pmb{y}^*\\circ \\mathbf{1}_x)}\\\\ & {\\qquad +\\{(\\delta \\cdot \\pmb{p}^*)(\\epsilon \\circ \\pmb{y}^*\\cdot \\mathbf{1}_x) + (\\epsilon \\cdot \\pmb{p}^*)(\\epsilon \\circ \\pmb{x}^*\\cdot \\mathbf{1}_y)\\} (\\epsilon \\circ \\pmb{x}^*\\circ \\mathbf{1}_y)}\\\\ & {\\qquad +(\\delta \\circ \\epsilon \\circ \\pmb{y}^*\\cdot \\mathbf{1}_x)\\{(\\delta \\cdot \\pmb{p}^*)(\\pmb{y}^*\\circ \\mathbf{1}_x + (\\epsilon \\cdot \\pmb{p}^*)\\pmb{x}^*\\circ \\mathbf{1}_y + (\\delta \\circ \\pmb{y}^*\\cdot \\mathbf{1}_x)\\pmb{p}^*\\}}\\\\ & {\\qquad +(\\delta \\circ \\epsilon \\circ \\pmb{x}^*\\cdot \\mathbf{1}_y)(\\epsilon \\circ \\pmb{y}^*\\cdot \\mathbf{1}_x)\\pmb{p}^*\\} .} \\end{array} \\tag{A56}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The learning dynamics (of continualized MMGA) in two- action one- memory games are given by",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{l}\\dot{\\delta} = +(x^{*}\\mathbf{1} + \\delta)\\circ (\\tilde{x}^{*}\\mathbf{1} - \\delta)\\circ \\frac{\\partial u^{\\mathrm{st}}}{\\partial\\delta},\\\\ \\dot{\\epsilon} = -(y^{*}\\mathbf{1} + \\epsilon)\\circ (\\tilde{y}^{*}\\mathbf{1} - \\epsilon)\\circ \\frac{\\partial u^{\\mathrm{st}}}{\\partial\\epsilon}. \\end{array} \\tag{A57}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

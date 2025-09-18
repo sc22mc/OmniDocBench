@@ -1,0 +1,156 @@
+[
+    {
+        "type": "text",
+        "text": "Plugging these expansions back into the Schrodinger equation $( 5 8 )$ we obtain two new PDEs for the two components $\\psi ^ { \\sigma }$ and $\\psi ^ { 1 }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/566aafbbf8f90678e81d28b435139ae565a19fd019e1816778e3236952f30831.jpg",
+        "text": "$$\n\\begin{array} { l } { { i \\displaystyle \\frac { \\partial } { \\partial \\eta } \\psi ^ { 0 } = \\frac { 1 } { 2 } \\left( \\pi _ { k } ^ { 2 } - \\omega _ { k } ^ { 2 } ( \\eta ) \\displaystyle \\frac { \\partial ^ { 2 } } { \\partial \\pi _ { k } ^ { 2 } } \\right) \\psi ^ { 0 } , } } \\\\ { { i \\displaystyle \\frac { \\partial } { \\partial \\eta } \\psi ^ { 1 } = \\frac { 1 } { 2 } \\left( \\pi _ { k } ^ { 2 } - \\omega _ { k } ^ { 2 } ( \\eta ) \\displaystyle \\frac { \\partial ^ { 2 } } { \\partial \\pi _ { k } ^ { 2 } } \\right) \\psi ^ { 1 } + F , } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/771e9d149c8530567fd48b3157a37b579f885416c4ae094e1373c303bc2a3c8c.jpg",
+        "text": "$$\nF = F ( \\eta , \\pi _ { k } ) = - \\frac { \\pi _ { k } ^ { 4 } } { 3 } \\psi ^ { 0 } ( \\eta , \\pi _ { k } ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $F$ indicates a source term for the $\\mu ^ { 2 }$ -order equation that results to be dependent on the zero-order solution. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now，the zero-order PDE $( \\mathrm { 6 1 } )$ is the Schrodinger equation of a time-dependent harmonic oscillator with standard operators,but in the momentum polarization; therefore the solution $\\psi ^ { 0 } ( \\eta , \\pi _ { k } )$ is just the Fourier transform of $\\psi ^ { 0 } ( \\eta , \\xi _ { k } )$ ，properly rescaled to account for the normalization of Hermitepolynomials: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/6467c2a756dcf7f4f23d5037a338cc8d365ce94e1c54de4157982de14a143972.jpg",
+        "text": "$$\n\\psi _ { n } ^ { 0 } ( \\eta , \\pi _ { k } ) = ( - i ) ^ { n } \\frac { h _ { n } \\bigl ( \\frac { \\pi _ { k } f } { | R | } \\bigr ) } { \\sqrt { 2 ^ { n } n ! } } \\sqrt { \\frac { ( R ^ { * } ) ^ { n } f } { R ^ { n + 1 } \\sqrt { \\pi } } } \\ e ^ { - \\frac { \\pi _ { k } ^ { 2 } f ^ { 2 } } { 2 R } } e ^ { i \\alpha _ { n } } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $R$ has been defined in $( 4 4 )$ and $f$ and $\\alpha _ { n }$ have the same expressions as before. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Onthe other hand,the first order PDE $\\textcircled { 6 2 }$ is the same of the zero order one but with the addition of the source term $F ( \\eta , \\pi _ { k } )$ ．In order to solve it，we consider that the eigenfunctions $\\psi _ { n } ( \\eta , \\pi _ { k } )$ form a complete orthonormal basis such that $\\langle \\psi _ { n _ { 1 } } | \\psi _ { n _ { 2 } } \\rangle = \\delta _ { n _ { 1 } , n _ { 2 } }$ and any function canbe expressed as a linear combination of them. Therefore we can write $\\psi ^ { 1 }$ and $\\psi ^ { 0 }$ as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/c1fe6785dfae2b4225f969905616c1e00e100095511610ae50153680703811b9.jpg",
+        "text": "$$\n\\psi ^ { 0 } = \\sum _ { n } c _ { n } ( \\eta ) \\psi _ { n } ( \\eta , \\pi _ { k } ) , \\psi ^ { 1 } = \\sum _ { n } d _ { n } ( \\eta ) \\psi _ { n } ( \\eta , \\pi _ { k } ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $c _ { n } ( \\eta )$ ， $d _ { n } ( \\eta )$ are time-dependent coefficients;when we plug these expansions back into the first order Schrodinger equation $\\textcircled { 6 2 }$ we are left with just a recurrence relation for the coefficients,since all the eigenfunctions $\\psi _ { n } ^ { 0 }$ satisfy the zero-order equation $( \\mathrm { 6 1 } )$ that corresponds to the homogeneous part of the first order one: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/55263104c06c38202cdea41154fe1f3eaa2fc25d97d89803a234a19af56f3e15.jpg",
+        "text": "$$\ni \\sum _ { n } \\mathrm { ~ } \\frac { \\mathrm { d } d _ { n } } { \\mathrm { d } \\eta } \\psi _ { n } ^ { 0 } ( \\eta , \\pi _ { k } ) = - \\frac { \\pi _ { k } ^ { 4 } } { 3 } \\sum _ { n } c _ { n } ( \\eta ) \\psi _ { n } ^ { 0 } ( \\eta , \\pi _ { k } ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Considering just the ground state and using the result $( \\mathrm { 4 3 } )$ for $\\pi _ { k }$ ，we obtain ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/f45df3e7ec6f7cdb70e12bd8dba9dd16d8588f644bb0b4a1640d6e154fce2282.jpg",
+        "text": "$$\n\\pi _ { k } ^ { 4 } \\psi _ { 0 } = \\frac { 3 } { 4 } \\frac { R ^ { 2 } ( R ^ { * } ) ^ { 2 } } { f ^ { 4 } } \\psi _ { 0 } - \\frac { 3 } { \\sqrt { 2 } } \\frac { R ^ { 3 } R ^ { * } } { f ^ { 4 } } e ^ { 2 i \\varphi } \\psi _ { 2 } + \\sqrt { \\frac { 3 } { 2 } } \\ \\frac { R ^ { 4 } } { f ^ { 4 } } e ^ { 4 i \\varphi } \\psi _ { 4 } ;\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "it is thus clear that,when $c _ { n } = \\delta _ { 0 , n }$ ，the only non-zero coefficients on the left hand side are $d _ { 0 }$ ， $d _ { 2 }$ and $d _ { 4 }$ .Therefore the relations for these coefficients are: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d5eb9cd6a9adc97972ccae9646a4fbc1b7123eca206b405a2ba29a1a125b7554.jpg",
+        "text": "$$\ni \\frac { \\mathrm { d } d _ { 0 } } { \\mathrm { d } \\eta } = - \\frac { 1 } { 4 } \\frac { ( 1 + f ^ { 2 } f ^ { \\prime 2 } ) ^ { 2 } } { f ^ { 4 } } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/162e550527c9e8f6cf2ed29498278af1400182d8f824a816ce762b698c01b17e.jpg",
+        "text": "$$\ni \\frac { \\mathrm { d } d _ { 2 } } { \\mathrm { d } \\eta } = + \\frac { 1 } { \\sqrt { 2 } } \\frac { ( 1 + f ^ { 2 } f ^ { \\prime 2 } ) ( 1 - i f f ^ { \\prime } ) ^ { 2 } } { f ^ { 4 } } e ^ { 2 i \\varphi } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/24912608a077d480effeebd34611a1c8c7513659d86bd327fd0bbf6fed724ef4.jpg",
+        "text": "$$\ni \\frac { \\mathrm { d } d _ { 4 } } { \\mathrm { d } \\eta } = - \\frac { 1 } { \\sqrt { 6 } } \\frac { ( 1 - i f f ^ { \\prime } ) ^ { 4 } } { f ^ { 4 } } e ^ { 4 i \\varphi } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Finally, the ground state of our system in the $\\pi _ { k }$ representation is ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/5bfaeca3e912ae94c55782d2575e0cec1fb147ff9258dc5551525b538f8e23f3.jpg",
+        "text": "$$\n\\psi _ { 0 } ^ { \\mathrm { t o t } } ( \\eta , \\pi _ { k } ) = \\psi _ { 0 } ^ { 0 } ( \\eta , \\pi _ { k } ) + \\mu ^ { 2 } \\sum _ { n = 0 } ^ { 2 } d _ { 2 n } ( \\eta ) \\psi _ { 2 n } ^ { 0 } ( \\eta , \\pi _ { k } ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "From here on we will omit the superscript indicating the order,since we expressed $\\psi ^ { 1 }$ and $\\psi ^ { 0 }$ as a linear combination of $\\psi _ { n }$ ： ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now,in order to find the final spectrum of perturbations we have to evaluate the expectation value $\\left. \\hat { \\xi } _ { k } ^ { 2 } \\right.$ on the ground state；we can use the expression $( \\sqrt { 4 2 } )$ and therefore write ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/57ece563378b98b330e3a734913d740d65a9475d31b0d9b1f6c34aac9cb5f043.jpg",
+        "text": "$$\n\\begin{array} { l } { { \\displaystyle \\langle \\psi _ { 0 } ^ { \\mathrm { t o t } } | \\hat { \\xi } _ { k } ^ { 2 } | \\psi _ { 0 } ^ { \\mathrm { t o t } } \\rangle = \\int d \\pi _ { k } \\psi _ { 0 } ^ { \\mathrm { t o t } ^ { * } } \\hat { \\xi } _ { k } ^ { 2 } \\psi _ { 0 } ^ { \\mathrm { t o t } } = \\int d \\pi _ { k } \\Big | \\hat { \\xi } _ { k } \\psi _ { 0 } ^ { \\mathrm { t o t } } \\Big | ^ { 2 } } } \\\\ { { \\displaystyle = \\int d \\pi _ { k } f ^ { 2 } \\Big | \\frac { 1 + \\mu ^ { 2 } d _ { 0 } } { \\sqrt 2 } e ^ { i \\varphi } \\psi _ { 1 } + \\mu ^ { 2 } d _ { 2 } e ^ { - i \\varphi } \\psi _ { 1 } + . . . \\Big | ^ { 2 } , ~ } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where the dots stand for terms proportional to $\\psi _ { 3 }$ and $\\psi _ { 5 }$ ，whose square modulus would contribute with terms of order $\\mu ^ { 4 }$ which we would neglect.Given that the norm of $\\psi _ { 0 } ^ { \\mathrm { t o t } }$ is easily calculated to be $| N | ^ { 2 } = 1 + 2 \\mu ^ { 2 } \\mathrm { R e } ( d _ { 0 } )$ ， since $\\textstyle \\int d \\pi _ { k } | \\psi _ { n } | = 1$ ,the normalized expectation value of $\\hat { \\xi } _ { k } ^ { 2 }$ results to be ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/19a91f6eaafcc2ccc50ee310e6f64063b9c5cc9cafcb408d41dfe5a8aa773eab.jpg",
+        "text": "$$\n\\begin{array} { l } { { \\displaystyle \\left. \\hat { \\xi } _ { k } ^ { 2 } \\right. } } \\\\ { { \\displaystyle \\left. N \\right. ^ { 2 } = \\frac { f ^ { 2 } } { 2 \\left. N \\right. ^ { 2 } } \\left( 1 + 2 \\mu ^ { 2 } \\mathrm { R e } ( d _ { 0 } ) + 2 \\sqrt { 2 } \\mu ^ { 2 } \\mathrm { R e } ( d _ { 2 } e ^ { - 2 i \\varphi } ) \\right) = } } \\\\ { { \\displaystyle \\qquad = \\frac { f ^ { 2 } } { 2 } \\left( 1 + \\frac { 2 \\sqrt { 2 } \\mu ^ { 2 } \\mathrm { R e } ( d _ { 2 } e ^ { - 2 i \\varphi } ) } { 1 + 2 \\mu ^ { 2 } \\mathrm { R e } ( d _ { 0 } ) } \\right) . } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Asexpected,the zero-order term is the same as for the standard Spectrum $\\boxed { 4 5 }$ ；on the other hand,for the $\\mu ^ { 2 }$ order correction we see that we only need $d _ { 0 }$ and $d _ { 2 }$ among the coefficients of the expansion. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now，looking at equation $\\textcircled { 6 8 }$ we see that the right hand side isreal；therefore $d _ { 0 }$ hasa purely imaginary timederivative,anditsreal time-independent part must be set through initial conditions;we will adopt the same prescription as in $\\mathbb { B } 3 \\mathbb { B } \\mathbb { 4 }$ where we assume that the wavefunction is in the instantaneous ground state at the beginning of inflation: we therefore write $d _ { 0 } ( \\eta _ { s } ) = 0$ and, since itsreal part is independent of time,it will remain zero throughout the evolution. Then we solve the integral $\\textcircled { 6 9 }$ for $d _ { 2 } ( \\eta )$ ,insert it into the Spectrum and find ",
+        "page_idx": 0
+    }
+]

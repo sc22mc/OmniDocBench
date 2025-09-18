@@ -1,0 +1,66 @@
+[
+    {
+        "type": "text",
+        "text": "over $\\mathbb { F } _ { q }$ .Let $\\mathcal { C } _ { g }$ be the affine plane curve defined by this equation. Note that $\\mathcal { C } _ { g }$ is nonsingular and irreducible over $\\overline { { \\mathbb { F } _ { q } } }$ ,an algebraic closure of $\\mathbb { F } _ { q }$ . Denote the set of $\\mathbb { F } _ { q }$ -rational points of $\\mathcal { C } _ { g }$ by ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/093fee155a49121b477a3807c753022456e1d2360639462401eafce236e27f7f.jpg",
+        "text": "$$\n\\mathcal { C } _ { g } ( \\mathbb { F } _ { q } ) = \\Big \\{ ( x , y ) \\in \\mathbb { F } _ { q } ^ { 2 } \\mid g ^ { 2 } x ^ { \\ell } + g y ^ { \\ell } + 1 = 0 \\Big \\}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "and let $N _ { g } = | \\mathcal { C } _ { g } ( \\mathbb { F } _ { q } ) |$ be its cardinality. Furthermore, let $\\widetilde { \\mathcal { C } _ { g } }$ be the (Zariski) closure of $\\mathcal { C } _ { g }$ in the projective plane defined by the homogeneous equation ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/8a43554f1bb23abd5fc08c236f3768167b4011f2940eff4e9ba4af9337e0b885.jpg",
+        "text": "$$\ng ^ { 2 } X ^ { \\ell } + g Y ^ { \\ell } + Z ^ { \\ell } = 0 .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note that $\\widetilde { \\mathcal { C } _ { g } }$ is also non-singular. We let $\\widetilde { N _ { g } }$ denote the cardinality of $\\widetilde { \\mathcal { C } _ { g } } ( \\mathbb { F } _ { q } )$ .Having ConjectureBand Conjecture $\\bigtriangledown$ in mind, we are especially concerned with whether or not a point $( x , y ) \\in \\mathcal { C } _ { g } ( \\mathbb { F } _ { q } )$ satisfying $x y \\neq 0$ . The following lemma shows that this is always true except for very limited special cases. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 2.1. Equation $\\textcircled{4}$ has a nontrivial solution $( x , y , z )$ with $x y z = 0$ if and only if one of the following situations holds: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(i) $\\ell = 1$ or2; (ii) $\\ell = 4$ and $- 1 \\notin L .$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Moreover, if $\\ell > 2$ ,then $x z \\neq 0$ ：",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. Suppose that $( x , y , z )$ is a nontrivial solution to Equation $\\textcircled{4}$ with $x y z = 0$ .Then only one of $x , y , z$ is zero. Observe that if $x = 0$ or $z = 0$ ,then $- g \\in L$ and $g L$ is either of order 1 or 2 in $\\mathbb { F } _ { q } ^ { \\times } / L$ ；if $y = 0$ ,then $- g ^ { 2 } \\in L$ and $g L$ is of order 4 in $\\mathbb { F } _ { q } ^ { \\times } / L$ . In particular, we have $x z \\neq 0$ provided that $\\ell \\neq 2$ . In the case where $\\ell = 4$ , we see that $- L = g ^ { 2 } L \\neq L$ It follows that $- 1 \\notin L$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Conversely, if $\\ell = 1$ then it's clear that Equation $\\textcircled{4}$ has a nontrivial solution $( x , y , z )$ with $x y z = 0$ . Suppose that $\\ell = 2$ ,then $\\mathbb { F } _ { q } ^ { \\times } / L = \\{ L , g L \\}$ .If $- 1 \\notin L$ ,then $- L = g L$ In this case, $g = - a ^ { 2 } \\in L$ for some $a \\in \\mathbb { F } _ { q } ^ { \\times }$ . Then, we clearly have solutions $( x , y , z ) = ( 1 , a , 0 )$ and $( 0 , 1 , a )$ . Suppose $- 1 \\in L$ ,then $- g ^ { 2 } = b ^ { 2 } \\in L$ for some $b \\in \\mathbb { F } _ { q } ^ { \\times }$ and we have the solution $( x , y , z ) = ( 1 , 0 , b )$ in this case. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Finally, suppose that $\\ell = 4$ and $- 1 \\notin L$ Then both $g ^ { 2 } L$ and $- L$ are of order 2 in the cyclic group $\\mathbb { F } _ { q } ^ { \\times } / L$ Thus, $- L = g ^ { 2 } L$ and this gives a solution $( x , y , z ) = ( 1 , 0 , b )$ where $- g ^ { 2 } = b ^ { 4 } \\in L$ □ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Following [Wei48], the number $N _ { g }$ of solutions to Equation $( 3 )$ can be expressed as a character sum which we now recall. As usual, by a multiplicative character of $\\mathbb { F } _ { q }$ we mean a character of the group $\\mathbb { F } _ { q } ^ { \\times }$ , i.e. a group homomorphism from $\\mathbb { F } _ { q } ^ { \\times }$ to $\\mathbb { C } ^ { \\times }$ . As we only deal with multiplicative characters of $\\mathbb { F } _ { q }$ ，we'll simply call them characters. The trivial character will be denoted by $\\varepsilon$ such that $\\varepsilon ( a ) = 1$ for all $a \\in \\mathbb { F } _ { q } ^ { \\times }$ . We extend the domain of a character $\\chi$ such that $\\chi ( 0 ) = 1$ if $\\chi = \\varepsilon$ and $\\chi ( 0 ) = 0$ otherwise. We call the extension of $\\chi$ an extended character and still denote the extension by $\\chi$ if there is no ",
+        "page_idx": 0
+    }
+]

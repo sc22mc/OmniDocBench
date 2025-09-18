@@ -1,0 +1,1318 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        287,
+                        298,
+                        1208,
+                        406
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                287,
+                                298,
+                                1208,
+                                406
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        287,
+                                        298,
+                                        1208,
+                                        406
+                                    ],
+                                    "type": "text",
+                                    "content": "probability distribution over the generic vocabulary "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        298,
+                                        1208,
+                                        406
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{g}"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        298,
+                                        1208,
+                                        406
+                                    ],
+                                    "type": "text",
+                                    "content": " at the decoding time step "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        298,
+                                        1208,
+                                        406
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        298,
+                                        1208,
+                                        406
+                                    ],
+                                    "type": "text",
+                                    "content": " is computed as,"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        501,
+                        449,
+                        1203,
+                        519
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                501,
+                                449,
+                                1203,
+                                519
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        501,
+                                        449,
+                                        1203,
+                                        519
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "P_{v_g} = \\mathrm{softmax}\\big(\\mathrm{FC}_1(\\mathbf{o}_t)\\big), \\tag{4}",
+                                    "image_path": "4baa78fe8bc95a1867f87f83f99c8ac18b74d62931e2d7ca0a7af4952d5412bf.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        295,
+                        568,
+                        970,
+                        620
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                295,
+                                568,
+                                970,
+                                620
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        295,
+                                        568,
+                                        970,
+                                        620
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        295,
+                                        568,
+                                        970,
+                                        620
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathrm{FC_1}"
+                                },
+                                {
+                                    "bbox": [
+                                        295,
+                                        568,
+                                        970,
+                                        620
+                                    ],
+                                    "type": "text",
+                                    "content": " is a fully connected layer."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        292,
+                        627,
+                        1208,
+                        905
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                292,
+                                627,
+                                1208,
+                                905
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        292,
+                                        627,
+                                        1208,
+                                        905
+                                    ],
+                                    "type": "text",
+                                    "content": "To calculate the probability distribution over the history- aware vocabulary "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        627,
+                                        1208,
+                                        905
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{h}"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        627,
+                                        1208,
+                                        905
+                                    ],
+                                    "type": "text",
+                                    "content": " , we adopt a maxpooling layer over the context- updated history memory "
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        627,
+                                        1208,
+                                        905
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{C}_s"
+                                },
+                                {
+                                    "bbox": [
+                                        292,
+                                        627,
+                                        1208,
+                                        905
+                                    ],
+                                    "type": "text",
+                                    "content": " a fully connected layer, and a softmax function as follows,"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        327,
+                        947,
+                        1203,
+                        1017
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                327,
+                                947,
+                                1203,
+                                1017
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        327,
+                                        947,
+                                        1203,
+                                        1017
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "P_{v_h} = \\mathrm{softmax}\\big(\\mathrm{FC}_2(\\mathrm{max - pooling}(\\mathbf{C}_s))\\big), \\tag{5}",
+                                    "image_path": "ef9b9717cd21a7b9d1317f0f39a97bf06f70629d78e880eaa10035187a0b11e0.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        295,
+                        1066,
+                        970,
+                        1119
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                295,
+                                1066,
+                                970,
+                                1119
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        295,
+                                        1066,
+                                        970,
+                                        1119
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        295,
+                                        1066,
+                                        970,
+                                        1119
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathrm{FC_2}"
+                                },
+                                {
+                                    "bbox": [
+                                        295,
+                                        1066,
+                                        970,
+                                        1119
+                                    ],
+                                    "type": "text",
+                                    "content": " is a fully connected layer."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        287,
+                        1122,
+                        1208,
+                        1290
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                287,
+                                1122,
+                                1208,
+                                1290
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        287,
+                                        1122,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": "The final word probability distribution at time step "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1122,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1122,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " is computed by using a switching mechanism between "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1122,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "P_{v_g}"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1122,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1122,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "P_{v_h}"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1122,
+                                        1208,
+                                        1290
+                                    ],
+                                    "type": "text",
+                                    "content": " as follows,"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        478,
+                        1336,
+                        1203,
+                        1399
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                478,
+                                1336,
+                                1203,
+                                1399
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        478,
+                                        1336,
+                                        1203,
+                                        1399
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "P = \\alpha_{v_g}*P_{v_g} + \\alpha_{v_h}*P_{v_h}, \\tag{6}",
+                                    "image_path": "badcdebf532303b12f18b2e0110c2e159d0576e3dce7a6dbc475c615a9bb6300.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        287,
+                        1448,
+                        1208,
+                        1669
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                287,
+                                1448,
+                                1208,
+                                1669
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        287,
+                                        1448,
+                                        1208,
+                                        1669
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1448,
+                                        1208,
+                                        1669
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\alpha_{v_g}"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1448,
+                                        1208,
+                                        1669
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1448,
+                                        1208,
+                                        1669
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\alpha_{v_h}"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1448,
+                                        1208,
+                                        1669
+                                    ],
+                                    "type": "text",
+                                    "content": " is the switching probability of generating from generic vocabulary or copying from history conversations. "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1448,
+                                        1208,
+                                        1669
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\alpha_{v_g}"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1448,
+                                        1208,
+                                        1669
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1448,
+                                        1208,
+                                        1669
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\alpha_{v_h}"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1448,
+                                        1208,
+                                        1669
+                                    ],
+                                    "type": "text",
+                                    "content": " is calculated as follows,"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        329,
+                        1715,
+                        1158,
+                        1855
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                329,
+                                1715,
+                                1158,
+                                1855
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        329,
+                                        1715,
+                                        1158,
+                                        1855
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\begin{array}{rl} & {[\\alpha_{v_g},\\alpha_{v_h}] =}\\\\ & {\\quad \\mathrm{softmax}\\big(\\mathrm{FC}_3\\big([o_j;\\mathrm{max - pooling}(\\mathbf{C}_s)]\\big)\\big),} \\end{array}",
+                                    "image_path": "3f5f25f3bdab45646ed9d5b934b01adc8dfa9d300334edc9f28c8c27362bcd59.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        287,
+                        1950,
+                        1210,
+                        2059
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                287,
+                                1950,
+                                1210,
+                                2059
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        287,
+                                        1950,
+                                        1210,
+                                        2059
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1950,
+                                        1210,
+                                        2059
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathrm{FC_3}"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1950,
+                                        1210,
+                                        2059
+                                    ],
+                                    "type": "text",
+                                    "content": " is a fully connected layer, and "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1950,
+                                        1210,
+                                        2059
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[;]"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        1950,
+                                        1210,
+                                        2059
+                                    ],
+                                    "type": "text",
+                                    "content": " is a concatenation operation over the last dimension."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        292,
+                        2104,
+                        704,
+                        2160
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                292,
+                                2104,
+                                704,
+                                2160
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        292,
+                                        2104,
+                                        704,
+                                        2160
+                                    ],
+                                    "type": "text",
+                                    "content": "3.4 Model Training"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        287,
+                        2181,
+                        1210,
+                        2462
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                287,
+                                2181,
+                                1210,
+                                2462
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        287,
+                                        2181,
+                                        1210,
+                                        2462
+                                    ],
+                                    "type": "text",
+                                    "content": "We train the model to maximize the generation probability of the target response, given the current conversation context and history conversations in an end- to- end manner. The loss function of HAHT is defined as,"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        421,
+                        2497,
+                        1203,
+                        2652
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                421,
+                                2497,
+                                1203,
+                                2652
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        421,
+                                        2497,
+                                        1203,
+                                        2652
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\mathcal{L} = -\\sum_{t = 1}^{n_y}\\log \\big(P(y_j|X,H,y_{< t})\\big), \\tag{8}",
+                                    "image_path": "5b91430e4fc540cbf62945b6df5e5806ee40269f36784e0266111ceb17858371.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                },
+                {
+                    "bbox": [
+                        287,
+                        2694,
+                        1213,
+                        2915
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                287,
+                                2694,
+                                1213,
+                                2915
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        287,
+                                        2694,
+                                        1213,
+                                        2915
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        2694,
+                                        1213,
+                                        2915
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        2694,
+                                        1213,
+                                        2915
+                                    ],
+                                    "type": "text",
+                                    "content": " denotes the current conversation context, "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        2694,
+                                        1213,
+                                        2915
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "H"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        2694,
+                                        1213,
+                                        2915
+                                    ],
+                                    "type": "text",
+                                    "content": " denotes all history conversations, "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        2694,
+                                        1213,
+                                        2915
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "y_{< t}"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        2694,
+                                        1213,
+                                        2915
+                                    ],
+                                    "type": "text",
+                                    "content": " denotes tokens before time step "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        2694,
+                                        1213,
+                                        2915
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        2694,
+                                        1213,
+                                        2915
+                                    ],
+                                    "type": "text",
+                                    "content": " ,and "
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        2694,
+                                        1213,
+                                        2915
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "n_{y}"
+                                },
+                                {
+                                    "bbox": [
+                                        287,
+                                        2694,
+                                        1213,
+                                        2915
+                                    ],
+                                    "type": "text",
+                                    "content": " denotes the length of the ground truth response."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                },
+                {
+                    "bbox": [
+                        295,
+                        2964,
+                        843,
+                        3020
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                295,
+                                2964,
+                                843,
+                                3020
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        295,
+                                        2964,
+                                        843,
+                                        3020
+                                    ],
+                                    "type": "text",
+                                    "content": "4Experimental Settings"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        287,
+                        3058,
+                        1210,
+                        3223
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                287,
+                                3058,
+                                1210,
+                                3223
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        287,
+                                        3058,
+                                        1210,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": "In this section, we introduce the experimental dataset, evaluation metrics, baseline methods, and model settings."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        1275,
+                        291,
+                        2183,
+                        648
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1275,
+                                291,
+                                2183,
+                                648
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        291,
+                                        2183,
+                                        648
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1275,
+                                                291,
+                                                2183,
+                                                648
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td rowspan=\"2\">Session number</td><td colspan=\"2\">Train</td><td colspan=\"2\">Valid</td><td colspan=\"2\">Test</td></tr><tr><td>Conv.</td><td>Utter.</td><td>Conv.</td><td>Utter.</td><td>Conv.</td><td>Utter.</td></tr><tr><td>1*</td><td>8939</td><td>131,438</td><td>1000</td><td>7,801</td><td>1015</td><td>6,634</td></tr><tr><td>2</td><td>4000</td><td>46,420</td><td>500</td><td>5,897</td><td>501</td><td>5,939</td></tr><tr><td>3</td><td>4000</td><td>47,259</td><td>500</td><td>5,890</td><td>501</td><td>5,924</td></tr><tr><td>4</td><td>1001</td><td>11,870</td><td>500</td><td>5,904</td><td>501</td><td>5,940</td></tr><tr><td>5</td><td>-</td><td>-</td><td>500</td><td>5,964</td><td>501</td><td>5,945</td></tr><tr><td>Total</td><td>-</td><td>236,987</td><td>-</td><td>31,456</td><td>-</td><td>30,382</td></tr></table>",
+                                            "image_path": "a0951646288750d076fa26d610509318074e2cecb2aec3b5689bb07aedf557c4.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 17,
+                            "type": "table_body"
+                        }
+                    ],
+                    "index": 17
+                },
+                {
+                    "bbox": [
+                        1270,
+                        694,
+                        2190,
+                        943
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1270,
+                                694,
+                                2190,
+                                943
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1270,
+                                        694,
+                                        2190,
+                                        943
+                                    ],
+                                    "type": "text",
+                                    "content": "Table 1: The statistics of Facebook Multi- Session Chat (Facebook MSC) Dataset. Session number "
+                                },
+                                {
+                                    "bbox": [
+                                        1270,
+                                        694,
+                                        2190,
+                                        943
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i"
+                                },
+                                {
+                                    "bbox": [
+                                        1270,
+                                        694,
+                                        2190,
+                                        943
+                                    ],
+                                    "type": "text",
+                                    "content": " indicates there are "
+                                },
+                                {
+                                    "bbox": [
+                                        1270,
+                                        694,
+                                        2190,
+                                        943
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i - 1"
+                                },
+                                {
+                                    "bbox": [
+                                        1270,
+                                        694,
+                                        2190,
+                                        943
+                                    ],
+                                    "type": "text",
+                                    "content": " history conversation sessions that happen before the last conversation session. \\* Session 1 does not contain history conversation sessions."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 18
+                },
+                {
+                    "bbox": [
+                        1275,
+                        1024,
+                        1803,
+                        1076
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1275,
+                                1024,
+                                1803,
+                                1076
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        1024,
+                                        1803,
+                                        1076
+                                    ],
+                                    "type": "text",
+                                    "content": "4.1 Experimental Dataset"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 19,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1272,
+                        1098,
+                        2193,
+                        1883
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                1098,
+                                2193,
+                                1883
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1098,
+                                        2193,
+                                        1883
+                                    ],
+                                    "type": "text",
+                                    "content": "The experiments are performed on a large dataset, i.e.,Facebook MULTI- SESSION CHAT (Facebook MSCXu et al.,2022).It is a crowdsourced dataset consisting of multi- session conversations, where the interlocutors learn about each other's interests and discuss the things they have understood from past sessions. The number of history conversations in Facebook MSC varies from 1 to 4. Session number "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1098,
+                                        2193,
+                                        1883
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1098,
+                                        2193,
+                                        1883
+                                    ],
+                                    "type": "text",
+                                    "content": " indicates there are "
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1098,
+                                        2193,
+                                        1883
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i - 1"
+                                },
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1098,
+                                        2193,
+                                        1883
+                                    ],
+                                    "type": "text",
+                                    "content": " history conversations happening before the last conversation session. The statistics of the Facebook MSC dataset are summarized in Table 1. As session 1 does not have history conversations, we evaluate our model on session 2- 5."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 20
+                },
+                {
+                    "bbox": [
+                        1275,
+                        1922,
+                        1756,
+                        1975
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1275,
+                                1922,
+                                1756,
+                                1975
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        1922,
+                                        1756,
+                                        1975
+                                    ],
+                                    "type": "text",
+                                    "content": "4.2 Evaluation Metrics"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 21,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1272,
+                        1992,
+                        2190,
+                        2385
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                1992,
+                                2190,
+                                2385
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        1992,
+                                        2190,
+                                        2385
+                                    ],
+                                    "type": "text",
+                                    "content": "We conduct both automatic and human evaluations to demonstrate the effectiveness of the proposed model. For automatic evaluations, we leverage BLEU- 2,BLEU- 3 Papineni et al.,2002),and ROUGE- L (Lin and Och, 2004) to measure word overlaps between the generated response text and ground truth text."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 22
+                },
+                {
+                    "bbox": [
+                        1272,
+                        2392,
+                        2193,
+                        2781
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1272,
+                                2392,
+                                2193,
+                                2781
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1272,
+                                        2392,
+                                        2193,
+                                        2781
+                                    ],
+                                    "type": "text",
+                                    "content": "Moreover, we also randomly sample 50 MSCs from the test set to conduct human evaluations. We present all the history conversation sessions, current conversation context, and the generated responses to three well- educated annotators. The annotators will evaluate the quality of the generated responses from the following three aspects:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 23
+                },
+                {
+                    "bbox": [
+                        1280,
+                        2809,
+                        2198,
+                        3223
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1280,
+                                2809,
+                                2198,
+                                3223
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1280,
+                                        2809,
+                                        2198,
+                                        3223
+                                    ],
+                                    "type": "text",
+                                    "content": "Readability: measures whether the generated responses are natural and fluent. Context Relevancy: measures whether the generated responses are correlated with the current conversation context. History Relevancy: measures whether the generated responses are correlated with history con"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 24
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2481,
+                3508
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

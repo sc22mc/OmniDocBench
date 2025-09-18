@@ -1,0 +1,806 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        599,
+                        465,
+                        1945,
+                        580
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                599,
+                                465,
+                                1945,
+                                580
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        599,
+                                        465,
+                                        1945,
+                                        580
+                                    ],
+                                    "type": "text",
+                                    "content": "Convergence to the Equilibrium State in an Outbreak: When Can Growth Rates Accurately be Measured?"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        803,
+                        623,
+                        1746,
+                        765
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                803,
+                                623,
+                                1746,
+                                765
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        803,
+                                        623,
+                                        1746,
+                                        765
+                                    ],
+                                    "type": "text",
+                                    "content": "Adam Morke*  Dynamical Systems, Technical University of Denmark,  Asmussens Allé, 303B, 2800 Kgs. Lyngby, Denmark"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        678,
+                        815,
+                        1874,
+                        953
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                678,
+                                815,
+                                1874,
+                                953
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        678,
+                                        815,
+                                        1874,
+                                        953
+                                    ],
+                                    "type": "text",
+                                    "content": "Lasse Engbo Christiansen†  Statens Serum Institut, Artillerivej 5, 2300 Copenhagen S, Denmark  (Dated: February 3, 2023)"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        438,
+                        976,
+                        2113,
+                        1197
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                438,
+                                976,
+                                2113,
+                                1197
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        976,
+                                        2113,
+                                        1197
+                                    ],
+                                    "type": "text",
+                                    "content": "We investigate sub- leading orders of the classic SEIR- model using contact matrices from modeling of the Omicron and Delta variants of COVID- 19 in Denmark. The goal of this is to illustrate when the growth rate, and by extension the infectiousness, can be accurately measured in a new outbreak, e.g. after introduction of a new variant of a virus. We find that as long as susceptible depletion is a minor effect, the transients are gone within around 4 generations."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        548,
+                        1277,
+                        984,
+                        1326
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                548,
+                                1277,
+                                984,
+                                1326
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        548,
+                                        1277,
+                                        984,
+                                        1326
+                                    ],
+                                    "type": "text",
+                                    "content": "I. INTRODUCTION"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        293,
+                        1402,
+                        1239,
+                        1735
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                293,
+                                1402,
+                                1239,
+                                1735
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        293,
+                                        1402,
+                                        1239,
+                                        1735
+                                    ],
+                                    "type": "text",
+                                    "content": "The exponential growth regime of a stratified SEIR- model is well- described [13] where the growth rate is equal to the largest eigenvalue of the generator matrix. However, this requires the system to be in the corresponding eigenstate, which is rarely the case, as the introduction of a disease often comes from a few single individuals."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        293,
+                        1755,
+                        1239,
+                        2376
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                293,
+                                1755,
+                                1239,
+                                2376
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        293,
+                                        1755,
+                                        1239,
+                                        2376
+                                    ],
+                                    "type": "text",
+                                    "content": "The non- exponential growth has significant consequences for estimate of infectiousness at the introduction of a new disease or variant, because the growth rate is commonly used here. It is therefore essential to understand when an outbreak actually follows the largest eigenvalue, and, by extension, when the Corrections to the exponential growth from other effects such as spatial spread have already been investigated [4,14], whereas this paper will focus on the convergence to the eigenstate. This is of particular interest when comparing the relative infectiousness of a emerging new variant versus existing variants, see for instance [15]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        293,
+                        2392,
+                        1239,
+                        2587
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                293,
+                                2392,
+                                1239,
+                                2587
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        293,
+                                        2392,
+                                        1239,
+                                        2587
+                                    ],
+                                    "type": "text",
+                                    "content": "We will be working in a stratified SEIR- model framework, which has been the basis of multiple efforts to predict the real- world spread of disease, especially in recent years [4,13]. That is, we start with "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1308,
+                                1277,
+                                2124,
+                                1326
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1277,
+                                        2124,
+                                        1326
+                                    ],
+                                    "type": "text",
+                                    "content": "the following system of differential equations"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        1308,
+                        1277,
+                        2124,
+                        1326
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 8,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1573,
+                        1339,
+                        2246,
+                        1617
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1573,
+                                1339,
+                                2246,
+                                1617
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1573,
+                                        1339,
+                                        2246,
+                                        1617
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\begin{array}{c}\\dot{S} = -\\mathrm{diag}(S)\\beta I\\\\ \\dot{E} = \\mathrm{diag}(S)\\beta I - \\eta E,\\\\ \\dot{I} = \\eta E - \\gamma I\\\\ \\dot{R} = \\gamma I + \\sigma H \\end{array} \\tag{1}",
+                                    "image_path": "c5999138c469212cafe7a915d0b17a43f44bc5c0c89e4f576b96b040402efb2b.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        1308,
+                        1626,
+                        2251,
+                        1960
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1308,
+                                1626,
+                                2251,
+                                1960
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "text",
+                                    "content": "The states "
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "S"
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "text",
+                                    "content": ", "
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "E"
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "text",
+                                    "content": ", "
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "I"
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "text",
+                                    "content": ", and "
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "R"
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "text",
+                                    "content": " represent the fraction of the population that are susceptible, exposed, infectious, and recovered respectively, and the parameters "
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\eta"
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\gamma"
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "text",
+                                    "content": " are rates for the incubation and infection states respectively. The matrix "
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\beta"
+                                },
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1626,
+                                        2251,
+                                        1960
+                                    ],
+                                    "type": "text",
+                                    "content": " contains the contacts between each group, e.g. between age groups."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1308,
+                        1963,
+                        2251,
+                        2151
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1308,
+                                1963,
+                                2251,
+                                2151
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1308,
+                                        1963,
+                                        2251,
+                                        2151
+                                    ],
+                                    "type": "text",
+                                    "content": "We will start with some theoretical observations about time scales, and then we will illustrate the convergence with numerical solution of Equation [1] while comparing to the theoretical time scale."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1430,
+                        2237,
+                        2126,
+                        2329
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1430,
+                                2237,
+                                2126,
+                                2329
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1430,
+                                        2237,
+                                        2126,
+                                        2329
+                                    ],
+                                    "type": "text",
+                                    "content": "II. TIME SCALE OF SOLUTION CONVERGENCE"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1313,
+                        2389,
+                        2251,
+                        2541
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1313,
+                                2389,
+                                2251,
+                                2541
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1313,
+                                        2389,
+                                        2251,
+                                        2541
+                                    ],
+                                    "type": "text",
+                                    "content": "Given some initial condition "
+                                },
+                                {
+                                    "bbox": [
+                                        1313,
+                                        2389,
+                                        2251,
+                                        2541
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\phi (0)"
+                                },
+                                {
+                                    "bbox": [
+                                        1313,
+                                        2389,
+                                        2251,
+                                        2541
+                                    ],
+                                    "type": "text",
+                                    "content": ", where "
+                                },
+                                {
+                                    "bbox": [
+                                        1313,
+                                        2389,
+                                        2251,
+                                        2541
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\phi (t) = \\left(E(t)\\right)"
+                                },
+                                {
+                                    "bbox": [
+                                        1313,
+                                        2389,
+                                        2251,
+                                        2541
+                                    ],
+                                    "type": "text",
+                                    "content": ", we make the decomposition"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                },
+                {
+                    "bbox": [
+                        1603,
+                        2554,
+                        2246,
+                        2663
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1603,
+                                2554,
+                                2246,
+                                2663
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1603,
+                                        2554,
+                                        2246,
+                                        2663
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\phi (t) = \\sum_{j}\\alpha_{j}\\hat{e}_{j}\\mathrm{e}^{r_{j}t} \\tag{2}",
+                                    "image_path": "95a073bd0b01a9da15d77e178eaf50ede0cc9cddb4adf159e9f38a317bbf5358.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                },
+                {
+                    "bbox": [
+                        1305,
+                        2679,
+                        2251,
+                        2778
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1305,
+                                2679,
+                                2251,
+                                2778
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1305,
+                                        2679,
+                                        2251,
+                                        2778
+                                    ],
+                                    "type": "text",
+                                    "content": "for small "
+                                },
+                                {
+                                    "bbox": [
+                                        1305,
+                                        2679,
+                                        2251,
+                                        2778
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        1305,
+                                        2679,
+                                        2251,
+                                        2778
+                                    ],
+                                    "type": "text",
+                                    "content": ", where "
+                                },
+                                {
+                                    "bbox": [
+                                        1305,
+                                        2679,
+                                        2251,
+                                        2778
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\hat{e}_j"
+                                },
+                                {
+                                    "bbox": [
+                                        1305,
+                                        2679,
+                                        2251,
+                                        2778
+                                    ],
+                                    "type": "text",
+                                    "content": " is the "
+                                },
+                                {
+                                    "bbox": [
+                                        1305,
+                                        2679,
+                                        2251,
+                                        2778
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "j'"
+                                },
+                                {
+                                    "bbox": [
+                                        1305,
+                                        2679,
+                                        2251,
+                                        2778
+                                    ],
+                                    "type": "text",
+                                    "content": "th eigenvector of the generator matrix"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15
+                },
+                {
+                    "bbox": [
+                        1550,
+                        2785,
+                        2246,
+                        2900
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1550,
+                                2785,
+                                2246,
+                                2900
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1550,
+                                        2785,
+                                        2246,
+                                        2900
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "G = \\left( \\begin{array}{cc}{-\\eta \\mathbf{1}} & {\\mathrm{diag}(S)\\boldsymbol {\\beta})}\\\\ {\\eta \\mathbf{1}} & {-\\gamma \\mathbf{1}} \\end{array} \\right). \\tag{3}",
+                                    "image_path": "0ae731bd8d2c776150b4000cb80eebd4a92aec93d9ca85b65aa4d8a0bc19236f.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

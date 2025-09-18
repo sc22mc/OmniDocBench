@@ -1,0 +1,34 @@
+[
+    {
+        "type": "text",
+        "text": "stochastic integration techniques. Furthermore, the assumption of dependence between  $r$  and  $x$  induces additional quadratic co- variation terms to the last formula that must be dealt with, similar to the situation mentioned in Remark 1.1 when  $A$  and  $\\chi$  have common jumps. While such more theoretical considerations lie beyond the scope of this more practically oriented article, we still find it important to highlight this issue, as it makes clear that our definition is only an approximation to reality.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3 Distributing assets and whole portfolios",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the logic of the aforementioned section it was important that the asset was subject to reinvestment, in the sense that it is not allowed that cash flows out of the asset, because this outflow would then be forgotten in the analysis. Now we take care about such potential outflows. Special attention is required in this case, because if at some time point  $u$  between  $t$  and  $T$  a certain cash amount  $\\boxed{2}$ $c_{u}$  flows out of the asset price  $A_{u}$ , so that the price process jumps down by  $c_{u}$  at time  $u$ , then the amount  $c_{u}$  must somehow find its way into the PnL. The simplest possibility is to simply add  $c_{u}$  to the carry gain  $P_{(t,T]}^{(A)}$  (carry), and this is essentially what we do. Concretely, we assume a decomposition  $t = u_0 < u_1 < \\ldots < u_m = T$  of the interval  $(t,T]$  with  $u_0, \\ldots , u_m$  being potential cash outflow dates (if no cash flows out at time  $T$  we assume  $c_{m} = 0$ ). With  $A_{u - }$  denoting the asset price an instant before some cash outflow time point  $u$ , we notice that  $A_{u_i} = A_{u_{i - }} - c_{u_i}$ , because the (dirty) asset price drops at time  $u_{i}$  by the coupon amount  $c_{u_i}$ . With this terminology, the definition of  $P_{(t,T]}^{(A)}$  (carry) is enhanced to become",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{r}P_{(t,T]}^{(A)}(\\mathrm{carry}) = \\sum_{i = 1}^{m}\\frac{\\chi_{u_{i - 1}} + \\chi_{u_i}}{2}\\Bigg(\\frac{A_{u_i}(r_{u_i},x_{u_{i - 1}}) - A_{u_{i - 1}}(r_{u_i},x_{u_{i - 1}})}{2}\\\\ +\\frac{A_{u_i}(r_{u_{i - 1}},x_{u_i}) - A_{u_{i - 1}}(r_{u_{i - 1}},x_{u_i})}{2} +c_{u_i}\\Bigg), \\end{array} \\tag{4}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "and the total PnL is enhanced accordingly as well.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here it is important to be aware that the FX rate  $\\mathcal{X}$  enters at all coupon time points  $u_{i}$  and this is a definition that one should ponder about for a little while. The given formula simply assumes that there is zero PnL between  $u_{i}$  and  $T$  arising from the coupon received at  $u_{i}$  , but the PnL on the received EUR amount is \"frozen' at time  $u_{i}$  .Intuitively, at time  $u_{i}$  the out- flowing EUR cash amount  $c_{u_i}(\\chi_{u_{i - 1}} + \\chi_{u_i}) / 2$  goes into some other asset and must be monitored in the PnL  $P_{(u_i,T]}^{(\\tilde{A})}$  for that other asset  $\\tilde{A}$  . For instance, if nothing is done with this cash and it lays on some cash account during  $(u_{i},T]$  , one must monitor",
+        "page_idx": 0
+    }
+]

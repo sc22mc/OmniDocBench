@@ -1,0 +1,140 @@
+[
+    {
+        "type": "text",
+        "text": "former models (Kenton & Toutanova, 2019; Dosovitskiy et al., 2020). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To simplify the illustration and better represent our model in the following sections: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/8bb260cc6de8f0bc25ad1af2f21c59eed8154640a8e718f2235f55d672fab421.jpg",
+        "text": "$$\n\\begin{array} { r } { [ \\mathbb { C I S } ] _ { i } ^ { \\nu } \\longleftarrow \\mathbb { E n c } _ { \\nu } ( [ \\mathbb { C I S } ] _ { i } ^ { \\nu } ) \\mathrm { ~ a n d ~ } [ \\mathbb { C I S } ] ^ { t } \\longleftarrow \\mathbb { E n c } _ { t } ( [ \\mathbb { C I S } ] ^ { t } ) , } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "by default, when talking about [CLS] ( $[ \\mathrm { C L S } ] _ { i } ^ { \\nu }$ and $[ \\mathrm { C L S } ] ^ { t } )$ ， they are the CLIP's output embeddings rather than the input token([CLS]）,the same as shown inFig.2. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "However, the output embedding [CLS] cannot adequately representan image as the single embeddingprovides limited cues to the location and time reasoning.Therefore, we consider enlarging the representations for an image. It is evident that in real life,wewould get different ideasabout what an image means from different individuals. Following in this vein,we propose a simple yet effective methods:in our technical implementation, we are inspired by MVR (Zhang et al.,2022) and introduce additional $[ \\mathsf { C I S } ] _ { i } ^ { \\nu } ( i = 1 , . . . , n )$ to replace the original single [CLS]representation. Through the observation of ablations,we finally use 6 different $[ \\mathsf { C L S } ] _ { i } ^ { \\nu }$ at the beginning of the image patch token embeddings $( \\hat { I } = \\hat { I } _ { 1 } ^ { p a t c h } , . . . , \\hat { I } _ { 7 } ^ { p a t c h } )$ ,like $( [ \\mathsf { C L S } ] _ { 1 } ^ { \\nu } . . . [ \\mathsf { C L S } ] _ { 6 } ^ { \\nu } \\hat { I } )$ ,and after going through the encoder $\\operatorname { E n c } _ { \\nu }$ ,we get a list of embeddings $( \\bigl [ \\mathsf { C L S } \\bigr ] _ { 1 } ^ { \\nu } . . . \\bigl [ \\mathsf { C L S } \\bigr ] _ { 6 } ^ { \\nu } I )$ . Using this design,the pre-trained model can investigate an image from multiple perspectives and dimensions. It follows the Q-principle and increases the quantity of information from multiple perspectives. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Since the text contains explicit semantic information and most language inputs carry clear messages, we only use the original $[ \\mathrm { C L S } ] ^ { t }$ at the beginning of the text token embedding (T), like $\\left( \\big [ \\mathrm { C L S } \\big ] ^ { t } T \\right)$ . Hence,we search for corresponding information through the image from the CLIP model by conducting: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/130d1334a754f653dbae0fc3dae65026df4404f222f7bd9e2e54a8dc2a24012f.jpg",
+        "text": "$$\n( [ \\mathsf { C L S } ] ^ { t } ) \\cdot ( [ \\mathsf { C L S } ] _ { i } ^ { \\nu } ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the following fine-tuning or searching for open-world knowledge, each $[ \\mathrm { C L S } ] _ { i } ^ { \\nu }$ of the $\\mathrm { E n c } _ { \\nu }$ calculates the similarity with $[ \\mathrm { C L S } ] ^ { t }$ of the candidate information by inner-product. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Location/Time Fine-tune.We first initialize and positionencode each $[ \\mathrm { C L S } ] _ { i } ^ { \\nu }$ individually,aiming to extend the distance between each $[ \\mathrm { C L S } ] _ { i } ^ { \\nu }$ . Then,we fine-tune CLIP with local and global losses (He et al.,202O; Zhang et al., 2022) to ensure each $[ \\mathrm { C L S } ] _ { i } ^ { \\nu }$ is aligned with the location and time linguistic features $[ \\mathrm { C L S } ] ^ { t }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For the local loss, the correspondence between each $[ \\mathrm { C L S } ] _ { i } ^ { \\nu }$ and [CLs]t is achieved by a contrastive learning loss: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b70163dff621473ef36f3a1267a9efa9abe3a15dad94dc00acf968406f258582.jpg",
+        "text": "$$\n\\begin{array} { r } { L _ { l o c a l } = - \\frac { 1 } { i + 1 } \\sum _ { 0 } ^ { i } \\log \\frac { e ^ { f _ { i } ( q _ { \\nu } , k _ { t + } ) } } { \\sum _ { 1 } ^ { n } \\left[ e ^ { f _ { i } ( q _ { \\nu } , k _ { t + } ) } + e ^ { f _ { i } ( q _ { \\nu } , k _ { t - } ) } \\right] } , } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "here, $q _ { \\nu }$ denote the query image embedding $( \\left[ \\mathbf { C I S } \\right] _ { i } ^ { \\nu } )$ $k _ { t + }$ and $k _ { t - }$ are the positive and negative key text embeddings (a ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "batch of $[ \\mathbf { C I S } ] ^ { t } .$ ).We calculate the correlation score between them by inner product $f _ { i } ( x , y )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Then,the global loss further constrains the correspondence between image features and location/time features,and the calculationmethod isas follows: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/802094efb0541b52e676ca95c051b53ed83dd0fc277404507bfa3a6bcbd1e2a3.jpg",
+        "text": "$$\nL _ { g l o b a l } = - \\log \\frac { e ^ { f _ { m a x } ( q \\nu , k _ { t + } ) } } { \\sum _ { 1 } ^ { n } [ e ^ { f _ { m a x } ( q \\nu , k _ { t + } ) } + e ^ { f _ { m a x } ( q \\nu , k _ { t - } ) } ] } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $f _ { m a x } ( q _ { \\nu } , k _ { t } ) = m a x \\left\\{ f _ { i } ( q _ { \\nu } , k _ { t } ) \\right\\} , m a x \\left\\{ \\right\\}$ represents the maximum value. The entire training loss is defined as a linear combination of two losses as ${ \\cal L } _ { t o t a l } = { \\cal L } _ { l o c a l } + { \\cal L } _ { g l o b a l }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Open-World Knowledge Search.After fine-tuning, each $[ \\mathrm { C L S } ] _ { i } ^ { \\nu }$ output by CLIP-V can represent image location/time information from various perspectives. We use these different representations to retrieve more valuable open-world knowledge from the OWK dataset (Sec 4.1) to increase the quantity of knowledge. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Given an image $I$ and the corresponding Open-World Knowl$( O = T _ { 1 } ^ { o w k } , T _ { 2 } ^ { o w k } , . . . , T _ { k } ^ { o w k } , k = 1 2 2 , 4 0 8 )$ ,Towk,k= 122,408), the process of searching follows Eq.3: each $[ \\mathrm { C L S } ] _ { i } ^ { \\nu }$ calculates the similarity with 122,408 candidate Wikipedia corpus (OWK). Here, we select the candidate Wikipedia with the top-1 similarity for each $[ \\mathrm { C L S } ] _ { i } ^ { \\nu }$ ,yieldinga total of6 OWKs.After that,the Quantity module (sec 3.2) finished its job by collectingalistof highly-related OWKs itemsthat thenext Relevance module (sec 3.3) would use as input for CLIP-T. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.3.Relevance Module ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Scoring Mechanism. The amount of useful information varies for each $[ \\mathrm { C L S } ] _ { i } ^ { \\nu }$ of an image and the corresponding embeddings of open-world knowledge. As a result,it is critical to weigh the importance of different features dynamically. Based on the above motivation, we propose a scoring mechanism to furtherhighlight the relevant features. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We adopt two layers of MLP $( \\mathbf { M L P } _ { 2 - l a y e r } )$ as our relevance scoring component and find it helpful: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/5dd439eba233394041fc0f295aff33941b3796c2810f3f801f445c6478d02647.jpg",
+        "text": "$$\n\\begin{array} { r } { W ^ { x } = \\mathbf { M } \\mathbf { L } \\mathbf { P } _ { 2 - l a y e r } \\big ( \\big [ \\mathbf { C } \\mathbf { L } \\mathbf { S } \\big ] _ { i } ^ { x } \\big ) , } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here, $[ \\mathrm { C L S } ] _ { i } ^ { x }$ is the input embedding,and $W ^ { x }$ is the calculated weight. We use contrastive learning to optimize the model.To facilitate implementation, we directly adopt the loss functions from the first step of the Quantity module (sec 3.2). In this case,we keep the CLIP-Tand CLIP-V frozen and only update the parameters of the relevance scoring component. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the local loss,the information of two features is integrated tto optimize the scoring mechanism jointly: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d866ecf12856424e8bebb21ebdbf354b67574317e0bcb053077144694c9f8e9b.jpg",
+        "text": "$$\n\\begin{array} { r } { f _ { i } ( q , k _ { + } ) = ( W _ { i } ^ { o w k } \\times \\left[ \\mathbb { C } \\mathbb { L } S \\right] _ { i } ^ { o w k } + W _ { i } ^ { \\nu } \\times \\left[ \\mathbb { C } \\mathbb { L } S \\right] _ { i } ^ { \\nu } ) , \\cdot F ^ { g t } , } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

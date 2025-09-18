@@ -1,0 +1,48 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/adf664b34831a1dcdc7fb5f350cf15ee9cdab4a449f817441894aa07e3fbf1a6.jpg",
+        "table_caption": [
+            "Table 2: 1 example showing how the pretrained ICAE ( $k = 1 2 8$ restores the original context. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>OriginContext</td><td>Restoration</td></tr><tr><td>Large pretrained language models have shown surprising In- ContextLearning (ICL)ability.Witha few demonstration input-label pairs,they can predict the label for an unseen in- put without additional parameter updates. Despite the great success in performance,the working mechanism ofICL still remains an open problem.In order to better understand how ICL works,this paper explains language models as meta- optimizers and understands ICL as a kind of implicit finetun- ing.Theoretically,we figure out that the Transformer attention hasa dual form of gradient descent based optimization. On top of it,we understand ICL as follows:GPT first produces metagradients according to the demonstration examples,and then these meta-gradients are applied to the original GPT to buildan ICL model.Experimentally,we comprehensively compare the behavior of ICL and explicit finetuning based on real tasks to provide empirical evidence that supports our understanding. The results prove that ICL behaves similarly to explicit finetuningat the prediction level,the representation level,andtheattention behaviorlevel.Further,inspiredby our understanding of meta-optimization,we design a momentum- based attention by analogy with the momentum-based gradient descent algorithm.Its consistently better performance over vanilla attention supports our understanding again from an- other aspect,and more importantly, it shows the potential to utilize our understanding for future model designing.</td><td>Large pretrained models have shown surprising In-Context Learning(ICL)ability.Witha fewdemonstrationinput-label pairs,they can predict the label for an unseen input without additional parameter updates.Despite the great success in per- formance,the working mechanism of ICL still remains an open problem. In order to better understand how ICL works,this paper explains how language models as meta-optimizers and understands ICL asa kind of implicit finetuning.Theoretically, we figure out that the Transformer attention has a dual form of gradient descent based on optimization. On top of it,we understand ICL as follows:GPT first produces metagradients according to the demonstration examples,and then these meta- gradients are applied to the original GPT to build an ICL model. Experimentally,we comprehensively compare the behavior of ICL and explicit finetuning based on real tasks to provide em- pirical evidence that supports our findings. The experimental evidence proves that ICL behaves like us to the same extent. Prediction at the explicit finetuning level, the representation level,and the attention behavior level.Further,inspired by our understanding of meta-optimization,we design a momentum- based attention by analogy with the gradient descent-based momentum gradient algorithm. Its consistently better perfor- mance against vanilla attention supports us again from another aspect, and more importantly,it shows the potential to use our understanding for future modeling tasks.</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/0c57a366efc817bc7fc5f33d9347a85c43303da2b36410b7fd527c5768204584.jpg",
+        "table_caption": [
+            "Table 3:Restoration performance for different types of 512-token content with 128 memory slots. Patterned random text is obtained by adding1 to each token_id in a normal text. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Content type</td><td>Loss</td><td>BLEU</td></tr><tr><td>Normal text</td><td>0.01</td><td>99.3</td></tr><tr><td>Patterned random text</td><td>1.63</td><td>3.5</td></tr><tr><td>Completely random text</td><td>4.55</td><td>0.2</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Based on this intuition,it is very likely that a more powerfulLLMmaysupporta higher compression ratio without significant forgeting.We will discuss it in Section 3.3.1. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.2.2FINE-TUNED ICAE ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In order to evaluate the fine-tuned ICAE's performance,we evaluate on the PwC test set.We use the GPT-4 to compare the outputs of the two systems to determine which one performs better or if they are onpar with each other,following Mu et al.(2O23).Table 4 shows the comparison of results of the LLMs conditioned on memory slots and original contexts.For Llama-7b (fine-tuned ICAE), we compare with Alpaca and StableLM-tuned-alpha-7b since there is no official instruction-tuned Llama-1 model. The Llama-7b (ICAE) conditioned on 128 memory slots largely outperforms both Alpaca and StableLMwhich can access original contexts ( ${ \\sim } 5 1 2$ tokens),with a win rate of $56 . 7 \\%$ and $7 4 . 1 \\%$ respectively and a win+tie rate of $7 3 \\% \\sim 8 1 \\%$ .However, when compared to the GPT-4 (we regard it as the gold standard), there is still a significant gap,with around $70 \\%$ of the cases underperforming the GPT-4'sresults,and awin $^ +$ tie ratioof about only $30 \\%$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "When we switch the base model to Llama-2-chat, we observe ICAE's performance becomes much better than its counterpart based on Llama-1: when $k = 1 2 8$ ,its win+tie rate can reach around $7 5 \\%$ againt the GPT-4 although it still lags behind its counterpart conditioning on the original context as the compression is lossy. As $k$ increases,thewin $+$ tierate furtherimproveswhilethecompressionrate decreases.We perform the same comparative studies on Llama-2-13b-chat and observe beter results of ICAE,supporting our assumption in Section 3.2.1 that the ICAE can benefit more on larger LLMs. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We investigate the impact of memory length on results.Table 5 shows pairwise comparisons between ICAE models with varying memory slot lengths. A higher compression ratio makes it harder to ensure response quality,but a larger ratio doesn't always lead to worse performance. Table 5 highlights that a pretrained ICAE with $8 \\times$ compression ( $k { = } 6 4 )$ can match a non-pretrained ICAE with $4 \\times$ compression ( $k { = } 1 2 8$ ).Under the same ratio,the pretrained ICAE performs much better than its ",
+        "page_idx": 0
+    }
+]

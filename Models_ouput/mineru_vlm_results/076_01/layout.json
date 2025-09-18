@@ -1,0 +1,716 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        313,
+                        214,
+                        2200,
+                        432
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                313,
+                                214,
+                                2200,
+                                432
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        313,
+                                        214,
+                                        2200,
+                                        432
+                                    ],
+                                    "type": "text",
+                                    "content": "Vectorized Scenario Description and Motion Prediction for Scenario-Based Testing"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        316,
+                        488,
+                        808,
+                        759
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                316,
+                                488,
+                                808,
+                                759
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        316,
+                                        488,
+                                        808,
+                                        759
+                                    ],
+                                    "type": "text",
+                                    "content": "1st Max Winkelmann AD Functions & Simulation IAV GmbH Berlin, Germany max.winkelmann@iav.de"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        928,
+                        501,
+                        1410,
+                        759
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                928,
+                                501,
+                                1410,
+                                759
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        928,
+                                        501,
+                                        1410,
+                                        759
+                                    ],
+                                    "type": "text",
+                                    "content": "2nd Constantin Vasconi AD Functions & Simulation IAV GmbH Berlin, Germany constantin.vasconi@iav.de"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        1542,
+                        501,
+                        2215,
+                        759
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1542,
+                                501,
+                                2215,
+                                759
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1542,
+                                        501,
+                                        2215,
+                                        759
+                                    ],
+                                    "type": "text",
+                                    "content": "3rd Steffen Muller Department of Automotive Engineering Technische Universitat Berlin Berlin, Germany steffen.mueller@tu- berlin.de"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        198,
+                        907,
+                        1249,
+                        1613
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                907,
+                                1249,
+                                1613
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        907,
+                                        1249,
+                                        1613
+                                    ],
+                                    "type": "text",
+                                    "content": "Abstract—Automated vehicles (AVs) are tested in diverse scenarios, typically specified by parameters such as velocities, distances, or curve radii. To describe scenarios uniformly independent of such parameters, this paper proposes a vectorized scenario description defined by the road geometry and vehicles' trajectories. Data of this form are generated for three scenarios, merged, and used to train the motion prediction model VectorNet, allowing to predict an AV's trajectory for unseen scenarios. Predicting scenario evaluation metrics, VectorNet partially achieves lower errors than regression models that separately process the three scenarios' data. However, for comprehensive generalization, sufficient variance in the training data must be ensured. Thus, contrary to existing methods, our proposed method can merge diverse scenarios' data and exploit spatial and temporal nuances in the vectorized scenario description. As a result, data from specified test scenarios and real- world scenarios can be compared and combined for (predictive) analyses and scenario selection."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        198,
+                        1617,
+                        1249,
+                        1696
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                1617,
+                                1249,
+                                1696
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        1617,
+                                        1249,
+                                        1696
+                                    ],
+                                    "type": "text",
+                                    "content": "Index Terms—automated driving, motion prediction, safety validation, scenario- based testing, scenario selection"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        561,
+                        1749,
+                        889,
+                        1791
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                561,
+                                1749,
+                                889,
+                                1791
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        561,
+                                        1749,
+                                        889,
+                                        1791
+                                    ],
+                                    "type": "text",
+                                    "content": "I. INTRODUCTION"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        204,
+                        1818,
+                        1249,
+                        2164
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                1818,
+                                1249,
+                                2164
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        1818,
+                                        1249,
+                                        2164
+                                    ],
+                                    "type": "text",
+                                    "content": "Validating the safety of automated vehicles (AVs) is challenging. Their environment's complex and open nature prevents all- encompassing testing of AVs. Due to the rare nature of accidents, statistical safety validation based on representative routes of human drivers is not possible either [1]. Thus, AVs' validation requires targeted testing to uncover problems effectively and determine residual risks precisely [2], [3]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        204,
+                        2168,
+                        1249,
+                        2758
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                2168,
+                                1249,
+                                2758
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        2168,
+                                        1249,
+                                        2758
+                                    ],
+                                    "type": "text",
+                                    "content": "Which scenarios are risky differs from AV to AV, depending on the hardware and software. Thus, search- based techniques systematically vary scenarios and provoke critical behaviors [4]. Here, scenario- based testing provides the framework for variation [5]. First, a functional scenario is described in natural language, e.g., \"The AV (Ego) follows a curved road\". An associated logical scenario specifies open parameters and their ranges, e.g., "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2168,
+                                        1249,
+                                        2758
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "v_{\\mathrm{Ego}} \\in [8 \\frac{\\mathrm{m}}{\\mathrm{s}}, 16 \\frac{\\mathrm{m}}{\\mathrm{s}} ]"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2168,
+                                        1249,
+                                        2758
+                                    ],
+                                    "type": "text",
+                                    "content": ". Finally, concrete scenarios, e.g., "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2168,
+                                        1249,
+                                        2758
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "v_{\\mathrm{Ego}} = 9 \\frac{\\mathrm{m}}{\\mathrm{s}}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2168,
+                                        1249,
+                                        2758
+                                    ],
+                                    "type": "text",
+                                    "content": ", are parameterized within the logical scenario. Here, data of executed concrete scenarios are used to perform predictive analyses for further concrete scenarios and select relevant concrete scenarios for execution."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        198,
+                        2765,
+                        1246,
+                        2907
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                2765,
+                                1246,
+                                2907
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        2765,
+                                        1246,
+                                        2907
+                                    ],
+                                    "type": "text",
+                                    "content": "However, the description of scenarios by parameters has limitations. Conventional techniques for predictive analyses cannot be used across logical and functional scenarios as "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1297,
+                                904,
+                                2343,
+                                1247
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        904,
+                                        2343,
+                                        1247
+                                    ],
+                                    "type": "text",
+                                    "content": "their parameters vary considerably. Thus, the search for relevant concrete scenarios starts anew for each functional and logical scenario. Furthermore, real- world scenarios may only be described inadequately by parameters since, e.g., the road geometry can be arbitrarily complex [6]–[8]. Thus, it is unclear what behavior to expect in real- world tests, and the comparison of AVs' behavior in tests and real- world scenarios is restricted."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        1297,
+                        904,
+                        2343,
+                        1247
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 10,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1297,
+                        1254,
+                        2343,
+                        1448
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                1254,
+                                2343,
+                                1448
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1254,
+                                        2343,
+                                        1448
+                                    ],
+                                    "type": "text",
+                                    "content": "This paper explores how a uniform scenario description and predictive analyses across logical, functional, and real- world scenarios can be achieved. Motion prediction techniques are examined as possible solutions. Our main contributions are:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1336,
+                        1461,
+                        2346,
+                        1808
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1336,
+                                1461,
+                                2346,
+                                1808
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1336,
+                                        1461,
+                                        2346,
+                                        1808
+                                    ],
+                                    "type": "text",
+                                    "content": "- A vectorized scenario description suitable for diverse and complex concrete scenarios and (predictive) analyses.- The integration of motion prediction into scenario-based testing, enabling comprehensive predictive analyses across functional, logical, and real-world scenarios.- The implementation and investigation of our approach using the motion prediction model VectorNet [9]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        1639,
+                        1844,
+                        2001,
+                        1890
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1639,
+                                1844,
+                                2001,
+                                1890
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1639,
+                                        1844,
+                                        2001,
+                                        1890
+                                    ],
+                                    "type": "text",
+                                    "content": "II. RELATED WORK"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1295,
+                        1907,
+                        2343,
+                        2059
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1295,
+                                1907,
+                                2343,
+                                2059
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1295,
+                                        1907,
+                                        2343,
+                                        2059
+                                    ],
+                                    "type": "text",
+                                    "content": "Below, we discuss the essential artifacts in scenario- based testing and assess their suitability as a basis for predictive analyses. The lower part of Fig. 1 illustrates these artifacts."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                },
+                {
+                    "bbox": [
+                        1295,
+                        2088,
+                        2210,
+                        2131
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1295,
+                                2088,
+                                2210,
+                                2131
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1295,
+                                        2088,
+                                        2210,
+                                        2131
+                                    ],
+                                    "type": "text",
+                                    "content": "A. From Functional Scenarios to Concrete Scenarios"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1297,
+                        2151,
+                        2343,
+                        2445
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                2151,
+                                2343,
+                                2445
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2151,
+                                        2343,
+                                        2445
+                                    ],
+                                    "type": "text",
+                                    "content": "Functional scenarios are described in natural language [5] and can be supported by sketches [10]. Thus, functional scenarios are human- readable, but their representation and abstraction limit their suitability as a data basis for predictive analyses. Similar limitations apply to abstract scenarios [10], which we do not discuss further due to their low prevalence."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "bbox": [
+                        1297,
+                        2448,
+                        2343,
+                        2993
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                2448,
+                                2343,
+                                2993
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2448,
+                                        2343,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": "Logical scenarios complement functional scenarios with "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2448,
+                                        2343,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N_{I}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2448,
+                                        2343,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " influencing parameters [5], which we denote by inputs "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2448,
+                                        2343,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x \\in \\mathbb{R}^{N_{I}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2448,
+                                        2343,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": ". Furthermore, lower and upper bounds of "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2448,
+                                        2343,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2448,
+                                        2343,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " or the distribution "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2448,
+                                        2343,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p(x)"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2448,
+                                        2343,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " are determined. For a specific functional scenario, different logical scenarios can exist if influences are modeled differently in different test setups or are not controllable. E.g., fog may be modeled by noise in a 2D simulation, rendered in a 3D simulation, or real but not controllable in a field test. Due to their open nature, logical scenarios cannot be directly processed but they provide the structure for predictive analyses and search- based techniques."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 17
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

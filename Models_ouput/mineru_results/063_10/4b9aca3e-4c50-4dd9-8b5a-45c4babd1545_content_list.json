@@ -1,0 +1,109 @@
+[
+    {
+        "type": "text",
+        "text": "where $\\zeta _ { n }$ is a primitive $n$ -th root of1 in $\\mathbb { C }$ . Studying on cyclotomic polynomials, O. Holder $\\mathbb { H } \\mathrm { \\overleftrightarrow { o l . 3 6 } } \\mathbb { I }$ showed that the sum $c _ { n } ( m )$ has a nice closed form in terms of the Euler and Mobius functions.Denote $\\varphi$ the Euler's totient function and $\\mu$ theMobiusfunction. We present it in the following lemma where the right-hand side is also called von Sterneck function $\\mathbb { S } ^ { \\mathrm { t e O 3 } }$ ．A proof is given below to the readers for convenience.For different proofs,one refers to [AA53], [Mol52] and [HW08 Theorem 272]. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 3.2. Let $n \\in \\mathbb { N }$ and $m \\in \\mathbb { Z }$ Then ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/75315c107186b1f88177f5bcde185b4c7d27e750a498821f7b4c90c6f87f2438.jpg",
+        "text": "$$\nc _ { n } ( m ) = \\mu \\left( { \\frac { n } { ( n , m ) } } \\right) { \\frac { \\varphi ( n ) } { \\varphi \\left( { \\frac { n } { ( n , m ) } } \\right) } } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. First of all,suppose that $m = 1$ . Recall an elementary formula that ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/6cd476a26f5bc052dd1b27101215bdbac59adce034a855e183ba75b7773fc51b.jpg",
+        "text": "$$\n\\sum _ { k \\mid r } \\mu ( k ) = { \\left\\{ \\begin{array} { l l } { 1 } & { { \\mathrm { i f ~ } } r = 1 ; } \\\\ { 0 } & { { \\mathrm { i f ~ } } r > 0 , } \\end{array} \\right. }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "for $r \\in \\mathbb { N }$ ([Bur11, Theorem 6.6]). Then ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/efba76c311055bb848f746a5644731878c0be6c2115ac4f176f15eb87333dcf7.jpg",
+        "text": "$$\nc _ { n } ( 1 ) = \\sum _ { t = 1 } ^ { n } \\zeta _ { n } ^ { t } \\sum _ { k | ( t , n ) } \\mu ( k ) = \\sum _ { k | n } \\mu ( k ) \\sum _ { 1 \\leq t \\leq n , \\atop k | ( t , n ) } \\zeta _ { n } ^ { t } = \\sum _ { k | n } \\mu ( k ) \\sum _ { 1 \\leq t ^ { \\prime } \\leq { \\frac { n } { k } } } ( \\zeta _ { n } ^ { k } ) ^ { t ^ { \\prime } }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\begin{array} { r } { t ^ { \\prime } = \\frac { t } { k } } \\end{array}$ . Since $\\zeta _ { n } ^ { k }$ is a primitive $\\frac { n } { k }$ -th root of 1, the last sum gives 1 if $k = n$ and O if $k < n$ .Hence, $c _ { n } ( 1 ) = \\mu ( n )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For general $m \\in \\mathbb { Z }$ , we rewrite $c _ { n } ( m )$ as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/0db5d033bc8b96a559429fadac8a0cc7140f9a9ed34d6c9539611428db0e7c21.jpg",
+        "text": "$$\nc _ { n } ( m ) = \\sum _ { t \\in ( \\mathbb { Z } / n \\mathbb { Z } ) ^ { \\times } } z ^ { t }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $z = \\zeta _ { n } ^ { m }$ .Let $\\begin{array} { r } { d = \\frac { n } { ( n , m ) } } \\end{array}$ Recall that $( \\mathbb { Z } / n \\mathbb { Z } ) ^ { \\times } = M \\cdot N$ where $M$ and $N$ are given in Lemma $| 3 . 1 | .$ Note that $z = \\zeta _ { n } ^ { m }$ is a primitive $d$ -th root of 1 since $\\begin{array} { r } { \\left( d , \\frac { m } { ( n , m ) } \\right) = 1 } \\end{array}$ .Hence, ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/3545e23bd918bfe4335a7bffd453975aa815cafd594b78c027c468a470110173.jpg",
+        "text": "$$\nc _ { n } ( m ) = \\sum _ { t _ { 1 } \\in M } \\sum _ { t _ { 2 } \\in N } z ^ { t _ { 1 } t _ { 2 } } = \\sum _ { t _ { 1 } \\in M } | N | z ^ { t _ { 1 } } = | N | c _ { d } ( 1 ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now, the result follows from $\\begin{array} { r } { | N | = \\frac { \\varphi ( n ) } { \\varphi ( d ) } } \\end{array}$ and $c _ { d } ( 1 ) = \\mu ( d )$ by the first paragraph. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note that $( n , m ) = ( n , ( n , m ) )$ . Thus, we have the following immediate consequence. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Corollary 3.3. Let $n \\in \\mathbb { N }$ and $m \\in \\mathbb { Z }$ Then $c _ { n } ( m ) = c _ { n } ( ( n , m ) )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "As a consequence, we note that if $m ^ { \\prime }$ is an integer such that $m ^ { \\prime } \\equiv m { \\pmod { n } }$ ,then we conclude from Corollary $\\overline { { \\left[ 3 . 3 \\right] } }$ that $c _ { n } ( m ^ { \\prime } ) = c _ { n } ( m )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The following decomposition of a Cartesian product is useful for counting pairs of integers. Roughly speaking, the product below is partitioned by parallel lines on $\\mathbb { Z } \\times \\mathbb { Z }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 3.4. Let $n \\in \\mathbb { N }$ and let $I = \\{ 1 , 2 , \\ldots , n - 1 \\}$ .For every $a , b \\in \\mathbb { Z }$ ,we have ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/eb4e601ef5988543881f05926aa4a1df1daf49e276b87e83f87cf4ec4d595893.jpg",
+        "text": "$$\nI \\times I =  { \\downarrow \\atop { d \\mid n \\ 1 \\leq t \\leq \\frac { n } { d } }  } _ { ( t , \\frac { n } { d } ) = 1 } \\{ ( x , y ) \\in I \\times I \\ \\middle | \\ a x + b y \\equiv t d \\quad ( \\mathrm { m o d \\ } n ) \\} .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

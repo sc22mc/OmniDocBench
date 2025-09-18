@@ -1,0 +1,37 @@
+[
+    {
+        "type": "text",
+        "text": "$\\left( Q _ { i } , \\Sigma , \\delta _ { i } \\right)$ to be isomorphic to $\\mathcal { A }$ forany $i \\in \\mathbb N$ .Firstwedescribeaconstruction thatisaciphertext. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Define an automaton $\\mathcal { P } = ( \\{ p _ { 1 } , p _ { 2 } , . . , p _ { | u | + 1 } \\} , \\{ 0 , 1 \\} , \\gamma )$ where $\\gamma$ is defined as follows:for $i \\in \\{ 1 , . . , | u | + 1 \\}$ set $\\gamma ( p _ { i - 1 } , u _ { i } ) = p _ { i }$ ，where $u _ { i }$ is $i$ -thletter ofa word $u$ . In other words we encode our plaintext in the form of a directed path, where consecutive edges correspond to the consecutive letters of the word $u$ ： Encryption consists of four steps: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. Compute $\\textstyle B = \\bigcup _ { i = 1 } ^ { | u | + 1 } { \\mathcal { A } } _ { i }$ and denote $\\textstyle \\bigcup _ { i = 1 } ^ { | u | + 1 } \\delta _ { i } = \\rho$ $\\textstyle P = \\bigcup _ { i = 1 } ^ { | u | + 1 } Q _ { i }$ 2.for any transition $( p _ { i } , p _ { j } )$ in $\\mathcal { P }$ ,labelled with a letter $x \\in \\{ 0 , 1 \\}$ choose any pair of states $q ^ { i } \\in Q _ { i }$ and $q ^ { j } \\in Q _ { j }$ ,and set $\\rho ( q ^ { i } , x ) = q ^ { j }$ ， 3. for all $i \\in \\{ 1 , . . , | u | + 1 \\}$ and for every letter $a \\in \\Sigma$ ,if $q ^ { i } \\in Q _ { i }$ and $\\delta ( q ^ { i } , a )$ is undefined,thenchooseany $j$ and any state $q ^ { j } \\in Q _ { j }$ and set $\\rho ( q ^ { i } , a ) = q ^ { j }$ ， 4. for all $i \\in \\{ 1 , . . , | u | + 1 \\}$ choose $k _ { i } \\in \\mathbb { N }$ Choose $k _ { i }$ pairs $( q _ { p } ^ { i } , q _ { r } ^ { i } )$ and a letter $x \\in \\{ 0 , 1 \\}$ and define $\\rho ( q _ { p } ^ { i } , x ) = q _ { r } ^ { i }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Automaton $\\boldsymbol { B }$ is our ciphertext.It is straightforward from the construction, that computing such automaton is polynomial in terms of $Q , \\Sigma$ and length of the plaintext.We also state two obvious observations. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Fact 2.After removing letters $x \\in \\{ 0 , 1 \\}$ from automaton $\\boldsymbol { B }$ we obtain a DFAover $\\Sigma$ ：",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Fact 3.Afterremoving letters $a \\in \\Sigma$ from automaton $\\boldsymbol { B }$ weobtainadigraph labelledwith letters $x \\in \\{ 0 , 1 \\}$ withlongest path between the vertices of length1. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Procedure of encrypting the word O1 is depicted on figures 3,4, 5 and 6. As a public key we take the automaton depicted on Figure 2. ",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,49 @@
+[
+    {
+        "type": "text",
+        "text": "Field-to-Field Coordinate-Based Segmentation Algorithm on Agricultural Harvest Implements ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Sean J. Harkin,Tomas Crotty $\\textcircled { 1 0 }$ , John Warren $\\textcircled { \\scriptsize { 1 } }$ ,Conor Shanahan $\\textcircled{1}$ ,Edward Jones $\\textcircled{1}$ ,Senior Member,IEEE. Martin Glavin $\\textcircled { 1 }$ ,Member, IEEE,and Dallan Byrne $\\textcircled{1}$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract-Establishing and maintaining farmland geometric boundaries is crucial to increasing agricultural productivity.Accurate field boundaries enable farm machinery contractors and otherfarm stakeholdersto calculate charges,costsand to examine machineryperformance.Fieldsegmentationistheprocessbywhich agricultural field plots are geofenced into their individual field geometric boundaries.Thispaper presentsanovel coordinate-based method to perform trajectory segmentation and field boundary detection from a tractor towing an implement.The main contribution of this research isa practical, robust algorithm which can solvefor challenging field-to-field segmentation cases where the operator engages the towed implementcontinuously across several fields.The algorithm first isolates raw machinery trajectory data into unique job sites by using a coarse filter on geolocation data and implement power-take off activation.Next,the coordinate data is plotted and image processing techniques are applied to erode any pathway(s) that may present in job siteswith adjacent working fields.Georeferenced time series tractorand implement data were aggregated from a five-month-long measurement campaign of a silagebaling season in Galway,Ireland.The algorithm was validated against twouniquemachinery implement datasets,which combined, containa mixtureof296 road-to-field and 31 field-tofield cases.The results demonstrate that thealgorithmachieves an accuracy of $100 \\%$ onabalerimplementdatasetand $9 8 . 8 4 \\%$ ona mowerimplement dataset.The proposed algorithmisdeterministic and doesnot require anyadditional labor, land traversal or aerial surveillance to produce results with accuracy metrics registering above $98 \\%$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "IndexTerms-Agricultural machinery trajectorydata, agricultural parcel delineation,field efficiency analysis,field segmentation,global navigation satellite system (GNSS),global positioning system (GPS),towed implement machinery. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "I.INTRODUCTION ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "FIELbozundarydelinratin isas.IntheEucompon entof (EU),for example,all member states are signed up to a land parcel identification system (LPIS) database to record agricultural parcels [1]. An agricultural parcel is defined as a continuous area of land enclosed bya boundary that includes no more than one crop group [1]. The LPIS database is used as an administrative tool to aid in setting environmental policies and inform subsidy management bodies such as the Common Agricultural Policy (CAP) [2].Field boundary databases,like LPIS,must be maintained to preserve their quality over time to ensure the correct distribution of annual agricultural subsidies to farmers [3]. Currently, there are three main regulatory paths to update models.1)Farmers correct preprinted forms.2)Farmland site visits (which are precise,but scale with cost).3) Systematic updates by service providers to the state,e.g.,remote sensing [3]. However, day-to-day changes in the landscape,misdeclaration of boundary areas,or obsolete orthophotos make an exact match forregistered land boundaries to actual up-to-date field boundaries difficult to achieve [3]. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A significant proportion of precision agriculture (PA） systems,designed for farmland and crop management, depend on accuratelymaintained geofences to function[4].These systems require that farm input data be segmented,to at least field level, asprior knowledge for information management [5] and data processing [6]. Commercial field boundary delineation services are available to farm stakeholders [7],[8]. These services generallyuse fieldboundarydatabases derived fromsatelliteimagery. Alternatively,they require that customers upload geodata (such as.gis files) or delineate the field boundaries manually, using a sketchingsoftwaretool. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Field boundaries may be integrated with machinery data for insight on crop and machine performance.Platforms such as ISOBlue 2.0 [9] and Cropinfra [10] provide methods to combine global navigation satellite system (GNSS) data with captured controller area network (CAN) data. Commercial operators may also provide their own in-house machinery tracking solution [11]. This facilitates access to spatio-temporal data in which the entire positional history (spatial locations with timestamps) of the moving object is recorded [12]. The spatiotemporal path of an object is also known as its trajectory. To analyze an object’s trajectory,the trajectory data must be input as a structured recording of movement [13]. Trajectory analysis opportunities in agricultural machinery include obtaining detailed information on machinery performance,setings and errors [14].Field efficiency for an episode of work [15], [16],or activity at specific points within a field [17] can also ",
+        "page_idx": 0
+    }
+]

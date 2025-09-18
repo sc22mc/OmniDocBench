@@ -1,0 +1,49 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/2903ee8b6d23ee627aa8962cf42ba8b8104e6c39264e45fc249a2ec880ad5855.jpg",
+        "image_caption": [
+            "Figure 1: An overview for our data construction pipeline in three steps."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Using strong LLMs (usually closed- source ones, e.g., GPT- 4, Claude, ChatGPT) as an automated proxy for assessing LLMs has become a natural choice (Zhou et al. 2023). With appropriate prompt design, the quality of evaluation and agreement to human judgment can be promising (Dubois et al. 2023; Zheng et al. 2023; Zhang et al. 2023; Wang et al. 2023a). However, the cost concern still exists when calling the APIs of these proprietary models, especially when there is a frequent need for model validation on large- scale data. Moreover, closed- source evaluation leads to low reproducibility due to potential changes in models behind the API. Some recent works have started to make attempts for open- source alternatives. SelFee (Ye et al. 2023) collects generations, feedback, and revised generations from ChatGPT and fine- tunes LLaMA models to build a critique model. Shepherd (Wang et al. 2023b) trains a model that can output critique for single- response with the data of feedback from online communities and human annotation. PandaLM (Wang et al. 2023c) trains a model to conduct pairwise comparison for LLM Instruction Tuning Optimization, and Zheng et al. (2023) also fine- tune Vicuna (Chiang et al. 2023) on a 20K pairwise comparison dataset to explore the potential of open- source models as a more cost- friendly proxy.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.2 META-EVALUATION TESTBED FOR LLM EVALUATORS",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Besides the evaluators themselves, there is also a practical need to construct a comprehensive testbed to meta- evaluate them (i.e., assessing the quality of their evaluation). In Zheng et al. (2023), MTBench and Chatbot Arena Conversations are proposed. The former has only 80 human- crafted queries, each with several LLMs' responses and expert- level human annotation on pairwise comparison; the latter is a large collection of crowdsourced data, with more than 30K queries from real- world users and their vote on pairs of responses from different LLMs. FairEval (Wang et al. 2023a) is based on the 80 queries from VicunaBench (Chiang et al. 2023) with human annotated labels between ChatGPT and Vicuna responses. PandaLM (Wang et al. 2023c) constructs a test set comprising 999 pairwise samples, with queries from 252 user- oriented instructions in Wang et al. (2022). LLMEval (Zhang et al. 2023) is much larger than the previous two, with 2,553 samples compiled from multiple data sources with human- annotated preferences. Shepherd (Wang et al. 2023b) collects 352 samples from multiple sources for its critique model as a test set to evaluate the quality of the critiques.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3 DATA CONSTRUCTION",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We construct data from massive real- world scenarios with high- quality evaluation judgments for both training and testing. The data construction pipeline involves three main steps: (1) defining evaluation scenario and criteria, (2) collecting real- world queries and responses from different models for these scenarios and (3) generating desired evaluation judgments for different evaluation protocols. An overview of our data construction pipeline is shown in Fig. 1",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.1 SCENARIO AND CRITERIA DEFINITION",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Scenario We define 58 scenarios (including one \"others\" scenario), categorized into eight major groups: Summarization, Exam Questions, Code, Creative Writing, Functional Writing, Rewriting,",
+        "page_idx": 0
+    }
+]

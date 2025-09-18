@@ -1,0 +1,51 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/d949b156a09387d72d9983a0a0642b5a590544e958c226d8ff7bea0eb9038355.jpg",
+        "image_caption": [
+            "Fig.7. Examples of the algorithm output on the Baler dataset. Segmented fields are denoted by their color. (a) Baler site 22. (b) Baler site 23. (c) Baler site 35. (d) Baler site 39. (e) Baler site 77. (f) Baler site 97. (g) Baler site 119. (h) Baler site 135."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/5aeb5671c25d676930ff3a128dd5358394d73c9850aa43248b30a2391acde1c1.jpg",
+        "image_caption": [
+            "Fig.8. Examples of the algorithm output on the Mower dataset. Segmented fields are denoted by their color. (a) Mower site 3. (b) Mower site 38. (c) Mower site 75. (d) Mower site 78. (e) Mower site 110. (f) Mower site 135. (g) Mower site 153. (h) Mower site 165."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "site. This occurs because the operator does not complete a loop of the outer perimeter as seen in Fig. 9(a). The product is a field object that is not fully formed. The remaining steps of Stage II cannot function correctly. The result is several foreground areas that do not meet the minimum area requirement to be considered valid fields, as seen in Fig. 9(c). Similarly, the operator does not loop the field perimeter for the single field site shown in Fig. 10. However, in this scenario, the job site is detected as a conjoined field site and over- segmented by the algorithm, and thus labeled as a false positive.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The algorithm can mislabel coordinates at the field corners as path points; examples can be seen in the bottom right- hand corners of Fig. 7(c) and 8(a). This can occur at the field corners when the machinery operator takes a sharp turn. The points are mislabeled due to unrestored boundary pixels introduced by the erosion and dilation operation in Stage II. This problem was identified but not pursued, as it did not affect the core objective of the article, which was to solve for conjoined field segmentation cases in machinery trajectory data.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Overall, the algorithm performs robustly on different machinery implementation datasets obtaining  $100\\%$  and  $98.84\\%$  on a baler and mower dataset, respectively. The results have demonstrated that the algorithm presented in this article is suitable to solve both road- to- field and field- to- field cases.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. Field Analysis",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Baler and mower field efficiency histogram plots are shown in Fig. 11 to illustrate the opportunity, offered by the algorithm, to analyze job site machinery operating data at a field- level.",
+        "page_idx": 0
+    }
+]

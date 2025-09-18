@@ -1,0 +1,89 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/1b5a3578c73dccd646d2934e67bc30bc4ac2ddd51e3c7049be9f43a32ced0c81.jpg",
+        "image_caption": [
+            "Fig. 2. Parametric representations of the scenarios (a) adaptive cruise control (ACC), \"The Ego follows the Co on a straight road,\" (b) lane keeping (LK, \"The Ego follows a curved road\"), and (c) ACC&LK (\"The Ego follows the Co on a curved road.\"). The center of the lanes in (b) and (c) follows a polynomial of  $3^{\\mathrm{rd}}$  degree. In (a) and (c), the Co starts from its initial  $x$ -coordinate  $x_{\\mathrm{CO}}$  with a velocity of  $v_{\\mathrm{CO}}$ . After a time of  $t_{v}$ $C_0$ , it decelerates with  $a_{\\mathrm{CO}}$  for  $t_{a}$ $C_0$ . The Ego's initial velocity  $v_{\\mathrm{Ego}}$  is varied in all scenarios. More details about the variation are given in Section IV-A. As a result of the execution, evaluation metrics are calculated: the Ego's minimum deceleration  $a_{\\mathrm{min}}$ , the Ego's maximum lateral position  $p_{\\mathrm{lat}}$  max, and the vehicles' minimum distance  $d_{\\mathrm{min}}$ ."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/c16eed6925863ed428b095be70d2fc1cdd9a82a399af85c8bbde29f840c793f8.jpg",
+        "image_caption": [
+            "Fig. 3. Vectorized representations of the above scenarios. The scenarios are defined by the static environment (lanes, gray), the dynamic environment (Co, purple), and the Ego's initial pose and velocity (blue). The execution determines the trajectory of the Ego, which can be utilized to calculate evaluation metrics as the ones in Fig. 2. To account for interactions between the Ego and Co(s), trajectories of Co(s) may also result from execution (see Section VI)."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "sensor noise). Considering scenarios' elements [21], such a translation works for environmental conditions, which parameters can characterize. Digital information is specific to the AV under test and will mostly not change. However, the road network and traffic guidance objects (layer 1 (L1)), roadside structures (L2), temporary modifications of L1 and L2 (L3), and dynamic objects (L4) cannot be described well by parameters. Hence, translating between concrete scenarios' representations might not be possible for changes in L1 to L4.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3) Transfer Across Functional Scenarios: A change of the functional scenario mostly leads to changes in L1 to L4 and evaluation metrics. Therefore, a transfer of data can not be handled by the discussed search-based techniques.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "III. INTEGRATING SCENARIO-BASED TESTING AND MOTION PREDICTION",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This section illustrates the previously described problems with an example and presents an approach to solving them. Considering the three functional scenarios in Fig. 2 it is desirable that data from the scenarios adaptive cruise control (ACC) and lane keeping (LK) allow to predict the scenario ACC&LK's outcomes. However, the different logical scenarios and evaluation metrics stand against such a transfer. To enable the transfer of data across different functional (and hence logical) scenarios, metamodels must get more information than just concrete scenarios and evaluation metrics. To implement this, we propose scenario embeddings.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. From Concrete Scenarios to Scenario Embeddings",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "An embedding can be defined as \"a relatively low- dimensional space into which you can translate high dimensional vectors\" [22]. Since the instantiated scenario cannot be described by structured data, we create scenario embeddings holding information added during the transition from concrete to instantiated scenarios. Thereby, scenario embeddings can be created without (costly) scenario execution.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A scenario embedding can have various representations. To cover changes in L1 to L4, rendered or vectorized representations from motion prediction are particularly suitable [23] (see upper part of Fig. 3). In [6]–[8], such representations are used to generate synthetic scenarios based on real scenarios. However, the behavior of an Ego and the resulting criticality are not considered. Our approach is thus complementary, enabling predictive analyses for synthetic scenarios as well.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Since vectorized representations are characterized by a high level of detail and computational efficiency [23], we choose a vectorized scenario description for our scenario embeddings.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. From Evaluation Metrics to Trajectories",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To allow for the transfer of data across different evaluation metrics, scenarios' outcomes must be captured in a uniform representation independent of the utilized evaluation metrics. To assess the criticality of scenarios, most evaluation metrics are calculated based on the trajectories of the Ego and other objects. Since the static and dynamic environment of the Ego is already modeled in the scenario embedding, we consider the Ego's trajectory the product of the execution (see lower part of Fig. 3), allowing for the calculation of evaluation metrics.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. Motion Prediction for Scenario-Based Testing",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Fig. 1 shows that predictive analyses require trajectories to be predicted based on scenario embeddings. A model suitable",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,95 @@
+[
+    {
+        "type": "text",
+        "text": "arbitrary convex body $K$ , by approximation4 (see[Sch, Theorem 4.1.1,Theorem 4.2.1]). In this case, the integral formula 1 holds by definition for polytopes,and is deduced (in general) from continuity of mixed volumes,and of ( $L \\mapsto S _ { L }$ ） ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Recall that if $\\Omega$ is a closed subset of $\\mathbb { S } ^ { n - 1 }$ ,and $g$ is a continuous function on $\\Omega$ ,the Wulff-shape with respect to $( \\Omega , g )$ is the convex body $W ( \\Omega , g ) \\ : = \\ : \\bigcap _ { u \\in \\Omega } \\{ x \\in \\mathbb { R } ^ { n } \\colon \\langle x , u \\rangle \\leq g ( u ) \\}$ Let $S _ { K }$ be the surface area measure of $K$ . More specifically, if $K$ is a convex body, $\\Omega$ a closed subset of $\\mathbb { S } ^ { n - 1 }$ ,if $s u p p ( S _ { K } ) \\subset \\Omega$ and if $f : \\Omega \\to \\mathbb { R }$ is a continuous function, then we denote $( W _ { t } ) _ { t } = ( W ( \\Omega , h _ { K } + t f ) ) _ { t }$ the family of Wulff-shape perturbations of $K$ associated with $( \\Omega , f )$ . Note that there exists $t _ { 0 } = t _ { 0 } ( K ) < 0$ such that $V _ { n } ( W _ { t } ) > 0$ for all $t > t _ { 0 }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "When $\\Omega = \\mathbb { S } ^ { n - 1 }$ , we denote $W ( g ) = W ( \\mathbb { S } ^ { n - 1 } , g )$ the corresponding Wulff-shapes. Seefor instance [SSZ2,Theorem 1.1] where Wulff-shape perturbations (with $\\Omega = \\mathbb { S } ^ { n - 1 }$ ）were used to derive a characterization of $n$ -simplices as the only convex bodies $K$ such that $G _ { K } \\ge 0$ ,where $G _ { K }$ is the multi-linear form on $( K ^ { n } ) ^ { n }$ defined by $G _ { K } ( A _ { 1 } , . . . , A _ { n } ) = V _ { n } ( A _ { 1 } , K [ n - 1 ] ) V _ { n } ( K , A _ { 2 } , . . . , A _ { n } ) - V _ { n } ( A _ { 1 } , . . . , A _ { n } ) V _ { n } ( K )$ ： ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The following theorem is known as Alexandrov's variational lemma. We refer to [All] for ε proof, see also [Sch, Lemma 7.4.3]. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Theorem 3. Assume $K$ is a convex body， $s u p p ( S _ { K } ) \\subset \\Omega$ ，and $f \\in \\mathcal { C } ( \\Omega , \\mathbb { R } )$ For $t \\in \\mathbb R$ ，denote $W _ { t } = W ( \\Omega , h _ { K } + t f )$ . Then ( $t \\mapsto V _ { n } ( W _ { t } )$ ）is differentiable at $0$ ，and ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/3d1b061d2dd84df4d8df056c11660ecad2ae59971281ac215cc8df9712581d6e.jpg",
+        "text": "$$\n\\frac { \\mathrm { d } V _ { n } ( W _ { t } ) } { \\mathrm { d } t } \\bigg | _ { t = 0 } = \\operatorname* { l i m } _ { t  0 } \\frac { V _ { n } ( W _ { t } ) - V _ { n } ( K ) } { t } = \\int _ { \\mathbb { S } ^ { n - 1 } } f ( u ) d S _ { K } ( u ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Minor modifications of the proof of the above theorem,yields a similar statement in terms of (first）mixed volumes,as follows. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 1 (Alexandrov's variational lemma for mixed volume). Assume $K$ is a convex body, $s u p p ( S _ { K } ) \\subset$ $\\Omega$ ，and $f \\in \\mathcal { C } ( \\Omega , \\mathbb { R } )$ . Denote $W _ { t } = W ( \\Omega , h _ { K } + t f )$ ， $t \\in \\mathbb R$ .Denote $V _ { 1 } ( t ) = V _ { n } ( W _ { t } , K \\vert n - 1 \\vert )$ Then ( $t \\mapsto V _ { 1 } ( t )$ isdifferentiable $\\mathrm { 5 }$ at $0$ ，and: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/49d3de9a1536af2bd0289b148eba49b59dae3397051f17808ee1afa88dbfe78e.jpg",
+        "text": "$$\n\\frac { \\mathrm { d } V _ { 1 } ( t ) } { \\mathrm { d } t } \\bigg | _ { t = 0 } = \\operatorname* { l i m } _ { t  0 } \\frac { V _ { 1 } ( t ) - V _ { n } ( K ) } { t } = \\frac { 1 } { n } \\int _ { \\mathbb { S } ^ { n - 1 } } f ( u ) d S _ { K } ( u ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Fix $K , \\Omega$ and $f$ (as above)，and let $t _ { 0 } = \\mathrm { s u p } \\{ t < 0 : | W _ { t } | _ { n } = 0 \\} < 0$ Denote $( W _ { t } ) _ { t }$ the associated family of Wulf-shape perturbations. One can easily check that for any $u \\in \\mathbb { S } ^ { n - 1 }$ ,the map $( t \\mapsto h _ { W _ { t } } ( u )$ ）is concave on $] t _ { 0 } , + \\infty [$ .In particular,this map is both left and right-differentiable at $t = 0$ .In fact,Lemma $1$ allows to draw a more precise conclusion here. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 2. Let $( W _ { t } ) _ { t }$ be Wulff-shape perturbations of a given convex body $K$ ， with respect to $( \\Omega , f )$ Then for $S _ { K }$ -almost every $u \\in \\mathbb { S } ^ { n - 1 }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/322d142486786329f1d3790a5bbc43f8c38df78d738ce6af5a42260c852f440e.jpg",
+        "text": "$$\n\\frac { \\mathrm { d } h _ { W _ { t } } ( u ) } { \\mathrm { d } t } \\bigg | _ { t = 0 } = \\operatorname* { l i m } _ { t  0 } \\frac { h _ { W _ { t } } ( u ) - h _ { K } ( u ) } { t } = f ( u ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We leave a proof of this pointwise convergence lemma in appendix,see also [SSZ2, Theorem 4.1] where the statement was derived from Alexandrov's variational lemma (Theorem 3).We will need Lemma 2 below, for the proof of Proposition 1. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Finally, it willbe convenient to introduce the following definition. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Definition 4. For $K \\in K ^ { n }$ ,the Bezout constant is given by ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/707bea7db9f5f1e2fef2b79e8783704e67dd6610b5ca2b4cba574f7a4cf8b679.jpg",
+        "text": "$$\nb _ { 2 } ( K ) = \\operatorname* { s u p } \\frac { V _ { n } ( L _ { 1 } , L _ { 2 } , K [ n - 2 ] ) V _ { n } ( K ) } { V _ { n } ( L _ { 1 } , K [ n - 1 ] ) V _ { n } ( L _ { 2 } , K [ n - 1 ] ) } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where the supremum is over pairs of convex bodies $( L _ { 1 } , L _ { 2 } ) \\in ( K ^ { n } ) ^ { 2 }$ ",
+        "page_idx": 0
+    }
+]

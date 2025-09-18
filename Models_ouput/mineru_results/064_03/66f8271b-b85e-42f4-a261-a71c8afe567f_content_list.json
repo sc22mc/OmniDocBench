@@ -1,0 +1,72 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/2a2e61e0915430096a7e85738089dfd1cf41e4675e9fea4dcfe23bce4970feea.jpg",
+        "image_caption": [
+            "Figure2.ThepipelineofQR-CLIP.Ithas twomodules:Quantitymodule(Sec3.2)andRelevancemodule(Sec3.3).Instep1,weadd additionalCL]tomiicdiffentperspecivesofdifeentindiviualsandesitelocalandglobalstogudetelocatioie fine-tuning.Then,wfreezethefie-tunedCLIP-VandCLI-Tandusethemtosearchforopen-worldkowledgefromourOWKdataset (Sec4.1).IntheRelevance module,weuseascoring mechanism to weights themostvaluableinformationfromCLIP-TandCLIP-V. Aftermultiplyingthescoring weights forvisionand languageseparately,weaddthemforfinalsimilaritycalculation. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.2.Location and Time Reasoning ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Existing language models achieved significant success on a wide range of tasks that require an understanding of language (Kenton & Toutanova, 2019;Lewis et al.,2020). Also, thevisionmodels (He et al.,2016;Dosovitskiy et al., 2020; Liu et al.,2021) can predict the correct class label of an image from thousands of options.But they still struggle with manyreasoning tasks,such as discerning the abstractive meanings (e.g., time,location, event) of images (Yang et al., 2020; Tahmasebzadeh et al., 2021) or performing mathematical calculations (Lewkowycz et al., 2022) and science deduction (Degrave et al., 2O22). However, humans can do these things well because real brains are more powerful than artificial neural networks in many ways and actively learn to conduct abstract reasoning (Schmidhuber, 2015). We focus on location and time reasoning (Fu et al., 2022), which needsamodel to thinkand reasonbeyond theactual content of an image. Compared to other reasoning tasks,it differs in that most of the time there aren't enough visual cues to make inferences, so auxiliary knowledge is required. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.Approach ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.1.Preliminary ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Task Background. Current AI methods are comparably weak in deducing the abstract information hidden behind animage. The goal of thispaper is to let the model reason the location and time based on image input (Fu et al.,2022): Given an image $I$ ,we need the model $( \\mathbf { M } ( I ) )$ to predict the location $( { \\mathrm { P r e d } } _ { l } )$ and time $( { \\mathrm { P r e d } } _ { t } )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Horn's QR Theory. In cognitive research (Allott, 2013), it is believed that human reasoning is the process of obtaining the best correlations.The QR theory (Horn,1984) builds a more clear definition of the above correlations,where Q stands for the quantity principle,which requires the maximization of valuable content, and R means the relevance principle that requires the minimization of formand extracts most related information: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/981e1c126c0e22105bd30fbe600fa24dedfa993287c38535cf218eb8169fa77f.jpg",
+        "text": "$$\n\\mathrm { C o r r e l a t i o n } \\uparrow \\longleftrightarrow Q \\uparrow \\times R \\uparrow .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Therefore, we should simultaneously consider the quantity and relevance of information to achieve a higher correlation. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Our Pipeline. Following the human reasoning process, this paper proposes QR-CLIP. It is based on the contrastive language-image pretraining (CLIP) model (Radford et al., 2021),which was pre-trained with 4OoM internet data. The QR-CLIP is made up of the quantity module (Sec 3.2) and the relevance module (Sec 3.3). The quantity module aims to add diversity to the model’s outputs.Here,we introduce the additional [CLS] method,which aims to generate multiple distinct $[ \\mathrm { C L S } ] _ { i }$ to imitate different perspectives of a single image. The relevance module uses a scoring mechanism to weigh the retrieved open-world knowledge and image features to ensure the most relevant information and combine themfor final prediction. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.2.Quantity Module ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Additional [CLs].We employ CLIP (Radford et al.,2021) asour basic architecture.InvanillaCLIP,[CLS]isused to distinguish the input token that represents the whole input features which is a common practice in other trans",
+        "page_idx": 0
+    }
+]

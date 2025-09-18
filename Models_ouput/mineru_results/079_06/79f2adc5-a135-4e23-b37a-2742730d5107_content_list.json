@@ -1,0 +1,109 @@
+[
+    {
+        "type": "text",
+        "text": "It follows from Lemma 2 that h $_ { L _ { t } } ( u _ { 0 } ) - h _ { K } ( u _ { 0 } ) > t ( 1 - \\epsilon ) f ( u _ { 0 } ) = t ( 1 - \\epsilon )$ )，for $0 < t < t _ { 0 } ( \\epsilon )$ Also, ({u0 $\\begin{array} { r } { \\cdot ) = S ( M , K [ n - 2 ] , u _ { 0 } ) = V _ { n - 1 } ( M ^ { u _ { 0 } } , K ^ { u _ { 0 } } [ n - 2 ] ) = V _ { n - 1 } ( B _ { 2 } ^ { n - 1 } , F [ n - 2 ] ) = \\frac { | \\mathcal { O } ^ { t } | n - 2 } { n - 1 } , } \\end{array}$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Therefore,when $0 < t < t _ { 0 } ( \\epsilon )$ ：",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/bef23fea09624accde60d9b38d38a87b297722dd89d7ea26e22ad6f19e130e1a.jpg",
+        "text": "$$\nV _ { n } ( L _ { t } , M , K [ n - 2 ] ) - V _ { n } ( M , K [ n - 1 ] ) \\geq ( 1 - \\epsilon ) \\frac { t } { n ( n - 1 ) } | \\partial F | _ { n - 2 } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "On the other hand,for any $t > 0$ ：",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b4ab1cab942807fabd900b5ad7c9b48c4da0dc7cd2e8acdca3d7130fd25b8ce1.jpg",
+        "text": "$$\n\\begin{array} { l } { { \\displaystyle V _ { n } ( L _ { t } , K [ n - 1 ] ) - V _ { n } ( K ) = \\frac { 1 } { n } \\int ( h _ { L _ { t } } - h _ { K } ) ( u ) d S _ { K } ( u ) } } \\\\ { { \\displaystyle \\qquad \\leq \\frac { t } { n } \\int f ( u ) d S _ { K } ( u ) < ( 1 + \\epsilon ) \\frac { t } { n } | F | _ { n - 1 } . } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where the last inequality is by the choice of $f$ . Also,by monotonicity of mixed volumes : ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/fc2081599c0d56dbd06270ebca86fbe33bde1d7fc5c302c7b9f9cef3659507a1.jpg",
+        "text": "$$\nV _ { n } ( M , K [ n - 1 ] ) \\leq V _ { n } ( B _ { 2 } ^ { n } , K [ n - 1 ] ) = \\frac { 1 } { n } | \\partial K | _ { n - 1 } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We may now conclude by simple computations. For ease of notations, set $a _ { 2 } = V _ { n } ( L _ { t } , M , K [ n - 2 ] )$ $a _ { 0 } = V _ { n } ( K )$ ， $a _ { t } = V _ { n } ( L _ { t } , L \\vert n - 1 ] )$ and $a _ { m } = V _ { n } ( M , K [ n - 1 ] )$ .We shall show that $F _ { K } ( L _ { t } , M ) < 0$ ， which rewrites as $( a _ { t } - a _ { 0 } ) a _ { m } - ( a _ { 2 } - a _ { m } ) a _ { 0 } < 0$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Denote $b _ { 1 } = ( a _ { 2 } - a _ { m } ) a _ { 0 }$ and $b _ { 2 } = ( a _ { t } - a _ { 0 } ) a _ { m }$ ，so that $F _ { K } ( L _ { t } , M ) = b _ { 2 } - b _ { 1 }$ . The above lower and upper bounds give us : $\\begin{array} { r } { b _ { 1 } \\geq ( 1 - \\epsilon ) \\frac { t } { n ( n - 1 ) } | \\partial F | _ { n - 2 } | K | _ { n } } \\end{array}$ and $\\begin{array} { r } { b _ { 2 } \\leq ( 1 + \\epsilon ) \\frac { t } { n ^ { 2 } } | \\partial K | _ { n - 1 } | F | _ { n - 1 } } \\end{array}$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "It follows that : ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/85423b4ed7e5cc13271f6163ec300321552a336934a11e3a37880d2db406a76c.jpg",
+        "text": "$$\n\\begin{array} { l } { \\displaystyle { \\vec { \\tau } _ { K } ( L _ { t } , M ) \\le \\epsilon \\frac { t } { n } \\left( \\frac { | \\partial F | _ { n - 2 } | K | _ { n } } { n - 1 } + \\frac { | F | _ { n - 1 } | \\partial K | _ { n - 1 } } { n } \\right) - \\frac { t } { n } \\left( \\frac { | \\partial F | _ { n - 2 } | K | _ { n } } { n - 1 } - \\frac { | F | _ { n - 1 } | \\partial K | _ { n - 1 } } { n } \\right) } } \\\\ { \\displaystyle { \\le \\frac { t } { n } ( \\epsilon c - c _ { 0 } ) < 0 . } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Recall that $F _ { K } \\geq 0$ is an affine-invariant property. On the other hand,the quantity ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/49507dbfe89a3205b697c03dd1e936cb92e7344500d4b1419c40b9a5efac2c9c.jpg",
+        "text": "$$\n\\operatorname* { s u p } _ { F } \\frac { \\mathrm { I s o p } ( F ) } { \\mathrm { I s o p } ( K ) } = \\operatorname* { s u p } _ { F } \\frac { n | \\partial F | _ { n - 2 } | K | _ { n } } { ( n - 1 ) | F | _ { n - 1 } | \\partial K | _ { n - 1 } } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "7here the supremum isover the facets,isnot affne-invariant.Thus,the above propositionimmediately mplies the following one. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proposition 2. Let $K$ be a convex body such that one of its affne pairs $K ^ { \\prime } = T K$ has a facet $F ^ { \\prime }$ satisfying : ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/e44ed10b2f55a738d7cad0d6005a935e04a3132e6cb27f0d82df37f59eacfe2d.jpg",
+        "text": "$$\n\\frac { | \\partial F ^ { \\prime } | _ { n - 2 } } { ( n - 1 ) | F ^ { \\prime } | _ { n - 1 } } > \\frac { | \\partial K ^ { \\prime } | _ { n - 1 } } { n | K ^ { \\prime } | _ { n } } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Then $b _ { 2 } ( K ) > 1$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This yields that, if maxT supF Isop(TK) ，where the max is over $T \\in O ( n )$ ，then $b _ { 2 } ( K ) > 1$ Let us list specific examples.Throughout,we will denote $| \\cdot |$ for the Lebesgue measure (either of dimension $n$ ， $n - 1$ ,or $n - 2$ ） ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "a- The unit cube has volume 1,and so does any of its facet. Thus $| \\partial C _ { n } | = 2 n$ ，and $\\operatorname { I s o p } ( C _ { n } ) =$ $\\frac { | \\partial C _ { n } | } { n | C _ { n } | } = 2$ . Since each of its facets is a unit cube itself (of dimension $n - 1$ ), they also satisfy Isop(F) = 2. Therefore maxF Isop() ．But choose for $T$ the affine transform such that $T e _ { i } = e _ { i }$ for all $i \\neq 1$ ，and $T e _ { 1 } = 2 e _ { 1 }$ Let $C ^ { \\prime } = T C$ be the resulting box. Then, $\\frac { | \\partial F | } { ( n - 1 ) | F | } = 2$ for the facet with outer normal $e _ { 1 }$ ，while $\\operatorname { I s o p } ( C ^ { \\prime } ) = 2 - { \\frac { 1 } { n } }$ . It follows that $\\frac { \\mathrm { I s o p } ( F ) } { \\mathrm { I s o p } ( C ^ { \\prime } ) } > 1$ ,and hence $b _ { 2 } ( C ) = b _ { 2 } ( C ^ { \\prime } ) > 1$ ： ",
+        "page_idx": 0
+    }
+]

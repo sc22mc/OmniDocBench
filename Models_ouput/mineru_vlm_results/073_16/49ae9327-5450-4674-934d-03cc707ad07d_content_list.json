@@ -1,0 +1,63 @@
+[
+    {
+        "type": "text",
+        "text": "of lines 4 and 5 between these algorithms are proved as",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {\\left\\{ \\begin{array}{ll}x^{\\prime a_1|s_i}\\leftarrow x^{\\prime a_1|s_i} + \\gamma \\\\ \\mathbf{x}'\\leftarrow \\mathrm{Norm}(\\mathbf{x}')\\\\ \\Delta^{a_1|s_i}\\leftarrow \\frac{u^{\\mathrm{st}}(\\mathbf{x}',\\mathbf{y}) - u^{\\mathrm{st}}(\\mathbf{x},\\mathbf{y})}{\\gamma}\\\\ \\Leftrightarrow \\left\\{ \\begin{array}{ll}x^{\\prime a_1|s_i}\\leftarrow x^{\\prime a_1|s_i} + (1 - x^{\\prime a_1|s_i})\\gamma +O(\\gamma^2)\\\\ x^{\\prime a_2|s_i}\\leftarrow x^{\\prime a_2|s_i} - x^{\\prime a_2|s_i}\\gamma +O(\\gamma^2)\\\\ \\Delta^{a_1|s_i}\\leftarrow \\frac{u^{\\mathrm{st}}(\\mathbf{x}',\\mathbf{y}) - u^{\\mathrm{st}}(\\mathbf{x},\\mathbf{y})}{\\gamma}\\\\ \\Leftrightarrow \\left\\{ \\begin{array}{ll}x_i'\\leftarrow x_i' + (1 - x_i')\\gamma \\\\ \\Delta_i\\leftarrow \\frac{u^{\\mathrm{st}}(\\mathbf{x}',\\mathbf{y}) - u^{\\mathrm{st}}(\\mathbf{x},\\mathbf{y})}{\\gamma}\\\\ \\Leftrightarrow \\left\\{ \\begin{array}{ll}x_i'\\leftarrow x_i' + \\gamma \\\\ \\Delta_i\\leftarrow (1 - x_i')\\frac{u^{\\mathrm{st}}(\\mathbf{x}',\\mathbf{y}) - u^{\\mathrm{st}}(\\mathbf{x},\\mathbf{y})}{\\gamma} \\end{array} \\right. \\end{array} \\right. \\end{array} \\right.} \\end{array} \\right.} \\end{array} \\tag{A30}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here, we ignore terms of  $O(\\gamma^2)$  and use the definition of  $\\mathbf{x}$  (i.e.,  $x_{i}^{\\prime} = x^{\\prime a_{1}|s_{i}} = 1 - x^{\\prime a_{2}|s_{i}}$ ) between Eqs. (A31) and (A32). Thus, we use the continualized version of this algorithm;",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\dot{\\pmb{x}} = \\pmb {x}\\circ (\\mathbf{1} - \\pmb {x})\\circ \\frac{\\partial}{\\partial\\pmb{x}} u^{\\mathrm{st}}(\\pmb {x},\\pmb {y}). \\tag{A34}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B.2 Approximation of learning dynamics",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In Section 4.2 and 5.1, we introduce a method to approximate the learning dynamics up to  $k$  - th order terms for deviations from the Nash equilibrium. The stationary state condition of the one- memory two- action game is given by",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {\\pmb{p}^{\\mathrm{st}} = \\pmb {M}\\pmb{p}^{\\mathrm{st}},}\\\\ & {\\pmb {M} = \\left( \\begin{array}{llll}x_{1}y_{1} & x_{2}y_{2} & x_{3}y_{3} & x_{4}y_{4}\\\\ x_{1}\\tilde{y}_{1} & x_{2}\\tilde{y}_{2} & x_{3}\\tilde{y}_{3} & x_{4}\\tilde{y}_{4}\\\\ \\tilde{x}_{1}y_{1} & \\tilde{x}_{2}\\tilde{y}_{2} & \\tilde{x}_{3}\\tilde{y}_{3} & \\tilde{x}_{4}\\tilde{y}_{4}\\\\ \\tilde{x}_{1}\\tilde{y}_{1} & \\tilde{x}_{2}\\tilde{y}_{2} & \\tilde{x}_{3}\\tilde{y}_{3} & \\tilde{x}_{4}\\tilde{y}_{4} \\end{array} \\right).} \\end{array} \\tag{A35}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here, for any variable  $\\mathcal{X}$  , we define  $\\tilde{\\mathcal{A}} \\coloneqq 1 - \\mathcal{A}$  . In addition, let us denote  $O(\\delta^k)$  term in any variable  $\\mathcal{X}$  as  $\\mathcal{X}^{(k)}$  . The neighbor of the Nash equilibrium, by substituting  $\\pmb {x} = x^{*}\\mathbf{1} + \\delta$  and  $\\pmb {y} = y^{*}\\mathbf{1} + \\epsilon$  , we can decompose  $\\begin{array}{r}M = \\sum_{k = 0}^{2}M^{(k)} \\end{array}$  as",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & M = \\underbrace{(\\pmb{x}^{*}\\circ\\pmb{y}^{*})}_{= M^{(0)}}\\otimes \\mathbf{1} + \\underbrace{(\\pmb{y}^{*}\\circ\\mathbf{1}_{x})\\otimes\\pmb{\\delta} + (\\pmb{x}^{*}\\circ\\mathbf{1}_{y})\\otimes\\pmb{\\epsilon} + \\mathbf{1}_{z}\\otimes(\\pmb{\\delta}\\circ\\pmb{\\epsilon})}_{= M^{(1)}}\\\\ & \\pmb{x}^{*}\\coloneqq (\\pmb{x}^{*},\\pmb{x}^{*},\\tilde{\\pmb{x}}^{*},\\tilde{\\pmb{x}}^{*}),\\qquad \\pmb{y}^{*}\\coloneqq (\\pmb{y}^{*},\\tilde{\\pmb{y}}^{*},\\pmb{y}^{*},\\tilde{\\pmb{y}}^{*}),\\\\ & \\mathbf{1}_{x}\\coloneqq (+1, + 1, - 1, - 1)^{\\mathrm{T}},\\qquad \\mathbf{1}_{y}\\coloneqq (+1, - 1, + 1, - 1)^{\\mathrm{T}},\\qquad \\mathbf{1}_{z}\\coloneqq \\mathbf{1}_{x}\\circ \\mathbf{1}_{y} = (+1, - 1, - 1, + 1)^{\\mathrm{T}}. \\end{array} \\tag{A38}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the same way, we can decompose  $\\begin{array}{r}\\pmb{p}^{\\mathrm{st}}\\simeq \\sum_{k = 0}\\pmb{p}^{\\mathrm{st}(k)} \\end{array}$  as",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {\\pmb{p}^{\\mathrm{st}(0)} = \\pmb{M}^{(0)}\\pmb{p}^{\\mathrm{st}(0)} = \\underbrace{(\\pmb{p}^{\\mathrm{st}(0)}\\cdot\\mathbf{1})}_{= 1}\\pmb{x}^{*}\\circ \\pmb{y}^{*}\\eqqcolon \\pmb{p}^{*},}\\\\ & {\\pmb{p}^{\\mathrm{st}(1)} = \\pmb{M}^{(1)}\\pmb{p}^{\\mathrm{st}(0)} = (\\pmb {\\delta}\\cdot \\pmb{p}^{*})\\pmb{y}^{*}\\circ \\mathbf{1}_{x} + (\\pmb {\\epsilon}\\cdot \\pmb{p}^{*})\\pmb{x}^{*}\\circ \\mathbf{1}_{y},}\\\\ & {\\pmb{p}^{\\mathrm{st}(2)} = \\pmb{M}^{(2)}\\pmb{p}^{\\mathrm{st}(0)} + \\pmb{M}^{(1)}\\pmb{p}^{\\mathrm{st}(1)}}\\\\ & {\\qquad = (\\pmb {\\delta}\\circ \\pmb {\\epsilon}\\cdot \\pmb{p}^{*})\\mathbf{1}_{z} + \\{(\\pmb {\\delta}\\cdot \\pmb{p}^{*})(\\pmb {\\delta}\\circ \\pmb{y}^{*}\\cdot \\mathbf{1}_{x}) + (\\pmb {\\epsilon}\\cdot \\pmb{p}^{*})(\\pmb {\\delta}\\circ \\pmb{x}^{*}\\cdot \\mathbf{1}_{y})\\} \\pmb{y}^{*}\\circ \\mathbf{1}_{x}}\\\\ & {\\qquad +\\{(\\pmb {\\delta}\\cdot \\pmb{p}^{*})(\\pmb {\\epsilon}\\circ \\pmb{y}^{*}\\cdot \\mathbf{1}_{x}) + (\\pmb {\\epsilon}\\cdot \\pmb{p}^{*})(\\pmb {\\epsilon}\\circ \\pmb{x}^{*}\\cdot \\mathbf{1}_{y})\\} \\pmb{x}^{*}\\circ \\mathbf{1}_{y}.} \\end{array} \\tag{A43}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

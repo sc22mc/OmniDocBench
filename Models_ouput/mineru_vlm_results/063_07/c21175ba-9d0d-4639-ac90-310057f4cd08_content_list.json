@@ -1,0 +1,103 @@
+[
+    {
+        "type": "text",
+        "text": "danger of confusion. We fix a character  $\\chi$  of order  $\\ell$ . Then we have",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nN_{g} = q + \\sum_{1\\leq j,k\\leq \\ell -1}\\chi^{j}(-g^{-2})\\chi^{k}(-g^{-1})J(\\chi^{j},\\chi^{k}) \\tag{5}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nJ(\\chi^j,\\chi^k) = \\sum_{a\\in \\mathbb{F}_q}\\chi^j (a)\\chi^k (1 - a)\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "is a Jacobi sum with respect to  $\\chi^j$  and  $\\chi^k$ . The following properties of Jacobi sums are useful.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 2.2 ([LN97] Theorem 5.19, 5.21, 5.22]). Let  $\\lambda ,\\psi$  be two extended characters of  $\\mathbb{F}_q$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(i)  $J(\\lambda ,\\psi) = J(\\psi ,\\lambda)$  (ii)  $J(\\epsilon ,\\epsilon) = q$  (iii)  $J(\\lambda ,\\epsilon) = 0$  if  $\\lambda \\neq \\epsilon$  (iv)  $J(\\lambda ,\\lambda^{-1}) = -\\lambda (-1)$  if  $\\lambda \\neq \\epsilon$  (v)  $|J(\\lambda ,\\psi)| = \\sqrt{q} if\\lambda ,\\psi$  and  $\\lambda \\psi$  are all nontrivial.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note that  $|\\chi^i (a)| = 1$  for all  $a\\in \\mathbb{F}_q^\\times$ . By (iv) and (v) of Lemma [2.2] one has the following estimate of  $N_{g}$  from [5]",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n|N_{g} - q|\\leq M_{0} + M_{1}\\sqrt{q}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $M_0$  (resp.  $M_{1}$ ) is the number of pairs  $(j,k)$  with  $\\chi^j\\chi^k = \\epsilon$  (resp.  $\\chi^j\\chi^k\\neq \\epsilon$ ). Observe that  $M_0 = \\ell - 1$  and  $M_{1} = (\\ell - 1)(\\ell - 2)$ . Thus, if",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nq > (\\ell -1) + (\\ell -1)(\\ell -2)\\sqrt{q}, \\tag{6}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "then  $N_{g} > 0$ . Consequently, for  $q$  large enough (for example  $q > (\\ell - 1)^4$ ), one has  $N_{g} > 0$  for any  $g\\in \\mathbb{F}_q^\\times$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For the numbers of rational solutions to equations over finite fields, the Hasse- Weil bound [Wei48] provides more precise information than the crude estimate given above.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Theorem 1 (Hasse- Weil bound). Let  $\\mathcal{C}$  be a non- singular, absolutely irreducible projective curve over  $\\mathbb{F}_q$  and let  $N_{\\mathcal{C}} = |\\mathcal{C}(\\mathbb{F}_q)|$  be the number of  $\\mathbb{F}_q$ - rational points of  $\\mathcal{C}$ . Then,",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n|N_{\\mathcal{C}} - (q + 1)|\\leq 2\\mathfrak{g}\\sqrt{q}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $\\mathfrak{g}$  is the genus of  $\\mathcal{C}$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Applying the Hasse- Weil bound to  $\\widetilde{\\mathcal{C}}_g$ , we see that",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n|\\widetilde{N_g} -(q + 1)|\\leq (\\ell -1)(\\ell -2)\\sqrt{q}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "since the genus of  $\\widetilde{\\mathcal{C}}_g$  is  $\\mathfrak{g}_{\\ell} = (\\ell - 1)(\\ell - 2) / 2$  by the degree- genus formula [Har77]. Consequently,  $\\widetilde{N_g} >0$  for any generator  $g$  of  $\\mathbb{F}_q^\\times$  provided that  $q + 1 > (\\ell - 1)(\\ell - 2)\\sqrt{q}$  and therefore  $\\widetilde{\\mathcal{C}}_g(\\mathbb{F}_q)$  is non- empty if  $q\\geq (\\ell - 1)^2 (\\ell - 2)^2$ .",
+        "page_idx": 0
+    }
+]

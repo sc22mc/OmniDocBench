@@ -1,0 +1,47 @@
+[
+    {
+        "type": "text",
+        "text": "4.2 GAMEOF24 ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/5f921601f59604c43f48201ae06b9a7930245c7b82c6c15440996712e9e1bb90.jpg",
+        "table_caption": [
+            "Table 2: Results on Game of 24where the settings of different approaches follow those in ToTYao et al 2024 "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Method</td><td>Solving rate</td></tr><tr><td>Standard</td><td>7.3</td></tr><tr><td>Standard (best of 100)</td><td>33</td></tr><tr><td>CoT prompt</td><td>4</td></tr><tr><td>CoT prompt (best of 100)</td><td>49</td></tr><tr><td>CoT-SC (k=100)</td><td>9</td></tr><tr><td>ToT</td><td>74</td></tr><tr><td>BoT</td><td>83.7</td></tr><tr><td>BoT+CoT</td><td>84.9</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/4cb693ec9982b3679c07ee44df3edca58b09503f910c8d2c90068d43cbc24ac2.jpg",
+        "image_caption": [
+            "Figure 4: Comparison of three approaches across varying numbers of trees and iterations. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/b1609b0e0922e0cc06a0ad66df7fbbcef63448ffd4564322add90197b727a5e2.jpg",
+        "table_caption": [
+            "Table3:Showing aggregated thought chainsand obtained experiences in iterations1,5,and8.The given four numbersare:2,7,8,9. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>itetathon</td><td>nTwers</td><td>Arithmetic</td><td>New number</td><td>Experience</td><td>Judgement</td></tr><tr><td rowspan=\"3\">F1</td><td>2,8</td><td>multiplication</td><td>16,7,9</td><td>The new set does not bring us closer to the target of 24. Try other numbers and operations.</td><td rowspan=\"3\">Possible but more</td></tr><tr><td>9,7</td><td>addition</td><td>7,16,16</td><td>This step does not follow the rules of</td></tr><tr><td>16,7</td><td>multiplication</td><td>16,112</td><td>Toomany numbersin the newset. More steps are required to reach the target of 24.</td></tr><tr><td rowspan=\"3\">F5</td><td>9,7</td><td>addition</td><td>16,2,8</td><td>TheEvaluationSore:0. is lw. It is not possible to further</td><td rowspan=\"3\">Possible but should revise some steps</td></tr><tr><td>16,8</td><td>addition</td><td>2,24</td><td>manipulate the numbensto reach 24.</td></tr><tr><td>2,24</td><td>subtraction</td><td>22</td><td>CaThenewe otis wot cumtrs.</td></tr><tr><td rowspan=\"2\">F8</td><td>9,7 16,2</td><td>addition</td><td>16,2,8</td><td></td><td rowspan=\"2\">Possible</td></tr><tr><td>32,8</td><td>multiplication subtraction</td><td>32,8 24</td><td></td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Due to the hardness of the Game of 24 problem,GPT-4andLlama2 both perform badly on this task,even incorporating the CoT,and CoT-SC approaches. The Llama2 model even fails to follow the correct rules of addressing the problem,making the solve rate even lower. Especially when applying BoT,which relies on the experience,to Llama2,all resultsare lower than $5 \\%$ without significant improvement. Thus,we only report the performance of BoT with GPT-4.To maintain a fair comparison, we follow the settings proposed by Tc $\\mathrm { , T } [ \\underline { { \\mathrm { Y a o \\ e t \\ a l . } } } ] ( 2 0 2 4 )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "As shown in Table 2,BoT without human annotations is $9 . 7 \\%$ higher than ToT,which relies on one example showing all possible next steps.Besides, $\\mathrm { B o T + C o T } .$ ，which contains $5 \\mathrm { C o T }$ shots in the initial prompt, is $1 . 2 \\%$ higher thanBoT.Such aclose performance betweenBoTand $\\mathrm { B o T + C o T }$ is attributed to the boosting mechanism, which progressively revises weak thoughts,as discussed in subsection $\\textstyle \\left\\| 4 . 1 \\right\\|$ Adopting an experience-driven iterative process,BoT exhibits enhanced performance as the number of trees $M$ and the number of iterations $T$ increment. Also shown by Fig.4 compared to $\\mathrm { B o T + C o T }$ ,BoT relies more on $M$ and $T$ as it requires to collect experience from a better thought chain or longer iterations.Another observation is that when enabling ToTto operate iteratively with the prompt enriched by experience,the problem-solving rate escalates from $7 2 . 5 \\%$ in the initial iteration to $8 0 . 2 \\%$ by the 1O-th iteration. This demonstrates that experience-the analysis of previous reasoning chains can be used by LLMs to significantly improve the solve rate. However,the score obtained by ToT is still $3 . 5 \\%$ lower than BoT.This is attributed to the fact that the aggregation stage ",
+        "page_idx": 0
+    }
+]

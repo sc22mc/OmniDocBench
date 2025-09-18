@@ -1,0 +1,79 @@
+[
+    {
+        "type": "text",
+        "text": "3Algorithm ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the following,we define multi-memory versions oftwo major learning algorithms,i.e.,replicator dynamics and gradient ascent.Although we consider the learning of player X,that of player Ycan be formulated in the same manner. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Definition 1 (expected future payoff).We define the expected future payoff from the distribution $\\mathbfcal { p }$ as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/11a138a0a10c97d9f9c103b9d7528a5c2c36056a2180a0b96862b1af69f89643.jpg",
+        "text": "$$\n\\pi ( \\pmb { p } , \\mathbf { x } , \\mathbf { y } ) : = \\sum _ { t = 0 } ^ { \\infty } M ^ { t } ( \\pmb { p } - \\pmb { p } ^ { \\mathrm { s t } } ) \\cdot \\pmb { u } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "which is the total payoff player $X$ obtains from the present round to the future. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In thisdefinition,the stationary payoff $\\pmb { p } ^ { \\mathrm { s t } } \\cdot \\pmb { u } = u ^ { \\mathrm { s t } }$ is the offset term every round,and thus $\\pi ( p ^ { \\mathrm { s t } } , { \\bf x } , { \\bf y } ) =$ 0. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Definition 2 (normalization). We define the normalization function N $\\begin{array} { r } { \\mathrm { \\mathrm { ~ \\ u r m } : \\prod } _ { s \\in { \\mathcal { S } } } \\mathbb { R } _ { + } ^ { m } \\mapsto \\prod _ { s \\in { \\mathcal { S } } } \\operatorname { i n t } ( \\Delta ^ { m - 1 } ) } \\end{array}$ as ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/42fd6a43442157c3976382124bc0314ad70e0b314f8c7f1bab09068333a64559.jpg",
+        "text": "$$\n\\mathrm { N o r m } ( { \\bf x } ) = \\left\\{ \\frac { x ^ { a \\vert s } } { \\sum _ { a ^ { \\prime } } x ^ { a ^ { \\prime } \\vert s } } \\right\\} _ { a , s } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this definition, $\\operatorname { N o r m } ( \\mathbf { x } )$ satisfies the condition of probability variables for all $s$ Based on these definitions,we formulate discretized MMRD and MMGA as Algorithm 1and 2. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Algorithm1Discretized MMRD ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Input: $\\eta$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1:for $t = 0 , 1 , 2 , \\cdots$ do   \n2: X chooses $a$ with probability $x ^ { a | s _ { i } }$   \n3: (Y chooses $b$ with probability $y ^ { b | s _ { i } }$ ）   \n4: $s _ { i ^ { \\prime } }  a b s _ { i } ^ { - }$   \n5: $x ^ { a | s _ { i } } \\gets x ^ { a | s _ { i } } + \\eta \\pi ( e _ { i ^ { \\prime } } , \\mathbf { x } , \\mathbf { y } )$   \n6: $\\mathbf { x } \\gets \\mathrm { N o r m } ( \\mathbf { x } )$   \n7: $s _ { i } \\gets s _ { i ^ { \\prime } }$   \n8:end for ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Algorithm 1 (Discretized MMRD) takes its learning rate $\\eta$ asan input. In each time step,the players choose their actions folowing their strategies (lines 2 and 3)，while the state is updated by their chosen actions (lines 4and 7).Then,each player reinforces its strategy by how much payoffthe chosen action bringsup to the future.Here,note that for simplicity,this payoffis given byan expected payoff(line 5). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Algorithm2Discretized MMGA ",
+        "text_level": 1,
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,43 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/c77260f3b830b6e0c4d700922ec36195b4580621dd174fbb9c9a95e0d934d97d.jpg",
+        "table_caption": [
+            "TABLEIV COMPARISON OF DIFFERENT TYPES OF MODELS [42] "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Model name</td><td>Input parameters</td><td>Performance of the models</td><td>Model com- plexity</td><td>Scalability with respect to time andgeographi- cal location</td><td>Recommended applica- tions -To choose the range of</td><td></td><td>References</td></tr><tr><td>Linear Regression Model</td><td>-Onevariable such asvegetation index or reflectance values -One responsevariable suchas chlorophyll measurement</td><td>Low-high (depends upon the input variable)</td><td>Low</td><td>Low</td><td colspan=\"2\">predictor variables and to identify the input which performs best -Toremove noise in the trainingdata</td><td>[289-291]</td></tr><tr><td>Advanced Linear Model Regression</td><td>-Multiple inputs -Multipleresponsevariable/output variable</td><td>Medium- high</td><td>Medium</td><td>Low</td><td colspan=\"2\">-Toinclude spectral and temporal information -Hyperparametertuning canresult inoptimal performance -Toinclude spectral and</td><td>[292-296]</td></tr><tr><td>MachineLearn- ing basedModel</td><td>-Multipleinput/predictor variables -Multiple response variables -number of trees/loss function (de- pends upon the selected model)</td><td>Medium- high</td><td>Medium</td><td>Low</td><td>temporal information -Hyperparametertuning canresultinoptimal performance</td><td></td><td>[74， 161, 297,298]</td></tr><tr><td>Deep basedModel Learning</td><td>-Multipleinputvariables -Based on the input of the size of themodel is determined -Size refers to thenumberof layers and weights -Pre-trained models can be used (if available)</td><td>Medium- high</td><td>High</td><td>High</td><td>-Toemploy number data/samplestoprevent overfting/underfitting issues -Optimize toobtainan performance</td><td>alarge of training the model optimal</td><td>[299-301]</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "spectral features [263], [264].RF is an ensemble-based learning method that combines multiple decision trees to produce robust and accurate classification or regression results.RF can be employed for plant disease detection to classify hyperspectral data into healthy or diseased classes [265], [266].kNN is a nonparametric-based algorithm for classification and regression tasks.For plant disease detection,it compares the plant sample with its neighboring features to identify whether the sample is infected or not [266],[267]. SAM is an algorithm that classifes hyperspectral imagery based on the angle between the spectra. Based on the spectral angle difference, pixels are classified into categories such as healthy or diseased plants [268].Maximum likelihood classification is a probabilistic classifier that assigns apixel to the class that has the maximum likelihood. It can be used for plant disease detection to classfy hyperspectral data into categories like healthy or diseased [269]. On the other hand, PLSR is a statistical technique that can model the relationship between hyperspectral data and plant disease severity [270]. Dirichlet aggregation regression uses Dirichlet distributions for modeling compositional data,and it can also be used to model therelationship between hyperspectral data and plant disease severity [271].Logistic regression is used forcases with binary classification,such as disease or no disease detection [272], whereas multiple linear regression can provide multiple classes classification[273]. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The machine-learning-based classification models can be broadly categorized into supervised and unsupervised learning techniques. Supervised learning techniques require labeled training images/samples to detect the pixel of the region of interest (ROI).A label isassociated with each ROI to map the class categories.The labeling of the images is visually conducted and sent to the classification model for training. This aids in improving the detection accuracy of the models but at the expense of high labor costs.On the other hand,unsupervised learning techniques require no prior knowledge and learning through clusteringand distribution rules of the spectral features in the images.An example of unsupervised learning would be the K-means clusteringalgorithm.Rice sheath blight diseases were detected using the K-means clustering algorithm in [274]. A study by Yuan et al. [275] proposed an unsupervised learning technique to identify anthracnose diseases in tea leaves.The studycould achieve around $96 \\%$ ofaccuracies fordisease detection[274]. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Besides machine learning models,deep learning,a subset of machine learning algorithms,is now applied for hyperspectral image analysis.Over the past decades,deep learning algorithms have improved image classification performance,object detection,and so on. Recently,remote sensing image processing algorithms have also been developed to process complex images such as multispectral and hyperspectral images.Some popular algorithms are CNN[276],deep belief networks [277],stacked autoencoder [278],and so on. Table IV compares different models used in image processing techniques for hyperspectral imaging. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B.Applications of Hyperspectral Imagingin Plant DiseaseDetection ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Once the image acquisition is completed and the images are processed through objective-based selected models,the next stepis to analyze the models. The term objective-based selected models refer to the analytical models chosen based on the specific goals or objectives such as disease detection and identification, classification,severity,and genetic resistance for the diseases [166], [292],[293]. The analyses are carried out in different levels and arrangements.For instance,to observe ",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,228 @@
+[
+    {
+        "type": "text",
+        "text": "Define $\\delta _ { i , n } , i = 3 , 4$ by ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/260a7a743eacb2dc10fbc0e4e9cd614b6e7bded6d070fe16029a50dbeaf00a32.jpg",
+        "text": "$$\n\\begin{array} { c } { { \\delta _ { 3 , n } : = \\displaystyle \\frac { 1 } { n } \\log \\left[ \\mathrm { e } ( n + 1 ) ^ { 2 | \\mathcal { X } | } \\right. } } \\\\ { { \\left. \\qquad \\times \\{ ( n + 1 ) ^ { | \\mathcal { X } | } + ( n + 1 ) ^ { | \\mathcal { X } | | \\mathcal { Z } | } \\} \\right] , } } \\\\ { { \\displaystyle \\delta _ { 4 , n } : = \\displaystyle \\frac { 1 } { n } \\log \\left[ ( 7 n R ) ( n + 1 ) ^ { 3 | \\mathcal { X } | | \\mathcal { Z } | } \\right. } } \\\\ { { \\left. \\qquad \\times \\{ ( n + 1 ) ^ { | \\mathcal { X } | } + ( n + 1 ) ^ { | \\mathcal { X } | | \\mathcal { Z } | } \\} \\right] . } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note that for $i = 3 , 4$ ， $\\delta _ { i , n } \\to 0$ as $n \\to \\infty$ .Our main result is the following. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Theorem2:For any $R _ { A } , R > 0$ ,there exists a sequence of mappings $\\{ ( \\varphi ^ { ( n ) } , \\psi ^ { ( n ) } ) \\} _ { n = 1 } ^ { \\infty }$ satisfying ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/ff8f026d2bd4a50aaa4eccf230df0cd9befc3064ddd1ea9aed7f7c9d8960176a.jpg",
+        "text": "$$\nR - \\frac { 1 } { n } \\leq \\frac { 1 } { n } \\log | \\chi ^ { m } | = \\frac { m } { n } \\log | \\chi | \\leq R\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "such that for any $( p _ { X } , p _ { K } , W )$ with $( R _ { A } , R ) \\in \\mathcal { R } ^ { \\mathrm { ( i n ) } } ($ $p _ { X } , p _ { K } , W )$ ，we have that ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b1887e34f834b283e89e003a1309c4a9b04bf3e57f56e7cb4ef429eec85bfd0a.jpg",
+        "text": "$$\np _ { \\mathrm { e } } ( \\phi ^ { ( n ) } , \\psi ^ { ( n ) } | p _ { X } ^ { n } ) \\leq \\mathrm { e } ^ { - n [ E ( R | p _ { X } ) - \\delta _ { 3 , n } ] }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "and that for any eavesdropper $\\mathcal { F } _ { A } ^ { ( n ) } ( R _ { A } )$ ， $\\mathcal { A }$ with $\\varphi _ { \\mathcal { A } }$ satisfying $\\varphi _ { \\mathcal { A } } ^ { ( n ) } \\in$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4b982bf1f57b3760c778fc4b3d7bd06902ea438fc1fed90b4ac9297bc52c0790.jpg",
+        "text": "$$\n\\begin{array} { r l } & { \\Delta ^ { ( n ) } ( \\varphi ^ { ( n ) } , \\varphi _ { \\mathcal { A } } ^ { ( n ) } | { p } _ { X } ^ { n } , { p } _ { K } ^ { n } , W ^ { n } ) } \\\\ & { \\leq \\mathrm { e } ^ { - n [ G ( R _ { \\mathcal { A } } , R | p _ { K } , W ) - \\delta _ { 4 , n } ] } . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "By Theorem $\\boxed { 2 }$ under $( R _ { A } , R ) \\in \\mathcal { R } ^ { ( \\mathrm { i n } ) } ( p _ { X } , p _ { K } , W )$ we have the followings: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "· On the reliability, $p _ { \\mathrm { e } } ( \\phi ^ { ( n ) } , \\psi ^ { ( n ) } | p _ { X } ^ { n } )$ goes to zero exponentially as $n$ tends to infinity,and its exponent is lower bounded by the function $E ( R | p _ { X } )$   \n· On the security,for any A satisfying ) $\\varphi _ { \\mathcal { A } } ^ { ( n ) } \\in \\mathcal { F } _ { \\mathcal { A } } ^ { ( n ) } ( R _ { \\mathcal { A } } )$ ， $\\Delta ^ { ( n ) } ( \\varphi ^ { ( n ) } , \\varphi _ { \\mathcal { A } } ^ { ( n ) } | p _ { X } ^ { n } , p _ { K } ^ { n } , W ^ { n } )$ goes to zero exponentially as $n$ tendsto infinity,and its exponent is lower bounded by the function $G ( R _ { A } , R | p _ { K } , W )$   \n·The code that attains the exponent functions $E ( \\ R | p _ { X } )$ and $G ( R _ { A } , R | p _ { K } , W )$ is the universal code that depends only on $( R _ { A } , R )$ not on the value of the distributions $p _ { X }$ ， $p _ { Z }$ ,and $W$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "V.PROOF OUTLINE OF THE MAIN RESULT ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this section we outline the proof of Theorem $2 1$ We first present several definitions on the types.For any $n$ -sequence $k ^ { n } = k _ { 1 } k _ { 2 } \\dotsm k _ { n } \\in \\mathcal { X } ^ { n }$ ， $n ( k | k ^ { n } )$ denotes the number of $t$ such that $k _ { t } = k$ . The relative frequency $\\{ n ( k | k ^ { n } ) / n \\} _ { k \\in \\mathcal { X } }$ of the components of $x ^ { n }$ is called the type of $k ^ { n }$ denoted by $P _ { k ^ { n } }$ .The set that consists of all the types on $\\mathcal { X }$ is denoted by $\\mathcal { P } _ { n } ( \\mathcal { X } )$ .For $p _ { \\overline { { K } } } \\in \\mathcal { P } _ { n } ( \\mathcal { X } )$ ，set ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/71c35758d90f706383674e7cd0ca055d2eec994a80924dcedfe22e6f67bad259.jpg",
+        "text": "$$\nT _ { \\cal K } ^ { n } : = \\{ k ^ { n } : { \\cal P } _ { k ^ { n } } = p _ { \\overline { { { \\cal K } } } } \\} .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Similarly,for any two $n$ -sequences $k ^ { n } = k _ { 1 } \\ k _ { 2 }$ ，， $k _ { n } ~ \\in$ ${ \\mathcal { X } } ^ { n }$ and $z ^ { n } = z _ { 1 } ~ z _ { 2 }$ ，， $z _ { n } \\in \\mathcal { Z } ^ { n }$ ， $n ( k , z | k ^ { n } , z ^ { n } )$ denotes the number of $t$ such that $( k _ { t } , \\ z _ { t } ) \\ = \\ ( k , \\ z )$ .Therelative frequency $\\{ n ( k , z | k ^ { n } , z ^ { n } ) / n \\} _ { ( k , z ) \\in \\mathcal { X } \\times \\mathcal { Z } }$ of the components of $( k ^ { n } , z ^ { n } )$ is called the joint type of $( k ^ { n } , z ^ { n } )$ denoted by $P _ { k ^ { n } , z ^ { n } }$ .Furthermore,the set of all the joint type of $\\mathcal { X } \\times \\mathcal { Z }$ is denoted by $\\mathcal { P } _ { n } ( \\mathcal { X } \\times \\mathcal { Z } )$ .For $p _ { \\overline { { K } } \\overline { { Z } } } \\in \\mathcal { P } _ { n } ( \\mathcal { X } \\times \\mathcal { Z } )$ set ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/3f1dccafad58e29fc4daac0331d272e5b76b4323b838834e8e957b1d62b7a657.jpg",
+        "text": "$$\nT _ { \\overline { { { K } } } \\overline { { { Z } } } } ^ { n } : = \\{ ( k ^ { n } , z ^ { n } ) : P _ { k ^ { n } , z ^ { n } } = P _ { \\overline { { { K } } } \\overline { { { Z } } } } \\} .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Furthermore, for $p _ { \\overline { { K } } } \\in \\mathcal { P } _ { n }$ $( \\mathcal { X } )$ and $k ^ { n } \\in T _ { K } ^ { n } .$ set ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4fbe816d956d138283138d632be1a923bd4926451e0f53f7d5b299cf95437d46.jpg",
+        "text": "$$\nT _ { \\overline { { { Z } } } | \\overline { { { K } } } } ^ { n } ( k ^ { n } ) : = \\{ z ^ { n } : P _ { k ^ { n } , z ^ { n } } = p _ { \\overline { { { K } } } } \\overline { { { z } } } \\} .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We next discuss upper bounds of ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/42c51bd169d2a6e60d399f1b335ef87e2d51c417068fe468af871dff4876dd3f.jpg",
+        "text": "$$\n\\Delta _ { n } ( \\varphi ^ { ( n ) } , \\varphi _ { \\mathcal { A } } ^ { ( n ) } | p _ { X } ^ { n } , p _ { K } ^ { n } , W ^ { n } ) = I ( \\widetilde { C } ^ { m } , M _ { \\mathcal { A } } ^ { ( n ) } ; X ^ { n } ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "According to $\\boxed { 5 }$ ，on an upper bound of $I ( { \\widetilde { C } } ^ { m } , M _ { \\mathcal { A } } ^ { ( n ) } ; X ^ { n } )$ we have the following lemma. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 1: [5 ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4f9b883cd7eccbf0e6b134e4ee22670395834a172a55541c0f3ef4a416d50322.jpg",
+        "text": "$$\nI ( \\widetilde C ^ { m } , M _ { \\cal A } ^ { ( n ) } ; { \\cal X } ^ { n } ) \\leq D \\left( p _ { \\widetilde { K } ^ { m } | M _ { \\cal A } ^ { ( n ) } } \\Big | \\Big | p _ { V ^ { m } } \\Big | p _ { M _ { \\cal A } ^ { ( n ) } } \\right) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $p _ { V } m$ is the uniform distribution over $\\mathcal { X } ^ { m }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Set ${ \\cal M } ^ { ( n ) } : = { \\cal P } _ { K ^ { n } , Z ^ { n } }$ .Then we have the following: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/726b9af8912853f56e935255e7c7e2e3687aaf6c5fc510f888a71762269f1380.jpg",
+        "text": "$$\n\\begin{array} { r l } & { \\left. \\left. \\left. D \\left( p _ { \\widetilde { K } ^ { m } | M _ { \\cal A } ^ { ( n ) } } \\right| \\right| p _ { V ^ { m } } \\right| p _ { M _ { \\cal A } ^ { ( n ) } } \\right) } \\\\ & { \\leq \\left. \\left. \\left. D \\left( p _ { \\widetilde { K } ^ { m } | M _ { \\cal A } ^ { ( n ) } M ^ { ( n ) } } \\right| \\right| p _ { V ^ { m } } \\right| p _ { M _ { \\cal A } ^ { ( n ) } M ^ { ( n ) } } \\right) . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For $p _ { \\overline { { K } } \\overline { { Z } } } \\in \\mathcal { P } _ { n } ( \\mathcal { X } \\times \\mathcal { Z } )$ set ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/6312011308cd2c3e99235761d89ca45e3291cc8a0930590c498c86be6f8ce4b5.jpg",
+        "text": "$$\n\\begin{array} { r l } & { \\left. \\left. \\left. D \\left( p _ { \\widetilde { K } ^ { m } | M _ { \\cal A } ^ { ( n ) } M ^ { ( n ) } = p _ { \\overline { { K } } \\overline { { Z } } } } \\right| \\right| p _ { V ^ { m } } \\right| p _ { M _ { \\cal A } ^ { ( n ) } M ^ { ( n ) } = p _ { \\overline { { K } } \\overline { { Z } } } } \\right) } \\\\ & { : = \\zeta ( \\varphi ^ { ( n ) } , \\varphi _ { \\cal A } ^ { ( n ) } | p _ { \\overline { { K } } \\overline { { Z } } } ) . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "From $\\boxed { 1 1 } , \\boxed { 1 2 }$ and $( 1 3 )$ we have ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/0debb6a1df67e0800d3c06067b0a514f454f8434dbdb3ab7606ff708e98bff6a.jpg",
+        "text": "$$\n\\begin{array} { r l r } {  { \\Delta _ { n } ( \\varphi ^ { ( n ) } , \\varphi _ { \\mathcal { A } } ^ { ( n ) } | p _ { X } ^ { n } , p _ { K } ^ { n } , W ^ { n } ) \\leq \\sum _ { \\scriptstyle p _ { \\overline { { K } } \\overline { { Z } } } \\atop { \\scriptstyle \\in \\mathcal { P } _ { n } ( \\mathcal { X } \\times \\mathcal { Z } ) } } 1 } } \\\\ & { } & { \\times \\operatorname* { P r } \\{ M ^ { ( n ) } = p _ { \\overline { { K } } \\overline { { Z } } } \\} \\zeta ( \\varphi ^ { ( n ) } , \\varphi _ { \\mathcal { A } } ^ { ( n ) } | p _ { \\overline { { K } } \\overline { { Z } } } ) . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For $p _ { \\overline { { K } } \\overline { { Z } } } \\in \\mathcal { P } _ { n } ( \\mathcal { X } \\times \\mathcal { Z } )$ ,define ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/13f68d06fe61f3f4187aa139f9ed2f9411619d03bc6d5574d9239e68e4b0eb73.jpg",
+        "text": "$$\n\\begin{array} { l } { { \\Upsilon ( R , \\varphi _ { \\mathcal { A } } ^ { ( n ) } | p _ { \\overline { { K } } \\overline { { Z } } } ) : = \\sum _ { \\scriptstyle ( a , k ^ { n } ) \\atop { \\scriptstyle \\in \\mathcal { M } _ { \\cal A } ^ { ( n ) } \\times { \\cal T } _ { \\overline { { K } } } ^ { n } } } \\left\\lfloor \\left( \\varphi _ { \\mathcal { A } } ^ { ( n ) } \\right) ^ { - 1 } ( a ) \\cap { \\cal T } _ { \\overline { { Z } } | \\overline { { K } } } ^ { n } ( k ^ { n } ) \\right\\rfloor } } \\\\ { { \\qquad \\times \\log \\left[ 1 + ( { \\mathrm { e } } ^ { n R } - 1 ) \\displaystyle \\frac { \\left| \\left( \\varphi _ { \\mathcal { A } } ^ { ( n ) } \\right) ^ { - 1 } ( a ) \\cap { \\cal T } _ { \\overline { { Z } } | \\overline { { K } } } ^ { n } ( k ^ { n } ) \\right| \\left| T _ { \\overline { { K } } } ^ { n } \\right| } { \\left| \\left( \\varphi _ { \\mathcal { A } } ^ { ( n ) } \\right) ^ { - 1 } ( a ) \\cap { \\cal T } _ { \\overline { { Z } } } ^ { n } \\right| \\left| T _ { \\overline { { K } } \\overline { { Z } } } ^ { n } \\right| } \\right] . } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "On ${ \\zeta ( \\varphi ^ { ( n ) } , \\varphi _ { \\mathcal { A } } ^ { ( n ) } | p _ { \\overline { { K } } \\overline { { Z } } } ) }$ $p _ { \\overline { { K } } \\overline { { Z } } } \\in \\mathcal { P } _ { n } ( \\mathcal { X } \\times \\mathcal { Z } )$ , we have the following lemma. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 2: For any $p _ { \\overline { { K } } \\overline { { Z } } } \\in \\mathcal { P } _ { n } ( \\mathcal { X } \\times \\mathcal { Z } )$ ， ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/94d24068a754c65009be8739e47baee31eab5bcae762dd2b9418caffdef0485b.jpg",
+        "text": "$$\n\\mathbf { E } \\left[ \\zeta ( \\varphi ^ { ( n ) } , \\varphi _ { \\cal A } ^ { ( n ) } | p _ { \\overline { { K } } \\overline { { Z } } } ) \\right] \\leq \\Upsilon ( R , \\varphi _ { \\cal A } ^ { ( n ) } | p _ { \\overline { { K } } \\overline { { Z } } } ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\mathbf { E } [ \\cdot ]$ is an expectation based on the random choice of $\\varphi ^ { ( n ) }$ ： ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To prove the above lemma we use a technique quite similar to that of Hayashi $\\textcircled { 7 }$ used for an ensemble of universal2 functions.The following proposition is a key result for the proofof Theorem ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proposition $I$ Forany $R _ { A } , R > 0$ ,there existsa sequence of mappings $\\{ ( \\varphi ^ { ( n ) } , \\psi ^ { ( n ) } ) \\} _ { n = 1 } ^ { \\infty }$ satisfying ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d6619423acc004d5fd5fcec90c3c0ffa870d3238407ae79592b35a9063b99dbe.jpg",
+        "text": "$$\nR - \\frac { 1 } { n } \\leq \\frac { 1 } { n } \\log | \\chi ^ { m } | = \\frac { m } { n } \\log | \\chi | \\leq R\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

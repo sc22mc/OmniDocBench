@@ -1,0 +1,47 @@
+[
+    {
+        "type": "text",
+        "text": "Based on this,the general approach to segmenting a trajectory is to classify the data into trips and activities.The object will take a trip to some destination and may perform an activity there.E.g.,The operator drives the machinery from the depot [trip],toafield[destination],andbales[activity],in that field.This example scenario illustrates that field segmentation could be observed as a vehicle trajectory segmentation problem.However,when the fields are adjacent,such as that illustrated in Fig. 2(a), the trip segment between activities is significantly reduced,which may complicate the segmentation process. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The current literature on road vehicle trajectory segmentation papers has limited potential for application in an agricultural setting.A significant proportion of methods are based on establishing policies and exploiting gaps in the raw data [4O], [41], [42],[43]. Policies may be based on speed,direction,start-end, stop-move, time intervals,and predefined geo-fenced regions to segment trajectories.Such policy concepts do not crossover to agricultural applications.Start-end locations may notbe known a priori. Stop-move locations depend on assumptions about operator driving behavior and machine operation.In baling, for example, the operator must stop the vehicle to drop the formed balesand replace the bale net. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Road vehicle data may be segmented using map-matching techniques [44]. These methods rely on correlating trajectories to road network databases by usinga similarity score,as defined by the author. This could be useful for cases of agricultural machinery traveling on roads between fields,however,not for cases of adjacent fields connected by short,off-road pathways ashighlighted in Fig.2(a). Moreira and Santos [45] devised anapproach to obtain the convex or concave hull perimeter of agiven set of points usinga k-nearest neighbours approach. In a concave shape,a straight line can be drawn between two points within the shape, that goes out of bounds.The set of conjoined fields shown in Fig.2(a) delineatea concave shape. When applying the algorithm presented in [45],users must tunethe $k$ parameter to adapt the shape of polygons output by thealgorithm.Adapting the algorithm presented for conjoined field segmentation may require manual intervention to adjust parameters per job site to account for unique shapes,sizes,and numbersoffields. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Yan et al. [43] annotated trajectory episodes using road networks and third-party knowledge sources points of interest (e.g., home markers-basedoffsocialmediadata).Thesearelayeredon top of episodes to derive context from the trajectory.Elements of thisapproach could be useful,like establishinga home geo-fence for the machinery.Acquiring land use and road network data may not be practical in remote locations,however,and may require the acquisition of sensitive personal information.Guo et al. [46] offered an approach to segment on-road vehicle global positioning system (GPS） trajectory data using probabilistic logic on vehicle data and positional data.The method relies onvehicle CANbus and GPS data,in addition to historical business data (e.g.,delivery service transportation),to group repetitive driving patterns.Agricultural machinery contractors usually have irregular schedules that are difficult to predict due to weather conditions and time constraints involved in harvesting. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Zhang et al. [34] presented a field segmentation expert system algorithm to classify on-road and in-field activities of machinery using GPS data.The algorithm is based on a set of if-then decision rules including:speed,density of points,and propagating straight line road points.Expert algorithms,such as this, depend onspecialized rules defined by human experts that must beadapted for different machinery. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Coordinate-based field segmentation may also be approached asa clustering problem. Clustering using the density-based spatial clustering applications with noise (DBSCAN） algorithm [47] has been applied to GPS trajectories to identify stop points in road vehicles [48] and mobile phone applications [49]. The authors in [35] and [36] apply DBSCAN to segment tractor GPS trajectory data. DBSCAN operates on the assumption of point density [47]; though it is not uncommon in round silage baling for an operator to only bale the field perimeter and leave the central region of the field for hay,such as that shown in Fig.2(b).Despite this,the algorithm presented in [35] is capable of segmenting cases of hollow fields. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Chen et al. [35] state that DBSCAN alone is not sufficient, therefore,directional inference rules are used to correct false field points and false road points increasing the overall performancefrom $8 7 . 6 5 \\%$ to $9 5 . 6 0 \\%$ . Zhang et al. [36] paired DBSCAN along with sophisticated image object detection algorithms such as YOLOV4; Swin-S Mask R-CNN,and Dynamic RCNN.The best result is selected usinga Davis Bouldin index. The authors conclude that the object detection algorithms must be manually selected for the given dataset. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Zhang et al.[37] trained two decision tree algorithms from European Geostationary Navigation Overlay Service (EGNOS) and real-time kinematic (RTK） trajectory datasets containing three field plots each.The authors conclude that the model trained usingRTK datais most effective for field segmentation. Chen et al. [38] designed and trained a graph convolutional network (GCN).The developed method was validated by the harvesting trajectories of two crops,wheat and paddy.GCNbased road-to-fieldclassificationachieved $8 8 . 1 4 \\%$ and $8 5 . 9 3 \\%$ accuracy forthewheatdataand thepaddy data,respectively. Comparisons made by the authors demonstrated that the developed method consistently outperformed the current state-of-theartroad-to-field classification methodsby $1 . 9 \\%$ forthewheat dataand $5 . 7 \\%$ for the paddy data. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "However, test cases shown in all previous works [34], [35], [36],[37], [38] do not include conjoined field segmentation conditions asillustrated in Fig.2(a),only road-to-field cases. Instances of isolated fields,connected bya road in between, maybe solved usinga Hall effect sensor for cases of towed implements.These sensors can be purchased for under $\\notin 5$ [50]. Thisis sufficient to detect when the PTO isactive and the implement is mechanically powered，which indicates,along with implement motion,that the machine is interacting with the crop. The inverse is true when the PTO is inactive and the implement is in motion,which allows for the detection of road travel. Thus,a significant challenge in coordinate-based field segmentation remains in solving for conjoined, field-tofield cases when the operator moves between adjacent fields connected by short,off-road pathways.This is one of the key ",
+        "page_idx": 0
+    }
+]

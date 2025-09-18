@@ -1,0 +1,3533 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        342,
+                        2107,
+                        620
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                348,
+                                2108,
+                                394
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        348,
+                                        2108,
+                                        394
+                                    ],
+                                    "score": 0.977,
+                                    "content": "response-level correlations between model-generated ratings and GPT-4 ratings.To save cost, we",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                390,
+                                2108,
+                                442
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        390,
+                                        1345,
+                                        442
+                                    ],
+                                    "score": 0.969,
+                                    "content": "only collect the GPT-4 ratings on the previous “best-of-",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1347,
+                                        393,
+                                        1408,
+                                        433
+                                    ],
+                                    "score": 0.34,
+                                    "content": "N ^ { \\ast }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1410,
+                                        390,
+                                        2108,
+                                        442
+                                    ],
+                                    "score": 0.971,
+                                    "content": "responses. The test set for this task is built",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                438,
+                                2107,
+                                484
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        438,
+                                        2107,
+                                        484
+                                    ],
+                                    "score": 0.97,
+                                    "content": "on the basis of Eval-Cby sampling2 out of 4 queries for each scenario.Weask two different base",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                479,
+                                2107,
+                                534
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        479,
+                                        2107,
+                                        534
+                                    ],
+                                    "score": 0.977,
+                                    "content": "LLMs(LLaMA-2-chat-7B and Vicuna-7B-v1.5) to generate 32 responses for each query through",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                528,
+                                2108,
+                                580
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        528,
+                                        1793,
+                                        580
+                                    ],
+                                    "score": 0.973,
+                                    "content": "uniform sampling (temperature set as 1.O).We refer to this test set as Eval-R,with",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1794,
+                                        529,
+                                        1977,
+                                        572
+                                    ],
+                                    "score": 0.88,
+                                    "content": "5 8 \\times 2 = 1 1 6",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1978,
+                                        528,
+                                        2108,
+                                        580
+                                    ],
+                                    "score": 1.0,
+                                    "content": "queries",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                573,
+                                1472,
+                                625
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        573,
+                                        516,
+                                        625
+                                    ],
+                                    "score": 1.0,
+                                    "content": "and",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        518,
+                                        573,
+                                        774,
+                                        618
+                                    ],
+                                    "score": 0.85,
+                                    "content": "1 1 6 \\times 3 2 = 3 , 7 1 2",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        776,
+                                        573,
+                                        1472,
+                                        625
+                                    ],
+                                    "score": 0.966,
+                                    "content": "query-response pairs for each base LLM.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        }
+                    ],
+                    "index": 2.5
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        448,
+                        681,
+                        751,
+                        728
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                676,
+                                759,
+                                733
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        676,
+                                        759,
+                                        733
+                                    ],
+                                    "score": 1.0,
+                                    "content": "5.2BASELINES",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        444,
+                        765,
+                        2111,
+                        1187
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                765,
+                                2106,
+                                817
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        765,
+                                        2106,
+                                        817
+                                    ],
+                                    "score": 0.984,
+                                    "content": "General-purpose models: We use LLaMA-2-Chat-13B(Touvron et al.2023b), Vicuna-13B-v1.5",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        },
+                        {
+                            "bbox": [
+                                452,
+                                809,
+                                2114,
+                                867
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        452,
+                                        809,
+                                        788,
+                                        864
+                                    ],
+                                    "score": 0.977,
+                                    "content": "Chiang et al.2023)",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        794,
+                                        809,
+                                        2114,
+                                        867
+                                    ],
+                                    "score": 0.986,
+                                    "content": "WizardLM-13B-v1.2 (Xu et al.[2023),and ChatGPT(GPT-3.5-turbo-0613).",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                858,
+                                2111,
+                                910
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        858,
+                                        2111,
+                                        910
+                                    ],
+                                    "score": 0.991,
+                                    "content": "We also use GPT-4 (GPT-4-0613) in the pairwise comparison and critique generation,and Claude-2",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                903,
+                                2110,
+                                957
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        903,
+                                        2110,
+                                        957
+                                    ],
+                                    "score": 0.983,
+                                    "content": "and LLaMA-2-Chat-7OB in pairwise comparison.These models are used with corresponding prompt",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                948,
+                                2111,
+                                1004
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        948,
+                                        1882,
+                                        1004
+                                    ],
+                                    "score": 0.987,
+                                    "content": "for each task: pairwise comparison prompt in Tab.14 critique generation prompt in Tab.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1883,
+                                        948,
+                                        1945,
+                                        1001
+                                    ],
+                                    "score": 0.26,
+                                    "content": "\\boxed { 1 8 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1946,
+                                        948,
+                                        2111,
+                                        1004
+                                    ],
+                                    "score": 0.968,
+                                    "content": "(the same",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                993,
+                                2112,
+                                1048
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        993,
+                                        2112,
+                                        1048
+                                    ],
+                                    "score": 0.971,
+                                    "content": "input format for AUTo-J's single-response evaluation),and rating prompt in Tab.[15Evaluation-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                1038,
+                                2106,
+                                1096
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        1040,
+                                        980,
+                                        1096
+                                    ],
+                                    "score": 0.972,
+                                    "content": "specific models:We use SelFee",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        982,
+                                        1038,
+                                        1249,
+                                        1095
+                                    ],
+                                    "score": 0.3,
+                                    "content": "\\left( \\mathrm { Y e ~ e t ~ a l . } \\right) \\left[ 2 0 2 3 \\right]",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1250,
+                                        1040,
+                                        2106,
+                                        1096
+                                    ],
+                                    "score": 0.984,
+                                    "content": "in critique generation, SteamSHP Ethayarajh et al.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1086,
+                                2098,
+                                1142
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1086,
+                                        547,
+                                        1140
+                                    ],
+                                    "score": 0.76,
+                                    "content": "\\boxed { 2 0 2 2 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        549,
+                                        1087,
+                                        2098,
+                                        1142
+                                    ],
+                                    "score": 0.975,
+                                    "content": "in pairwise comparison and overal rating, Open-Assistant's reward model (Kopf et al.|2023)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                435,
+                                1126,
+                                1727,
+                                1193
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        1126,
+                                        974,
+                                        1193
+                                    ],
+                                    "score": 0.986,
+                                    "content": "in overall rating, and PandaLM",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        975,
+                                        1131,
+                                        1317,
+                                        1188
+                                    ],
+                                    "score": 0.34,
+                                    "content": "\\mathrm { \\textregistered N a n g ~ e t ~ a l . } ] \\mathrm { \\textbar { 2 0 2 3 c } } )",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1318,
+                                        1126,
+                                        1727,
+                                        1193
+                                    ],
+                                    "score": 0.992,
+                                    "content": "in pairwise comparison.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 15
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        1251,
+                        836,
+                        1304
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                1246,
+                                841,
+                                1310
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1246,
+                                        841,
+                                        1310
+                                    ],
+                                    "score": 0.999,
+                                    "content": "6EXPERIMENTS",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 16
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        452,
+                        1357,
+                        1174,
+                        1405
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1356,
+                                1178,
+                                1408
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1356,
+                                        1178,
+                                        1408
+                                    ],
+                                    "score": 0.976,
+                                    "content": "6.1PAIRWISE RESPONSE COMPARISON",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        }
+                    ],
+                    "index": 17
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        449,
+                        1446,
+                        1402,
+                        1860
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                1445,
+                                1406,
+                                1497
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1445,
+                                        1406,
+                                        1497
+                                    ],
+                                    "score": 0.992,
+                                    "content": "A common problem in pairwise response comparison is",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1488,
+                                1405,
+                                1546
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1490,
+                                        699,
+                                        1546
+                                    ],
+                                    "score": 0.985,
+                                    "content": "positional bias",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        701,
+                                        1488,
+                                        1045,
+                                        1546
+                                    ],
+                                    "score": 0.62,
+                                    "content": "\\mathrm { ( W a n g ~ e t ~ a l . ) } \\big [ 2 0 2 3 \\mathrm { a } \\big ]",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1046,
+                                        1490,
+                                        1405,
+                                        1546
+                                    ],
+                                    "score": 0.975,
+                                    "content": ",whereanLLMmay",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1536,
+                                1407,
+                                1591
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1536,
+                                        1407,
+                                        1591
+                                    ],
+                                    "score": 0.983,
+                                    "content": "tend to favor specific positions, causing inconsistency in",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1584,
+                                1407,
+                                1634
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1584,
+                                        1407,
+                                        1634
+                                    ],
+                                    "score": 0.977,
+                                    "content": "comparison results when response orders are swapped. To",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1630,
+                                1408,
+                                1679
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1630,
+                                        1408,
+                                        1679
+                                    ],
+                                    "score": 0.98,
+                                    "content": "pursue stable and reliable results,we conduct two compar-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1678,
+                                1405,
+                                1723
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1678,
+                                        1405,
+                                        1723
+                                    ],
+                                    "score": 0.957,
+                                    "content": "isonsfor each sampleby swappingthe orderof the two",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1722,
+                                1406,
+                                1769
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1722,
+                                        1406,
+                                        1769
+                                    ],
+                                    "score": 0.959,
+                                    "content": "responses in the prompt. We consider a model's judgment",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1767,
+                                1403,
+                                1815
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1767,
+                                        1403,
+                                        1815
+                                    ],
+                                    "score": 0.99,
+                                    "content": "to agree with human only when the two comparison results",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1805,
+                                1294,
+                                1867
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1805,
+                                        1294,
+                                        1867
+                                    ],
+                                    "score": 0.995,
+                                    "content": "are consistent and align with the human judgment.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        }
+                    ],
+                    "index": 22
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        448,
+                        1883,
+                        1403,
+                        2183
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                1882,
+                                1406,
+                                1931
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1882,
+                                        1406,
+                                        1931
+                                    ],
+                                    "score": 0.956,
+                                    "content": "The agreement rates for AUTO-J and the baselines on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1927,
+                                1403,
+                                1978
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1927,
+                                        1403,
+                                        1978
+                                    ],
+                                    "score": 0.953,
+                                    "content": "Eval-P are in Tab.AUTO-Jachieves a significantly",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1973,
+                                1407,
+                                2026
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1973,
+                                        1407,
+                                        2026
+                                    ],
+                                    "score": 0.992,
+                                    "content": "higher agreement rate than all baselines except GPT-4 on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2022,
+                                1407,
+                                2067
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2022,
+                                        1407,
+                                        2067
+                                    ],
+                                    "score": 0.973,
+                                    "content": "every scenario group.We also plot the prediction consis-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2062,
+                                1408,
+                                2115
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2062,
+                                        1408,
+                                        2115
+                                    ],
+                                    "score": 0.932,
+                                    "content": "tency for each modelin Fig.4AUTo-Jhas a similar",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2114,
+                                1406,
+                                2157
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2114,
+                                        1406,
+                                        2157
+                                    ],
+                                    "score": 0.966,
+                                    "content": "consistency rate to GPT-4 and is far more consistent than",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        }
+                    ],
+                    "index": 29.5
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1450,
+                        1501,
+                        2120,
+                        1981
+                    ],
+                    "blocks": [
+                        {
+                            "type": "image_body",
+                            "bbox": [
+                                1450,
+                                1501,
+                                2120,
+                                1981
+                            ],
+                            "group_id": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1501,
+                                        2120,
+                                        1981
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1450,
+                                                1501,
+                                                2120,
+                                                1981
+                                            ],
+                                            "score": 0.967,
+                                            "type": "image",
+                                            "image_path": "4cf44a963cb6a23b30d1d7f3a50db2a853fab089daf8826c0418b99e35f6268c.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 36.5,
+                            "virtual_lines": [
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1501,
+                                        2120,
+                                        1561.0
+                                    ],
+                                    "spans": [],
+                                    "index": 33
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1561.0,
+                                        2120,
+                                        1621.0
+                                    ],
+                                    "spans": [],
+                                    "index": 34
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1621.0,
+                                        2120,
+                                        1681.0
+                                    ],
+                                    "spans": [],
+                                    "index": 35
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1681.0,
+                                        2120,
+                                        1741.0
+                                    ],
+                                    "spans": [],
+                                    "index": 36
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1741.0,
+                                        2120,
+                                        1801.0
+                                    ],
+                                    "spans": [],
+                                    "index": 37
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1801.0,
+                                        2120,
+                                        1861.0
+                                    ],
+                                    "spans": [],
+                                    "index": 38
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1861.0,
+                                        2120,
+                                        1921.0
+                                    ],
+                                    "spans": [],
+                                    "index": 39
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1921.0,
+                                        2120,
+                                        1981.0
+                                    ],
+                                    "spans": [],
+                                    "index": 40
+                                }
+                            ]
+                        },
+                        {
+                            "type": "image_caption",
+                            "bbox": [
+                                1434,
+                                2028,
+                                2106,
+                                2123
+                            ],
+                            "group_id": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1434,
+                                        2026,
+                                        2106,
+                                        2079
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1434,
+                                                2026,
+                                                2106,
+                                                2079
+                                            ],
+                                            "score": 0.983,
+                                            "content": "Figure 4: Consistency of prediction",
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "index": 41
+                                },
+                                {
+                                    "bbox": [
+                                        1434,
+                                        2075,
+                                        2025,
+                                        2124
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1434,
+                                                2075,
+                                                2025,
+                                                2124
+                                            ],
+                                            "score": 0.966,
+                                            "content": "when swapping the response order.",
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "index": 42
+                                }
+                            ],
+                            "index": 41.5
+                        }
+                    ],
+                    "index": 39.0
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        2156,
+                        1983,
+                        2203
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                2150,
+                                1989,
+                                2209
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2150,
+                                        1989,
+                                        2209
+                                    ],
+                                    "score": 0.985,
+                                    "content": "all other baselines,which makes it a more reliableand robust judge for pairwise comparison",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43
+                        }
+                    ],
+                    "index": 43
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        448,
+                        2263,
+                        1411,
+                        2311
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                2262,
+                                1416,
+                                2319
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2262,
+                                        1416,
+                                        2319
+                                    ],
+                                    "score": 0.988,
+                                    "content": "6.2CRITIQUE GENERATION FOR SINGLE-RESPONSE",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 44
+                        }
+                    ],
+                    "index": 44
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        2348,
+                        2108,
+                        2718
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                2347,
+                                2107,
+                                2406
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2347,
+                                        1742,
+                                        2405
+                                    ],
+                                    "score": 0.995,
+                                    "content": "The comparison results on Eval-C given by GPT-4 and human are in Fig.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1744,
+                                        2348,
+                                        1793,
+                                        2406
+                                    ],
+                                    "score": 0.29,
+                                    "content": "\\textcircled { 3 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1794,
+                                        2347,
+                                        2107,
+                                        2405
+                                    ],
+                                    "score": 0.995,
+                                    "content": "and the complete",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 45
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2393,
+                                2107,
+                                2451
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2393,
+                                        1428,
+                                        2451
+                                    ],
+                                    "score": 0.99,
+                                    "content": "comparison results for different scenario groups are in Tab.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1429,
+                                        2395,
+                                        1495,
+                                        2450
+                                    ],
+                                    "score": 0.52,
+                                    "content": "2 3",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1496,
+                                        2393,
+                                        2107,
+                                        2451
+                                    ],
+                                    "score": 0.972,
+                                    "content": "In both evaluation settings, AUTO-J",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 46
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                2440,
+                                2108,
+                                2496
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2440,
+                                        2108,
+                                        2496
+                                    ],
+                                    "score": 0.98,
+                                    "content": "performs significantly than all baselines,including GPT-4,reflecting the strong ability to criticize",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 47
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2489,
+                                2112,
+                                2540
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2489,
+                                        2112,
+                                        2540
+                                    ],
+                                    "score": 0.98,
+                                    "content": "other LLMs’outputs.We also observe that GPT-4 tends to provide judgments with very few ties,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 48
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2534,
+                                2111,
+                                2585
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2534,
+                                        1918,
+                                        2585
+                                    ],
+                                    "score": 0.992,
+                                    "content": "whereas humans often give tie judgments in comparisons, sometimes even exceeding",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1919,
+                                        2535,
+                                        2001,
+                                        2579
+                                    ],
+                                    "score": 0.86,
+                                    "content": "30 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        2003,
+                                        2534,
+                                        2111,
+                                        2585
+                                    ],
+                                    "score": 0.998,
+                                    "content": "One",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 49
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2580,
+                                2111,
+                                2632
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2580,
+                                        2111,
+                                        2632
+                                    ],
+                                    "score": 0.959,
+                                    "content": "possible explanation is that the critique from AUTO-Jexhibit a clearer structureand readability,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 50
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2623,
+                                2108,
+                                2678
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2623,
+                                        2108,
+                                        2678
+                                    ],
+                                    "score": 0.984,
+                                    "content": "which leads GPT-4 to pay less atention to the content when making comparisons, while humans are",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 51
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2669,
+                                1817,
+                                2723
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2669,
+                                        1817,
+                                        2723
+                                    ],
+                                    "score": 0.987,
+                                    "content": "able to read more attentively and discern subtle differences between two critiques.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 52
+                        }
+                    ],
+                    "index": 48.5
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        451,
+                        2777,
+                        1298,
+                        2824
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                2772,
+                                1305,
+                                2832
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2772,
+                                        1305,
+                                        2832
+                                    ],
+                                    "score": 0.996,
+                                    "content": "6.3OVERALL RATING FOR SINGLE-RESPONSE",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 53
+                        }
+                    ],
+                    "index": 53
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        448,
+                        2865,
+                        2106,
+                        3051
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                2863,
+                                2108,
+                                2921
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2863,
+                                        1231,
+                                        2921
+                                    ],
+                                    "score": 0.978,
+                                    "content": "We conduct experiments on Eval-R with the",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1232,
+                                        2870,
+                                        1273,
+                                        2908
+                                    ],
+                                    "score": 0.81,
+                                    "content": "N",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1274,
+                                        2863,
+                                        1470,
+                                        2921
+                                    ],
+                                    "score": 0.998,
+                                    "content": "inBest-of-",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1472,
+                                        2874,
+                                        1512,
+                                        2908
+                                    ],
+                                    "score": 0.84,
+                                    "content": "N",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1513,
+                                        2863,
+                                        2108,
+                                        2921
+                                    ],
+                                    "score": 0.973,
+                                    "content": "selection set as 8,16,and 32.In",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 54
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2910,
+                                2111,
+                                2966
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2910,
+                                        2111,
+                                        2966
+                                    ],
+                                    "score": 0.988,
+                                    "content": "practice,if two responses share a common model rating,we choose the one with a higher output",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 55
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                2953,
+                                2110,
+                                3013
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2953,
+                                        903,
+                                        3013
+                                    ],
+                                    "score": 0.977,
+                                    "content": "probability. Results in Tab.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        904,
+                                        2957,
+                                        948,
+                                        3013
+                                    ],
+                                    "score": 0.63,
+                                    "content": "2",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        950,
+                                        2953,
+                                        2110,
+                                        3013
+                                    ],
+                                    "score": 0.976,
+                                    "content": "show that responses selected by AUTO-J generally get higher GPT-4",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 56
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                3000,
+                                1353,
+                                3056
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        3000,
+                                        1313,
+                                        3056
+                                    ],
+                                    "score": 0.991,
+                                    "content": "ratings than those selected by baselines on different",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1314,
+                                        3013,
+                                        1353,
+                                        3044
+                                    ],
+                                    "score": 0.88,
+                                    "content": "N",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 57
+                        }
+                    ],
+                    "index": 55.5
+                }
+            ],
+            "page_idx": 0,
+            "page_size": [
+                2550,
+                3300
+            ],
+            "discarded_blocks": [
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        449,
+                        113,
+                        1223,
+                        155
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                108,
+                                1227,
+                                161
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        108,
+                                        1227,
+                                        161
+                                    ],
+                                    "score": 0.982,
+                                    "content": "Published as a conference paper at ICLR 2024",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        1263,
+                        3132,
+                        1287,
+                        3165
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                1258,
+                                3129,
+                                1291,
+                                3177
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1258,
+                                        3129,
+                                        1291,
+                                        3177
+                                    ],
+                                    "score": 1.0,
+                                    "content": "7",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "para_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        342,
+                        2107,
+                        620
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                348,
+                                2108,
+                                394
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        348,
+                                        2108,
+                                        394
+                                    ],
+                                    "score": 0.977,
+                                    "content": "response-level correlations between model-generated ratings and GPT-4 ratings.To save cost, we",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                390,
+                                2108,
+                                442
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        390,
+                                        1345,
+                                        442
+                                    ],
+                                    "score": 0.969,
+                                    "content": "only collect the GPT-4 ratings on the previous “best-of-",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1347,
+                                        393,
+                                        1408,
+                                        433
+                                    ],
+                                    "score": 0.34,
+                                    "content": "N ^ { \\ast }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1410,
+                                        390,
+                                        2108,
+                                        442
+                                    ],
+                                    "score": 0.971,
+                                    "content": "responses. The test set for this task is built",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                438,
+                                2107,
+                                484
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        438,
+                                        2107,
+                                        484
+                                    ],
+                                    "score": 0.97,
+                                    "content": "on the basis of Eval-Cby sampling2 out of 4 queries for each scenario.Weask two different base",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                479,
+                                2107,
+                                534
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        479,
+                                        2107,
+                                        534
+                                    ],
+                                    "score": 0.977,
+                                    "content": "LLMs(LLaMA-2-chat-7B and Vicuna-7B-v1.5) to generate 32 responses for each query through",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                528,
+                                2108,
+                                580
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        528,
+                                        1793,
+                                        580
+                                    ],
+                                    "score": 0.973,
+                                    "content": "uniform sampling (temperature set as 1.O).We refer to this test set as Eval-R,with",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1794,
+                                        529,
+                                        1977,
+                                        572
+                                    ],
+                                    "score": 0.88,
+                                    "content": "5 8 \\times 2 = 1 1 6",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1978,
+                                        528,
+                                        2108,
+                                        580
+                                    ],
+                                    "score": 1.0,
+                                    "content": "queries",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                573,
+                                1472,
+                                625
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        573,
+                                        516,
+                                        625
+                                    ],
+                                    "score": 1.0,
+                                    "content": "and",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        518,
+                                        573,
+                                        774,
+                                        618
+                                    ],
+                                    "score": 0.85,
+                                    "content": "1 1 6 \\times 3 2 = 3 , 7 1 2",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        776,
+                                        573,
+                                        1472,
+                                        625
+                                    ],
+                                    "score": 0.966,
+                                    "content": "query-response pairs for each base LLM.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        }
+                    ],
+                    "index": 2.5,
+                    "bbox_fs": [
+                        439,
+                        348,
+                        2108,
+                        625
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        448,
+                        681,
+                        751,
+                        728
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                676,
+                                759,
+                                733
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        676,
+                                        759,
+                                        733
+                                    ],
+                                    "score": 1.0,
+                                    "content": "5.2BASELINES",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        444,
+                        765,
+                        2111,
+                        1187
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                765,
+                                2106,
+                                817
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        765,
+                                        2106,
+                                        817
+                                    ],
+                                    "score": 0.984,
+                                    "content": "General-purpose models: We use LLaMA-2-Chat-13B(Touvron et al.2023b), Vicuna-13B-v1.5",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        },
+                        {
+                            "bbox": [
+                                452,
+                                809,
+                                2114,
+                                867
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        452,
+                                        809,
+                                        788,
+                                        864
+                                    ],
+                                    "score": 0.977,
+                                    "content": "Chiang et al.2023)",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        794,
+                                        809,
+                                        2114,
+                                        867
+                                    ],
+                                    "score": 0.986,
+                                    "content": "WizardLM-13B-v1.2 (Xu et al.[2023),and ChatGPT(GPT-3.5-turbo-0613).",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                858,
+                                2111,
+                                910
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        858,
+                                        2111,
+                                        910
+                                    ],
+                                    "score": 0.991,
+                                    "content": "We also use GPT-4 (GPT-4-0613) in the pairwise comparison and critique generation,and Claude-2",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                903,
+                                2110,
+                                957
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        903,
+                                        2110,
+                                        957
+                                    ],
+                                    "score": 0.983,
+                                    "content": "and LLaMA-2-Chat-7OB in pairwise comparison.These models are used with corresponding prompt",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                948,
+                                2111,
+                                1004
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        948,
+                                        1882,
+                                        1004
+                                    ],
+                                    "score": 0.987,
+                                    "content": "for each task: pairwise comparison prompt in Tab.14 critique generation prompt in Tab.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1883,
+                                        948,
+                                        1945,
+                                        1001
+                                    ],
+                                    "score": 0.26,
+                                    "content": "\\boxed { 1 8 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1946,
+                                        948,
+                                        2111,
+                                        1004
+                                    ],
+                                    "score": 0.968,
+                                    "content": "(the same",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                993,
+                                2112,
+                                1048
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        993,
+                                        2112,
+                                        1048
+                                    ],
+                                    "score": 0.971,
+                                    "content": "input format for AUTo-J's single-response evaluation),and rating prompt in Tab.[15Evaluation-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                1038,
+                                2106,
+                                1096
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        1040,
+                                        980,
+                                        1096
+                                    ],
+                                    "score": 0.972,
+                                    "content": "specific models:We use SelFee",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        982,
+                                        1038,
+                                        1249,
+                                        1095
+                                    ],
+                                    "score": 0.3,
+                                    "content": "\\left( \\mathrm { Y e ~ e t ~ a l . } \\right) \\left[ 2 0 2 3 \\right]",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1250,
+                                        1040,
+                                        2106,
+                                        1096
+                                    ],
+                                    "score": 0.984,
+                                    "content": "in critique generation, SteamSHP Ethayarajh et al.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1086,
+                                2098,
+                                1142
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1086,
+                                        547,
+                                        1140
+                                    ],
+                                    "score": 0.76,
+                                    "content": "\\boxed { 2 0 2 2 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        549,
+                                        1087,
+                                        2098,
+                                        1142
+                                    ],
+                                    "score": 0.975,
+                                    "content": "in pairwise comparison and overal rating, Open-Assistant's reward model (Kopf et al.|2023)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                435,
+                                1126,
+                                1727,
+                                1193
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        1126,
+                                        974,
+                                        1193
+                                    ],
+                                    "score": 0.986,
+                                    "content": "in overall rating, and PandaLM",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        975,
+                                        1131,
+                                        1317,
+                                        1188
+                                    ],
+                                    "score": 0.34,
+                                    "content": "\\mathrm { \\textregistered N a n g ~ e t ~ a l . } ] \\mathrm { \\textbar { 2 0 2 3 c } } )",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1318,
+                                        1126,
+                                        1727,
+                                        1193
+                                    ],
+                                    "score": 0.992,
+                                    "content": "in pairwise comparison.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 15
+                        }
+                    ],
+                    "index": 11,
+                    "bbox_fs": [
+                        435,
+                        765,
+                        2114,
+                        1193
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        449,
+                        1251,
+                        836,
+                        1304
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                1246,
+                                841,
+                                1310
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1246,
+                                        841,
+                                        1310
+                                    ],
+                                    "score": 0.999,
+                                    "content": "6EXPERIMENTS",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 16
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        452,
+                        1357,
+                        1174,
+                        1405
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1356,
+                                1178,
+                                1408
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1356,
+                                        1178,
+                                        1408
+                                    ],
+                                    "score": 0.976,
+                                    "content": "6.1PAIRWISE RESPONSE COMPARISON",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        }
+                    ],
+                    "index": 17
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        449,
+                        1446,
+                        1402,
+                        1860
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                444,
+                                1445,
+                                1406,
+                                1497
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        1445,
+                                        1406,
+                                        1497
+                                    ],
+                                    "score": 0.992,
+                                    "content": "A common problem in pairwise response comparison is",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1488,
+                                1405,
+                                1546
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1490,
+                                        699,
+                                        1546
+                                    ],
+                                    "score": 0.985,
+                                    "content": "positional bias",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        701,
+                                        1488,
+                                        1045,
+                                        1546
+                                    ],
+                                    "score": 0.62,
+                                    "content": "\\mathrm { ( W a n g ~ e t ~ a l . ) } \\big [ 2 0 2 3 \\mathrm { a } \\big ]",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1046,
+                                        1490,
+                                        1405,
+                                        1546
+                                    ],
+                                    "score": 0.975,
+                                    "content": ",whereanLLMmay",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1536,
+                                1407,
+                                1591
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1536,
+                                        1407,
+                                        1591
+                                    ],
+                                    "score": 0.983,
+                                    "content": "tend to favor specific positions, causing inconsistency in",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1584,
+                                1407,
+                                1634
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1584,
+                                        1407,
+                                        1634
+                                    ],
+                                    "score": 0.977,
+                                    "content": "comparison results when response orders are swapped. To",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1630,
+                                1408,
+                                1679
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1630,
+                                        1408,
+                                        1679
+                                    ],
+                                    "score": 0.98,
+                                    "content": "pursue stable and reliable results,we conduct two compar-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                1678,
+                                1405,
+                                1723
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1678,
+                                        1405,
+                                        1723
+                                    ],
+                                    "score": 0.957,
+                                    "content": "isonsfor each sampleby swappingthe orderof the two",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1722,
+                                1406,
+                                1769
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1722,
+                                        1406,
+                                        1769
+                                    ],
+                                    "score": 0.959,
+                                    "content": "responses in the prompt. We consider a model's judgment",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1767,
+                                1403,
+                                1815
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1767,
+                                        1403,
+                                        1815
+                                    ],
+                                    "score": 0.99,
+                                    "content": "to agree with human only when the two comparison results",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1805,
+                                1294,
+                                1867
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1805,
+                                        1294,
+                                        1867
+                                    ],
+                                    "score": 0.995,
+                                    "content": "are consistent and align with the human judgment.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        }
+                    ],
+                    "index": 22,
+                    "bbox_fs": [
+                        440,
+                        1445,
+                        1408,
+                        1867
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        448,
+                        1883,
+                        1403,
+                        2183
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                1882,
+                                1406,
+                                1931
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1882,
+                                        1406,
+                                        1931
+                                    ],
+                                    "score": 0.956,
+                                    "content": "The agreement rates for AUTO-J and the baselines on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1927,
+                                1403,
+                                1978
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1927,
+                                        1403,
+                                        1978
+                                    ],
+                                    "score": 0.953,
+                                    "content": "Eval-P are in Tab.AUTO-Jachieves a significantly",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1973,
+                                1407,
+                                2026
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1973,
+                                        1407,
+                                        2026
+                                    ],
+                                    "score": 0.992,
+                                    "content": "higher agreement rate than all baselines except GPT-4 on",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2022,
+                                1407,
+                                2067
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2022,
+                                        1407,
+                                        2067
+                                    ],
+                                    "score": 0.973,
+                                    "content": "every scenario group.We also plot the prediction consis-",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2062,
+                                1408,
+                                2115
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2062,
+                                        1408,
+                                        2115
+                                    ],
+                                    "score": 0.932,
+                                    "content": "tency for each modelin Fig.4AUTo-Jhas a similar",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2114,
+                                1406,
+                                2157
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2114,
+                                        1406,
+                                        2157
+                                    ],
+                                    "score": 0.966,
+                                    "content": "consistency rate to GPT-4 and is far more consistent than",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2150,
+                                1989,
+                                2209
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2150,
+                                        1989,
+                                        2209
+                                    ],
+                                    "score": 0.985,
+                                    "content": "all other baselines,which makes it a more reliableand robust judge for pairwise comparison",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43
+                        }
+                    ],
+                    "index": 29.5,
+                    "bbox_fs": [
+                        440,
+                        1882,
+                        1408,
+                        2157
+                    ]
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1450,
+                        1501,
+                        2120,
+                        1981
+                    ],
+                    "blocks": [
+                        {
+                            "type": "image_body",
+                            "bbox": [
+                                1450,
+                                1501,
+                                2120,
+                                1981
+                            ],
+                            "group_id": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1501,
+                                        2120,
+                                        1981
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1450,
+                                                1501,
+                                                2120,
+                                                1981
+                                            ],
+                                            "score": 0.967,
+                                            "type": "image",
+                                            "image_path": "4cf44a963cb6a23b30d1d7f3a50db2a853fab089daf8826c0418b99e35f6268c.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 36.5,
+                            "virtual_lines": [
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1501,
+                                        2120,
+                                        1561.0
+                                    ],
+                                    "spans": [],
+                                    "index": 33
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1561.0,
+                                        2120,
+                                        1621.0
+                                    ],
+                                    "spans": [],
+                                    "index": 34
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1621.0,
+                                        2120,
+                                        1681.0
+                                    ],
+                                    "spans": [],
+                                    "index": 35
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1681.0,
+                                        2120,
+                                        1741.0
+                                    ],
+                                    "spans": [],
+                                    "index": 36
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1741.0,
+                                        2120,
+                                        1801.0
+                                    ],
+                                    "spans": [],
+                                    "index": 37
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1801.0,
+                                        2120,
+                                        1861.0
+                                    ],
+                                    "spans": [],
+                                    "index": 38
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1861.0,
+                                        2120,
+                                        1921.0
+                                    ],
+                                    "spans": [],
+                                    "index": 39
+                                },
+                                {
+                                    "bbox": [
+                                        1450,
+                                        1921.0,
+                                        2120,
+                                        1981.0
+                                    ],
+                                    "spans": [],
+                                    "index": 40
+                                }
+                            ]
+                        },
+                        {
+                            "type": "image_caption",
+                            "bbox": [
+                                1434,
+                                2028,
+                                2106,
+                                2123
+                            ],
+                            "group_id": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1434,
+                                        2026,
+                                        2106,
+                                        2079
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1434,
+                                                2026,
+                                                2106,
+                                                2079
+                                            ],
+                                            "score": 0.983,
+                                            "content": "Figure 4: Consistency of prediction",
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "index": 41
+                                },
+                                {
+                                    "bbox": [
+                                        1434,
+                                        2075,
+                                        2025,
+                                        2124
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1434,
+                                                2075,
+                                                2025,
+                                                2124
+                                            ],
+                                            "score": 0.966,
+                                            "content": "when swapping the response order.",
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "index": 42
+                                }
+                            ],
+                            "index": 41.5
+                        }
+                    ],
+                    "index": 39.0
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        2156,
+                        1983,
+                        2203
+                    ],
+                    "lines": [],
+                    "index": 43,
+                    "bbox_fs": [
+                        440,
+                        2150,
+                        1989,
+                        2209
+                    ],
+                    "lines_deleted": true
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        448,
+                        2263,
+                        1411,
+                        2311
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                2262,
+                                1416,
+                                2319
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2262,
+                                        1416,
+                                        2319
+                                    ],
+                                    "score": 0.988,
+                                    "content": "6.2CRITIQUE GENERATION FOR SINGLE-RESPONSE",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 44
+                        }
+                    ],
+                    "index": 44
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        2348,
+                        2108,
+                        2718
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                2347,
+                                2107,
+                                2406
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2347,
+                                        1742,
+                                        2405
+                                    ],
+                                    "score": 0.995,
+                                    "content": "The comparison results on Eval-C given by GPT-4 and human are in Fig.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1744,
+                                        2348,
+                                        1793,
+                                        2406
+                                    ],
+                                    "score": 0.29,
+                                    "content": "\\textcircled { 3 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1794,
+                                        2347,
+                                        2107,
+                                        2405
+                                    ],
+                                    "score": 0.995,
+                                    "content": "and the complete",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 45
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2393,
+                                2107,
+                                2451
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2393,
+                                        1428,
+                                        2451
+                                    ],
+                                    "score": 0.99,
+                                    "content": "comparison results for different scenario groups are in Tab.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1429,
+                                        2395,
+                                        1495,
+                                        2450
+                                    ],
+                                    "score": 0.52,
+                                    "content": "2 3",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1496,
+                                        2393,
+                                        2107,
+                                        2451
+                                    ],
+                                    "score": 0.972,
+                                    "content": "In both evaluation settings, AUTO-J",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 46
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                2440,
+                                2108,
+                                2496
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2440,
+                                        2108,
+                                        2496
+                                    ],
+                                    "score": 0.98,
+                                    "content": "performs significantly than all baselines,including GPT-4,reflecting the strong ability to criticize",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 47
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2489,
+                                2112,
+                                2540
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2489,
+                                        2112,
+                                        2540
+                                    ],
+                                    "score": 0.98,
+                                    "content": "other LLMs’outputs.We also observe that GPT-4 tends to provide judgments with very few ties,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 48
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2534,
+                                2111,
+                                2585
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2534,
+                                        1918,
+                                        2585
+                                    ],
+                                    "score": 0.992,
+                                    "content": "whereas humans often give tie judgments in comparisons, sometimes even exceeding",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1919,
+                                        2535,
+                                        2001,
+                                        2579
+                                    ],
+                                    "score": 0.86,
+                                    "content": "30 \\%",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        2003,
+                                        2534,
+                                        2111,
+                                        2585
+                                    ],
+                                    "score": 0.998,
+                                    "content": "One",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 49
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2580,
+                                2111,
+                                2632
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2580,
+                                        2111,
+                                        2632
+                                    ],
+                                    "score": 0.959,
+                                    "content": "possible explanation is that the critique from AUTO-Jexhibit a clearer structureand readability,",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 50
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2623,
+                                2108,
+                                2678
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2623,
+                                        2108,
+                                        2678
+                                    ],
+                                    "score": 0.984,
+                                    "content": "which leads GPT-4 to pay less atention to the content when making comparisons, while humans are",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 51
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                2669,
+                                1817,
+                                2723
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        2669,
+                                        1817,
+                                        2723
+                                    ],
+                                    "score": 0.987,
+                                    "content": "able to read more attentively and discern subtle differences between two critiques.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 52
+                        }
+                    ],
+                    "index": 48.5,
+                    "bbox_fs": [
+                        436,
+                        2347,
+                        2112,
+                        2723
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        451,
+                        2777,
+                        1298,
+                        2824
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                2772,
+                                1305,
+                                2832
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2772,
+                                        1305,
+                                        2832
+                                    ],
+                                    "score": 0.996,
+                                    "content": "6.3OVERALL RATING FOR SINGLE-RESPONSE",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 53
+                        }
+                    ],
+                    "index": 53
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        448,
+                        2865,
+                        2106,
+                        3051
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                440,
+                                2863,
+                                2108,
+                                2921
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2863,
+                                        1231,
+                                        2921
+                                    ],
+                                    "score": 0.978,
+                                    "content": "We conduct experiments on Eval-R with the",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1232,
+                                        2870,
+                                        1273,
+                                        2908
+                                    ],
+                                    "score": 0.81,
+                                    "content": "N",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1274,
+                                        2863,
+                                        1470,
+                                        2921
+                                    ],
+                                    "score": 0.998,
+                                    "content": "inBest-of-",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1472,
+                                        2874,
+                                        1512,
+                                        2908
+                                    ],
+                                    "score": 0.84,
+                                    "content": "N",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1513,
+                                        2863,
+                                        2108,
+                                        2921
+                                    ],
+                                    "score": 0.973,
+                                    "content": "selection set as 8,16,and 32.In",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 54
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                2910,
+                                2111,
+                                2966
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        2910,
+                                        2111,
+                                        2966
+                                    ],
+                                    "score": 0.988,
+                                    "content": "practice,if two responses share a common model rating,we choose the one with a higher output",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 55
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                2953,
+                                2110,
+                                3013
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        2953,
+                                        903,
+                                        3013
+                                    ],
+                                    "score": 0.977,
+                                    "content": "probability. Results in Tab.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        904,
+                                        2957,
+                                        948,
+                                        3013
+                                    ],
+                                    "score": 0.63,
+                                    "content": "2",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        950,
+                                        2953,
+                                        2110,
+                                        3013
+                                    ],
+                                    "score": 0.976,
+                                    "content": "show that responses selected by AUTO-J generally get higher GPT-4",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 56
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                3000,
+                                1353,
+                                3056
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        3000,
+                                        1313,
+                                        3056
+                                    ],
+                                    "score": 0.991,
+                                    "content": "ratings than those selected by baselines on different",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1314,
+                                        3013,
+                                        1353,
+                                        3044
+                                    ],
+                                    "score": 0.88,
+                                    "content": "N",
+                                    "type": "inline_equation"
+                                }
+                            ],
+                            "index": 57
+                        }
+                    ],
+                    "index": 55.5,
+                    "bbox_fs": [
+                        436,
+                        2863,
+                        2111,
+                        3056
+                    ]
+                }
+            ]
+        }
+    ],
+    "_backend": "pipeline",
+    "_version_name": "2.1.8"
+}

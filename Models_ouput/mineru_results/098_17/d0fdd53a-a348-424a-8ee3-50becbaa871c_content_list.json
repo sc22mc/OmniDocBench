@@ -1,0 +1,98 @@
+[
+    {
+        "type": "text",
+        "text": "making Your decision.KEEP YOUR REASONING BRIEF.Again，don't favor either A or B if they are both acceptable and correct -- judge a tie instead. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The prompt that the GPT-4 uses to generate 128-token summary is as follows: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "‘Write a summary for the above text. Your summary should not exceed 1oo words but should include as much information of the original text as possible.” ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We show examples of the GPT-4 evaluation on a pretrained and a non-pretrained ICAE in Table 9. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Passage1(514 tokens): French senior civil servant arrested on suspicion of spying for North Korea ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "November27,2018byJosephFitsanakis ",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/a85813104f2aef265b982f9b155d08f26e4a96d967a2ac73b7d5b5766ac6ee68.jpg",
+        "table_caption": [
+            "Table 9: Examples of outputs by the target LLM (i.e.,Llama) conditioning on memory slots ( $k = 1 2 8$ produced by the pretrained and non-pretrained ICAE. The highlighted parts are not faithful to the context. "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Prompt: What is the maximum prison sentence Quennedey could face if found guilty?</td></tr><tr><td>Assistant A (pretrained ICAE): Quennedey could face up to 30 years in prison if found guilty.</td></tr><tr><td>Assistant B (non-pretrained ICAE): Quennedey could face up to three years in prison if found guilty.</td></tr><tr><td>Answer (by the GPT-4): Up to 30 years.</td></tr><tr><td>GPT-4 evaluation:Asistant Acorrectlystates the maximum prison sentence from the text,while Assistant B providesan incorrectnumber.</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AseniorcivilservantintheupperhouseoftheFrenchparliament has beenarrestedonsuspicionofspying forNorth Korea, according toprosecutors.Thenewsofthesuspectedspy'sarrestwas firstreportedonMondaybyQuotidien,adailypolitics andcultureshowontheMonaco-basedtelevisionchannelTMC.Theshowcited“ajudicialsourceinParis”andsaid that France'sdomesticscurityandcounterintelligenceagency,theGeneralDirectorateforInteralSecurity(DGSI),wasinharge of the espionage case. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(omitted 233 words) ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The senior civil servant faces up to 30 years in prison if found guilty of espionage. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Passage 2 (506 tokens): ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "With Red Hat,IBM to become the leading hybrid cloud provider Watch Now ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "After IBMacquired Red Hat,I suggested IBM paid $\\$ 34$ billon for the Linux power so it could become a hybrid-cloud power. WiththenewstatRedHatillireoaridloddatatorgeompanyitsecoeearertetthe IBM-RedHatdealisallaboutthehybridcloud. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(omitted 208 words) ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AsRangaRangachari,RedHat'svice presidentofStorageandHyperconverged Infrastructure,said inastatement: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\"Dataportabilityisakeyimperativefororganizationsbuildinganddeployingcloud-nativeapplicationsacrossprivateand multipleclouds.NooBaa’s technologies willaugmentourportfolioandstrengthenourabilitytomeetheneedsofdevelopers intoday’shybridandmulticloudworld.WearethriledtowelcomeatechnicalteamofninetotheRedHatfamilyas wework together to further solidify Red Hat as a leading provider of open hybrid-cloud technologies. ",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/66c438141de867f33d264083ab615ace801a0950d24476fe3ee00f2b658ba606.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Prompt:Discuss the role of Ranga Rangachari in the context of the text</td></tr><tr><td>AssistantA(pretrainedICAE):RangaRangacharisthevicepresidentofStorageandHyperconverged InfrastructureatRed Hat.Heisresponsibleforthecompany&#x27;storageandhyperconvergedofferings,andhewelcomesthenine-memberteamof technical experts from NoaBaa to join Red Hat as a part of the IBMacquisition.</td></tr><tr><td>Assistant B(non-pretrained ICAE): Ranga Rangachari is the CEOof Red Hat,and he is excited about the acquisitionof NooBaaasitwillhelpRedHatbecomealeaderinhybridcloudmanagement.HebelievesthatNooBa’stechnologywill enableRedHattoprovideasingle,comprehensiveplatformformanagingdataacrosmultipleclouds,andthatthiswillbea significant differentiator forRed Hat in the market.</td></tr><tr><td>Answer(bytheGPT-4):Ranga Rangachari sthe vice presidentof StorageandHyperconverged InfrastructureatRed Hat.He madeastatementregardingtheacquisitionofNooBaa,highlightingtheimportanceofdataportabilityintoday’shybridand multicloud worldandhowNooBa’stechnologieswouldstrengthenRedHat’sabilitytomeet theneedsofdevelopers.</td></tr><tr><td>GPT-4evaluation:Assistant Acorrectly identifies Ranga RangacharisroleasthevicepresidentofStorageand Hypercon- vergedIfrastructureatRedHatandaccuratelydescribes hisstatementabouteacqusitionofNooBaa.AsistantBincorrectly statesthat Ranga Rangachari is the CEOof Red Hat.</td></tr></table>",
+        "page_idx": 0
+    }
+]

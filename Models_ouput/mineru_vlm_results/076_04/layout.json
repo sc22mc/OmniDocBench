@@ -1,0 +1,1198 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        204,
+                        204,
+                        1249,
+                        501
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                204,
+                                1249,
+                                501
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        204,
+                                        1249,
+                                        501
+                                    ],
+                                    "type": "text",
+                                    "content": "for this purpose was introduced in 2020 with VectorNet [23]. Thus, VectorNet is a solid baseline and ideally suitable for our application. The problem is flipped: In typical motion prediction tasks, AVs predict surrounding objects' trajectories. In testing, the trajectories of surrounding objects are (partially) known, but the AVs' behavior has to be predicted."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        198,
+                        504,
+                        1249,
+                        702
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                504,
+                                1249,
+                                702
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        504,
+                                        1249,
+                                        702
+                                    ],
+                                    "type": "text",
+                                    "content": "Scenario embeddings do not cover all properties of instantiated scenarios. The relevant properties may have to be determined by feature selection. Remaining properties can be accounted for by probabilistic motion prediction models."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        558,
+                        729,
+                        895,
+                        775
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                558,
+                                729,
+                                895,
+                                775
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        558,
+                                        729,
+                                        895,
+                                        775
+                                    ],
+                                    "type": "text",
+                                    "content": "IV. EXPERIMENTS"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        198,
+                        788,
+                        1249,
+                        887
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                788,
+                                1249,
+                                887
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        788,
+                                        1249,
+                                        887
+                                    ],
+                                    "type": "text",
+                                    "content": "Below, we describe our investigation aimed at addressing three main questions: Can VectorNet predict Ego trajectories..."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        237,
+                        894,
+                        1150,
+                        1042
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                237,
+                                894,
+                                1150,
+                                1042
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        237,
+                                        894,
+                                        1150,
+                                        1042
+                                    ],
+                                    "type": "text",
+                                    "content": "for individual functional scenarios it is trained on? for multiple functional scenarios it is trained on? for functional scenarios not seen during training?"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        196,
+                        1065,
+                        1234,
+                        1115
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                196,
+                                1065,
+                                1234,
+                                1115
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        196,
+                                        1065,
+                                        1234,
+                                        1115
+                                    ],
+                                    "type": "text",
+                                    "content": "A. Generation of the Scenario Embeddings and Trajectories"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        196,
+                        1131,
+                        1249,
+                        1326
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                196,
+                                1131,
+                                1249,
+                                1326
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        196,
+                                        1131,
+                                        1249,
+                                        1326
+                                    ],
+                                    "type": "text",
+                                    "content": "To enable a comparison to regression metamodels, we generate vectorized scenario embeddings for the three scenarios in Fig. 2 parametrically but introduce random variations making the scenarios more complex and realistic (see Fig. 4)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        204,
+                        1329,
+                        1249,
+                        1920
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                1329,
+                                1249,
+                                1920
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "text",
+                                    "content": "The center of the lanes follows a polynomial of "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "3^{\\mathrm{rd}}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "text",
+                                    "content": " degree with "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x\\in [- 55\\mathrm{m},55\\mathrm{m}]"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "text",
+                                    "content": " ; where vectors describe the lanes (at "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "- 55\\mathrm{m} + \\frac{110\\mathrm{m}}{24}\\cdot i\\forall y\\leq \\mathbb{N}_0^{\\leq 24})"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "text",
+                                    "content": " , the "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "y"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "text",
+                                    "content": " coordinate of the lane's center is shifted uniformly by "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathcal{U}(- 0.5\\mathrm{m},0.5\\mathrm{m})"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "text",
+                                    "content": " Accordingly, the lane width is "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "3.5\\mathrm{m} + \\mathcal{U}(- 0.3\\mathrm{m},0.3\\mathrm{m})"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "text",
+                                    "content": " .Ego and Co use a lane keeping controller; the resulting vehicle orientations are varied randomly with "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathcal{U}(- 2.9^{\\circ},2.9^{\\circ})"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "text",
+                                    "content": " .The Co's velocity follows the description in Fig. 2 and is varied with "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathcal{U}(- 0.1\\frac{\\mathrm{m}}{\\mathrm{s}},0.1\\frac{\\mathrm{m}}{\\mathrm{s}})"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "text",
+                                    "content": " . Using a P- controller, the Ego tries to ensure a time gap of "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "2\\mathrm{s}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "text",
+                                    "content": " to the Co. Concrete scenarios are sampled uniformly from the ranges given in Table I The time step width is "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "0.2\\mathrm{s}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "text",
+                                    "content": " and the scenarios are simulated for "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1329,
+                                        1249,
+                                        1920
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "5\\mathrm{s}"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        198,
+                        1943,
+                        1142,
+                        1993
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                1943,
+                                1142,
+                                1993
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        1943,
+                                        1142,
+                                        1993
+                                    ],
+                                    "type": "text",
+                                    "content": "B. Training of the Motion Prediction Model VectorNet"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        204,
+                        2009,
+                        1249,
+                        2306
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                2009,
+                                1249,
+                                2306
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        2009,
+                                        1249,
+                                        2306
+                                    ],
+                                    "type": "text",
+                                    "content": "We build upon a publically available implementation of VectorNet [9]. VectorNet is supplied with the lanes, the Co's trajectory, and the initial vector of the Ego (which holds information about the position, orientation, and velocity). It has to predict all following vectors of the Ego. Available data are split into "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2009,
+                                        1249,
+                                        2306
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "90\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2009,
+                                        1249,
+                                        2306
+                                    ],
+                                    "type": "text",
+                                    "content": " training and "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2009,
+                                        1249,
+                                        2306
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "10\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2009,
+                                        1249,
+                                        2306
+                                    ],
+                                    "type": "text",
+                                    "content": " validation data."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1300,
+                        211,
+                        2340,
+                        528
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1300,
+                                211,
+                                2340,
+                                528
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1300,
+                                        211,
+                                        2340,
+                                        528
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1300,
+                                                211,
+                                                2340,
+                                                528
+                                            ],
+                                            "type": "image",
+                                            "image_path": "2fb2465547b3a0f387e9948333dced125691210c55796a7b0f3ebc92927f31e4.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 10,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1292,
+                                577,
+                                2346,
+                                729
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1292,
+                                        577,
+                                        2346,
+                                        729
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1292,
+                                                577,
+                                                2346,
+                                                729
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig.4. Data of the scenario ACC&LK. Each vector is defined by its start and end points, object type, object ID, and timestamp. The numbers next to the vectors represent their timestamps in seconds; lanes' timestamps are 0. Note that vectors can contain more features, e.g., bounding boxes or object colors."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 11,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1300,
+                        818,
+                        1950,
+                        867
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1300,
+                                818,
+                                1950,
+                                867
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1300,
+                                        818,
+                                        1950,
+                                        867
+                                    ],
+                                    "type": "text",
+                                    "content": "C. Evaluation Procedure and Criteria"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1297,
+                        887,
+                        2346,
+                        1230
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                887,
+                                2346,
+                                1230
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        887,
+                                        2346,
+                                        1230
+                                    ],
+                                    "type": "text",
+                                    "content": "To answer the research questions, VectorNet is trained with different mixes of the three scenarios' data. "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        887,
+                                        2346,
+                                        1230
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N_{\\mathrm{LK}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        887,
+                                        2346,
+                                        1230
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N_{\\mathrm{ACC}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        887,
+                                        2346,
+                                        1230
+                                    ],
+                                    "type": "text",
+                                    "content": " ,and "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        887,
+                                        2346,
+                                        1230
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N_{\\mathrm{ACC\\ & LK}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        887,
+                                        2346,
+                                        1230
+                                    ],
+                                    "type": "text",
+                                    "content": " denote the number of samples of the respective scenario VectorNet is supplied with. "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        887,
+                                        2346,
+                                        1230
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathrm{ADE}_{\\mathrm{LK}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        887,
+                                        2346,
+                                        1230
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathrm{ADE}_{\\mathrm{ACC}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        887,
+                                        2346,
+                                        1230
+                                    ],
+                                    "type": "text",
+                                    "content": " ,and "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        887,
+                                        2346,
+                                        1230
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathrm{ADE}_{\\mathrm{ACC\\ & LK}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        887,
+                                        2346,
+                                        1230
+                                    ],
+                                    "type": "text",
+                                    "content": " denote the average displacement error (ADE) with respect to the Ego's trajectory. The ADEs are calculated based on a test set with a size of "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        887,
+                                        2346,
+                                        1230
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "10\\mathrm{k}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        887,
+                                        2346,
+                                        1230
+                                    ],
+                                    "type": "text",
+                                    "content": " per functional scenario."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                },
+                {
+                    "bbox": [
+                        1295,
+                        1237,
+                        2343,
+                        1435
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1295,
+                                1237,
+                                2343,
+                                1435
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1295,
+                                        1237,
+                                        2343,
+                                        1435
+                                    ],
+                                    "type": "text",
+                                    "content": "As shown in Fig. 1, we also use VectorNet's predictions to calculate evaluation metrics and compare these to predictions of regression metamodels, which predict the evaluation metrics based on the respective inputs of the scenarios in Table I"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                },
+                {
+                    "bbox": [
+                        1708,
+                        1468,
+                        1930,
+                        1514
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1708,
+                                1468,
+                                1930,
+                                1514
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1708,
+                                        1468,
+                                        1930,
+                                        1514
+                                    ],
+                                    "type": "text",
+                                    "content": "V. RESULTS"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1295,
+                        1537,
+                        2343,
+                        1640
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1295,
+                                1537,
+                                2343,
+                                1640
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1295,
+                                        1537,
+                                        2343,
+                                        1640
+                                    ],
+                                    "type": "text",
+                                    "content": "Below, we assess VectorNet's predictive performance based on the predicted Ego trajectories and evaluation metrics."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "bbox": [
+                        1295,
+                        1676,
+                        2187,
+                        1722
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1295,
+                                1676,
+                                2187,
+                                1722
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1295,
+                                        1676,
+                                        2187,
+                                        1722
+                                    ],
+                                    "type": "text",
+                                    "content": "A. Assessment Based on Predicted Ego Trajectories"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 17,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1297,
+                        1742,
+                        2346,
+                        2138
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                1742,
+                                2346,
+                                2138
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1742,
+                                        2346,
+                                        2138
+                                    ],
+                                    "type": "text",
+                                    "content": "Rows 1 to 3 of Table II indicate that trained with individual functional scenarios' data, VectorNet achieves good ADEs for the functional scenario it is trained on. Rows 4 to 7 show that combining data from two functional scenarios is possible; however, for LK and ACC&LK, 3k samples are required. Combining data from all three scenarios (row 8), the predictive performance is similar to that of the separately trained models (rows 1 to 3); Fig. 5 visualizes this model's predictions."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 18
+                },
+                {
+                    "bbox": [
+                        1297,
+                        2141,
+                        2343,
+                        2286
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                2141,
+                                2343,
+                                2286
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2141,
+                                        2343,
+                                        2286
+                                    ],
+                                    "type": "text",
+                                    "content": "The more challenging task is the generalization to functional scenarios not seen during training. Row 3 shows that trained on ACC&LK, a low ADE for ACC is achieved. This is expected"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 19
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        224,
+                        2494,
+                        1226,
+                        2963
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                224,
+                                2494,
+                                1226,
+                                2963
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        2494,
+                                        1226,
+                                        2963
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                224,
+                                                2494,
+                                                1226,
+                                                2963
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Input</td><td>Min</td><td>Max</td><td>Unit</td><td>Explanation</td></tr><tr><td>a0</td><td>-1</td><td>-</td><td>-</td><td>0th polynomial coefficient</td></tr><tr><td>a1</td><td>-0.1</td><td>0.1</td><td>-</td><td>1st polynomial coefficient</td></tr><tr><td>a2</td><td>-0.01</td><td>0.01</td><td>-</td><td>2nd polynomial coefficient</td></tr><tr><td>a3</td><td>-0.001</td><td>0.001</td><td>-</td><td>3rd polynomial coefficient</td></tr><tr><td>vEGo</td><td>8</td><td>16</td><td>m</td><td>Ego&#x27;s initial velocity</td></tr><tr><td>xCo</td><td>-50 + vEGo</td><td>-50 + 2vEGo</td><td>m</td><td>Co&#x27;s initial x-coordinate</td></tr><tr><td>vCo</td><td>vEGo - 4</td><td>vEGo + 4</td><td>m</td><td>Co&#x27;s initial velocity</td></tr><tr><td>tv Co</td><td>0</td><td>3</td><td>m</td><td>duration of constant velocity</td></tr><tr><td>aCo</td><td>-8</td><td>-1</td><td>s</td><td>Co&#x27;s acceleration</td></tr><tr><td>ta Co</td><td>1</td><td>3</td><td>s</td><td>duration of acceleration</td></tr></table>",
+                                            "image_path": "559bc4fef374040fac92c42245872475056925737429304b7867e73e25335025.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 21,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                402,
+                                2389,
+                                1045,
+                                2465
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        402,
+                                        2389,
+                                        1045,
+                                        2465
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                402,
+                                                2389,
+                                                1045,
+                                                2465
+                                            ],
+                                            "type": "text",
+                                            "content": "TABLEI LOGICAL SCENARIOS' INPUTS AND RANGES"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 20,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 21
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        1310,
+                        2501,
+                        2330,
+                        2963
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1310,
+                                2501,
+                                2330,
+                                2963
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1310,
+                                        2501,
+                                        2330,
+                                        2963
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1310,
+                                                2501,
+                                                2330,
+                                                2963
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>Row</td><td>NACC</td><td>NLK</td><td>NACC&amp;amp;LK</td><td>ADEACC</td><td>ADELK</td><td>ADEACC&amp;amp;LK</td></tr><tr><td>1</td><td>2000</td><td>0</td><td>0</td><td>0.37 m</td><td>12.47 m</td><td>8.96 m</td></tr><tr><td>2</td><td>0</td><td>2000</td><td>0</td><td>2.40 m</td><td>0.40 m</td><td>6.48 m</td></tr><tr><td>3</td><td>0</td><td>0</td><td>2000</td><td>0.43 m</td><td>14.86 m</td><td>0.52 m</td></tr><tr><td>4</td><td>2000</td><td>2000</td><td>0</td><td>0.39 m</td><td>0.41 m</td><td>4.69 m</td></tr><tr><td>5</td><td>0</td><td>2000</td><td>2000</td><td>1.58 m</td><td>0.97 m</td><td>1.73 m</td></tr><tr><td>6</td><td>0</td><td>3000</td><td>3000</td><td>0.45 m</td><td>0.46 m</td><td>0.54 m</td></tr><tr><td>7</td><td>2000</td><td>0</td><td>2000</td><td>0.37 m</td><td>9.18 m</td><td>0.47 m</td></tr><tr><td>8</td><td>2000</td><td>2000</td><td>2000</td><td>0.40 m</td><td>0.42 m</td><td>0.60 m</td></tr><tr><td>9</td><td>2000</td><td>2000</td><td>200</td><td>0.41 m</td><td>0.42 m</td><td>0.83 m</td></tr><tr><td>10</td><td>0</td><td>0</td><td>200</td><td>0.88 m</td><td>9.95 m</td><td>1.13 m</td></tr></table>",
+                                            "image_path": "9ed3fb0e22063b3d09737a421679fd642df4f9fbc5faa167afe87a83ef145b0b.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 23,
+                            "type": "table_body"
+                        },
+                        {
+                            "bbox": [
+                                1300,
+                                2379,
+                                2343,
+                                2461
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1300,
+                                        2379,
+                                        2343,
+                                        2461
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1300,
+                                                2379,
+                                                2343,
+                                                2461
+                                            ],
+                                            "type": "text",
+                                            "content": "TABLE II AVERAGE DISPLACEMENT ERRORS (ADE) OF PRED. EGO TRAJECTORIES"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 22,
+                            "type": "table_caption"
+                        }
+                    ],
+                    "index": 23
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

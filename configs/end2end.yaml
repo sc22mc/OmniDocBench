@@ -3,15 +3,15 @@ end2end_eval:
     text_block:
       metric:
         - Edit_dist
-        # - BLEU
-        # - METEOR
+        - BLEU
+        - METEOR
     display_formula:
       metric:
         - Edit_dist
         - CDM
     table:
       metric:
-        # - TEDS
+        - TEDS
         - Edit_dist
     reading_order:
       metric:
@@ -19,9 +19,9 @@ end2end_eval:
   dataset:
     dataset_name: end2end_dataset
     ground_truth:
-      data_path: /Users/handsomexu/Desktop/OmniDocBench/OtherDataset/OtherDataset.json
+      data_path: /Users/bytedance/Project/OmniDocBench/OursDataset/OmniDocBench.json
     prediction:
-      data_path: //Users/handsomexu/Desktop/OmniDocBench/MinerU_output_OtherDataset
+      data_path: /Users/bytedance/Project/OmniDocBench/Models_ouput/wisdoc_results_md
     match_method: quick_match
     # filter: 
     #   language: english

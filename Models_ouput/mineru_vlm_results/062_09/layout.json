@@ -1,0 +1,506 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        198,
+                        227,
+                        1267,
+                        768
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                198,
+                                227,
+                                1267,
+                                768
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        227,
+                                        1267,
+                                        768
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                198,
+                                                227,
+                                                1267,
+                                                768
+                                            ],
+                                            "type": "image",
+                                            "image_path": "afe3882ba954796a9cddab389419c64fb31293e300972f1b859bd5a53529d863.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                198,
+                                808,
+                                1152,
+                                851
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        808,
+                                        1152,
+                                        851
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                198,
+                                                808,
+                                                1152,
+                                                851
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 12. Pothole recognition and visualization (in the view of ego2)."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        204,
+                        940,
+                        1249,
+                        1237
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                940,
+                                1249,
+                                1237
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        940,
+                                        1249,
+                                        1237
+                                    ],
+                                    "type": "text",
+                                    "content": "the focal distance "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        940,
+                                        1249,
+                                        1237
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f = (f_{x},f_{y})"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        940,
+                                        1249,
+                                        1237
+                                    ],
+                                    "type": "text",
+                                    "content": " represents the distance from the driver to the image plane. With the dimensions of the image plane (windshield), and specifically the aspect ratio, known, the frustum is fully defined and the projection can be made from a point in 3D windshield coordinates "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        940,
+                                        1249,
+                                        1237
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(x,y,z)"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        940,
+                                        1249,
+                                        1237
+                                    ],
+                                    "type": "text",
+                                    "content": " to pixels "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        940,
+                                        1249,
+                                        1237
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(u,v)"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        940,
+                                        1249,
+                                        1237
+                                    ],
+                                    "type": "text",
+                                    "content": " on the image plane using the following equation:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        341,
+                        1254,
+                        1101,
+                        1425
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                341,
+                                1254,
+                                1101,
+                                1425
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        341,
+                                        1254,
+                                        1101,
+                                        1425
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "{\\binom{u}{v}}={\\binom{1}{0}}\\quad 0\\quad x_0\\\\0\\quad 1\\quad y\\\\0\\quad 0\\quad 0\\end{array}{\\binom{f_x}{0}}\\quad f_y\\quad 0\\quad{\\binom{x}{y}}\\\\0\\quad 0\\quad 0\\quad 0\\quad z",
+                                    "image_path": "aa30594d984c17cad0ec96be672b40cbdaa96beee61ff46399d090d23bbd6769.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        204,
+                        1438,
+                        1249,
+                        1689
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                1438,
+                                1249,
+                                1689
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        1438,
+                                        1249,
+                                        1689
+                                    ],
+                                    "type": "text",
+                                    "content": "An undesirable property is the sparsity of the projected pixels attributed to the sparsity of the point cloud. To overcome this limitation, we use an iterative nearest neighbour algorithm on the image space to fill the gaps between projected points. The result of this process is shown in Figs. 7,12"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        204,
+                        1689,
+                        1249,
+                        2286
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                1689,
+                                1249,
+                                2286
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        1689,
+                                        1249,
+                                        2286
+                                    ],
+                                    "type": "text",
+                                    "content": "More specifically, Fig. 7 and Fig. 10 illustrate the segmented point cloud projected to the AR interface of ego1 and ego2 correspondingly. Note that all information is rendered for the sake of completeness. In real- world cases only the necessary information (e.g., arrows or recognised potholes) will be rendered so as to avoid clutter. Fig. 8 shows the perspective projection of the points to the AR interface and image filling for ego1. In Fig. 9 and Fig. 12 the pothole recognition and visualization is depicted for the vehicles ego1 and ego2, while a warning about an upcoming pothole (retrieved from the database) before reaching the field of view of ego2 is presented in Fig. 11"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        204,
+                        2290,
+                        1249,
+                        2679
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                2290,
+                                1249,
+                                2679
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        2290,
+                                        1249,
+                                        2679
+                                    ],
+                                    "type": "text",
+                                    "content": "We would like to clarify here that for evaluation of our methodology and demonstration purposes in the previous figures we project and illustrate in the 2D display device all the information from scene segmentation. However, in real driving scenarios only the most relevant information of the scene (e.g., dangerous objects, potholes) would be highlighted and displayed so as to decrease the amount of any unnecessary information that may bother or confuse the driver."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        198,
+                        2755,
+                        1195,
+                        2801
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                2755,
+                                1195,
+                                2801
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        2755,
+                                        1195,
+                                        2801
+                                    ],
+                                    "type": "text",
+                                    "content": "B. Information Storage and Vehicle Communication Rules"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        204,
+                        2818,
+                        1249,
+                        3115
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                2818,
+                                1249,
+                                3115
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        2818,
+                                        1249,
+                                        3115
+                                    ],
+                                    "type": "text",
+                                    "content": "One of the advantages of autonomous vehicles is their ability to communicate with each other forming a cyberphysical system of systems. Many new opportunities arise from the ability of systems to share information, one of which is the transmission of objects or landmarks of interest that were previously observed by an agent, to other agents of the "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1297,
+                                231,
+                                2343,
+                                1221
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        231,
+                                        2343,
+                                        1221
+                                    ],
+                                    "type": "text",
+                                    "content": "system who could benefit from such information. In particular, our work focuses on information sharing among vehicles about encountered obstacles, such as potholes and bumps, through a centralized server. When a vehicle identifies an unexpected (i.e., unregistered) obstacle, the vehicle sends a request to the server and after further inspection, the new potential obstacle is either discarded or added to the database. Vehicles may also send information regarding already known obstacles when they come across them. Such information includes the Global Positioning System (GPS) location, dimensions and geometrical characteristics in case the obstacle needs updating in the database, e.g. it has increased in size or has been fixed. Through this communication system, a driver can be warned about potential hazards that may not yet be in his field of view or they are obstructed by other objects and thus, increase his performance and decision- making abilities. We should clarify that our work does not focus on communication protocols and defence mechanisms against potential network attacks, but rather defines a solid framework describing the roles of each node and the information flow."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1297,
+                        231,
+                        2343,
+                        1221
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 9,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1297,
+                        1227,
+                        2343,
+                        1867
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                1227,
+                                2343,
+                                1867
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1227,
+                                        2343,
+                                        1867
+                                    ],
+                                    "type": "text",
+                                    "content": "By using the LiDAR- based obstacle detection method, described in section III, the vehicle transmits via a communication component to a central server the points belonging to the obstacle, segmented from the point cloud scene. The information is coupled with a timestamp and the GPS location of the vehicle at that instance. The server then transmits to any vehicle in the vicinity of the obstacle, alerting (autonomous vehicles or human operators) about potential hazards from a large distance and thus helping alleviate the inability of the LiDAR sensor to identify obstacles from such a range. In the case of a driver, we also use the AR interface of the vehicle to display, in a non- distracting manner, the location and nature of the potentially upcoming obstacle."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1297,
+                        1874,
+                        2343,
+                        2719
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                1874,
+                                2343,
+                                2719
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1874,
+                                        2343,
+                                        2719
+                                    ],
+                                    "type": "text",
+                                    "content": "Potholes can change shape over time, most commonly due to deterioration of the surrounding pavement and erosion caused by environmental effects or in the opposite case due to pothole repair. Thus, periodic updates are necessary for the long- term reliability of the pothole visualization component. As there is a need for periodical evaluation of the objects in the server database and update in the case of changes, we assign a shape- and geometry- based descriptor at each obstacle, so that it is characterized by a unique representative signature. Thus, every vehicle encountering the obstacle in a nearby range, calculates the descriptor of the obstacle's area. The new descriptor is then transmitted to the server and is used to confirm whether the information is up- to- date. In the case of a difference in the descriptor's value, an algorithm running in the server decides between keeping the old descriptor, updating it with the new one, or marking the obstacle as removed and deleting the entry from the database."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1297,
+                        2722,
+                        2343,
+                        3115
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                2722,
+                                2343,
+                                3115
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2722,
+                                        2343,
+                                        3115
+                                    ],
+                                    "type": "text",
+                                    "content": "More specifically, we implement a simple system that (when a new pothole is detected) initiates a database search to retrieve whether the pothole is new or already existed and needs to be updated. Since potholes are static and thus change only in shape, the similarity check is based only on the bounding box of the re- identified pothole. When the overlap of the bounding boxes is less than a threshold, the previous object is replaced by the new one. In our experiments we used a"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

@@ -1,0 +1,84 @@
+[
+    {
+        "type": "text",
+        "text": "Denote $F _ { K , b } ( A , B ) : = b V ( A , K [ n - 1 ] ) V ( B , K [ n -$ $\\mathrm { . } ] ) V ( B , K [ n - 1 ] ) - V ( A , B , K [ n - 2 ] ) V ( K )$ ，then $b _ { 2 } ( K )$ can be equivalently defined as the least $b \\geq 1$ such that $F _ { K , b } \\ge 0$ Notice that $b _ { 2 } ( T K ) = b _ { 2 } ( K )$ for every affine transformation $T$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Clearly， $F _ { K } = F _ { K , 1 }$ . A Blaschke selection argument shows that the supremum is actually a maximum; in particular $b _ { 2 } ( K ) < \\infty$ forall $K \\in \\mathcal { K } ^ { n }$ . In fact6, $b _ { 2 } ( K ) \\leq 2$ for any $K$ .Notice that $b _ { 2 } ( K ) > 1$ is equivalent to not having $F _ { K } \\geq 0$ (i.e. to existence of a pair $( A , B )$ such that $F _ { K } ( A , B ) <$ 0) ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.AN EXCLUDING CONDITION WITH ISOPERIMETRIC RATIOS",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "If a property $\\mathcal { P }$ (for instance,being decomposable) is such that when $K$ has $\\mathcal { P }$ ,then $F _ { K }$ cannot be non-negative (on all of $( K ^ { n } ) ^ { 2 }$ )，we shall say that $\\mathcal { P }$ is an excluding condition (in the terminology of [SZ16],a convex body $K$ cannot both satisfy $\\mathcal { P }$ and satisfy Bezout inequalities). It was shown in [SSZ1, SSZ2] that being weakly decomposable (a property which in particular includes being a polytope other than an $n$ -simplex,or being decomposable） is an excluding condition. Denote $\\ =K _ { \\ / F }$ the subclass of $K ^ { n }$ consisting of convex bodies having at least one facet : $\\ =K _ { \\ / F }$ is closed under Minkowski addition,and contains the class of $n$ -polytopes. In this section we give a new excluding condition, which concerns bodies $K \\in \\mathcal { K } _ { F }$ . We will work in $\\mathbb { R } ^ { n }$ with $n \\geq 3$ ： ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $K \\subset \\mathbb { R } ^ { n }$ be a non-empty compact convex set. Recall there exists a unique affine subspace $H$ of $\\mathbb { R } ^ { n }$ ,such that $K \\subset H$ ，and $H$ has maximal (affine) co-dimension. The dimension of $K$ is defined as the dimension of this subspace $H$ .Alternatively $\\dim ( K )$ can be defined as the maximal $k \\geq 1$ ，such that one may find $k + 1$ affinely independent points,within $K$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $k \\geq 2$ and let $K \\in { \\cal K } ^ { n }$ be $k$ -dimensional. Then denote ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/36222f33c64ccbcb72c73022b0aa5dc7c7f165e00175cff3ffa11cc5c27923cc.jpg",
+        "text": "$$\n\\operatorname { I s o p } ( K ) = { \\frac { 1 } { k } } { \\frac { | \\partial K | _ { k - 1 } } { | K | _ { k } } } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proposition 1. Let $K$ be a convex body such that $K$ hasa facet $F$ satisfying : $I s o p ( F ) > I s o p ( K )$ Then $b _ { 2 } ( K ) > 1$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. Assume $K$ hasa facet $F = K ^ { u _ { 0 } }$ such that $\\frac { | \\partial F | _ { n - 2 } } { ( n - 1 ) | F | _ { n - 1 } } > \\frac { | \\partial K | _ { n - 1 } } { n | K | _ { n } }$ laKln-1.Set ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/2d1118ade3aa7d36b4f0ec733963a335721f2c8328156b1fb53de245c9393d10.jpg",
+        "text": "$$\nc _ { 0 } : = \\frac { | \\partial F | _ { n - 2 } | K | _ { n } } { n - 1 } - \\frac { | \\partial K | _ { n - 1 } | F | _ { n - 1 } } { n } > 0 ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "and $c = \\textstyle \\frac { 2 } { n - 1 } | \\partial F | _ { n - 2 } | K | _ { n } > 2 c _ { 0 }$ .Fix $\\epsilon > 0$ so that $c _ { \\mathrm { 0 } } > \\epsilon c$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Since $S _ { K } ( \\{ u _ { 0 } \\} ) = | F | _ { n - 1 } > 0$ and $S _ { K } ( \\mathbb { S } ^ { n - 1 } ) = | \\partial K | _ { n - 1 } < + \\infty$ ，one may choose $f$ a nonnegative and continuous function on the sphere, such that $f ( u _ { 0 } ) = \\operatorname* { m a x } _ { \\mathbb { S } ^ { n - 1 } } f = 1$ and $\\begin{array} { r } { \\int f ( u ) d S _ { K } ( u ) < } \\end{array}$ $( 1 + \\epsilon ) S _ { K } ( u _ { 0 } ) = ( 1 + \\epsilon ) \\vert F \\vert _ { n - 1 }$ . Fix such a positive function $f$ ,and define $L _ { t } = W ( h _ { K } + t f )$ ,the Wulff shape with respect to function $h _ { K } + t f$ .One may think of $L _ { t }$ as a perturbed version of $K$ ,with most of the perturbation in direction $u _ { 0 }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Set ${ \\cal M } = H _ { u _ { 0 } } ^ { - } \\cap B _ { 2 } ^ { n } = \\{ x \\in B _ { 2 } ^ { n } : \\langle x , u _ { 0 } \\rangle \\leq 0 \\}$ to be a half-euclidean ball,such that its unique facet is the euclidean ball $M ^ { u _ { 0 } } = \\pi _ { u _ { 0 } ^ { \\perp } } ( M )$ with $u _ { 0 }$ as an outer normal vector. We will show that $F _ { K } ( A , B ) < 0$ ,for $A = L _ { t }$ ， $B = M$ ，and $t > 0$ is small enough, proving that $b _ { 2 } ( K ) > 1$ ： ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Assume $t \\geq 0$ .Recall that the mixed surface area measure $\\sigma : = { \\cal S } ( M , K \\vert n - 2 \\vert , . )$ is a non negative measure, and that, since $f \\geq 0$ ， $h _ { K } ( u ) \\leq h _ { L t } ( u )$ ,for all $u \\in \\mathbb { S } ^ { n - 1 }$ .It follows that : ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4995eb5b9d0e91c0e14acb971bb11f9cdcc29096995967261dae3e1e9125f19b.jpg",
+        "text": "$$\n\\begin{array} { r l r } & { } & { V _ { n } ( L _ { t } , M , K [ n - 2 ] ) - V _ { n } ( M , K [ n - 1 ] ) = \\displaystyle \\frac { 1 } { n } \\int ( h _ { L _ { t } } - h _ { K } ) ( u ) d \\sigma ( u ) } \\\\ & { } & { \\geq \\displaystyle \\frac { 1 } { n } ( h _ { L _ { t } } - h _ { K } ) ( u _ { 0 } ) \\sigma ( \\{ u _ { 0 } \\} ) . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

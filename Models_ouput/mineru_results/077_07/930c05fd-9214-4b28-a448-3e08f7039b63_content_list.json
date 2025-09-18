@@ -1,0 +1,40 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/c4877c0e187d15537ea411a04e74dcb66ed11973af11e9e29f29ec3a61863aad.jpg",
+        "image_caption": [
+            "Figure 4.Experiments on 2AA test dipeptides QW (top row) and HT(bottom row). (a) TICA plots foralongMD chain and samples generated with the Timewarp MCMC algorithm(Algorithm 1). (b) Free energy comparison for the MD trajectory,Timewarp MCMC (Algorithm 1),and Timewarp exploration (Algorithm 2). "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "experiments and results can be found in Appendix B.We train three flow models on three datasets: (i) $A D$ ,consisting of simulations of alanine dipeptide,(ii) 2AA,with peptides with2amino acids,and (iii) 4AA,with peptideswith 4 amino acids.All datasetsare created with MD simulations performed with the same parameters (see Table 1 and Appendix D).For AD,we do not test transferability as there is onlya single molecule.For 2AA and 4AA,we train ona randomly selected trainset of peptides,and evaluate on unseen test peptides.The relative frequencies of the amino acids in 2AA and 4AA are similar across the splits. For 4AA, the training set consists of about $1 \\%$ of the total number of possible tetrapeptides $( 2 0 ^ { 4 } )$ ,making the generalisation task significantly more difficult than for 2AA. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Alanine dipeptide (AD）We first investigate alanine dipeptide,a small (22 atoms) single peptide molecule commonly used to benchmark MD software. We train Timewarp on AD as described in Section 5 and sample new states using Algorithm1 for a chain length of 1O million,accepting roughly $2 \\%$ of the proposals.In Figure 3a we visualise the samples using a Ramachandran plot (Ramachandran et al.,1963),which shows the distribution of the backbone dihedral angles $\\varphi$ and $\\psi$ Each mode in the plot represents a metastable state. We see that the Timewarp samples closely match MD,visiting all the metastable states with the correct relative weights. In Figure 3b we plot the free energy (i.e.，the relative log probability） of the $\\varphi$ and $\\psi$ angles,again showing close agreement. The roughness in the plot is due to some regions of state space having very few samples. In Figure 3c we show,for an initial state $x ( t )$ the conditional distribution of MD obtained by integrating Equation (2), $\\mu ( x ( t + \\tau ) | x ( t ) )$ ,compared with the model $p _ { \\theta } ( x ( t + \\tau ) | x ( t ) )$ ,demonstrating close agreement. Finally, Figure 3d shows the time-evolution of the $\\varphi$ angle for MD and Timewarp. Timewarp exhibits significantly more transitions between the metastable states than MD.As a result, the autocorrelation along the $\\varphi$ angle decays much faster in terms of wal-clock time,resulting in a $\\approx 7 \\times$ speed-up in terms of $\\mathrm { E S S } / \\mathrm { s }$ compared to MD (see Appendix B.4). ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/05f0e17f75f3120c6be4c741ac620ac8444e5891b04ae34677cd7e28f145efde.jpg",
+        "image_caption": [
+            "Figure 5. Speed-up factors in terms of $\\mathrm { E S S } / \\mathrm { s }$ ratios for the slowest TICA component for the Timewarp MCMC and exploration algorithms,compared to MD.The dashed red line shows a speed-up factorof one.Gray areas depict peptideswhere Timewarp fails to exploreall meta-stable stateswithin 20 million steps,butMD does. Greenareas depict peptideswhere MD fails to find all metastable states,but Timewarpdoes.(a),(b) Speed-up forthe Timewarp MCMC algorithm(Algorithm1) on test dipeptides(2AA） and tetrapeptides (4AA),respectively. (c),(d) Speed-up forthe Timewarp exploration algorithm (Algorithm2) on test dipeptides (2AA) and tetrapeptides (4AA),respectively. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Dipeptides (2AA） Next,we demonstrate transferability on dipeptides in 2AA. After training on the train dipeptides, we deploy Timewarp with Algorithm1 on the test dipeptides for a chain length of 20 million. Timewarp achieves acceptance probabilities between $0 . 0 3 \\%$ and $2 \\%$ and explores all metastable states (Appendix B.1). The results are shown for the dipeptides QW and HT in Figure 4, showing close agreement between Timewarp and long MD chains ( $1 \\mu \\mathrm { s } =$ $2 \\times 1 0 ^ { 9 }$ timesteps). For these dipeptides,Timewarp achieves $\\mathrm { E S S } / \\mathrm { s }$ speed-up factors over MD of 5 and 33 respectively (Appendix B.4). In Figure 5,Left,we show the speed-up factors for Timewarp verses MD for each of the 1OO test dipeptides. Timewarp provides a median speed-up factor of about five across these peptides. In addition，we generatesampleswith the Timewarp model without the MH correction as detailed in Section 3.5.We sample 1OO parallel chains for only 1OooO steps starting from the same initial state for each test peptide.For each peptide we select only oneof thesechains that findsall meta-stable states for evaluations.As before,we compute the $\\mathrm { E S S / s }$ to compare with MD, showing a median speedup factor of $\\approx 6 0 0$ (Figure 5c). Note that the actual speedup when using all the chains sampled in parallel willbe much larger.Timewarp exploration leads to free energy estimates that are qualitatively similar to MD, but less accurate than Timewarp MCMC (Figure 4b). ",
+        "page_idx": 0
+    }
+]

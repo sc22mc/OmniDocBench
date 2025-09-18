@@ -1,0 +1,95 @@
+[
+    {
+        "type": "text",
+        "text": "i- $\\begin{array} { r } { V _ { n } ( K _ { 1 } , . . . , K _ { n } ) = \\frac { 1 } { n ! } \\sum _ { J \\subset [ n ] } ( - 1 ) ^ { n - | J | } | K _ { J } | _ { n } } \\end{array}$ where2 $\\textstyle K _ { J } = \\sum _ { i \\in J } K _ { i }$ ii- $V _ { n } ( K _ { 1 } + x _ { 1 } , K _ { 2 } , . . . , K _ { n } ) = V _ { n } ( K _ { 1 } , . . . , K _ { n } )$ (translation invariance) ii-I $\\begin{array} { r } { \\left. { N _ { 1 } + \\lambda K _ { 1 } ^ { \\prime } , K _ { 2 } , . . . , K _ { n } } \\right. = V _ { n } ( K _ { 1 } , K _ { 2 } , . . . , } \\end{array}$ $= V _ { n } ( K _ { 1 } , K _ { 2 } , . . . , K _ { n } ) + \\lambda V _ { n } ( K _ { 1 } ^ { \\prime } , K _ { 2 } , . . . , K _ { n }$ ） (multilinearity) iv- $V _ { n } ( K _ { \\sigma ( 1 ) } , . . . , K _ { \\sigma ( n ) } ) = V _ { n } ( K _ { 1 } , . . . , K _ { n } )$ (symmetry in the arguments) V- $V _ { n } ( . )$ is continuous on $( K ^ { n } ) ^ { n }$ ,with respect to Hausdorf topology. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Moreover,Minkowski proved $V _ { n } ( . )$ also enjoys the following properties : ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "vi- $V _ { n } ( K _ { 1 } , . . . , K _ { n } ) \\geq 0$ (non-negativity) vii-if $K _ { 1 } \\subset K _ { 1 } ^ { \\prime }$ ,then $\\mid V _ { n } ( K _ { 1 } , K _ { 2 } , . . . , K _ { n } ) \\leq V _ { n } ( K _ { 1 } ^ { \\prime } , K _ { 2 } , . . . , K _ { n } ) { \\mathrm { ~ ( m o n o t o n i c i t y ) . } }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Hence $V _ { n } ( . )$ is a (multilinear） functional on $( K ^ { n } ) ^ { n }$ .When theunderlying dimension (i.e. the total number of arguments $V _ { n } ( . )$ takes) is clear，we may drop the subscript $n$ ，and write $V ( . )$ rather than $V _ { n } ( . )$ . It follows directly from the definition of mixed volumes,that $V _ { n } ( K [ n ] ) = | K | _ { n }$ .Therefore we may slightly abuse notation,and write $V _ { n } ( K )$ ,or even $V ( K )$ , instead of $V _ { n } ( K [ n ] )$ ,as this shortcut seems common in the literature.To avoid confusion，we only use this shortcut when $K$ is indeed $n$ -dimensional, i.e.when $K$ is a non-degenerate convex body in $\\mathbb { R } ^ { n }$ ： ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $u \\in \\mathbb { S } ^ { n - 1 }$ be a unit vector. Denote $\\pi _ { u }$ the orthogonal projection onto $u ^ { \\perp }$ .If $u _ { 1 } , . . . , u _ { k }$ are $k$ linearly independent unit vectors in $\\mathbb { R } ^ { n }$ ,denote $\\pi _ { U }$ the orthogonal projection onto $( u _ { 1 } , . . . , u _ { k } ) ^ { \\perp }$ We will also need the following well-known property of mixed volumes : ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "viii",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/46d6e2677ba0b9e2509b675d7dee274e60c1fab8c2567b0eb039423b3335f72f.jpg",
+        "text": "$$\nV _ { n } ( [ 0 , u ] , K _ { 2 } , . . . , K _ { n } ) = \\frac { 1 } { n } V _ { n - 1 } ( \\pi _ { u } K _ { 2 } , . . . , \\pi _ { u } K _ { n } ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ix",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b4d31828dd25812cbe25845fc62a56e0a7bc510514dafa999b6c0265398150cf.jpg",
+        "text": "$$\nV _ { n } ( [ 0 , u _ { 1 } ] , . . . , [ 0 , u _ { k } ] , K _ { k + 1 } , . . . , K _ { n } ) = \\frac { k ! V _ { k } ( [ 0 , u _ { 1 } ] , . . . , [ 0 , u _ { k } ] ) } { n ( n - 1 ) . . . ( n - k + 1 ) } V _ { n - k } \\left( \\pi _ { U } K _ { k + 1 } , . . . , \\pi _ { U } K _ { n } \\right) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(identity (ix) is deduced from (viii) by iteration). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $K \\subset \\mathbb { R } ^ { n }$ be a compact convex set. Its support function $h _ { K }$ , is defined on $\\mathbb { R } ^ { n }$ by $h _ { K } ( x ) =$ $\\operatorname* { m a x } _ { y \\in K } \\left. y , x \\right.$ ，where $\\langle . , . \\rangle$ denotes the usual scalar product on $\\mathbb { R } ^ { n }$ Since $h _ { K } ( \\lambda x ) = \\lambda h _ { K } ( x )$ for any $x \\in \\mathbb { R } ^ { n }$ ， $\\lambda > 0$ ,we shall more often consider $h _ { K }$ as a function on $\\mathbb { S } ^ { n - 1 }$ .Note that $h _ { K }$ characterizes $K$ ， since $\\begin{array} { r } { K = \\bigcap _ { u } H ^ { - } ( u , h _ { K } ( u ) ) } \\end{array}$ ，where $H ^ { - } ( u , b ) = \\{ z \\in \\mathbb { R } ^ { n } : \\langle z , u \\rangle \\leq b \\}$ ： ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "If we fix a convex body $K \\subset \\mathbb { R } ^ { n }$ , then there exists a unique non-negative measure $S _ { K }$ on $\\mathbb { S } ^ { n - 1 }$ such that the following holds for any compact convex set $L$ ： ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/c88f19d57f0af24742cd5bc7288b6f92d98f49d02ac98a6105cbd4ecf15ffb06.jpg",
+        "text": "$$\nV _ { n } ( L , K [ n - 1 ] ) = \\frac { 1 } { n } \\int _ { \\mathbb { S } ^ { n - 1 } } h _ { L } ( u ) d S _ { K } ( u ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For instance,when $K = P$ is a polytope,the following integral representation of $V _ { n } ( L , P [ n - 1 ] )$ is known : ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/96c2a94c15fa5ca00f51b9920671905723d315ad13f3276e82519a2ae1fee1b4.jpg",
+        "text": "$$\nV _ { n } ( L , P [ n - 1 ] ) = \\frac { 1 } { n } \\sum _ { u \\in E ( P ) } h _ { L } ( u ) | P ^ { u } | _ { n - 1 }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\begin{array} { r } { E ( P ) = \\left\\{ \\begin{array} { l l } \\end{array} \\right. } \\end{array}$ outer normal vectors of $P \\}$ and $P ^ { u } = P \\cap H ( u , h _ { P } ( u ) ) = \\{ y \\in P : \\langle y , u \\rangle = h _ { P } ( u ) \\}$ is the facet whose outer normal vector is $u$ .This means that $S _ { P }$ is the discrete measure $S _ { P } =$ $\\sum _ { u \\in E ( P ) } | P ^ { u } | _ { n - 1 } \\delta _ { u }$ ，where $\\delta _ { v }$ denotes the Dirac measure at $v \\in \\mathbb { S } ^ { n - 1 }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Though the formula 1 could be taken as a definition³ of the surface area measure $S _ { K }$ one may alternatively first define $S _ { P }$ for polytopes,via $\\begin{array} { r } { S _ { P } = \\sum _ { u \\in E ( P ) } | P ^ { u } | _ { n - 1 } \\delta _ { u } } \\end{array}$ ,and then define $S _ { K }$ for an ",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,1654 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        204,
+                        300,
+                        1193,
+                        501
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                300,
+                                1193,
+                                501
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        300,
+                                        1193,
+                                        501
+                                    ],
+                                    "type": "text",
+                                    "content": "48, 52, 54], with which the camera- side optical elements and the computational algorithm are jointly optimized in a deep- learning- based framework. Our work is pioneering in applying deep- optics to event cameras."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        206,
+                        567,
+                        632,
+                        623
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                206,
+                                567,
+                                632,
+                                623
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        567,
+                                        632,
+                                        623
+                                    ],
+                                    "type": "text",
+                                    "content": "3. Proposed Method"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        206,
+                        656,
+                        749,
+                        709
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                206,
+                                656,
+                                749,
+                                709
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        656,
+                                        749,
+                                        709
+                                    ],
+                                    "type": "text",
+                                    "content": "3.1. Background and Basics"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        206,
+                        742,
+                        1193,
+                        1488
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                206,
+                                742,
+                                1193,
+                                1488
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": "A schematic diagram of our camera is shown in Fig. 1 (left). All the light rays coming into the camera can be parame terized by "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(x,y,u,v)"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": " ,where "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(u,v)"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(x,y)"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": " denote the positions on the aperture and imaging planes, respectively. Therefore, a light field "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "L"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": " is defined over "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(x,y,u,v)"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": " .We assume that each light ray has only a monochrome intensity; but the extension to RGB color is straight- forward in theory. We also assume that "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x,y,u,v"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": " take discretized integer values; thus, "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "L"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": " is equivalent to a set of multi- view images, where "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(x,y)"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(u,v)"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": " respectively denote the pixel position and viewpoint. The arrangement of the viewpoints is assumed to be "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "8\\times 8"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(u,v\\in \\{1,\\ldots ,8\\})"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": " .Each element of "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "L"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": " is described using subscripts as "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "L_{x,y,u,v}"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": " . The goal of our method is to reconstruct "
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "L"
+                                },
+                                {
+                                    "bbox": [
+                                        206,
+                                        742,
+                                        1193,
+                                        1488
+                                    ],
+                                    "type": "text",
+                                    "content": " of the target scene from the data measured on the camera in a single exposure."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        204,
+                        1494,
+                        1193,
+                        1643
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                1494,
+                                1193,
+                                1643
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        1494,
+                                        1193,
+                                        1643
+                                    ],
+                                    "type": "text",
+                                    "content": "Before describing our imaging method in Section 3.2, we mention two previous imaging methods that use a coded aperture with a frame- based camera (no events available)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        204,
+                        1653,
+                        1193,
+                        1956
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                1653,
+                                1193,
+                                1956
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        1653,
+                                        1193,
+                                        1956
+                                    ],
+                                    "type": "text",
+                                    "content": "Coded- aperture imaging [10, 14, 22, 30, 38]: To optically encode a light field "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1653,
+                                        1193,
+                                        1956
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "L"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1653,
+                                        1193,
+                                        1956
+                                    ],
+                                    "type": "text",
+                                    "content": " along the viewpoint dimension, a sequence of light- attenuating patterns, "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1653,
+                                        1193,
+                                        1956
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "a^{(1)},\\ldots ,a^{(N)}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1653,
+                                        1193,
+                                        1956
+                                    ],
+                                    "type": "text",
+                                    "content": " where "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1653,
+                                        1193,
+                                        1956
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "a_{u,v}^{(n)}\\in [0,1]"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1653,
+                                        1193,
+                                        1956
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1653,
+                                        1193,
+                                        1956
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "v,v\\in \\{1,\\ldots ,8\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1653,
+                                        1193,
+                                        1956
+                                    ],
+                                    "type": "text",
+                                    "content": " , is placed at the aperture plane. Each pixel under the "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1653,
+                                        1193,
+                                        1956
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "n"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1653,
+                                        1193,
+                                        1956
+                                    ],
+                                    "type": "text",
+                                    "content": " - th coding pattern is described as the weighted sum of the light rays over "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1653,
+                                        1193,
+                                        1956
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(u,v)"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1653,
+                                        1193,
+                                        1956
+                                    ],
+                                    "type": "text",
+                                    "content": " .."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        484,
+                        2042,
+                        1190,
+                        2161
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                484,
+                                2042,
+                                1190,
+                                2161
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        484,
+                                        2042,
+                                        1190,
+                                        2161
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "I_{x,y}^{(n)} = \\sum_{u,v}a_{u,v}^{(n)}L_{x,y,u,v}. \\tag{1}",
+                                    "image_path": "0fae4e0ade417c5f0f329980a7cb89eb70baa2be1349b1c1d3cbe29853b8feb8.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        204,
+                        2211,
+                        1193,
+                        2659
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                2211,
+                                1193,
+                                2659
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        2211,
+                                        1193,
+                                        2659
+                                    ],
+                                    "type": "text",
+                                    "content": "The light field "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2211,
+                                        1193,
+                                        2659
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "L"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2211,
+                                        1193,
+                                        2659
+                                    ],
+                                    "type": "text",
+                                    "content": " is computationally reconstructed from "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2211,
+                                        1193,
+                                        2659
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2211,
+                                        1193,
+                                        2659
+                                    ],
+                                    "type": "text",
+                                    "content": " images taken with different coding patterns, "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2211,
+                                        1193,
+                                        2659
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "I^{(1)},\\ldots ,I^{(N)}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2211,
+                                        1193,
+                                        2659
+                                    ],
+                                    "type": "text",
+                                    "content": " The images under different coding patterns would have parallax with each other, which is essential for 3- D/lightfield reconstruction. As demonstrated in previous studies [10, 14, 42], a relatively small "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2211,
+                                        1193,
+                                        2659
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2211,
+                                        1193,
+                                        2659
+                                    ],
+                                    "type": "text",
+                                    "content": " e.g. "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2211,
+                                        1193,
+                                        2659
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N = 4"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2211,
+                                        1193,
+                                        2659
+                                    ],
+                                    "type": "text",
+                                    "content": " is sufficient for accurate reconstruction. However, since "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2211,
+                                        1193,
+                                        2659
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2211,
+                                        1193,
+                                        2659
+                                    ],
+                                    "type": "text",
+                                    "content": " (more than one) images should be acquired in sequence, the lengthy measurement time remains an issue."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        204,
+                        2666,
+                        1193,
+                        2976
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                2666,
+                                1193,
+                                2976
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        2666,
+                                        1193,
+                                        2976
+                                    ],
+                                    "type": "text",
+                                    "content": "Joint aperture- exposure coding [28, 41, 42, 46]: This is an advanced form of coded- aperture imaging; "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2666,
+                                        1193,
+                                        2976
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2666,
+                                        1193,
+                                        2976
+                                    ],
+                                    "type": "text",
+                                    "content": " coding patterns are applied to both the aperture and imaging planes synchronously during a single exposure. The coding patterns for the imaging plane are described as "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2666,
+                                        1193,
+                                        2976
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p^{(1)},\\ldots ,p^{(N)}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2666,
+                                        1193,
+                                        2976
+                                    ],
+                                    "type": "text",
+                                    "content": " where "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2666,
+                                        1193,
+                                        2976
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p_{x,y}^{(n)}\\in \\{0,1\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2666,
+                                        1193,
+                                        2976
+                                    ],
+                                    "type": "text",
+                                    "content": " . The imaging process is described as"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1489,
+                        376,
+                        2269,
+                        491
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1489,
+                                376,
+                                2269,
+                                491
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1489,
+                                        376,
+                                        2269,
+                                        491
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "I_{x,y} = \\sum_{n}\\sum_{u,v}a_{u,v}^{(n)}p_{x,y}^{(n)}L_{x,y,u,v}. \\tag{2}",
+                                    "image_path": "d9c02aecb941a63c0c259b1726f9597e34d7ce51546ce0583a12106013c0c7a9.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        1280,
+                        534,
+                        2274,
+                        729
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1280,
+                                534,
+                                2274,
+                                729
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1280,
+                                        534,
+                                        2274,
+                                        729
+                                    ],
+                                    "type": "text",
+                                    "content": "While the light field "
+                                },
+                                {
+                                    "bbox": [
+                                        1280,
+                                        534,
+                                        2274,
+                                        729
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "L"
+                                },
+                                {
+                                    "bbox": [
+                                        1280,
+                                        534,
+                                        2274,
+                                        729
+                                    ],
+                                    "type": "text",
+                                    "content": " can be reconstructed from a single observed image alone, the increased complexity of the coding scheme (Eq. (2)) makes its hardware implementation very difficult."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1282,
+                        768,
+                        2142,
+                        825
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1282,
+                                768,
+                                2142,
+                                825
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1282,
+                                        768,
+                                        2142,
+                                        825
+                                    ],
+                                    "type": "text",
+                                    "content": "3.2. Combining Coded Aperture and Events"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1282,
+                        851,
+                        2274,
+                        1296
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1282,
+                                851,
+                                2274,
+                                1296
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1282,
+                                        851,
+                                        2274,
+                                        1296
+                                    ],
+                                    "type": "text",
+                                    "content": "As shown in Fig. 1, our method uses a coded aperture with an event camera that can obtain both the image frames and events simultaneously (e.g.,DAVIS 346 camera). Similar to the baseline coded- aperture imaging method (Eq. (1)), we apply "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        851,
+                                        2274,
+                                        1296
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        851,
+                                        2274,
+                                        1296
+                                    ],
+                                    "type": "text",
+                                    "content": " aperture- coding patterns "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        851,
+                                        2274,
+                                        1296
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(a^{(1)},\\ldots ,a^{(N)})"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        851,
+                                        2274,
+                                        1296
+                                    ],
+                                    "type": "text",
+                                    "content": " in sequence. However, we do so in a single exposure for an image frame. Therefore, we do not directly observe individual coded- aperture images, "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        851,
+                                        2274,
+                                        1296
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "I^{(1)},\\ldots ,I^{(N)}"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        851,
+                                        2274,
+                                        1296
+                                    ],
+                                    "type": "text",
+                                    "content": " , but we have their sum as the image frame:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        1634,
+                        1329,
+                        2269,
+                        1442
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1634,
+                                1329,
+                                2269,
+                                1442
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1634,
+                                        1329,
+                                        2269,
+                                        1442
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\bar{I}_{x,y} = \\sum_{n}I_{x,y}^{(n)}. \\tag{3}",
+                                    "image_path": "9ee84977d1ccd89a60c6749cda3ca4261d6c3d75a8dd153ce3f777372697256a.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                },
+                {
+                    "bbox": [
+                        1282,
+                        1481,
+                        2274,
+                        2029
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1282,
+                                1481,
+                                2274,
+                                2029
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "text",
+                                    "content": "The camera also measures the events at each pixel "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(x,y)"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "text",
+                                    "content": " asynchronously during the exposure. We denote an event occurring at time "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "text",
+                                    "content": " as "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "e_{x,y,t}\\in \\{+1, - 1\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "text",
+                                    "content": " , where the positive/negative signs correspond to the increase/decrease in the intensity at pixel "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(x,y)"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "text",
+                                    "content": " .Since the target scene is assumed static, the events are caused exclusively by the change in the coding patterns. Although the pattern changes instantly, the camera responds gradually in a very short but no- zero transient time. We denote the transient time between "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "a^{(n)}"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "a^{(n + 1)}"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "text",
+                                    "content": " as "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "T^{(n,n + 1)}"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        1481,
+                                        2274,
+                                        2029
+                                    ],
+                                    "type": "text",
+                                    "content": " . We sum the events during the transient time to obtain an event stack as"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                },
+                {
+                    "bbox": [
+                        1519,
+                        2062,
+                        2269,
+                        2184
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1519,
+                                2062,
+                                2269,
+                                2184
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1519,
+                                        2062,
+                                        2269,
+                                        2184
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "E_{x,y}^{(n,n + 1)} = \\sum_{t\\in T^{(n,n + 1)}}e_{x,y,t}. \\tag{4}",
+                                    "image_path": "8ba6462d4f30d883f024dbe126407bd04104d2e966deba3cf61a84f10ddf737e.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15
+                },
+                {
+                    "bbox": [
+                        1282,
+                        2224,
+                        2274,
+                        2527
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1282,
+                                2224,
+                                2274,
+                                2527
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "text",
+                                    "content": "As shown in Fig. 1, "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "E^{(n,n + 1)}"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "text",
+                                    "content": " includes the parallax information between "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "I^{(n)}"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "I^{(n + 1)}"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "text",
+                                    "content": " , which is essential for 3- D reconstruction. Our goal is to reconstruct the original light field "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "L"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "text",
+                                    "content": " from a single image frame "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\bar{I}"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(N - 1)"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "text",
+                                    "content": " event stacks, "
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "E^{(1,2)}\\ldots ,E^{(N - 1,N)}"
+                                },
+                                {
+                                    "bbox": [
+                                        1282,
+                                        2224,
+                                        2274,
+                                        2527
+                                    ],
+                                    "type": "text",
+                                    "content": " , all of which are measured during a single exposure."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "bbox": [
+                        1280,
+                        2534,
+                        2274,
+                        2729
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1280,
+                                2534,
+                                2274,
+                                2729
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1280,
+                                        2534,
+                                        2274,
+                                        2729
+                                    ],
+                                    "type": "text",
+                                    "content": "Quasi- equivalence. We theoretically relate our imaging method to the baseline coded- aperture imaging method. The camera records an event at time "
+                                },
+                                {
+                                    "bbox": [
+                                        1280,
+                                        2534,
+                                        2274,
+                                        2729
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        1280,
+                                        2534,
+                                        2274,
+                                        2729
+                                    ],
+                                    "type": "text",
+                                    "content": " when the intensity change (in log scale) exceeds a contrast threshold "
+                                },
+                                {
+                                    "bbox": [
+                                        1280,
+                                        2534,
+                                        2274,
+                                        2729
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\tau"
+                                },
+                                {
+                                    "bbox": [
+                                        1280,
+                                        2534,
+                                        2274,
+                                        2729
+                                    ],
+                                    "type": "text",
+                                    "content": " as"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 17
+                },
+                {
+                    "bbox": [
+                        1507,
+                        2768,
+                        2269,
+                        2831
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1507,
+                                2768,
+                                2269,
+                                2831
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1507,
+                                        2768,
+                                        2269,
+                                        2831
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "|\\log (I_{x,y,t}) - \\log (I_{x,y,x_0})| > \\tau \\tag{5}",
+                                    "image_path": "51e9806de3d391b2777f9af96c659a83c3ae982c699a4a2bfb13f5f897cbad39.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 18
+                },
+                {
+                    "bbox": [
+                        1280,
+                        2871,
+                        2274,
+                        2973
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1280,
+                                2871,
+                                2274,
+                                2973
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1280,
+                                        2871,
+                                        2274,
+                                        2973
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        1280,
+                                        2871,
+                                        2274,
+                                        2973
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t_0"
+                                },
+                                {
+                                    "bbox": [
+                                        1280,
+                                        2871,
+                                        2274,
+                                        2973
+                                    ],
+                                    "type": "text",
+                                    "content": " is the time when the previous event was recorded. On the basis of Eq. (5), we derive an approximate relation"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 19
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

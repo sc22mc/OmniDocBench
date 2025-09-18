@@ -1,0 +1,84 @@
+[
+    {
+        "type": "text",
+        "text": "where $\\pmb { o } = ( w _ { L + 1 } , \\dots , w _ { L + N } )$ denotes the continuation of context c. This objective helps improve generalization and circumvent excessive reliance on, and overfiting to,the autoencoding task. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.3INSTRUCTIONFINE-TUNING",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "After pretraining,the memory slots produced by the pretrained ICAE are expected to represent the original context. However, for LLMs,the purpose of providing a context extends beyond rote memorization or continuation; instead,the more common use scenario is using the provided context as a basis for accurately and appropriately responding to various prompts, ultimately accomplishing the tasks we want it to perform (Wei et al., 2021; Ouyang et al.,2022). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To enhance the interaction of memory slots produced by the ICAE with diverse prompts,we further fine-tune the ICAE with the PwC dataset (Prompt-with-Context),a datasetl introduced in this paper consisting of thousands of (context, prompt,response) samples (as shown in Figure 1). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Formally,the ICAE is fine-tuned for learning to encode the context into the memory slots based on which the decoder (i.e., the target LLM) can produce a desirable response $r _ { 1 } \\ldots r _ { n }$ according to a given prompt $p _ { 1 } \\ldots p _ { m }$ ,asshown in Figure 8 in Appendix A: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/8cafd40b97918ccfce3a0f36bd8a7f2bcb98a8132ea61cd06a2ddc3c8f18b3bf.jpg",
+        "text": "$$\n\\begin{array} { r l } {  { \\mathcal { L } _ { \\mathrm { F T } } = \\operatorname* { m a x } _ { \\widetilde { m _ { 1 } } \\dots m _ { k } } P ( r _ { 1 } \\dots r _ { n } | \\widetilde { m _ { 1 } } \\dots m _ { k } , p _ { 1 } \\dots p _ { m } ; \\Theta _ { L L M } ) } } \\\\ & { = \\operatorname* { m a x } _ { \\Theta _ { L o R A } , e _ { m } } P ( r _ { 1 } \\dots r _ { n } | m _ { 1 } \\dots m _ { k } , p _ { 1 } \\dots p _ { m } ; \\Theta _ { L L M } , \\Theta _ { L o R A } , e _ { m } ) } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3EXPERIMENTS ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.1EXPERIMENTAL SETTING ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "DataWe pretrain the ICAE with the Pile (Gao et al.,2O2O).For instruction fine-tuning,we use the PwC dataset,as introduced in Section 2.3,which contains 240k (context, prompt,response) samples for training and 18k samples for testing.The context length distribution of test samples is shown in Figure 10.By default,the maximal token length (excluding memory slots) we set during training is 512 in both the ICAE's encoder and decoder in our experiments. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Model ConfigurationWe use the LlaMa (Touvron et al.,2O23a;b)as the target LLM to test the ICAE's performance in context compression. For the encoder of the ICAE,LoRA is applied to the query and value projections of the LLM's multi-head attention.In our default seting,the memory slotlength $k$ is set to 128,and the LoRA rank $r$ is set to 128 unless otherwise specified. The resulting ICAEonlyaddsabout $1 \\%$ learnable parameters on top of the targetLLM. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.2RESULTS ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.2.1PRETRAINED ICAE ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We first evaluate the autoencoding performance of the pretrained ICAE (without instruction finetuning)using the following three metrics to understand how wellit restores the original context from its produced memory slots: BLEU (Papineni et al.,2002),Exact-Match $( \\mathrm { E M } ) ^ { 2 }$ and cross entropy loss. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Figure 4 presents the autoencoding results of the ICAE based on the Llama-7b. The ICAE demonstrates avery low overalloss,below O.O5,indicating that the produced memory slots retain almost all the information of the original context.When the context length is within 3Oo,the ICAE can almost perfectly reconstruct the original context,achieving nearly $100 \\%$ BLEU and EM scores. As the context length increases beyond 4Oo,both BLEU and EM scores start to decline,indicating insuficient capacityof the 128-length memory slots.However,evenatacontext length of 500,the median BLEU remains over 0.98,and the median EM approaches O.6 (e.g., perfectly reconstructing about the first 30o words of a 512-token context),showing remarkable performance of ICAE. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We then analyze the effect of the memory size $k$ on the result. According to Figure 5,as the memory slot length $k$ decreases,the ICAE'sability to memorize longer samples significantly deteriorates. ",
+        "page_idx": 0
+    }
+]

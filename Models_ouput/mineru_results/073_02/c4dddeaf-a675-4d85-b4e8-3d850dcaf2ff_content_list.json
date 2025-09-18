@@ -1,0 +1,21 @@
+[
+    {
+        "type": "text",
+        "text": "Repeated games potentially include memories of agents,i.e.,a possbility that agents determine their actions depending on past actions they chose (see Fig.1 for the illustration).Such memories can expand the choice of strategies and thus lead to the agents handling their gameplay better; for example,by reading how the other player chooses itsaction[19].Indeed,agents with memories can use tit-for-tat [20]and winstay-lose-shift [21] strategies in prisoner's dilemma games,and these strategies achieve cooperation as Nash equilibrium,explaining human behaviors.Furthermore,howaregion of the Nash equilibrium is extended by multi-memory strategies is enthusiastically studied as folk theorem [22].In practice,Q-learning is frequently implemented inmulti-memorygames [23,24,25].Severalstudies[26,27]partlydiscuss therelationbetween the replicator dynamics and the gradient ascent but consider only prisoner's dilemma games.In conclusion, this relation is still unclear in games with general numbers of memories and actions.Furthermore,the convergence of dynamics in such multi-memory games has been unexplored. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/4866137c5f5ada15a3ed93fdc8ef4abd3ea98cf651ca7e97fec0ea295a08fe6b.jpg",
+        "image_caption": [
+            "Figure 1:A. Ilustration of a multi-memory repeated game.Focusing on the area surrounded by the purple dots,a normal-form game is illustrated.Player X (resp.Y) chooses its action $a _ { 1 }$ or $a _ { 2 }$ in the row (resp. $b _ { 1 }$ or $b _ { 2 }$ ）inthe column.Then,each of themreceives itspayoffdepending ontheiractions.Thepanel showsapenny-matching game, where blue (resp.red) panels show that X (resp.Y） gains a payoff of $^ { 1 }$ and the other losesit.Lookingat the whole, each player memorizes their actions of the past $n$ rounds. This memorized state is described as $s _ { i }$ given by $2 n$ -length bits of actions.B.Illustration for the detailed single round of repeated games,where present state $s _ { i }$ transitions to next state $s _ { i ^ { \\prime } }$ .In this transition,the oldest 2 bitsare lost,and the other bits $s _ { i } ^ { - }$ ,colored in green,aremaintained. X'sand Y's choices( $a _ { 2 }$ (blue）and $b _ { 1 }$ (red)in this figure) are appended asthe newest 2bits in $s _ { i ^ { \\prime } }$ .This transition occurs with the probability of $M _ { i ^ { \\prime } i }$ Finally,X gains a payoff of $u _ { i ^ { \\prime } }$ in the state transition. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This study provides a basic analysis of the multi-memory repeated game.First,we extend the two learning algorithms,i.e.replicator dynamics and gradient ascent,for multi-memory games.Then, we name them multi-memory replicator dynamics (MMRD) and gradient ascent (MMGA).As wellas shown in the zero-memory games,the equivalence between MMRDand MMGA is proved in Theorems 1-3.Next,we tackle the convergence problem of such algorithms from both viewpoints of theory and experiment.Theorem 4 shows that Nash equilibrium uniquely exists in multi-memory zero-sum games as wellas zero-memory ones. This theorem is nontrivial if taking into account the fact that diversification of strategies can expand the regionof Nash equilibrium in general games.Then, while utilizing these theorems,we see how multi-memory learning complicates the dynamics,leading to divergence from the Nash equilibrium with sensitivity to its initial condition like chaos. ",
+        "page_idx": 0
+    }
+]

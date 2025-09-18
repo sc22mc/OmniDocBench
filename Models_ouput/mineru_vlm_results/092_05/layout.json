@@ -1,0 +1,429 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        232,
+                        270,
+                        2274,
+                        1112
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                232,
+                                270,
+                                2274,
+                                1112
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        232,
+                                        270,
+                                        2274,
+                                        1112
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                232,
+                                                270,
+                                                2274,
+                                                1112
+                                            ],
+                                            "type": "image",
+                                            "image_path": "a9fcfc4d2615dbe0c4ab98145e449cfa213ecc90a039c40a25742309de07f353.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                168,
+                                1155,
+                                2326,
+                                1343
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        168,
+                                        1155,
+                                        2326,
+                                        1343
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                168,
+                                                1155,
+                                                2326,
+                                                1343
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 3. Sensor node block diagram. Passive wakeup is achieved by harvesting from the wakeup signal. First, "
+                                        },
+                                        {
+                                            "bbox": [
+                                                168,
+                                                1155,
+                                                2326,
+                                                1343
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "V_{\\mathrm{SMP}}"
+                                        },
+                                        {
+                                            "bbox": [
+                                                168,
+                                                1155,
+                                                2326,
+                                                1343
+                                            ],
+                                            "type": "text",
+                                            "content": " triggers an OCV measurement (a), then "
+                                        },
+                                        {
+                                            "bbox": [
+                                                168,
+                                                1155,
+                                                2326,
+                                                1343
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "V_{\\mathrm{WK}}"
+                                        },
+                                        {
+                                            "bbox": [
+                                                168,
+                                                1155,
+                                                2326,
+                                                1343
+                                            ],
+                                            "type": "text",
+                                            "content": " powers the IPSP (b), allowing energy to flow into the supercap. This continues until "
+                                        },
+                                        {
+                                            "bbox": [
+                                                168,
+                                                1155,
+                                                2326,
+                                                1343
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "V_{\\mathrm{CAP}}"
+                                        },
+                                        {
+                                            "bbox": [
+                                                168,
+                                                1155,
+                                                2326,
+                                                1343
+                                            ],
+                                            "type": "text",
+                                            "content": " can power the IPSP on its own (that is, above its load-detach voltage of 2 V). Above this threshold, the MCU stays in ultralow power mode and executes EIS (c) and then LoRa transmission (d) when notified that energy is sufficient by the voltage monitors. After the transmission, the nearly empty storage is further depleted to trigger the BQ's internal load-detach mechanism and go back to cell rest."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        170,
+                        1412,
+                        1220,
+                        1554
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                170,
+                                1412,
+                                1220,
+                                1554
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        170,
+                                        1412,
+                                        1220,
+                                        1554
+                                    ],
+                                    "type": "text",
+                                    "content": "Section II, rest periods also ensure that a correct steady- state OCV measurement can be executed, allowing us to set a more accurate MPP (see Section IV- B)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        175,
+                        1567,
+                        1225,
+                        2752
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                1567,
+                                1225,
+                                2752
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        1567,
+                                        1225,
+                                        2752
+                                    ],
+                                    "type": "text",
+                                    "content": "To the best of our knowledge, no estimation of the optimal resting period of a PMFC is currently available. For this reason, we do not assume its maximum duration when designing the sensor node architecture. If we rely on sensor node components to generate the wakeup signal, there is an upper limit on rest time. If the PMFC were to require long resting periods, the storage could become fully discharged while powering the components required for wakeup signal generation (e.g., timers, voltage monitors), preventing the node from ever waking up again. Because of this reason, we bring the node out of rest state through an external wakeup signal, which we also harvest in a passive wakeup approach. The energy harvested from this external signal is used to bootstrap the input power and sensing path (IPSP—Section III- C2), which is the section of the sensor node allowing power to flow from the PMFC to the harvesting circuitry [35]. In this way, the sensor node can still successfully wakeup even if its storage becomes fully depleted. This technique ensures no upper bound on rest time, although it requires the external infrastructure to generate the wakeup signal. Depending on the application, we can rely on self- powered IR sensors, PV panels, or passive wakeup radios for passive wakeup [36]. If optimal rest times are short enough and compatible with an onboard wakeup generation, passive wakeup could act as a fail- safe to revive nodes discharged during rest."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        175,
+                        2834,
+                        1096,
+                        2884
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                2834,
+                                1096,
+                                2884
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        2834,
+                                        1096,
+                                        2884
+                                    ],
+                                    "type": "text",
+                                    "content": "C. Sensor Node Block Diagram and Application Cycle"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        170,
+                        2907,
+                        1222,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                170,
+                                2907,
+                                1222,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        170,
+                                        2907,
+                                        1222,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "We designed the proposed sensor node architecture shown in Fig. 3 by choosing cost- effective components needed to execute and transmit PMFC- powered, ultralow power EIS measurements and by building a service circuitry (SC) around them. The"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        1267,
+                        1412,
+                        2319,
+                        1554
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1267,
+                                1412,
+                                2319,
+                                1554
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1267,
+                                        1412,
+                                        2319,
+                                        1554
+                                    ],
+                                    "type": "text",
+                                    "content": "SC adapts the chosen components to the requirements of optimal PMFC use. First, we will discuss our choice of components, then we will analyze the role of the SC in the architecture."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        1269,
+                        1560,
+                        2319,
+                        2006
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                1560,
+                                2319,
+                                2006
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1560,
+                                        2319,
+                                        2006
+                                    ],
+                                    "type": "text",
+                                    "content": "1) Core Components Selection: Due to the low voltage, low power limitations of PMFCs (1), the sensor node requires an energy conversion stage which boosts the PMFC's output voltage and buffers its energy into a supercapacitor for a duty-cycled operation of the sensor node. We selected the BQ25505 IC by Texas Instruments for this purpose. Besides featuring ultralow quiescent current (325 nA) and an efficient ship mode draining only 5 nA, this IC provides a "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1560,
+                                        2319,
+                                        2006
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V_{\\mathrm{BATOK}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1560,
+                                        2319,
+                                        2006
+                                    ],
+                                    "type": "text",
+                                    "content": " signal useful to detach loads during cold-start (see Section IV-B)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        1269,
+                        2013,
+                        2319,
+                        2805
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                2013,
+                                2319,
+                                2805
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2013,
+                                        2319,
+                                        2805
+                                    ],
+                                    "type": "text",
+                                    "content": "The sensor node features two key components besides the dc- dc converter: the AFE providing EIS functionality and the radio transceiver needed to transmit measurement results to a base station. We selected the MAX30134 EIS AFE and Semtech's SX1276 LoRa radio for their ultralow power consumption. While the latter is a staple in low- power, long- range communication, the MAX30134 still needs to be tested on PMFCs. The MAX30134 is a four- channel AFE providing biasing and full measurement path, ADC included, to be used on two or three terminal electrochemical sensors. This IC can execute voltage and temperature monitoring, dc measurements, and typical electrochemical measurements such as EIS and cyclic voltammetry. Finally, two factory- trimmed voltage monitors (Analog Devices, ADM8612) provide the signals triggering the measurement and transmission tasks at the appropriate storage voltages (see Section IV- E)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1267,
+                        2808,
+                        2319,
+                        2900
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1267,
+                                2808,
+                                2319,
+                                2900
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1267,
+                                        2808,
+                                        2319,
+                                        2900
+                                    ],
+                                    "type": "text",
+                                    "content": "For the first bench demonstrator, we opted for two- terminal EIS measurements, as this work's goal is not to obtain the"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2475,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

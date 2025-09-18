@@ -1,0 +1,32 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/a3c6af7dca81ab1f597ec54654aa173732f28de2f86717945e748edf90903178.jpg",
+        "image_caption": [
+            "Figure 6. Experiments on 4AA test tetrapeptides SAEL, CTSA and LPEM (top, middle and bottom rows respectively). Samples were generated via MD, Timewarp exploration (Algorithm 2), and Timewarp MCMC (Algorithm 1). (a) TICA plots of samples. (b) Free energies along the first two TICA components. (c) Potential energy distribution. For SAEL all metastable states are found by all methods, for CTSA the MD trajectory misses one state, and for LPEM Timewarp MCMC misses the slowest transition. In all cases Timewarp exploration discovers all metastable states."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Tetrapeptides (4AA) Finally, we study the more challenging 4AA dataset. After training on the trainset, we sample 20 million Markov chain states for each test tetrapeptide using Algorithm 1 and compare with long MD trajectories  $(1\\mu s = 2\\times 10^{9}$  timesteps). In contrast to the simpler dipeptides, both Timewarp MCMC and the long MD trajectories miss some metastable states. However, Timewarp in exploration mode (Algorithm 2) can be used as a validation tool to quickly verify exploration of the whole state space. Figure 6a shows that metastable states unexplored by MD and Timewarp MCMC can be found by the Timewarp exploration algorithm. We confirm the physical validity of these discovered states by running shorter MD trajectories in their vicinity (see Appendix B.5). As with 2AA, we again report the speedup factors for Timewarp relative to MD in Figure 5b,d. Although Timewarp MCMC fails to speed up sampling for most tetrapeptides due to an insufficiently high acceptance rate and a lower  $\\tau$  value than for the 2AA model, Timewarp exploration shows a median speedup factor of  $\\approx 50$ . For 8 test tetrapeptides, MD fails to explore all metastable states, whereas Timewarp succeeds these are marked in green. For 10 tetrapeptides, Timewarp MCMC fails to find all metastable states found by MD these are marked in grey. We report numerical values for the ESS/s speed- up factor only if both methods explore the same metastable states. Figure 6b shows that when Timewarp MCMC discovers all metastable states, its free energy estimates match those of MD very well. However, it sometimes misses metastable states leading to poor free energy estimates in those regions. Figure 6c shows that Timewarp MCMC also leads to a potential energy distribution that matches MD very closely. In contrast, Timewarp exploration discovers all metastable states (even ones that MD misses), but has less accurate free energy plots. It also has a potential energy distribution that is slightly too high relative to MD and Timewarp MCMC.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "times misses metastable states leading to poor free energy estimates in those regions. Figure 6c shows that Timewarp MCMC also leads to a potential energy distribution that matches MD very closely. In contrast, Timewarp exploration discovers all metastable states (even ones that MD misses), but has less accurate free energy plots. It also has a potential energy distribution that is slightly too high relative to MD and Timewarp MCMC.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "7. Conclusion",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We presented Timewarp, a transferable enhanced sampling method which uses deep networks to propose large conformational changes when simulating molecular systems. We showed that Timewarp used with an MH correction can accelerate asymptotically unbiased sampling on many unseen dipeptides, allowing faster computation of equilibrium expectation values. Although this acceleration was only possible for a minority of the tetrapeptides we considered, we showed that Timewarp used without the MH correction explores the metastable states of both dipeptides and tetrapeptides much faster than standard MD. This provides a promising method to quickly validate if MD simulations have visited all metastable states. Although further work needs to be done to scale Timewarp to larger, more interesting biomolecules, this work clearly demonstrates the ability of deep learning algorithms to leverage transferability to accelerate the MD sampling problem.",
+        "page_idx": 0
+    }
+]

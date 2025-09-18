@@ -1,0 +1,922 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        448,
+                        339,
+                        1652,
+                        392
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                448,
+                                339,
+                                1652,
+                                392
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        448,
+                                        339,
+                                        1652,
+                                        392
+                                    ],
+                                    "type": "text",
+                                    "content": "A BASIC PROMPTS AND REASONING PIPELINE OF BOT"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        453,
+                        442,
+                        1224,
+                        488
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                453,
+                                442,
+                                1224,
+                                488
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        453,
+                                        442,
+                                        1224,
+                                        488
+                                    ],
+                                    "type": "text",
+                                    "content": "A.1 THOUGHT GENERATION PART OF BOT"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        446,
+                        531,
+                        2103,
+                        669
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                531,
+                                2103,
+                                669
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        531,
+                                        2103,
+                                        669
+                                    ],
+                                    "type": "text",
+                                    "content": "This subsection presents the basic prompts used by the reasoning generation of the proposed Boosting of Thoughts (BoT). For details, one can also access the source code examples/BoostingOfThought/BoT_reasoner.py."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        443,
+                        693,
+                        2106,
+                        966
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                693,
+                                2106,
+                                966
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        693,
+                                        2106,
+                                        966
+                                    ],
+                                    "type": "text",
+                                    "content": "System prompt "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        693,
+                                        2106,
+                                        966
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "S"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        693,
+                                        2106,
+                                        966
+                                    ],
+                                    "type": "text",
+                                    "content": " : You are an expert on mathematical problems. Perform step- by- step reasoning toward problem solving by first learning from an ensemble of trial- and- error reasoning experiences. Such trial- and- error reasoning experience specifically contains error reports and detailed advice on how to revise historical reasoning steps. Always recall these listed experiences before generating a new reasoning step, thereby avoiding making the same mistakes and reusing correct steps to generate better reasoning steps to solve the task."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        446,
+                        993,
+                        1157,
+                        1039
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                993,
+                                1157,
+                                1039
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        993,
+                                        1157,
+                                        1039
+                                    ],
+                                    "type": "text",
+                                    "content": "Prompt for the next thought generation:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        1062,
+                        2083,
+                        1481
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1062,
+                                2083,
+                                1481
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1062,
+                                        2083,
+                                        1481
+                                    ],
+                                    "type": "text",
+                                    "content": "{task_prompt} "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1062,
+                                        2083,
+                                        1481
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\backslash \\mathbf{n}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1062,
+                                        2083,
+                                        1481
+                                    ],
+                                    "type": "text",
+                                    "content": " First of all, Recall historical reasoning experience: "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1062,
+                                        2083,
+                                        1481
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\backslash \\mathbf{n}\\backslash \\mathbf{n}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1062,
+                                        2083,
+                                        1481
+                                    ],
+                                    "type": "text",
+                                    "content": " { experiences} "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1062,
+                                        2083,
+                                        1481
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\backslash \\mathbf{n}\\backslash \\mathbf{n}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1062,
+                                        2083,
+                                        1481
+                                    ],
+                                    "type": "text",
+                                    "content": " Please make one step of reasoning to generate only one next possible reasoning step. This next reasoning step is the subsequential step from the following ordered previous steps, accompanied by their evaluated scores (A higher score means the reasoning step is more likely to complete the task) : "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1062,
+                                        2083,
+                                        1481
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\backslash \\mathbf{n}\\backslash \\mathbf{t}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1062,
+                                        2083,
+                                        1481
+                                    ],
+                                    "type": "text",
+                                    "content": " { chainprompt} "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1062,
+                                        2083,
+                                        1481
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\backslash \\mathbf{n}\\backslash \\mathbf{n}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1062,
+                                        2083,
+                                        1481
+                                    ],
+                                    "type": "text",
+                                    "content": " Based on listed previous reasoning steps (ignore them when the above space is empty), generate one single next possible step following the Task rule . (Emphasize: Please generate only one single next possible reasoning step of the given steps .)"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        443,
+                        1541,
+                        2106,
+                        1683
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1541,
+                                2106,
+                                1683
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1683
+                                    ],
+                                    "type": "text",
+                                    "content": "where the task_prompt containings the "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1683
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1683
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1683
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "Q"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1683
+                                    ],
+                                    "type": "text",
+                                    "content": " for the task, experiences is the historical reasoning experience "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1683
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbf{F}^{\\mathrm{I..t}}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1683
+                                    ],
+                                    "type": "text",
+                                    "content": " , and chain_prompt is the "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1683
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{G_i\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1683
+                                    ],
+                                    "type": "text",
+                                    "content": " , which is a placeholder to be replaced by the preceding chain of thoughts "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1683
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z_{1\\ldots ,i - 1}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1683
+                                    ],
+                                    "type": "text",
+                                    "content": " of the current thought "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1541,
+                                        2106,
+                                        1683
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\tilde{\\omega}_{i}"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        443,
+                        1706,
+                        1063,
+                        1755
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1706,
+                                1063,
+                                1755
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1706,
+                                        1063,
+                                        1755
+                                    ],
+                                    "type": "text",
+                                    "content": "Prompt for the thought evaluation:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        1782,
+                        2103,
+                        2108
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1782,
+                                2103,
+                                2108
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1782,
+                                        2103,
+                                        2108
+                                    ],
+                                    "type": "text",
+                                    "content": "{task_prompt} "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1782,
+                                        2103,
+                                        2108
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\backslash \\mathbf{n}\\backslash \\mathbf{n}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1782,
+                                        2103,
+                                        2108
+                                    ],
+                                    "type": "text",
+                                    "content": " Below are the generated reasoning steps, presented in order, accompanied by their evaluated scores (A higher score means the reasoning step is more likely to complete the task.) "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1782,
+                                        2103,
+                                        2108
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\backslash \\mathbf{n}\\backslash \\mathbf{c}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1782,
+                                        2103,
+                                        2108
+                                    ],
+                                    "type": "text",
+                                    "content": " hain_prompt} "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1782,
+                                        2103,
+                                        2108
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\backslash \\mathbf{n}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1782,
+                                        2103,
+                                        2108
+                                    ],
+                                    "type": "text",
+                                    "content": " {thought} "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1782,
+                                        2103,
+                                        2108
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\backslash \\mathbf{n}\\backslash \\mathbf{n}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1782,
+                                        2103,
+                                        2108
+                                    ],
+                                    "type": "text",
+                                    "content": " What is your evaluation score for the logic, correctness, and benefit to reaching a final solution for these reasoning steps? Please select one value from [0.1, 0.3, 0.5, 0.7, 0.9, 1.0] as the score, where a higher score means better reasoning steps. The score should be placed after 'Evaluation score:' for users to read."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        443,
+                        2168,
+                        1211,
+                        2217
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2168,
+                                1211,
+                                2217
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2168,
+                                        1211,
+                                        2217
+                                    ],
+                                    "type": "text",
+                                    "content": "where the thought is the current thought "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2168,
+                                        1211,
+                                        2217
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\tilde{\\omega}_{i}"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        443,
+                        2273,
+                        1277,
+                        2319
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2273,
+                                1277,
+                                2319
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2273,
+                                        1277,
+                                        2319
+                                    ],
+                                    "type": "text",
+                                    "content": "A.2 EXPERIENCE GENERATION PART OF BOT"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        441,
+                        2359,
+                        2106,
+                        2455
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                2359,
+                                2106,
+                                2455
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        2359,
+                                        2106,
+                                        2455
+                                    ],
+                                    "type": "text",
+                                    "content": "To generate feedback for the aggregated chain, LLMs use the following basic prompts.For details, one can also access the source code examples/BoostingOfThought/BoT commenter.py"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        443,
+                        2475,
+                        2106,
+                        2752
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2475,
+                                2106,
+                                2752
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2475,
+                                        2106,
+                                        2752
+                                    ],
+                                    "type": "text",
+                                    "content": "System prompt "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2475,
+                                        2106,
+                                        2752
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "S"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2475,
+                                        2106,
+                                        2752
+                                    ],
+                                    "type": "text",
+                                    "content": " : You are an expert AI checker for math answers, dedicated to evaluating the reasoning chain generated towards addressing the mathematical problem. Judge each reasoning step of this reasoning chain by providing detailed analyses on whether the current step is a logical inference of the previous step and whether the reasoning step is beneficial to the correct solution. Provide advice and suggestions for each reasoning step with errors. Provide recommendation or rejection descriptions for each correct reasoning step."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        441,
+                        2775,
+                        892,
+                        2821
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                2775,
+                                892,
+                                2821
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        2775,
+                                        892,
+                                        2821
+                                    ],
+                                    "type": "text",
+                                    "content": "Prompt for the feedback:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        2851,
+                        2091,
+                        3042
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2851,
+                                2091,
+                                3042
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2851,
+                                        2091,
+                                        3042
+                                    ],
+                                    "type": "text",
+                                    "content": "Given task:{task_prompt} "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2851,
+                                        2091,
+                                        3042
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\backslash \\mathbf{n}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2851,
+                                        2091,
+                                        3042
+                                    ],
+                                    "type": "text",
+                                    "content": " {chain_prompt} "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2851,
+                                        2091,
+                                        3042
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\backslash \\mathbf{n}\\backslash \\mathbf{n}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2851,
+                                        2091,
+                                        3042
+                                    ],
+                                    "type": "text",
+                                    "content": " Please evaluate this reasoning chain by giving detailed comments containing the following content. "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2851,
+                                        2091,
+                                        3042
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\backslash \\mathbf{n}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2851,
+                                        2091,
+                                        3042
+                                    ],
+                                    "type": "text",
+                                    "content": " 1. { chain_feedback_format }. 2. { step_feedback_format }. 3. { confidence_feedback_format }. "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2851,
+                                        2091,
+                                        3042
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\backslash \\mathbf{n}"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2851,
+                                        2091,
+                                        3042
+                                    ],
+                                    "type": "text",
+                                    "content": " \\n Notice: {Notice}."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/a3dbabee7ecd0253c82bd4696bc0260e910d10d86f4e5171e98e4ffbb897710f.jpg",
+        "image_caption": [
+            "Figure 7: Pretraining with the text continuation objective to predict next tokens "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/79a01350fc5429d5d205170a63f1a6475ed1796096d8ee2c22a32536ef7762bc.jpg",
+        "image_caption": [
+            "Figure 8: Instruct fine-tuning of the ICAE to make its produced memory slots interact with prompts for accomplishing Various purposes in the target LLM.In this figure, $( p _ { 1 } , \\ldots , p _ { m } )$ denotesthe prompt tokens and $( r _ { 1 } , \\ldots , r _ { n } )$ denotes the response tokens. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "BPROFILINGSETUP ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We test the latency (Section 3.3.2) on1 Nvidia A100 GPU (80GB). The test machine has the CPU of AMD EPYCTM 7413 with 24 cores and 216GB RAM. The runtime configuration is python $= 3 . 9$ ， pytorch $= 2 . 0 . 1$ ,cuda $= 1 1 . 7$ ,cudnn $= 8 . 5$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "CPROMPT-WITH-CONTEXT DATASET",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We introduce the PROMPT-WITH-CONTEXT (PwC) dataset where each sample entry is a triple (text, prompt,answer),as depicted inFigure9.To construct this dataset,we first sample 2Ok texts from the Pile dataset. Then,for each text, we employ the GPT-4 to provide 15 prompts (10 specific prompts and5 general prompts)about the text and give the corresponding answers.The prompt instructing the GPT-4 is outlined in Listing 1. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The dataset is composed of 24Ok examples for training purposes,with an additional 18k examples for testing. The context length distribution of test samples is presented in Table 10. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Listing 1: Prompt used by GPT4 API to generate the PwC dataset. ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Design 10 prompts specified to the above text to test understanding of the above text. These prompts should be diverse and cover as many ",
+        "page_idx": 0
+    }
+]

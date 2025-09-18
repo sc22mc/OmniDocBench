@@ -1,0 +1,141 @@
+[
+    {
+        "type": "text",
+        "text": "making your decision. KEEP YOUR REASONING BRIEF. Again, don't favor either A or B if they are both acceptable and correct - - judge a tie instead.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The prompt that the GPT- 4 uses to generate 128- token summary is as follows:",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\"Write a summary for the above text. Your summary should not exceed 100 words but should include as much information of the original text as possible.\"",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We show examples of the GPT- 4 evaluation on a pretrained and a non- pretrained ICAE in Table 9.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Table 9: Examples of outputs by the target LLM (i.e., Llama) conditioning on memory slots  $(k = 128)$  produced by the pretrained and non- pretrained ICAE. The highlighted parts are not faithful to the context.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Passage 1 (514 tokens):",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "French senior civil servant arrested on suspicion of spying for North Korea",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "November 27, 2018 by Joseph Fitsanakis",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A senior civil servant in the upper house of the French parliament has been arrested on suspicion of spying for North Korea, according to prosecutors. The news of the suspected spy's arrest was first reported on Monday by Quotidien, a daily politics and culture show on the Monaco- based television channel TMC. The show cited \"a judicial source in Paris,\" and said that France's domestic security and counterintelligence agency, the General Directorate for Internal Security (DGSI), was in charge of the espionage case.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(omitted 23 words)",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The senior civil servant faces up to 30 years in prison if found guilty of espionage.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prompt: What is the maximum prison sentence Quennedey could face if found guilty?",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Assistant A (pretrained ICAE): Quennedey could face up to 30 years in prison if found guilty.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Assistant B (non- pretrained ICAE): Quennedey could face up to three years in prison if found guilty.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer (by the GPT- 4): Up to 30 years.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "GPT- 4 evaluation: Assistant A correctly states the maximum prison sentence from the text, while Assistant B provides an incorrect number.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Passage 2 (506 tokens):",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "With Red Hat, IBM to become the leading hybrid cloud provider Watch Now",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "After IBM acquired Red Hat, I suggested IBM paid $34 billion for the Linux power so it could become a hybrid cloud power. With the news that Red Hat will acquire NooBaa, a hybrid- cloud, data- storage company, it's become clearer than ever that the IBM- Red Hat deal is all about the hybrid cloud.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(omitted 208 words)",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "As Ranga Rangachari, Red Hat's vice president of Storage and Hyperconverged Infrastructure, said in a statement:",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Data portability is a key imperative for organizations building and deploying cloud- native applications across private and multiple clouds. NooBaa's cloud worlds will augment our portfolio and strengthen our ability to meet the needs of developers in today's hybrid and multilayered world. We are thrilled to welcome a technical team of nine to the Red Hat family as we work together to further solidify Red Hat as a leading provider of open hybrid- cloud technologies.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prompt: Discuss the role of Ranga Rangachari in the context of the text",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Assistant A (pretrained ICAE): Ranga Rangachari is the vice president of Storage and Hyperconverged Infrastructure at Red Hat. He is responsible for the company's storage and hyperconverged offerings, and he welcomes the nine- member team of technical experts from NooBaa to join Red Hat as a part of the IBM acquisition.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Assistant B (non- pretrained ICAE): Ranga Rangachari is the CEO of Red Hat, and he is excited about the acquisition of NooBaa as it will help Red Hat become a leader in hybrid cloud management. He believes that NooBaa's technology will enable Red Hat to provide a single, comprehensive platform for managing data across multiple clouds, and that this will be a significant differentiator for Red Hat in the market.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer (by the GPT- 4): Ranga Rangachari is the vice president of Storage and Hyperconverged Infrastructure at Red Hat. He made a statement regarding the acquisition of NooBaa, highlighting the importance of data portability in today's hybrid and multilayered world and how NooBaa's technologies would strengthen Red Hat's ability to meet the needs of developers.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "GPT- 4 evaluation: Assistant A correctly identifies Ranga Rangachari's role as the vice president of Storage and Hyperconverged Infrastructure at Red Hat and accurately describes his statement about the acquisition of NooBaa. Assistant B incorrectly states that Ranga Rangachari is the CEO of Red Hat.",
+        "page_idx": 0
+    }
+]

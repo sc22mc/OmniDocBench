@@ -1,0 +1,88 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/57bb0cf112cb610b2fb5504b2086e8244a0360f9ec6318d11618dfa2e92d68d2.jpg",
+        "image_caption": [
+            "Fig.1. Schematic diagram of the proposed methodology. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "${ \\bf V } = [ { \\bf v } _ { 1 } , ~ { \\bf v } _ { 2 } , ~ \\cdots , { \\bf v } _ { m _ { i } } ] \\in \\mathbb { R } ^ { 3 \\times m _ { i } }$ Let's also denote with $\\Psi _ { j } ^ { k }$ the set of the indices of the $k$ nearest neighbors of point $j$ .For aface $f$ defined by three vertices $( \\mathbf { v } _ { j 1 } , \\mathbf { v } _ { j 2 } , \\mathbf { v } _ { j 3 } )$ ,the outward unit face normal $\\mathbf { n } _ { f }$ is calculated by the following equation: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/34f264d6aa460071b5396aff11c66f947129757847a1449137c1aa19bd536186.jpg",
+        "text": "$$\n\\mathbf { n } _ { f } = { \\frac { \\left( \\mathbf { v } _ { j 2 } - \\mathbf { v } _ { j 1 } \\right) \\times \\left( \\mathbf { v } _ { j 3 } - \\mathbf { v } _ { j 1 } \\right) } { \\left\\| \\left( \\mathbf { v } _ { j 2 } - \\mathbf { v } _ { j 1 } \\right) \\times \\left( \\mathbf { v } _ { j 3 } - \\mathbf { v } _ { j 1 } \\right) \\right\\| } }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The point normal $\\mathbf { n } _ { j }$ ,representing the normal of each point separately,is calculated as: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/645893be95422914abd36ec48133e6118a36dac162326f5bcebdd7f5ca2f68e1.jpg",
+        "text": "$$\n\\mathbf { n } _ { j } = \\frac { \\sum _ { \\forall \\mathbf { n } _ { f } \\in \\Psi _ { j } ^ { k } } \\mathbf { n } _ { f } } { | \\Psi _ { j } ^ { k } | }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B.Saliency Map Estimation of the Point Cloud Scene ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The purpose of this step is to calculate a metric of saliency for each vertex of a point cloud. Assuming point clouds without context information, saliency characterizes the geometric properties in a local neighborhood of points,i.e.,high saliency values represent more perceptually prominent vertices which usually correspond to sharp corners (high-frequency spatial information). On the opposite, the geometrically least important points are those that lie in flat areas. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For the estimation of the saliency map,we implemented and modified the fusion technique presented in $\\pm \\textcircled { 1 3 3 }$ Instead ofusing guided normals of centroids,as in the original version $\\pmb { \\mathbb { B 3 } }$ ，we now utilize normals for the points.This was performed to accelerate computations.Since the number of faces is usually approximately twice the number of vertices, the point normals are almost half the number of the centroid normals.For the sake of completeness,we present here our approach for the estimation of the saliency map of a point cloud scene,utilizing point normals. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Our fusion technique combines geometric saliency $( s ^ { ( 1 ) } )$ with spectral saliency $( s ^ { ( 2 ) } )$ features. The unique characteristics of each of these saliency features make the methodology more robust to point clouds acquired under real conditions, thereby being potentially affected by noise and outliers. The method processes each frame independently without examining past temporal information. Thus,as the methodology is applied for each point cloud in the sequence independently, for simplicity we omit the index $i$ (indicating the frame number) from now on in the equations. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For a point cloud $\\mathbf { P }$ with $m$ vertices,a matrix $\\mathrm { ~ \\bf ~ E ~ } \\in \\mathrm { ~ \\bf ~ \\in ~ }$ $\\mathbb { R } ^ { 3 m \\times ( k + \\hat { 1 } ) }$ is constructed which includes_in the first column the $m$ point normals $( { \\bf n } _ { j } = [ n _ { j _ { x } } , n _ { j _ { y } } , n _ { j _ { z } } ] ^ { T } )$ of each vertex $j$ ， $j = 1 , \\cdots , m$ ,respectively,and in the subsequent $k$ columns the point normals of the $k$ nearest neighbors of vertex $j$ (i.e. $\\mathbf { n } _ { j \\kappa } \\in \\Psi _ { j } ^ { k } )$ . The salient features extracted by this approach capture global information since the matrix $\\mathbf { E }$ is constructed using the point normals of the whole scene. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In order to exploit the geometrical coherence between neighboring normals，we apply Robust Principal Component Analysis (RPCA) to decompose the matrix $\\mathbf { E }$ into a low-rank matrix $\\mathbf { L } \\in \\ \\mathbb { R } ^ { 3 m \\times ( k + 1 ) }$ and a sparse matrix $\\mathbf { S } \\in \\mathbb { R } ^ { 3 m \\times ( k + 1 ) }$ ， as described in the appendix $| \\mathbf { A } |$ The matrix $\\mathbf { L }$ consists of the low-rank values $\\bar { \\bf n }$ of the point normals $\\mathbf { n }$ ，while the matrix Sconsists of the corresponding sparse values represented as n.The values of this matrix are zero (or to be more specific nearly zero） if the row (representing a neighboring patch of points） corresponds to point normals with very similar values, i.e.,the vertex lies ina flat area,and very large values if the row corresponds to point normals with big dissimilarity (i.e., the vertex lies in a very sharp corner).The fact that most of the local patches $\\Psi _ { j } ^ { k }$ of a 3D surface are piecewise flat confirms that the matrix $\\bf \\delta S$ can be considered a sparse matrix. ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/418b43786847c376ff664323fe5b7fefd00b1db94e4547ba78f7a7ce122ddfd1.jpg",
+        "text": "$$\n\\mathbf { S } = \\left[ \\begin{array} { c c c c c } { \\dot { \\bf n } _ { 1 } } & { \\dot { \\bf n } _ { 1 1 } } & { \\dot { \\bf n } _ { 1 2 } } & { \\hdots } & { \\dot { \\bf n } _ { 1 k } } \\\\ { \\dot { \\bf n } _ { 2 } } & { \\dot { \\bf n } _ { 2 1 } } & { \\dot { \\bf n } _ { 2 2 } } & { \\hdots } & { \\dot { \\bf n } _ { 2 k } } \\\\ { \\vdots } & { \\vdots } & { \\vdots } & { \\ddots } & { \\vdots } \\\\ { \\dot { \\bf n } _ { m } } & { \\dot { \\bf n } _ { m 1 } } & { \\dot { \\bf n } _ { m 2 } } & { \\hdots } & { \\dot { \\bf n } _ { m k } } \\end{array} \\right]\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In other words,sparsity of the matrix is assumed because piecewise flat areas are the most dominant geometrical pattern in a 3D surface. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1） Estimation of the geometrical saliency (global approach):As the similarity of normals between neighboring ",
+        "page_idx": 0
+    }
+]

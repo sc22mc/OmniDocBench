@@ -1,0 +1,71 @@
+[
+    {
+        "type": "text",
+        "text": "Proof. By Theorem 4.3 the result holds for  $q\\geq 194$  . For  $q< 194$  and  $q\\equiv 1$  (mod 6), we first look at  $q = 7$  and  $q = 13$  .When  $q = 7$  , one has  $x^{6} = 1$  for all  $x\\in \\mathbb{F}_7^\\times$  .But  $g^{2} + g + 1\\neq 0$  for any primitive root  $g$  of  $\\mathbb{F}_7$  . So it is not solvable in this case. For  $q = 13$ $x^{6} = \\pm 1$  for all  $x\\in \\mathbb{F}_{13}^{\\times}$  . It is easy to check that  $g^{2}X^{6} + gY^{6} + 1 = 0$  is not solvable for all primitive roots  $g = 2,6,7,11$  of  $\\mathbb{F}_{13}$  . For the rest of cases that  $13< q< 194$  , the following table gives a solution for some primitive root  $g$  ..",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/a86a0fc335d56625c674677ef075087061a724a09579471f60d22677f8641878.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>q</td><td>19</td><td>25</td><td>31</td><td>37</td><td>43</td><td>49</td><td>61</td><td>67</td><td>73</td><td>79</td><td>97</td><td>103</td></tr><tr><td>g</td><td>2</td><td>α</td><td>3</td><td>2</td><td>3</td><td>β</td><td>2</td><td>2</td><td>5</td><td>3</td><td>5</td><td>5</td></tr><tr><td>X</td><td>1</td><td>α³</td><td>19</td><td>2</td><td>1</td><td>β³</td><td>24</td><td>4</td><td>1</td><td>6</td><td>5</td><td>5</td></tr><tr><td>Y</td><td>2</td><td>α</td><td>27</td><td>1</td><td>28</td><td>β³</td><td>4</td><td>43</td><td>59</td><td>6</td><td>29</td><td>32</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/0fb4977619b85ad748ed0a3d0608590473f3b568c65fd78c8f5427cba8b2020f.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>q</td><td>109</td><td>121</td><td>127</td><td>139</td><td>151</td><td>157</td><td>163</td><td>169</td><td>181</td><td>193</td></tr><tr><td>g</td><td>6</td><td>γ</td><td>3</td><td>2</td><td>6</td><td>5</td><td>2</td><td>κ</td><td>2</td><td>5</td></tr><tr><td>X</td><td>16</td><td>γ⁷</td><td>84</td><td>2</td><td>1</td><td>22</td><td>8</td><td>1</td><td>86</td><td>1</td></tr><tr><td>Y</td><td>26</td><td>γ⁴</td><td>3</td><td>103</td><td>132</td><td>82</td><td>1</td><td>κ²</td><td>148</td><td>127</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $\\alpha = 3 + \\sqrt{2}$  in  $\\mathbb{F}_{25} = \\mathbb{F}_5(\\sqrt{2})$ $\\beta = 4 + \\sqrt{- 1}$  in  $\\mathbb{F}_{49} = \\mathbb{F}_7(\\sqrt{- 1})$ $\\gamma = 2 + \\sqrt{2}$  in  $\\mathbb{F}_{121} = \\mathbb{F}_{11}(\\sqrt{2})$  and  $\\kappa = 7 + 2\\sqrt{2}$  in  $\\mathbb{F}_{169} = \\mathbb{F}_{13}(\\sqrt{2})$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5. APPLICATION: CONFLICT-AVOIDING CODES OF WEIGHT 3",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this section, we apply our main result to the construction of CAC. We consider the special case where  $q = p$  and  $\\ell = \\ell_0$  the index of  $H$  in  $\\mathbb{F}_p^\\times$ . Let's start with a proof of Corollary B",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. Let  $p$  be a prime such that the multiplicative order  $o_p(2)$  of 2 is not a multiple of 4. Suppose that  $p$  satisfies the condition",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\np\\geq (2^{\\omega (\\ell_0)}(\\ell_0 - 3 - \\delta) + 2)^2 -2\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $\\delta = 1$  if  $4\\mid \\ell_0$  and  $\\delta = 0$  otherwise. It follows from Theorem A that there exists a generator  $g$  of  $\\mathbb{F}_p^\\times$  such that Equation (2) is solvable over  $\\mathbb{F}_p$ . By Corollary 2.3 for  $1\\leq \\ell_0\\leq 4$  and Lemma 2.1 for  $\\ell_0\\geq 5$ , we see that there exists a solution  $(x,y)\\in \\mathbb{F}_p^2$  to Equation (2) satisfying  $xy\\neq 0$ . Thus, Conjecture C and hence Conjecture B holds for prime numbers  $p$  satisfying the inequality given above. As it is explained in Section I, Conjecture A is also true for these prime numbers. Combining the algorithm given in [FLS14], we conclude that an optimal CAC of length  $p$  and weight 3 has the size",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nM(p,\\ell_0) = \\frac{p - 1 - 2\\ell_0}{4} +\\left\\lfloor \\frac{\\ell_0}{3}\\right\\rfloor\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "as desired.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Our strategy for studying the size of optimal CAC of prime lengths is through investigating Conjecture B (equivalently, Conjecture C). In the paper [MZS14] the authors",
+        "page_idx": 0
+    }
+]

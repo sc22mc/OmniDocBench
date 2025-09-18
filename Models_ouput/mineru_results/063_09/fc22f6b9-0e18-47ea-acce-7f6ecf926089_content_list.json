@@ -1,0 +1,98 @@
+[
+    {
+        "type": "text",
+        "text": "give the following table for each case. ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/f922bb871e5d46eaa26a1b8b55c0f0a4280300f71212090a2bd7152a684a0a87.jpg",
+        "text": "$$\n\\begin{array}{c} \\frac { [ \\begin{array} { l } { { { q } } \\end{array} ] 9  1 3  1 7  2 5  2 9  3 7  4 1  4 9  } { { { g }  \\alpha  2  3  \\beta  2  5  6  \\gamma  } } } \\\\ { { \\frac { \\lambda } { { { x }  \\alpha  4  6  1  4  2  3  2  2  2 \\gamma  } } } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\alpha = 1 + \\sqrt { - 1 }$ in $\\mathbb { F } _ { 9 } = \\mathbb { F } _ { 3 } ( { \\sqrt { - 1 } } ) , \\beta = 1 + 2 { \\sqrt { 2 } }$ in $\\mathbb { F } _ { 2 5 } = \\mathbb { F } _ { 5 } ( { \\sqrt { 2 } } )$ and $\\gamma = 4 + \\sqrt { - 1 }$ in $\\mathbb { F } _ { 4 9 } = \\mathbb { F } _ { 7 } ( \\sqrt { - 1 } )$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This completes the verifications of all cases in which $N _ { g } > 0$ .Moreover,we've exhibited all solutions $( x , y )$ such that $x y \\neq 0$ and thus finish the proof. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We would like to point out that it's possible to prove Corollary $2 . 3$ by using the bound $\\textcircled{6}$ without applying the Hasse-Weil bound. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In view of Conjecture $\\bigtriangledown$ we only need to find a generator $g$ d $\\mathbb { F } _ { q } ^ { \\times }$ such that $\\mathcal { C } _ { g } ( \\mathbb { F } _ { q } )$ is non-empty. Instead of computing $N _ { g }$ ,our goal is to show that the following sum ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/782498b443f948739161e79a98fa9578f899c80928a2e694b676fd508929d4ee.jpg",
+        "text": "$$\nN ( q , \\ell ) = \\sum _ { \\mathbb { F } _ { q } ^ { \\times } = \\langle g ^ { \\prime } \\rangle } N _ { g ^ { \\prime } } = \\sum _ { 1 \\leq t \\leq q - 1 , \\atop \\operatorname* { g c d } ( t , q - 1 ) = 1 } N _ { g ^ { t } }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "is a positive integer under appropriate conditions. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.KEY INGREDIENTS ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this section, we gather tools and results that are needed for the proof of TheoremA To simplify the notation, we'll put $( a _ { 1 } , a _ { 2 } ) = \\operatorname* { g c d } ( a _ { 1 } , a _ { 2 } )$ , the greatest common divisor of integers $a _ { 1 }$ and $a _ { 2 }$ . The following lemma is an elementary fact in algebra which we will use repeatedly. As one can easily find a proof in any algebra text book,we skip the proof here. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 3.1. Let $n \\in \\mathbb { N }$ and let d be a divisor of n. Then the canonical group homomorphism ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b95affa9af8d37adb5bf45987220c5c088d49dcb72ce65b95685153db495ad93.jpg",
+        "text": "$$\n\\pi : ( \\mathbb { Z } / n \\mathbb { Z } ) ^ { \\times } \\to ( \\mathbb { Z } / d \\mathbb { Z } ) ^ { \\times }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "induced by ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/428617e8c2c557441f66b671ae96c5e7c02be52039892f7a73328830b523bc04.jpg",
+        "text": "$$\n\\begin{array} { l l l } { \\mathbb { Z } / n \\mathbb { Z } } & { \\to } & { \\mathbb { Z } / d \\mathbb { Z } } \\\\ { k + n \\mathbb { Z } } & { \\mapsto } & { k + d \\mathbb { Z } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "is surjective. Furthermore, this homomorphism splits. Namely, there exists a subgroup $M$ of $( \\mathbb { Z } / n \\mathbb { Z } ) ^ { \\times }$ which is isomorphic to $( \\mathbb { Z } / d \\mathbb { Z } ) ^ { \\times }$ under $\\pi$ and $( \\mathbb { Z } / n \\mathbb { Z } ) ^ { \\times } = M \\cdot N$ where $N = \\ker ( \\pi )$ ： ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For $n \\in \\mathbb { N }$ and $m \\in \\mathbb { Z }$ , the Ramanujan's sum $c _ { n } ( m )$ (Ram18] or HSW00 pp. 179- 199]) is defined by ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/6366ac4e15cb03a20e79815ec5468dd96e1056e8fda39969cc43b8a90ca22322.jpg",
+        "text": "$$\nc _ { n } ( m ) = \\sum _ { 1 \\leq t < n , \\atop ( t , n ) = 1 } \\zeta _ { n } ^ { m t }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,2839 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        342,
+                        2108,
+                        712
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                345,
+                                2108,
+                                391
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        345,
+                                        2108,
+                                        391
+                                    ],
+                                    "score": 0.996,
+                                    "content": "BoTdepends on the effectiveness of its thought generation structure.Thus,BoTutilizes the tree of",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                386,
+                                2107,
+                                444
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        391,
+                                        880,
+                                        438
+                                    ],
+                                    "score": 0.992,
+                                    "content": "thoughts (ToT)Yao et al.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        881,
+                                        386,
+                                        2107,
+                                        444
+                                    ],
+                                    "score": 0.984,
+                                    "content": "(2024), the most recent structure, as its base model to generate reasoning",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                433,
+                                2108,
+                                487
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        433,
+                                        2108,
+                                        487
+                                    ],
+                                    "score": 0.985,
+                                    "content": "chains in each iteration. As mentioned in the main paper, the base thought generation model can",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                479,
+                                2107,
+                                533
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        479,
+                                        2107,
+                                        533
+                                    ],
+                                    "score": 0.955,
+                                    "content": "also be the Graph of Thoughts (GoT) Besta et al.(2023),i.e.,BoT with GoT.However, due to time",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                528,
+                                2108,
+                                578
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        528,
+                                        2108,
+                                        578
+                                    ],
+                                    "score": 0.993,
+                                    "content": "constraints and the fact that the current GoT has not been applied to mathematical problems, BoT",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                571,
+                                2107,
+                                625
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        571,
+                                        2107,
+                                        625
+                                    ],
+                                    "score": 0.978,
+                                    "content": "design exclusively embraces ToT.Furthermore,when employed as the base model within a boosting",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                621,
+                                2105,
+                                667
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        621,
+                                        2105,
+                                        667
+                                    ],
+                                    "score": 0.98,
+                                    "content": "mechanism,thought structures in each iteration can remain lightweight. Ultimately,the proposed",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                663,
+                                2083,
+                                718
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        663,
+                                        2083,
+                                        718
+                                    ],
+                                    "score": 0.983,
+                                    "content": "BoT generates heterogeneous tree structures,with each tree being a shallow-weighted binary tree.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        }
+                    ],
+                    "index": 3.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        452,
+                        849,
+                        1723,
+                        894
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                843,
+                                1731,
+                                902
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        843,
+                                        1731,
+                                        902
+                                    ],
+                                    "score": 0.973,
+                                    "content": "C.1NEXT THOUGHT GENERATION AND EDGE WEIGHTS COMPUTATION",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        960,
+                        2108,
+                        1290
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                960,
+                                2107,
+                                1022
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        962,
+                                        1656,
+                                        1017
+                                    ],
+                                    "score": 0.989,
+                                    "content": "Utilizing the Prompt for the next thought generation discussed in Section",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1657,
+                                        960,
+                                        1711,
+                                        1022
+                                    ],
+                                    "score": 0.44,
+                                    "content": "\\frac { \\partial } { \\partial \\mathbf { \\tau } }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1713,
+                                        962,
+                                        2107,
+                                        1017
+                                    ],
+                                    "score": 0.983,
+                                    "content": "LLMscan generate the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                997,
+                                2111,
+                                1069
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        997,
+                                        1179,
+                                        1069
+                                    ],
+                                    "score": 0.976,
+                                    "content": "next possible thought for te reasoning step",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1180,
+                                        1017,
+                                        1219,
+                                        1057
+                                    ],
+                                    "score": 0.84,
+                                    "content": "z _ { i }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1220,
+                                        997,
+                                        1762,
+                                        1069
+                                    ],
+                                    "score": 0.969,
+                                    "content": "by incorporating the experience",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1763,
+                                        1008,
+                                        1867,
+                                        1053
+                                    ],
+                                    "score": 0.87,
+                                    "content": "\\mathbf { F } ^ { 1 } . . . t",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1869,
+                                        997,
+                                        2111,
+                                        1069
+                                    ],
+                                    "score": 0.993,
+                                    "content": "and replacing",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        },
+                        {
+                            "bbox": [
+                                447,
+                                1054,
+                                2108,
+                                1108
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        447,
+                                        1055,
+                                        538,
+                                        1106
+                                    ],
+                                    "score": 0.92,
+                                    "content": "\\{ G _ { i } \\}",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        540,
+                                        1054,
+                                        635,
+                                        1108
+                                    ],
+                                    "score": 0.989,
+                                    "content": "with",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        636,
+                                        1060,
+                                        763,
+                                        1106
+                                    ],
+                                    "score": 0.9,
+                                    "content": "z _ { 1 \\ldots , i - 1 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        764,
+                                        1054,
+                                        1158,
+                                        1108
+                                    ],
+                                    "score": 0.986,
+                                    "content": ".Forareasoningstep",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1160,
+                                        1064,
+                                        1197,
+                                        1102
+                                    ],
+                                    "score": 0.85,
+                                    "content": "z _ { i }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1198,
+                                        1054,
+                                        2108,
+                                        1108
+                                    ],
+                                    "score": 0.981,
+                                    "content": ",LLMs utilize Prompt for the thought evaluation to",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                1099,
+                                2112,
+                                1152
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        1099,
+                                        1405,
+                                        1152
+                                    ],
+                                    "score": 0.983,
+                                    "content": "generate the evaluation score as the edge weight between",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1406,
+                                        1108,
+                                        1445,
+                                        1148
+                                    ],
+                                    "score": 0.86,
+                                    "content": "z _ { i }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1446,
+                                        1099,
+                                        1519,
+                                        1152
+                                    ],
+                                    "score": 0.999,
+                                    "content": "and",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1521,
+                                        1107,
+                                        1601,
+                                        1149
+                                    ],
+                                    "score": 0.89,
+                                    "content": "z _ { i - 1 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1602,
+                                        1099,
+                                        2112,
+                                        1152
+                                    ],
+                                    "score": 0.991,
+                                    "content": ".Fora detailed procedure, the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1145,
+                                2111,
+                                1197
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1145,
+                                        2111,
+                                        1197
+                                    ],
+                                    "score": 0.972,
+                                    "content": "source code is available in examples/BoostingOfThought/BoT_reasoner.py.In a direct example of",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1187,
+                                2107,
+                                1247
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1187,
+                                        769,
+                                        1247
+                                    ],
+                                    "score": 0.961,
+                                    "content": "BoTapplied to the",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        770,
+                                        1193,
+                                        913,
+                                        1237
+                                    ],
+                                    "score": 0.76,
+                                    "content": "3 5 6 8 ^ { \\prime }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        915,
+                                        1187,
+                                        2107,
+                                        1247
+                                    ],
+                                    "score": 0.957,
+                                    "content": "in the Gameof24,using gpt-3.5-turbo,Table[7and Table8present",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1228,
+                                1791,
+                                1301
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1228,
+                                        1791,
+                                        1301
+                                    ],
+                                    "score": 0.99,
+                                    "content": "the thought generation while the Tableshow how to compute the computation.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 15
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        446,
+                        1419,
+                        1585,
+                        1468
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1415,
+                                1590,
+                                1474
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1415,
+                                        1590,
+                                        1474
+                                    ],
+                                    "score": 0.979,
+                                    "content": "C.2THE NECESSITY OF HETEROGENEOUS TREE STRUCTURES",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 16
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        448,
+                        1536,
+                        2107,
+                        1860
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                1536,
+                                2105,
+                                1588
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1536,
+                                        2105,
+                                        1588
+                                    ],
+                                    "score": 0.987,
+                                    "content": "In each iteration BoT,the heterogeneous tree structures with different tree growth strategies and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1585,
+                                2106,
+                                1635
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1585,
+                                        2106,
+                                        1635
+                                    ],
+                                    "score": 0.973,
+                                    "content": "various temperature and Top-p setings of LLMs are to be built to explore more reasoning search",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        },
+                        {
+                            "bbox": [
+                                435,
+                                1621,
+                                2112,
+                                1692
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        1621,
+                                        2112,
+                                        1692
+                                    ],
+                                    "score": 0.982,
+                                    "content": "space and improve the robustness As can be seen in the source code BoostingOfThought/BoT_core.py",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1677,
+                                2106,
+                                1727
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1677,
+                                        2106,
+                                        1727
+                                    ],
+                                    "score": 0.978,
+                                    "content": "under the examples/,the temperatureand Top-pvalues forLLMs within each tree are chosen from the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1719,
+                                2108,
+                                1776
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1719,
+                                        2108,
+                                        1776
+                                    ],
+                                    "score": 0.964,
+                                    "content": "ranges [0.2,0.4,0.6,0.7,0.9,1.1,1.5]and [0.1,0.3,0.5,0.7,0.9],respectively. And the tree growth",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1766,
+                                2108,
+                                1822
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1766,
+                                        2108,
+                                        1822
+                                    ],
+                                    "score": 0.979,
+                                    "content": "strategy can either be level-wise growth or leaf-wise growth.We observed the following two benefits",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1808,
+                                1055,
+                                1869
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1808,
+                                        1055,
+                                        1869
+                                    ],
+                                    "score": 0.987,
+                                    "content": "of guaranteeing such Heterogeneity.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        }
+                    ],
+                    "index": 20
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        1883,
+                        2107,
+                        2431
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                1879,
+                                2111,
+                                1937
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1879,
+                                        2111,
+                                        1937
+                                    ],
+                                    "score": 0.985,
+                                    "content": "Heterogeneity extends the reasoning search space,thus increasing the convergence speed. When",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1923,
+                                2108,
+                                1985
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1923,
+                                        2108,
+                                        1985
+                                    ],
+                                    "score": 0.989,
+                                    "content": "different trees are constructed for distinct purposes, such as exploration with a level-wise strategy",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1972,
+                                2111,
+                                2028
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1972,
+                                        2111,
+                                        2028
+                                    ],
+                                    "score": 0.985,
+                                    "content": "or exploitation with a leaf-wise strategy,and are based on LLMs with varying configurations for",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2019,
+                                2108,
+                                2076
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2019,
+                                        2108,
+                                        2076
+                                    ],
+                                    "score": 0.981,
+                                    "content": "being random or deterministic, the generation of reasoning steps and the resulting reasoning chains",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2063,
+                                2110,
+                                2117
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2063,
+                                        2110,
+                                        2117
+                                    ],
+                                    "score": 0.986,
+                                    "content": "can exhibit significant differences,efectively covering a wider range of reasoning possibilities.For",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2112,
+                                2108,
+                                2164
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2112,
+                                        2108,
+                                        2164
+                                    ],
+                                    "score": 0.985,
+                                    "content": "example,in one iteration,when LLMs generate the next thought with more confidence,similar",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2157,
+                                2107,
+                                2209
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2157,
+                                        2107,
+                                        2209
+                                    ],
+                                    "score": 0.984,
+                                    "content": "thoughts willbe explored continuously; otherwise,LLMs with more randomness tend to generate",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2199,
+                                2111,
+                                2257
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2199,
+                                        2111,
+                                        2257
+                                    ],
+                                    "score": 0.98,
+                                    "content": "diverse thoughts. It is generally challenging to predict whether deterministic reasoning or randomness",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2244,
+                                2108,
+                                2304
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2244,
+                                        2108,
+                                        2304
+                                    ],
+                                    "score": 0.991,
+                                    "content": "can contribute to the solution. Therefore, incorporating heterogeneity by mixing different types",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2293,
+                                2114,
+                                2349
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2293,
+                                        2114,
+                                        2349
+                                    ],
+                                    "score": 0.995,
+                                    "content": "and logical reasoning steps allows us to comprehensively explore the reasoning space within a",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 33
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2339,
+                                2107,
+                                2389
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2339,
+                                        2107,
+                                        2389
+                                    ],
+                                    "score": 0.981,
+                                    "content": "single iteration,ultimately facilitating subsequent iterations.In theablation study,we compare the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 34
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2387,
+                                1771,
+                                2437
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2387,
+                                        1771,
+                                        2437
+                                    ],
+                                    "score": 0.99,
+                                    "content": "performance of BoT between Heterogeneous and homogeneous tree structures.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 35
+                        }
+                    ],
+                    "index": 29.5
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        2456,
+                        2108,
+                        3051
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                2454,
+                                2108,
+                                2511
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2454,
+                                        2108,
+                                        2511
+                                    ],
+                                    "score": 0.989,
+                                    "content": "Heterogeneity reduces the possibility of producing invalid or wrong reasoning chains, thus",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 36
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2503,
+                                2107,
+                                2551
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2503,
+                                        2107,
+                                        2551
+                                    ],
+                                    "score": 0.973,
+                                    "content": "enhancing the robustness.Unlike heterogeneity,in trees with homogeneoussetings,individual",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 37
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2547,
+                                2111,
+                                2601
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2547,
+                                        2111,
+                                        2601
+                                    ],
+                                    "score": 0.99,
+                                    "content": "trees tend to generate thoughts following consistent logic and build reasoning chains with the same",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 38
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2593,
+                                2111,
+                                2647
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2593,
+                                        2111,
+                                        2647
+                                    ],
+                                    "score": 0.989,
+                                    "content": "tree structures.Then, when the logic is wrong or the underlying structure is invalid for the current",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 39
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2638,
+                                2107,
+                                2691
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2638,
+                                        2107,
+                                        2691
+                                    ],
+                                    "score": 0.984,
+                                    "content": "question,reasoning chains obtained byall trees of BoT in each iteration can only contain noisy",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 40
+                        },
+                        {
+                            "bbox": [
+                                435,
+                                2678,
+                                2108,
+                                2743
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        2678,
+                                        2108,
+                                        2743
+                                    ],
+                                    "score": 0.982,
+                                    "content": "and incorrect reasoning steps.Even after aggregating them to obtain a more refined reasoning",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 41
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2726,
+                                2108,
+                                2783
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2726,
+                                        2108,
+                                        2783
+                                    ],
+                                    "score": 0.989,
+                                    "content": "chain for evaluation in BoT,the experience may still diverge significantly from providing suitable",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 42
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2775,
+                                2108,
+                                2829
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2775,
+                                        2108,
+                                        2829
+                                    ],
+                                    "score": 0.997,
+                                    "content": "problem-solving suggestions. Therefore,designing tree thought structures to be heterogeneous can",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2820,
+                                2111,
+                                2872
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2820,
+                                        2111,
+                                        2872
+                                    ],
+                                    "score": 0.977,
+                                    "content": "be a way to reduce the possibility that there are no effective reasoning chains to be evaluated for",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 44
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2864,
+                                2107,
+                                2922
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2864,
+                                        2107,
+                                        2922
+                                    ],
+                                    "score": 0.99,
+                                    "content": "subsequent BoT's iteration. Therefore,designing tree thought structures to be heterogeneous can help",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 45
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2914,
+                                2107,
+                                2963
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2914,
+                                        2107,
+                                        2963
+                                    ],
+                                    "score": 0.986,
+                                    "content": "mitigate the possbility of having no effective reasoning chains available for evaluation in subsequent",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 46
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2953,
+                                2105,
+                                3013
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2953,
+                                        2105,
+                                        3013
+                                    ],
+                                    "score": 0.976,
+                                    "content": "BoTiterations.This enhancement of robustnessallows BoT to tackle questions of varying difficulty",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 47
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                3000,
+                                565,
+                                3053
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        3000,
+                                        565,
+                                        3053
+                                    ],
+                                    "score": 0.999,
+                                    "content": "levels.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 48
+                        }
+                    ],
+                    "index": 42
+                }
+            ],
+            "page_idx": 0,
+            "page_size": [
+                2550,
+                3300
+            ],
+            "discarded_blocks": [
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        449,
+                        113,
+                        1223,
+                        155
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                108,
+                                1227,
+                                161
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        108,
+                                        1227,
+                                        161
+                                    ],
+                                    "score": 0.982,
+                                    "content": "Published as a conference paper at ICLR 2024",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "discarded",
+                    "bbox": [
+                        1254,
+                        3132,
+                        1295,
+                        3168
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                1245,
+                                3127,
+                                1303,
+                                3186
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1245,
+                                        3127,
+                                        1303,
+                                        3186
+                                    ],
+                                    "score": 1.0,
+                                    "content": "15",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "para_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        342,
+                        2108,
+                        712
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                345,
+                                2108,
+                                391
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        345,
+                                        2108,
+                                        391
+                                    ],
+                                    "score": 0.996,
+                                    "content": "BoTdepends on the effectiveness of its thought generation structure.Thus,BoTutilizes the tree of",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                386,
+                                2107,
+                                444
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        391,
+                                        880,
+                                        438
+                                    ],
+                                    "score": 0.992,
+                                    "content": "thoughts (ToT)Yao et al.",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        881,
+                                        386,
+                                        2107,
+                                        444
+                                    ],
+                                    "score": 0.984,
+                                    "content": "(2024), the most recent structure, as its base model to generate reasoning",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                433,
+                                2108,
+                                487
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        433,
+                                        2108,
+                                        487
+                                    ],
+                                    "score": 0.985,
+                                    "content": "chains in each iteration. As mentioned in the main paper, the base thought generation model can",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                479,
+                                2107,
+                                533
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        479,
+                                        2107,
+                                        533
+                                    ],
+                                    "score": 0.955,
+                                    "content": "also be the Graph of Thoughts (GoT) Besta et al.(2023),i.e.,BoT with GoT.However, due to time",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                528,
+                                2108,
+                                578
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        528,
+                                        2108,
+                                        578
+                                    ],
+                                    "score": 0.993,
+                                    "content": "constraints and the fact that the current GoT has not been applied to mathematical problems, BoT",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                571,
+                                2107,
+                                625
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        571,
+                                        2107,
+                                        625
+                                    ],
+                                    "score": 0.978,
+                                    "content": "design exclusively embraces ToT.Furthermore,when employed as the base model within a boosting",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                444,
+                                621,
+                                2105,
+                                667
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        444,
+                                        621,
+                                        2105,
+                                        667
+                                    ],
+                                    "score": 0.98,
+                                    "content": "mechanism,thought structures in each iteration can remain lightweight. Ultimately,the proposed",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                663,
+                                2083,
+                                718
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        663,
+                                        2083,
+                                        718
+                                    ],
+                                    "score": 0.983,
+                                    "content": "BoT generates heterogeneous tree structures,with each tree being a shallow-weighted binary tree.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        }
+                    ],
+                    "index": 3.5,
+                    "bbox_fs": [
+                        438,
+                        345,
+                        2108,
+                        718
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        452,
+                        849,
+                        1723,
+                        894
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                843,
+                                1731,
+                                902
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        843,
+                                        1731,
+                                        902
+                                    ],
+                                    "score": 0.973,
+                                    "content": "C.1NEXT THOUGHT GENERATION AND EDGE WEIGHTS COMPUTATION",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        }
+                    ],
+                    "index": 8,
+                    "bbox_fs": [
+                        443,
+                        843,
+                        1731,
+                        902
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        960,
+                        2108,
+                        1290
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                960,
+                                2107,
+                                1022
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        962,
+                                        1656,
+                                        1017
+                                    ],
+                                    "score": 0.989,
+                                    "content": "Utilizing the Prompt for the next thought generation discussed in Section",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1657,
+                                        960,
+                                        1711,
+                                        1022
+                                    ],
+                                    "score": 0.44,
+                                    "content": "\\frac { \\partial } { \\partial \\mathbf { \\tau } }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1713,
+                                        962,
+                                        2107,
+                                        1017
+                                    ],
+                                    "score": 0.983,
+                                    "content": "LLMscan generate the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                997,
+                                2111,
+                                1069
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        997,
+                                        1179,
+                                        1069
+                                    ],
+                                    "score": 0.976,
+                                    "content": "next possible thought for te reasoning step",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1180,
+                                        1017,
+                                        1219,
+                                        1057
+                                    ],
+                                    "score": 0.84,
+                                    "content": "z _ { i }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1220,
+                                        997,
+                                        1762,
+                                        1069
+                                    ],
+                                    "score": 0.969,
+                                    "content": "by incorporating the experience",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1763,
+                                        1008,
+                                        1867,
+                                        1053
+                                    ],
+                                    "score": 0.87,
+                                    "content": "\\mathbf { F } ^ { 1 } . . . t",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1869,
+                                        997,
+                                        2111,
+                                        1069
+                                    ],
+                                    "score": 0.993,
+                                    "content": "and replacing",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        },
+                        {
+                            "bbox": [
+                                447,
+                                1054,
+                                2108,
+                                1108
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        447,
+                                        1055,
+                                        538,
+                                        1106
+                                    ],
+                                    "score": 0.92,
+                                    "content": "\\{ G _ { i } \\}",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        540,
+                                        1054,
+                                        635,
+                                        1108
+                                    ],
+                                    "score": 0.989,
+                                    "content": "with",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        636,
+                                        1060,
+                                        763,
+                                        1106
+                                    ],
+                                    "score": 0.9,
+                                    "content": "z _ { 1 \\ldots , i - 1 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        764,
+                                        1054,
+                                        1158,
+                                        1108
+                                    ],
+                                    "score": 0.986,
+                                    "content": ".Forareasoningstep",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1160,
+                                        1064,
+                                        1197,
+                                        1102
+                                    ],
+                                    "score": 0.85,
+                                    "content": "z _ { i }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1198,
+                                        1054,
+                                        2108,
+                                        1108
+                                    ],
+                                    "score": 0.981,
+                                    "content": ",LLMs utilize Prompt for the thought evaluation to",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        },
+                        {
+                            "bbox": [
+                                436,
+                                1099,
+                                2112,
+                                1152
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        436,
+                                        1099,
+                                        1405,
+                                        1152
+                                    ],
+                                    "score": 0.983,
+                                    "content": "generate the evaluation score as the edge weight between",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1406,
+                                        1108,
+                                        1445,
+                                        1148
+                                    ],
+                                    "score": 0.86,
+                                    "content": "z _ { i }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1446,
+                                        1099,
+                                        1519,
+                                        1152
+                                    ],
+                                    "score": 0.999,
+                                    "content": "and",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        1521,
+                                        1107,
+                                        1601,
+                                        1149
+                                    ],
+                                    "score": 0.89,
+                                    "content": "z _ { i - 1 }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        1602,
+                                        1099,
+                                        2112,
+                                        1152
+                                    ],
+                                    "score": 0.991,
+                                    "content": ".Fora detailed procedure, the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1145,
+                                2111,
+                                1197
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1145,
+                                        2111,
+                                        1197
+                                    ],
+                                    "score": 0.972,
+                                    "content": "source code is available in examples/BoostingOfThought/BoT_reasoner.py.In a direct example of",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1187,
+                                2107,
+                                1247
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1187,
+                                        769,
+                                        1247
+                                    ],
+                                    "score": 0.961,
+                                    "content": "BoTapplied to the",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        770,
+                                        1193,
+                                        913,
+                                        1237
+                                    ],
+                                    "score": 0.76,
+                                    "content": "3 5 6 8 ^ { \\prime }",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        915,
+                                        1187,
+                                        2107,
+                                        1247
+                                    ],
+                                    "score": 0.957,
+                                    "content": "in the Gameof24,using gpt-3.5-turbo,Table[7and Table8present",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14
+                        },
+                        {
+                            "bbox": [
+                                438,
+                                1228,
+                                1791,
+                                1301
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        438,
+                                        1228,
+                                        1791,
+                                        1301
+                                    ],
+                                    "score": 0.99,
+                                    "content": "the thought generation while the Tableshow how to compute the computation.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 15
+                        }
+                    ],
+                    "index": 12,
+                    "bbox_fs": [
+                        436,
+                        960,
+                        2112,
+                        1301
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        446,
+                        1419,
+                        1585,
+                        1468
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1415,
+                                1590,
+                                1474
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1415,
+                                        1590,
+                                        1474
+                                    ],
+                                    "score": 0.979,
+                                    "content": "C.2THE NECESSITY OF HETEROGENEOUS TREE STRUCTURES",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 16
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        448,
+                        1536,
+                        2107,
+                        1860
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                442,
+                                1536,
+                                2105,
+                                1588
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1536,
+                                        2105,
+                                        1588
+                                    ],
+                                    "score": 0.987,
+                                    "content": "In each iteration BoT,the heterogeneous tree structures with different tree growth strategies and",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 17
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1585,
+                                2106,
+                                1635
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1585,
+                                        2106,
+                                        1635
+                                    ],
+                                    "score": 0.973,
+                                    "content": "various temperature and Top-p setings of LLMs are to be built to explore more reasoning search",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 18
+                        },
+                        {
+                            "bbox": [
+                                435,
+                                1621,
+                                2112,
+                                1692
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        1621,
+                                        2112,
+                                        1692
+                                    ],
+                                    "score": 0.982,
+                                    "content": "space and improve the robustness As can be seen in the source code BoostingOfThought/BoT_core.py",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 19
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1677,
+                                2106,
+                                1727
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1677,
+                                        2106,
+                                        1727
+                                    ],
+                                    "score": 0.978,
+                                    "content": "under the examples/,the temperatureand Top-pvalues forLLMs within each tree are chosen from the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 20
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1719,
+                                2108,
+                                1776
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1719,
+                                        2108,
+                                        1776
+                                    ],
+                                    "score": 0.964,
+                                    "content": "ranges [0.2,0.4,0.6,0.7,0.9,1.1,1.5]and [0.1,0.3,0.5,0.7,0.9],respectively. And the tree growth",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 21
+                        },
+                        {
+                            "bbox": [
+                                442,
+                                1766,
+                                2108,
+                                1822
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        442,
+                                        1766,
+                                        2108,
+                                        1822
+                                    ],
+                                    "score": 0.979,
+                                    "content": "strategy can either be level-wise growth or leaf-wise growth.We observed the following two benefits",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 22
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                1808,
+                                1055,
+                                1869
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        1808,
+                                        1055,
+                                        1869
+                                    ],
+                                    "score": 0.987,
+                                    "content": "of guaranteeing such Heterogeneity.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 23
+                        }
+                    ],
+                    "index": 20,
+                    "bbox_fs": [
+                        435,
+                        1536,
+                        2112,
+                        1869
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        1883,
+                        2107,
+                        2431
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                1879,
+                                2111,
+                                1937
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1879,
+                                        2111,
+                                        1937
+                                    ],
+                                    "score": 0.985,
+                                    "content": "Heterogeneity extends the reasoning search space,thus increasing the convergence speed. When",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 24
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1923,
+                                2108,
+                                1985
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1923,
+                                        2108,
+                                        1985
+                                    ],
+                                    "score": 0.989,
+                                    "content": "different trees are constructed for distinct purposes, such as exploration with a level-wise strategy",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 25
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                1972,
+                                2111,
+                                2028
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        1972,
+                                        2111,
+                                        2028
+                                    ],
+                                    "score": 0.985,
+                                    "content": "or exploitation with a leaf-wise strategy,and are based on LLMs with varying configurations for",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 26
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2019,
+                                2108,
+                                2076
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2019,
+                                        2108,
+                                        2076
+                                    ],
+                                    "score": 0.981,
+                                    "content": "being random or deterministic, the generation of reasoning steps and the resulting reasoning chains",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 27
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2063,
+                                2110,
+                                2117
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2063,
+                                        2110,
+                                        2117
+                                    ],
+                                    "score": 0.986,
+                                    "content": "can exhibit significant differences,efectively covering a wider range of reasoning possibilities.For",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 28
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2112,
+                                2108,
+                                2164
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2112,
+                                        2108,
+                                        2164
+                                    ],
+                                    "score": 0.985,
+                                    "content": "example,in one iteration,when LLMs generate the next thought with more confidence,similar",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 29
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2157,
+                                2107,
+                                2209
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2157,
+                                        2107,
+                                        2209
+                                    ],
+                                    "score": 0.984,
+                                    "content": "thoughts willbe explored continuously; otherwise,LLMs with more randomness tend to generate",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 30
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2199,
+                                2111,
+                                2257
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2199,
+                                        2111,
+                                        2257
+                                    ],
+                                    "score": 0.98,
+                                    "content": "diverse thoughts. It is generally challenging to predict whether deterministic reasoning or randomness",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 31
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2244,
+                                2108,
+                                2304
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2244,
+                                        2108,
+                                        2304
+                                    ],
+                                    "score": 0.991,
+                                    "content": "can contribute to the solution. Therefore, incorporating heterogeneity by mixing different types",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 32
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2293,
+                                2114,
+                                2349
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2293,
+                                        2114,
+                                        2349
+                                    ],
+                                    "score": 0.995,
+                                    "content": "and logical reasoning steps allows us to comprehensively explore the reasoning space within a",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 33
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2339,
+                                2107,
+                                2389
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2339,
+                                        2107,
+                                        2389
+                                    ],
+                                    "score": 0.981,
+                                    "content": "single iteration,ultimately facilitating subsequent iterations.In theablation study,we compare the",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 34
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2387,
+                                1771,
+                                2437
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2387,
+                                        1771,
+                                        2437
+                                    ],
+                                    "score": 0.99,
+                                    "content": "performance of BoT between Heterogeneous and homogeneous tree structures.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 35
+                        }
+                    ],
+                    "index": 29.5,
+                    "bbox_fs": [
+                        439,
+                        1879,
+                        2114,
+                        2437
+                    ]
+                },
+                {
+                    "type": "text",
+                    "bbox": [
+                        447,
+                        2456,
+                        2108,
+                        3051
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                439,
+                                2454,
+                                2108,
+                                2511
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2454,
+                                        2108,
+                                        2511
+                                    ],
+                                    "score": 0.989,
+                                    "content": "Heterogeneity reduces the possibility of producing invalid or wrong reasoning chains, thus",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 36
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2503,
+                                2107,
+                                2551
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2503,
+                                        2107,
+                                        2551
+                                    ],
+                                    "score": 0.973,
+                                    "content": "enhancing the robustness.Unlike heterogeneity,in trees with homogeneoussetings,individual",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 37
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2547,
+                                2111,
+                                2601
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2547,
+                                        2111,
+                                        2601
+                                    ],
+                                    "score": 0.99,
+                                    "content": "trees tend to generate thoughts following consistent logic and build reasoning chains with the same",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 38
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2593,
+                                2111,
+                                2647
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2593,
+                                        2111,
+                                        2647
+                                    ],
+                                    "score": 0.989,
+                                    "content": "tree structures.Then, when the logic is wrong or the underlying structure is invalid for the current",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 39
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2638,
+                                2107,
+                                2691
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2638,
+                                        2107,
+                                        2691
+                                    ],
+                                    "score": 0.984,
+                                    "content": "question,reasoning chains obtained byall trees of BoT in each iteration can only contain noisy",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 40
+                        },
+                        {
+                            "bbox": [
+                                435,
+                                2678,
+                                2108,
+                                2743
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        435,
+                                        2678,
+                                        2108,
+                                        2743
+                                    ],
+                                    "score": 0.982,
+                                    "content": "and incorrect reasoning steps.Even after aggregating them to obtain a more refined reasoning",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 41
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2726,
+                                2108,
+                                2783
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2726,
+                                        2108,
+                                        2783
+                                    ],
+                                    "score": 0.989,
+                                    "content": "chain for evaluation in BoT,the experience may still diverge significantly from providing suitable",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 42
+                        },
+                        {
+                            "bbox": [
+                                440,
+                                2775,
+                                2108,
+                                2829
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        440,
+                                        2775,
+                                        2108,
+                                        2829
+                                    ],
+                                    "score": 0.997,
+                                    "content": "problem-solving suggestions. Therefore,designing tree thought structures to be heterogeneous can",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 43
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2820,
+                                2111,
+                                2872
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2820,
+                                        2111,
+                                        2872
+                                    ],
+                                    "score": 0.977,
+                                    "content": "be a way to reduce the possibility that there are no effective reasoning chains to be evaluated for",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 44
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2864,
+                                2107,
+                                2922
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2864,
+                                        2107,
+                                        2922
+                                    ],
+                                    "score": 0.99,
+                                    "content": "subsequent BoT's iteration. Therefore,designing tree thought structures to be heterogeneous can help",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 45
+                        },
+                        {
+                            "bbox": [
+                                443,
+                                2914,
+                                2107,
+                                2963
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2914,
+                                        2107,
+                                        2963
+                                    ],
+                                    "score": 0.986,
+                                    "content": "mitigate the possbility of having no effective reasoning chains available for evaluation in subsequent",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 46
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                2953,
+                                2105,
+                                3013
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        2953,
+                                        2105,
+                                        3013
+                                    ],
+                                    "score": 0.976,
+                                    "content": "BoTiterations.This enhancement of robustnessallows BoT to tackle questions of varying difficulty",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 47
+                        },
+                        {
+                            "bbox": [
+                                439,
+                                3000,
+                                565,
+                                3053
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        439,
+                                        3000,
+                                        565,
+                                        3053
+                                    ],
+                                    "score": 0.999,
+                                    "content": "levels.",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 48
+                        }
+                    ],
+                    "index": 42,
+                    "bbox_fs": [
+                        435,
+                        2454,
+                        2111,
+                        3053
+                    ]
+                }
+            ]
+        }
+    ],
+    "_backend": "pipeline",
+    "_version_name": "2.1.8"
+}

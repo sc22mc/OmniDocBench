@@ -1,0 +1,125 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/57e6bf33aa2dd3815205828a1c231e41af2117fea58b89c7ed55768373fcf8f7.jpg",
+        "table_caption": [
+            "Table1.Dataset details "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Datasetname</td><td>AD</td><td>2AA</td><td>4AA</td></tr><tr><td>Training set simulation time</td><td>100ns</td><td>50ns</td><td>50ns</td></tr><tr><td>Test set simulation time</td><td>100ns</td><td>1μs</td><td>1μs</td></tr><tr><td>MD integration step△t</td><td>0.5fs</td><td>0.5fs</td><td>0.5fs</td></tr><tr><td>Timewarp prediction timeT</td><td>0.5×10fs</td><td>0.5×10fs</td><td>0.5×105fs</td></tr><tr><td>No. of training peptides</td><td>1</td><td>200</td><td>1400</td></tr><tr><td>No. of training pairs per peptide</td><td>2×105</td><td>1×104</td><td>1×104</td></tr><tr><td>No. of test peptides</td><td>1</td><td>100</td><td>30</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "permutation equivariant coupling layer. If the flow only took $z ^ { p }$ as input without $z ^ { v }$ ,then to maintain permutation equivariance,each couplinglayer would have to unnaturally split the Cartesian components of $z _ { i } ^ { p }$ into two disjoint sets. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Translation and rotation equivarianceConsider a transformation $T = ( R , a )$ that acts on $x ^ { p }$ as follows: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b476c30861784561c2aee98a4e9330f79c11f615bc46d698c2a2cfcc2e87e53b.jpg",
+        "text": "$$\n\\begin{array} { r } { T x _ { i } ^ { p } = R x _ { i } ^ { p } + a , \\quad 1 \\leq i \\leq N , } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $R$ isa $3 \\times 3$ rotation matrix,and $a ~ \\in ~ \\mathbb { R } ^ { 3 }$ isa translation vector. We would like the model to satisfy $p _ { \\theta } ( T x ( t + \\tau ) | T x ( t ) ) = p _ { \\theta } ( x ( t + \\tau ) | x ( t ) )$ .We achieve translation equivariance by subtracting the average position of the atoms in the initial molecular state (Appendix A.2). Rotation equivariance is not encoded in the architecture but is handled by data augmentation:each training pair $( x ( t ) , x ( t + \\tau ) )$ from $\\mathcal { D }$ is acted upon by a random rotation matrix $R$ to form $( R x ( t ) , R x ( t + \\tau ) )$ in each iteration. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5. Training objective ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The model is trained in two stages. During likelihood training,the model is trained via maximum likelihood on pairs of states from the trajectories in the dataset. During acceptance training,the model is fine-tuned to maximise the probability of MH acceptance. Let $k$ index training pairs,such that $\\{ ( x ^ { ( k ) } ( t ) , x ^ { ( \\bar { k } ) } ( t + \\tau ) ) \\} _ { k = 1 } ^ { K }$ represents all pairs of states at times $\\tau$ apartin $\\mathcal { D }$ .During likelihood training,we optimise: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/dc6e67f468460bdf1695acb452643b98b9cca57a47c505affc8fb6e4efef2a1a.jpg",
+        "text": "$$\n\\begin{array} { r } { \\textstyle \\mathcal { L } _ { \\mathrm { l i k } } ( \\theta ) : = \\frac { 1 } { K } \\sum _ { k = 1 } ^ { K } \\log p _ { \\theta } ( x ^ { ( k ) } ( t + \\tau ) | x ^ { ( k ) } ( t ) ) . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Once likelihood training is complete, we add a fine-tuning stage to optimise the MH acceptance probability. Let $x ^ { ( k ) } ( t )$ be sampled uniformly from $\\mathcal { D }$ .Then,we use the model to sample $\\tilde { x } _ { \\theta } ^ { ( k ) } ( t + \\tau ) \\sim p _ { \\theta } ( { } \\cdot { } | x ^ { ( k ) } ( t ) )$ using Eqation (3). Note that the sample value depends on $\\theta$ through $f _ { \\theta }$ .Weuse this to optimise the acceptance probability in Equation (7) with respect to $\\theta$ .Let $r _ { \\theta } ( { \\hat { X } } , { \\tilde { X } } )$ denote the model-dependent term in the acceptance ratio in Equation (7): ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/947302ea78b54cd86566ceb0c54844937c1ba3b46e024626c4c0eb11afc05b34.jpg",
+        "text": "$$\nr _ { \\theta } ( X , { \\tilde { X } } ) : = { \\frac { \\mu _ { \\mathrm { a u g } } ( { \\tilde { X } } ) p _ { \\theta } ( X \\mid { \\tilde { X } } ^ { p } ) } { \\mu _ { \\mathrm { a u g } } ( X ) p _ { \\theta } ( { \\tilde { X } } \\mid X ^ { p } ) } } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The acceptance objective is given by: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/c5c080f60af46ee3eceb48532868611548261fbf136e1ada09a3cf395da85475.jpg",
+        "text": "$$\n\\begin{array} { r } { \\textstyle \\mathcal { L } _ { \\operatorname { a c c } } ( \\theta ) : = \\frac { 1 } { K } \\sum _ { k = 1 } ^ { K } \\log r _ { \\theta } ( x ^ { ( k ) } ( t ) , \\tilde { x } _ { \\theta } ^ { ( k ) } ( t + \\tau ) ) . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/2ff0c75dc18c36229c538d12905ffde67e06a116062c3a33d7b77cfe7a708615.jpg",
+        "image_caption": [
+            "Figure 3.Alanine dipeptide experiments.(a) Ramachandran plots forMD and Timewarp samples generated according to Algorithm1. (b)Free energy comparison for the two dihedral angles $\\varphi$ and $\\psi$ (c)Ramachandran plots for the conditional distribution of MD compared with the Timewarp model. Red cross denotes initial state. (d) Time dependence of the $\\varphi$ dihedral angle ofMDand the Markov chain generated with the Timewarp model. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Training to maximise the acceptance probability can lead to the model proposing changes that are too small:if $\\tilde { x } _ { \\theta } ^ { ( k ) } ( t + \\tau ) = \\overline { x } ^ { ( k ) } ( t )$ ,then all proposals willbe accepted. To mitigate this,during acceptance training,we use an objective which is a weighted average of ${ \\mathcal { L } } _ { \\mathrm { a c c } } ( \\theta )$ $\\mathcal { L } _ { \\mathrm { l i k } } ( \\theta )$ and a Monte Carlo estimate of the average differential entropy, ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d7233090064568f0235c4499fa697de6a47c3001e4a1653539e9f500c4dc27eb.jpg",
+        "text": "$$\n\\begin{array} { r } { \\textstyle \\mathcal { L } _ { \\mathrm { e n t } } ( \\theta ) : = - \\frac { 1 } { K } \\sum _ { k = 1 } ^ { K } \\log p _ { \\theta } ( \\tilde { x } _ { \\theta } ^ { ( k ) } ( t + \\tau ) | x ^ { ( k ) } ( t ) ) . } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The weighting factors for each term are hyperparameters. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "6.Experiments ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We evaluate Timewarp on small peptide systems. To compare with MD,we focus on the slowest transitions between metastable states,as these are the most difficult to traverse. To find these, we use time-lagged independent component analysis (TICA) (Pérez-Hernández etal.,2013),alinear dimensionality reduction technique that maximises the autocorrelation of the transformed coordinates.The slowest components,TIC O and TIC1,are of particular interest. To measure the speed-up achieved by Timewarp,we compute the effective sample sizeper second of wall-clock time (ESS/s) for the TICA components. The ESS/s is given by: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/bf35012e527303b91850988b1dfa56aaead61b907937516fd39943fd77535210.jpg",
+        "text": "$$\n\\mathrm { E S S / s } = \\frac { M _ { \\mathrm { e f f } } } { t _ { \\mathrm { s a m p l i n g } } } = \\frac { M } { t _ { \\mathrm { s a m p l i n g } } \\left( 1 + 2 \\sum _ { \\tau = 1 } ^ { \\infty } \\rho _ { \\tau } \\right) } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $M$ is the chain length, $M _ { \\mathrm { e f f } }$ is the effective number of samples, $t _ { \\mathrm { s a m p l i n g } }$ is the sampling wall-clock time, and $\\rho _ { \\tau }$ is the autocorrelation for the lag time $\\tau$ (Neal,1993). The speed-up factorisdefined as the ESS/sachieved by Timewarp divided by the $\\mathrm { E S S } / \\mathrm { s }$ achieved by MD.Additional ",
+        "page_idx": 0
+    }
+]

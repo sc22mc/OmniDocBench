@@ -1,0 +1,68 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/265dfa02087abded8e2bd3221d248775a837b75ffc53c95666580a0be2dce7ec.jpg",
+        "image_caption": [
+            "Fig. 1. Data flow diagram of the system used in this work to perform all the experiments, it includes the merge of two datasets. The results of the experiments are trained models and a text file that reports the model statistics and the final test results."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "technique that incorporates environmental sensors and microphones, while remaining energy- efficient and capable of running AI models efficiently [20], considering the various sounds bees produce for communication through vibroacoustic signals [18] and using machine learning techniques to automatically identify the different beehive conditions [12].",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Previous solutions have employed convolutional neural networks (NNs) and support vector machines (SVMs) for classifying queen presence from audio recordings and using spectrograms extracted from the audio signals as input for these classifiers [21], [22]. Nevertheless, these networks typically exhibit high complexity, rendering them impractical for battery- powered devices.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This study extends existing research presented in [23] by examining the performance of NNs and SVMs classifiers, introducing variations in model complexity to enhance the detection of queen presence and extracting features with a reduced number of values. Notably, the focus is solely on utilizing audio information and features derived from it, a deliberate choice aimed at maintaining algorithmic simplicity. This strategy minimizes network input requirements, ultimately considering the computation resources of potential IoT systems based on a microcontroller unit.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In addition, this research combines the dataset introduced in [24] with the dataset from [4]. This combination results in a more comprehensive understanding of the study. This article not only enriches the capabilities of the framework presented in [25], but also offers the possibility of integrating multiple heterogeneous datasets. This innovative approach enhances the available data, providing a more accurate estimate of the trained models' performance and gives flexibility in the design space exploration for a future deployment of the model in IoT devices.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "II. METHODOLOGY",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The proposed approach relies on using exclusively audio signals captured within the beehive. This noninvasive solution enables continuous monitoring of the beehive, without disturbing the bees or altering their natural behavior. It can provide valuable information for beekeepers, researchers, or conservationists, helping them make informed decisions about hive management, health assessments, or interventions if necessary. The sound level amplitude and frequency depend on the colony activity and health state. Flying bees produce a typical sound with an approximate frequency of  $250\\mathrm{Hz}$  worker bees produce a characteristic frequency that lies between 225 and  $285\\mathrm{Hz}$  to cool the hive with ventilation, and the frequency can reach up to  $3000\\mathrm{Hz}$  as a defensive reaction to potential outside threats to the colony [26], [27]. However, if the queen is missing in the beehive the bees produce a sound that contains harmonics with lower frequencies [28]. Fig. 1 reports the schematic representation of the methodology adopted in this study, details of all steps will be given in the following sections.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. Datasets",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In order to train and compare the different algorithms, the following two datasets are used. This allows to increase the overall amount of available data and provides additional insights into how well the models can adapt to various beehives. Having a larger dataset also has another advantage because it helps prevent the issue of overfitting while training complex machine learning models.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1) Dataset 1: This dataset [4] comprises 7100 audio and environmental data recordings from European honey bee hives in California. Each file represents a  $60~\\mathrm{s}$  audio clip recorded at  $22050\\mathrm{Hz}$  with a 32-bit floating-point depth for a single channel. Besides the audio data, each sample includes information about the internal condition of the beehive and the prevailing weather conditions. For our study, we specifically utilized the recorded audio (after removing saturation artifacts) and the label indicating the presence of the queen.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2) Dataset 2: This dataset was created as part of the work in [29]. The data made available in [24] is a selection of recordings acquired through the NU-Hive project [30] whose main objective is to develop a beehive monitoring system capable of identifying and predict certain events and states of the hive that are of interest to the beekeeper. The dataset consists of recordings from two hives, captured in two distinct states: a \"Queen Missing\" hive, where the queen bee is absent, and a \"Normal\" hive, where no abnormal activities are observed. Each hive has a recording for each state, with each audio clip",
+        "page_idx": 0
+    }
+]

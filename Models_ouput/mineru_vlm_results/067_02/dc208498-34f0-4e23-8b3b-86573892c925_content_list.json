@@ -1,0 +1,67 @@
+[
+    {
+        "type": "text",
+        "text": "In order to measure the part of  $P_{(t,T]}^{(A)}$  that is induced by changes in the FX rate  $\\chi$ , we decompose  $P_{(t,T]}^{(A)}$  as follows:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nP_{(t,T]}^{(A)} = \\underbrace{\\frac{A_t + A_T}{2}\\left(\\chi_T - \\chi_t\\right)}_{\\eqqcolon P_{(t,T]}^{(A)}(\\chi)} + \\frac{\\chi_t + \\chi_T}{2}\\left(A_T - A_t\\right). \\tag{2}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the following paragraph, we further decompose  $A_{T} - A_{t}$  into different parts. Section 2 first treats the case of assets subject to reinvestment, while Section 3 treats the general case and shows how to apply the methodology for whole portfolios of assets. Finally, Section 4 demonstrates our decomposition by an example and applies the methodology to a performance attribution for our fund XAIA Credit Debt Capital.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Remark 1.1 (Alternative FX performance decompositions)",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The decomposition of the PnL into FX- induced part and non- FX- induced part (2) intuitively assumes that (i) the whole FX rate difference  $\\chi_T - \\chi_t$  is earned on the arithmetic average of the asset values  $A_{t}$  and  $A_{T}$  at the beginning and at the end of the period, and (ii) the performance due to asset value change  $A_{T} - A_{t}$  is converted into EUR according to the arithmetic average of the initial and latest FX rates  $\\chi_t$  and  $\\chi_T$ . An alternative could be to only use  $A_{t}$  in (i) and  $\\chi_T$  in (ii), by replacing the decomposition (2) with the alternative definition",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nP_{(t,T]}^{(A)} = \\underbrace{A_t(\\chi_T - \\chi_t)}_{\\eqqcolon \\tilde{P}_{(t,T]}^{(A)}(\\chi)} + \\chi_T(A_T - A_t).\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "While both definitions  $P_{(t,T]}^{(A)}(\\chi)$  and  $\\tilde{P}_{(t,T]}^{(A)}(\\chi)$  appear to be reasonable, we prefer (2). We notice that this is different to the practice of using the column \"Result curr. global\" in the front office system SOPHIS for FX- hedged performance monitoring, because the latter essentially corresponds to the expression  $\\chi_T(A_T - A_t)$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Yet another, more theoretical, decomposition is obtained by assuming that both  $\\{A_{u}\\}_{u\\in (t,T]}$  and  $\\{\\chi_u\\}_{u\\in (t,T]}$  are realizations of semi- martingales. The product formula then gives the identity",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nP_{(t,T]}^{(A)} = \\int_{(t,T]}A_u\\mathrm{d}\\chi_u + \\int_{(t,T]}\\chi_u\\mathrm{d}A_u + [A,\\chi ]_t. \\tag{3}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In intuitive terms, the right- hand side of (3) is a limit expression as  $n\\to \\infty$  of",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\sum_{i = 1}^{n}A_{u_{i - 1}}(\\chi_{u_i} - \\chi_{u_{i - 1}}) + \\sum_{i = 1}^{n}\\chi_{u_{i - 1}}(A_{u_i} - A_{u_{i - 1}}) + \\sum_{i = 1}^{n}(A_{u_i} - A_{u_{i - 1}})(\\chi_{u_i} - \\chi_{u_{i - 1}}),\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where the partition  $t = u_0< u_1< \\ldots < u_n = T$  of the interval  $[t,T]$  becomes finer and finer with increasing  $n$ . Under the assumption that  $A$  and  $\\chi$  are independent (or of finite- variation) the co- variation term  $[A,\\chi ]_t$  vanishes and we observe that our decomposition",
+        "page_idx": 0
+    }
+]

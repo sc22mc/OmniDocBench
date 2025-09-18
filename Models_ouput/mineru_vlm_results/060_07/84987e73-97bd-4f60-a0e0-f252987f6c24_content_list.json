@@ -1,0 +1,104 @@
+[
+    {
+        "type": "text",
+        "text": "Proposition 8 Proposition 4.2 (a)] Let  $f:Y^{\\prime}\\to Y$  be a morphism of pure- dimensional schemes,  $X\\subset Y$  a closed subscheme,  $X^{\\prime} = f^{- 1}(X)$  the inverse image scheme,  $g:X^{\\prime}\\rightarrow$ $X$  the induced morphism",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(a) If  $f$  is proper,  $Y$  irreducible, and  $f$  maps each irreducible component of  $Y^{\\prime}$  onto  $Y$  then",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ng_{s}(s(X^{\\prime},Y^{\\prime})) = \\deg (Y^{\\prime} / Y)s(X,Y).\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Equation  $(\\square)$  can be used to calculate  $(\\square)$ . Consider the following closed immersions:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\Gamma_q\\subset X\\times Z_2\\subset X\\times \\mathbb{P}(E_{\\mathcal{L}})\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Since each term is nonsingular, each of these closed immersions is a regular immersion. Therefore, we have the following exact sequence of normal bundles:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n0\\to N_{\\Gamma_q}(X\\times Z_2)\\to N_{\\Gamma_q}(X\\times \\mathbb{P}(E_{\\mathcal{L}}))\\to N_{X\\times Z_2}(X\\times \\mathbb{P}(E_{\\mathcal{L}}))|_{\\Gamma_q}\\to 0 \\tag{7}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "After simplification, we obtain the following:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{c}{s(N_{\\Gamma_q}(X\\times Z_2)) = (\\Gamma_q\\to X)^* s(T_X) = (\\mathrm{id}\\times r)^* s(T_{\\Delta (X)})}\\\\ {s(N_{X\\times Z_2}(X\\times \\mathbb{P}(E_{\\mathcal{L}}))|_{\\Gamma_q}) = (\\Gamma_q\\to Z_2)^* s(N_{Z_2}\\mathbb{P}(E_{\\mathcal{L}}))} \\end{array}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Using  $(\\square)$ , we get:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ns(N_{\\Gamma_q}(X\\times \\mathbb{P}(E_{\\mathcal{L}}))) = (\\mathrm{id}\\times r)^* s(T_{\\Delta (X)})\\cdot (\\Gamma_q\\to Z_2)^* s(N_{Z_2}\\mathbb{P}(E_{\\mathcal{L}})). \\tag{8}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note that  $(\\mathrm{id}\\times r|_{\\Gamma_q\\backslash *}\\circ (\\Gamma_q\\to Z_2)^*$  is  $(\\Delta (X)\\to X)^{*}\\circ r_{*}$  on Chow rings. From  $(\\square)$  and  $(\\square)$ , we get the following:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ns(\\Delta (X),X\\times \\sigma_2(X)) = (\\Delta (X)\\to X)^* (s(T_X)\\cdot r_*s(N_{Z_2}\\mathbb{P}(E_{\\mathcal{L}}))\\cap [X]) \\tag{9}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "So, it remains to compute the total Segre class  $s(\\mathcal{N}_{Z_2}\\mathbb{P}(E_{\\mathcal{L}}))$ . Since  $r^{- 1}(X)$  can be regarded as an effective divisor of  $\\mathbb{P}(E_{\\mathcal{L}})$ , we can compute  $s(Z_2,\\mathbb{P}(E_{\\mathcal{L}}))$  by  $(\\square)$  Cor 4.2.2] as follow:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\ns(Z_2,\\mathbb{P}(E_{\\mathcal{L}})) = \\frac{[Z_2]}{1 + [Z_2]}. \\tag{10}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In order to proceed, it is necessary to express the term  $[Z_2]$  in terms of the tautological line bundle  $\\zeta$  of  $\\mathbb{P}(E_{\\mathcal{L}})$  and  $\\pi^{*}\\beta$ , where  $\\beta$  is a divisor on  $X^{[2]}$  (cf. Fulton 2013, Chapter 3.3). This is achieved by calculating the first Chern class of  $E_{\\mathcal{L}}$  in proposition 3.1.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let  $h$  be the divisor corresponding to a line bundle  $L$  on  $X$ . We denote the pullback of  $h$  under the  $i$ - th projection as  $h_i$ . The morphism  $\\rho$  is an involution map, so  $\\rho_{*}\\eta^{*}h_{1} = \\rho_{*}\\eta^{*}h_{2}$ . We define  $H = \\rho_{*}\\eta^{*}h_{1} = \\rho_{*}\\eta^{*}h_{2}$  and  $\\delta = \\frac{1}{2}\\rho_{*}E$ . The following proposition may be known to experts but I could not find appropriate references, so I will provide a proof.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proposition 3.1.  $c_{1}(E_{\\mathcal{L}}) = H - \\delta$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. Let  $\\pi :\\mathbb{P}(E_{\\mathcal{L}})\\to X^{[2]}$  be the projection map of a projective bundle. Consider the normal sheaf  $\\mathcal{N}\\coloneqq \\mathcal{N}_{Z_2 / X\\times X^{[2]}}$  and the closed immersion  $j:Z_{2}\\to X\\times X^{[2]}$  with the composition  $q:Z_{2}\\to X$  of  $\\eta$  and the first projection. The morphism  $\\pi_1|_{Z_2}:Z_2\\to X^{[2]}$  is a finite flat morphism, and  $\\pi_{2*}(\\pi_1^*\\mathcal{L}\\otimes \\mathcal{O}_{Z_2})$  is a locally free sheaf on  $X^{[2]}$ , so by Grauert's theorem, all higher direct images  $R^{i}\\pi_{2*}(\\pi_{1}^{*}\\mathcal{L}\\otimes \\mathcal{O}_{Z_{2}})$  vanish for  $i\\geq 1$ . Let  $T_{X}$  be the tangent sheaf of  $X$ .",
+        "page_idx": 0
+    }
+]

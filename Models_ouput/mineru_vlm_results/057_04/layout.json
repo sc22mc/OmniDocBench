@@ -1,0 +1,942 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        198,
+                        204,
+                        1249,
+                        653
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                204,
+                                1249,
+                                653
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        204,
+                                        1249,
+                                        653
+                                    ],
+                                    "type": "text",
+                                    "content": "extend our approach to other languages. In detail, we first extract the characters from the frames, and concatenate them into text- based "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        204,
+                                        1249,
+                                        653
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(ocr_{text})"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        204,
+                                        1249,
+                                        653
+                                    ],
+                                    "type": "text",
+                                    "content": " and number- based "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        204,
+                                        1249,
+                                        653
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(ocr_{num})"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        204,
+                                        1249,
+                                        653
+                                    ],
+                                    "type": "text",
+                                    "content": " string. As the OCR may not infer the text perfectly, we discern the keyboard frame by keyboard- specific substrings. For example, Fig. 4(a) is a frame of English keyboard that contains \"qwert\" in "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        204,
+                                        1249,
+                                        653
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "ocr_{text}"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        204,
+                                        1249,
+                                        653
+                                    ],
+                                    "type": "text",
+                                    "content": ", and Fig. 4(b) is a frame of numeric keypad that contains \"123\" in "
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        204,
+                                        1249,
+                                        653
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "ocr_{num}"
+                                },
+                                {
+                                    "bbox": [
+                                        198,
+                                        204,
+                                        1249,
+                                        653
+                                    ],
+                                    "type": "text",
+                                    "content": ". Therefore, the frame of a keyboard is discriminated by"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        196,
+                        669,
+                        1249,
+                        844
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                196,
+                                669,
+                                1249,
+                                844
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        196,
+                                        669,
+                                        1249,
+                                        844
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "f r a m e = \\left\\{ \\begin{array}{l l}{\\exists \\{\\mathrm{q w e r t},\\mathrm{a s c f g},\\mathrm{z x c v b}\\} \\in l o w e r c a s e(o c r_{t e x t})}\\\\ {\\exists \\{123,456,789\\} \\in o c r_{n u m}} \\end{array} \\right. \\tag{1}",
+                                    "image_path": "9848b5daf853a6368f3fbb1cb5225d7060534aa25dc3351a5de196c57f2d13ff.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        198,
+                        851,
+                        1249,
+                        1095
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                851,
+                                1249,
+                                1095
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        851,
+                                        1249,
+                                        1095
+                                    ],
+                                    "type": "text",
+                                    "content": "where lowercase is to convert the uppercase characters into lowercase, in order to detect capital English keyboard. Note that we do not adopt keyboard template matching, as keyboards vary in appearance, such as customized background, different device layouts, etc."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        206,
+                        1131,
+                        867,
+                        1181
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                206,
+                                1131,
+                                867,
+                                1181
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        1131,
+                                        867,
+                                        1181
+                                    ],
+                                    "type": "text",
+                                    "content": "C. Phase 2: Action Attribute Inference"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        204,
+                        1201,
+                        1249,
+                        2145
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                1201,
+                                1249,
+                                2145
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        1201,
+                                        1249,
+                                        2145
+                                    ],
+                                    "type": "text",
+                                    "content": "Given a recording clip of user action segmented by the previous phase, we then infer its detailed attributes, including touch location of "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1201,
+                                        1249,
+                                        2145
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "TAP"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1201,
+                                        1249,
+                                        2145
+                                    ],
+                                    "type": "text",
+                                    "content": " action, its moving offset of SCROLL action, and its input text of INPUT action, to reveal where the user interacts with on the screen. The overview of our methods is shown in Fig. 5. The prediction of "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1201,
+                                        1249,
+                                        2145
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "TAP"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1201,
+                                        1249,
+                                        2145
+                                    ],
+                                    "type": "text",
+                                    "content": " location requires a semantic understanding of the GUI transition captured in the clip, such as touch indicators (in Section II- A), transition animation, GUI semantic relation, etc. Therefore, we propose a deep- learning- based method that models the spatial and temporal features across frames to infer the "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1201,
+                                        1249,
+                                        2145
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "TAP"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        1201,
+                                        1249,
+                                        2145
+                                    ],
+                                    "type": "text",
+                                    "content": " location. To infer the moving offset of SCROLL, we adopt an off- the- shelf image- processing method to detect the continuous motion trajectory of GUIs, thus, measuring the user's scrolling direction and distance. To infer the input text of INPUT, we leverage the OCR technique to identify the text difference between the frames of keyboard opening (i.e., where the user starts entering text) and keyboard closing (i.e., where the user ends entering)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        204,
+                        2151,
+                        1249,
+                        2646
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                2151,
+                                1249,
+                                2646
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        2151,
+                                        1249,
+                                        2646
+                                    ],
+                                    "type": "text",
+                                    "content": "1) Inferring TAP location: Convolutional Neural Networks of 2D (Conv2ds) [26], [27] have demonstrated remarkable success in efficiently capturing the hypothesis of spatial locality in two-dimensional images. A video that is encoded by a sequence of 2d images, aggregates another dimension: spacetime. To predict the touch location from a GUI recording clip, we adopt a Conv3d-based model X3D [28], that simultaneously models spatial features of single-frame GUIs and temporal features of multi-frames optical flow. The architecture of our X3D model is shown in Fig. 5(a)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        204,
+                        2649,
+                        1249,
+                        2993
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                204,
+                                2649,
+                                1249,
+                                2993
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": "Given a video clip "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V^{TRH\\times W\\times C}"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " where "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "T"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " is the time length of the clip, "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "W"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": ", "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "H"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": ", and "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " are the width, height, and channel of the frame, usually "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C = 3"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " for RGB frame. We first apply 3d convolution layers, consisting of a set of learnable filters to extract the spatio- temporal features of the video. Specifically, the convolution is to use a 3d kernel, i.e. "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t\\times d\\times d"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " where "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "d"
+                                },
+                                {
+                                    "bbox": [
+                                        204,
+                                        2649,
+                                        1249,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " denote the temporal and spatial kernel size, to slide "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1297,
+                                204,
+                                2343,
+                                650
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        204,
+                                        2343,
+                                        650
+                                    ],
+                                    "type": "text",
+                                    "content": "around the video and calculate kernel- wise features by matrix dot multiply. After the convolutional layers, the video "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        204,
+                                        2343,
+                                        650
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "V"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        204,
+                                        2343,
+                                        650
+                                    ],
+                                    "type": "text",
+                                    "content": " will be abstracted as a 3d feature map, preserving features along both the spatial and the temporal information. We then apply a 3d pooling layer to eliminate unimportant features and enhance spatial variance of rotation and distortion. After blocks of convolutional and pooling layers, we flatten the feature map and apply a fully connected layer to infer the logits of "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        204,
+                                        2343,
+                                        650
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "TAP"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        204,
+                                        2343,
+                                        650
+                                    ],
+                                    "type": "text",
+                                    "content": " location."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        1297,
+                        204,
+                        2343,
+                        650
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 7,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1297,
+                        656,
+                        2343,
+                        1696
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                656,
+                                2343,
+                                1696
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        656,
+                                        2343,
+                                        1696
+                                    ],
+                                    "type": "text",
+                                    "content": "For the detailed implementation, we adopt the convolutional layers from ResNet- 50 [29] and borrow the idea of residual connection to improve the model performance and stability between layers. We use MaxPooling [30] as the pooling layer, where the highest value from the kernel is taken, for noise suppressant during abstraction. The output of the fully connected layer is 2 neurons, representing "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        656,
+                                        2343,
+                                        1696
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(x,y)"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        656,
+                                        2343,
+                                        1696
+                                    ],
+                                    "type": "text",
+                                    "content": " coordinates. To accelerate the training process [31], we standardize the coordinate relative to the width and height of the frame. Although the frames are densely recorded (i.e. 30fps), the GUI renders slowly. To extract discriminative features from the recording, we uniformly sample 16 frames at 5 frame intervals "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        656,
+                                        2343,
+                                        1696
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(T = 16)"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        656,
+                                        2343,
+                                        1696
+                                    ],
+                                    "type": "text",
+                                    "content": " as suggested in [28]. Note that if the length of the recording clip is smaller than the sample rate "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        656,
+                                        2343,
+                                        1696
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "16\\times 5"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        656,
+                                        2343,
+                                        1696
+                                    ],
+                                    "type": "text",
+                                    "content": ", we will sample the frames based on nearest neighbor interpolation. To make our training more stable, we adopt Adam as the optimizer [32] and MSELoss as the loss function [33]. Moreover, to optimize the model, we apply an adaptive learning scheduler, with an initial rate of 0.01 and decay to half after 10 iterations. The hyperparameter settings are determined empirically by a small- scale experiment."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1297,
+                        1702,
+                        2343,
+                        1999
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                1702,
+                                2343,
+                                1999
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        1702,
+                                        2343,
+                                        1999
+                                    ],
+                                    "type": "text",
+                                    "content": "2) Inferring SCROLL offset: To infer the scrolling direction (i.e., upward, downward) and distance (i.e., amount of movement) from the GUI recording clip, we measure the motion trajectory of GUI elements. Since the elements may scroll off-screen [34], we adopt the K-folds template matching method as shown in Fig. 5(b)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        1297,
+                        2003,
+                        2343,
+                        2544
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                2003,
+                                2343,
+                                2544
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2003,
+                                        2343,
+                                        2544
+                                    ],
+                                    "type": "text",
+                                    "content": "Given a GUI recording clip "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2003,
+                                        2343,
+                                        2544
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\{f_0,f_1,\\dots,f_{N - 1},f_N\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2003,
+                                        2343,
+                                        2544
+                                    ],
+                                    "type": "text",
+                                    "content": ", where "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2003,
+                                        2343,
+                                        2544
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_{N}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2003,
+                                        2343,
+                                        2544
+                                    ],
+                                    "type": "text",
+                                    "content": " is the current frame and "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2003,
+                                        2343,
+                                        2544
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_{N - 1}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2003,
+                                        2343,
+                                        2544
+                                    ],
+                                    "type": "text",
+                                    "content": " is the previous frame. We first divide the previous GUI "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2003,
+                                        2343,
+                                        2544
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_{N - 1}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2003,
+                                        2343,
+                                        2544
+                                    ],
+                                    "type": "text",
+                                    "content": " into K pieces vertically. We set K to 10 by a small pilot study to mitigate the off- screen issue and preserve sufficient features for template matching. And then, we match the template of each fold in the current frame "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2003,
+                                        2343,
+                                        2544
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_{N}"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2003,
+                                        2343,
+                                        2544
+                                    ],
+                                    "type": "text",
+                                    "content": " to compute the scrolling offset between consecutive frames. At the end, we derive the scrolling distance by summing the offsets "
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2003,
+                                        2343,
+                                        2544
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(\\sum_{n = 0}^{N}offset_{n}^{n - 1})"
+                                },
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2003,
+                                        2343,
+                                        2544
+                                    ],
+                                    "type": "text",
+                                    "content": ", and infer the scrolling direction by the sign of the distance, e.g., positive for downward, otherwise upward."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1297,
+                        2550,
+                        2343,
+                        2993
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                2550,
+                                2343,
+                                2993
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        2550,
+                                        2343,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": "3) Inferring INPUT text: Detecting input text based on user actions on the keyboard can be error-prone, as the user may edit text from the middle of the text, switch to capital, delete text, etc. Therefore, we leverage a practical OCR technique PP-OCRv2 [25] to detect the text difference between the first frame (opening keyboard) and the last frame (closing keyboard) from the INPUT recording clip, as shown in Fig. 5(c). Given a GUI frame, PP-OCRv2 detects the text areas in the GUI by using an image segmentation network and"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

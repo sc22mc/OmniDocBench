@@ -1,0 +1,33 @@
+[
+    {
+        "type": "text",
+        "text": "LLMs. The experiments conducted on the MATH dataset employed prominent large language models (LLMs), namely,GPT-3.5-Turbo,hereafter abbreviated as GPT3.5,and GPT-4,denoted as GPT4 for brevity.We directly utilized the release APIs of OPENAI. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Competitors. ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "· GPT4 ComplexCoT. This is the GPT4 model employing greedy decoding (i.e. temperature $= 0$ ）withtheComplexCoT $\\boxed { \\mathrm { F u ~ e t ~ a l . } } \\textcircled { 2 0 2 2 }$ prompting method. The reasoning examples utilized in the prompt for reasoning are derived from the corresponding Complex CoT publication $\\begin{array} { r l } {  { \\overrightarrow { \\mathrm { F u ~ e t ~ a l . } } \\vert \\overrightarrow { ( 2 0 2 2 ) } } } \\end{array}$ As greedy decoding is used,we do not follow the selfconsistency methodWang et al.(2022 to sample reasoning paths.   \n· GPT3.5. With the standard prompt, the GPT3.5 model is used to generate the ans wer.   \n·GPT3.5 ComplexCoT. Similar to the GPT4 ComplexCoT but change the model to GPT3.5.   \n·GPT4 PHP $+ \\mathsfit { C }$ ComplexCoT. This is the GPT4 model employing greedy decoding (i.e. temperature $= 0$ ）with the PHP Zheng et al. $\\textcircled { 2 0 2 3 } +$ Complex CoTFu et al. $\\boxed { 2 0 2 2 }$ Specifically, inthe $\\mathrm { P H P } \\mathbf { \\boxed { Z h e n g ~ e t ~ a l . } } \\mathbf { ( } \\mathbf { \\underline { { 2 0 2 3 } } } \\mathbf { ) }$ framework, the Complex CoT prompt is used to generate initial base answers, from which the $\\mathrm { P H P + }$ ComplexCoTcanthendevelopthe subsequent answer generation prompts. Thus,at the beginning of the interaction, by passing a concatenation of the base prompt of Complex CoT and the current question to the LLM, the base answercan be generated.Then,relying on the Complex CoT prompts revised into the PHP version with additional hint sentences,the progressive-hint prompting framework is performed on this base answer to update the hint over interactions to generate the right answer.We refer to this as the $\\mathrm { P H P + }$ Complex CoTcorrespondingto the Progressive-Hint Prompting Complex CoT (PHP-Complex CoT) in the original work Zheng et al. (2023) The number of shots from Complex CoT is 8.   \nGPT4 BoT wo/ experience. The GPT4 model is used to perform reasoning with the proposed BoT framework without the experience accumulation. The basic settings of BoT follow those presented in the main paper. Therefore, after one iteration, the aggregated chain will be used as the solution.   \n·GPT4 BoT.The GPT4 is used to perform reasoning with the full version of BoTas shown in the main paper.   \nGPT4 BoT $^ +$ CoT. Apart from the BoT framework, 5 reasoning examples from the CoTWei et al. (2022) publication are included in the prompt. Therefore,in each iteration,the prompt contains not only experience but also additional 5 CoTreasoning examples.   \n· GPT3.5 BoT. Similar to the GPT4 BoTbut change the model to GPT3.5.   \n· GPT3.5 BoT(GPT4).In this experiment, we utilize the GPT3.5 to perform reasoning, thus generating thought chains in the Thought Structure Generation. However, when performing the thought evaluation and the experience generation in the aggregated Thought Chain Analysis,the GPT4 model is used to get the evaluation and the analysis feedback. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We obtain the following additional observations from the results in Figure5 ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The top performance of BoT on challenging problems derives from the accumulation of experience.BoT-related methods,such as GPT4 BoT and GPT4BoT $^ +$ CoT,consistently achieve the highest problem-solving rate on different sub-categories of MATH.Specifically, GPT4 BoT outperforms the current best GPT4 $\\mathrm { P H P + C }$ ComplexCoTby $8 . 6 \\%$ ，while GPT4 $\\mathrm { B O T } + \\mathrm { C o T }$ is even $1 2 . 4 \\%$ higher.In all seven categories,GPT4 BoTis atleast $0 . 8 \\%$ higher than GPT4 PHP+ComplexCoT,and the corresponding number on the Algebra problems is even $1 2 . 5 \\%$ .Similar for GPT3.5BoTand $\\mathrm { G P T 3 . 5 B o T + C o T . }$ However, when no experience is accumulated in the BoT framework,the performance drops significantly on allmathematical problems,as shown by the GPT4 BoTwo/ experience. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In addition to experience with error analysis,including correct examples,such as simple CoT instances, is essential for improving the problem-solving efficiency of the BoTin challenging mathematical problems. GPT4 BoT outperforms the GPT4 $\\mathrm { P H P + C }$ omplexCoTbya largemargin on the first five sub-categories of MATH problems.Nevertheless,in the domains of Precalculus and Intermediate Algebra, which demand more intricate reasoning and complex logical steps for solutions,BoT exhibits only a marginal improvement of $0 . 8 \\%$ and $2 . 4 \\%$ ,respectively. These gains ",
+        "page_idx": 0
+    }
+]

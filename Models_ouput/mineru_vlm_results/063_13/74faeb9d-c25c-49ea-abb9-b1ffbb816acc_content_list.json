@@ -1,0 +1,78 @@
+[
+    {
+        "type": "text",
+        "text": "By omitting pairs  $(j,k)$  of  $I\\times I$  satisfying  $j + k = \\ell$  , Lemma 3.4 gives that",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nN - \\phi (\\ell)(q + 1) = \\sum_{d\\mid \\ell}\\sum_{1\\leq t\\leq \\frac{\\ell}{d},\\atop (t,\\frac{\\ell}{d}) = 1}\\sum_{(j,k)\\in S'(d,t)}\\chi (-1)^{j + k}J(\\chi^j,\\chi^k)c_\\ell (2j + k).\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For  $(j,k)\\in S^{\\prime}(d,t)$  , one has  $(2j + k,\\ell) = d$  and then  $c_{\\ell}(2j + k) = c_{\\ell}(d)$  by Corollary 3.3 Thus,",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nN - \\phi (\\ell)(q + 1) = \\sum_{d\\mid \\ell}c_{\\ell}(d)f(d)\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nf(d) = \\sum_{\\stackrel{1\\leq t\\leq \\frac{\\ell}{d},\\atop (t,\\frac{\\ell}{d}) = 1}\\sum_{\\stackrel{1\\leq t\\leq \\frac{\\ell}{d},\\atop (t,\\frac{\\ell}{d}) = 1}\\chi (-1)^{j + k}J(\\chi^j,\\chi^k)}.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We need to estimate  $|f(d)|$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "By definition, every pair  $(j,k)$  of  $S^{\\prime}(d,t)$  satisfies  $j + k\\not\\equiv 0$  (mod  $\\ell$  ) and thus  $|J(\\chi^j,\\chi^k)| =$ $\\sqrt{q}$  by (v) of Lemma 2.2 Since  $|\\chi (- 1)| = 1$  , it follows that",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n|f(d)|\\leq \\sum_{\\stackrel{1\\leq t\\leq \\frac{\\ell}{d},}{(t,\\frac{\\ell}{d}) = 1}}|S'(d,t)|\\sqrt{q}.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now, we compute  $|S^{\\prime}(d,t)|$  . Observe that every pair  $(j,k)$  in  $S^{\\prime}(d,t)$  is determined by  $j\\in I$  with the proviso that  $j + k\\neq \\ell$  . Thus, for  $(j,k)\\in I\\times I$  satisfying the congruence  $2j + k\\equiv td$  (mod  $\\ell$  ) we have to exclude the pair  $(j,k)$  with  $j\\equiv td$  (mod  $\\ell$  ). Note that  $td\\leq \\ell$  while  $j\\leq \\ell - 1$  , this congruence can occur only when  $d\\leq \\ell$  and  $j = td$  . Moreover, as  $k\\neq 0$  , we also need to exclude the case where  $2j\\equiv td$  (mod  $\\ell$  ). This depends on the parity of  $\\ell$  . We discuss in the next paragraph to steer clear of confusing.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Suppose that  $\\ell$  is odd. Let  $s\\in I$  be such that  $2s\\equiv 1$  (mod  $\\ell$  ). Then, we need to exclude  $j\\in I$  such that  $j\\equiv std$  (mod  $\\ell$  ). If  $d = \\ell$  , then there is no such  $j$  because  $j\\not\\equiv 0$  (mod  $\\ell$  - When  $d\\leq \\ell$  , there is exactly one  $j_0\\in I$  satisfying  $j_0\\equiv std$  (mod  $\\ell$  ). Remember that we also have to exclude the case where  $j = td$  . As a consequence, if  $\\ell$  is odd, then",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n|S^{\\prime}(d,t)| = \\left\\{ \\begin{array}{ll}|I| & \\mathrm{if}d = \\ell ;\\\\ |I| - 2 & \\mathrm{if}d\\neq \\ell . \\end{array} \\right.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now we assume that  $\\ell$  is even. There are three cases to consider: (i)  $td$  is odd, (ii)  $td$  is even and  $d\\leq \\ell$  and (iii)  $t = 1,d = \\ell$  . For case (i), since  $td$  is odd, there is no  $j$  such that  $2j\\equiv td$  (mod  $\\ell$  ). Only the case where  $j = td$  has to be excluded. For (ii) and (iii), we have that  $td$  is even and then there is some  $j_{1}\\in I$  such that  $2j\\equiv td$  (mod  $\\ell$  ). In fact, we have  $\\begin{array}{r}j_{1}\\equiv \\frac{td}{2} \\end{array}$  (mod  $\\frac{\\ell}{2}$  ). If  $d\\leq \\ell$  , then either  $\\begin{array}{r}j_{1} = \\frac{td}{2} \\end{array}$  or  $\\begin{array}{r}j_{1} = \\frac{td}{2} +\\frac{\\ell}{2} \\end{array}$  and in particular,  $j_{1}\\neq td$  in this case. If  $d = \\ell$  , then  $t = 1$  and  $\\begin{array}{r}j_{1} = \\frac{\\ell}{2} \\end{array}$  . We conclude that",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n|S^{\\prime}(d,t)| = \\left\\{ \\begin{array}{ll}|I| - 1 & \\mathrm{if}d = \\ell ;\\\\ |I| - 1 & \\mathrm{if}d\\neq \\ell \\mathrm{and}td\\mathrm{is}\\mathrm{odd};\\\\ |I| - 3 & \\mathrm{otherwise}. \\end{array} \\right.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

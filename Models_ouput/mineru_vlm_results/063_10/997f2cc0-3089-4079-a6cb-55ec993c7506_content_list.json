@@ -1,0 +1,103 @@
+[
+    {
+        "type": "text",
+        "text": "where  $\\zeta_{n}$  is a primitive  $n$ - th root of 1 in  $\\mathbb{C}$ . Studying on cyclotomic polynomials, O. Hölder [Höl36] showed that the sum  $c_{n}(m)$  has a nice closed form in terms of the Euler and Möbius functions. Denote  $\\phi$  the Euler's totient function and  $\\mu$  the Möbius function. We present it in the following lemma where the right- hand side is also called von Sterneck function [Ste03]. A proof is given below to the readers for convenience. For different proofs, one refers to [AA53], [Mol52] and [HW08, Theorem 272].",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 3.2. Let  $n\\in \\mathbb{N}$  and  $m\\in \\mathbb{Z}$ . Then",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nc_{n}(m) = \\mu \\left(\\frac{n}{(n,m)}\\right)\\frac{\\phi(n)}{\\phi\\left(\\frac{n}{(n,m)}\\right)}.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. First of all, suppose that  $m = 1$ . Recall an elementary formula that",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\sum_{k|r}\\mu (k) = \\left\\{ \\begin{array}{ll}1 & \\mathrm{if}r = 1;\\\\ 0 & \\mathrm{if}r > 0, \\end{array} \\right.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "for  $r\\in \\mathbb{N}$  ([Bur11, Theorem 6.6]). Then",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nc_{n}(1) = \\sum_{t = 1}^{n}\\zeta_{n}^{t}\\sum_{k|(n,n)}\\mu (k) = \\sum_{k|n}\\mu (k)\\sum_{\\stackrel{1\\leq t\\leq n}{k|(t,n)}}\\zeta_{n}^{t} = \\sum_{k|n}\\mu (k)\\sum_{\\stackrel{1\\leq t\\leq \\frac{n}{k}}{k|(t,n)}}(\\zeta_{n}^{k})^{t^{\\prime}}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $t^{\\prime} = \\frac{t}{k}$ . Since  $\\zeta_{n}^{k}$  is a primitive  $\\frac{n}{k}$ - th root of 1, the last sum gives 1 if  $k = n$  and 0 if  $k< n$ . Hence,  $c_{n}(1) = \\mu (n)$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For general  $m\\in \\mathbb{Z}$ , we rewrite  $c_{n}(m)$  as",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nc_{n}(m) = \\sum_{t\\in (\\mathbb{Z} / n\\mathbb{Z})^{\\times}}z^{t}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $z = \\zeta_{n}^{m}$ . Let  $d = \\frac{n}{(n,m)}$ . Recall that  $(\\mathbb{Z} / n\\mathbb{Z})^{\\times} = M\\cdot N$  where  $M$  and  $N$  are given in Lemma 3.1. Note that  $z = \\zeta_{n}^{m}$  is a primitive  $d$ - th root of 1 since  $\\left(d,\\frac{m}{(n,m)}\\right) = 1$ . Hence,",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nc_{n}(m) = \\sum_{t_{1}\\in M}\\sum_{t_{2}\\in N}z^{t_{1}t_{2}} = \\sum_{t_{1}\\in M}|N|z^{t_{1}} = |N|c_{d}(1).\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Now, the result follows from  $|N| = \\frac{\\phi(n)}{\\phi(d)}$  and  $c_{d}(1) = \\mu (d)$  by the first paragraph.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note that  $(n,m) = (n,(n,m))$ . Thus, we have the following immediate consequence.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Corollary 3.3. Let  $n\\in \\mathbb{N}$  and  $m\\in \\mathbb{Z}$ . Then  $c_{n}(m) = c_{n}((n,m))$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "As a consequence, we note that if  $m^{\\prime}$  is an integer such that  $m^{\\prime}\\equiv m$  (mod  $n$ ), then we conclude from Corollary 3.3 that  $c_{n}(m^{\\prime}) = c_{n}(m)$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The following decomposition of a Cartesian product is useful for counting pairs of integers. Roughly speaking, the product below is partitioned by parallel lines on  $\\mathbb{Z}\\times \\mathbb{Z}$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Lemma 3.4. Let  $n\\in \\mathbb{N}$  and let  $I = \\{1,2,\\ldots ,n - 1\\}$ . For every  $a,b\\in \\mathbb{Z}$ , we have",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nI\\times I = \\bigoplus_{\\stackrel{n}{a}}\\bigoplus_{\\stackrel{1\\leq t\\leq \\frac{n}{d},}{(t,\\frac{n}{d}) = 1}}\\{(x,y)\\in I\\times I\\mid ax + by\\equiv td\\pmod {n}\\} .\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

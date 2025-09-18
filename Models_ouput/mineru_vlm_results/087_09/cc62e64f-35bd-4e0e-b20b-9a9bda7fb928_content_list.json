@@ -1,0 +1,114 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/5f9466a5959082e3dfbea73a1ff35a8376bbaa25a4a2f6c344bcae4de6f639b1.jpg",
+        "image_caption": [
+            "Fig. 6. (a) Baler job site 23 GNSS satellite map. (b) Hand-drawn annotation of the job site showing that there is one field. (c) Baler job site 39 site GNSS satellite map. (d) Hand-drawn annotation of the job site showing that there are two fields conjoined."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Any user- defined variables are set consistently throughout and are described in Section III.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The results are presented in the form of confusion matrices (CM). There are two CMs in total, one for each machinery implement dataset. Tables III and IV show the algorithm performance on the baler and mower implements, respectively.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1) True positive marks correct detection and segmentation of a conjoined field job site. \n2) True negative marks correct detection and segmentation of a single field job site. \n3) False positive marks incorrect detection and subsequent over-segmentation of a job site. \n4) False negative marks incorrect detection of a single field job site, or under-segmentation of a conjoined field job site.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. Baler Field Segmentation Results",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Table III shows that out of 21 conjoined field sites, all 21 are correctly detected and segmented into their individual field geometric boundaries. There are no cases of false positives or false negatives.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "An example of the algorithm output on the baler dataset is shown in Fig. 7. Fig. 7(b) and (d) shows the segmentation results for a single field and conjoined field job site; these are the same job sites presented with hand- drawn field boundaries in Fig 6. Fig. 7(h) illustrates a three- field conjoined case. Fig. 7(f) shows a case of a hollow conjoined field site, where the monitored baler only processed the swathes on the edges of the fields. The authors can only speculate that this was due to a decision to bale the inner swathes as hay (unwrapped drier fodder), with a separate baling implement. The algorithm can still appropriately label the coordinates of each hollow field from the detected field boundaries.",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/683a07f384b2a226d1fa94ba6eb834c1a1751a67c2859f82d8bd2ae55c2e760a.jpg",
+        "table_caption": [
+            "TABLE III OVERALL SEGMENTATION CONFUSION MATRIX FOR THE BALER DATASET"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\" colspan=\"2\"></td><td colspan=\"2\">Actual Site Layout</td></tr><tr><td>Conjoined</td><td>Singular</td></tr><tr><td rowspan=\"2\">Algorithm Output</td><td>Segmented</td><td>21</td><td>0</td></tr><tr><td>NOT Segmented</td><td>0</td><td>134</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/3bc975d78069320b7a194bfce64867bde330dff4803c904b2bee4f04f914ceea.jpg",
+        "table_caption": [
+            "TABLE IV OVERALL SEGMENTATION CONFUSION MATRIX FOR THE MOWER DATASET"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Overall Accuracy</td><td>(21 + 134/155)</td><td>= 100%</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/06ca976a1bcfd42df292584ed7624134fe88b834ba70cf70e72fee0de3220b70.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\" colspan=\"2\"></td><td colspan=\"2\">Actual Site Layout</td></tr><tr><td>Conjoined</td><td>Singular</td></tr><tr><td rowspan=\"2\">Algorithm output</td><td>Segmented</td><td>10</td><td>1</td></tr><tr><td>NOT Segmented</td><td>1</td><td>160</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/69f4ba9e017a45f96e463c684732c3770732a1ae28129290adc59d92c98fe6db.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Overall accuracy</td><td>(10 + 160/172)</td><td>= 98.84%</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The minimum Euclidean distance measured between segmented fields was observed in baler site 97, shown in Fig. 7(f), at  $4.5\\mathrm{m}$ . This is the smallest distance between conjoined fields which the algorithm is tested against. Fig. 7(c) shows a case where a headland bulb turn in a field is labeled as a path. This can be explained by the erosion and dilation operation in Stage II. The bulb turn pixels are isolated from the main field object body when the erosion operation is applied to the sampled coordinate image. The bulb turn area is deemed too small by the algorithm to be classified as a unique field, therefore, the in- field bulb turn coordinate points are labeled as a path.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The algorithm achieves  $100\\%$  accuracy on the baler dataset. The machinery operator loops the outer perimeter for each field enclosing the coordinate space with a uniformly separated perimeter. Thus, valid sampled coordinate images are formed, as shown in Fig. 3(a). This enables the remaining steps of Stage II to function correctly. The next section reviews the performance of the algorithm on the mower dataset.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. Mower Field Segmentation Results",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Table IV shows ten conjoined sites are correctly segmented into their individual field geometric boundaries. Table IV also shows there is one false negative case and one false positive case recorded.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "An example of the algorithm output on the mower dataset is shown in Fig. 8. Fig. 8(d) shows a case where the operator activates the PTO outside the single field site. The algorithm correctly identifies the path points. Fig. 8(g) illustrates the performance of the four field conjoined site used to describe Stage II, Path Removal.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Fig. 9 illustrates the false negative case. It is labeled as such because the algorithm does not detect a valid field on the job",
+        "page_idx": 0
+    }
+]

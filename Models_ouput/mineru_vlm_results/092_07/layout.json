@@ -1,0 +1,941 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        175,
+                        267,
+                        1225,
+                        907
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                267,
+                                1225,
+                                907
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        267,
+                                        1225,
+                                        907
+                                    ],
+                                    "type": "text",
+                                    "content": "0.6 V. After a startup time of around two weeks, OCV sharply increased at about "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        267,
+                                        1225,
+                                        907
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "100\\mathrm{mV}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        267,
+                                        1225,
+                                        907
+                                    ],
+                                    "type": "text",
+                                    "content": " per day, indicating that the bacteria colony was starting to thrive. Our reactors produced power for about three weeks after the initial OCV spike. During this period, the maximum recorded OCV was "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        267,
+                                        1225,
+                                        907
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "0.84\\mathrm{V}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        267,
+                                        1225,
+                                        907
+                                    ],
+                                    "type": "text",
+                                    "content": ". Water was added whenever OCV started decreasing; after about two days, OCV was recovered. It could be because wet soils favor ionic movement and thus reduce the cell's internal resistance. At the end of the three weeks, OCV dropped and stopped recovering after watering. We noticed the weakened mint plants had died, eventually leading to bacteria starvation. This confirmed the importance of selecting a plant that thrives in marshy soil for longer power production windows."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        175,
+                        993,
+                        1222,
+                        1039
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                993,
+                                1222,
+                                1039
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        993,
+                                        1222,
+                                        1039
+                                    ],
+                                    "type": "text",
+                                    "content": "B. Cold-Start Performance of Active PMFC and MPPT Policy"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        175,
+                        1059,
+                        1225,
+                        2055
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                1059,
+                                1225,
+                                2055
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        1059,
+                                        1225,
+                                        2055
+                                    ],
+                                    "type": "text",
+                                    "content": "To operate from lower input voltages, dc/dc converters feature a low efficiency cold start circuit, which is responsible for charging the storage element at a voltage level needed to bootstrap a more efficient main converter. Because of the lower conversion efficiency of the cold start circuit (5% versus 90% for the BQ25505), the input power "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        1059,
+                                        1225,
+                                        2055
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "P_{\\mathrm{IN,MIN}}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        1059,
+                                        1225,
+                                        2055
+                                    ],
+                                    "type": "text",
+                                    "content": " needed to balance out the leakage at the storage element is higher during the cold start with respect to normal operation. If a PMFC cannot supply "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        1059,
+                                        1225,
+                                        2055
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "P_{\\mathrm{PMFC}} \\geq P_{\\mathrm{IN,MIN}}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        1059,
+                                        1225,
+                                        2055
+                                    ],
+                                    "type": "text",
+                                    "content": ", cold start is not overcome, and the storage element cannot be charged. "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        1059,
+                                        1225,
+                                        2055
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "P_{\\mathrm{IN,MIN}}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        1059,
+                                        1225,
+                                        2055
+                                    ],
+                                    "type": "text",
+                                    "content": " largely depends on capacitor self- discharge current, which increases with rated capacitance, and on loads connected to the dc/dc output during cold start. To ensure both cold start overcoming and node energetic autonomy, we find the largest capacitor "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        1059,
+                                        1225,
+                                        2055
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{\\mathrm{MAX}}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        1059,
+                                        1225,
+                                        2055
+                                    ],
+                                    "type": "text",
+                                    "content": " we can charge with the maximum "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        1059,
+                                        1225,
+                                        2055
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "P_{\\mathrm{PMFC}}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        1059,
+                                        1225,
+                                        2055
+                                    ],
+                                    "type": "text",
+                                    "content": " we can extract, using low- leakage capacitor technology. The tested capacitors are reported in Table I. We also remove all unnecessary loads from the dc/dc output during cold start, as explained in Section III- C2. "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        1059,
+                                        1225,
+                                        2055
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{\\mathrm{MAX}}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        1059,
+                                        1225,
+                                        2055
+                                    ],
+                                    "type": "text",
+                                    "content": " poses a limit to the maximum energy we can draw during an uninterruptible task, which is something to keep in mind during system design."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        175,
+                        2062,
+                        1225,
+                        3098
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                2062,
+                                1225,
+                                3098
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        2062,
+                                        1225,
+                                        3098
+                                    ],
+                                    "type": "text",
+                                    "content": "For the purpose of correctly setting MPP to estimate "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2062,
+                                        1225,
+                                        3098
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{\\mathrm{MAX}}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2062,
+                                        1225,
+                                        3098
+                                    ],
+                                    "type": "text",
+                                    "content": ", we set out to first experimentally find the FOCV value corresponding to the PMFC's MPP, then to validate our OCV sampling strategy (see Sections II and III- C2) with the FOCV found in the previous step. To recover the PMFC's MPP, we imposed a varying fraction of the steady- state OCV as MPP set- point to the dc/dc, bypassing the dc/dc's OCV measurement, and considered as MPP the fraction of OCV which yielded fastest capacitor charging. We selected a small "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2062,
+                                        1225,
+                                        3098
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "47\\mu \\mathrm{F}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2062,
+                                        1225,
+                                        3098
+                                    ],
+                                    "type": "text",
+                                    "content": " storage capacitor for this test ("
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2062,
+                                        1225,
+                                        3098
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{1}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2062,
+                                        1225,
+                                        3098
+                                    ],
+                                    "type": "text",
+                                    "content": ", Table I) to reduce recovery times in between tests. To ensure a steady state was reached in between tests, we unloaded the cell for "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2062,
+                                        1225,
+                                        3098
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "15\\mathrm{min}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2062,
+                                        1225,
+                                        3098
+                                    ],
+                                    "type": "text",
+                                    "content": " and verified that the OCV recovered to the initial value of "
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2062,
+                                        1225,
+                                        3098
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "800\\mathrm{mV}"
+                                },
+                                {
+                                    "bbox": [
+                                        175,
+                                        2062,
+                                        1225,
+                                        3098
+                                    ],
+                                    "type": "text",
+                                    "content": ". We swept most of the PMFC's P/V curve by executing eight tests with varying FOCV as MPP set- point (20% OCV to 90% OCV). Results are shown in Fig. 5: fastest capacitor charging, and thus MPP, is provided by a FOCV of 50%. We then validated the need for an external OCV sampling circuit for efficient PMFC MPP set- point recovery. As shown in Fig. 4 left, we can see that the dc/dc's internal OCV sampling is not ideal for PMFCs. In fact, the OCV measurements, marked with black arrows, gradually "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1269,
+                                1554,
+                                2319,
+                                2102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1554,
+                                        2319,
+                                        2102
+                                    ],
+                                    "type": "text",
+                                    "content": "stray away from the actual OCV (dotted line). Because of this, the operating point moves away from the intended set point, and the power input drops. Finally, we compared the dc/dc's charging speed when setting 50% FOCV MPP using the BQ's internal OCV sampling and then using the external OCV sampling. We charged an example "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1554,
+                                        2319,
+                                        2102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "470\\mu \\mathrm{F}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1554,
+                                        2319,
+                                        2102
+                                    ],
+                                    "type": "text",
+                                    "content": " capacitor ("
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1554,
+                                        2319,
+                                        2102
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{2}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        1554,
+                                        2319,
+                                        2102
+                                    ],
+                                    "type": "text",
+                                    "content": ", Table I) and considered the fastest charging method to be most efficient at setting the actual MPP. Fig. 4- right confirms that the proposed external OCV sampling method ensures much faster charging when the main boost is active and actively polarizing the PMFC at its set- point MPP."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1279,
+                        270,
+                        2301,
+                        640
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1279,
+                                270,
+                                2301,
+                                640
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1279,
+                                        270,
+                                        2301,
+                                        640
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1279,
+                                                270,
+                                                2301,
+                                                640
+                                            ],
+                                            "type": "image",
+                                            "image_path": "84028d7e17c50fafc0615d89832fdfc905b7c879fb88f708c09e1bb03b93212a.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 4,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1264,
+                                676,
+                                2321,
+                                904
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1264,
+                                        676,
+                                        2321,
+                                        904
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1264,
+                                                676,
+                                                2321,
+                                                904
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 4. On the left, we verify that the BQ's integrated OCV measurement for FOCV MPPT is too fast for PMFC dynamics, as the OCV does not recover to its true value during measurements. On the right, we verify that a "
+                                        },
+                                        {
+                                            "bbox": [
+                                                1264,
+                                                676,
+                                                2321,
+                                                904
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "470\\mu \\mathrm{F}"
+                                        },
+                                        {
+                                            "bbox": [
+                                                1264,
+                                                676,
+                                                2321,
+                                                904
+                                            ],
+                                            "type": "text",
+                                            "content": " capacitor ("
+                                        },
+                                        {
+                                            "bbox": [
+                                                1264,
+                                                676,
+                                                2321,
+                                                904
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "C_{2}"
+                                        },
+                                        {
+                                            "bbox": [
+                                                1264,
+                                                676,
+                                                2321,
+                                                904
+                                            ],
+                                            "type": "text",
+                                            "content": ", Table I) charges faster with our OCV sampling method with respect to the dc/dc's integrated OCV measurement method, given the same MPP FOCV fraction (MPP 50% OCV)."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 5,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1277,
+                        940,
+                        2301,
+                        1333
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1277,
+                                940,
+                                2301,
+                                1333
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        940,
+                                        2301,
+                                        1333
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1277,
+                                                940,
+                                                2301,
+                                                1333
+                                            ],
+                                            "type": "image",
+                                            "image_path": "a9a444dc1ef547d322b6e729d0a5c481319eb434edac3d15ad6a24fd4c63a3fc.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 6,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1264,
+                                1379,
+                                2319,
+                                1491
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1264,
+                                        1379,
+                                        2319,
+                                        1491
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1264,
+                                                1379,
+                                                2319,
+                                                1491
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 5. "
+                                        },
+                                        {
+                                            "bbox": [
+                                                1264,
+                                                1379,
+                                                2319,
+                                                1491
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "47\\mu \\mathrm{F}C_{1}"
+                                        },
+                                        {
+                                            "bbox": [
+                                                1264,
+                                                1379,
+                                                2319,
+                                                1491
+                                            ],
+                                            "type": "text",
+                                            "content": " capacitor (see Table I) charging curve with varying FOCV settings. Setting OCV to be 50% of the measured OCV voltage yields the fastest charging."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 7,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        1269,
+                        1554,
+                        2319,
+                        2102
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 8,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1269,
+                        2105,
+                        2319,
+                        2950
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1269,
+                                2105,
+                                2319,
+                                2950
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": "We then moved on to retrieving the "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{\\mathrm{MAX}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": " value for our test reactor at its MPP. Our small- sized cells could fully charge a 30 mF capacitor (3 10 mF caps in parallel, "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{3}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": ", Table I). Tests with "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{4}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": ", "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{5}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": " failed, even though nominal leakage is comparable to "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{3}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": "'s: this could be ascribed to dielectric absorption. This effect is more marked in electrostatic double- layer capacitors ("
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{4}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": ", "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{5}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": ") than in electrolytic capacitors ("
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{1}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": ", "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{2}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": ", "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{3}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": "), and it determines a leakage current that takes hours or even days to settle down to its datasheet value. Since the application requires the PMFC to overcome cold start with a 1 F capacitor, such as "
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "C_{5}"
+                                },
+                                {
+                                    "bbox": [
+                                        1269,
+                                        2105,
+                                        2319,
+                                        2950
+                                    ],
+                                    "type": "text",
+                                    "content": " (see Section IV), we will implement power output scaleup strategies, such as increasing reactor size and stacking multiple PMFCs together. The latter strategy has been proven to be effective, as a serial- parallel connection of three PMFCs was used to cold start an 8 F capacitor [10]. We leave these aspects for future work, as the scope of this article is to highlight the possibility of biosensing and energy harvesting on the same PMFC electrodes."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2475,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

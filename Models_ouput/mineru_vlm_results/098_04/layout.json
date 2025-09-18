@@ -1,0 +1,702 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        441,
+                        356,
+                        2103,
+                        448
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                356,
+                                2103,
+                                448
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        356,
+                                        2103,
+                                        448
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        356,
+                                        2103,
+                                        448
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\boldsymbol {o} = (w_{L + 1},\\ldots ,w_{L + N})"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        356,
+                                        2103,
+                                        448
+                                    ],
+                                    "type": "text",
+                                    "content": " denotes the continuation of context "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        356,
+                                        2103,
+                                        448
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathcal{C}"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        356,
+                                        2103,
+                                        448
+                                    ],
+                                    "type": "text",
+                                    "content": ". This objective helps improve generalization and circumvent excessive reliance on, and overfitting to, the autoencoding task."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        448,
+                        485,
+                        1050,
+                        531
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                448,
+                                485,
+                                1050,
+                                531
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        448,
+                                        485,
+                                        1050,
+                                        531
+                                    ],
+                                    "type": "text",
+                                    "content": "2.3 INSTRUCTION FINE-TUNING"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        557,
+                        2106,
+                        792
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                557,
+                                2106,
+                                792
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        557,
+                                        2106,
+                                        792
+                                    ],
+                                    "type": "text",
+                                    "content": "After pretraining, the memory slots produced by the pretrained ICAE are expected to represent the original context. However, for LLMs, the purpose of providing a context extends beyond rote memorization or continuation; instead, the more common use scenario is using the provided context as a basis for accurately and appropriately responding to various prompts, ultimately accomplishing the tasks we want it to perform (Wei et al., 2021; Ouyang et al., 2022)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        443,
+                        811,
+                        2103,
+                        953
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                811,
+                                2103,
+                                953
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        811,
+                                        2103,
+                                        953
+                                    ],
+                                    "type": "text",
+                                    "content": "To enhance the interaction of memory slots produced by the ICAE with diverse prompts, we further fine- tune the ICAE with the PwC dataset (Prompt- with- Context), a dataset introduced in this paper consisting of thousands of (context, prompt, response) samples (as shown in Figure 1)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        443,
+                        973,
+                        2103,
+                        1115
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                973,
+                                2103,
+                                1115
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        973,
+                                        2103,
+                                        1115
+                                    ],
+                                    "type": "text",
+                                    "content": "Formally, the ICAE is fine- tuned for learning to encode the context into the memory slots based on which the decoder (i.e., the target LLM) can produce a desirable response "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        973,
+                                        2103,
+                                        1115
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "r_1\\dots r_n"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        973,
+                                        2103,
+                                        1115
+                                    ],
+                                    "type": "text",
+                                    "content": " according to a given prompt "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        973,
+                                        2103,
+                                        1115
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p_1\\dots p_m"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        973,
+                                        2103,
+                                        1115
+                                    ],
+                                    "type": "text",
+                                    "content": ", as shown in Figure 8 in Appendix A:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        708,
+                        1128,
+                        1833,
+                        1290
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                708,
+                                1128,
+                                1833,
+                                1290
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        708,
+                                        1128,
+                                        1833,
+                                        1290
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\begin{array}{rl} & {\\mathcal{L}_{\\mathrm{FT}} = \\underset {m_1\\dots m_k}{\\max}P(r_1\\dots r_n|\\widetilde{m_1}\\dots \\widetilde{m_k},p_1\\dots p_m;\\Theta_{LLM})}\\\\ & {\\quad \\quad = \\underset {\\Theta_{LoRA},e_m}{\\max}P(r_1\\dots r_n|m_1\\dots m_k,p_1\\dots p_m;\\Theta_{LLM},\\Theta_{LoRA},e_m)} \\end{array}",
+                                    "image_path": "b53773a7434bb3d75526a7f8da11749793fd05aee7df837b68b664a5f7802c17.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        446,
+                        1306,
+                        838,
+                        1359
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                1306,
+                                838,
+                                1359
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        1306,
+                                        838,
+                                        1359
+                                    ],
+                                    "type": "text",
+                                    "content": "3 EXPERIMENTS"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        446,
+                        1386,
+                        999,
+                        1432
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                1386,
+                                999,
+                                1432
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        1386,
+                                        999,
+                                        1432
+                                    ],
+                                    "type": "text",
+                                    "content": "3.1 EXPERIMENTAL SETTING"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        1458,
+                        2106,
+                        1692
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1458,
+                                2106,
+                                1692
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1458,
+                                        2106,
+                                        1692
+                                    ],
+                                    "type": "text",
+                                    "content": "Data We pretrain the ICAE with the Pile (Gao et al., 2020). For instruction fine- tuning, we use the PwC dataset, as introduced in Section 2.3, which contains 240k (context, prompt, response) samples for training and 18k samples for testing. The context length distribution of test samples is shown in Figure 10. By default, the maximal token length (excluding memory slots) we set during training is 512 in both the ICAE's encoder and decoder in our experiments."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        443,
+                        1742,
+                        2106,
+                        1973
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                1742,
+                                2106,
+                                1973
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        1742,
+                                        2106,
+                                        1973
+                                    ],
+                                    "type": "text",
+                                    "content": "Model Configuration We use the LlaMa (Touvron et al., 2023a,b) as the target LLM to test the ICAE's performance in context compression. For the encoder of the ICAE, LoRA is applied to the query and value projections of the LLM's multi- head attention. In our default setting, the memory slot length "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1742,
+                                        2106,
+                                        1973
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "k"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1742,
+                                        2106,
+                                        1973
+                                    ],
+                                    "type": "text",
+                                    "content": " is set to 128, and the LoRA rank "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1742,
+                                        2106,
+                                        1973
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "r"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1742,
+                                        2106,
+                                        1973
+                                    ],
+                                    "type": "text",
+                                    "content": " is set to 128 unless otherwise specified. The resulting ICAE only adds about "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1742,
+                                        2106,
+                                        1973
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "1\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        1742,
+                                        2106,
+                                        1973
+                                    ],
+                                    "type": "text",
+                                    "content": " learnable parameters on top of the target LLM."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        446,
+                        2026,
+                        708,
+                        2072
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                2026,
+                                708,
+                                2072
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        2026,
+                                        708,
+                                        2072
+                                    ],
+                                    "type": "text",
+                                    "content": "3.2 RESULTS"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        448,
+                        2088,
+                        930,
+                        2135
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                448,
+                                2088,
+                                930,
+                                2135
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        448,
+                                        2088,
+                                        930,
+                                        2135
+                                    ],
+                                    "type": "text",
+                                    "content": "3.2.1 PRETRAINED ICAE"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        2158,
+                        2106,
+                        2293
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2158,
+                                2106,
+                                2293
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2158,
+                                        2106,
+                                        2293
+                                    ],
+                                    "type": "text",
+                                    "content": "We first evaluate the autoencoding performance of the pretrained ICAE (without instruction fine- tuning) using the following three metrics to understand how well it restores the original context from its produced memory slots: BLEU (Papineni et al., 2022), Exact- Match (EM) and cross entropy loss."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        443,
+                        2316,
+                        2106,
+                        2686
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2316,
+                                2106,
+                                2686
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2316,
+                                        2106,
+                                        2686
+                                    ],
+                                    "type": "text",
+                                    "content": "Figure 4 presents the autoencoding results of the ICAE based on the Llama- 7b. The ICAE demonstrates a very low overall loss, below 0.05, indicating that the produced memory slots retain almost all the information of the original context. When the context length is within 300, the ICAE can almost perfectly reconstruct the original context, achieving nearly "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2316,
+                                        2106,
+                                        2686
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "100\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2316,
+                                        2106,
+                                        2686
+                                    ],
+                                    "type": "text",
+                                    "content": " BLEU and EM scores. As the context length increases beyond 400, both BLEU and EM scores start to decline, indicating insufficient capacity of the 128- length memory slots. However, even at a context length of 500, the median BLEU remains over 0.98, and the median EM approaches 0.6 (e.g., perfectly reconstructing about the first 300 words of a 512- token context), showing remarkable performance of ICAE."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                },
+                {
+                    "bbox": [
+                        441,
+                        2709,
+                        2103,
+                        2801
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                2709,
+                                2103,
+                                2801
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        2709,
+                                        2103,
+                                        2801
+                                    ],
+                                    "type": "text",
+                                    "content": "We then analyze the effect of the memory size "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2709,
+                                        2103,
+                                        2801
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "k"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2709,
+                                        2103,
+                                        2801
+                                    ],
+                                    "type": "text",
+                                    "content": " on the result. According to Figure 5, as the memory slot length "
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2709,
+                                        2103,
+                                        2801
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "k"
+                                },
+                                {
+                                    "bbox": [
+                                        441,
+                                        2709,
+                                        2103,
+                                        2801
+                                    ],
+                                    "type": "text",
+                                    "content": " decreases, the ICAE's ability to memorize longer samples significantly deteriorates."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/66d62cfff61f4aeeb423734d3b0790d114f513a29b7b187964a19df727e3cd0f.jpg",
+        "image_caption": [
+            "Fig.4.Time-series plot of normalized circuit parameters, namely Rs (a), $\\mathrm { R p }$ (b),CPE-P(c),and CPE-T(d),evolution overa4-week period.The shaded colored Zoneepresettgpiudegseoosuedootollantdedadootredlants magnitude valuesofthecontrol plants representedbyablue linewhile theiron-stressed plants depictedbyared line. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B.Plant Status Classification ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The employed equivalent circuit model, implementing only few electrical components,represents an extreme simplification of the plant physiology and is,therefore,not ideal to accurately represent the complexity of the tissues of the stems.In fact, from the direct interpretation of the extracted parameters itis difficult to find indicators for the identification between ahealthy plant and a plant under nutrient stress.Even more complicated would be to identify whether the plant is in early stress condition so that nutrient supply can be intervened before symptomsand consequent loss of yield arise.Nevertheless, the significant difference in circuit parameters observed between the considered classes demonstrates how such a model can be used as a general indicator of the plant status and support the employment of the circuit parametersas discriminant features in the training of classification models,where nonapparent and nonlinear relationships between bioimpedance data and plant health status could be found.For this reason,based on the previously extracted equivalent circuit components of the single dispersion Cole model, various supervised machine learning classification algorithms were trained,validated,and tested, forthe discrimination of three distinct classes,respectively representing the control,early stress,and late stress conditions of iron deficiency in tomato plants. ",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/267927cc490cc7f5c19fdfa12203bfd2dfbb1c0c6afdd11d75cbc36966621208.jpg",
+        "table_caption": [
+            "TABLEI SUMMARY OF THE OPTIMIZED CLASSIFICATIONMODELS $F _ { 1 }$ -SCORE ACCURACY ON THE TRAINING AND TEST SETS, $W \\mathrm { I T H } ~ \\%$ DIFFERENCE AMONG THE TWO PHASES "
+        ],
+        "table_footnote": [
+            "KS $\\overline { { \\mathbf { \\alpha } } } = \\mathbf { \\alpha }$ KernelScale "
+        ],
+        "table_body": "<table><tr><td>Model</td><td>Optimized Hyperparameters</td><td>Ftrain</td><td>F1test</td><td>%diff</td></tr><tr><td>DA</td><td>△=9.577e-6,q=0.013</td><td>0.497</td><td>0.480</td><td>-1.65</td></tr><tr><td>KM</td><td>KS=0.665,入=0.0014</td><td>0.868</td><td>0.818</td><td>-5.03</td></tr><tr><td>KNN</td><td>Distance=Mahalanobis,NN=7</td><td>0.942</td><td>0.894</td><td>-4.79</td></tr><tr><td>LM</td><td>入=1.386e-4,Learner=SVM</td><td>0.543</td><td>0.529</td><td>-1.34</td></tr><tr><td>NBC</td><td>Distribution Names=Kernel,Width=0.0102</td><td>0.767</td><td>0.639</td><td>-12.8</td></tr><tr><td>MLP</td><td>Activation=Relu,Layer Size=[18,12,39]</td><td>0.984</td><td>0.935</td><td>-4.96</td></tr><tr><td>SVM</td><td>KS=1.3312,Binary loss=Hinge</td><td>0.543</td><td>0.531</td><td>-1.16</td></tr><tr><td>DT</td><td>Number of nodes=317</td><td>0.964</td><td>0.832</td><td>-13.2</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The accuracy of the seven models developed to classify the plant status is listed in Table I, in terms of $F _ { 1 }$ -score in training and test,as well as for what concerns the $\\%$ difference among the two phases.Overall, the algorithms presenting the poorest performance are linear methods such as DA and LM,achieving an $F _ { 1 }$ -scoreofaround $50 \\%$ .Such resultsare expected since the association between bioimpedance data and biological behaviors commonly follows nonlinear patterns.NBC and DT algorithms,on the other hand,present the highest degree of ",
+        "page_idx": 0
+    }
+]

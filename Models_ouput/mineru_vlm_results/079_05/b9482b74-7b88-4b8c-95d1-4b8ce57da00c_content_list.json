@@ -1,0 +1,81 @@
+[
+    {
+        "type": "text",
+        "text": "Denote  $F_{K,b}(A,B)\\coloneqq bV(A,K[n - 1])V(B,K[n - 1]) - V(A,B,K[n - 2])V(K)$  , then  $b_{2}(K)$  can be equivalently defined as the least  $b\\geq 1$  such that  $F_{K,b}\\geq 0$  . Notice that  $b_{2}(TK) = b_{2}(K)$  for every affine transformation  $I^{\\prime}$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Clearly,  $F_{K} = F_{K,1}$  . A Blaschke selection argument shows that the supremum is actually a maximum; in particular  $b_{2}(K)< \\infty$  for all  $K\\in \\mathcal{K}^n$  . In fact  $\\mathrm{6}$ $b_{2}(K)\\leq 2$  for any  $K$  .Notice that  $b_{2}(K) > 1$  is equivalent to not having  $F_{K}\\geq 0$  (i.e. to existence of a pair  $(A,B)$  such that  $F_{K}(A,B)<$ $0$  ).",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3. AN EXCLUDING CONDITION WITH ISOPERIMETRIC RATIOS",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "If a property  $\\mathcal{P}$  (for instance, being decomposable) is such that when  $K$  has  $\\mathcal{P}$  , then  $F_{K}$  cannot be non- negative (on all of  $(K^n)^2$  ), we shall say that  $\\mathcal{P}$  is an excluding condition (in the terminology of [SZ16], a convex body  $K$  cannot both satisfy  $\\mathcal{P}$  and satisfy Bezout inequalities). It was shown in [SSZ1, SSZ2] that being weakly decomposable (a property which in particular includes being a polytope other than an  $n$  - simplex, or being decomposable) is an excluding condition. Denote  $\\kappa_{F}$  the subclass of  $\\kappa^n$  consisting of convex bodies having at least one facet :  $\\kappa_{F}$  is closed under Minkowski addition, and contains the class of  $n$  - polytopes. In this section we give a new excluding condition, which concerns bodies  $K\\in \\mathcal{K}_F$  . We will work in  $\\mathbb{R}^n$  with  $n\\geq 3$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let  $K\\subset \\mathbb{R}^n$  be a non- empty compact convex set. Recall there exists a unique affine subspace  $H$  of  $\\mathbb{R}^n$  , such that  $K\\subset H$  , and  $H$  has maximal (affine) co- dimension. The dimension of  $K$  is defined as the dimension of this subspace  $H$  . Alternatively  $\\mathrm{dim}(K)$  can be defined as the maximal  $k\\geq 1$  , such that one may find  $k + 1$  affinely independent points, within  $K$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let  $k\\geq 2$  and let  $K\\in \\mathcal{K}^n$  be  $k$  - dimensional. Then denote",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\operatorname {Isop}(K) = \\frac{1}{k}\\frac{|\\partial K|_{k - 1}}{|K|_k}.\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proposition 1. Let  $K$  be a convex body such that  $K$  has a facet  $F$  satisfying :  $\\operatorname {Isop}(F) > \\operatorname {Isop}(K)$  Then  $b_{2}(K) > 1$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Proof. Assume  $K$  has a facet  $F = K^{u_0}$  such that  $\\begin{array}{r}\\frac{|\\partial F|_{n - 2}}{(n - 1)|F|_{n - 1}} >\\frac{|\\partial K|_{n - 1}}{n|K|_n} \\end{array}$  . Set",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nc_{0}\\coloneqq \\frac{|\\partial F|_{n - 2}|K|_{n}}{n - 1} -\\frac{|\\partial K|_{n - 1}|F|_{n - 1}}{n} >0,\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "and  $\\begin{array}{r}c = \\frac{2}{n - 1} |\\partial F|_{n - 2}|K|_n > 2c_0 \\end{array}$  . Fix  $\\epsilon >0$  so that  $c_{0} > \\epsilon c$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Since  $S_{K}(\\{u_{0}\\}) = |F|_{n - 1} > 0$  and  $S_{K}(\\mathbb{S}^{n - 1}) = |\\partial K|_{n - 1}< +\\infty$  , one may choose  $f$  a nonnegative and continuous function on the sphere, such that  $f(u_{0}) = \\max_{\\mathbb{S}^{n - 1}}f = 1$  and  $\\begin{array}{r}\\int f(u)dS_K(u)< \\end{array}$ $(1 + \\epsilon)S_{K}(u_{0}) = (1 + \\epsilon)|F|_{n - 1}$  . Fix such a positive function  $f$  , and define  $L_{t} = W(h_{K} + tf)$  , the Wulff shape with respect to function  $h_K + tf$  . One may think of  $L_{t}$  as a perturbed version of  $K$  , with most of the perturbation in direction  $u_{0}$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Set  $M = H_{u_0}^{- }\\cap B_2^n = \\{x\\in B_2^n:\\langle x,u_0\\rangle \\leq 0\\}$  to be a half- euclidean ball, such that its unique facet is the euclidean ball  $M^{u_0} = \\pi_{u_0^+}(M)$  with  $u_{0}$  as an outer normal vector. We will show that  $F_{K}(A,B)< 0$  , for  $A = L_{t}$ $B = M$  , and  $t > 0$  is small enough, proving that  $b_{2}(K) > 1$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Assume  $t\\geq 0$  . Recall that the mixed surface area measure  $\\sigma \\coloneqq S(M,K[n - 2],.)$  is a nonnegative measure, and that, since  $f\\geq 0$ $h_K(u)\\leq h_{Lt}(u)$  , for all  $u\\in \\mathbb{S}^{n - 1}$  . It follows that :",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{r}V_{n}(L_{t},M,K[n - 2]) - V_{n}(M,K[n - 1]) = \\frac{1}{n}\\int (h_{L_{t}} - h_{K})(u)d\\sigma (u)\\\\ \\geq \\frac{1}{n} (h_{L_{t}} - h_{K})(u_{0})\\sigma (\\{u_{0}\\}). \\end{array}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

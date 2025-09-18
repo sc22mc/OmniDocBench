@@ -1,0 +1,130 @@
+[
+    {
+        "type": "text",
+        "text": "where  $\\hat{q}$  and  $\\hat{p}$  are operators corresponding to two generic conjugate variables and  $\\mu >0$  is a free real parameter that is reminiscent of the lattice spacing in PQM but here takes the role of just a deformation parameter similarly to the GUP representation.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We will see how this algebra, when implemented on the cosmological minisuperspace at a (semi)classical level, will lead to an avoidance of the Big Bang singularity (similarly to Polymer Cosmology [14,24]) with the introduction of an asymptotic minimum, as already mentioned in [22].",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. A Simple Example",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the classical limit, the commutator (12) becomes a rule for Poisson brackets. In this first example, we will not consider curvature and will not assume any specific kind of matter but leave a generic energy density  $\\rho (v) = \\overline{\\rho} v^{- (1 + w)}$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The Hamiltonian constraint is the same as (1), but with no curvature and modified Poisson brackets:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\mathcal{H}_g(v,p_v) = -\\frac{3}{4} vp_v^2 +\\rho (v)v = 0, \\tag{13}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\{v,p_v\\} = 1 - \\mu^2 p_v^2. \\tag{14}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Then from the equations of motion and the constraint we derive a modified Friedmann equation:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nH^{2} = \\frac{\\rho}{3}\\left(1 - \\frac{\\rho}{\\rho_{\\mu}}\\right)^{2},\\quad \\rho_{\\mu} = \\frac{3}{4\\mu^{2}}, \\tag{15}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where  $\\rho_{\\mu}$  is a critical energy density that is constant [24] and introduces a critical point on the dynamics; the critical point is calculated as the value  $v_{i}$  such that  $\\dot{v} = 0$  which, as long as  $w\\neq - 1$  ,implies",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n1 - \\frac{\\rho(v_i)}{\\rho_\\mu} = 0,\\quad v_i = \\left(\\frac{\\overline{\\rho}}{\\rho_\\mu}\\right)^{\\frac{1}{1 + w}}. \\tag{16}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The solution  $v(t)$  then has the following implicit form:",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\left(\\frac{v(t)}{v_i}\\right)^{\\frac{1 + w}{2}} - \\mathrm{arctanh}\\left(\\left(\\frac{v(t)}{v_i}\\right)^{\\frac{1 + w}{2}}\\right) = \\pm 3t\\sqrt{\\rho_\\mu}; \\tag{17}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "again we have two solutions, a contracting and an expanding one depending on the sign. The solution of interest (the expanding one with the  $^+$  sign) is shown in Figure 3 for generic values of the parameters. Of course this does not present an exponential behaviour, since at this stage we did not include a Cosmological Constant; however this is just a simplified model to show the ability of the modified algebra [12) to naturally implement an asymptotic minimum value.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The main result of this simple construction is that we did not have to impose any fine- tuning such as the constraint 4 in order to obtain a positive minimum for the volume; it naturally follows from the form of the correction factor  $\\textstyle (1 - \\frac{\\rho}{\\rho_{\\mu}})^2$  in the modified Friedmann equation (15). We obtain a non- singular, asymptotically Einsteinstatic model that in the future yields the standard Friedmann evolution; indeed, note that for  $v\\gg v_{i}$  we have  $\\rho (v)\\ll \\rho_{\\mu}$  , and the modified Friedmann equation reduces to the standard one  $H^{2} = \\rho /3$",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/9cbd701d785369fb4f3af09c1875284daf4cb44a893b82f97e535387d7bff2d0.jpg",
+        "image_caption": [
+            "Figure 3. The asymptotic solution  $v(t)$  for the simple model with a generic energy density (black continuous line), compared with the standard evolution (red dashed line) which falls into the singularity. The asymptotic volume  $v_{i}$  is highlighted with the grey faded line."
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the following subsection we will implement this scheme on the full model with curvature and a Cosmological Constant coming from a slow- rolling phase of a scalar field as in the previous Section",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. The Full Model",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We will now consider the full model. We will consider different phases: the first, near the classical singularity, where the matter- energy is dominated by a relativistic component; the second where a scalar field potential grows, yielding an inflationary phase dominated by a Cosmological Constant; a final one where the scalar field has again decayed into photons and the late- time evolution becomes Friedmann- like. In all phases we will consider positive curvature, even though in the modified algebra scheme it is not needed to obtain an asymptotic behaviour, in order to make the comparison with the standard EU model more immediate.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The full Hamiltonian of the model is",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\mathcal{H}(v,p_v,\\phi ,p_\\phi) = -\\frac{3}{4} vp_v^2 -3Kv^{\\frac{1}{3}} + \\rho v = 0, \\tag{18}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {\\mathrm{phase~1})\\quad \\rho = \\rho_{\\gamma} = \\overline{\\rho_{\\gamma}^{\\mathrm{pst}}}\\upsilon^{-\\frac{4}{3}},}\\\\ & {\\mathrm{phase~2})\\quad \\rho = \\rho_{\\phi}(U\\gg \\phi^{2}) = U_{i} = \\rho_{\\Lambda},}\\\\ & {\\mathrm{phase~3})\\quad \\rho = \\rho_{\\gamma} = \\overline{\\rho_{\\gamma}^{\\mathrm{pst}}}\\upsilon^{-\\frac{4}{3}},} \\end{array} \\tag{21}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    }
+]

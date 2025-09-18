@@ -1,0 +1,28 @@
+[
+    {
+        "type": "text",
+        "text": "-  $q \\in A_i$ -  $q \\in S_m$  such that there exist  $p \\in C_i \\cap S_m$  (notation from Lemma 4)",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "First two cases are straightforward. To prove the theorem for the third case observe that if  $q\\notin Q_i\\cup A_i$  ,then  $q\\notin A_j$  and  $q\\notin Q_k$  for any  $j,k\\neq i$  otherwise  $B$  would be non- deterministic. So we deduce that  $q\\in S_{m}$  for some  $m$  .For the sake of contradiction suppose that  $C_i\\cap S_m = \\emptyset$  .But that means, that  $q.a^{m}b\\in B_j$  for  $j\\neq i$  and further  $q.ab^{m}w^{\\prime} = q.w = q_{i}^{j}$  what is a contradiction. From these. considerations we are able to determine for each  $i$  the sets  $A_{i}$  and  $Q_{i}$  that are subsets of the set  $Q_{i}^{\\prime}$  . In order to compute the sets  $C_i$  we first compute  $S_1^{\\prime},\\dots,S_n^{\\prime}$  inducing all  $a$  -clusters in  $B$  by removing  $b,0,1$  transitions and determine all connected components of the resulting structure. Now we examine three cases for a cluster  $S_{j}^{\\prime}$  ..",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\begin{array}{rl} & {\\bullet S_j^{\\prime}\\cap \\bar{Q}_i = \\emptyset}\\\\ & {\\bullet S_j^{\\prime}\\subseteq \\bar{Q}_i}\\\\ & {\\bullet S_j^{\\prime}\\cap \\bar{Q}_i\\neq \\emptyset \\mathrm{~and~}S_j^{\\prime}\\not\\subset \\bar{Q}_i} \\end{array}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Notice, that if the first case holds we know that no state of  $S_{j}^{\\prime}$  belongs to  $C_i$  If the second case holds, we must check if  $S_{j}^{\\prime}\\subseteq Q_{i}\\cup A_{i}$  . If this is not true, then we have found a cluster  $C_m$  , such that for all  $q\\in K_m$  it holds  $\\rho (q,b)\\in B_i$  and we determined the  $a$  - cluster that belongs to  $C_i$  . In the third case we know that some of the states of the cluster  $S_{j}^{\\prime}$  are in  $C_i$  and some are not. To compute those that are let us take the center of the  $a$  - cluster  $S_{j}^{\\prime}$  , say  $K_{j}^{\\prime}$  , and observe that  $q\\in C_i$  if, and only if  $q\\in \\{p\\in K_j^{\\prime}:\\rho (p,b)\\in B_i\\} = K_j^{\\prime \\prime}$  or  $q$  belongs to some branch with destination in  $K_{j}^{\\prime \\prime}$  . That concludes the proof.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Using two former lemmas, decryption method is similar as in 4. Extended step is depicted on Figure 7. If we choose the public key to be the automaton on Figure 2, then notice, that in Lemma 4 we have  $m = 2$ , and  $Q.a^{\\prime}b = \\{2,3,7,12,13\\}$ .",
+        "page_idx": 0
+    }
+]

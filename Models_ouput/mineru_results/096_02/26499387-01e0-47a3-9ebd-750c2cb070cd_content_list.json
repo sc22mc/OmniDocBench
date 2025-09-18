@@ -1,0 +1,96 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/ff04fc1a2b488f7d16945fcb326aea6b1140e4678ecf4a590b8247f2da12465d.jpg",
+        "table_caption": [
+            "Table 1. Comparison of the features of conventional methods and our proposed method "
+        ],
+        "table_footnote": [
+            "1DLis learing-basedmethods;Heatmapisheatmapregresion;Manhattanisbasedonthe Manhattanworldfororldcoordates "
+        ],
+        "table_body": "<table><tr><td colspan=\"2\">Method</td><td>DL1</td><td>Heatmap1</td><td>Manhattan1</td><td>Pan</td><td>Tilt&amp;Roll</td><td>Distortion</td><td>Projection</td></tr><tr><td colspan=\"2\">Non-Manhattan world</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>López-Antequera et al. [33]</td><td>CVPR&#x27;19</td><td>√</td><td></td><td></td><td></td><td></td><td></td><td>Perspective</td></tr><tr><td>Wakai and Yamashita [52]</td><td>ICCVW&#x27;21</td><td>√</td><td></td><td></td><td></td><td>&gt;</td><td>&gt;</td><td>Equisolid angle</td></tr><tr><td>Wakai et al.[53]</td><td>ECCV&#x27;22</td><td>√</td><td></td><td></td><td></td><td>√</td><td>√</td><td>Genericcamera[53]</td></tr><tr><td colspan=\"2\">Manhattan world</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Wildenauer et al.[57]</td><td>BMVC&#x27;13</td><td></td><td></td><td></td><td></td><td></td><td>√</td><td>Division model [14]</td></tr><tr><td>Antunes et al. [3]</td><td>CVPR&#x27;17</td><td></td><td></td><td>&gt;</td><td>&gt;</td><td>&gt;</td><td>√</td><td>Division model [14]</td></tr><tr><td>Pritts et al. [41]</td><td>CVPR&#x27;18</td><td></td><td></td><td>√</td><td>√</td><td>√</td><td>√</td><td>Division model[14]</td></tr><tr><td>Lochman et al.[32]</td><td>WACV&#x27;21</td><td></td><td></td><td>√</td><td>√</td><td>√</td><td>√</td><td>Division model[14]</td></tr><tr><td>Ours</td><td></td><td></td><td>√</td><td>√</td><td>√</td><td>√</td><td>√[53]</td><td>Generic camera[53]</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "objects because these methods need to detect many arcs to estimate the VPs. Therefore,city scenes in which sky or street trees dominate the images degrade the performance ofgeometry-based methods. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "On the basis of the observations above,to achieve accurate and robust estimation,we propose a learning-based calibration method that estimates extrinsics (pan,tilt,and roll angles),focal length,and a distortion coefficient simultaneously from a single image in Figure 1. Our heatmap regression estimates each direction using labeled image coordinates to distinguish the four directions of a road intersection in a Manhattan world. Furthermore,we introduce additional geometric keypoints,called auxiliary diagonal points (ADPs),to compensate for the lack of VPs in each image. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To investigate the effectiveness of the proposed methods, we conducted extensive experiments on three large-scale datasets[9,38,64] aswell as off-the-shelf cameras.This evaluation demonstrated that our method notably outperforms conventional geometry-based [32,41] and learningbased [33,52, 53] methods.The major contributions of our study are summarized as follows: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "· We propose a heatmap-based VP estimator for recovering the rotation from a single image to achieve higher accuracyand robustness than geometry-based methodsusing arc detectors. ·We introduce auxiliary diagonal points with an optimal 3Darrangement based on the spatial uniformity of regular octahedron groups to address the lack of VPs in an image. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.Related work ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Camera model. For geometric tasks,camera calibration estimates the parameters in a camera model. This model expresses a mapping from world coordinates $\\tilde { \\mathbf { p } }$ to image coordinates $\\tilde { \\mathbf { u } }$ in homogeneous coordinates. This mapping is conducted using extrinsic and intrinsic parameters. Extrinsic parameters $\\left[ \\mathbf { R } \\mid \\mathbf { t } \\right]$ consist of a rotation matrix $\\mathbf { R }$ and a translation vector t to represent the relation between the origins of the camera coordinates and Manhattan world coordinates (or other world coordinates). The intrinsic parametersare distortion $\\gamma$ ,image sensor pitch $( d _ { u } , d _ { v } )$ ,and a principal point $\\left( c _ { u } , c _ { v } \\right)$ .The subscripts $u$ and $v$ indicate the horizontal and vertical directions,respectively. The mappingisformulated as ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4cb356711e3bacd385b1c3b38fa019c2609396fc43a0adcfe7edc61455648568.jpg",
+        "text": "$$\n\\tilde { \\mathbf { u } } = \\left[ \\begin{array} { c c c } { \\gamma / d _ { u } } & { 0 } & { c _ { u } } \\\\ { 0 } & { \\gamma / d _ { v } } & { c _ { v } } \\\\ { 0 } & { 0 } & { 1 } \\end{array} \\right] \\left[ \\mathbf { R } \\mid \\mathbf { t } \\right] \\tilde { \\mathbf { p } } .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Kannala and Brandt [16] proposed the generic camera model, which includes fisheye lens cameras and is given by ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/3b1131acef5fb94c02da39600c8a564a3b72ad09cb8b803e8fd20413e3c6c3b7.jpg",
+        "text": "$$\n\\gamma = \\tilde { k } _ { 1 } \\eta + \\tilde { k } _ { 2 } \\eta ^ { 3 } + \\cdots ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where ${ \\tilde { k } } _ { 1 } , { \\tilde { k } } _ { 2 } ,$ $, \\tilde { k } _ { 2 } , \\hdots$ are distortion coefficients and $\\eta$ is an incident angle.Wakai et al.[53] proposed an alternative generic cameramodel forlearning-based methods,expressedas ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/01c72329427d62b3eed8ae41bfd593c12137f278490031f91e95c60b9b73453a.jpg",
+        "text": "$$\n\\gamma = f \\cdot ( \\eta + k _ { 1 } \\eta ^ { 3 } ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $f$ isfocal length and $k _ { 1 }$ isa distortion coefficient. Although Equation (3） is only a third-order polynomial with respect to $\\eta$ ,the model can practically express fisheye projection with sub-pixel error [53]. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Manhattan world.Coughlan et al.[12] proposed the Manhattan world for human navigation on the basis of the priorover edge models.The Manhattan world assumption regards the world as consisting of grid-shaped roads；that is,two of the three orthogonal coordinate axes lie along a crossroads,and the remaining axis is vertical. Given the Manhattan world $O _ { M } { - } X _ { M } Y _ { M } Z _ { M }$ in Figure 2, camera anglesare defined as a rotation matrix $\\mathbf { R }$ thatiscompatible with pan,tilt,and roll angles.In this paper,we ignore the relations between the extrinsics of the camera and the body ofcars, drones,or robots because these relations can be determined using designed values or calibration. Therefore, thetask of camera calibration is to determine camera angles ofa3D-rotated camera inaManhattan world. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Camera calibration. Perspective camera calibration methods in the Manhattan world have been proposed for Hough-transform-based methods [43，44] and VP-based methods [8,11, 18,19,22-24,30,35,45,46, 48,49,58, 63].However, these methods address only narrow FOV cameraswithout distortion. ",
+        "page_idx": 0
+    }
+]

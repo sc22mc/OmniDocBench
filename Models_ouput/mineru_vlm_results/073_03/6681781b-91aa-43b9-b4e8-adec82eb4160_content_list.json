@@ -1,0 +1,101 @@
+[
+    {
+        "type": "text",
+        "text": "2 Preliminary",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.1 Two-Player Normal-Form Game",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let us define two- player (of X and Y)  $m(\\in \\mathbb{N})$  - action games (see illustration of Fig. 1- A). Player X and Y choose their actions from  $\\mathcal{A} = \\{a_1,\\dots ,a_m\\}$  and  $\\mathcal{B} = \\{b_1,\\dots ,b_m\\}$  in a single round. After they finish choosing their actions  $a\\in \\mathcal{A}$  and  $b\\in B$  , each of them gains a payoff  $U(a,b)\\in \\mathbb{R}$  and  $V(a,b)\\in \\mathbb{R}$  , respectively.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.2 Two-Player Multi-Memory Repeated Game",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.2 Two- Player Multi- Memory Repeated GameWe further consider two- player  $n(\\in \\mathbb{N})$ - memory repeated games as an iteration of the two- player normal- form game (see illustration Fig. 1- A). The players are assumed to memorize their actions in the last  $n$  rounds. Since each player can take  $m$  actions, there are  $m^{2n}$  cases for possible memorized states, described as  $\\mathcal{S} = \\prod_{k = 1}^{n}(\\mathcal{A}\\times \\mathcal{B})$ . Under any memorized state, player X can choose any action stochastically. Such a stochastic choice of an action is described by a parameter  $x^{a|s}$ , which means the probability of choosing an action  $a\\in \\mathcal{A}$  under memorized state  $s\\in S$ . Thus, X's strategy is represented by  $|S| (= m^{2n})$ - numbers of  $(m - 1)$ - dimension simplexes,  $\\mathbf{x}\\in \\prod_{s\\in S}\\Delta^{m - 1}$ , while Y's is  $\\mathbf{y}\\in \\prod_{s\\in S}\\Delta^{m - 1}$ .",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.3 Formulation as Markov Games",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In order to handle this multi- memory repeated game as a Markov game [28, 29], we define a vector notation of memorized states;",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\pmb {s} = (\\underbrace{a_1b_1\\cdots a_1b_1}_{\\times n},\\underbrace{a_1b_1\\cdots a_1b_1}_{\\times (n - 1)},a_1b_2,\\dots ,\\underbrace{a_mb_m\\cdots a_mb_m}_{\\times n}), \\tag{1}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "which orders all the elements of  $S$  as a vector. We also define a vector notation of utility function as",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\pmb {u} = (U(a_{1},b_{1}),\\dots ,U(a_{1},b_{1}),U(a_{1},b_{2}),\\dots ,U(a_{1},b_{2}),\\dots ,U(a_{m},b_{m}),\\dots ,U(a_{m},b_{m})), \\tag{2}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "which orders all the last- round payoffs for  $S$  as a vector. The utility function for Y, i.e.,  $\\mathbf{v}$  , is defined similarly. In addition, we denote an index for these vectors as  $i\\in \\{1,\\ldots ,m^{2n}\\}$  . For example, when player X is in state  $s_i$  , the last- round payoff for player X was  $u_{i}$",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let  $\\pmb {p}\\in \\Delta^{|S| - 1}$  be a probability distribution on  $\\mathbf{s}$  in a round. As the name Markov matrix implies, a distribution in the next round  $\\mathbf{p}^{\\prime}$  is given by  $\\pmb{p}^{\\prime} = \\pmb {M}\\pmb{p}$  , where  $\\mathbf{M}$  is a Markov transition matrix;",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\nM_{i^{\\prime}i} = \\left\\{ \\begin{array}{ll}x^{a|s_i}y^{b|s_i} & (s_{i^{\\prime}} = abs_{\\bar{i}}^-)\\\\ 0 & (\\mathrm{otherwise}) \\end{array} \\right., \\tag{3}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "which shows the transition probability from  $i$  - th state to  $i^{\\prime}$  - th one for  $i,i^{\\prime}\\in \\{1,\\ldots ,m^{2n}\\}$  . Here, note that  $s_i^-$  shows the state  $s_i$  except for the oldest two actions. See Fig. 1- B illustrating an example of Markov transition.",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.4 Nash Equilibrium",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We now analyze the Nash equilibrium in multi- memory repeated games based on the formulation of Markov games. Let us assume that every agent uses a fixed strategy  $\\mathbf{x}$  and  $\\mathbf{y}$  or learns slowly enough for the timescale of the Markov transitions. If we further assume that the strategies are within the interiors of simplexes (i.e., the Markov matrix is ergodic), this stationary distribution is unique and described as  $\\mathbf{p}^{\\mathrm{st}}(\\mathbf{x},\\mathbf{y})$  . This stationary distribution satisfies  $\\mathbf{p}^{\\mathrm{st}} = M\\mathbf{p}^{\\mathrm{st}}$  . We also denote each player's expected payoff in the stationary distribution as  $u^{\\mathrm{st}}(\\mathbf{x},\\mathbf{y}) = \\mathbf{p}^{\\mathrm{st}}\\cdot \\mathbf{u}$  and  $v^{\\mathrm{st}}(\\mathbf{x},\\mathbf{y}) = \\mathbf{p}^{\\mathrm{st}}\\cdot \\mathbf{v}$  . The goal of learning in the multi- memory game is to search for the Nash equilibrium, denoted by  $(\\mathbf{x}^{*},\\mathbf{y}^{*})$  , where their payoffs are maximized as",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "\n$$\n\\left\\{ \\begin{array}{ll}\\mathbf{x}^{*}\\in \\mathrm{argmax}_{\\mathbf{x}}u^{\\mathrm{st}}(\\mathbf{x},\\mathbf{y}^{*})\\\\ \\mathbf{y}^{*}\\in \\mathrm{argmax}_{\\mathbf{y}}v^{\\mathrm{st}}(\\mathbf{x}^{*},\\mathbf{y}) \\end{array} \\right.. \\tag{4}\n$$\n",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here,  $u^{\\mathrm{st}}$  and  $v^{\\mathrm{st}}$  are complex non- linear functions for high- dimensional variables of  $(\\mathbf{x},\\mathbf{y})$  .This Nash equilibrium is difficult to find in general.",
+        "page_idx": 0
+    }
+]

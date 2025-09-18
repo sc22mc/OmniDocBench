@@ -291,6 +291,7 @@ def normalized_latex_table(text):
             html_content = '\n'.join(tables)
         
         except Exception as e:
+            print(e)
             html_content = ''
         
         shutil.rmtree(cache_dir)

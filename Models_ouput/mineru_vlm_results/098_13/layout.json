@@ -1,0 +1,514 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        680,
+                        330,
+                        1864,
+                        1042
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                680,
+                                330,
+                                1864,
+                                1042
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        680,
+                                        330,
+                                        1864,
+                                        1042
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                680,
+                                                330,
+                                                1864,
+                                                1042
+                                            ],
+                                            "type": "image",
+                                            "image_path": "ae7bf735c7d8009fa3acaea19669ea4bdcf3e55ff31733015eb6272b2f6b3a6a.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                614,
+                                1079,
+                                1935,
+                                1131
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        614,
+                                        1079,
+                                        1935,
+                                        1131
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                614,
+                                                1079,
+                                                1935,
+                                                1131
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 7: Pretraining with the text continuation objective to predict next tokens"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        563,
+                        1174,
+                        1983,
+                        1851
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                563,
+                                1174,
+                                1983,
+                                1851
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        563,
+                                        1174,
+                                        1983,
+                                        1851
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                563,
+                                                1174,
+                                                1983,
+                                                1851
+                                            ],
+                                            "type": "image",
+                                            "image_path": "343c3c347966c9055bfdb81d763e71ec9b528a175b50f687012b6b957fdff2a7.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                441,
+                                1887,
+                                2106,
+                                2026
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        1887,
+                                        2106,
+                                        2026
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                441,
+                                                1887,
+                                                2106,
+                                                2026
+                                            ],
+                                            "type": "text",
+                                            "content": "Figure 8: Instruct fine-tuning of the ICAE to make its produced memory slots interact with prompts for accomplishing various purposes in the target LLM. In this figure, "
+                                        },
+                                        {
+                                            "bbox": [
+                                                441,
+                                                1887,
+                                                2106,
+                                                2026
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "(p_{1},\\ldots ,p_{m})"
+                                        },
+                                        {
+                                            "bbox": [
+                                                441,
+                                                1887,
+                                                2106,
+                                                2026
+                                            ],
+                                            "type": "text",
+                                            "content": " denotes the prompt tokens and "
+                                        },
+                                        {
+                                            "bbox": [
+                                                441,
+                                                1887,
+                                                2106,
+                                                2026
+                                            ],
+                                            "type": "inline_equation",
+                                            "content": "(r_{1},\\ldots ,r_{n})"
+                                        },
+                                        {
+                                            "bbox": [
+                                                441,
+                                                1887,
+                                                2106,
+                                                2026
+                                            ],
+                                            "type": "text",
+                                            "content": " denotes the response tokens."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 3,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        446,
+                        2105,
+                        920,
+                        2161
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                446,
+                                2105,
+                                920,
+                                2161
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        446,
+                                        2105,
+                                        920,
+                                        2161
+                                    ],
+                                    "type": "text",
+                                    "content": "B PROFILING SETUP"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        443,
+                        2207,
+                        2108,
+                        2349
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2207,
+                                2108,
+                                2349
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2207,
+                                        2108,
+                                        2349
+                                    ],
+                                    "type": "text",
+                                    "content": "We test the latency (Section 3.3.2) on 1 Nvidia A 100 GPU (80GB). The test machine has the CPU of AMD EPYCTM 7413 with 24 cores and 216GB RAM. The runtime configuration is python "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2207,
+                                        2108,
+                                        2349
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "= 3.9"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2207,
+                                        2108,
+                                        2349
+                                    ],
+                                    "type": "text",
+                                    "content": ", pytorch "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2207,
+                                        2108,
+                                        2349
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "= 2.0.1"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2207,
+                                        2108,
+                                        2349
+                                    ],
+                                    "type": "text",
+                                    "content": ", cuda "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2207,
+                                        2108,
+                                        2349
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "= 11.7"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2207,
+                                        2108,
+                                        2349
+                                    ],
+                                    "type": "text",
+                                    "content": ", cudnn "
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2207,
+                                        2108,
+                                        2349
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "= 8.5"
+                                },
+                                {
+                                    "bbox": [
+                                        443,
+                                        2207,
+                                        2108,
+                                        2349
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        443,
+                        2412,
+                        1280,
+                        2468
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                443,
+                                2412,
+                                1280,
+                                2468
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        443,
+                                        2412,
+                                        1280,
+                                        2468
+                                    ],
+                                    "type": "text",
+                                    "content": "C PROMPT-WITH-CONTEXT DATASET"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        441,
+                        2517,
+                        2106,
+                        2752
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                441,
+                                2517,
+                                2106,
+                                2752
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        441,
+                                        2517,
+                                        2106,
+                                        2752
+                                    ],
+                                    "type": "text",
+                                    "content": "We introduce the PROMPT- WITH- CONTEXT (PwC) dataset where each sample entry is a triple (text, prompt, answer), as depicted in Figure 9. To construct this dataset, we first sample 20k texts from the Pile dataset. Then, for each text, we employ the GPT- 4 to provide 15 prompts (10 specific prompts and 5 general prompts) about the text and give the corresponding answers. The prompt instructing the GPT- 4 is outlined in Listing 1."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        430,
+                        2775,
+                        2103,
+                        2871
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                430,
+                                2775,
+                                2103,
+                                2871
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        430,
+                                        2775,
+                                        2103,
+                                        2871
+                                    ],
+                                    "type": "text",
+                                    "content": "The dataset is composed of 240k examples for training purposes, with an additional 18k examples for testing. The context length distribution of test samples is presented in Table 10."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        706,
+                        2904,
+                        1830,
+                        2953
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                706,
+                                2904,
+                                1830,
+                                2953
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        706,
+                                        2904,
+                                        1830,
+                                        2953
+                                    ],
+                                    "type": "text",
+                                    "content": "Listing 1: Prompt used by GPT4 API to generate the PwC dataset."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        430,
+                        2966,
+                        2024,
+                        3049
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                430,
+                                2966,
+                                2024,
+                                3049
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        430,
+                                        2966,
+                                        2024,
+                                        3049
+                                    ],
+                                    "type": "text",
+                                    "content": "Design 10 prompts specified to the above text to test understanding of the above text. These prompts should be diverse and cover as many"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

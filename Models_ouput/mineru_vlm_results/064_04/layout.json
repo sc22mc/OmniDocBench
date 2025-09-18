@@ -1,0 +1,1573 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        224,
+                        280,
+                        1208,
+                        379
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                280,
+                                1208,
+                                379
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        379
+                                    ],
+                                    "type": "text",
+                                    "content": "former models (Kenton & Toutanova, 2019; Dosovitskiy et al., 2020)."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        224,
+                        405,
+                        1206,
+                        504
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                405,
+                                1206,
+                                504
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        405,
+                                        1206,
+                                        504
+                                    ],
+                                    "type": "text",
+                                    "content": "To simplify the illustration and better represent our model in the following sections:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1
+                },
+                {
+                    "bbox": [
+                        244,
+                        514,
+                        1206,
+                        580
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                244,
+                                514,
+                                1206,
+                                580
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        244,
+                                        514,
+                                        1206,
+                                        580
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "[\\mathsf{CLS}]_i^{\\nu}\\leftarrow \\mathsf{Enc}_\\nu ([\\mathsf{CLS}]_i^t)\\mathrm{~and~}[\\mathsf{CLS}]^t\\leftarrow \\mathsf{Enc}_t([\\mathsf{CLS}]^t), \\tag{2}",
+                                    "image_path": "971e31742a98d7dcdea255ffbd68028977c7d1690ee1811494af154de33f886d.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        224,
+                        597,
+                        1208,
+                        749
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                597,
+                                1208,
+                                749
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        597,
+                                        1208,
+                                        749
+                                    ],
+                                    "type": "text",
+                                    "content": "by default, when talking about "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        597,
+                                        1208,
+                                        749
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        597,
+                                        1208,
+                                        749
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "([\\mathsf{CLS}]_i^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        597,
+                                        1208,
+                                        749
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        597,
+                                        1208,
+                                        749
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]^t)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        597,
+                                        1208,
+                                        749
+                                    ],
+                                    "type": "text",
+                                    "content": " they are the CLIP's output embeddings rather than the input token "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        597,
+                                        1208,
+                                        749
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "([\\hat{\\mathsf{CLS}} ])"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        597,
+                                        1208,
+                                        749
+                                    ],
+                                    "type": "text",
+                                    "content": " the same as shown in Fig.2."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        224,
+                        772,
+                        1208,
+                        1676
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                772,
+                                1208,
+                                1676
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        772,
+                                        1208,
+                                        1676
+                                    ],
+                                    "type": "text",
+                                    "content": "However, the output embedding [CLS] cannot adequately represent an image as the single embedding provides limited cues to the location and time reasoning. Therefore, we consider enlarging the representations for an image. It is evident that in real life, we would get different ideas about what an image means from different individuals. Following in this vein, we propose a simple yet effective methods: in our technical implementation, we are inspired by MVR (Zhang et al., 2022) and introduce additional "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        772,
+                                        1208,
+                                        1676
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]_i^{\\nu}(i = 1,\\dots,n)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        772,
+                                        1208,
+                                        1676
+                                    ],
+                                    "type": "text",
+                                    "content": " to replace the original single [CLS] representation. Through the observation of ablations, we finally use 6 different "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        772,
+                                        1208,
+                                        1676
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\hat{\\mathsf{CLS}} ]_i^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        772,
+                                        1208,
+                                        1676
+                                    ],
+                                    "type": "text",
+                                    "content": " at the beginning of the image patch token embeddings "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        772,
+                                        1208,
+                                        1676
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(\\hat{I} = \\hat{I}_{1}^{patch},\\dots,\\hat{I}_{7}^{patch})"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        772,
+                                        1208,
+                                        1676
+                                    ],
+                                    "type": "text",
+                                    "content": " like "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        772,
+                                        1208,
+                                        1676
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "([\\hat{\\mathsf{CLS}} ]_i^{\\nu}\\dots [\\mathsf{CLS}]_i^{\\nu}\\hat{I})"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        772,
+                                        1208,
+                                        1676
+                                    ],
+                                    "type": "text",
+                                    "content": " , and after going through the encoder "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        772,
+                                        1208,
+                                        1676
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\operatorname {Enc}_\\nu"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        772,
+                                        1208,
+                                        1676
+                                    ],
+                                    "type": "text",
+                                    "content": " , we get a list of embeddings "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        772,
+                                        1208,
+                                        1676
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "((\\mathsf{CLS}]_1^{\\nu}\\dots [\\mathsf{CLS}]_6^{\\nu}I)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        772,
+                                        1208,
+                                        1676
+                                    ],
+                                    "type": "text",
+                                    "content": " . Using this design, the pre- trained model can investigate an image from multiple perspectives and dimensions. It follows the Q- principle and increases the quantity of information from multiple perspectives."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        224,
+                        1702,
+                        1208,
+                        1999
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                1702,
+                                1208,
+                                1999
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        1702,
+                                        1208,
+                                        1999
+                                    ],
+                                    "type": "text",
+                                    "content": "Since the text contains explicit semantic information and most language inputs carry clear messages, we only use the original "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1702,
+                                        1208,
+                                        1999
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]^t"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1702,
+                                        1208,
+                                        1999
+                                    ],
+                                    "type": "text",
+                                    "content": " at the beginning of the text token embedding "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1702,
+                                        1208,
+                                        1999
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(\\mathrm{T})"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1702,
+                                        1208,
+                                        1999
+                                    ],
+                                    "type": "text",
+                                    "content": " , like "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1702,
+                                        1208,
+                                        1999
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "([\\mathsf{CLS}]^t T)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        1702,
+                                        1208,
+                                        1999
+                                    ],
+                                    "type": "text",
+                                    "content": " . Hence, we search for corresponding information through the image from the CLIP model by conducting:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        545,
+                        1993,
+                        1203,
+                        2055
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                545,
+                                1993,
+                                1203,
+                                2055
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        545,
+                                        1993,
+                                        1203,
+                                        2055
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\big(\\big[\\mathsf{CLS}\\big]^t\\big)\\cdot \\big(\\big[\\mathsf{CLS}\\big]_i^{\\nu}\\big). \\tag{3}",
+                                    "image_path": "f1cf9b6f36e69d733e48697ba5098e48ee26b69aedba4aab0a8a39d907140f98.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6
+                },
+                {
+                    "bbox": [
+                        224,
+                        2138,
+                        1206,
+                        2290
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                2138,
+                                1206,
+                                2290
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        2138,
+                                        1206,
+                                        2290
+                                    ],
+                                    "type": "text",
+                                    "content": "In the following fine- tuning or searching for open- world knowledge, each "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2138,
+                                        1206,
+                                        2290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]_i^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2138,
+                                        1206,
+                                        2290
+                                    ],
+                                    "type": "text",
+                                    "content": " of the "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2138,
+                                        1206,
+                                        2290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\operatorname {Enc}_\\nu"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2138,
+                                        1206,
+                                        2290
+                                    ],
+                                    "type": "text",
+                                    "content": " calculates the similarity with "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2138,
+                                        1206,
+                                        2290
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]^t"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2138,
+                                        1206,
+                                        2290
+                                    ],
+                                    "type": "text",
+                                    "content": " of the candidate information by inner- product."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        224,
+                        2313,
+                        1208,
+                        2613
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                2313,
+                                1208,
+                                2613
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        2313,
+                                        1208,
+                                        2613
+                                    ],
+                                    "type": "text",
+                                    "content": "Location/Time Fine- tune. We first initialize and position- encode each "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2313,
+                                        1208,
+                                        2613
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]_i^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2313,
+                                        1208,
+                                        2613
+                                    ],
+                                    "type": "text",
+                                    "content": " individually, aiming to extend the distance between each "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2313,
+                                        1208,
+                                        2613
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]_i^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2313,
+                                        1208,
+                                        2613
+                                    ],
+                                    "type": "text",
+                                    "content": " . Then, we fine- tune CLIP with local and global losses (He et al., 2020; Zhang et al., 2022) to ensure each "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2313,
+                                        1208,
+                                        2613
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]_i^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2313,
+                                        1208,
+                                        2613
+                                    ],
+                                    "type": "text",
+                                    "content": " is aligned with the location and time linguistic features "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2313,
+                                        1208,
+                                        2613
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]^t"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        224,
+                        2640,
+                        1206,
+                        2739
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                2640,
+                                1206,
+                                2739
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        2640,
+                                        1206,
+                                        2739
+                                    ],
+                                    "type": "text",
+                                    "content": "For the local loss, the correspondence between each "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2640,
+                                        1206,
+                                        2739
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]_i^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2640,
+                                        1206,
+                                        2739
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2640,
+                                        1206,
+                                        2739
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]^t"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2640,
+                                        1206,
+                                        2739
+                                    ],
+                                    "type": "text",
+                                    "content": " is achieved by a contrastive learning loss:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                },
+                {
+                    "bbox": [
+                        285,
+                        2748,
+                        1203,
+                        2874
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                285,
+                                2748,
+                                1203,
+                                2874
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        285,
+                                        2748,
+                                        1203,
+                                        2874
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\begin{array}{r}L_{local} = -\\frac{1}{i + 1}\\sum_{0}^{i}\\log \\frac{e^{f_{i}(q_{\\nu},k_{t + })}}{\\sum_{1}^{n}[e^{f_{i}(q_{\\nu},k_{t + })} + e^{f_{i}(q_{\\nu},k_{t - })}]}, \\end{array} \\tag{4}",
+                                    "image_path": "b1b0f75ec0563bade066b5536814e27ccf841bca7002b6f7d607a4bf5c745798.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        224,
+                        2890,
+                        1208,
+                        2993
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                2890,
+                                1208,
+                                2993
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        2890,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": "here, "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2890,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "q_{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2890,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " denote the query image embedding "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2890,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "([\\mathsf{CLS}]_i^{\\nu})"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2890,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " . "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2890,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "k_{t + }"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2890,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2890,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "k_{t - }"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2890,
+                                        1208,
+                                        2993
+                                    ],
+                                    "type": "text",
+                                    "content": " are the positive and negative key text embeddings (a "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1275,
+                                280,
+                                2256,
+                                382
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        280,
+                                        2256,
+                                        382
+                                    ],
+                                    "type": "text",
+                                    "content": "batch of "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        280,
+                                        2256,
+                                        382
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]^t)"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        280,
+                                        2256,
+                                        382
+                                    ],
+                                    "type": "text",
+                                    "content": " . We calculate the correlation score between them by inner product "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        280,
+                                        2256,
+                                        382
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_{i}(x,y)"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1275,
+                        280,
+                        2256,
+                        382
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 12,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1275,
+                        405,
+                        2256,
+                        554
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1275,
+                                405,
+                                2256,
+                                554
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        405,
+                                        2256,
+                                        554
+                                    ],
+                                    "type": "text",
+                                    "content": "Then, the global loss further constrains the correspondence between image features and location/time features, and the calculation method is as follows:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                },
+                {
+                    "bbox": [
+                        1351,
+                        574,
+                        2254,
+                        699
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1351,
+                                574,
+                                2254,
+                                699
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1351,
+                                        574,
+                                        2254,
+                                        699
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "L_{global} = -\\log \\frac{e^{f_{max}(q_{\\nu},k_{t + })}}{\\sum_{1}^{n}[e^{f_{max}(q_{\\nu},k_{t + })} + e^{f_{max}(q_{\\nu},k_{t - })}]}, \\tag{5}",
+                                    "image_path": "37454d02bf981dc1b5b7bf91341903751c8fdd534f0fe04727eaf38c7b1eb545.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                },
+                {
+                    "bbox": [
+                        1275,
+                        729,
+                        2259,
+                        897
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1275,
+                                729,
+                                2259,
+                                897
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        729,
+                                        2259,
+                                        897
+                                    ],
+                                    "type": "text",
+                                    "content": "where "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        729,
+                                        2259,
+                                        897
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_{max}(q_{\\nu},k_{t}) = \\max_{i}\\{f_{i}(q_{\\nu},k_{t})\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        729,
+                                        2259,
+                                        897
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "max\\{\\}"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        729,
+                                        2259,
+                                        897
+                                    ],
+                                    "type": "text",
+                                    "content": " represents the maximum value. The entire training loss is defined as a linear combination of two losses as "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        729,
+                                        2259,
+                                        897
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "L_{total} = L_{local} + L_{global}"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15
+                },
+                {
+                    "bbox": [
+                        1275,
+                        920,
+                        2259,
+                        1221
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1275,
+                                920,
+                                2259,
+                                1221
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        920,
+                                        2259,
+                                        1221
+                                    ],
+                                    "type": "text",
+                                    "content": "Open- World Knowledge Search. After fine- tuning, each "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        920,
+                                        2259,
+                                        1221
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]_i^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        920,
+                                        2259,
+                                        1221
+                                    ],
+                                    "type": "text",
+                                    "content": " output by CLIP- V can represent image location/time information from various perspectives. We use these different representations to retrieve more valuable open- world knowledge from the OwK dataset (Sec 4.1) to increase the quantity of knowledge."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1244,
+                        2264,
+                        1692
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                1244,
+                                2264,
+                                1692
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1244,
+                                        2264,
+                                        1692
+                                    ],
+                                    "type": "text",
+                                    "content": "Given an image "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1244,
+                                        2264,
+                                        1692
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "I"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1244,
+                                        2264,
+                                        1692
+                                    ],
+                                    "type": "text",
+                                    "content": " and the corresponding Open- World Knowledge "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1244,
+                                        2264,
+                                        1692
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(O = T_{1}^{owk},T_{2}^{owk},\\dots,T_{k}^{owk},k = 122,408)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1244,
+                                        2264,
+                                        1692
+                                    ],
+                                    "type": "text",
+                                    "content": " , the process of searching follows Eq. 3: each "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1244,
+                                        2264,
+                                        1692
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]_i^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1244,
+                                        2264,
+                                        1692
+                                    ],
+                                    "type": "text",
+                                    "content": " calculates the similarity with 122,408 candidate Wikipedia corpus (OWK). Here, we select the candidate Wikipedia with the top- 1 similarity for each "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1244,
+                                        2264,
+                                        1692
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]_i^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1244,
+                                        2264,
+                                        1692
+                                    ],
+                                    "type": "text",
+                                    "content": " yielding a total of 6 OWKs. After that, the Quantity module (sec 3.2) finished its job by collecting a list of highly- related OWKs items that the next Relevance module (sec 3.3) would use as input for CLIP- T."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 17
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1749,
+                        1680,
+                        1798
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                1749,
+                                1680,
+                                1798
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1749,
+                                        1680,
+                                        1798
+                                    ],
+                                    "type": "text",
+                                    "content": "3.3.Relevance Module"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 18,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1824,
+                        2259,
+                        2125
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                1824,
+                                2259,
+                                2125
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1824,
+                                        2259,
+                                        2125
+                                    ],
+                                    "type": "text",
+                                    "content": "Scoring Mechanism. The amount of useful information varies for each "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1824,
+                                        2259,
+                                        2125
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]_i^{\\nu}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1824,
+                                        2259,
+                                        2125
+                                    ],
+                                    "type": "text",
+                                    "content": " of an image and the corresponding embeddings of open- world knowledge. As a result, it is critical to weigh the importance of different features dynamically. Based on the above motivation, we propose a scoring mechanism to further highlight the relevant features."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 19
+                },
+                {
+                    "bbox": [
+                        1275,
+                        2151,
+                        2256,
+                        2250
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1275,
+                                2151,
+                                2256,
+                                2250
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2151,
+                                        2256,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": "We adopt two layers of MLP "
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2151,
+                                        2256,
+                                        2250
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(\\mathrm{MLP}_{2 - layer})"
+                                },
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2151,
+                                        2256,
+                                        2250
+                                    ],
+                                    "type": "text",
+                                    "content": " as our relevance scoring component and find it helpful:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 20
+                },
+                {
+                    "bbox": [
+                        1530,
+                        2280,
+                        2254,
+                        2339
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1530,
+                                2280,
+                                2254,
+                                2339
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1530,
+                                        2280,
+                                        2254,
+                                        2339
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "W^{x} = \\mathbf{MLP}_{2 - layer}([\\mathsf{CLS}]_{i}^{\\nu}), \\tag{6}",
+                                    "image_path": "39776b486ac3768a0a29baa98e451e3152f2abd2a3e5edac16843044b2b646b2.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 21
+                },
+                {
+                    "bbox": [
+                        1277,
+                        2376,
+                        2261,
+                        2729
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                2376,
+                                2261,
+                                2729
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2376,
+                                        2261,
+                                        2729
+                                    ],
+                                    "type": "text",
+                                    "content": "Here, "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2376,
+                                        2261,
+                                        2729
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[\\mathsf{CLS}]_i^x"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2376,
+                                        2261,
+                                        2729
+                                    ],
+                                    "type": "text",
+                                    "content": " is the input embedding, and "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2376,
+                                        2261,
+                                        2729
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "W^{x}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        2376,
+                                        2261,
+                                        2729
+                                    ],
+                                    "type": "text",
+                                    "content": " is the calculated weight. We use contrastive learning to optimize the model. To facilitate implementation, we directly adopt the loss functions from the first step of the Quantity module (sec 3.2). In this case, we keep the CLIP- T and CLIP- V frozen and only update the parameters of the relevance scoring component."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 22
+                },
+                {
+                    "bbox": [
+                        1275,
+                        2752,
+                        2259,
+                        2851
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1275,
+                                2752,
+                                2259,
+                                2851
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1275,
+                                        2752,
+                                        2259,
+                                        2851
+                                    ],
+                                    "type": "text",
+                                    "content": "In the local loss, the information of two features is integrated to optimize the scoring mechanism jointly:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 23
+                },
+                {
+                    "bbox": [
+                        1326,
+                        2880,
+                        2205,
+                        2940
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1326,
+                                2880,
+                                2205,
+                                2940
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1326,
+                                        2880,
+                                        2205,
+                                        2940
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "f_{i}(q,k_{+}) = (W_{i}^{owk}\\times [\\mathsf{CLS}]_{i}^{owk} + W_{i}^{\\nu}\\times [\\mathsf{CLS}]_{i}^{\\nu}),\\cdot F^{gt},",
+                                    "image_path": "7c26ead0cc909c52b003f848fcd7ad3caa65836810ccd03cee81773447d79366.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 24
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

@@ -1,0 +1,1539 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "bbox": [
+                        224,
+                        280,
+                        1208,
+                        1402
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                280,
+                                1208,
+                                1402
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": "Algorithm 1 Timewarp MCMC with batched proposalsRequire: Initial state "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X_0 = (X_0^p, X_0^v)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": ", chain length "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "M"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": ", proposal batch size "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "B"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": ","
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m \\leftarrow 0"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": "while "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m < M"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": " doSample "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\tilde{X}_1, \\ldots , \\tilde{X}_B \\sim p_\\theta (\\cdot | X_m^p)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": " {Batch sample}for "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "b = 1, \\ldots , B"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": " do"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\epsilon \\sim \\mathcal{N}(0, I)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": " {Resample auxiliary variables}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X_b \\leftarrow (X_m^p, \\epsilon)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": "Sample "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "I_b \\sim \\mathrm{Bernoulli}(\\alpha (X_b, \\tilde{X}_b))"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": "end forif "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "S \\coloneqq \\{b: I_b = 1, 1 \\leq b \\leq B\\} \\neq \\emptyset"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": " then"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "a = \\min (S)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": " {First accepted sample}"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(X_{m + 1}^p, \\ldots , X_{m + a - 1}^p) \\leftarrow (X_m^p, \\ldots , X_m^p)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X_{m + a}^p \\leftarrow \\tilde{X}_a^p"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m \\leftarrow m + a"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": "else"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "(X_{m + 1}^p, \\ldots , X_{m + B}^p) \\leftarrow (X_m^p, \\ldots , X_m^p)"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "m \\leftarrow m + B"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "text",
+                                    "content": "end ifend whileoutput "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        280,
+                                        1208,
+                                        1402
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "X_0^p, \\ldots , X_M^p"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        226,
+                        1504,
+                        1132,
+                        1554
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                1504,
+                                1132,
+                                1554
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        1504,
+                                        1132,
+                                        1554
+                                    ],
+                                    "type": "text",
+                                    "content": "3.5. Fast exploration of the state space without MH"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        226,
+                        1584,
+                        1208,
+                        2531
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                1584,
+                                1208,
+                                2531
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        1584,
+                                        1208,
+                                        2531
+                                    ],
+                                    "type": "text",
+                                    "content": "Although the MH correction ensures that Timewarp provides asymptotically unbiased samples, it can lead to much slower exploration of the state space due to the rejected proposals. For some of the peptides we consider, the acceptance probabilities are too low to apply Algorithm 1 effectively. Instead, we can apply Timewarp in a simple exploration algorithm, where we ignore the MH correction and accept all proposals with an energy change lower than some cutoff. This allows much faster exploration of the state space, and in Section 6 we show that the algorithm, although technically biased, often leads to qualitatively accurate free energy estimates. It also succeeds in discovering all metastable states of a peptide orders of magnitude faster than Algorithm 1 and standard MD. Timewarp applied in exploration mode can be used to efficiently find the metastable states of a new molecule, which could be used, e.g., to provide initialisation states for a subsequent MSM method, although we do not pursue this here. We provide pseudocode for the exploration algorithm in Algorithm 2 in Appendix C."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        226,
+                        2593,
+                        683,
+                        2646
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                226,
+                                2593,
+                                683,
+                                2646
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        226,
+                                        2593,
+                                        683,
+                                        2646
+                                    ],
+                                    "type": "text",
+                                    "content": "4. Model architecture"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        224,
+                        2679,
+                        1208,
+                        2778
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                2679,
+                                1208,
+                                2778
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        2679,
+                                        1208,
+                                        2778
+                                    ],
+                                    "type": "text",
+                                    "content": "We now describe the architecture of our conditional normalising flow "
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2679,
+                                        1208,
+                                        2778
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_\\theta (z^p, z^v; x^p (t))"
+                                },
+                                {
+                                    "bbox": [
+                                        224,
+                                        2679,
+                                        1208,
+                                        2778
+                                    ],
+                                    "type": "text",
+                                    "content": ", which is shown in Figure 2."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "bbox": [
+                        224,
+                        2841,
+                        1208,
+                        2989
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                224,
+                                2841,
+                                1208,
+                                2989
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        2841,
+                                        1208,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": "RealNVP coupling flow Our architecture is based on RealNVP (Dinh et al., 2017), which consists of a stack of coupling layers which affinely transform subsets of the di "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1277,
+                                280,
+                                2259,
+                                528
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2259,
+                                        528
+                                    ],
+                                    "type": "text",
+                                    "content": "mensions of the latent variable based on the other dimensions. Specifically, we transform the position variables based on the auxiliary variables, and vice versa. In the "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2259,
+                                        528
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\ell"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        280,
+                                        2259,
+                                        528
+                                    ],
+                                    "type": "text",
+                                    "content": "th coupling layer of the flow, the following transformations are implemented:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        1277,
+                        280,
+                        2259,
+                        528
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 6,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1297,
+                        564,
+                        2254,
+                        709
+                    ],
+                    "type": "interline_equation",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1297,
+                                564,
+                                2254,
+                                709
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1297,
+                                        564,
+                                        2254,
+                                        709
+                                    ],
+                                    "type": "interline_equation",
+                                    "content": "\\begin{array}{rl} & z_{\\ell +1}^{p} = s_{\\ell ,\\theta}^{p}(z_{\\ell}^{v};x^{p}(t))\\odot z_{\\ell}^{p} + t_{\\ell ,\\theta}^{p}(z_{\\ell}^{v};x^{p}(t)),\\\\ & z_{\\ell +1}^{p} = s_{\\ell ,\\theta}^{v}(z_{\\ell +1}^{p};x^{p}(t))\\odot z_{\\ell}^{v} + t_{\\ell ,\\theta}^{v}(z_{\\ell +1}^{p};x^{p}(t)). \\end{array} \\tag{10}",
+                                    "image_path": "c0d2818fc490f40ae27ddd972bbde7acff14eb0b5a5d31d8b2460f3649ed0fdb.jpg"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7
+                },
+                {
+                    "bbox": [
+                        1277,
+                        742,
+                        2261,
+                        1785
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                742,
+                                2261,
+                                1785
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": "Going forward, we suppress the coupling layer index "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\ell"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": ". Here "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\odot"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": " is the element wise product, and "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "s_\\theta^p: \\mathbb{R}^3 N \\to \\mathbb{R}^{3N}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": " is our atom transformer, a neural network based on the transformer architecture (Vaswani et al., 2017) that takes the auxiliary latent variables "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z^v"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": " and the conditioning state "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": " and outputs scaling factors for the position latent variables "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z^p"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": ". The function "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t_\\theta^p: \\mathbb{R}^{3N} \\to \\mathbb{R}^{3N}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": " is implemented as another atom transformer, which uses "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z^v"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": " to output a translation of the position latent variables "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z^p"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": ". The affine transformations of the position variables (in Equation (9)) are interleaved with similar affine transformations for the auxiliary variables (in Equation (10)). Since the scale and translation factors for the positions depend only on the auxiliary variables, and vice versa, the Jacobian of the transformation is lower triangular, allowing for efficient computation of the density. The full flow "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "f_\\theta"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": " consists of "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N_{\\text{coupling}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": " stacked coupling layers, beginning from "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z \\sim \\mathcal{N}(0, I)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": " and ending with a sample from "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "p_\\theta (x(t + \\tau) | x(t))"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": ". This is depicted in Figure 2, Left. Note that there is a skip connection such that the output of the flow predicts the change "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t + \\tau) - x(t)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": ", rather than outputting "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x(t + \\tau)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        742,
+                                        2261,
+                                        1785
+                                    ],
+                                    "type": "text",
+                                    "content": " directly."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1277,
+                        1844,
+                        2261,
+                        2989
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1277,
+                                1844,
+                                2261,
+                                2989
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": "Atom transformer We now describe the atom transformer network. Let "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "x_{i}^{p}(t),z_{i}^{p},z_{i}^{v}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " , all elements of "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbb{R}^3"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " , denote respectively the position of atom "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " in the conditioning state, the position latent variable for atom "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " and the auxiliary latent variable for atom "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " .To implement an atom transformer which takes "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z^{v}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " as input (such as "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "s_\\theta^p (z^v,x^p (t))"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t_\\theta^p (z^v,x^p (t))"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " in Equation (9)), we first concatenate the variables associated with atom "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "i"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " .This leads to a vector "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "a_{i} = \\left[x_{i}^{p}(t),h_{i},z_{i}^{v}\\right]^{\\top}\\in \\mathbb{R}^{H + 6}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " , where "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z_{i}^{p}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " has been excluded since "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "s_\\theta^p,t_\\theta^p"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " are not allowed to depend on "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z^{p}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " . Here "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "h_i\\in \\mathbb{R}^H"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " is a learned embedding vector which depends only on the atom type. The vectors "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "a_{i}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " are fed into an MLP "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\phi_{\\mathrm{in}}:\\mathbb{R}^{H + 6}\\to \\mathbb{R}^{D}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " , where "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "D"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " is the feature dimension of the transformer. The vectors "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\phi_{\\mathrm{in}}(a_1),\\ldots ,\\phi_{\\mathrm{in}}(a_N)"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " are then fed into "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "N_{\\mathrm{transformer}}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " stacked transformer layers. After the transformer layers, they are passed through another atomwise MLP, "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\phi_{\\mathrm{out}}:\\mathbb{R}^D\\to \\mathbb{R}^3"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " . The final output is in "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "\\mathbb{R}^{3N}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " as required. This is depicted in Figure 2, Middle. When implementing "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "s_\\theta^v"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " and "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "t_\\theta^v"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " from Equation (10), a similar procedure is performed on the vector "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "[x_i^p (t),h_i,z_i^{p\\top}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " , but now including "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z_{i}^{p}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " and excluding "
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "z_{i}^{v}"
+                                },
+                                {
+                                    "bbox": [
+                                        1277,
+                                        1844,
+                                        2261,
+                                        2989
+                                    ],
+                                    "type": "text",
+                                    "content": " . There are two key differences between the atom transformer and the architecture in Vaswani et al. (2017). First, to maintain permutation equivariance, we do"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2550,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

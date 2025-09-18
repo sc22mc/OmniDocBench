@@ -1,0 +1,87 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/7bbaf7d895cb34047d5af5e9d2ac9dc3d3bba23b4289464d0e9111c0bc98b2ac.jpg",
+        "table_caption": [
+            "Table 6.Results of the cross-domain evaluation for our VP estimator using HRNet-W32 "
+        ],
+        "table_footnote": [
+            "1 VP denotesall 5 VPs;ADP denotes all 8 ADPs;Alldenotes all points consisting of5 VPsand8ADPs "
+        ],
+        "table_body": "<table><tr><td colspan=\"2\">Dataset</td><td colspan=\"7\">Keypoint metric↑</td><td colspan=\"8\">Mean distance error[pixel]</td></tr><tr><td>Train</td><td>Test</td><td>AP</td><td>AP50</td><td>AP75</td><td>AR</td><td>AR50</td><td>AR75</td><td>PCK</td><td>front</td><td>left</td><td>right</td><td>top</td><td>bottom</td><td>VP1</td><td>ADP1</td><td>All1</td></tr><tr><td rowspan=\"4\">SL-MH</td><td>SL-MH</td><td>0.99</td><td>0.99</td><td>0.99</td><td>0.97</td><td>0.98</td><td>0.98</td><td>0.99</td><td>2.67</td><td>2.90</td><td>2.52</td><td>1.90</td><td>1.72</td><td>2.39</td><td>3.64</td><td>3.10</td></tr><tr><td></td><td>0.98</td><td>0.99</td><td></td><td></td><td></td><td>0.97</td><td>0.98</td><td>3.51</td><td>3.50</td><td>3.1</td><td>2.34</td><td>12.02</td><td></td><td></td><td></td></tr><tr><td>SL-PB</td><td></td><td></td><td>0.99</td><td>0.96</td><td>0.7</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>27</td><td>14.52</td><td>13.55</td></tr><tr><td>HoliCity</td><td>0.80</td><td>0.92</td><td>0.86</td><td>0.72</td><td>0.83</td><td>0.78</td><td>0.77</td><td>9.73</td><td>12.27</td><td>9.75</td><td>8.54</td><td>6.60</td><td>9.47</td><td>17.92</td><td>14.11</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/d6e2b8dd6aff2f2d53b2373311eb593c669c7016acb1e62d97e331509e4fec13.jpg",
+        "table_caption": [
+            "Table 7.Comparison of the absolute parameter errors and reprojection errors on the SL-MH test set "
+        ],
+        "table_footnote": [
+            "1Units: pan $\\phi$ tilt $\\theta$ and roll $\\psi$ [deg]; $f$ $[ \\mathrm { m m } ]$ $k _ { 1 }$ [dimensionless]; REPE [pixel]; Executable rate $[ \\% ]$ Ipleentatpteqedsritaino 3（points)isboffttacboaedtatesoed "
+        ],
+        "table_body": "<table><tr><td rowspan=\"2\">Method</td><td rowspan=\"2\"></td><td rowspan=\"2\">Backbone</td><td colspan=\"5\">Mean absolute error1</td><td rowspan=\"2\">REPE1↓</td><td rowspan=\"2\">Executable rate1个</td><td rowspan=\"2\">Mean fps²个</td><td rowspan=\"2\">#Params</td><td rowspan=\"2\">GFLOPs</td></tr><tr><td>Pan</td><td>Tiltθ</td><td>Roll</td><td>f</td><td>k1</td></tr><tr><td>Lopez-Antequera et al.[33]</td><td>CVPR&#x27;19</td><td>DenseNet-161</td><td>1</td><td>27.60</td><td>44.90</td><td>2.32</td><td>1</td><td>81.99</td><td>100.0</td><td>36.4</td><td>27.4M</td><td>7.2</td></tr><tr><td>Wakaiand Yamashita [52]</td><td>ICCVW&#x27;21</td><td>DenseNet-161</td><td>一</td><td>10.70</td><td>14.97</td><td>2.73</td><td></td><td>30.02</td><td>100.0</td><td>33.0</td><td>26.9M</td><td>7.2</td></tr><tr><td>Wakai et al. [53]</td><td>ECCV&#x27;22</td><td>DenseNet-161</td><td></td><td>4.13</td><td>5.21</td><td>0.34</td><td>0.021</td><td>7.39</td><td>100.0</td><td>25.4</td><td>27.4M</td><td>7.2</td></tr><tr><td>Pritts et al. [41]</td><td>CVPR&#x27;18</td><td></td><td>25.35</td><td>42.52</td><td>18.54</td><td></td><td></td><td>1</td><td>96.7</td><td>0.044</td><td>1</td><td>1</td></tr><tr><td>Lochman et al. [32]</td><td>WACV&#x27;21</td><td></td><td>22.36</td><td>44.42</td><td>33.20</td><td>6.09</td><td></td><td></td><td>59.1</td><td>0.016</td><td></td><td>1</td></tr><tr><td>Ours w/o ADPs</td><td>（5points）3</td><td>HRNet-W323</td><td>19.38</td><td>13.54</td><td>21.65</td><td>0.34</td><td>0.020</td><td>28.90</td><td>100.0</td><td>12.7</td><td>53.5M</td><td>14.53</td></tr><tr><td>Ours w/o VPs</td><td>（8points）</td><td>HRNet-W32</td><td>10.54</td><td>11.01</td><td>8.11</td><td>0.34</td><td>0.020</td><td>19.70</td><td>100.0</td><td>12.6</td><td>53.5M</td><td>14.5</td></tr><tr><td>Ours</td><td>(13 points）</td><td>HRNet-W32</td><td>2.20</td><td>3.15</td><td>3.00</td><td>0.34</td><td>0.020</td><td>5.50</td><td>100.0</td><td>12.3</td><td>53.5M</td><td>14.5</td></tr><tr><td>Ours</td><td>(13 points）</td><td>HRNet-W48</td><td>2.19</td><td>3.10</td><td>2.88</td><td>0.34</td><td>0.020</td><td>5.34</td><td>100.0</td><td>12.2</td><td>86.9M</td><td>22.1</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/acf1ee3f35318b53a8dc596a9ae3354a03610926c5df3f18f5eeb8c464e9dff5.jpg",
+        "table_caption": [
+            "Table8.Comparison of the mean absolute rotation errors in degrees on the test sets of each dataset "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\">Dataset</td><td colspan=\"3\">Wakai et al. [53]</td><td colspan=\"3\">Lochman et al. [32]</td><td colspan=\"3\">Ours (HRNet-W32)</td></tr><tr><td>Pan</td><td>Tilt</td><td>Roll</td><td>Pan</td><td>Tilt</td><td>Roll</td><td>Pan</td><td>Tilt</td><td>Roll</td></tr><tr><td>SL-MH</td><td>1</td><td>4.13</td><td>5.21</td><td>22.36</td><td>44.42</td><td>33.20</td><td>2.20</td><td>3.15</td><td>3.00</td></tr><tr><td>SL-PB</td><td>1</td><td>4.06</td><td>5.71</td><td>23.45</td><td>44.99</td><td>30.68</td><td>2.30</td><td>3.13</td><td>3.09</td></tr><tr><td>SP360</td><td>1</td><td>3.75</td><td>5.19</td><td>22.84</td><td>45.38</td><td>31.91</td><td>2.16</td><td>2.92</td><td>2.79</td></tr><tr><td>HoliCity</td><td>1</td><td>6.55</td><td>16.05</td><td>22.63</td><td>45.11</td><td>32.58</td><td>3.48</td><td>4.08</td><td>3.84</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/7b8015aebb11d7f8470db45c29509c26fc75cab0157a1faf660f1c6e056b0358.jpg",
+        "table_caption": [
+            "Table9.Comparison on the cross-domain evaluation of the mean absolute rotation errors in degrees "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"2\">Dataset</td><td colspan=\"3\">Wakai et al. [53]</td><td colspan=\"3\">Ours (HRNet-W32)</td></tr><tr><td>Train</td><td>Test</td><td>Pan</td><td>Tilt</td><td>Roll</td><td>Pan</td><td>Tilt</td><td>Roll</td></tr><tr><td rowspan=\"3\">SL-MH</td><td>SL-PB</td><td></td><td>5.51</td><td>12.02</td><td>2.98</td><td>3.72</td><td>3.63</td></tr><tr><td>SP360</td><td>一</td><td>9.11</td><td>37.54</td><td>8.06</td><td>8.34</td><td>7.77</td></tr><tr><td>HoliCity</td><td>二</td><td>10.94</td><td>42.20</td><td>10.74</td><td>10.60</td><td>8.93</td></tr></table>",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "dress arbitrary images independent of the number of arcs; that is,it demonstrates scene robustness.Compared with methods [32,41] estimating the pan angles, our method usingHRNet-W32 achieved a mean frames per second (fps) that was at least 28O times higher. Note that our test platform wasequipped with an Intel Core i7-6850K CPUand anNVIDIA GeForceRTX 3080TiGPU. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We validated the efectiveness of the ADPs. Table 7 suggests that our method based onHRNet-W32 and VP/ADPs notably improved angle estimation compared with our method without the ADPs by $1 5 . 4 ^ { \\circ }$ on average for pan, tilt, and roll angles. Therefore,the ADPs dramatically alleviated the problems caused by a lack of VPs. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Additionally, we tested our proposed method using various datasets to validate its robustness.Table 8 shows that our method outperforms both existing state-of-the-art learning-based [53] and geometry-based [32] methodson all datasets in terms of rotation errors. Table 9 also reports thatour method is superior to Wakai et al.'s method [53], which tended to estimate the roll angle poorly in the crossdomain evaluation, especially on the HoliCity test set. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.4.3Qualitative evaluation ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To evaluate the recovered image quality, we performed calibration on synthetic images and off-the-shelf cameras. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Synthetic images.Figure 6 shows the qualitative results obtained on synthetic images. Our results are the most similar to the ground-truth images. By contrast, the quality of the recovered images that contained a few arcs was considerably degraded when the geometry-based methods proposed byPritts et al.[41] and Lochman et al. [32] were used.Furthermore, the learning-based methods proposed by L6pez-Antequera et al.[33], Wakai and Yamashita [52], and Wakai et al. [53] did not recover the pan angles.We note that our method can even calibrate images in which treeslinea street. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Off-the-shelf cameras. Following[53],we also evaluated calibration methods using off-the-shelfcameras to validate the effectiveness of our method. Figure 7 shows the qualitative results using off-the-shelf fisheye cameras using SL-MH for training. Our method meaningfully outperformedLochman et al.'smethod [32] in termsof recovered images.These results indicate robustness inourmethod for various types of camera projection. ",
+        "page_idx": 0
+    }
+]

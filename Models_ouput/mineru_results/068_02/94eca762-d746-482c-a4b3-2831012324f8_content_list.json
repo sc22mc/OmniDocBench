@@ -1,0 +1,99 @@
+[
+    {
+        "type": "text",
+        "text": "be suppressed and may have a significant effect on the distance of the focusing point.In order to compensate for the phase difference at the NFF region,one approach employs the ray optics approximation.Another way to obtain the exact phase of the radiating elements is by using Green's function and the TR concept. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The TR concept was first introduced in ultrasonic to locate the position of inhomogeneity in an interested media [5l, 6. In a non-dispersive media, the wave equation is time-symmetric. This implies both $\\vec { \\mathcal { E } } ( \\vec { r } , t )$ and $\\vec { \\mathcal { E } } ( \\vec { r } , - t )$ are the solution of the following wave equation ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/3411593173a3773b2857a2729346bb49bfb4d93d099d07bda39daa4cc80d62fe.jpg",
+        "text": "$$\n\\nabla ^ { 2 } \\vec { \\mathcal { E } } ( \\vec { r } , t ) - \\mu ( \\vec { r } ) \\varepsilon ( \\vec { r } ) \\frac { \\partial ^ { 2 } } { \\partial t ^ { 2 } } \\vec { \\mathcal { E } } ( \\vec { r } , t ) = 0\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\mu$ and $\\varepsilon$ denote the permeability and permittivity of themedium,respectively. $\\vec { r }$ denotesany point in the media, and $t$ represents the time.So,this guarantees for every wave diverging away from the source, there exists a reversed wave that would precisely retrace the path of the original wave back to the source. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Toexperimentally examine the TR method,an excitation signal was sent to the region of interest,and the reflected signal was recorded using the transducers surrounding the media.The received signal was time reversed and used asa new excitation forthe transducers.Later,this new excitation (time-reversed signal） was retransmitted to the region of interest,and it was observed that the newly sent signals focused on the target (inhomogeneity).Itindicates that the converged time-reversed signals travel the same path as the diverged signal travels from the inhomogeneity $\\textcircled { 7 }$ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here,we use an infinitesimal dipole antenna (or point source）positioned at the desired focal $\\vec { r _ { s } } ~ = ~ ( x _ { s } , y _ { s } . z _ { s } )$ to excite the media,as shown in Fig.(a).This can be interpreted asa secondary source that generates the diverged scattered fieldsrepresented by $\\vec { \\mathcal { E } } ( \\vec { r } , t )  E ( \\vec { r } , f )$ ，where $f$ isthe frequency.Now,the TR concept implies there exist converged waves (represented by $\\vec { \\mathcal { E } } ( \\vec { r } , - t )  \\bar { E } ^ { * } ( \\vec { r } , f ) )$ $^ *$ is the complex conjugate operation） that retrace the same path and focus on the location of the original source.Hence, the complex electric field at the location of the radiating elements will be obtained. Instead of time-reversing the electric field,it's equivalent in the frequency domain,i.e.,a conjugate operation is applied.This new set of obtained phases will be employed as an excitation forthe radiating elements to provide a focus at the desired point. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Assume that the antenna array is located in the free space. To obtain the proper phase of the antenna,we placed an infinitesimal dipole antenna at the location of thedesired focal point.The electric field at the location of the antenna array will be obtained as follows ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/e05b0b30271f462c3c74f1b13e6b1c19b819b1f997ae400af27d7e11d43b0921.jpg",
+        "text": "$$\n\\begin{array} { r } { E ( \\vec { r } _ { a _ { n } } , f ) = j \\omega \\mu _ { 0 } G _ { e } ( k _ { 0 } , \\vec { r } _ { a _ { n } } , \\vec { r } _ { s } ) } \\\\ { = j \\omega \\mu _ { 0 } \\frac { e ^ { - j k _ { 0 } | \\vec { r } _ { a _ { n } } - \\vec { r } _ { s } | } } { 4 \\pi | \\vec { r } _ { a _ { n } } - \\vec { r } _ { s } | } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "for $n = 1 , 2 , . . . , N$ ,where $k _ { 0 }$ is the wavenumber of free space, $\\omega$ is the angular frequency, and $G _ { e }$ denotes free space electric ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/cae0be6acb7b6d5f434aca9333bb3fff33fa43f01ff34bea4ab5299496fc4183.jpg",
+        "image_caption": [
+            "Fig.2.Schematic of the SWA antenna (top) top view, (bottom) phased array. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Green's function.Now,by conjugating the received electric field, the proper phase of the $n ^ { t h }$ element of the phased array antenna will obtain as follow ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/eee9dcfc4b0c871a894d2fa1672cff0e7795a90ac1605f163ef58868da639642.jpg",
+        "text": "$$\n\\varphi _ { n } = \\angle ( E _ { n } ^ { * } ( { \\vec { r } } _ { a _ { n } } , f ) ) .\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This new set of phases will be used to provide an NFF at the desired area. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "III.PHASED ARRAY ANTENNA CONFIGURATION AND DESIGN ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A slotted waveguide (SWA） phased array antenna is proposed and designed to demonstrate the feasibility of weed control using the phased array antenna in a radiative nearfield domain.The SWA (i） is appropriate for high-power applications,(ii) enables the fabrication of the phased array with a low number of elements,and (ii) provides the required focused area in both longitudinal and lateral directions.Due to the distribution of the slots in the longitudinal direction, the radiation pattern in H-plane is already focused and in the Eplane it is not.Also,by controlling the number of slots,the size of the focal point in this direction can be adjusted.Needless to say,no more antennas are required in this direction,which can reduce the cost and complexity of the phased array antenna and overall system.By increasing the number ofantennas,the focus E-plane can be achieved. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. SWA Design parameters ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Fig. $\\bigstar$ (top) and Fig. $\\bigstar$ (bottom） give the schematic of the single SWA and proposed SWA phased array antenna,which operatesat $5 . 8 \\mathrm { G H z }$ .The dimension of the cross-section of thewaveguide is $4 0 . 4 \\mathrm { { m m } \\times 1 9 . 8 \\mathrm { { m m } } }$ .EachSWA contains10 slotswith alength of $2 2 . 4 \\mathrm { m m }$ and awidth of $4 \\mathrm { m m }$ For ease of fabrication, the slots are slightly curved. The center distance of the slots to the side wall is $1 1 \\mathrm { m m }$ .The centerto-center distance of two slots in the longitudinal direction is $3 2 \\mathrm { m m }$ .The distance between the last slotsto the short wall ",
+        "page_idx": 0
+    }
+]

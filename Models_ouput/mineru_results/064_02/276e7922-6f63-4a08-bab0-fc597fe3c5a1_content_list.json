@@ -1,0 +1,53 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/a57af19bb612deef094c71a3e610ffc51473d973fc5524cac02bb0c49f30daef.jpg",
+        "image_caption": [
+            "Figure1.Comparisonsoftraditionalcomputervisiontasks(leftwithlocationandtimereasoning(right).Itislearthatnsteadof simpleimagecolortexture,andbjectinformation—locationandtimereasoningrequiresmorehumanexperiencesandknowledge(ak.a. open-world knowledge). "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Regarding the Q-principle, we design the Quantity module: we utilize two techniques to improve the model to provide as much informationaspossible.Fortraditional transformerbased models (Kenton & Toutanova,2019;Dosovitskiy et al.,202O),they use a single [CLS] to represent the input. Initially,we design additional [CLS] tokens that mimic different human perspectives on the same image. Since everyone hasunique knowledge and experience,it is possible to gain a more comprehensive understanding of a given item by combining the knowledge of different individuals. This also inspiresus to use each $[ \\mathrm { C L S } ] _ { i }$ to retrieve various useful open-world knowledge to aid predictions.Furthermore, motivated by current contrastive learning methods (Zhang et al.,2O22),we design the local and global loss for finetuning the CLIP model, ensuring ourQR-CLIP is suitable for the tasks. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For the Relevance module,we design a scoring mechanism that weights the fusion of image and open-world knowledge embeddings.Like ordinary society, not all of the knowledge from individuals are correct. Thus our scoring mechanism is likean error correction tool to help the model select the most valuable information.Itadaptivelybalances thedifferent information and encourages the model to provide pertinent ones forlocation and time reasoning.Furthermore, the scoring mechanism balances vision and language knowledge, which means that when the quality of explicit OWK is poor, our scoring mechanism can focus more on original image features, greatly improving robustness. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The experiments indicate the strong abilities of our QRCLIP model． Considering the accuracy (or Rank $@ 1$ ） achieves $1 9 . 3 1 \\%$ $1 7 . 3 \\%$ relative improvement compared to previous SOTA) on location reasoning, and $3 . 5 3 \\%$ $2 5 3 \\%$ relative improvement) on time reasoning. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Overall,our contributions can be categorized as: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "· We design the QR-CLIP,which first investigates utilizing explicit open-world knowledge to help location and time reasoning.   \n· Our method achieves an average of $1 7 . 3 \\% / 2 5 3 \\%$ relative lifts on location and time reasoning tasks compared to the previous SOTA.   \n· In addition, the comprehensive experimental record will inspire the related field. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.Related Work ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.1.Foundation Models ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The emergence of foundation models is a relatively recent phenomenon (Bommasani et al., 2021),and has fundamentallyaltered the game rulesofAI communities. Theyare commonlytrained onamassiveamountofunlabeled dataat scale (typically via self-supervised learning (Radford et al., 2021)), making them adaptable to various downstream applications.Among these are popular models include GPT3 (Brown et al., 2020) and PaLM (Chowdhery et al., 2022) aslarge language model, CLIP (Radford et al., 2O21) and Flamingo (Alayrac et al., 2022) as vision-language model, Dall-E (Ramesh et al., 2021) and Stable Diffusion (Rombach et al., 2022) for text-to-image generation, GaTo (Reed et al.) as a generalist model,and ChatGPT (Ouyang et al., 2022)as human-like conversation agent,etc.This paper uses CLIP pre-trained with 4OO million image-text pairs as baseline architecture. It learns excellent open-world knowledge and multi-modal representation by learning with such alarge-scale corpus,making it ideal as the basic solution. Based onit,wemadeQR-CLIP to fit thelocationand time reasoning task. ",
+        "page_idx": 0
+    }
+]

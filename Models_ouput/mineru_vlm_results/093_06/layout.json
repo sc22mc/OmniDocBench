@@ -1,0 +1,710 @@
+{
+    "pdf_info": [
+        {
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        249,
+                        270,
+                        1106,
+                        950
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                249,
+                                270,
+                                1106,
+                                950
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        249,
+                                        270,
+                                        1106,
+                                        950
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                249,
+                                                270,
+                                                1106,
+                                                950
+                                            ],
+                                            "type": "image",
+                                            "image_path": "18ae694e5b7068cdd63a31af1ea7bb075c381d2150194345bd0467f1a31188f0.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                150,
+                                993,
+                                1202,
+                                1069
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        150,
+                                        993,
+                                        1202,
+                                        1069
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                150,
+                                                993,
+                                                1202,
+                                                1069
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 2. Prediction images obtained by applying Soft PLS-DA and s-Soft PLS-DA models alongside the corresponding RGB images as references."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 1,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        155,
+                        1161,
+                        1202,
+                        2154
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                155,
+                                1161,
+                                1202,
+                                2154
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        155,
+                                        1161,
+                                        1202,
+                                        2154
+                                    ],
+                                    "type": "text",
+                                    "content": "The application of Soft PLS- DA yielded promising results in both cross- validation and prediction of the external test set. It achieved sensitivity and specificity for the BMSB class exceeding "
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        1161,
+                                        1202,
+                                        2154
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "90.0\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        1161,
+                                        1202,
+                                        2154
+                                    ],
+                                    "type": "text",
+                                    "content": " [36] (see Table I). Furthermore, employing sparse variable selection through the s- Soft PLS- DA algorithm maintained high classification performance while considering a reduced subset of 60 relevant spectral variables. The selected wavelengths can be grouped into five main spectral regions, corresponding to absorption bands associated with cellulose, hemicellulose, and lignin (1220- 1295 and "
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        1161,
+                                        1202,
+                                        2154
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "1420 - 1480 \\mathrm{nm}"
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        1161,
+                                        1202,
+                                        2154
+                                    ],
+                                    "type": "text",
+                                    "content": "). These are indicative of different background types. In addition, we selected absorption bands related to water, proteins, chitin, and lipids (980- 1070, 1330- 1350, and "
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        1161,
+                                        1202,
+                                        2154
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "1370 - 1400 \\mathrm{nm}"
+                                },
+                                {
+                                    "bbox": [
+                                        155,
+                                        1161,
+                                        1202,
+                                        2154
+                                    ],
+                                    "type": "text",
+                                    "content": "), reflecting the biochemical structure of insects' exoskeleton [36]. Subsequently, we applied both Soft PLS- DA and s- Soft PLS- DA models to the test set images to generate prediction images, facilitating the evaluation of classification performance across the entire images. This assessment allowed an overall understanding of the models' effectiveness in accurately classifying BMSB specimens and vegetal backgrounds"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        155,
+                        2164,
+                        1202,
+                        2900
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                155,
+                                2164,
+                                1202,
+                                2900
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        155,
+                                        2164,
+                                        1202,
+                                        2900
+                                    ],
+                                    "type": "text",
+                                    "content": "Fig. 2 presents some representative prediction images alongside their corresponding RGB counterparts. It is evident that, in general, the pixels are accurately classified into their respective classes. This observation highlights the challenge of detecting BMSB specimens against dark brown vegetal backgrounds using only RGB images, whereas the bugs are distinctly identified using SWIR- HSI. The prediction images of tree branches and soil as background reveal that spectral variable selection slightly enhances the classification of background pixels. To enhance BMSB detection capabilities for field applications, we integrated spectral information modeling with CNN algorithms to leverage spatial relationships among pixels. U- Net, in particular, is well suited for implementation on UAVs due to its ability to achieve satisfactory model performance with minimal computational resources [39]."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3
+                },
+                {
+                    "bbox": [
+                        153,
+                        2907,
+                        1202,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                153,
+                                2907,
+                                1202,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        153,
+                                        2907,
+                                        1202,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "To streamline network complexity in the spectral dimension, we effectively applied U- Net using only the spectral bands identified by s- Soft PLS- DA [36]. Notably, the spectral regions selected by s- Soft PLS- DA can serve as a basis for developing "
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                1249,
+                                920,
+                                2299,
+                                1168
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1249,
+                                        920,
+                                        2299,
+                                        1168
+                                    ],
+                                    "type": "text",
+                                    "content": "more affordable and rapid multispectral sensors, ideal for field monitoring using UAVs. When coupled with RGB cameras, these sensors can enable the deployment of efficient monitoring systems capable of autonomously detecting BMSB and providing real- time information on pest spread to farmers."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        1304,
+                        270,
+                        2249,
+                        660
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                1304,
+                                270,
+                                2249,
+                                660
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1304,
+                                        270,
+                                        2249,
+                                        660
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1304,
+                                                270,
+                                                2249,
+                                                660
+                                            ],
+                                            "type": "image",
+                                            "image_path": "3727529b5ced31a98b79466a7c1581a7c8a658aba98ff8f383425e2a9b65d4ce.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 5,
+                            "type": "image_body"
+                        },
+                        {
+                            "bbox": [
+                                1244,
+                                702,
+                                2299,
+                                815
+                            ],
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        1244,
+                                        702,
+                                        2299,
+                                        815
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                1244,
+                                                702,
+                                                2299,
+                                                815
+                                            ],
+                                            "type": "text",
+                                            "content": "Fig. 3. Utilization of deep learning object detection models for BMSB detection with the false-color image constructed using manually selected wavebands of the NIR range."
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 6,
+                            "type": "image_caption"
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        1249,
+                        920,
+                        2299,
+                        1168
+                    ],
+                    "type": "text",
+                    "lines": [],
+                    "index": 7,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        1249,
+                        1174,
+                        2299,
+                        1419
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1249,
+                                1174,
+                                2299,
+                                1419
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1174,
+                                        2299,
+                                        1419
+                                    ],
+                                    "type": "text",
+                                    "content": "Furthermore, light and cost- efficient hyperspectral cameras covering the SwIR range are increasingly accessible in the market [40]. This trend enhances the practicality of developing advanced monitoring solutions for agricultural applications, facilitating timely and accurate pest management decisions."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8
+                },
+                {
+                    "bbox": [
+                        1252,
+                        1468,
+                        1759,
+                        1514
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1252,
+                                1468,
+                                1759,
+                                1514
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1252,
+                                        1468,
+                                        1759,
+                                        1514
+                                    ],
+                                    "type": "text",
+                                    "content": "B. Evaluation of Vis-NIR MSI"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1249,
+                        1541,
+                        2299,
+                        1983
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1249,
+                                1541,
+                                2299,
+                                1983
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1541,
+                                        2299,
+                                        1983
+                                    ],
+                                    "type": "text",
+                                    "content": "We conducted a pilot study employing a snapshot Vis- NIR UAV camera in the field to detect BMSB. The camera consists of two distinct acquisition devices capturing in the ranges 457- 593 nm (16 bands) and 605- 845 nm (15 bands), respectively. For our experiments, we used the latter 15 bands of the images. In one approach (camera I, Fig. 3), we performed manual wavelength selection based on the visibility of BMSB to construct the false- color image. We identified the wavelengths 727.24, 811.24, and 608.75 as suitable for BMSB detection."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10
+                },
+                {
+                    "bbox": [
+                        1249,
+                        1989,
+                        2299,
+                        2531
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1249,
+                                1989,
+                                2299,
+                                2531
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "text",
+                                    "content": "Then, we trained two object detection models, namely, Faster RCNN and RetinaNet, on these images [41], [42]. The pretrained RetinaNet yielded the best results with an F1 score of "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "78.45\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "text",
+                                    "content": ", precision of "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "74.61\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "text",
+                                    "content": ", recall of "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "76.39\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "text",
+                                    "content": ", and accuracy of "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "78.45\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "text",
+                                    "content": " (see Table I). In the other approach, we utilized the entire Vis- NIR hypercube from camera II (see Fig. 3) to train the two object detection models. We customized the input layer of these models to accommodate the hyperspectral image with 15 channels. RetinaNet trained from scratch exhibited the best performance, achieving an F1 score of "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "70.74\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "text",
+                                    "content": ", precision of "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "84.25\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "text",
+                                    "content": ", recall of "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "60.96\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "text",
+                                    "content": ", and accuracy of "
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "inline_equation",
+                                    "content": "54.73\\%"
+                                },
+                                {
+                                    "bbox": [
+                                        1249,
+                                        1989,
+                                        2299,
+                                        2531
+                                    ],
+                                    "type": "text",
+                                    "content": "."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11
+                },
+                {
+                    "bbox": [
+                        1296,
+                        2587,
+                        2249,
+                        2630
+                    ],
+                    "type": "title",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1296,
+                                2587,
+                                2249,
+                                2630
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1296,
+                                        2587,
+                                        2249,
+                                        2630
+                                    ],
+                                    "type": "text",
+                                    "content": "V. EDGE-BASED SMART STICKY TRAP IMAGING SYSTEM"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        1249,
+                        2656,
+                        2299,
+                        3102
+                    ],
+                    "type": "text",
+                    "lines": [
+                        {
+                            "bbox": [
+                                1249,
+                                2656,
+                                2299,
+                                3102
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        1249,
+                                        2656,
+                                        2299,
+                                        3102
+                                    ],
+                                    "type": "text",
+                                    "content": "As part of the HALY- ID project, we developed IoT imaging systems with integrated pheromone enhanced sticky traps to monitor the population of BMSB and to combat the spread of this invasive species. Sticky traps are widely used in orchards to attract and capture insects based on their color or pheromones. Agronomists can use these traps to estimate the insect populations by visiting their orchards regularly with manual trap inspection and insect counting. A preliminary version of the trap using mainly lab- based experiments and artificial insects to"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                2475,
+                3300
+            ],
+            "page_idx": 0
+        }
+    ],
+    "_backend": "vlm",
+    "_version_name": "2.1.9"
+}

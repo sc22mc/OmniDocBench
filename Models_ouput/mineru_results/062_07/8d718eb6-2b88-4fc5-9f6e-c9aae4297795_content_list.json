@@ -1,0 +1,76 @@
+[
+    {
+        "type": "text",
+        "text": "C.Scene Segmentation for the Identification of On-road Obstacles ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The saliency map of each frame is used to categorize different regions of the scene.For illustration purposes the regions are visualized in different colors: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "·Blue:The safe area of the road beyond the view of the driver.   \nYellow:Be-aware areas representing negative obstacles.   \n·Cyan: Hazardous areas in the range of the road representing positive obstacles.   \n·Purple: Dangerous areas outside of the range of the road.   \n· Red: Recognized obstacles in the range of the road (e.g., potholes). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "To define the vehicle's moving direction steering data are used received by internal sensors of the vehicle.The direction of the vehicle specifies which part of the scene in the field of view is in front of the vehicle and is used as as parameter, in addition to saliency mapping,for the segmentation of the point cloud.The more critical regions are the ones that lie within the limits of the road.A segmentation example is illustrated inFig.[ ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/899910dac49820aa36f4bf745d4df6d77923cf46b2a7fe669faaa86c77b26fad.jpg",
+        "image_caption": [
+            "Fig.5. Segmentation of the point cloud scene based on the saliency map in Fig.4and the vehicle's moving direction. "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. Data simulations ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For evaluation of our methodology,we created a rich dataset using CARLA,an open-source autonomous driving simulator [16].CARLA is based on a server-client system,in which the server is responsible for running the simulations including the calculation of physics,weather conditions,collision detection and sensor readings.It operates on the OpenDRIVE specification $\\lVert 5 8 \\rVert$ for defining junctions,traffic lights, etc, and isused by CARLA for simulating independent agents,such asother carsand pedestrians.Thismakes CARLA ideal for creating complex scenarios and realistic driving conditions for our tests. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The server running the simulations is powered by Unreal Engine. Clients can connect and request changes to almost any element in the world being essential for the creation of scenarios. They also receive sensor data and manage input to the vehicle controlled by the user. CARLA supports a wide range of sensor suites with extensive configurability to its intrinsic parameters. In our work,we use a LiDAR sensor on top of the vehicle and a monocular RGB camera,placed in the front part of the car, for simulated data collection. By placing these sensors in an autonomous car and initiating its navigation in the virtual environment, we were able to create a very large dataset for evaluating our algorithms. In the future,we plan to assess the AR visualization effectiveness,with respect to reaction time and awareness increase,in a real environment witha drivermanually controllinga vehicle. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/c36f220aa36d0c45b5e6b9ed2f06ddefd6752da16ff54f044a3a9c4e6cc9c285.jpg",
+        "image_caption": [
+            "Fig.6.Point cloud map of both two vehicles (egol and ego2). "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/0284e98040a59c084bd5edfb868f9e002171235009c84a312b6fd3e1bb57b49e.jpg",
+        "image_caption": [
+            "Fig.7.Example of segmentation of the point cloud projected to the AR interface (in the viewof ego1). "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Contributionsin CARLA simulator:Due to lack of benchmark point clouds datasets representing real road scenes with obstacles (potholes and bumps)，we used the CARLA simulator to create obstacle-free environment data,in which ",
+        "page_idx": 0
+    }
+]
