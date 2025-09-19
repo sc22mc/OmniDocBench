@@ -4,7 +4,7 @@ import numpy as np
 import re
 import sys
 import pdb
-from utils.data_preprocess import textblock_with_norm_formula, normalized_formula, textblock2unicode, clean_string
+from utils.data_preprocess import textblock_with_norm_formula, normalized_formula, textblock2unicode, clean_string, normalized_latex_table
 
 # def get_norm_text_lines(lines):
 #     norm_lines = []
@@ -63,11 +63,14 @@ def compute_edit_distance_matrix_new(gt_lines, matched_lines):
         # print("norm_pred_lines:", matched_lines)
         raise  
 
+
 def get_gt_pred_lines(gt_items, pred_items, line_type):
     norm_html_lines = []
     gt_lines = []
     gt_cat_list = []
+
     for item in gt_items:
+        # print(item)
         if item.get('fine_category_type'):
             gt_cat_list.append(item['fine_category_type'])
         else:
@@ -83,8 +86,9 @@ def get_gt_pred_lines(gt_items, pred_items, line_type):
             gt_lines.append(str(item['latex']))
         elif line_type == 'latex_table':
             # gt_lines.append(str(item['latex']))
+
             norm_html_lines.append(str(item['html']))
-        
+
     pred_lines = [str(item['content']) for item in pred_items]
 
     

@@ -12,7 +12,7 @@ from pylatexenc.latex2text import LatexNodes2Text
 from pylatexenc.latexwalker import LatexWalker, LatexEnvironmentNode, LatexCharsNode, LatexGroupNode, LatexMacroNode, LatexSpecialsNode
 from collections import defaultdict
 import pdb
-from utils.data_preprocess import remove_markdown_fences, replace_repeated_chars, textblock_with_norm_formula, textblock2unicode
+from utils.data_preprocess import remove_markdown_fences, replace_repeated_chars, textblock_with_norm_formula, textblock2unicode, normalized_latex_table
 
 
 def extract_tabular(text):
@@ -145,9 +145,9 @@ def md_tex_filter(content):
     for latex_table, position in zip(latex_table_array, table_positions):
         position = [position[0], position[0]+len(latex_table)]   # !!!
         pred_all.append({
-            'category_type': 'latex_table',
+            'category_type': 'html_table',
             'position': position,
-            'content': latex_table
+            'content': normalized_latex_table(latex_table)
         })
         content = content[:position[0]] + ' '*(position[1]-position[0]) + content[position[1]:]  # replace latex table with space
 
@@ -164,6 +164,7 @@ def md_tex_filter(content):
             'content': html_table
         })
         content = content[:position[0]] + ' '*(position[1]-position[0]) + content[position[1]:]  # replace html table with space
+        content = normalized_latex_table(content)
     # html_table_array = []
     # html_table_matches = html_table_reg.finditer(content)
     # if html_table_matches:

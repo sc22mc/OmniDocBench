@@ -34,7 +34,7 @@ if __name__ == '__main__':
         )
 
 
-    for task in cfg.keys(): # 'end2end_eval'
+    for task in cfg.keys():
         if not cfg.get(task):
             print(f'No config for task {task}')
         dataset = cfg[task]['dataset']['dataset_name']

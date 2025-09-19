@@ -281,7 +281,7 @@ def normalized_latex_table(text):
         cmd = ['latexmlc', '--quiet', '--nocomments', f'--log={cache_dir}/{uuid_str}.log',
                f'{cache_dir}/{uuid_str}.tex', f'--dest={cache_dir}/{uuid_str}.html']
         try:
-            subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL)
             with open(f'{cache_dir}/{uuid_str}.html', 'r') as f:
                 html_content = f.read()
 
@@ -293,7 +293,7 @@ def normalized_latex_table(text):
         except Exception as e:
             print(e)
             html_content = ''
-        
+
         shutil.rmtree(cache_dir)
         return html_content
     
